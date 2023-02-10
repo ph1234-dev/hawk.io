@@ -1,0 +1,173 @@
+let encodeMemory = function(pattern,response,nextTopic){
+    return{
+      "pattern": pattern,
+      "response": response,  
+      "nextTopic": nextTopic
+    }
+  }
+
+let section6 = [
+    encodeMemory([
+      `* duken * upisan * unga * `, 
+    ],[
+      `Nasisista I nan ka aw na to na nasimbulan na duti o kagaw a bacterya, virus endu parasites.`,
+    ]),
+    encodeMemory([
+      `* duken * di * kan * mailaw * karne * `,
+      `* duken * di * kan * da ma(lu|w)t(o|u) * karne * `,
+      `* duken * di * kan * da * upisan * unga * `
+    ],[
+      `Iluto ka ebpyapya su karne edu matay I kagaw a bacteria, virus abpeg a parasite  a nakadampo sa karne`,
+    ]),
+    encodeMemory([
+      `* duken * di * kan * da * upisan * unga * `
+    ],[
+      `Nasisista na enggulan I namba ka basi nasimbulan na duti abpeg a kagaw a bacteria, virus parasites I nan.`
+    ]),
+    encodeMemory([
+        `* ten * mangay * tagudo * `, 
+        `* endaw * mangay * tagudo *`
+    ],[
+      `Saki na kapakay ko seka enggan sa mga ulaula o ngin gulan sa mga gamot endu ngen I pakairan sa sakit a nan upama ka aden ganggedam nengka. Kapakay ka bun lemu sa barangay health center, midsa sa doctor o nurse, o lu ka sa pendagang sa gamot.`,
+    ]),
+    encodeMemory([
+      `* edaw * kan * tagudo * `, 
+    ],[
+      `Endu di ka maka dalo, na nya mapya na kan ka bo lu sa mga pendagang a to na pamlimpyo endu mapya I kinaami nilan sa pegken a pendagangen nilan.`,
+    ]),
+    
+    encodeMemory([
+      `* endaw * pamasa * gamot * tagudo * `, 
+    ],[
+      `Kapakay I nan pamasan sa botika`,
+    ]),
+    
+    encodeMemory([
+      `* (panon|ngen) * ingat * tagudo * `, 
+      `* (panon|ngen) * kasambot * tagudo * `, 
+    ],[
+      `madakel man I kapakay nengka galbeken. Nya isa a enggulan nu taw na keman sa mapya a pegken. Minom sa ig a malingaw. Ka gagas sa lima sa sabon abpeg a ig. Upama manem ka dala I tu na gemamit  sa alchohol. I ka papedsembay su twalya nengka, salidot, endu mga endaw pan sa a gamit nengka. Upama ka aden bakuna, na pabakuna ka bon.`,
+    ]),
+    
+    encodeMemory([
+      `* kapakay * tagudo * kasambutan * `, 
+    ],[
+      `Uway, tangka ka sa nan. Pangingidsay ako nengka bo.`,
+    ]),
+    
+]
+
+
+
+let section7 = [
+    
+   encodeMemory([
+    `* duken * (inom|kan) * pegken_kapakay_sa_pedtagudo *  tagudo *`, 
+    `* duken * (pamasa) * pegken_kapakay_sa_pedtagudo * tagudo *`, 
+    `* duken * (inom|kan) * pegken_kapakay_sa_pedtagudo * tagudo *`, 
+    `* pegken_kapakay_sa_pedtagudo * (inom|kan) * tagudo *  `, 
+    `* pegken_kapakay_sa_pedtagudo * (mapya|tabang|kapakay) * tagudo *`, 
+   ],[
+     `Nam ba a pegken na makadtabang sa leka para di ka lenukan edsamiken. Upama ka aden pedtagundo na makadtabang I namba ka makadtegas sa tae.`,
+   ]),
+   encodeMemory([
+    `* (kapakay|mapya|tabang) * pegken * tagudo * `, 
+    `* tagudo * pegken * (kapakay|mapya|tabang) *`, 
+    `* tagudo *  (kapakay|mapya|tabang) * pegken * `, 
+    `* (kapakay|mapya|tabang) * tagudo * pegken * `, 
+    `* pegken * (kapakay|mapya|tabang) * tagudo *`, 
+    `* pegken * tagudo  * (kapakay|mapia|tabang) * `, 
+    `* pegken * tagudo * `, 
+    `* tagudo * pegken * `, 
+   ],[
+     `Madalik I nan silan. Kapakay ka pegkan sa arroscaldo, saging, sabaw, manok, binubog, electrolyte drinks, oatmeal, peanutbutter, patatas, emay, sports drinks, toast, ig, yogurt, am, abpeg a beteng. Mapakay ko bun edalon ngin I di ka pegkan upama ka pedtagudo ka.  `,
+   ]),
+]
+
+
+let section8 = [
+    encodeMemory([
+      `* duken * pegken_di_mapya_hydration * di * (inon|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inon|kan|pamasan) * pegken_di_mapya_hydration * tagudo * `,  
+    ],[
+      `Tangkay ka I namaba ka pakalenuk I namba edsamikel.`,
+    ]),
+    encodeMemory([
+      `* duken * pegken_a_makadtagetut * di * (inon|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inon|kan|pamasan) * pegken_a_makadtagetut * tagudo * `, 
+    ],[
+      `Kaped sa nan na makadtagetut. Di nenmba mapya upama ka pedtagudo I taw ka makalunsan sa sakit.`,
+    ]),
+    encodeMemory([
+      `* duken * pegken_a_aden_lactose_nin * di * (inon|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inon|kan|pamasan) * pegken_a_aden_lactose_nin * tagudo *`, 
+    ],[
+      `Upama ka di ka kapakyan pegkan sa gatas ka edtagudo ka na di namba mapya pegkanen. Upama ka edtagudo ka edaw I kinapasad nengka keman sa aden gatas nin e telni ka I kakan sa nan`,
+    ]),
+    encodeMemory([
+      `* duken * pegken_a_aden_fructose _nin * di * (inon|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inon|kan|pamasan) * pegken_a_aden_ fructose _nin * tagudo *`, 
+    ],[
+      `Aden mga tao a galunsanan I kapedtagudo nilan kagina nakakan silan sa pegken a madakel a benel I dalem nin a fructose. Pangingati ka bo I namba.`,
+    ]),
+    encodeMemory([
+      `* duken * pegken_a_magatel_sa_tyan * di * (inon|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inon|kan|pamasan) * pegken_a_magatel_sa_tyan * tagudo *`, 
+    ],[
+      `Nya ba a pegken na makadsakit sa tyan na di mapya upama ka pedtagudo su taw.`,
+    ]),
+    encodeMemory([
+      `* duken * pegken_a_malana * di * (inon|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inon|kan|pamasan) * pegken_a_ malana * tagudo *`, 
+    ],[
+      `Namba malana ged a pegken na makagkasebod, endu malgen I kapaukit nin sa pegken sa tinae na tao. Da ka ged pegkan sa nan upamaka ka pedtagudo ka.`,
+    ]),
+    encodeMemory([
+      `* duken * (mailaw| da * maluto) * di * (inom|kan) * tagudo * `, 
+      `* duken * di * (inom|kan) * (mailaw|dala * maluto) * `, 
+    ],[
+      `Namba a mga pegken na aw na to a aden mga duti nin. Da ka pegkan sa nan upama ka pedsakit I tyan nengka o pedtagudo ka.`,
+    ]),
+    encodeMemory([
+      `* ngen * pegken * di * (inom|kan) * tagudo * `, 
+      `* pegken * di * (inom|kan) * tagudo *`, 
+      `* tagudo * di * (inom|kan) * pegken *`, 
+    ],[
+      `Madakil I nan silan. Kaped sa nan na alchohol , beans, berries, broccoli, repolyo, cauliflower, chees, cheakpeas, kapi, kamais, petsay, fruit juice, grapes, mga gadong a kamo, teneb, ice crea, gatas, mani, lanan a pegken, malalas a pegken, paminta, mailaw a pegken, salad, shellfish, softdrinks, at tea. `,
+    ]),
+    
+    encodeMemory([
+      `* (pamasa|kan|inom) * (diarrhea_pagkain_masama_hydration| diarrhea_pagkain_may_lactose| diarrhea_pagkain_may_fructose| diarrhea_pagkain_nakakairita_tiyan| diarrhea_pagkain_oily) * tagudo *`,
+    ],[
+      `Di ka pagengay o pegkan sa nan upama ka pedtagudo ka. Aden kaped a mapya nengka makan a madtabang sa leka. Edsay ako nengka ba.`,
+    ]),
+]
+
+let section9 = [
+  
+]
+
+let section10 = [
+    encodeMemory([
+      `* ten * problema * tagudo * `, 
+      `* tagudo * ten * problema *`, 
+      `* tagudo * problem * ten *`, 
+      `* problema * ten * tagudo * `, 
+      `* problema * tagudo * ten *`, 
+    ],[
+      `Su wata a naka tlo lagon pan, su mga matuwa na malubay I lawas nin, su di pakakan pyapya, tayn I pedtagudo sa naipos a dwa gay, su pegkayaw sa 39 degree celcius, su aden dana na tai nin, su mapulo I lugo nin, su aden pagangayan nin, abpeg na su aden bon sakit ni andang n abasi kalunsanan I sakit nilan.`,
+    ]),
+]
+
+
+let data = 
+  [].concat(section6)
+    .concat(section7)
+    .concat(section8)
+    .concat(section9)
+    .concat(section10)
+
+
+export{
+    data
+}

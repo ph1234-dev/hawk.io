@@ -1,0 +1,175 @@
+let encodeMemory = function(pattern,response,nextTopic){
+    return{
+      "pattern": pattern,
+      "response": response,  
+      "nextTopic": nextTopic
+    }
+}
+
+let section16 = [
+    encodeMemory([
+        `* bakit * (iwas| (hindi|huwag)  * (kain|inom|gamit))  * gamot_sa_diarrhea * `,
+    ],[
+        `Karaniwang hindi inirerekomenda ng mga doktor ang paggamit ng mga over-the-counter na gamot para sa mga taong may dugo sa dumi o lagnat—mga palatandaan ng impeksyon sa bakterya o mga parasito.`
+    ]),
+    encodeMemory([
+        `* bakit * (iwas| (hindi|huwag)  * (kain|inom|gamit))  * gamot_sa_diarrhea *`,
+        `* bakit * gamot_sa_diarrhea * (iwas|(hindi|huwag)  * (kain|inom|gamit))  * `,
+    ],[
+        `Ang mga anti-diarrheal na gamot tulad ng bismuth subsalicylate at mga antimotility agent tulad ng loperamide ay dapat na iwasan ng mga taong may mataas na lagnat o madugong pagtatae dahil maaari itong magpalala ng impeksyon sa colon. Sa mga bata, dapat itong iwasan na maaari silang humantong sa mga komplikasyon ng hemolytic uremic syndrome sa mga kaso ng Shiga-toxin E. col.`
+    ]),
+    encodeMemory([
+        `* sino * (huwag|hind) * (gumamit|kain|inom) * on_the_counter * drug * `,
+        `* sino * (huwag|hind)* (gumamit|kain|inom) * * diarrhea_drugs *`,
+        `* sino * iwas * on_the_counter _drug *`,
+        `* sino * iwas * diarrhea_drugs *`,
+        `* diarrhea_drugs * (hindi|huwag) * (gumamit|kain|inom) * nino * `,
+        `* diarrhea_drugs * iwasan * nino *`,
+    ],[
+        `Ang mga taong may madugong dumi o lagnat ay hindi dapat uminom ng mga gamot na nabibili ng walang riseta.`
+    ]),
+    encodeMemory([
+        `*(paano| ano) * gamot * diarrhea *`,
+    ],[
+        `Maaari kang gumamit ng antimotility (imodium, loperamide) upang mapabagal ang paggalaw ng pagkain, bismuth subsalicylate (pepto-bismol at kaopectate) upang balansehin ang mga likidong gumagalaw sa digestive tract, mga solusyong glucose-electrolyte upang balansehin ang asukal sa tubig, at mga asin, hemorroid cream o petroleum jelly kung masakit ang iyong pwet, Oral rehydration solutions , priobiotics at zinc supplements`
+    ]),
+    encodeMemory([
+        `* (paano|ano) * problema * diarrhea_drugs * `,
+    ],[
+        `Ang mga ito ay maaaring magpalala ng malubhang impeksyon sa colon. Sa mga bata, dapat itong iwasan na maaari silang humantong sa mga komplikasyon ng hemolytic uremic syndrome sa mga kaso ng Shiga-toxin E. col.`
+    ]),
+]
+
+
+let section18 = [
+    encodeMemory([
+        `* ano * hakbang * hugas * kamay * `,
+        `* pano * hugas * kamay * `
+    ],[
+        `Magsabon ng sabon nang hindi bababa sa 20 segundo. Pagkatapos maglagay ng sabon sa iyong mga kamay, kuskusin ang iyong mga kamay nang hindi bababa sa 20 segundo. Gawin mo yan hanggang matamong mong kantahin ang "Maligayang Kaarawan" nang dalawang beses. Gumamit ng hand sanitizer kapag hindi posible ang paghuhugas. Gumamit ng alcohol-based na hand sanitizer kapag walang tubig. Ilapat ang hand sanitizer gaya ng pag-hand lotion mo, siguraduhing takpan ang harap at likod ng magkabilang kamay. Gumamit ng isang produkto na naglalaman ng hindi bababa sa 60% na alkohol.`
+    ]),
+]
+
+
+let section20 = [
+    encodeMemory([
+        `* (ano|paano|paraan) * (gamutin|bawasan|control) * lagnat * panginginig * `,
+        `* (ano|paano|paraan) * (gamutin|bawasan|control) *  panginginig *`,
+        `* (ano|paano|paraan) * (gamutin|bawasan|control) *  lagnat *`,
+    ],[
+        `Maaari kang uminom ng maraming likido upang manatiling hydrated. Mayroong ilang over-the-counter (otc) na pain reliever na maaari mong inumin upang mabawasan ang kakulangan sa ginhawa. Halimbawa, maaari mong hilingin sa iyong parmasyutiko ang acetaminophen para sa pag-alis ng pananakit. Kapag ikaw ay may lagnat, maglagay ng mamasa-masa, maligamgam na tela sa noo. Magsuot ng komportableng tela. Kung mayroon kang panginginig, pinakamahusay na magsuot ng mga layer o makakapal na kasuotan. Pagkatapos ay magpahinga. kailangan mo ng maraming pahinga para gumaling.`
+    ]),
+    encodeMemory([
+        `* (ano|paano|paraan) * (gamutin|bawasan|control) *  suka *`,
+    ],[
+        `1.Huwag kumain o uminom ng kahit ano sa loob ng ilang oras pagkatapos ng pagsusuka.
+
+        2. Higop ng kaunting tubig o sumipsip ng ice chips tuwing 15 minuto sa loob ng 3-4 na oras.
+        
+         3. Susunod, humigop ng malinaw na likido tuwing 15 minuto sa loob ng 3-4 na oras. Kasama sa mga halimbawa ang tubig, mga inuming pampalakasan, flat soda, malinaw na sabaw, gelatin, may lasa na yelo, popsicle o apple juice. Huwag uminom ng citrus juice o gatas. Dagdagan ang mga likido gaya ng pinahihintulutan.
+        
+        4. Kapag maaari mong tiisin ang malinaw na likido sa loob ng ilang oras nang hindi nagsusuka at kung nagugutom ka, subukang kumain ng kaunting pagkain na matatabang. Subukan ang mga pagkain tulad ng saging, kanin, applesauce, dry toast, soda crackers (ang mga pagkaing ito ay tinatawag na BRAT diet). Sa loob ng 24-48 oras pagkatapos ng huling yugto ng pagsusuka, iwasan ang mga pagkaing maaaring makairita o maaaring mahirap tunawin ang naturang alkohol, caffeine, taba/langis, maanghang na pagkain, gatas o keso.
+            
+         5. Kapag maaari mong tiisin ang matabang na pagkain, maaari mong ipagpatuloy ang iyong normal na diyeta.
+        `
+    ]),
+    encodeMemory([
+        `* (ano|paano|paraan) * (gamutin|bawasan|control) *  nausea *`,
+    ],[
+        `•	Uminom ng malinaw o malamig na inumin.
+
+        • Kumain ng magaan, matabang na pagkain (tulad ng saltine crackers o plain bread).
+        
+        • Iwasan ang pritong, mamantika, o matatamis na pagkain.
+        
+        • Kumain nang dahan-dahan at kumain ng mas maliit, mas madalas na pagkain.
+        
+        • Huwag paghaluin ang mainit at malamig na pagkain.
+        
+        • Uminom ng mga inumin nang dahan-dahan.
+        
+        • Iwasan ang aktibidad pagkatapos kumain.
+        
+        • Iwasang magsipilyo ng iyong ngipin pagkatapos kumain.
+        
+        • Pumili ng mga pagkain mula sa lahat ng pangkat ng pagkain gaya mo  kayang tiisin sila para makakuha ng sapat na nutrisyon.
+        `
+    ]),
+    encodeMemory([
+        `* (ano|paano|paraan) * (gamutin|bawasan|control) *  sakit * ulo *`,
+    ],[
+        `. Maglagay ng malamig na compress o ice pack sa lugar ng pananakit.
+
+        2. Uminom ng mga likido. Kung ang pagduduwal ay nahihirapang uminom, subukang sumipsip ng yelo.
+        
+        3. Magpahinga. Protektahan ang iyong sarili mula sa maliwanag na ilaw at malakas na ingay.
+        
+        4. Kalmahin ang iyong damdamin sa pamamagitan ng pag-iisip ng isang mapayapang eksena.
+        
+        5. Masahiin ang masikip na kalamnan sa leeg, balikat, at ulo.
+        
+        6. Upang makapagpahinga ang mga kalamnan, magbabad sa mainit na paliguan o gumamit ng mainit na shower
+        `
+    ]),
+    encodeMemory([
+        `* (ano|paano|paraan) * (gamutin|bawasan|control) *  abdominal * cramps *`,
+    ],[
+        `* Lagyan ng init. Makakatulong ito upang i-relax ang iyong mga kalamnan sa tiyan.  Ito ay partikular na nakakatulong kung ang muscle strain o labis na paggamit ay nagdudulot ng iyong mga pulikat.
+
+        * Ang pagmamasahe sa iyong mga kalamnan sa tiyan ay maaaring makatulong upang ma-relax ang mga ito.
+        
+         * Kung ang iyong tiyan spasms ay sanhi ng dehydration, maaaring makatulong s aiyo ang pag inom ng electrolyte. Subukang uminom ng sports drink tulad ng  Gatorade o pagkain ng saging. Mag-iingat, gayunpaman, kung mayroon kang kasaysayan ng pagkabigo sa bato, dahil ang ilang mga electrolyte, lalo na ang potasa, ay maaaring tumaas sa mga mapanganib na antas na may mga suplemento.
+        `
+    ]),
+    encodeMemory([
+        `* ano * (kainin|inumin|bilhin) * suka * `,
+    ],[
+        `subukang kumain ng maliit na dami ng matatabang pagkain. Subukan ang mga pagkain tulad ng saging, kanin, applesauce, dry toast, soda crackers (ang mga pagkaing ito ay tinatawag na BRAT diet).`
+    ]),
+    encodeMemory([
+        `* ano * pagkain * (iwas| (huwag|hindi) * (kainin|inumin|bilhin)) * nausea *`,
+    ],[
+        `Kumain ng magaan o matabang na pagkain (tulad ng saltine crackers o plain bread).`
+    ]),
+    encodeMemory([
+        `* bakit * magpakulo * `,
+    ],[
+        `Ang pagpapakulo ay ginagawa upang patayin ang mga pathogen bacteria, virus at protozoa. Ang kumukulong tubig ay dapat na kumukulo nang hindi bababa sa dalawang (2) minuto`
+    ]),
+    encodeMemory([
+        `* bakit * magpakulo * tubig * `,
+    ],[
+        `* Kung ang tubig ay malabo, hayaan mo muna ito at salain sa pamamagitan ng malinis na tela, papel na kumukulong tuwalya ng tubig, o filter ng kape.
+ 
+        * Pakuluan ang tubig nang hindi bababa sa isang minuto. Sa mga altitude na higit sa 5,000 talampakan (1,000 metro), pakuluan ang tubig sa loob ng tatlong minuto.
+        
+        * Hayaang lumamig ang tubig nang natural at itabi ito sa malinis na lalagyan na may mga takip.
+        
+        * Upang mapabuti ang patag na lasa ng pinakuluang tubig, magdagdag ng isang kurot ng asin sa bawat litro o litro ng tubig, o ibuhos ang tubig mula sa isang malinis na lalagyan patungo sa isa pa nang maraming beses.
+        `
+    ]),
+    encodeMemory([
+        `* hakbang * disinfect *`,
+        `* paano * disinfect * tubig *`,
+    ],[
+        `1. Maghanda ng stock solution sa pamamagitan ng pagtunaw ng 1 antas ng powdered Chlorine compound (65% hanggang 75%) sa 1 litro ng tubig.
+
+        2. Magdagdag ng 2 kutsarita ng stock solution sa 5 galon (20 litro) ng tubig.Paghaluin nang maigi at hayaang tumayo ng hindi bababa sa 30 minuto bago gamitin.
+        `
+    ]),
+    encodeMemory([
+        `* ano * (bilhin|gamitin) * disinfect * tubig *`,
+    ],[
+        `you can use chlorine`
+    ]),
+]
+
+let data = 
+[].concat(section16)
+    .concat(section18)
+    .concat(section20)
+
+
+export{
+    data
+}
