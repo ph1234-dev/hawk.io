@@ -1,5 +1,4 @@
 import Blackbox from './engine/blackbox'
-import NaiveBayes from './naive-bayes'
 import {
     diarrheaEngRules,
     diarrheaFilRules,
@@ -12,17 +11,26 @@ import {
     influenzaMagRules 
 } from './rules/influenza/rules-influenza'
 
+import LanguageClassifier from './language-identifier'
 
 export default class Engine{
 
     constructor(){
-        this.nb = new NaiveBayes() 
         this.langSupported = ['eng','fil','mag']
-        this.memory = {}
         
-        // 
+        this.memory = {}
         this.langSupported.forEach(lang=>{
             this.memory[lang] = new Blackbox()
+        })
+
+        this.classifier = new LanguageClassifier()
+
+        
+        // stores the documents for eng,fil,mag
+        // this is needed for the machine learning
+        this.document = {}
+        this.langSupported.forEach(lang=>{
+            this.document[lang] = new Array()
         })
 
         console.log(`Starting Engine`)
@@ -47,7 +55,33 @@ export default class Engine{
         magMemory.transformReferences()
         magMemory.sortReferences()
 
+      
+
+        this.load_data()
     }
+
+
+    async load_data(){
+
+        let step = new Promise((resolve,reject)=>{
+            // set cluster data 
+            this.classifier.insertCluster(diarrheaEngRules,"eng")
+            this.classifier.insertCluster(influenzaEngRules,"eng")
+            this.classifier.insertCluster(diarrheaFilRules,"fil")
+            this.classifier.insertCluster(influenzaFilRules,"fil")
+            this.classifier.insertCluster(diarrheaEngRules,"mag")
+            this.classifier.insertCluster(influenzaMagRules,"mag")
+            resolve(true)
+        }).then((val)=>{
+            // this.classifier.printClassifierPropertyValues()
+
+            this.classifier.getClassfication("pamasa ko sa gamot")
+            this.classifier.getClassfication("ngen gamot sa diarrhea")
+        })
+
+        await step
+    }
+
 
     getReply(msg){
         let reply = `Unimplemented: Engine reply for msg >> ${msg}`
@@ -70,6 +104,5 @@ export default class Engine{
     // remember we are only removing features
     // that exist in eng, fil, mag
     
-
 
 }

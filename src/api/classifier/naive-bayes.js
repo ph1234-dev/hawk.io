@@ -26,11 +26,16 @@ export default class NaiveBayes{
     // data must be cleaned first
     train(trainingData){
 
+
+        // console.log(`Training data recieved: ${JSON.stringify(trainingData)}`)
         // will only work if training data is array
         if ( !Array.isArray(trainingData) ) return
 
 
+        // console.log("IM HERE")
         trainingData.forEach(val=>{
+
+            // console.log(`NB trianing data: ${JSON.stringify(val)}`)
 
             let td_class = val.class
             
@@ -130,6 +135,7 @@ export default class NaiveBayes{
         console.log(`predicting: ${term_vector}`)
 
         let results = {}
+        let pool = []
 
         let classes = Object.keys(this.class_terms)
         classes.forEach(item_class=>{
@@ -146,9 +152,24 @@ export default class NaiveBayes{
             console.log(`Probability [${item_class}]: ${probability}`)
 
             results[item_class] = probability
+            pool.push({
+                class: item_class,
+                probability: probability
+            })
         })
 
+        // console.log(`Da>> ${pool}`)
 
+        // scan for the max value
+        let biggest = pool[0]
+        for ( let i = 1 ; i < pool.length ; i++){
+            let current = pool[i]
+            if ( current.probability > biggest.probability ){
+                biggest = current
+            }
+        }
+
+        console.log(`Predicted Language for ${JSON.stringify(data)} is ${biggest.class}`)
         return results
     }
 
@@ -157,11 +178,12 @@ export default class NaiveBayes{
         return{
             training_data: ()=>{
                 console.log("Training Data")
-                // console.log(this.trainingData)
             },
             vocabulary: ()=>{
-                console.log("Vocabulary")
+                console.log("Vocabulary Property")
+                console.log(`Total vocabulary: ${this.vocabulary.length}`)
                 console.log(this.vocabulary)
+                // return this.vocabulary.length
             },
             prior_probabilities: ()=>{
                 console.log("Prior probabilities")
@@ -174,10 +196,6 @@ export default class NaiveBayes{
             class_frequencies: ()=>{
                 console.log("Class Frequencies")
                 console.log(this.class_frequencies)
-            },
-            total_trainingData: ()=>{
-                console.log(`Total Training data: ${this.trainingData.length}`)
-
             },
             class_terms: ()=>{
                 console.log("Class Terms")

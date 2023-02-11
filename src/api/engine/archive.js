@@ -90,7 +90,7 @@ class ARCHIVE{
     // return term
 
     if ( term.match(`${this.TRIGGERS.SKIP_SUBSTITUTION}(\\w+)`)){
-      console.log(`Found >> ${term} << Must skip`)
+      // console.log(`Found >> ${term} << Must skip`)
       return term
     }
 
