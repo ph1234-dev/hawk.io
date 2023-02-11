@@ -17,9 +17,9 @@ export default class NaiveBayes{
         // en: [ a, b, c ] fi: [ a, b, c]
         this.class_terms = {}
 
-
-        // stores the term frequency within the class
-        this.class_term_frequency_map = {}
+        // store likelihoods for faster computation
+        // if item not in class make it zero
+        this.class_term_likelihood = {}
     }
 
     // accept array
@@ -42,6 +42,7 @@ export default class NaiveBayes{
             // creat class if not present
             if ( !(td_class in this.class_terms) ){
                 this.class_terms[td_class] = []
+                this.class_term_likelihood[td_class] = []
             }
 
 
@@ -62,6 +63,7 @@ export default class NaiveBayes{
 
                 // push term into class 
                 this.class_terms[td_class].push(term)
+
             })
 
             //store class frequencies of class in the document
@@ -82,7 +84,17 @@ export default class NaiveBayes{
             this.prior_probabilities[item_class] = probability
         }
      
-    
+        // compute prior conditional probabilities of the terms
+        trainingData.forEach(td=>{
+            let term_vector = td.data.split(/\s+/)
+            let td_class = td.class
+            term_vector.forEach(term=>{
+                this.class_term_likelihood[td_class].push({
+                    term: term,
+                    likelihood: this.compute_term_likelihood(term,td_class)  
+                })
+            })
+        })
     }
 
     // reference
@@ -96,10 +108,9 @@ export default class NaiveBayes{
         // else 
         //      countwc = 0
 
+        // count how many times does "term exist in category"
+        let countwc = term_vector.filter(e=> e == term).length
 
-        let tf = this.class_term_frequency_map[category][term] 
-        let countwc = tf ? tf : 0
-         
         // laplace factor
         let a = 1
 
@@ -114,37 +125,6 @@ export default class NaiveBayes{
         let likelihood = (countwc + a)/(countc + (a * V))
         // console.log(`P(${term}|${category}) = ${likelihood}`)
         return likelihood
-
-    }
-
-
-    buildTermProbabilityMap(){
-        console.log('Building Term Probability Map')
-
-       
-
-        let classes = Object.keys(this.class_terms)
-        
-        // // set environment fo example english = {}
-        classes.forEach(_class=>{
-            this.class_term_frequency_map[_class] = {}
-            let shallow_reference = this.class_terms[_class]
-
-            shallow_reference.forEach(term=>{
-                // term count
-                let term_count = shallow_reference.filter(e=> e == term).length
-                this.class_term_frequency_map[_class][term] = term_count
-            })
-            
-        })
-
-
-        // compute likelihood
-
-        // classes.forEach(_class=>{
-        //     console.log(`Term Probability Lang , `, _class)
-        //     console.log(this.classTermProbabilityMap[_class])
-        // })
     }
 
 
@@ -152,7 +132,7 @@ export default class NaiveBayes{
         
         let term_vector = data.split(/\s+/)
 
-        console.log(`\n\nPredicting Language: ${data}`)
+        console.log(`predicting: ${term_vector}`)
 
         let results = {}
         let pool = []
@@ -178,17 +158,19 @@ export default class NaiveBayes{
             })
         })
 
+        // console.log(`Da>> ${pool}`)
+
         // scan for the max value
-        let argmax_value = pool[0]
+        let biggest = pool[0]
         for ( let i = 1 ; i < pool.length ; i++){
             let current = pool[i]
-            if ( current.probability > argmax_value.probability ){
-                argmax_value = current
+            if ( current.probability > biggest.probability ){
+                biggest = current
             }
         }
 
-        console.log(`Predicted based on argmax: ${argmax_value.class}`)
-        return argmax_value.class
+        console.log(`Predicted Language for ${JSON.stringify(data)} is ${biggest.class}`)
+        return results
     }
 
     print(){
@@ -219,57 +201,12 @@ export default class NaiveBayes{
                 console.log("Class Terms")
                 console.log(this.class_terms)
             },
-            class_term_probability_map: ()=>{
-                console.log("Class Term Probability Map")
-                console.log(this.class_term_frequency_map)
+            class_term_likelihood: ()=>{
+                console.log("Class Term Likelihoods")
+                console.log(this.class_term_likelihood)
             }
         }
     }
 }
 
 
-// NODE JS TESTING UNCOMMENT
-// WATCH THIS REFERENCE https://www.youtube.com/watch?v=km2LoOpdB3A
-/**
-//sample training data
-let trainingData = [
-    {data: "chinese beijing chinese", class: "c"},
-    {data: "chinese chinese shanghai",class: "c"},
-    {data: "chinese macao", class: "c"},
-    {data: "tokyo japan chinese", class: "j"},
-]
-
-let testData = "chinese chinese chinese tokyo japan"
-
-
-let nb = new NaiveBayes()
-nb.train(trainingData)
-nb.buildTermProbabilityMap()
-// nb.print().training_data()
-// nb.print().vocabulary()
-
-// nb.print().prior_probabilities()
-// nb.print().class_frequencies()
-// nb.print().classes()
-// nb.print().class_terms()
-nb.predict(testData)
-
-
-//TEST SET 
-// // nb.compute_term_likelihood("chinese","c")
-// console.log(`Term likelihood of chinese of class c`, nb.compute_term_likelihood("chinese","c") )
-// // nb.compute_term_likelihood("tokyo","c")
-// console.log(`Term likelihood of tokyo of class c`, nb.compute_term_likelihood("tokyo","c") )
-// // nb.compute_term_likelihood("japan","c")
-// console.log(`Term likelihood of japan of class c`, nb.compute_term_likelihood("japan","c") )
-// // nb.compute_term_likelihood("japan","c")
-// console.log(`Term likelihood of japan of class j`, nb.compute_term_likelihood("japan","j") )
-// // nb.compute_term_likelihood("macao","c")
-// console.log(`Term likelihood of macao of class c`, nb.compute_term_likelihood("macao","c") )
-// // nb.compute_term_likelihood("hello","c")
-// console.log(`Term likelihood of hello of class c`, nb.compute_term_likelihood("hello","c") )
-
-// let res  = nb.predict(testData)
-// console.log("Result vector: " + JSON.stringify(res))
-
- */

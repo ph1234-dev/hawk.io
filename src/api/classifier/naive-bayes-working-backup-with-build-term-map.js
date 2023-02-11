@@ -1,5 +1,6 @@
 // Multinomial Naive Bayes
-export default class NaiveBayes{
+// export default class NaiveBayes{
+class NaiveBayes{
 
     constructor(){
         // You can show this object later
@@ -17,9 +18,12 @@ export default class NaiveBayes{
         // en: [ a, b, c ] fi: [ a, b, c]
         this.class_terms = {}
 
+        // store likelihoods for faster computation
+        // if item not in class make it zero
+        this.class_term_likelihood = {}
 
         // stores the term frequency within the class
-        this.class_term_frequency_map = {}
+        this.classTermProbabilityMap = {}
     }
 
     // accept array
@@ -42,6 +46,7 @@ export default class NaiveBayes{
             // creat class if not present
             if ( !(td_class in this.class_terms) ){
                 this.class_terms[td_class] = []
+                this.class_term_likelihood[td_class] = []
             }
 
 
@@ -82,7 +87,17 @@ export default class NaiveBayes{
             this.prior_probabilities[item_class] = probability
         }
      
-    
+        // compute prior conditional probabilities of the terms
+        // trainingData.forEach(td=>{
+        //     let term_vector = td.data.split(/\s+/)
+        //     let td_class = td.class
+        //     term_vector.forEach(term=>{
+        //         this.class_term_likelihood[td_class].push({
+        //             term: term,
+        //             likelihood: this.compute_term_likelihood(term,td_class)  
+        //         })
+        //     })
+        // })
     }
 
     // reference
@@ -96,8 +111,20 @@ export default class NaiveBayes{
         // else 
         //      countwc = 0
 
+        // console.log("Categories: ",this.classes)
+        // console.log("Checking category: ", category)
+        // console.log("Checking term: ", term)
+        // count how many times does "term exist in category"
 
-        let tf = this.class_term_frequency_map[category][term] 
+
+        // let storedFrequency = this.classTermProbabilityMap[category][term] 
+        // if ( storedFrequency ){
+        //     countwc = this.classTermProbabilityMap[category][term]
+        // }else{
+        //     countwc=0
+        // }
+
+        let tf = this.classTermProbabilityMap[category][term] 
         let countwc = tf ? tf : 0
          
         // laplace factor
@@ -127,13 +154,13 @@ export default class NaiveBayes{
         
         // // set environment fo example english = {}
         classes.forEach(_class=>{
-            this.class_term_frequency_map[_class] = {}
+            this.classTermProbabilityMap[_class] = {}
             let shallow_reference = this.class_terms[_class]
 
             shallow_reference.forEach(term=>{
                 // term count
                 let term_count = shallow_reference.filter(e=> e == term).length
-                this.class_term_frequency_map[_class][term] = term_count
+                this.classTermProbabilityMap[_class][term] = term_count
             })
             
         })
@@ -152,7 +179,7 @@ export default class NaiveBayes{
         
         let term_vector = data.split(/\s+/)
 
-        console.log(`\n\nPredicting Language: ${data}`)
+        console.log(`predicting: ${term_vector}`)
 
         let results = {}
         let pool = []
@@ -178,17 +205,19 @@ export default class NaiveBayes{
             })
         })
 
+        // console.log(`Da>> ${pool}`)
+
         // scan for the max value
-        let argmax_value = pool[0]
+        let biggest = pool[0]
         for ( let i = 1 ; i < pool.length ; i++){
             let current = pool[i]
-            if ( current.probability > argmax_value.probability ){
-                argmax_value = current
+            if ( current.probability > biggest.probability ){
+                biggest = current
             }
         }
 
-        console.log(`Predicted based on argmax: ${argmax_value.class}`)
-        return argmax_value.class
+        console.log(`Predicted Language for ${JSON.stringify(data)} is ${biggest.class}`)
+        return results
     }
 
     print(){
@@ -219,18 +248,20 @@ export default class NaiveBayes{
                 console.log("Class Terms")
                 console.log(this.class_terms)
             },
+            class_term_likelihood: ()=>{
+                console.log("Class Term Likelihoods")
+                console.log(this.class_term_likelihood)
+            },
             class_term_probability_map: ()=>{
                 console.log("Class Term Probability Map")
-                console.log(this.class_term_frequency_map)
+                console.log(this.classTermProbabilityMap)
             }
         }
     }
 }
 
 
-// NODE JS TESTING UNCOMMENT
-// WATCH THIS REFERENCE https://www.youtube.com/watch?v=km2LoOpdB3A
-/**
+// For NodeJS
 //sample training data
 let trainingData = [
     {data: "chinese beijing chinese", class: "c"},
@@ -255,7 +286,7 @@ nb.buildTermProbabilityMap()
 nb.predict(testData)
 
 
-//TEST SET 
+/**TEST SET */
 // // nb.compute_term_likelihood("chinese","c")
 // console.log(`Term likelihood of chinese of class c`, nb.compute_term_likelihood("chinese","c") )
 // // nb.compute_term_likelihood("tokyo","c")
@@ -272,4 +303,4 @@ nb.predict(testData)
 // let res  = nb.predict(testData)
 // console.log("Result vector: " + JSON.stringify(res))
 
- */
+// nb.print().class_term_likelihood()
