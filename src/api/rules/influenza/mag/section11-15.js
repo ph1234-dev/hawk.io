@@ -405,7 +405,7 @@ let section11 = [
         "Su antitussives a gamot na batok na kapakayan a kapamasa apya da den resita nin ugayd na aw na to na aden bon resita nin"
     ]),
     encodeMemory([
-        "* endaw *  ((!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * gamit * ",
+        "* endaw *  (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * gamit * ",
         "* endaw * gamit * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * "
     ],[
         "Nya ba gamot a na pegkanen upama ka matitik I batok nu taw sabap sa allergy o kaped a sakit a baga. Su antitussives na pakagamot bun sa post-viral cough o di den a nan pagenda a batok sabap sa virus infection."

@@ -16,7 +16,18 @@ import LanguageClassifier from './language-identifier'
 export default class Engine{
 
     constructor(){
-        this.langSupported = ['eng','fil','mag']
+
+        this.LANG = {
+            ENG: 'eng',
+            FIL: 'fil',
+            MAG: 'mag'
+        }
+
+        this.langSupported = [
+            this.LANG.ENG,
+            this.LANG.FIL,
+            this.LANG.MAG,
+            ]
         
         this.memory = {}
         this.langSupported.forEach(lang=>{
@@ -25,7 +36,7 @@ export default class Engine{
 
         this.classifier = new LanguageClassifier()
 
-        
+
         // stores the documents for eng,fil,mag
         // this is needed for the machine learning
         this.document = {}
@@ -36,20 +47,20 @@ export default class Engine{
         console.log(`Starting Engine`)
         
         // load diarrhea rules
-        let engMemory = this.memory['eng']
+        let engMemory = this.memory[this.LANG.ENG]
         engMemory.store().memories(diarrheaEngRules)
         engMemory.store().memories(influenzaEngRules)
         engMemory.transformReferences()
         engMemory.sortReferences()
 
-        let filMemory = this.memory['fil']
+        let filMemory = this.memory[this.LANG.FIL]
         filMemory.store().memories(diarrheaFilRules)
         filMemory.store().memories(influenzaFilRules)
         filMemory.transformReferences()
         filMemory.sortReferences()
 
         
-        let magMemory = this.memory['mag']
+        let magMemory = this.memory[this.LANG.MAG]
         magMemory.store().memories(diarrheaMagRules)
         magMemory.store().memories(influenzaMagRules)
         magMemory.transformReferences()
@@ -65,27 +76,54 @@ export default class Engine{
 
         let step = new Promise((resolve,reject)=>{
             // set cluster data 
-            this.classifier.insertCluster(diarrheaEngRules,"eng")
-            this.classifier.insertCluster(influenzaEngRules,"eng")
-            this.classifier.insertCluster(diarrheaFilRules,"fil")
-            this.classifier.insertCluster(influenzaFilRules,"fil")
-            this.classifier.insertCluster(diarrheaEngRules,"mag")
-            this.classifier.insertCluster(influenzaMagRules,"mag")
+            this.classifier.insertCluster(diarrheaEngRules,this.LANG.ENG)
+            this.classifier.insertCluster(influenzaEngRules,this.LANG.ENG)
+            this.classifier.insertCluster(diarrheaFilRules,this.LANG.FIL)
+            this.classifier.insertCluster(influenzaFilRules,this.LANG.FIL)
+            this.classifier.insertCluster(diarrheaEngRules,this.LANG.MAG)
+            this.classifier.insertCluster(influenzaMagRules,this.LANG.MAG)
             resolve(true)
         }).then((val)=>{
             // this.classifier.printClassifierPropertyValues()
 
-            this.classifier.getClassfication("pamasa ko sa gamot")
-            this.classifier.getClassfication("ngen gamot sa diarrhea")
+            this.classifier.buildTermProbabilityMap()
+
+            // this.classifier.getClassfication("pamasa ko sa gamot")
+            // this.classifier.getClassfication("ngen gamot sa diarrhea")
+
+            
         })
 
         await step
+
+        // let testa = this.classifier.getPrediction("pamasa ko gamot")
+        // console.log(`Test A |"pamasa ko gamot"|  class:: `,testa)
+        // let testb = this.classifier.getPrediction("saan ako pwede mama sa gamot")
+        // console.log(`Test A |"saan ako pwede mama sa gamot"|  class:: `,testb)
+    
+        // let testc = this.classifier.getPrediction("i need to buy medicine")
+        // console.log(`Test A |"i need to buy medicine"|  class:: `,testc)
+    
     }
 
 
-    getReply(msg){
-        let reply = `Unimplemented: Engine reply for msg >> ${msg}`
-        reply = this.memory['eng'].retrieveMemory(msg)
+    async getReply(msg){
+        // let reply = `Unimplemented: Engine reply for msg >> ${msg}`
+        // reply = this.memory['eng'].retrieveMemory(msg)
+        // return reply
+
+        let reply = "Not found"
+
+        let lang
+        let identifyLanguage = new Promise((resolve,reject)=>{
+            lang = this.classifier.getPrediction(msg)
+            resolve(lang)
+        }).then((response)=>{
+            reply = this.memory[lang].retrieveMemory(msg)
+        })
+
+        await identifyLanguage
+
         return reply
     }
 

@@ -33,8 +33,10 @@ export default class LanguageClassifier{
             // step1 replace non-word with space
             doc = doc.replace(/\W/g, " ").replace(/\s\s+/g, ' ')
             
-            // step2 lowercase
+            // step2 lowercase to reduce reduncant
             doc = doc.toLowerCase()
+
+            // step3 is to ignore the
 
 
             let data = new AnnotatedDocument(
@@ -69,10 +71,13 @@ export default class LanguageClassifier{
     }
 
 
-    getClassfication(msg){
+    buildTermProbabilityMap(){
+        this.nb.buildTermProbabilityMap()
+    }
+
+    getPrediction(msg){
         // find max
-        console.log(`Predicting from langauge-identifier`)
-        this.nb.predict(msg)
+        return this.nb.predict(msg)
     }
 
 

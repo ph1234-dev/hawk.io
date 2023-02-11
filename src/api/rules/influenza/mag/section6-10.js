@@ -20,7 +20,7 @@ let section6 = [
         "Lenek ka sa walay amayka aden sakit nengka para di den makaalat I sakit a nan sa kaped nengka."
     ]),
     encodeMemory([
-        "* duken * taguban * (ngilong|ngali * (influenza|batok|balen) *  influenza *"
+        "* duken * taguban * (ngilong|ngali) * (influenza|batok|balen) *  influenza *"
     ],[
         "Tagubi ka I ngali abpeg ngilong nengka sa tissue upama ka pembatuken ka o pembalen ka enggu di maalat I sakit a nan sa kaped nengka."
     ]),
