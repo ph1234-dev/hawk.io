@@ -168,7 +168,21 @@ export default class NaiveBayes{
                 term_product *= this.compute_term_likelihood(term,item_class)
             })
 
+            // the default setup is to multiply
             let probability = prior * term_product
+
+            // now we apply the log trick
+            prior = Math.log(this.prior_probabilities[item_class])
+            let term_sum = 0
+            term_vector.forEach(term=>{
+                // console.log(`\t${term} >> ${this.compute_term_likelihood(term,item_class)}`)
+                term_sum += Math.log(
+                    this.compute_term_likelihood(term,item_class)
+                )
+            })
+
+            probability += term_sum
+
             console.log(`Probability [${item_class}]: ${probability}`)
 
             results[item_class] = probability
