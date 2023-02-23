@@ -33,10 +33,10 @@ let section16 = [
         "“Don’t use a nasal decongestant for more than two to three days, or else the nose becomes addicted to it.”. Besides an increased heart rate is a possible side effect of decongestant use, so these drugs should be avoided if you have high blood pressure, heart disease, or an irregular heartbeat."
     ]),
     encodeMemory([
-        "* who * not (take|use) * on_the_counter * influenza _drug *",
-        "* who * not (take|use) * influenza _drugs *",
+        "* who * not (take|use) * on_the_counter * influenza_drug *",
+        "* who * not (take|use) * influenza_drugs *",
         "* who * avoid * on_the_counter * influenza_drug *",
-        "* who * avoid * influenza _drugs *",
+        "* who * avoid * influenza_drugs *",
         "* influenza_drugs * not (take|use) * (who|by) *",
         "* influenza_drugs * avoid * (who|by) *",    
     ],[
@@ -44,32 +44,11 @@ let section16 = [
     ]),
 ]
 
-let section17 = [
-    
-    encodeMemory([
-        ""
-    ],[
-        ""
-    ]),
-]
+let section17 = []
 
-let section18 = [
-    
-    encodeMemory([
-        ""
-    ],[
-        ""
-    ]),
-]
+let section18 = []
 
-let section19 = [
-    
-    encodeMemory([
-        ""
-    ],[
-        ""
-    ]),
-]
+let section19 = []
 
 let section20 = [
     

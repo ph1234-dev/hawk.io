@@ -31,7 +31,7 @@ let section6 = [
       `Saki na kapakay ko seka enggan sa mga ulaula o ngin gulan sa mga gamot endu ngen I pakairan sa sakit a nan upama ka aden ganggedam nengka. Kapakay ka bun lemu sa barangay health center, midsa sa doctor o nurse, o lu ka sa pendagang sa gamot.`,
     ]),
     encodeMemory([
-      `* edaw * kan * tagudo * `, 
+      `* endaw * kan * tagudo * `, 
     ],[
       `Endu di ka maka dalo, na nya mapya na kan ka bo lu sa mga pendagang a to na pamlimpyo endu mapya I kinaami nilan sa pegken a pendagangen nilan.`,
     ]),
@@ -102,11 +102,11 @@ let section8 = [
       `* duken * pegken_a_aden_lactose_nin * di * (inon|kan|pamasan) * tagudo *`, 
       `* duken * di * (inon|kan|pamasan) * pegken_a_aden_lactose_nin * tagudo *`, 
     ],[
-      `Upama ka di ka kapakyan pegkan sa gatas ka edtagudo ka na di namba mapya pegkanen. Upama ka edtagudo ka edaw I kinapasad nengka keman sa aden gatas nin e telni ka I kakan sa nan`,
+      `Upama ka di ka kapakyan pegkan sa gatas ka edtagudo ka na di namba mapya pegkanen. Upama ka edtagudo ka tupan na kinapasad nengka keman sa aden gatas nin e telni ka I kakan sa nan`,
     ]),
     encodeMemory([
-      `* duken * pegken_a_aden_fructose _nin * di * (inon|kan|pamasan) * tagudo *`, 
-      `* duken * di * (inon|kan|pamasan) * pegken_a_aden_ fructose _nin * tagudo *`, 
+      `* duken * pegken_a_aden_fructose_nin * di * (inon|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inon|kan|pamasan) * pegken_a_aden_fructose_nin * tagudo *`, 
     ],[
       `Aden mga tao a galunsanan I kapedtagudo nilan kagina nakakan silan sa pegken a madakel a benel I dalem nin a fructose. Pangingati ka bo I namba.`,
     ]),
@@ -118,7 +118,7 @@ let section8 = [
     ]),
     encodeMemory([
       `* duken * pegken_a_malana * di * (inon|kan|pamasan) * tagudo *`, 
-      `* duken * di * (inon|kan|pamasan) * pegken_a_ malana * tagudo *`, 
+      `* duken * di * (inon|kan|pamasan) * pegken_a_malana * tagudo *`, 
     ],[
       `Namba malana ged a pegken na makagkasebod, endu malgen I kapaukit nin sa pegken sa tinae na tao. Da ka ged pegkan sa nan upamaka ka pedtagudo ka.`,
     ]),

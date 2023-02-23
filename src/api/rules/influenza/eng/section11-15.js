@@ -38,7 +38,7 @@ let section11 = [
         "Antihistamines block the effects of a substance called histamine in your body."
     ]),
     encodeMemory([
-        "* when * ( not  (take|use) | avoid ) *  (!antihistamines?|benadryl|citerizine) *"
+        "* when * ( not (take|use) | avoid ) *  (!antihistamines?|benadryl|citerizine) *"
     ],[
         "Most people can safely take antihistamines. However, people who are pregnant, breastfeeding, young child, taking other medicines, have underlying conditions such as heart disease, liver disease, kidney disease or epilepsy may need to be cautious when taking this."
     ]),
@@ -65,23 +65,23 @@ let section11 = [
         "When taking this medicine, try to avoid alcohol, sedatives, and tranquilizers, due to increased risk of drowsiness. It may cause Central nervous system depression. So avoid activities requiring mental alertness. Be careful when patient has hepatic or renal impairment. Same with the elderly as they are more sensitive to adverse effects."
     ]),
     encodeMemory([
-        "* (what|how) *  (!antihistamines?|benadryl|citerizine) * price *"
+        "* (what|how) * (!antihistamines?|benadryl|citerizine) * price *"
     ],[
         "The price range for antihistamine varies from pharmacy to pharmacy. Antihistamines such as citerezine (10mg) costs around 15 pesos (according to watsons pharmacy). Benadryl , on the otherhand cost around 41 pesos for one tablet."
     ]),
     encodeMemory([
-        "* what * forms *  (!antihistamines?|benadryl|citerizine) *"
+        "* what * forms * (!antihistamines?|benadryl|citerizine) *"
     ],[
         "Antihistamines come in several forms including liquids, lotions, syrups, gels, eyedrops, tablets, capsules, creams, and suppositories"
     ]),
     encodeMemory([
-        "* what * alternative *  (!antihistamines?|benadryl|citerizine) * "
+        "* what * alternative * (!antihistamines?|benadryl|citerizine) * "
     ],[
         "Try taking Ginger. According to Sinus and Allergy Wellness Center, it is a natural histamine, potent antiviral agent and an immute booster. Ginger is a safe and highly effective herb that soothes the digestive system and improves circulation. You can make some ginger tea to alleviate nasal congestion and headaches. While you sip your tea, inhale the steam coming out of your cup. Also, try to use it with other herbs, such as turmeric, which is another powerful natural healer."
     ]),
     // analgesics rule 20 above
     encodeMemory([
-        "* what * generic *  (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen) *"
+        "* what * generic * (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen) *"
     ],[
         "Some of the generic names available are paracetamol, acetaminophen, and aspirin."
     ]),
@@ -109,13 +109,13 @@ let section11 = [
         "Over-the-counter painkillers available from pharmacies, such as ibuprofen or acetaminophen (paracetamol), can relieve acute pain. Their effectiveness will depend on things like the type and severity of the pain and the dose of the medication. Painkillers that are available without a prescription have been approved for the treatment of mild to moderate pain. They shouldn't be used for more than a few days in a row, and the specified maximum daily dose shouldn't be exceeded."
     ]),
     encodeMemory([
-        "* how *  (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen)  * work *",
-        "* (why|how) * analgesics? * treat  *"
+        "* how * (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen) * work *",
+        "* (why|how) * analgesics? * treat *"
     ],[
         "There are two major groups of analgesics: anti-inflammatory analgesics and opioids. Anti-inflammatory drugs work by reducing inflammation (swelling) at the site of the pain. Examples include: Acetaminophen, Aspirin, and Non steroidal anti-inflammatory drugs such as ibuprofen and naproxen. Analgesic Opiods on the other hands works by chaning the brains perception of pain. Examples are Fentanyl, Hydrocodone, and Methadone."
     ]),
     encodeMemory([
-        "* when * ( not  (take|use) | avoid ) *  (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen)  *"
+        "* when * ( not (take|use) | avoid ) * (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen) *"
     ],[
         "According to WebMD , you should never take this medication for self-treatment of pain for longer than 10 days. You should not use this drug to self-treat a fever that lasts longer than 3 days. In these cases, consult a doctor because you may have a more serious condition"
     ]),
@@ -125,7 +125,7 @@ let section11 = [
         "Anti-inflammatory analgesics are generally safe. But they can cause side effects and complications, if you use them too often, for too long or in very large doses: Damage to internal organs such as liver or kidney, diarrhea or constipation, heart problems, hypersensitivity, nausea, upset stomach or heart burn, ringing in the ears, and stomach ulcers."
     ]),
     encodeMemory([
-        "* what * tips *  (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen) *"
+        "* what * tips * (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen) *"
     ],[
         "Take this medication by mouth. Drink a full glass of water (8 ounces/240 milliliters) with it unless your doctor tells you otherwise. Do not lie down for at least 10 minutes after you have taken this drug. If stomach upset occurs while you are taking this medication, you may take it with food or milk."
     ]),
@@ -135,31 +135,31 @@ let section11 = [
         "According to Muramed and Watsons pharmacy, paracetamol such as biogesic may start at 4 pesos. Meanwhile, aspirin can start at 3.50 pesos as listed by watsons pharmacy. You, however, cannot buy this without prescription and the prices may vary depending on where you bought these."
     ]),
     encodeMemory([
-        "* what * forms *  (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen)  *"
+        "* what * forms * (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen)  *"
     ],[
         "Analgesics are available in many forms such as films, liquid, nasal sprays patches, pills, tablets, capsules, and powder mix."
     ]),
     encodeMemory([
-        "* what * alternative *  (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen)  * "
+        "* what * alternative * (!analgesics?|paracetamol|biogesic|aspirin|acetaminophen) * "
     ],[
         `The Philippine Institute of Traditional and Alternative Healthcare has indicated that you can Ampalaya, Yerba Buena, ulasimang bato or pansit-pansitan, and guava has an analagesic effects.`
     ]),
     // nsaids names 
     encodeMemory([
-        "* what * generic *  (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *"
+        "* what * generic * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *"
     ],[
         "NSAID has generic names such as ibuprofen, naproxen, and aspirin which are mostly over the counter anti-inflammatory drugs"
     ]),
     encodeMemory([
-        "* what * branded *   (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)  *"
+        "* what * branded * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *"
     ],[
         "Advil is a known ibuprofen. Meanwhile, Flanax Forte is a known brand for Naproxen."
     ]),
     encodeMemory([
-        "* what * dosing *  (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)  *",
-        "* how * (take|use) *   (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)   *",
-        "* what * direction *   (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)  *",
-        "* how *   (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)  * (take|use) *",
+        "* what * dosing * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *",
+        "* how * (take|use) * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *",
+        "* what * direction * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *",
+        "* how * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)  * (take|use) *",
     ],[
         "Here are some of the dosages you can follow. For ibuprofen an (NSAID) the maximum single dose is 400mg. For the entire day, its 1200mg. For naproxen (NSAID) , you can take up to 500mg for single dose and 750mg for the entire day. For aspirin, also known as acetylsalicylic acid, you can take up to 1000mg with maximum daily dose of 3000mg for people under 65 and 200mg for people over 65years old."
     ]),
@@ -169,45 +169,45 @@ let section11 = [
         "Non-steroidal anti-inflammatory drugs (NSAIDs) are medicines that are widely used to relieve pain, reduce inflammation, and bring down a high temperature."
     ]),
     encodeMemory([
-        "* what *   (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)   * use  *"
+        "* what * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) * use *"
     ],[
         "They're often used to relieve symptoms of headaches, painful periods, sprains and strains, colds and flu, arthritis, and other causes of long-term pain"
     ]),
     encodeMemory([
-        "* how *  (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)   * work *",
-        "* (why|how) * nsaids?  * treat *"
+        "* how * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) * work *",
+        "* (why|how) * nsaids? * treat *"
     ],[
         "NSAIDs block a specific enzyme called cyclooxygenase (or COX) used by the body to make prostaglandins. By reducing production of prostaglandins, NSAIDs help relieve the discomfort of fever and reduce inflammation and the associated pain."
     ]),
     encodeMemory([
-        "* when * ( not  (take|use) | avoid ) *    (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)   *"
+        "* when * ( not (take|use) | avoid ) * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *"
     ],[
         "NSAIDs are generally not recommended for people with kidney disease, heart failure, or cirrhosis, or for people who take diuretics. Some patients who are allergic to aspirin may be able to take selective NSAIDs safely, although this should be discussed in advance with a health care provider."
     ]),
     encodeMemory([
-        "* what * side !effects? *   (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)   *"
+        "* what * side !effects? * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *"
     ],[
         "Like all medicines, there's a risk of side effects from NSAIDs. These tend to be more common if you're taking high doses for a long time, or you're elderly or in poor general health. Over-the-counter NSAIDs generally have fewer side effects than stronger prescription medicines. The possible side effects include indigestions, stomach aches, stomach ulcers, headaches, drowsiness, dizziness, allergic reactions, it can also cause problems with your liver, kidneys or heart circulation, such as heart failure, heart attacks and strokes"
     ]),
     encodeMemory([
-        "* what * tips *    (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)  *"
+        "* what * tips * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *"
     ],[
         "Do not mix one NSAID with another. For example, don't take aspirin or ibuprofen with any other nonsteroidal anti-inflammatory drugs."
     ]),
     encodeMemory([
-        "* (what|how) * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)   * price *"
+        "* (what|how) * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) * price *"
     ],[
         "Based on data from watsons, this medicine usually starts at 8php per piece"
     ]),
     encodeMemory([
-        "* what * forms *    (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)   *"
+        "* what * forms * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) *"
     ],[
         `
         Common NSAIDs are usually in forms of capsules, tablets creams or gels as NSAIDs can cause troublesome side effects, alternatives are often recommended first.
         `
     ]),
     encodeMemory([
-        "* what * alternative * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol)   * "
+        "* what * alternative * (!nsaids?|ibuprofen|naproxen|advil|mortin|aspirin|alaxan|medicol) * "
     ],[
         "The main alternative for pain relief is paracetamol, which is available over the counter and is safe for most people to take."
     ]),
@@ -238,38 +238,38 @@ let section11 = [
         `
     ]),
     encodeMemory([
-        "* what * is *  (!decongestants?|pseudophedrine|sudafed) *"
+        "* what * is * (!decongestants?|pseudophedrine|sudafed) *"
     ],[
         "Decongestants are medicines that relieve congestion by reducing swelling, inflammation and mucus formation within the nasal passages or the eye.  They have no other effect on symptoms such as a runny nose or sneezing."
     ]),
     encodeMemory([
-        "* what * (!decongestants?|pseudophedrine|sudafed) * use  *",
-        "* (why|how) *  decongestants?  * treat *"
+        "* what * (!decongestants?|pseudophedrine|sudafed) * use *",
+        "* (why|how) * decongestants? * treat *"
     ],[
         "Decongestants are medicines that help relieve a congested (stuffy) nose. The congestion can be caused by a cold virus or by the flu, sinusitis, or allergies"
     ]),
     encodeMemory([
-        "* how *  (!decongestants?|pseudophedrine|sudafed) * work *"
+        "* how * (!decongestants?|pseudophedrine|sudafed) * work *"
     ],[
         "Decongestants work by narrowing the blood vessels in your nose. Swollen tissue inside the nose shrinks, and air can pass through more easily."
     ]),
     encodeMemory([
-        "* when * ( not  (take|use) | avoid ) * (!decongestants?|pseudophedrine|sudafed) *"
+        "* when * ( not (take|use) | avoid ) * (!decongestants?|pseudophedrine|sudafed) *"
     ],[
         "Don’t take decongestants if you have high blood pressure that isn’t controlled. Taking decongestants can raise your blood pressure even if it is controlled or nearly normal. You may need to look for an alternative to decongestants. Don’t give decongestants to children younger than 6 years of age."
     ]),
     encodeMemory([
-        "* what * side !effects? * (!decongestants?|pseudophedrine|sudafed)  *"
+        "* what * side !effects? * (!decongestants?|pseudophedrine|sudafed) *"
     ],[
         "Like any medicine, decongestants can sometimes cause side effects. They can temporarily cause nervousness, dizziness, and sleeping problems. They can cause heart palpitations (feeling like your heart is racing) or higher blood pressure"
     ]),
     encodeMemory([
-        "* what * tips *  (!decongestants?|pseudophedrine|sudafed) *"
+        "* what * tips * (!decongestants?|pseudophedrine|sudafed) *"
     ],[
         "Decongestants may be taken orally to help relieve congestion that is affecting the nose, sinuses, and eyes or sprayed directly in the nose or instilled in the eye for a more local effect."
     ]),
     encodeMemory([
-        "* (what|how) *  (!decongestants?|pseudophedrine|sudafed) * price *"
+        "* (what|how) * (!decongestants?|pseudophedrine|sudafed) * price *"
     ],[
         "The price varies according to the form of the medicine. For example, for nasal sprays it starts with 90php, for drops around 78 (rose pharmacy website), and tablets like decolgen it starts with 6php (watsons)."
     ]),
@@ -279,27 +279,27 @@ let section11 = [
         "Decongestants are available as nose drops or nasal sprays, eye drops, and as tablets, capsules, and syrup."
     ]),
     encodeMemory([
-        "* what * alternative *  (!decongestants?|pseudophedrine|sudafed) * "
+        "* what * alternative * (!decongestants?|pseudophedrine|sudafed) * "
     ],[
         "Alternatives to oral decongestants are available. In the drug realm, antihistamines such as diphenhydramine (Benadryl), chlorpheniramine (Chlor-Trimeton), cetirizine (Zyrtec), and loratadine (Claritin) can help with a stuffy nose are safe for the hear"
     ]),
 
     // expectorants
     encodeMemory([
-        "* what * generic * (!expectorants?|guaifensin) *"
+        "* what * generic * (!expectorants?|guaifenesin) *"
     ],[
         "Guiafenesin and potassium iodide are examples of a generic expectorant "
     ]),
     encodeMemory([
-        "* what * branded * (!expectorants?|guaifensin) *"
+        "* what * branded * (!expectorants?|guaifenesin) *"
     ],[
         "some of the popular ones are Mucinex and Robitussin"
     ]),
     encodeMemory([
-        "* what * dosing * (!expectorants?|guaifensin) *",
-        "* how * (take|use) * (!expectorants?|guaifensin) *",
-        "* what * direction * (!expectorants?|guaifensin) *",
-        "* how * (!expectorants?|guaifensin) *"
+        "* what * dosing * (!expectorants?|guaifenesin) *",
+        "* how * (take|use) * (!expectorants?|guaifenesin) *",
+        "* what * direction * (!expectorants?|guaifenesin) *",
+        "* how * (!expectorants?|guaifenesin) *"
     ],[
         `For regular (short-acting) oral dosage forms (capsules, oral solution, syrup, or tablets) of guaifenesin:
         For cough: Adults can take 200 to 400 milligrams (mg) every four hours.
@@ -309,23 +309,23 @@ let section11 = [
         `
     ]),
     encodeMemory([
-        "* what * is * (!expectorants?|guaifensin) *"
+        "* what * is * (!expectorants?|guaifenesin) *"
     ],[
         "Expectorants are ingredients that increase airway secretions. They do this by increasing the water content of the secretions which decreases their stickiness, making them easier to cough up."
     ]),
     encodeMemory([
-        "* what * (!expectorants?|guaifensin) * use  *"
+        "* what * (!expectorants?|guaifenesin) * use *"
     ],[
         "You may take an expectorant to help relieve congestion if you have a cold or the flu. Expectorants are available as standalone drugs or as an ingredient in an all-in-one cold or flu medication."
     ]),
     encodeMemory([
-        "* how * (!expectorants?|guaifensin) * work *",
-        "* (why|how) * expectorants?  * treat *"
+        "* how * (!expectorants?|guaifenesin) * work *",
+        "* (why|how) * expectorants? * treat *"
     ],[
         "Expectorants lubricate your airway. This helps loosen up the mucus and make the secretions in your airway thinner. By loosening up the mucus, expectorants make your cough more productive. This makes it easier for you to cough up mucus effectively and clear your throat."
     ]),
     encodeMemory([
-        "* when * ( not  (take|use) | avoid ) * (!expectorants?|guaifensin) *"
+        "* when * ( not (take|use) | avoid ) * (!expectorants?|guaifenesin) *"
     ],[
         `You should talk to your healthcare provider before using an expectorant if you are pregnant or breastfeeding. If you have developed any type of allergic reaction or intolerance to expectorants in the past, you should not use these medications.
 
@@ -333,47 +333,47 @@ let section11 = [
         `
     ]),
     encodeMemory([
-        "* what * side !effects? * (!expectorants?|guaifensin) *"
+        "* what * side !effects? * (!expectorants?|guaifenesin) *"
     ],[
         "Expectorants do not commonly cause serious side effects. The most common side effects include dizziness, drowsiness, and rash."
     ]),
     encodeMemory([
-        "* what * tips * (!expectorants?|guaifensin) *"
+        "* what * tips * (!expectorants?|guaifenesin) *"
     ],[
         "Do not crush pills, and be sure to measure liquid formulations using the measuring tools provided with your medication. It is often recommended that you drink plenty of fluids when taking an expectorant."
     ]),
     encodeMemory([
-        "* (what|how) * (!expectorants?|guaifensin) * price *"
+        "* (what|how) * (!expectorants?|guaifenesin) * price *"
     ],[
         "At watsons, robitussin guaifenesin price starts at 92php. "
     ]),
     encodeMemory([
-        "* what * forms * (!expectorants?|guaifensin) *"
+        "* what * forms * (!expectorants?|guaifenesin) *"
     ],[
         "In general, expectorants are available over-the-counter (OTC) in liquid, pill, and tablet forms."
     ]),
     encodeMemory([
-        "* what * alternative * (!expectorants?|guaifensin) * "
+        "* what * alternative * (!expectorants?|guaifenesin) *"
     ],[
         "Natural expectorants are another option if you’re trying to loosen up mucus and relieve chest congestion. Natural expectorants include: Menthol, Ivyleaf extract, oral hydration ( drinking lots of water ) , steaming (inhaling warm moist air ) , and honey ( adding honey to drinks ) "
     ]),
 
     // antitussives
     encodeMemory([
-        "* what * generic * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *"
+        "* what * generic * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *"
     ],[
         "Dexthomethorphan and diphenhydramine are some of the common antitussives "
     ]),
     encodeMemory([
-        "* what * branded * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *"
+        "* what * branded * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *"
     ],[
         "Robitussin is one of them"
     ]),
     encodeMemory([
-        "* what * dosing * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *",
-        "* how * (take|use) * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *",
-        "* what * direction * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *",
-        "* how * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *"
+        "* what * dosing * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *",
+        "* how * (take|use) * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *",
+        "* what * direction * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *",
+        "* how * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *"
     ],[
         `For lozenge dosage form:
         For cough:
@@ -390,48 +390,48 @@ let section11 = [
         `
     ]),
     encodeMemory([
-        "* what * is * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *"
+        "* what * is * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *"
     ],[
         "Antitussives are prescription or over-the-counter drugs used for suppressing cough."
     ]),
     encodeMemory([
-        "* what * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) * use  *"
+        "* what * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) * use *"
     ],[
-        "They are typically used to treat a dry cough caused by allergies, respiratory illnesses, or infections.Antitussives can also treat post-viral cough, or a persistent cough that develops after an infection has resolved.  "
+        "They are typically used to treat a dry cough caused by allergies, respiratory illnesses, or infections.Antitussives can also treat post-viral cough, or a persistent cough that develops after an infection has resolved."
     ]),
     encodeMemory([
-        "* how * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) * work *",
-        "* (why|how) * antitussives?  * treat  *"
+        "* how * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) * work *",
+        "* (why|how) * antitussives? * treat *"
     ],[
         "Antitussives are thought to work by inhibiting a coordinating region for coughing located in the brain stem, disrupting the cough reflex arc; although the exact mechanism of action is unknown."
     ]),
     encodeMemory([
-        "* when * ( not  (take|use) | avoid ) * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *"
+        "* when * ( not (take|use) | avoid ) * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *"
     ],[
         "This medication is not safe for children under the age of 4 years."
     ]),
     encodeMemory([
-        "* what * side !effects? * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *"
+        "* what * side !effects? * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *"
     ],[
         "The most common side effects include nausea and drowsiness. Some patients may experience a rash or difficulty breathing. High doses may cause hallucinations and disassociation, and the drug has been reported to be used as a recreational drug"
     ]),
     encodeMemory([
-        "* what * tips * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *"
+        "* what * tips * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *"
     ],[
         "Take this medication by mouth with or without food with a full glass of water (8 ounces or 240 milliliters) or as directed by your doctor. "
     ]),
     encodeMemory([
-        "* (what|how) * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) * price *"
+        "* (what|how) * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) * price *"
     ],[
         "In southstar drug store, it dextromethorphan syrup cost starts at 113php. It watsons, its around 189php. It may vary though from other pharmacies"
     ]),
     encodeMemory([
-        "* what * forms * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) *"
+        "* what * forms * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *"
     ],[
         "Antitussives have many forms. It can be a tablet, capsule,gel, liquid , syrup, lozenge or strips. However, I can only recommend the usual  dosage of its logenzes and syrup forms."
     ]),
     encodeMemory([
-        "* what * alternative * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin) * "
+        "* what * alternative * (!antitussives?|cough suppressants?|dextromethorphan |robitussin) *"
     ],[
         "Honey is a time-honored remedy for a sore throat. According to one study, trusted Source, it can also relieve coughs more effectively than OTC medications that contain dextromethorphan (DM), a cough suppressant."
     ]),
@@ -471,7 +471,7 @@ let section11 = [
         "When you suck on a lozenge, it starts to dissolve and release medicine. It is intended to dissolve slowly in the mouth to temporarily suppress the cough, and lubricate and soothe irritated tissues of the throat. Some have medications that help fight colds, and most have anesthetic to help ease the pain. Lozenges also contain menthol or eucalyptus, which can help cool and sooth the throat. Others contain honey, which is known to have cough suppression properties."
     ]),
     encodeMemory([
-        "* when * ( not  (take|use) | avoid ) * (lozenges?) *"
+        "* when * (not (take|use)|avoid) * (lozenges?) *"
     ],[
         "If you have a sore throat that is severe or that lasts more than 2 days, or a cough that lasts more than 7 days or keeps coming back, or symptoms occur with a fever, headache, rash, swelling, nausea, or vomiting, tell your doctor promptly"
     ]),
@@ -574,21 +574,14 @@ let section14 = [
         "The Center of Disease Control indicated that people who have flu have some or all of the following symptoms. They may have fever, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches, and fatigue(tireness). Some others may have vomiting and diarrhea though is is more common in children and adults."
     ]),
     encodeMemory([
-        "* (are|is) * influenza _symptoms * (sign|symptom) * influenza *",
-        "* (are|is) * influenza _symptoms * influenza * (sign|symptom) *"
+        "* (are|is) * influenza_symptoms * (sign|symptom) * influenza *",
+        "* (are|is) * influenza_symptoms * influenza * (sign|symptom) *"
     ],[
         "yes it is"
     ]),
 ]
 
-let section15 = [
-    
-    encodeMemory([
-        ""
-    ],[
-        ""
-    ]),
-]
+let section15 = []
 
 
 

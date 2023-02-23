@@ -8,14 +8,14 @@ let section6 = [
         "Saguna na dala pan gamot sa flu, ugayd na su kambakuna na makadtabang sa leka. Su flu vaccine abpeg su kapailay sa doctor uman lagon na makatabang bun. Namba na makatabang para di ged pegkabagel I sakit nu tao. Su mga tao a aden sakit nin mana su sakit na pamusungan na katabangan nin. Kagina ka mayto na su kapaguspital sabap sa nya na di ged manggula. Makatabang bon I nyaba sa magingay, wata abpeg a tao sa ubay nengka."
     ]),
     encodeMemory([
-        "* duken * di * ubay * influenza * ",
-        "* duken * di * ubay * influenza * ",
-        "* duken * (tangka|awa) * influenza * "
+        "* duken * di * ubay * influenza *",
+        "* duken * di * ubay * influenza *",
+        "* duken * (tangka|awa) * influenza *"
     ],[
         "Da ka aged pagubay sa kaped nengka upama ka aden sakit nin. Upama ka seka i aden sakit nin na tangka ka. da ka pagubay sa saka lepa sa mga tao a pembabatok. Tangka ka bon sa tayn I aden ngog nin. Da ka ged pagamong sa madakel a taw ka makwa nengka i kagaw a nan. Enggula ka I nyaba para di den makalanag I sakit a nya."
     ]),
     encodeMemory([
-        "* duken * degka * influenza * "
+        "* duken * degka * influenza *"
     ],[
         "Lenek ka sa walay amayka aden sakit nengka para di den makaalat I sakit a nan sa kaped nengka."
     ]),
@@ -41,7 +41,7 @@ let section6 = [
         "Madtalo ko bun seka sa ngin I enggulan nengka mana su nganin ngain a kapakay nengka magula sa walay nengka. Ugayed na saki na program a ko bo. Nya bun mapya na pailay ka sa doctor. "
     ]),
     encodeMemory([
-        "* edaw * kan * influenza * "
+        "* endaw * kan * influenza * "
     ],[
         "Nya bon mapya lenek o tangka den muna di ka ged pendadalakaw para di ka makapangalat sa virus. Labi den mana nya ba a pandemic na dikena ged mapya I kakan sa lyu, malmo ka makawa sa namba virus a nan. Saguna na mas mapya I sya kawm pan sa walay lemenek."
     ]),
@@ -67,18 +67,18 @@ let section6 = [
 let section7 = [
     encodeMemory([
         "* duken * (inom|kan) * pegken_kapakay_sa_influenza * influenza * ",
-        "* duken * (pamasa) * pegken_kapakay_sa_ influenza * influenza *",
+        "* duken * (pamasa) * pegken_kapakay_sa_influenza * influenza *",
         "* duken * (inom|kan) *  pegken_kapakay_sa_influenza * influenza * ",
         "* pegken_kapakay_sa_influenza * (inom|kan) * influenza *  ",
-        "* pegken_kapakay_sa_ influenza * (mapya|tabang|kapakay) * influenza *",
-        "* pegken_kapakay_sa_ influenza * (mapya|tabang|kapakay) * influenza *",
+        "* pegken_kapakay_sa_influenza * (mapya|tabang|kapakay) * influenza *",
+        "* pegken_kapakay_sa_influenza * (mapya|tabang|kapakay) * influenza *",
     ],[
         "Kakan sa namba na makagkapya sa kangegedam nengka abpeg a matakadtabang sa kagkabagel."
     ]),
     encodeMemory([
         "* (kapakay|mapya|tabang) * pegken * influenza * ",
         "* tagudo * pegken * (kapakay|mapya|tabang) *",
-        "* influenza *  (kapakay|mapya|tabang) * pegken * ",
+        "* influenza * (kapakay|mapya|tabang) * pegken * ",
         "* (kapakay|mapya|tabang) * influenza * pegken * ",
         "* pegken * (kapakay|mapya|tabang) * influenza *",
         "* pegken * tagudo  * (kapakay|mapia|tabang) * ",
@@ -92,32 +92,32 @@ let section7 = [
 
 let section8 = [
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya * di * (inon|kan|pamasan) * influenza *",
-        "* duken * di * (inon|kan|pamasan) * influenza_pegken_di_mapya * influenza *",
+        "* duken * influenza_pegken_di_mapya * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya * influenza *",
     ],[
         "Endu egkabagel ka, nasisita su katyakap nengka sa ginawa nengka. Nasisita na tangka ka sa mga namba kagina di ba I namba pakadtabang sa kangegedam nengka. "
     ]),
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya_caffeinated * di * (inon|kan|pamasan) * influenza *",
-        "* duken * di * (inon|kan|pamasan) * influenza_pegken_di_mapya_caffeinated  * influenza *"
+        "* duken * influenza_pegken_di_mapya_caffeinated * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya_caffeinated  * influenza *"
     ],[
         "Upama ka pegkayaw ka, aw na to na ebpapulo kayaw nengka engu pagatingan ka edsamikel pan. Su dehydration na ingati ka upama ka aden mayaw nengka. Su caffein abpeg a alchohol na makalunsan sa sakit nengka. Nya mapya na igop ka ig abpeg kapid a aden ig nin uman gay"
     ]),
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya_lanan * di * (inon|kan|pamasan) * influenza *",
-        "* duken * di * (inon|kan|pamasan) * influenza_pegken_di_mapya_lanan * influenza *"
+        "* duken * influenza_pegken_di_mapya_lanan * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya_lanan * influenza *"
     ],[
         "Da ka ged keman sa pegken a malgen sa tyan nengka. Su mga lanan a benel o madakel I saturated fat nin na tangkay ka, abpeg su sinendag, abpeg a lana nin"
     ]),
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya_mategas * di * (inon|kan|pamasan) * influenza *",
-        "* duken * di * (inon|kan|pamasan) * influenza_pegken_di_mapya_mategas * influenza *"
+        "* duken * influenza_pegken_di_mapya_mategas * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya_mategas * influenza *"
     ],[
         "Su flu na aw na to na makagkasakit sa tyan. Bali kan ka bo sa mga pegken a malmo sa tyan nengka mana su simple refined carbohydrates. Su mga pegkina biskwit, pan abpeg a pretzel na kapakay negka bon kanen. Mapya bon upama ka di ka ged keman sa mga kamo a malgen gatunag sa tyan."
     ]),
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya_mamis  * di * (inon|kan|pamasan) * influenza *",
-        "* duken * di * (inon|kan|pamasan) * influenza_pegken_di_mapya_mamis * influenza *"
+        "* duken * influenza_pegken_di_mapya_mamis  * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya_mamis * influenza *"
     ],[
         "Su mga madakel I mamis nin na makagkalubay sa immune system nengka a pedtabang sa mga sakit mana su flu."
     ]),
@@ -135,13 +135,7 @@ let section8 = [
     ]),
 ]
 
-let section9 = [
-    encodeMemory([
-        ""
-    ],[
-        ""
-    ]),
-]
+let section9 = []
 
 let section10 = [
     encodeMemory([

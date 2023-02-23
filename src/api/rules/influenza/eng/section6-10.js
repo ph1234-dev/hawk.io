@@ -9,8 +9,8 @@ let section6 = [
         "Although there is no medicine that can prevent flu, flu vaccine are found to help protect you. Flu vaccination prevents illnesses and flu-related doctors visit each year. It help reduce the severity of illnesses in people who get vaccinated but stil get sick. This particularly help people with certain chronic health conditions (such as heart conditions). With this, it reduces flu associated hospitalization. It also protect pregnant , children and people around you."
     ]),
     encodeMemory([
-        "* why * avoid * close|physical * contact * influenza *",
-        "* why * not * close|physical * contact * influenza *",
+        "* why * avoid * (close|physical) * contact * influenza *",
+        "* why * not * (close|physical) * contact * influenza *",
         "* why * distance * yourself * influenza * ",
         "* why * distance * contact * influenza *"
     ],[
@@ -74,11 +74,11 @@ let section7 = [
     
     encodeMemory([
         "* why * take * influenza_foods_allowed *",
-        "* why * buy * influenza _foods_allowed * influenza *",
-        "* why * take * influenza _foods_allowed * influenza *",
-        "* influenza _foods_allowed * take * influenza *",
-        "* influenza _foods_allowed * good * influenza *",
-        "* influenza _foods_allowed * buy * influenza *",
+        "* why * buy * influenza_foods_allowed * influenza *",
+        "* why * take * influenza_foods_allowed * influenza *",
+        "* influenza_foods_allowed * take * influenza *",
+        "* influenza_foods_allowed * good * influenza *",
+        "* influenza_foods_allowed * buy * influenza *",
     ],[
         " Eating those may sooth your condition and help you recover quicker."
     ]),
@@ -100,32 +100,32 @@ let section7 = [
 let section8 = [
     
     encodeMemory([
-        "* why * influenza _foods_not_allowed * (not (take|buy)|avoid) * influenza *",
-        "* why * (not (take|buy)|avoid) * influenza _foods_not_allowed * influenza *"
+        "* why * influenza_foods_not_allowed * (not (take|buy)|avoid) * influenza *",
+        "* why * (not (take|buy)|avoid) * influenza_foods_not_allowed * influenza *"
     ],[
         "To help you recover, it is important that you take good care of yourself. You need to avoid those as it can aggravate your underlying health conditions"
     ]),
     encodeMemory([
-        "* why * influenza _foods_not_allowed _caffeinated_drinks* (not (take|buy)|avoid) * influenza *  ",
-        "* why * (not (take|buy)|avoid) * influenza _foods_not_allowed_caffeinated_drinks * influenza *"
+        "* why * influenza_foods_not_allowed_caffeinated_drinks* (not (take|buy)|avoid) * influenza *  ",
+        "* why * (not (take|buy)|avoid) * influenza_foods_not_allowed_caffeinated_drinks * influenza *"
     ],[
         "When you have a fever, you may experience elevated temperatures and increased sweating, dehydration is something to be cautious of when you have a fever. Caffeine and alcohol can make your symptoms worse (especially stomach-related symptoms). Its better to sip water and clear liquids throughout the day."
     ]),
     encodeMemory([
-        "* why * influenza _foods_not_allowed _greasy_foods * (not (take|buy)|avoid) * influenza * ",
-        "* why * (not (take|buy)|avoid) * influenza _foods_not_allowed _greasy_foods  * influenza *",
+        "* why * influenza_foods_not_allowed_greasy_foods * (not (take|buy)|avoid) * influenza * ",
+        "* why * (not (take|buy)|avoid) * influenza_foods_not_allowed_greasy_foods  * influenza *",
     ],[
         "You’ll want to avoid foods that are difficult to break down and hard on your gastrointestinal system. Foods high in saturated fat should be avoided or limited, as well as fried, greasy foods."
     ]),
     encodeMemory([
-        "* why * influenza _foods_not_allowed _hard_grains * (not (take|buy)|avoid) * influenza *  ",
-        "* why * (not (take|buy)|avoid) * influenza _foods_not_allowed_hard_grains * influenza *"
+        "* why * influenza_foods_not_allowed_hard_grains * (not (take|buy)|avoid) * influenza *  ",
+        "* why * (not (take|buy)|avoid) * influenza_foods_not_allowed_hard_grains * influenza *"
     ],[
         "The flu occasionally causes you to have an upset stomach, so sticking with foods that are easy to digest like simple/refined carbohydrates is recommended. Foods like dry saltine crackers, toast and pretzels are easy on your stomach and are most likely to be tolerated when you have the flu. It is also good to avoid fibrous foods for the time being."
     ]),
     encodeMemory([
-        "* why * influenza _foods_not_allowed _sugary_foods * (not (take|buy)|avoid) * influenza * ",
-        "* why * (not (take|buy)|avoid) * influenza _foods_not_allowed_sugary_foods * influenza *"
+        "* why * influenza_foods_not_allowed_sugary_foods * (not (take|buy)|avoid) * influenza * ",
+        "* why * (not (take|buy)|avoid) * influenza_foods_not_allowed_sugary_foods * influenza *"
     ],[
         "Sugar-rich foods can weaken your immune system, which your body needs to fight off the flu."
     ]),
@@ -139,21 +139,14 @@ let section8 = [
         "If you think you have flu, you need to avoid caffeinated drinks, alchohol, greasy foods, hard to digest grains, and sugary foods or drinks. Instead try to take broth-based soups to help place any fluids and sodium that you may lost.  Also try bland foods which includes white bread, potatoes, white rice, bananas, applesauce, lean meats like chicken and fish."
     ]),
     encodeMemory([
-        "* (give|buy) * influenza _foods_not_allowed *"
+        "* (give|buy) * influenza_foods_not_allowed *"
     ],[
         "There are foods that you need to be wary of. If you have flu try eating broth, probiotic rich foods such as those fermented, broths and bland foods like white bread, potatoes, white rice, bananas, applesauce, lean meats like chicken and fish."
     ]),
 ]
 
 
-let section9 = [
-    
-    encodeMemory([
-        ""
-    ],[
-        ""
-    ]),
-]
+let section9 = []
 
 
 let section10 = [

@@ -123,7 +123,7 @@ let section5 = [
         `Ang paggamit ng 20 milligram zinc kada araw para sa batang mahigit sa anim na buwan o kaya 10 milligram kada araw sa mga batang mas mababa sa 10-14 days ay pwedeng makatulong.`
     ]),
     encodeMemory([
-        `* bakit * (kain|inom) * masustanya * pagkain * diarrhea * `
+        `* bakit * (kain|inom) * masustansya * pagkain * diarrhea * `
     ],[
         `Kapag nagtatae, ang pagkaing kinakain mo at ang mga ito ay importante para sa iyong paggaling.`
     ]),

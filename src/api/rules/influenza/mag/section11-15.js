@@ -250,7 +250,7 @@ let section11 = [
     ]),
     encodeMemory([
         "* panon * galbek * (!decongestants?|pseudophedrine|sudafed) *",
-        "* pano * (!decongestants?|pseudophedrine|sudafed) * galbek * ",
+        "* panon * (!decongestants?|pseudophedrine|sudafed) * galbek * ",
         "* (duken|panon) * decongestants? * (awa|gamot|kapya|tabang) *"
     ],[
         "Su decongenstant na nya nin galbek na papedsimpiten nin su blood vessels sa ngilon. Su blebag a tissue na ngilong na pegkanawt enggu pegkapya kapengginawa nu taw."
@@ -289,20 +289,20 @@ let section11 = [
 
     // expectorants
     encodeMemory([
-        "* ngen * generic * (!expectorants?|guaifensin) *"
+        "* ngen * generic * (!expectorants?|guaifenesin) *"
     ],[
         "Su guaifenesin abpeg potassium iodide na mga gamot ba I nyaba a generic"
     ]),
     encodeMemory([
-        "* ngen * branded * (!expectorants?|guaifensin) *"
+        "* ngen * branded * (!expectorants?|guaifenesin) *"
     ],[
         "Su mucimex abpeg na robitussin na mga kila ba nya a branded."
     ]),
     encodeMemory([
-        "* ngen * dose * (!expectorants?|guaifensin) * ",
-        "* panon * (gamit|kan|inom) * (!expectorants?|guaifensin) * ",
-        "* ngen * ukit * (!expectorants?|guaifensin) * ",
-        "* panon * (!expectorants?|guaifensin) * (gamit|kan|inom) *"
+        "* ngen * dose * (!expectorants?|guaifenesin) * ",
+        "* panon * (gamit|kan|inom) * (!expectorants?|guaifenesin) * ",
+        "* ngen * ukit * (!expectorants?|guaifenesin) * ",
+        "* panon * (!expectorants?|guaifenesin) * (gamit|kan|inom) *"
     ],[
         `Nya ba I gamotan na guaifenesisn. 
         upama ka pembatuken, su matuwa na kapakay pegkan sa 200 taman sa 400 mg uman pat ka oras. Su wata  a 6 taman sa 12 years old na kapakay keman sa 100 taman sa 200mg uman pat ka uras.
@@ -311,72 +311,72 @@ let section11 = [
         `
     ]),
     encodeMemory([
-        "* ngen * (!expectorants?|guaifensin) * "
+        "* ngen * (!expectorants?|guaifenesin) * "
     ],[
         "Su expectorants na mga pakadtabang ba I nya ba na kaginawa na taw ka blue I clad abpeg ngog nu taw. "
     ]),
     encodeMemory([
-        "* endaw *  (!expectorants?|guaifensin)  * gamit * ",
-        "* endaw * gamit * (!expectorants?|guaifensin)  * "
+        "* endaw *  (!expectorants?|guaifenesin)  * gamit * ",
+        "* endaw * gamit * (!expectorants?|guaifenesin)  * "
     ],[
         "Kapakay ka pegkan sa expectorant enggu amayka di ka ged pakaginawa sabap sa sepu. Nya ba a gamot na na aw nato na isa nin bo a gamot na da maamong sa kaped a gamot. "
     ]),
     encodeMemory([
-        "* panon * galbek * (!expectorants?|guaifensin) *",
-        "* panon * (!expectorants?|guaifensin) * galbek * ",
+        "* panon * galbek * (!expectorants?|guaifenesin) *",
+        "* panon * (!expectorants?|guaifenesin) * galbek * ",
         "* (duken|panon) * expectorants? * (awa|gamot|kapya|tabang) *"
     ],[
         "Su expectorants na papegkalindegen nin I ludep na ngilong nengka taman sa tidek embaba pan. Pedtabang I nya ba ka papegkalmun nin I ka lyo na ngog upama ka embatok ka. Upamaka ka ka embatok ka na malmo I ka duda nengka sa ngog abpeg klad a nan."
     ]),
     encodeMemory([
-        "* kano * di * (kan|inom|gamit) * (!expectorants?|guaifensin) * "
+        "* kano * di * (kan|inom|gamit) * (!expectorants?|guaifenesin) * "
     ],[
         `Embityala nengka I doctor nengka bago ka penggamot sa expectorant upama maginay ka o papedsusu ka. Upama ka nya ka kailay na nagallergy ka na telni ka gamot a nan. 
         Ingat ka sa kandrive ka o kagamit nengka sa makina upama ka pengkan ka sa expectorant kagina makandadalangot ba I nya ba
         `
     ]),
     encodeMemory([
-        "* di * mapya * epekto * (!expectorants?|guaifensin) * "
+        "* di * mapya * epekto * (!expectorants?|guaifenesin) * "
     ],[
         "Su expectorant na da ged masla a side effect nin. Ugayd, na makandadadalangot ba I nya ba abpeg makanggagatel"
     ]),
     encodeMemory([
-        "* ngen * (tips|enggulan) *  (!expectorants?|guaifensin) * "
+        "* ngen * (tips|enggulan) *  (!expectorants?|guaifenesin) * "
     ],[
         "di ka blupet I gamot a nan. Upama ka nya nengka paginumen sui gen a gamot na bilang ka I kadakel nin. Inom ka bon sa madakel a ig upama ka pegkan ka sa expectorant."
     ]),
     encodeMemory([
-        "* pila * (!expectorants?|guaifensin) * ",
-        "* (!expectorants?|guaifensin) * pila * "
+        "* pila * (!expectorants?|guaifenesin) * ",
+        "* (!expectorants?|guaifenesin) * pila * "
     ],[
         "Sya sa Watson na su robitussin guaifenesisn na 92 pilak I alaga nin."
     ]),
     encodeMemory([
-        "* embalangan * (!expectorants?|guaifensin) * "
+        "* embalangan * (!expectorants?|guaifenesin) * "
     ],[
         "Su expectorants na kapamasa ba I nya ba sa botika apya da riseta nin. Aw na to na ig abpeg a tablitas a I nya ba."
     ]),
     encodeMemory([
-        "* sambi * (!expectorants?|guaifensin) * "
+        "* sambi * (!expectorants?|guaifenesin) * "
     ],[
         "Su mga natural a expectoral na kapakay nengka bon pengamiten. Nya ba na mana su menthol, ivy leaf extract, oral hydration solutions , kapaginom sa madakel a ig, abpeg a teneb. "
     ]),
     // antitussive
     encodeMemory([
-        "* ngen * generic * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)   *"
+        "* ngen * generic * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)   *"
     ],[
         "Su Dexthomethorphan abpeg diphenhydramine na mga generic antitussive"
     ]),
     encodeMemory([
-        "* ngen * branded * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)   *"
+        "* ngen * branded * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)   *"
     ],[
         "Su Robitussin na isa sa namba."
     ]),
     encodeMemory([
-        "* ngen * dose * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * ",
-        "* panon * (gamit|kan|inom) * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * ",
-        "* ngen * ukit *  (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)   * ",
-        "* panon * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * (gamit|kan|inom) *"
+        "* ngen * dose * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * ",
+        "* panon * (gamit|kan|inom) * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * ",
+        "* ngen * ukit *  (!antitussives?|cough suppressants?|dextromethorphan |robitussin)   * ",
+        "* panon * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * (gamit|kan|inom) *"
     ],[
         
         `Nya ba I kapenggamot sa lozenges
@@ -400,51 +400,51 @@ let section11 = [
         `
     ]),
     encodeMemory([
-        "* ngen * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)   * "
+        "* ngen * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)   * "
     ],[
         "Su antitussives a gamot na batok na kapakayan a kapamasa apya da den resita nin ugayd na aw na to na aden bon resita nin"
     ]),
     encodeMemory([
-        "* endaw *  (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * gamit * ",
-        "* endaw * gamit * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * "
+        "* endaw *  (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * gamit * ",
+        "* endaw * gamit * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * "
     ],[
         "Nya ba gamot a na pegkanen upama ka matitik I batok nu taw sabap sa allergy o kaped a sakit a baga. Su antitussives na pakagamot bun sa post-viral cough o di den a nan pagenda a batok sabap sa virus infection."
     ]),
     encodeMemory([
-        "* panon * galbek * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  *",
-        "* panon * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * galbek * ",
+        "* panon * galbek * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  *",
+        "* panon * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * galbek * ",
         "* (duken|panon) * antitussives? * (awa|gamot|kapya|tabang) *"
     ],[
         "Su antitussives na papedtelenin nin su tulan a papembatok sa taw na gailay sa brain stem. Ugayd na su sakto a penggulan nin na di bun katawan na mga doctor taman saguna."
     ]),
     encodeMemory([
-        "* kano * di * (kan|inom|gamit) * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * "
+        "* kano * di * (kan|inom|gamit) * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * "
     ],[
         "Dikena ba I nya mapya a gamot sa mga wata a da man mauma I umul nin sa 4 lagon"
     ]),
     encodeMemory([
-        "* di * mapya * epekto * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * "
+        "* di * mapya * epekto * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * "
     ],[
         "Nya epekto na gamot ba  a nya na aw na to na makangegedam su taw sa kapanguta, abpeg kalangot. Su kaped a pasinti na aw na to na kagatel o kalgenan silan sa ka ginawa. Upama ka masla ged a dose I nakan du taw na aw na to na di ged mapya kapagitong nin"
     ]),
     encodeMemory([
-        "* ngen * (tips|enggulan) *  (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * "
+        "* ngen * (tips|enggulan) *  (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * "
     ],[
         "Kapakayan ba I nya ba pegkanin apya dala ka kan basta inom ka sa ig a madakel ( mga walo ka baso)"
     ]),
     encodeMemory([
-        "* pila * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)   * ",
-        "* (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * pila * "
+        "* pila * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)   * ",
+        "* (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * pila * "
     ],[
         "Sa southdrug store, na su dextromenthorphan syrup na 133 pilak. Sa watsons na 189 pilak. Su alaga nin a embibidaya uman botika. "
     ]),
     encodeMemory([
-        "* embalangan * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)   * "
+        "* embalangan * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)   * "
     ],[
         "Su antitussive na madakel I embalangan nin. Aw na to na tablitas, capsul, gel, igen, syrup , lozenge o strips I nya ba. Ugayd na na saki na nya ko bo ma recommend na su legengez abpeg a syrup bo."
     ]),
     encodeMemory([
-        "* sambi * (!antitussives?|cough suppressants?|dextromenthorpan|robitussin)  * "
+        "* sambi * (!antitussives?|cough suppressants?|dextromethorphan |robitussin)  * "
     ],[
         "Su teneb na na gamot ba I nya ba.  Su mga nangagi sa nya ba gamot na ya tig nilan na makatabang ba I nya sa kambabatok enggu nya pan mapya sa kapamasa a gamot sa otika. "
     ]),
@@ -480,7 +480,7 @@ let section11 = [
     ]),
     encodeMemory([
         "* panon * galbek * (lozenges?) *",
-        "* pano *(lozenges?) * galbek * ",
+        "* panon *(lozenges?) * galbek * ",
         "* (duken|panon) * lozenges? * (awa|gamot|kapya|tabang) *"
     ],[
         "Upama ka su taw na enggamot sa lozenge, na lemedu I nya ba sa katunag nin ka tupamba lemyo I gamot a nan. Nan ba I ikaumbal nin sa nya ba a gamot. Mauget a gay a pedtunagen bo sa ngali enggu makagamot sa batok abpeg a tidek. Su kaped a logenzes na makatabang bon sa aden sepu. Su kaped na aden nanam nin a eucalyptus na pakadtabang sa tidek. Su kaped manem na inamungan sa teneb ka pakadtabang bon I tub a. "
@@ -578,32 +578,26 @@ let section14 = [
         "Kapakay ako nengka pagidsan sa mga kataw sa namba. Ugayd na upama ka nya nengka nasisita i madakel a ulaula na tekaw ka midsa lu sa Center for Disease and Control abpeg sa Department of Health. "
     ]),
     encodeMemory([
-        "* endaw * embapawang * influenza *"
+        "* endaw * ebpawang * influenza *"
     ],[
         "Kapakay nengka pedtyakapan I sakit a nya sa walay. Ugayd, na embpawang ka sa doctor upama ka nya nengka kailay na masla I mangguna na nya ba sakit sa leka."
     ]),
     encodeMemory([
-        "* ngen * (sign|symptoms|sintomas|senyales|padsa)  * influenza * ",
-        "* ngen * (sign|symptoms|sintomas|senyales|padsa)   * influenza * ",
+        "* ngen * (sign|symptoms|sintomas|senyales|padsa) * influenza * ",
+        "* ngen * (sign|symptoms|sintomas|senyales|padsa) * influenza * ",
         "* panon * (kataw) * influenza *",
     ],[
         "Su Center of Diseases and Control na nya nilan nadtalo na su taw a aden trangkaso nin na aden pila timan nin a sintomas. Aw na to na aden mayaw nilan, batok, blebag a tideg, sepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa."
     ]),
     encodeMemory([
         "* padsa_na_influenza * (sign|symptoms|sintomas|senyales|padsa) * influenza * ",
-        "* padsa_na_ influenza * influenza * (sign|symptoms|sintomas|senyales|padsa)  * ",
+        "* padsa_na_influenza * influenza * (sign|symptoms|sintomas|senyales|padsa)  * ",
     ],[
         "Uway"
     ]),
 ]
 
-let section15 = [
-    encodeMemory([
-        ""
-    ],[
-        ""
-    ]),
-]
+let section15 = []
 
 
 export const data = 

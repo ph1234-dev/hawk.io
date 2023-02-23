@@ -20,8 +20,8 @@ let section16 = [
     ]),
     encodeMemory([
         `* ten * di * (kan|inom|gamit) * on_the_counter * `,
-        `* ten * di * (kan|inom|gamit) * diarrhea _drugs * `,
-        `* diarrhea _drugs * di * (kan|inom|gamit) * `,
+        `* ten * di * (kan|inom|gamit) * diarrhea_drugs * `,
+        `* diarrhea_drugs * di * (kan|inom|gamit) * `,
     ],[
         `Su mga tao a pedtagudo sa aden lugo abpeg na pegkayw na di minom na gamot a dala riseta na doctor.`
     ]),

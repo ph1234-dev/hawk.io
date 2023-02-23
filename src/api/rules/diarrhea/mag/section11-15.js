@@ -49,6 +49,7 @@ let section11 = [
         `Aden loperamide endu bismuth subsalicylate a antimotility. Aden bon hydrite a kapamasa bon sa botika. `
     ]),
     encodeMemory([
+        `* ngen * branded * antidiarrheal * drugs *`,
         `* ngen * branded * gamot * diarrhea *`,
     ],[
         `Su Imodium abpeg a pepto bismol na kaped sa mga branded a ngala na gamot sa kadtagudo`
@@ -92,7 +93,7 @@ let section11 = [
         `* panon * galbek * (!loperamide|imodium) *`,
         `* panon * (!loperamide|imodium) * galbek * `
     ],[
-        `Su loperamide (Imodium A-D) na lemyo I bisa nin mga sakawras . Ugayd na aw na to na di magindan I nan sa kaped a mg ataw. Angay ka sa doctor nengka upama ka edsalseg I sakit nengka edaw kinakan nengka sa nya ba a gamot.`
+        `Su loperamide (Imodium A-D) na lemyo I bisa nin mga sakawras . Ugayd na aw na to na di maginsan I nan sa kaped a mg ataw. Angay ka sa doctor nengka upama ka edsalseg I sakit nengka  sa nya ba a gamot.`
     ]),
     encodeMemory([
         `* kano * di * (kan|inom|gamit) * (!loperamide|imodium) * `,
@@ -157,7 +158,7 @@ let section11 = [
     ]),
     encodeMemory([
         `* panon * galbek * bismuth !subsalicylate  *`,
-        `* pano * bismuth !subsalicylate  * galbek * `
+        `* panon * bismuth !subsalicylate  * galbek * `
     ],[
         `Kadakelan sa pasinti na gapya I manggegedam nilan mga pat ka oras kapasad a kina inom nengka sa gamot. Da ka pegkan sa bismuth subsalicylate (pepto-bismol) sa dwa gay. Umayka di pon mawa su kadtagudo sa namba dwa gay a nan na edtanggit ka I pasinti sa ospital.`
     ]),
@@ -248,12 +249,12 @@ let section13 = [
 let section14 = [
     encodeMemory([
         `* (ten|endaw) * idsa * (sign|symptoms|sintomas|senyales|padsa)  * tagudo * `,
-        `* (sign|symptoms|sintomas|senyales|padsa)  * tagdo * (ten|daw) * idsa * `,
+        `* (sign|symptoms|sintomas|senyales|padsa)  * tagudo * (ten|daw) * idsa * `,
     ],[
         `Kapakay ako nengka edsan sa mga ngin i enggulan nu tao amayka pedsakit. Ugayd na nya bon mapya na edsa ka sa mataw engamot.`
     ]),
     encodeMemory([
-        `* endaw * embapawang * tagudo * `,
+        `* endaw * ebpawang * tagudo * `,
     ],[
         `Kagamutan nengka bon I kadtagudo apya san ka bo sa walay. Nya kan enggula na inom ka sa gamot a gapamasa bon sa botika endu pegkapya I kanggegedam nengka. Amayka maylay nengka a pebpilugo I kapagudo nengka, pegkayaw ka o di nan aka dwa gay den I kapedtagudo nengka na nya mapya na pailay ka sa doctor.`
     ]),

@@ -34,7 +34,7 @@ let section4 = [
         "The parasite attaches itself to the lining of the small intestines in humans, where it causes diarrhea and interferes with the body's absorption of fats and carbohydrates from digested foods"
     ]),
     encodeMemory([
-        "* (why|how|when) * bacteria * infection * trigger * diarrhrea * "
+        "* (why|how|when) * bacteria * infection * trigger * diarrhea * "
     ],[
         "Bacterial gastroenteritis happens when bacteria cause an infection in your gut. The infection leads to inflammation in your stomach and intestines."
     ]),

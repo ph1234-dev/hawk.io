@@ -143,8 +143,8 @@ let section9 = [
   
 let section10 = [
     encodeMemory([
-      `*  sino * problema * diarrhea * `,
-      `* diarhea * sino * problema * `,
+      `* sino * problema * diarrhea * `,
+      `* diarrhea * sino * problema * `,
       `* diarrhea * problema * sino * `,
       `* problema * sino * diarrhea * `,
       `* problema * diarrhea * sino * `,

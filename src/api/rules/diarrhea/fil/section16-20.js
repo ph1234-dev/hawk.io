@@ -21,7 +21,7 @@ let section16 = [
     encodeMemory([
         `* sino * (huwag|hind) * (gumamit|kain|inom) * on_the_counter * drug * `,
         `* sino * (huwag|hind)* (gumamit|kain|inom) * * diarrhea_drugs *`,
-        `* sino * iwas * on_the_counter _drug *`,
+        `* sino * iwas * on_the_counter_drug *`,
         `* sino * iwas * diarrhea_drugs *`,
         `* diarrhea_drugs * (hindi|huwag) * (gumamit|kain|inom) * nino * `,
         `* diarrhea_drugs * iwasan * nino *`,

@@ -71,10 +71,10 @@ let section6 = [
 
 let section7 = [
     encodeMemory([
-        "* bakit * (inom|kain|bili) * pagkaing_pwede_ trangkaso * trangkaso * ",
-        "* pagkaing_pwede_ trangkaso * (inom|kain|bili) * trangkaso * ",
-        "* pagkaing_pwede_ trangkaso *  (tulong|gamot|buti|galing|gawin)   * trangkaso *  ",
-        "* pagkaing_pwede_ trangkaso * (inom|kain|bili) * trangkaso *",
+        "* bakit * (inom|kain|bili) * pagkaing_pwede_trangkaso * trangkaso * ",
+        "* pagkaing_pwede_trangkaso * (inom|kain|bili) * trangkaso * ",
+        "* pagkaing_pwede_trangkaso *  (tulong|gamot|buti|galing|gawin)   * trangkaso *  ",
+        "* pagkaing_pwede_trangkaso * (inom|kain|bili) * trangkaso *",
     ],[
         "Ang pagkain ng mga iyon ay maaaring mapawi ang iyong kalagayan at makatulong sa iyong gumaling nang mas mabilis."
     ]),
@@ -93,65 +93,60 @@ let section7 = [
 
 let section8 = [
     encodeMemory([
-        "* bakit * influenza_pagkain_dapat_iwasan * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * trangkaso * ",
-        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * trangkaso_pagkain_dapat_iwasan * trangkaso * ",
+        "* bakit * influenza_pagkain_dapat_iwasan * ( iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso *",
+        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso_pagkain_dapat_iwasan * trangkaso * ",
     ],[
         "Para matulungan kang gumaling, mahalagang pangalagaan mong mabuti ang iyong sarili. Kailangan mong iwasan ang mga iyon dahil maaari itong magpalala sa iyong mga kondisyon sa kalusugan."
     ]),
     encodeMemory([
-        "* bakit * trangkaso_pagkain_dapat_iwasan_caffeinated * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * influenza * ",
-        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * trangkaso_pagkain_dapat_iwasan_caffeinated * trangkaso * ",
+        "* bakit * trangkaso_pagkain_dapat_iwasan_caffeinated * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza * ",
+        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso_pagkain_dapat_iwasan_caffeinated * trangkaso * ",
     ],[
         "Kapag mayroon kang lagnat, maaari kang makaranas ng mataas na temperatura at pagtaas ng pagpapawis, ang pag-aalis ng tubig ay isang bagay na dapat mag-ingat kapag mayroon kang lagnat. Ang caffeine at alkohol ay maaaring magpalala sa iyong mga sintomas (lalo na ang mga sintomas na nauugnay sa tiyan). Mas mainam na humigop ng tubig at malinaw na likido sa buong araw."
     ]),
     encodeMemory([
-        "* bakit * trangkaso _pagkain_dapat_iwasan_mamantikain * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * influenza * ",
-        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * trangkaso _pagkain_dapat_iwasan_mamantikain * trangkaso * ",
+        "* bakit * trangkaso_pagkain_dapat_iwasan_mamantikain * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza * ",
+        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso_pagkain_dapat_iwasan_mamantikain * trangkaso * ",
     ],[
         "Gusto mong iwasan ang mga pagkaing mahirap masira at mahirap sa iyong gastrointestinal system. Ang mga pagkaing mataas sa saturated fat ay dapat na iwasan o limitahan, gayundin ang pritong, mamantika na pagkain."
     ]),
     encodeMemory([
-        "* bakit * trangkaso_pagkain_dapat_iwasan_matigas_butil * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * trangkaso * ",
+        "* bakit * trangkaso_pagkain_dapat_iwasan_matigas_butil * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso * ",
         "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso_pagkain_dapat_iwasan_matigas_butil * trangkaso * ",
     ],[
         "Ang trangkaso ay paminsan-minsan ay nagdudulot sa iyo na magkaroon ng sakit sa tiyan, kaya ang pagdidikit sa mga pagkaing madaling matunaw tulad ng simple/pinong carbohydrates ay inirerekomenda. Ang mga pagkaing tulad ng dry saltine crackers, toast at pretzel ay madali sa iyong tiyan at malamang na matitiis kapag mayroon kang trangkaso. Mainam din na umiwas pansamantala sa mga pagkaing mahibla."
     ]),
     encodeMemory([
-        "* bakit * trangkaso_pagkain_dapat_iwasan_matatamis * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * trangkaso * ",
-        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   *  trangkaso_pagkain_dapat_iwasan_matatamis* trangkaso * ",
+        "* bakit * trangkaso_pagkain_dapat_iwasan_matatamis * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso * ",
+        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) *  trangkaso_pagkain_dapat_iwasan_matatamis* trangkaso * ",
     ],[
         "Maaaring kauntihan ng mga pagkaing mayaman sa asukal ang iyong immune system, na kailangan ng iyong katawan upang labanan ang trangkaso"
     ]),
     encodeMemory([
-        "* anong * pagkain *  (iwasan| (hindi|huwag) * (inom|kain) ) * trangkaso *",
+        "* anong * pagkain * (iwasan| (hindi|huwag) * (inom|kain) ) * trangkaso *",
         "* pagkaing *  (iwasan| (hindi|huwag) * (inom|kain) ) * trangkaso *",
         "* trangkaso * (iwasan| (hindi|huwag) * (inom|kain) ) * pagkain *",
     ],[
         "Kung sa tingin mo ay mayroon kang trangkaso, kailangan mong iwasan ang mga inuming may caffeine, alkohol, mamantika na pagkain, mahirap matunaw na butil, at matamis na pagkain o inumin. Sa halip, subukang uminom ng mga sopas na nakabatay sa sabaw upang makatulong sa paglalagay ng anumang likido at sodium na maaaring mawala sa iyo. Subukan din ang mga murang pagkain na kinabibilangan ng puting tinapay, patatas, puting bigas, saging, sarsa ng mansanas, walang taba na karne tulad ng manok at isda."
     ]),
     encodeMemory([
-        "•	* (bili|kain|inom) * (trangkaso _pagkain_dapat_iwasan|trangkaso _pagkain_dapat_iwasan_caffeinated|trangkaso_pagkain_dapat_iwasan_mamantikain|trangkaso_pagkain_dapat_iwasan_matigas_butil|trangkaso _pagkain_dapat_iwasan_matatamis) * trangkaso * ",
+        `* (bili|kain|inom) * (trangkaso_pagkain_dapat_iwasan|trangkaso_pagkain_dapat_iwasan_caffeinated|trangkaso_pagkain_dapat_iwasan_mamantikain|trangkaso_pagkain_dapat_iwasan_matigas_butil|
+        trangkaso_pagkain_dapat_iwasan_matatamis) * trangkaso *`,
     ],[
         "May mga pagkain na kailangan mong mag-ingat. Kung ikaw ay may trangkaso, subukang kumain ng sabaw, mga pagkaing mayaman sa probiotic tulad ng mga fermented, sabaw at murang pagkain tulad ng puting tinapay, patatas, puting bigas, saging, sarsa ng mansanas, walang taba na karne tulad ng manok at isda."
     ]),
 ]
 
 
-let section9 = [
-    encodeMemory([
-        ""
-    ],[
-        ""
-    ]),
-]
+let section9 = []
 
 
 let section10 = [
     encodeMemory([
-        "*  sino * problema * trangkaso * ",
-        "* trangkaso * sino * problema * ",
-        "* trangkaso * problema * sino * ",
-        "* problema * sino * trangkaso * ",
+        "* sino * problema * trangkaso *",
+        "* trangkaso * sino * problema *",
+        "* trangkaso * problema * sino *",
+        "* problema * sino * trangkaso *",
         "* problema * trangkaso * sino *",
     ],[
         "May ilang grupo ng mga tao na nasa panganib na magkaroon ng mga komplikasyon mula sa trangkaso. Ang mga taong anim na buwan at matanda, mga taong may malalang kondisyong medikal tulad ng hika, sakit sa puso, diabetes, bato, sakit sa atay, at malalang sakit sa baga, mga taong may mahinang immune system, at mga taong sobrang laki ay kailangang mag-ingat sa pagkakaroon ng ang sakit na ito."

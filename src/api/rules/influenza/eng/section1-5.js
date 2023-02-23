@@ -34,7 +34,7 @@ let section4 = [
 let section5 = [
     
     encodeMemory([
-        "* (why|how) * (rest|staying at home) * treat * influenza *"
+        "* (why|how) * (rest|staying|home) * treat * influenza *"
     ],[
         "You should stay home until your fever has been gone for at least 24 hours. Someone with influenza will recover naturally within 2 to 7 days. By resting during the day, your body can devote more resources to fighting the virus. On top of helping you recover, staying home also prevents spreading the flu to other people in your community or workplace"
     ]),
@@ -91,7 +91,7 @@ let section5 = [
         "You can practice self-care in you home. To those having severe cases, you need to see doctor immidately especially if you belong to high risk groups."
     ]),
     encodeMemory([
-        "* where * buy * influenza _drugs *",
+        "* where * buy * influenza_drugs *",
         "* where * buy * influenza * drugs *",
         "* where * buy * drugs * influenza *",
     ],[

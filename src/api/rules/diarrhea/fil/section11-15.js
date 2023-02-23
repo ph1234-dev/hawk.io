@@ -50,6 +50,7 @@ let section11 = [
     ]),
     encodeMemory([
         `* ano * branded * (gamot|drug) * diarrhea *`,
+        ` * ano * branded * antidiarrheal * drugs *`,
     ],[
         `Ang Imodium at Pepto Bismol ay ilan sa mga branded na pangalan ng antidiarrhea na gamot`
     ]),

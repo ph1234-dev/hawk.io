@@ -20,6 +20,7 @@ let section4 = [
     ]),
     encodeMemory([
         "* ngin * enggay * influenza * ",
+        "* ngin * maka * influenza * ",
         "* ngin * makainfluenza * "
     ],[
         "Su kambabatok na sabap ba I namba sa virus. Amayka makadsembak nengka su taw a to a aden dalo nin na makakwa ka ba nan sa sakit. Pagidsan bon upama ka mangabpel ka sa apya ngen den. Labi den upama ka abepelen nengka I mata, ngilong endu ngali nengka."
