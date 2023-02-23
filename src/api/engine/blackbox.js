@@ -25,6 +25,43 @@ export default class Blackbox{
 
   }
 
+  getPatternReferences(){
+    let patterns = []
+
+    this.archive.memory.forEach(mem=>{
+      let entryPatterns = mem.pattern
+      entryPatterns.forEach(e=>{
+        patterns.push(e)
+      })
+      // patterns.push
+      // console.log(entryPatterns)
+    })
+
+    return patterns 
+  }
+
+  // return the unique patterns present in the rules
+  getUniqueTermsFromPatterns(){
+    let terms = []
+    let patterns = this.getPatternReferences()
+
+    console.log('Replacing nonword keys')
+    for ( let i=0 ; i < patterns.length ; i++){
+      let str = patterns[i]
+      str = str.replace(/\W/g,' ').replace(/\s\s+/g,' ').trim().toLowerCase()
+      let tokens = str.split(' ')
+
+      // store token if not existing
+      tokens.forEach(e=>{
+        if (!terms.includes(e)){
+          terms.push(e.toLowerCase())
+        }
+      })
+    }
+    terms = terms.sort()
+    return terms
+  }
+
   removeReferenceTriggers(){
     this.archive.removeReferenceTriggers()
   }
@@ -49,22 +86,14 @@ export default class Blackbox{
     console.log(`After, string was [${str}]`)
   }
 
-  store(){
-    return{
-      topics: (data)=>{
-        this.archive.storeTopics(data)
-      },
-      substitutions: (data) =>{
-        this.archive.storeSubstitutions(data)
-      },
-      memories: (data) =>{
-        this.archive.storeMemories(data)
-      },      
-      dictionary: (term) =>{
-        this.archive.storeDictionary(term)
-      }
-    }
+  storeRules(data){
+    this.archive.storeMemories(data)
   }
+
+  defineSubstitutions(data){
+    this.archive.storeSubstitutions(data)
+  }
+
 
   testTopic(topic,msg){
     console.log("\nTopic Test")

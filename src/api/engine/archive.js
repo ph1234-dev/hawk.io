@@ -53,13 +53,14 @@ class ARCHIVE{
 
     //stores the pattern and index
     this.references = []
-
+    
     //holds original untransformed copy of referneces
-    this.references_untransformed = []
+    this.references_untransformed_patterns = []
 
     //stores memories
     this.topics = []
 
+    // TERM
     this.substitutions = []
 
     // contains all the topic in the stack..
@@ -78,7 +79,7 @@ class ARCHIVE{
   }
 
   removeReferenceTriggers(){
-    console.log("Removing refernece triggers")
+    console.log("Removing reference triggers")
     this.references.map((el,index)=>{
       el.pattern = el.pattern.replace(/[!]/,``)
     })
@@ -86,6 +87,7 @@ class ARCHIVE{
 
   // findSubstitue
   findSubstitute(term){
+
     let sub
     // return term
 
@@ -97,7 +99,6 @@ class ARCHIVE{
     this.substitutions.forEach(el=>{
       //substitute word
       let terms = el.terms
-      
       
       // pattern is found
       let found = terms.find(pattern=>{
@@ -152,7 +153,7 @@ class ARCHIVE{
       ref.pattern = transform(ref.pattern)
     })
 
-    console.log("Transforming topics")
+    // console.log("Transforming topics")
     this.topics.map(ref=>{
       let userResponses = ref.userResponses
       if ( Array.isArray(userResponses) ){
@@ -250,6 +251,13 @@ class ARCHIVE{
   //stores substitution that will be used to 
   //normalize the words to a base representative 
   storeSubstitutions(data){
+    /**
+     * let animal = [
+     *    'cat',
+     *    'dog'
+     * ]
+     * 
+     */
     if (Array.isArray(data)){
       data.forEach(el=>{
         this.substitutions.push(el)
@@ -290,9 +298,13 @@ class ARCHIVE{
           // console.log(`PATTERN:: ${JSON.stringify(value)}`)
           pattern.forEach(el=>{
             // console.log(`\t<< ${el}`)
+          
+            //NOTE:: BEFORE YOU PUSH REFERENCES
+            //YOU NEED TO TRANSFORM THE SUBSTITUTES
             this.references.push(
               formatReferences(el,currentValue.index)
             )    
+
           })
 
         }else{
@@ -305,10 +317,13 @@ class ARCHIVE{
           }else{
             
             currentValue.pattern = this.normalizeString(currentValue.pattern)
+            
+            
             this.memory.push(currentValue)
             this.references.push(
               formatReferences(currentValue.pattern, currentValue.index)
             ) 
+            
           }
   
         }

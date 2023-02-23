@@ -15,3 +15,10 @@ export const encodeMemory = (pattern,response,nextTopic) =>{
     "nextTopic": nextTopic
   }
 }
+
+export const encodeSubstitution = (substitute, terms) => {
+  return {
+    "substitute": substitute,
+    "terms": terms
+  }
+}
