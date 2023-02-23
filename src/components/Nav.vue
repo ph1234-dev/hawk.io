@@ -2,7 +2,7 @@
 
 </script>
 
-<template role="nav" class="nav">
+<template >
     <nav class="nav">
         <span class="nav-content">
             <router-link :to="{path: '/'}">Hawk.io</router-link>

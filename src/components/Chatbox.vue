@@ -1,26 +1,30 @@
 <script setup>
 
-import {ref,watch,onMounted,getCurrentInstance,nextTick } from 'vue'
+import {ref,watch,onMounted,nextTick } from 'vue'
 
-import Engine from '@/api/engine'
+import { useBackendAPI } from '../stores/api';
 
-let engine = new Engine()
 let msg = ref('')
 let userMessages = ref([])
-
+let store = useBackendAPI()
 
 let chatboxContainer = null
 
 let sendMessage = async () => {
 
     let retrieveResponse = new Promise((resolve,reject)=>{
-        let reply = engine.getReply(msg.value)
+        let reply = store.getReply(msg.value)
+        console.log("Trying to get reply")
         resolve(reply)
-    }).then(function(response){
+    }).then(response=>{
+        console.log("\nResponse found: ", response)
+        store.storeLog(1,msg.value,response)
         userMessages.value.push({
             "bot": response,
             "user": msg.value
         })
+    }).catch(e=>{
+        console.log(`Found error: `, e)
     })
 
     await retrieveResponse
