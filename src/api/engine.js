@@ -48,27 +48,63 @@ export default class Engine{
         
         // load diarrhea rules
         let engMemory = this.memory[this.LANG.ENG]
-        engMemory.store().memories(diarrheaEngRules)
-        engMemory.store().memories(influenzaEngRules)
+        engMemory.storeRules(diarrheaEngRules)
+        engMemory.storeRules(influenzaEngRules)
         engMemory.transformReferences()
         engMemory.sortReferences()
 
+        // to enter substitutions
+        // you need to use porter and stemmed entries
+        // this is a lot easier to handle inflection
+        // if possible you need to enter synonyms
+
+
         let filMemory = this.memory[this.LANG.FIL]
-        filMemory.store().memories(diarrheaFilRules)
-        filMemory.store().memories(influenzaFilRules)
+        filMemory.storeRules(diarrheaFilRules)
+        filMemory.storeRules(influenzaFilRules)
         filMemory.transformReferences()
         filMemory.sortReferences()
 
-        
+        // Unlike english, the filipino
+        // can be manually processed?
+        // is there are way to have a porter and 
+        // stemmer in filipino?
+
+
         let magMemory = this.memory[this.LANG.MAG]
-        magMemory.store().memories(diarrheaMagRules)
-        magMemory.store().memories(influenzaMagRules)
+        magMemory.storeRules(diarrheaMagRules)
+        magMemory.storeRules(influenzaMagRules)
         magMemory.transformReferences()
         magMemory.sortReferences()
 
-      
+        // Unlike english, the maguindanaon
+        // can be manually processed?
+        // is there are way to have a porter and 
+        // stemmer in filipino?
+
 
         this.load_data()
+        // this.printRules(this.LANG.ENG)
+        // this.printRules(this.LANG.FIL)
+        this.printRules(this.LANG.MAG)
+    }
+
+    
+    // print rules for english
+    // we need this 
+    printRules(lang){
+        // console.log(`Printing rules::?`,lang)
+ 
+        let mem = this.memory[lang]
+        
+        /**RETRIEVE EXISTING PATTERNS*/
+        // console.log("Print rules:: ",lang)
+        // let conversationRules = this.memory[lang].getPatternReferences()
+        // console.log(conversationRules)
+
+        /**RETRIEVE UNIQUE TERMS */
+        let uniqueTerms = mem.getUniqueTermsFromPatterns()
+        // console.log(uniqueTerms)
     }
 
 
@@ -76,6 +112,7 @@ export default class Engine{
 
         let step = new Promise((resolve,reject)=>{
             // set cluster data 
+            
             this.classifier.insertCluster(diarrheaEngRules,this.LANG.ENG)
             this.classifier.insertCluster(influenzaEngRules,this.LANG.ENG)
             this.classifier.insertCluster(diarrheaFilRules,this.LANG.FIL)
@@ -84,14 +121,14 @@ export default class Engine{
             this.classifier.insertCluster(influenzaMagRules,this.LANG.MAG)
             resolve(true)
         }).then((val)=>{
-            // this.classifier.printClassifierPropertyValues()
-
+            
+            // CALL THIS TO BUILD PROBABILITY MAP STORING ALL 
+            // TERM PROBABILITY
             this.classifier.buildTermProbabilityMap()
 
-            // this.classifier.getClassfication("pamasa ko sa gamot")
-            // this.classifier.getClassfication("ngen gamot sa diarrhea")
 
-            
+            /**FOR GETTING DOCUMENTS*/
+            // this.classifier.printDocuments()
         })
 
         await step
@@ -107,11 +144,21 @@ export default class Engine{
     }
 
 
+    async getLanguage(msg){
+        return this.classifier.getPrediction(msg)
+    }
+
+
     async getReply(msg){
         // let reply = `Unimplemented: Engine reply for msg >> ${msg}`
         // reply = this.memory['eng'].retrieveMemory(msg)
         // return reply
 
+
+        // NOTE THIS IN PROBABILITIES
+        // https://mmuratarat.github.io/2019-07-31/NBClassifier-in-Python-an-example
+        // LETS TRY TO USE LOG TRICK FOR VERY LARGE VALUE OF NUMBER IN 
+        // PROBABILITIES NAIVE BAYES
         let reply = "Not found"
 
         let lang
@@ -119,6 +166,7 @@ export default class Engine{
             lang = this.classifier.getPrediction(msg)
             resolve(lang)
         }).then((response)=>{
+
             reply = this.memory[lang].retrieveMemory(msg)
         })
 
@@ -141,6 +189,13 @@ export default class Engine{
     
     // remember we are only removing features
     // that exist in eng, fil, mag
-    
+
+    async getReply(msg,lang){
+        console.log(`From Engine: getting reply for:\n\t${msg}\n\t${lang}`)
+        let reply = this.memory[lang].retrieveMemory(msg)
+        console.log(`\tResponse after memory retrieve:\n\t${reply}`)
+        return reply
+        // return `Engine reponse: ${msg} || ${lang}`
+    }
 
 }
