@@ -20,14 +20,12 @@ export default class LanguageClassifier{
         // annotated
         this.documents = []
 
+
     }
 
     insertCluster(rules,lang){
 
-
-        // e 
         let insertCallback = (doc)=>{
-
 
             // data clearning 
             // step1 replace non-word with space
@@ -44,6 +42,7 @@ export default class LanguageClassifier{
                 lang
             )
 
+            // 
             this.documents.push(data)
             
             // train only works if its array
@@ -67,7 +66,6 @@ export default class LanguageClassifier{
                 // this.document.responses.push(response)
         })
 
-        
     }
 
 
@@ -84,11 +82,21 @@ export default class LanguageClassifier{
     printDocuments(){
         let size = this.documents.length
         console.log(`Language Identifier`)
-        console.log(`Printing Documents: ${size}`)
+        console.log(`Printing Documents (size: ${size})`)
+        // this.documents.forEach((docs,index)=>{
+        //     console.log(`${index},${docs.class},${docs.data}`)
+        //     // console.log(`${JSON.stringify(docs)}`)
+        // })
+        
+        let strrep = ''
         this.documents.forEach((docs,index)=>{
-            console.log(`${index} - ${JSON.stringify(docs)}`)
+            let d = `${index},${docs.class},${docs.data}`
+            // corpus.push(d)
+            strrep += `${d}\n`
         })
+        console.log(strrep)
     }
+
 
     printClassifierPropertyValues(){
         console.log("Attemptin to print classifier properties")
