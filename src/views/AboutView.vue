@@ -1,15 +1,27 @@
+<script setup>
+import { useRouter } from 'vue-router';
+
+let router = useRouter()
+
+
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <section class="panel panel-vertical">
+    <h1>Hawk.io</h1>
+        <p>
+            This is an experimental conversational engine application that provides free and reliable information on self care for Diarrhea and Influenza.        </p>
+      <router-link :to="{name: 'home'}" class="btn btn-primary">
+        Start
+      </router-link>
+    </section>
+
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+<style scoped>
+  p{
+    text-indent: 5ch  ;
+    max-width: 45ch;
+    /* text-align: center; */
   }
-}
 </style>

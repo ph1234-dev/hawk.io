@@ -5,7 +5,7 @@
     import { useBackendAPI }  from '@/stores/api'
 
     let {formErrors,validateEmptyField} = useFormValidator()
-    let {registerUser} = useBackendAPI()
+    let store = useBackendAPI()
     
     let formInitialValue = {
         username: '',
@@ -13,6 +13,7 @@
         name: ''
     }
 
+    let router = useRouter()
     let form = reactive(formInitialValue)
     let submit = async() => {
      
@@ -27,16 +28,18 @@
             // do nothing
                 console.log(`Form errors found: `)
             }else{
-                console.log(`Form Errors? ${Object.keys(formErrors)}`)
+                // console.log(`Form Errors? ${Object.keys(formErrors)}`)
                 // submit
-                registerUser(form.username,form.password,name)
+                store.registerUser(form.username,form.password,form.name)
             }
-            })
+        })
 
         await validate
-
-        
-
+        console.log("Successful Registration")
+        router.push({
+            name: 'successful_register'
+        })
+        // form = reactive(formInitialValue)
     }
 
 
