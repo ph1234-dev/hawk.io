@@ -55,12 +55,12 @@ watch(userMessages.value,function(){
 <template>
     <div id="app-chatbox" class="chatbox">
         <div class="chatbox-nav">
-            <span class="chatbox-nav-time">11:00 PM</span>
-            <span class="chatbox-nav-status"><i class="icon-connection" style="font-size: .8em"></i>Online</span>
+            <!-- <span class="chatbox-nav-header-label">Test</span>
+            <span class="chatbox-nav-status"><i class="icon-connection" style="font-size: .8em"></i>Online</span> -->
             <span class="chatbox-nav-title">
                 <span style="display:flex">
                     <div style="display: flex; direction: column">
-                        <p>Hawk Chatbot</p>
+                        <strong>Hawk Chatbot</strong>
                     </div>
                 </span>
             </span>
@@ -92,6 +92,7 @@ watch(userMessages.value,function(){
                 :disabled="msg == ''"
                 >
                 <i class="icon-envelop icon-marginless"></i>
+                <!---->
             </button>   
         </div>
     </div>
