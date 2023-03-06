@@ -2,20 +2,20 @@ import Blackbox from './engine/blackbox'
 import {
     diarrheaEngRules,
     diarrheaFilRules,
-    diarrheaMagRules 
+    diarrheaMagRules
 } from './rules/diarrhea/rules-diarrhea'
 
 import {
     influenzaEngRules,
     influenzaFilRules,
-    influenzaMagRules 
+    influenzaMagRules
 } from './rules/influenza/rules-influenza'
 
 import LanguageClassifier from './language-identifier'
 
-export default class Engine{
+export default class Engine {
 
-    constructor(){
+    constructor() {
 
         this.LANG = {
             ENG: 'eng',
@@ -27,10 +27,10 @@ export default class Engine{
             this.LANG.ENG,
             this.LANG.FIL,
             this.LANG.MAG,
-            ]
-        
+        ]
+
         this.memory = {}
-        this.langSupported.forEach(lang=>{
+        this.langSupported.forEach(lang => {
             this.memory[lang] = new Blackbox()
         })
 
@@ -40,12 +40,12 @@ export default class Engine{
         // stores the documents for eng,fil,mag
         // this is needed for the machine learning
         this.document = {}
-        this.langSupported.forEach(lang=>{
+        this.langSupported.forEach(lang => {
             this.document[lang] = new Array()
         })
 
         console.log(`Starting Engine`)
-        
+
         // load diarrhea rules
         let engMemory = this.memory[this.LANG.ENG]
         engMemory.storeRules(diarrheaEngRules)
@@ -83,20 +83,36 @@ export default class Engine{
         // stemmer in filipino?
 
 
-        this.load_data()
+        /** 
+         * here you need to implement a loading mechanism
+         * something like this
+         * if (session.get("memory")){
+         *      this.memory = session.get("memory")
+         * }else{
+         *      then load data
+         * }
+         * 
+         * another thing is if there is version change
+         * if ( an update has been made )
+         * 
+         * */
+
+        // hide this for testing
+        // this.load_data()
+        
         // this.printRules(this.LANG.ENG)
         // this.printRules(this.LANG.FIL)
-        this.printRules(this.LANG.MAG)
+        // this.printRules(this.LANG.MAG)
     }
 
-    
+
     // print rules for english
     // we need this 
-    printRules(lang){
+    printRules(lang) {
         // console.log(`Printing rules::?`,lang)
- 
+
         let mem = this.memory[lang]
-        
+
         /**RETRIEVE EXISTING PATTERNS*/
         // console.log("Print rules:: ",lang)
         // let conversationRules = this.memory[lang].getPatternReferences()
@@ -108,24 +124,23 @@ export default class Engine{
     }
 
 
-    async load_data(){
+    async load_data() {
 
-        let step = new Promise((resolve,reject)=>{
+        let step = new Promise((resolve, reject) => {
             // set cluster data 
-            
-            this.classifier.insertCluster(diarrheaEngRules,this.LANG.ENG)
-            this.classifier.insertCluster(influenzaEngRules,this.LANG.ENG)
-            this.classifier.insertCluster(diarrheaFilRules,this.LANG.FIL)
-            this.classifier.insertCluster(influenzaFilRules,this.LANG.FIL)
-            this.classifier.insertCluster(diarrheaEngRules,this.LANG.MAG)
-            this.classifier.insertCluster(influenzaMagRules,this.LANG.MAG)
+
+            this.classifier.insertCluster(diarrheaEngRules, this.LANG.ENG)
+            this.classifier.insertCluster(influenzaEngRules, this.LANG.ENG)
+            this.classifier.insertCluster(diarrheaFilRules, this.LANG.FIL)
+            this.classifier.insertCluster(influenzaFilRules, this.LANG.FIL)
+            this.classifier.insertCluster(diarrheaEngRules, this.LANG.MAG)
+            this.classifier.insertCluster(influenzaMagRules, this.LANG.MAG)
             resolve(true)
-        }).then((val)=>{
-            
+        }).then((val) => {
+
             // CALL THIS TO BUILD PROBABILITY MAP STORING ALL 
             // TERM PROBABILITY
             this.classifier.buildTermProbabilityMap()
-
 
             /**FOR GETTING DOCUMENTS*/
             // this.classifier.printDocuments()
@@ -137,19 +152,18 @@ export default class Engine{
         // console.log(`Test A |"pamasa ko gamot"|  class:: `,testa)
         // let testb = this.classifier.getPrediction("saan ako pwede mama sa gamot")
         // console.log(`Test A |"saan ako pwede mama sa gamot"|  class:: `,testb)
-    
+
         // let testc = this.classifier.getPrediction("i need to buy medicine")
         // console.log(`Test A |"i need to buy medicine"|  class:: `,testc)
-    
     }
 
 
-    async getLanguage(msg){
+    async getLanguage(msg) {
         return this.classifier.getPrediction(msg)
     }
 
 
-    async getReply(msg){
+    async getReply(msg) {
         // let reply = `Unimplemented: Engine reply for msg >> ${msg}`
         // reply = this.memory['eng'].retrieveMemory(msg)
         // return reply
@@ -162,10 +176,10 @@ export default class Engine{
         let reply = "Not found"
 
         let lang
-        let identifyLanguage = new Promise((resolve,reject)=>{
+        let identifyLanguage = new Promise((resolve, reject) => {
             lang = this.classifier.getPrediction(msg)
             resolve(lang)
-        }).then((response)=>{
+        }).then((response) => {
 
             reply = this.memory[lang].retrieveMemory(msg)
         })
@@ -186,14 +200,14 @@ export default class Engine{
     // then maybe we just have to do voting mechanism
     // to identify as majority rules
     // it may be an overkill to use naive bayes
-    
+
     // remember we are only removing features
     // that exist in eng, fil, mag
 
-    async getReply(msg,lang){
-        console.log(`From Engine: getting reply for:\n\t${msg}\n\t${lang}`)
+    async getReply(msg, lang) {
+        // console.log(`From Engine: getting reply for:\n\t${msg}\n\t${lang}`)
         let reply = this.memory[lang].retrieveMemory(msg)
-        console.log(`\tResponse after memory retrieve:\n\t${reply}`)
+        // console.log(`\tResponse after memory retrieve:\n\t${reply}`)
         return reply
         // return `Engine reponse: ${msg} || ${lang}`
     }
