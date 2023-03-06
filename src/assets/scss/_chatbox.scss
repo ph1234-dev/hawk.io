@@ -36,7 +36,7 @@
         grid-template-columns: 1fr auto;
 
         .chatbox-nav-status,
-        .chatbox-nav-time{
+        .chatbox-nav-header-label{
             display: none;
         }
         .chatbox-nav-title{
@@ -134,6 +134,7 @@
         }
 
         .chatbox-action-send{
+            flex-grow: 1;
             border: none;
             // padding: p;
             padding: variable.$padding-top;
@@ -142,9 +143,19 @@
             order: 2;
             border-radius:  0 variable.$border-radius variable.$border-radius 0;
             background-color: variable.$bg-whitest;
-            >*{
-                color: variable.$bg-primary;
+            // background-color: variable.$bg-primary;
+            background-color: rgba(105, 104, 122, 0.1);
+            width: fit-content;
+
+            &:active{
+
+                >*{
+                    transform: scale(.8);
+                }
             }
+
+
+
         }
     }
 
@@ -161,17 +172,16 @@
     // $chatbot-border-color: rgb(58, 63, 75);
     $chatbot-border-color: white;
     $chatbot-width: 320px;
-    $chatbot-width: 500px;
+    $chatbot-width: 425px;
     $chatbox-border-width: 7px;
     
-
 
     .chatbox{
         max-width:  $chatbot-width !important;
         position: relative;
         width: $chatbot-width;
         box-sizing: content-box;
-        height: 525px;
+        height: 500px;
         padding: $chatbox-border-width;
         border-radius: $chatbot-container-radius;
         background-color: $chatbot-border-color;
@@ -182,7 +192,7 @@
             display: -ms-inline-grid;
             display: -ms-inline-grid;
             display: inline-grid;
-            grid-template-areas: "time status" "title actions";
+            grid-template-areas: "header-label status" "title actions";
             grid-template-columns: 1fr 1fr;
             row-gap: variable.$gap-vertical;
             border-radius:  $chatbot-container-radius  $chatbot-container-radius 0 0;
@@ -190,8 +200,8 @@
             padding-top: 2px;
 
                 
-            .chatbox-nav-time{
-                grid-area: time;
+            .chatbox-nav-header-label{
+                grid-area: header-label;
                 display: flex;
                 font-size: small;
                 position: absolute;

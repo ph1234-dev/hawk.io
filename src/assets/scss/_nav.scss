@@ -39,10 +39,20 @@ $width-max-nav: 960px;
             }
 
             &-push-left{
+                display: flex;
                 margin: unset;
+
                 // margin-left: auto;
                 // margin-top: auto;
                 // margin-bottom: auto;
+                
+                >*{
+                    margin-left: variable.$margin-left;
+                
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
             }
         }
 
