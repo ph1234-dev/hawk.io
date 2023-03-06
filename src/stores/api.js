@@ -1,19 +1,102 @@
-import { ref, computed } from 'vue'
+import { ref, computed ,reactive,watch} from 'vue'
 import { defineStore } from 'pinia'
+import { useRoute, useRouter } from 'vue-router'
+
 import Engine from '@/api/engine'
 
-
 export const useBackendAPI = defineStore('backend', () => {
+
+  let userInitialValue = {
+    id: '',
+    name: '',
+    authenticated: false
+  }
+  let user = reactive(userInitialValue)
+
   const URL_BASE = "http://127.0.0.1:5000"
-  const URL_REGISTER = ""
+  const URL_REGISTER = `${URL_BASE}/user/api/register`
+  const URL_LOGIN = `${URL_BASE}/user/api/login`
   const URL_STORE_LOG = `${URL_BASE}/log/api/post`
   const URL_PREDICT_LANGUAGE = `${URL_BASE}/classify/api/predict`
-
+  
   const ENGINE = new Engine()
 
+
+  if (localStorage.getItem("user")){
+    user = JSON.parse(localStorage.getItem("user"))
+  }
+
+  // https://www.youtube.com/watch?v=059fh7Gobho
+  // persisting vue pinia using watch
+  watch(user,userVal=>{
+    localStorage.setItem("user",JSON.stringify(userVal))
+  },{deep:true})
+  // // adding deep is true here meaning we will track depe changes
+
+  let router = useRouter()
+  let logoutUserAccount = ()=>{
+    localStorage.removeItem("user")
+    user.id = ''
+    user.name = ''
+    user.authenticated = false
+
+      router.push({
+        name: 'home'
+    })
+  }
+
+  let loginUserAccount = async (username, password)=>{
+    let data = {
+      "username": username,
+      "password": password,
+    }
+
+    // let response = await requestData(URL_LOGIN, data, 'POST');
+    // let responseData = await response.json()
+    // user.id =responseData.id
+    // user.name =responseData
+
+    let status = true
+    await requestData(URL_LOGIN, data, 'post')
+      .then(data=>{
+        if ( data.status != 200){
+          console.error('erorr happend')
+          status = false
+          return
+        }
+        return data.json()
+      }).then(responseData=>{
+          // console.log(resolvedData)
+          user.id = responseData.id
+          user.name = responseData.name
+          user.authenticated = true
+      }).catch(e=>{
+        console.log(`Call to API_ENDPOINT failed`, e)
+        status = false
+      })
+
+      return status
+  }
+
   let registerUser = (username, password, name) => {
-    let url = "http://url"
-    console.log(`Unimplemented [registerUser] - ${username} ${password} ${name}`)
+    // console.log(`Unimplemented [registerUser] - ${username} ${password} ${name}`)
+    let data = {
+      "username": username,
+      "password": password,
+      "name": name
+    }
+
+    requestData(URL_REGISTER, data, 'POST')
+      .then((data) => {
+        return data.json()
+      }).then((data)=>{
+        user.id =data.id
+        user.name =data.name
+        user.authenticated = true
+        console.log(data)
+      }).catch(e=>{
+        console.error("Could not register user data, ",e)
+      })
   }
 
   let storeLog = (userID, user, bot) => {
@@ -38,6 +121,8 @@ export const useBackendAPI = defineStore('backend', () => {
   let getLanguage = async (msg) => {
     let status = window.navigator.onLine
     let lang = "unspecified"
+    // lets make status false for testing purposes
+    status = false
     if (status) {
       //connect to backend            
       let data = { "message": msg}
@@ -90,7 +175,10 @@ export const useBackendAPI = defineStore('backend', () => {
   return {
     storeLog,
     registerUser,
-    getReply
+    getReply,
+    user,
+    loginUserAccount,
+    logoutUserAccount
   }
 })
 
