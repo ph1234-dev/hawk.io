@@ -30,25 +30,47 @@
             }else{
                 // console.log(`Form Errors? ${Object.keys(formErrors)}`)
                 // submit
-                store.registerUser(form.username,form.password,form.name)
+                let status = store.registerUser(form.username,form.password,form.name)
+                return status
             }
-        })
+    })
 
-        await validate
+
+    // if true users can register 
+    // else there was an error 
+    let allowed = await validate
+    console.log(`Allowed status from interface : ${allowed}`)
+    if (allowed) {
         console.log("Successful Registration")
         router.push({
             name: 'successful_register'
         })
-        // form = reactive(formInitialValue)
+        showAccountError.value = false
+    } else {
+        // alert('user already exist')
+        showAccountError.value = true
+        form = reactive(formInitialValue)
     }
+}
 
+let showAccountError = ref(false)
 
 </script>
 
 <template>
     <form class="form" @submit.prevent="submit()">
-        <span class="text text-big text-bold">New Account</span>
-        <p class="text-small">Complete the fields provided to register</p>
+        <strong>New Account</strong>
+
+        <p class="text-small">
+            <template v-if="showAccountError" class="error">
+                Account with username 
+                <strong><em>{{form.username}}</em></strong>
+                already exist. Please choose a different one
+            </template>
+            <template v-else>
+                Complete the fields provided to register
+            </template>
+        </p>
         
         &nbsp;
         <label>Tester name</label>
@@ -73,5 +95,6 @@
     }
     form{
         border: none;
+        box-shadow: 0px 2px 7px rgba(228, 228, 228, 0.77);
     }
 </style>
