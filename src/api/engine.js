@@ -98,7 +98,7 @@ export default class Engine {
          * */
 
         // hide this for testing
-        // this.load_data()
+        this.load_data()
         
         // this.printRules(this.LANG.ENG)
         // this.printRules(this.LANG.FIL)
@@ -129,12 +129,21 @@ export default class Engine {
         let step = new Promise((resolve, reject) => {
             // set cluster data 
 
-            this.classifier.insertCluster(diarrheaEngRules, this.LANG.ENG)
+            // english rules
+            // additional steps: 
+            // 1. english rules needs to be in porter and stemmer forms
+            this.classifier.insertCluster(diarrheaEngRules, this.LANG.ENG)            
             this.classifier.insertCluster(influenzaEngRules, this.LANG.ENG)
-            this.classifier.insertCluster(diarrheaFilRules, this.LANG.FIL)
-            this.classifier.insertCluster(influenzaFilRules, this.LANG.FIL)
-            this.classifier.insertCluster(diarrheaEngRules, this.LANG.MAG)
-            this.classifier.insertCluster(influenzaMagRules, this.LANG.MAG)
+
+            // filipino rules
+            // this.classifier.insertCluster(diarrheaFilRules, this.LANG.FIL)
+            // this.classifier.insertCluster(influenzaFilRules, this.LANG.FIL)
+            
+
+            // maguindanaon rules
+            // this.classifier.insertCluster(diarrheaEngRules, this.LANG.MAG)
+            // this.classifier.insertCluster(influenzaMagRules, this.LANG.MAG)
+
             resolve(true)
         }).then((val) => {
 
@@ -177,11 +186,19 @@ export default class Engine {
 
         let lang
         let identifyLanguage = new Promise((resolve, reject) => {
+
             lang = this.classifier.getPrediction(msg)
             resolve(lang)
+
         }).then((response) => {
 
             reply = this.memory[lang].retrieveMemory(msg)
+        
+            // if the language predicted is in english then do porter and stemmer
+
+            // if the language is maguindanaon, then do....
+
+
         })
 
         await identifyLanguage
