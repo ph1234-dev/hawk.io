@@ -2,15 +2,18 @@
 
 .btn,
 button{
-    width: fit-content;
-    border-radius: variable.$border-radius;
-    padding: variable.$padding;
     @include variable.draw-border;
+    border-radius: variable.$border-radius;
+
+    width: fit-content;
+    padding: variable.$padding;
     background-color: variable.$bg-white;
     display: flex;
+    
     align-items: center;
     gap: variable.$padding-left;
     cursor: pointer;
+    
     font-weight: 600;
     font-size: smaller;
 

@@ -62,10 +62,15 @@ $gap-vertical: variable.$gap-vertical *2;
         display: flex;
         flex-direction: column ;
         gap: $gap-vertical ;
-        align-items: center;
-        justify-content: center;
         padding: $padding;
         align-items: center;
+        justify-content: center;
+        
+
+        >*{
+            align-self: center;
+        }
+
 
         >:first-child{
             margin-top: variable.$margin-top*2;
@@ -106,7 +111,7 @@ $gap-vertical: variable.$gap-vertical *2;
 
     .panel{
         display: flex;
-        flex-direction: row;
+        flex-direction: row !important;
         gap: variable.$gap-horizontal; 
         text-align: start;
         justify-content: center;

@@ -63,8 +63,7 @@ $width-max-nav: 960px;
 }
 
 .nav-overlay{
-    display: flex;
-    flex-direction: column;
+    display: none;
     z-index: 9999;
     position: absolute;
     top: 0;
@@ -76,13 +75,18 @@ $width-max-nav: 960px;
     gap: variable.$gap-vertical;
     padding: variable.$padding;
     background-color: variable.$bg-whitest;
+
+    &-show{
+        display: flex;
+        flex-direction: column;    
+    }
 }
 
 @media screen and (min-width: 426px) {
 
-    .nav-overlay{
-        display: none;
-    }
+    // .nav-overlay{
+    //     display: none;
+    // }
 
     .nav{
         padding: variable.$padding;
