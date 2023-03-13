@@ -1,48 +1,49 @@
 <script setup>
+import {onMounted} from 'vue'
 import { useRouter } from 'vue-router';
+import { useBackendAPI } from '@/stores/api';
+import LoginForm from './LoginForm.vue';
 
+let backendAPI = useBackendAPI()
+let user = backendAPI.user
 let router = useRouter()
-let removeOverlay = ()=>{
+let removeOverlay = () => {
     let el = document.querySelector(".nav-overlay")
     el.style.display = "none"
-}
-
-let login = () => {
-    router.push({ name: 'signin' })
-    removeOverlay()
-}
-
-let goToChat = () => {
-    router.push({ name: 'chat' })
-    removeOverlay()
-}
-
-let goToRegister= () => {
-    router.push({ name: 'register' })
-    removeOverlay()
 }
 
 </script>
 
 <template>
     <div class="nav-overlay">
-        <span class="icon-hawk icon-bigger"></span>
-        <p class="title-bigger">hawk.io</p>
-        <p class="title">
-            Health Awareness Knowledgebase
-        </p>
-        <button class="btn-primary" @click.stop="goToChat">Chat Now</button>
-        &nbsp;
-        <button class="btn-accent call-to-action" @click.stop="login">Sign In</button>
-        <b>or</b>
-        <p>Click <a @click.stop="goToRegister" >here</a> to register</p>
+        <LoginForm v-if="user.authenticated == false"></LoginForm>
+        <div class="proceed-block"  v-else>
+            <button class="btn-accent" @click.stop="removeOverlay">Proceed</button>
+            <p class="text-small">
+                Click proceed to use the application 
+            </p>
+        </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+.proceed-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .8em;
+    
+    p {
+        max-width: 35ch;
+    }
+}
+
 .nav-overlay {
     /* background-color: rgb(241, 240, 240);
         background-color: white; */
+    width: 100%;
+    z-index: 9999;
 }
 
 .title {

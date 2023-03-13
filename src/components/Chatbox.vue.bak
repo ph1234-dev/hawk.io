@@ -1,0 +1,75 @@
+<script setup>
+
+import {ref,watch,onMounted,nextTick } from 'vue'
+import { useBackendAPI } from '../stores/api';
+import NavOverlay from './NavOverlay.vue'
+
+let msg = ref('')
+let userMessages = ref([])
+let store = useBackendAPI()
+
+let chatboxContainer = null
+
+let sendMessage = async () => {
+
+    let retrieveResponse = new Promise((resolve,reject)=>{
+        let reply = store.getReply(msg.value)
+        console.log("Trying to get reply")
+        resolve(reply)
+    }).then(response=>{
+        console.log("\nResponse found: ", response)
+        store.storeLog(1,msg.value,response)
+        userMessages.value.push({
+            "bot": response,
+            "user": msg.value
+        })
+    }).catch(e=>{
+        console.log(`Found error: `, e)
+    })
+
+    await retrieveResponse
+}
+
+
+let showNavOverlay = () =>{
+
+}
+
+onMounted(() => {
+    chatboxContainer = document.querySelector('.chatbox-message-container')
+})
+
+// side effect of update is to change the DOM next
+// you can achieve this by calling nextTick to indicate 
+// that you need to school down explicitly
+// this can also be done with async and await...
+// but this is so much clener
+watch(userMessages.value,function(){
+    https://stackoverflow.com/questions/70276948/when-data-is-changed-within-the-watch-function-dom-does-not-update
+    nextTick(()=>{
+        let lastElement = chatboxContainer.lastElementChild
+        let topPos = lastElement.offsetTop;
+        chatboxContainer.scrollTop = topPos;
+    })
+})
+
+</script>
+
+
+<template>
+    <NavOverlay></NavOverlay>
+</template>
+
+<style lang="scss" scoped>
+
+.icon-menu{
+    display: block;
+}
+
+@media screen and (min-width: 425px) {
+    .icon-menu{
+        display: none;
+    }
+}
+
+</style>
