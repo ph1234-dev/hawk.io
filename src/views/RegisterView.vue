@@ -58,6 +58,9 @@ let showAccountError = ref(false)
 </script>
 
 <template>
+
+    
+    <section class="container container-centered">
     <form class="form" @submit.prevent="submit()">
         <strong>New Account</strong>
 
@@ -72,21 +75,21 @@ let showAccountError = ref(false)
             </template>
         </p>
         
-        &nbsp;
-        <label>Tester name</label>
-        <input v-model="form.name" type="text">
+        <!-- <label>Tester name</label> -->
+        <input v-model="form.name" type="text" placeholder="Account name">
         <span v-if="formErrors.name"  class="error">{{ formErrors.name }}</span>
 
-        <label>Username</label>
-        <input v-model="form.username" type="text">
+        <!-- <label>Username</label> -->
+        <input v-model="form.username" type="text" placeholder="Username">
         <span v-if="formErrors.username"  class="error">{{ formErrors.username }}</span>
 
-        <label>Password</label>
-        <input v-model="form.password" type="password">
+        <!-- <label>Password</label> -->
+        <input v-model="form.password" type="password" placeholder="Password">
         <span v-if="formErrors.password"  class="error">{{ formErrors.password }}</span>
 
         <input type="submit" >
     </form>
+</section>
 </template>
 
 <style scoped>
