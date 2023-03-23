@@ -2,15 +2,7 @@
 import Nav from '@/components/Nav.vue'
 import Footer from '@/components/Footer.vue'
 import NavOverlay from '@/components/NavOverlay.vue'
-import AppBodySection2 from '@/components/AppBodySection2.vue';
-import AppBodySection3 from './components/AppBodySection3.vue';
 
-let scrollDown = ()=>{
-  let el = document.querySelector("#template-body-section-2")
-  if ( el ){
-    el.scrollIntoView({ behavior: "smooth" });
-  }
-}
 </script>
 
 <template>
@@ -21,32 +13,7 @@ let scrollDown = ()=>{
     </header>
     <main class="template-body">
 
-      <section id="template-body-content-1" class="container container-split-2" >
-        <div id="left-area">
-          <div id="project-title-container">
-            <strong id="catch-phrase" class="text-biggest">Hawk </strong>
-            <i class="hawk-outline"></i>
-          </div>
-          
-          <div id="project-title-container" class="text-big">
-            <strong>A selfcare Assistant</strong>
-          </div>
-          
-          <em class="text-small">Health Awareness Knowledgebase , or Hawk, is a conversational agent for diarrhea and influenza</em>
-
-          <div id="call-to-action">
-            <button @click="scrollDown()" class="btn btn-primary" style="margin-top: 1rem"><i class="icofont-arrow-down"></i>Learn more</button>  
-          </div>
-        </div>
-        <RouterView ></RouterView>
-      </section>
-
-      <AppBodySection2></AppBodySection2>
-
-      <AppBodySection3></AppBodySection3>
-
-
-
+      <RouterView></RouterView>
     </main>
     <footer class="template-footer">
       <Footer />
@@ -72,75 +39,6 @@ $scoped-padding: 7rem;
   font-family: 'Poppins', sans-serif !important;
 }
 
-#left-area{
-  display: none;
-
-  #call-to-action{
-    margin-top: 5rem;
-  }
-}
-
-em,
-p{
-  max-width: 40ch;
-}
-
-#project-title-container{
-  display: flex !important;
-  align-items: center;
-  gap: .5rem;
-}
-
-.hawk-outline{
-  background: url("@/assets/svg/logo outline.svg") no-repeat;
-  // background-color: indianred;
-  // background-repeat: no-repeat;
-  // bak
-  // width: 100px;
-  // height: 100px; 
-  width: calc(1.15rem + 1.5vw);
-  height:  calc(1.15rem + 1.5vw);
-  display: block;
-  opacity: $scoped-opacity;
-}
-
-#template-body-content-1{
-  z-index: 999;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-
-@media screen and (min-width: 768px){
-  #left-area{
-    display: flex;
-    flex-direction: column;
-    *{
-      color: $scoped-color-white;
-    }
-    min-width: 50%;
-      
-    >:nth-child(1){
-      // color: green !important;
-      margin-bottom: 3rem;
-    }
-
-    #catch-phrase{
-      line-height: 110%;
-    }
-  }
-
-  #template-body-content-1{  
-    flex-direction: row !important;
-    // align-items: unset;
-    gap: unset;
-    align-content: flex-start;
-  }
-}
 
 .template{
   overflow: hidden;
@@ -157,7 +55,7 @@ p{
 
 .template-footer,
 .template-header{
-  z-index: 2;
+  z-index: 3;
   background-color: transparent !important;
 
   *{
@@ -167,9 +65,11 @@ p{
 
 .template-body{
   overflow-y:unset;
-  &::after{
+  z-index: 2;
+  
+  &::before{
     content: '';
-    z-index: 1;
+    z-index: -1;
     // background-color: rgb(236, 50, 87);
 
     // https://cssgradient.io/shades-of-blue/
@@ -178,8 +78,8 @@ p{
     // background-color: cornflowerblue;
     display: block;
     width: 100%;
-    height: 40vh;
-    scale: (2.95);
+    height: 80vh;
+    // scale: (2.95);
     // transform: rotate(-3deg);  
     // in order for absoluate to work you need to set the parent
     // container and the positions top/lef/right/bottom
@@ -189,5 +89,22 @@ p{
     top: 0;
   }
 }
+
+@media screen and (min-width: 768px) {
+    .template-body{
+      z-index: 1;
+      &::before{
+        content: '';
+        z-index: -1;
+      }
+    }
+
+    .template-footer,
+    .template-header{
+      z-index: 2;
+    } 
+
+}
+
 
 </style>
