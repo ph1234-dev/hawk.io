@@ -14,8 +14,8 @@ export const useBackendAPI = defineStore('backend', () => {
   }
   let user = reactive(userInitialValue)
 
-  // const URL_BASE = "http://flask.activlab.pro/"
-  const URL_BASE = "http://127.0.0.1:5000"
+  const URL_BASE = "http://flask.activlab.pro/"
+  // const URL_BASE = "http://127.0.0.1:5000"
   const URL_REGISTER = `${URL_BASE}/user/api/register`
   const URL_LOGIN = `${URL_BASE}/user/api/login`
   const URL_STORE_LOG = `${URL_BASE}/log/api/post`
