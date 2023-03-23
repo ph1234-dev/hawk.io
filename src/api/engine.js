@@ -11,98 +11,126 @@ import {
     influenzaMagRules
 } from './rules/influenza/rules-influenza'
 
-import LanguageClassifier from './language-identifier'
+import LanguageClassifier from './language-classifier'
+import DomainClassifier from './domain-classifier'
 
 export default class Engine {
 
     constructor() {
 
+        // console.log(`English Rules / ${[].concat(diarrheaEngRules,influenzaEngRules).length}`)
+        // console.log(`Filipino Rules / ${[].concat(diarrheaFilRules,influenzaFilRules).length}`)
+        // console.log(`Maguindanaon Rules / ${[].concat(diarrheaMagRules,influenzaMagRules).length}`)
+        
+        this.RULES = {
+            ENG: [].concat(diarrheaEngRules,influenzaEngRules),
+            FIL: [].concat(diarrheaFilRules,influenzaFilRules),
+            MAG: [].concat(diarrheaMagRules,influenzaMagRules)
+        }
+
+        this.RULES_DIMENSION_CLASSIFIERS = {
+            ENG: new DomainClassifier(),
+            FIL: new DomainClassifier(),
+            MAG: new DomainClassifier(),
+        }
+
+        // console.log(JSON.stringify(this.RULES["ENG"]))
         this.LANG = {
             ENG: 'eng',
             FIL: 'fil',
             MAG: 'mag'
         }
 
-        this.langSupported = [
-            this.LANG.ENG,
-            this.LANG.FIL,
-            this.LANG.MAG,
-        ]
+        // refer here
+        // https://selfcarejournal.com/article/the-self-care-matrix-a-unifying-framework-for-self-care/
+        // seven pillars    
+        this.SELFCARE_DIMENSIONS = {
+            // 1 - knowledge and health literacy
+            1: "Knowledge and health literacy",
+            2: "Mental welbeing, self-awarenss and Agency",
+            3: "Physical Activity",
+            4: "Healthy Eating",
+            5: "Risk Avoidance",
+            6: "Good Hygeine",
+            7: "Rational Use of Product and services"
+        }
 
+        
+        
         this.memory = {}
-        this.langSupported.forEach(lang => {
-            this.memory[lang] = new Blackbox()
+        
+        // USER THIS TO PREDICT THE DIMENSION
+        this.classifierSelfcareDimensions = new LanguageClassifier()
+        
+        
+
+        console.log('Loading domain classifier model')
+        // we create a master memory
+        Object.keys(this.LANG)
+            .forEach((lang,value)=>{
+
+                console.log(`\tLang - ${lang}`)
+                this.memory[lang] = {}
+
+                // dimensions are the intentsor dimensions we need to perform the classification 
+                Object.keys(this.SELFCARE_DIMENSIONS)
+                    .forEach((dimension)=>{
+                        
+                        //  filter corresponding rules
+                        let filtered = this.RULES[lang].filter(rule=>{
+                            return rule.dimension == dimension
+                        })
+
+                        if ( filtered.length > 0){
+                            console.log(`\t\tDimension - ${dimension} | ${this.SELFCARE_DIMENSIONS[dimension]}| ${filtered.length} cases\n\t\t\t${filtered}`)
+                            let mem = new Blackbox()
+                            mem.storeRules(filtered)
+                            mem.transformReferences()
+                            mem.sortReferences()
+                            this.memory[lang][dimension] = mem
+                        }
+
+
+                        //each language has 7 pillar classifiers
+                        //THERE IS A PROBLEM HERE.. YOU SHOULD NOT BE TRAINING USING THE RESPONSES 
+                        //YOU SHOULD ONLY TRAIN USING THE PATTERNS
+                        this.RULES_DIMENSION_CLASSIFIERS[lang].insertCluster(filtered,dimension)
+                    })
         })
 
-        this.classifier = new LanguageClassifier()
+
+        // TO ACCESS MEMORY this.memory[LANG][DIMENSION] 
+        // WE NEED TO IDENTIFY THE VALUE OF LANG AND DIMENSION
+
+        // USE THIS TO PREDICT THE LANGUAGE
+        this.classifierLanguage = new LanguageClassifier()
+        // STEP 1: LOAD DATASETS
+        // STEP 2: TRAIN THE MODEL
 
 
-        // stores the documents for eng,fil,mag
-        // this is needed for the machine learning
-        this.document = {}
-        this.langSupported.forEach(lang => {
-            this.document[lang] = new Array()
-        })
+        // console.log('Loading language classifier model')
+        // Object.keys(this.RULES).forEach(lang=>{
+        //     console.log(`\tLang // ${lang}`)
+        //     console.log(`\tArray // ${this.RULES[lang]}`)
+        //     this.classifierLanguage.insertCluster(this.RULES[lang],lang)
+        // })
 
-        console.log(`Starting Engine`)
+
+
+        // console.log(`Starting Engine`)
 
         // load diarrhea rules
-        let engMemory = this.memory[this.LANG.ENG]
-        engMemory.storeRules(diarrheaEngRules)
-        engMemory.storeRules(influenzaEngRules)
-        engMemory.transformReferences()
-        engMemory.sortReferences()
 
-        // to enter substitutions
-        // you need to use porter and stemmed entries
-        // this is a lot easier to handle inflection
-        // if possible you need to enter synonyms
-
-
-        let filMemory = this.memory[this.LANG.FIL]
-        filMemory.storeRules(diarrheaFilRules)
-        filMemory.storeRules(influenzaFilRules)
-        filMemory.transformReferences()
-        filMemory.sortReferences()
-
-        // Unlike english, the filipino
-        // can be manually processed?
-        // is there are way to have a porter and 
-        // stemmer in filipino?
-
-
-        let magMemory = this.memory[this.LANG.MAG]
-        magMemory.storeRules(diarrheaMagRules)
-        magMemory.storeRules(influenzaMagRules)
-        magMemory.transformReferences()
-        magMemory.sortReferences()
-
-        // Unlike english, the maguindanaon
-        // can be manually processed?
-        // is there are way to have a porter and 
-        // stemmer in filipino?
-
-
-        /** 
-         * here you need to implement a loading mechanism
-         * something like this
-         * if (session.get("memory")){
-         *      this.memory = session.get("memory")
-         * }else{
-         *      then load data
-         * }
-         * 
-         * another thing is if there is version change
-         * if ( an update has been made )
-         * 
-         * */
 
         // hide this for testing
-        this.load_data()
+        // this.load_data()
         
         // this.printRules(this.LANG.ENG)
         // this.printRules(this.LANG.FIL)
         // this.printRules(this.LANG.MAG)
+
+        // NOTE RO REMEMBER YOU NEED TO COMPUTE THE LEVENSHTEIN DISTANCE FOR SELECTED 
+        // TERMINOLOGIES
     }
 
 
@@ -124,59 +152,39 @@ export default class Engine {
     }
 
 
-    async load_data() {
-
-        let step = new Promise((resolve, reject) => {
-            // set cluster data 
-
-            // english rules
-            // additional steps: 
-            // 1. english rules needs to be in porter and stemmer forms
-            this.classifier.insertCluster(diarrheaEngRules, this.LANG.ENG)            
-            this.classifier.insertCluster(influenzaEngRules, this.LANG.ENG)
-
-            // filipino rules
-            // this.classifier.insertCluster(diarrheaFilRules, this.LANG.FIL)
-            // this.classifier.insertCluster(influenzaFilRules, this.LANG.FIL)
-            
-
-            // maguindanaon rules
-            // this.classifier.insertCluster(diarrheaEngRules, this.LANG.MAG)
-            // this.classifier.insertCluster(influenzaMagRules, this.LANG.MAG)
-
-            resolve(true)
-        }).then((val) => {
-
-            // CALL THIS TO BUILD PROBABILITY MAP STORING ALL 
-            // TERM PROBABILITY
-            this.classifier.buildTermProbabilityMap()
-
-            /**FOR GETTING DOCUMENTS*/
-            // this.classifier.printDocuments()
-        })
-
-        await step
-
-        // let testa = this.classifier.getPrediction("pamasa ko gamot")
-        // console.log(`Test A |"pamasa ko gamot"|  class:: `,testa)
-        // let testb = this.classifier.getPrediction("saan ako pwede mama sa gamot")
-        // console.log(`Test A |"saan ako pwede mama sa gamot"|  class:: `,testb)
-
-        // let testc = this.classifier.getPrediction("i need to buy medicine")
-        // console.log(`Test A |"i need to buy medicine"|  class:: `,testc)
-    }
-
-
     async getLanguage(msg) {
-        return this.classifier.getPrediction(msg)
+        return this.classifierLanguage.getPrediction(msg)
     }
 
 
+    /**
+     * 
+     * @param {*} msg | get message form user
+     * @returns a valid response
+     * 
+     * you need to increase synthetic data with chat gpt
+     * 
+     * Final step:
+     * 1. trim white spaces 
+     * 2. to lower cases
+     * 3. classify language
+     * 4. peform edit distance formula and change term (max edits=2)
+     * 5. perform concept substitution if there are any
+     * 6. perform dimension classification
+     * 7. retrieve response
+     * 8. if not found move on to the next narest dimension
+     * 9. if still not satisfied perform cosine similarity on the first target dimension given threshold (.7)
+     * 10. if not found tell use reponse does not exist
+     */
     async getReply(msg) {
         // let reply = `Unimplemented: Engine reply for msg >> ${msg}`
         // reply = this.memory['eng'].retrieveMemory(msg)
         // return reply
 
+
+        // NOTE RO REMEMBER YOU NEED TO COMPUTE THE LEVENSHTEIN DISTANCE FOR SELECTED 
+        // TERMINOLOGIES
+ 
 
         // NOTE THIS IN PROBABILITIES
         // https://mmuratarat.github.io/2019-07-31/NBClassifier-in-Python-an-example
@@ -187,11 +195,15 @@ export default class Engine {
         let lang
         let identifyLanguage = new Promise((resolve, reject) => {
 
-            lang = this.classifier.getPrediction(msg)
+            lang = this.classifierLanguage.getPrediction(msg)
             resolve(lang)
 
         }).then((response) => {
 
+            // lets fix this.. before retrieving memory, lets try to
+            // 1. identify which pillar it belongs 
+            // 2. if found, then retrieve
+            // psu
             reply = this.memory[lang].retrieveMemory(msg)
         
             // if the language predicted is in english then do porter and stemmer
