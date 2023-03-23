@@ -26,8 +26,8 @@ let logout = ()=>{
             </template>
             <template v-else>
                 <span class="nav-link-push-left">
-                    <a ><span class="icon-headphones"></span> {{ user.name }}</a>
-                    <a @click.stop="logout()" >Logout</a>
+                    <a ><span class="icofont-safety"></span> {{ user.name }}</a>
+                    <a @click.stop="logout()" ><span class="icofont-sign-out"></span>Logout</a>
                 </span>
             </template>
             

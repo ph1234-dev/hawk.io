@@ -49,49 +49,87 @@ let submit = async () => {
 </script>
 
 <template>
+
+
     <form class="form" @submit.prevent="submit()">
 
         <div class="form-header">
-           
             <strong class="">Account Details  <span class="icofont-safety"></span></strong>
             <p class="text-small ">Use the account you registered.</p>
         </div>
         
         <span class="" v-if="showDoesNotExistAccount"> Account Does Not Exist</span>
 
-        <label>Username</label>
-        <input v-model="form.username" type="text">
+        <!-- <label>Username</label> -->
+        <input v-model="form.username" type="text" placeholder="Username">
         <span v-if="formErrors.username" class="error ">{{ formErrors.username }}</span>
 
-        <label>Password</label>
-        <input v-model="form.password" type="password">
+        <!-- <label>Password</label> -->
+        <input v-model="form.password" type="password" placeholder="Password">
         <span v-if="formErrors.password" class="error">{{ formErrors.password }}</span>
         <input type="submit">
-        <span class="dont-have-account text-small">Dont have Account yet? Click
-            
-            <router-link class="text-bold" :to="{name: 'register'}">here</router-link> 
-        to register</span>
 
+        <div class="text-small login-options">
+            <p class="dont-have-account">
+                Dont have Account yet? Click
+                <router-link class="text-bold" :to="{name: 'register'}">here</router-link> 
+                to register
+            </p>
+            <strong>or</strong>
+            <p>Click <a><strong>here</strong></a> to use the application without logging in</p>
+        </div>
     </form>
     
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+
+    $scoped-opacity: .77;
+    $scoped-color-white:  rgba(255,255,255,$scoped-opacity) !important;
+    $scoped-blue: #2a52be;
+    $scoped-padding: 7rem;
+    $scoped-shadow: 0px 2px 7px rgba($scoped-blue, 0.15);
+
+    p{
+        // width:35ch;
+    }
     .dont-have-account{
         margin-top: 2rem;
+        // text-align: center;
+        // align-self: center;
     }
     .title{
         margin-bottom: 40px;
     }
+
     form{
         border: none;
-        box-shadow: 0px 2px 7px rgba(228, 228, 228, 0.77);
+        box-shadow:  $scoped-shadow;
+        align-items: center;
+       
+        .error{
+            align-self: flex-start;
+        }
     }
 
     .form-header{
-        /* line-height: 1; */
-        /* display: block; */
         line-height: 100%;
         margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-options{
+        // background-color:#2a52be;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        >*{
+            width: 35ch;
+        }
     }
 </style>

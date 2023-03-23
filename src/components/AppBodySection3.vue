@@ -46,7 +46,6 @@ $scoped-padding: 7rem;
   z-index: 1;
   text-align: center;
   background-color: $scoped-blue;
-
   .title{
     margin-bottom: 2rem;
   }

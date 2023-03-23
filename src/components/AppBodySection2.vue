@@ -4,7 +4,7 @@
         <span class="details">At the moment, the application knows limited and targeted conversations.</span>
         <span id="content" class="container container-row container-centered">
             <div class="block">
-                <i class="icofont-first-aid text-biggest"></i>
+                <i class="icofont-pills text-biggest"></i>
                 <span class="text-bold">Diarrhea</span>
                 <p class="text-small">
                     The chatbot can provide you information that may be useful for taking care of
@@ -12,7 +12,7 @@
                 </p>
             </div>
             <div class="block">
-                <i class="icofont-first-aid text-biggest"></i>
+                <i class="icofont-medicine text-biggest"></i>
                 <span class="text-bold">Influenza</span>
                 <p class="text-small">
                     The chatbot can provide you information that may be useful for taking care of
@@ -44,5 +44,6 @@ $scoped-padding: 7rem;
   #content{
     margin-top: 2rem;
   }
+  
 }
 </style>
