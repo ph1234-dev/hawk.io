@@ -6,13 +6,13 @@ let section16 = [
         `* why * (not (use|take|buy)|avoid) * diarrhea_drugs * diarrhea *`,
     ],[
         `Doctors generally do not recommend using over-the-counter medicines for people who have bloody stools or fever—signs of infection with bacteria or parasites.`
-    ]),
+    ],7),
     encodeMemory([
         `* why * (avoid|not (take|use)) * diarrhea_drugs *`,
         `* why * diarrhea_drugs * (avoid|not (take|use)) *`
     ],[
         `Anti-diarrheal drugs such as bismuth subsalicylate and   antimotility agents such as loperamide should be avoided in people with high fever or bloody diarrhea as they can worsen severe colon infections. In children, these should be avoided they can lead to complications of  hemolytic uremic syndrome in cases of Shiga-toxin E. col.`
-    ]),
+    ],7),
     encodeMemory([
         `* who * not (take|use) * on_the_counter * drug *`,
         `* who * not (take|use) * diarrhea_drugs *`,
@@ -22,17 +22,17 @@ let section16 = [
         `* diarrhea_drugs * avoid * (who|by) *`,
     ],[
         `People who have bloody stools or fever should not take on the counter drugs. `
-    ]),
+    ],7),
     encodeMemory([
         `* what * treat * diarrhea *`
     ],[
         `You can take antimotility (imodium, loperamide) to slow the movement of food,  bismuth subsalicylate (pepto-bismol and kaopectate) to balance fluids moving through the digestive tract, glucose-electrolyte solutions to balance water sugar, and salts, hemorroid cream or petroleum jelly if your rectal area is sore, Oral rehydration solutions , priobiotics  and zinc supplements`
-    ]),
+    ],1),
     encodeMemory([
         `* what * problem * diarrhea_drugs *`
     ],[
         `These can worsen severe colon infections. In children, these should be avoided they can lead to complications of hemolytic  uremic syndrome in cases of Shiga-toxin E. col.`
-    ]),
+    ],7),
 ]
 
 
@@ -45,7 +45,7 @@ let section18 = [
         `* what * steps? * washing * hands *`
     ],[
         `Lather with soap for at least 20 seconds.  After putting soap on your hands, rub your hands together for at least 20 seconds. This is about as long as it takes to sing "Happy Birthday" twice through. Use hand sanitizer when washing isn't possible. Use an alcohol-based hand sanitizer when you can't get to a sink. Apply the hand sanitizer as you would hand lotion, making sure to cover the fronts and backs of both hands. Use a product that contains at least 60% alcohol.`
-    ]),
+    ],6),
 ]
 
 let section19 = [
@@ -59,7 +59,7 @@ let section20 = [
         `* (what|how) * (treat|reduce|control) * fever *`
     ],[
         `You can drink plenty of fluids to stay hydrated. There are some over-the-counter (otc) pain relievers you can take to reduce discomfort. For example, you can ask your pharmacist for acetaminophen for pain relief. When you have a fever, apply damp, luke warm cloths to the forehead. Wear comfortable cloths. If you have chills, it is best to wear layers and keep warm. Then rest. you need plenty of rest to recover`
-    ]),
+    ],2),
     encodeMemory([
         `* (what|how) * (treat|reduce|control) * vomiting *`
     ],[
@@ -73,7 +73,7 @@ let section20 = [
        
         5.When you can tolerate bland food, you can resume your normal diet.
        `
-    ]),
+    ],2),
     encodeMemory([
         `* (what|how) * treat * nausea *`
     ],[
@@ -96,7 +96,7 @@ let section20 = [
         • Choose foods from all the food groups as you 
             can tolerate them to get adequate nutrition.
         `
-    ]),
+    ],2),
     encodeMemory([
         `* (what|how) * treat * headache *`
     ],[
@@ -113,7 +113,7 @@ let section20 = [
         6.  To relax muscles, soak in a hot bath or use a hot shower
         
         `
-    ]),
+    ],2),
     encodeMemory([
         `* (what|how) * treat * abdominal cramp *`
     ],[
@@ -128,17 +128,17 @@ let section20 = [
         `* what * take * vomit *`
     ],[
         `try eating small amounts of bland foods. Try foods such as bananas, rice, applesauce, dry toast,soda crackers (these foods are called BRAT diet).`
-    ]),
+    ],2),
     encodeMemory([
         `* what * food * (avoid|not take)  * nausea *`
     ],[
         `Eat light or bland foods (such as saltine crackers or plain bread).`
-    ]),
+    ],4),
     encodeMemory([
         `* why * boil *`
     ],[
         `Boiling is done to kill pathogenic bacteria, viruses and protozoa. Boiling water should be brought to a rolling boil for at least two (2) minutes `
-    ]),
+    ],1),
     encodeMemory([
         `* how * boil * water *`
     ],[
@@ -150,7 +150,7 @@ let section20 = [
         
         * To improve the flat taste of boiled water, add one pinch of salt to each quart or liter of water, or pour the water from one clean container to another several times.
         `
-    ]),
+    ],1),
     encodeMemory([
         `* steps * disinfect * water *`,
         `* how * disinfect * water *`,
@@ -159,12 +159,12 @@ let section20 = [
 
         2. Add 2 teaspoons of stock solution to 5 gallons (20 liters) of water. Mix thoroughly and let it stand for at least 30 minutes before using.        
         `
-    ]),
+    ],1),
     encodeMemory([
         `* what * use * disinfect * water *`
     ],[
         `you can use chlorine `
-    ]),
+    ],1),
 ]
 
 

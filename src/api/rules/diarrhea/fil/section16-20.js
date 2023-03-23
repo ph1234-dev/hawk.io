@@ -1,23 +1,18 @@
-let encodeMemory = function(pattern,response,nextTopic){
-    return{
-      "pattern": pattern,
-      "response": response,  
-      "nextTopic": nextTopic
-    }
-}
+import { encodeMemory } from "@/api/engine/model"
+
 
 let section16 = [
     encodeMemory([
         `* bakit * (iwas| (hindi|huwag)  * (kain|inom|gamit))  * gamot_sa_diarrhea * `,
     ],[
         `Karaniwang hindi inirerekomenda ng mga doktor ang paggamit ng mga over-the-counter na gamot para sa mga taong may dugo sa dumi o lagnat—mga palatandaan ng impeksyon sa bakterya o mga parasito.`
-    ]),
+    ],7),
     encodeMemory([
         `* bakit * (iwas| (hindi|huwag)  * (kain|inom|gamit))  * gamot_sa_diarrhea *`,
         `* bakit * gamot_sa_diarrhea * (iwas|(hindi|huwag)  * (kain|inom|gamit))  * `,
     ],[
         `Ang mga anti-diarrheal na gamot tulad ng bismuth subsalicylate at mga antimotility agent tulad ng loperamide ay dapat na iwasan ng mga taong may mataas na lagnat o madugong pagtatae dahil maaari itong magpalala ng impeksyon sa colon. Sa mga bata, dapat itong iwasan na maaari silang humantong sa mga komplikasyon ng hemolytic uremic syndrome sa mga kaso ng Shiga-toxin E. col.`
-    ]),
+    ],7),
     encodeMemory([
         `* sino * (huwag|hind) * (gumamit|kain|inom) * on_the_counter * drug * `,
         `* sino * (huwag|hind)* (gumamit|kain|inom) * * diarrhea_drugs *`,
@@ -27,17 +22,17 @@ let section16 = [
         `* diarrhea_drugs * iwasan * nino *`,
     ],[
         `Ang mga taong may madugong dumi o lagnat ay hindi dapat uminom ng mga gamot na nabibili ng walang riseta.`
-    ]),
+    ],7),
     encodeMemory([
         `*(paano| ano) * gamot * diarrhea *`,
     ],[
         `Maaari kang gumamit ng antimotility (imodium, loperamide) upang mapabagal ang paggalaw ng pagkain, bismuth subsalicylate (pepto-bismol at kaopectate) upang balansehin ang mga likidong gumagalaw sa digestive tract, mga solusyong glucose-electrolyte upang balansehin ang asukal sa tubig, at mga asin, hemorroid cream o petroleum jelly kung masakit ang iyong pwet, Oral rehydration solutions , priobiotics at zinc supplements`
-    ]),
+    ],1),
     encodeMemory([
         `* (paano|ano) * problema * diarrhea_drugs * `,
     ],[
         `Ang mga ito ay maaaring magpalala ng malubhang impeksyon sa colon. Sa mga bata, dapat itong iwasan na maaari silang humantong sa mga komplikasyon ng hemolytic uremic syndrome sa mga kaso ng Shiga-toxin E. col.`
-    ]),
+    ],7),
 ]
 
 
@@ -47,7 +42,7 @@ let section18 = [
         `* pano * hugas * kamay * `
     ],[
         `Magsabon ng sabon nang hindi bababa sa 20 segundo. Pagkatapos maglagay ng sabon sa iyong mga kamay, kuskusin ang iyong mga kamay nang hindi bababa sa 20 segundo. Gawin mo yan hanggang matamong mong kantahin ang "Maligayang Kaarawan" nang dalawang beses. Gumamit ng hand sanitizer kapag hindi posible ang paghuhugas. Gumamit ng alcohol-based na hand sanitizer kapag walang tubig. Ilapat ang hand sanitizer gaya ng pag-hand lotion mo, siguraduhing takpan ang harap at likod ng magkabilang kamay. Gumamit ng isang produkto na naglalaman ng hindi bababa sa 60% na alkohol.`
-    ]),
+    ],6),
 ]
 
 
@@ -58,7 +53,7 @@ let section20 = [
         `* (ano|paano|paraan) * (gamutin|bawasan|control) *  lagnat *`,
     ],[
         `Maaari kang uminom ng maraming likido upang manatiling hydrated. Mayroong ilang over-the-counter (otc) na pain reliever na maaari mong inumin upang mabawasan ang kakulangan sa ginhawa. Halimbawa, maaari mong hilingin sa iyong parmasyutiko ang acetaminophen para sa pag-alis ng pananakit. Kapag ikaw ay may lagnat, maglagay ng mamasa-masa, maligamgam na tela sa noo. Magsuot ng komportableng tela. Kung mayroon kang panginginig, pinakamahusay na magsuot ng mga layer o makakapal na kasuotan. Pagkatapos ay magpahinga. kailangan mo ng maraming pahinga para gumaling.`
-    ]),
+    ],2),
     encodeMemory([
         `* (ano|paano|paraan) * (gamutin|bawasan|control) *  suka *`,
     ],[
@@ -72,7 +67,7 @@ let section20 = [
             
          5. Kapag maaari mong tiisin ang matabang na pagkain, maaari mong ipagpatuloy ang iyong normal na diyeta.
         `
-    ]),
+    ],2),
     encodeMemory([
         `* (ano|paano|paraan) * (gamutin|bawasan|control) *  nausea *`,
     ],[
@@ -94,7 +89,7 @@ let section20 = [
         
         • Pumili ng mga pagkain mula sa lahat ng pangkat ng pagkain gaya mo  kayang tiisin sila para makakuha ng sapat na nutrisyon.
         `
-    ]),
+    ],2),
     encodeMemory([
         `* (ano|paano|paraan) * (gamutin|bawasan|control) *  sakit * ulo *`,
     ],[
@@ -110,7 +105,7 @@ let section20 = [
         
         6. Upang makapagpahinga ang mga kalamnan, magbabad sa mainit na paliguan o gumamit ng mainit na shower
         `
-    ]),
+    ],2),
     encodeMemory([
         `* (ano|paano|paraan) * (gamutin|bawasan|control) *  abdominal * cramps *`,
     ],[
@@ -120,22 +115,22 @@ let section20 = [
         
          * Kung ang iyong tiyan spasms ay sanhi ng dehydration, maaaring makatulong s aiyo ang pag inom ng electrolyte. Subukang uminom ng sports drink tulad ng  Gatorade o pagkain ng saging. Mag-iingat, gayunpaman, kung mayroon kang kasaysayan ng pagkabigo sa bato, dahil ang ilang mga electrolyte, lalo na ang potasa, ay maaaring tumaas sa mga mapanganib na antas na may mga suplemento.
         `
-    ]),
+    ],2),
     encodeMemory([
         `* ano * (kainin|inumin|bilhin) * suka * `,
     ],[
         `subukang kumain ng maliit na dami ng matatabang pagkain. Subukan ang mga pagkain tulad ng saging, kanin, applesauce, dry toast, soda crackers (ang mga pagkaing ito ay tinatawag na BRAT diet).`
-    ]),
+    ],2),
     encodeMemory([
         `* ano * pagkain * (iwas| (huwag|hindi) * (kainin|inumin|bilhin)) * nausea *`,
     ],[
         `Kumain ng magaan o matabang na pagkain (tulad ng saltine crackers o plain bread).`
-    ]),
+    ],4),
     encodeMemory([
         `* bakit * magpakulo * `,
     ],[
         `Ang pagpapakulo ay ginagawa upang patayin ang mga pathogen bacteria, virus at protozoa. Ang kumukulong tubig ay dapat na kumukulo nang hindi bababa sa dalawang (2) minuto`
-    ]),
+    ],1),
     encodeMemory([
         `* bakit * magpakulo * tubig * `,
     ],[
@@ -147,7 +142,7 @@ let section20 = [
         
         * Upang mapabuti ang patag na lasa ng pinakuluang tubig, magdagdag ng isang kurot ng asin sa bawat litro o litro ng tubig, o ibuhos ang tubig mula sa isang malinis na lalagyan patungo sa isa pa nang maraming beses.
         `
-    ]),
+    ],1),
     encodeMemory([
         `* hakbang * disinfect *`,
         `* paano * disinfect * tubig *`,
@@ -156,12 +151,12 @@ let section20 = [
 
         2. Magdagdag ng 2 kutsarita ng stock solution sa 5 galon (20 litro) ng tubig.Paghaluin nang maigi at hayaang tumayo ng hindi bababa sa 30 minuto bago gamitin.
         `
-    ]),
+    ],1),
     encodeMemory([
         `* ano * (bilhin|gamitin) * disinfect * tubig *`,
     ],[
         `you can use chlorine`
-    ]),
+    ],1),
 ]
 
 let data = 

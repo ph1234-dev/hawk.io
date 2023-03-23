@@ -26,9 +26,9 @@ export const diarrheaEngRules =
 
 export const diarrheaFilRules = 
     [].concat(filSection1to5)
-        .concat(filSection6to10)
-        .concat(filSection11to15)
-        .concat(filSection16to20)
+        // .concat(filSection6to10)
+        // .concat(filSection11to15)
+        // .concat(filSection16to20)
 
 export const diarrheaMagRules = 
     [].concat(magSection1to5)

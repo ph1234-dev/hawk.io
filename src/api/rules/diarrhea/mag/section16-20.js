@@ -1,40 +1,34 @@
-let encodeMemory = function(pattern,response,nextTopic){
-    return{
-      "pattern": pattern,
-      "response": response,  
-      "nextTopic": nextTopic
-    }
-}
+import { encodeMemory } from "@/api/engine/model"
 
 let section16 = [
     encodeMemory([
         `* duken * di * (kan|inom|gamit) * gamot_na_tagudo * `,
     ],[
         `Su mga doctor na di silan ged myug sa pengamit ka sa gamot a kapamasa sa botika sad ala resita nin upama ka aden kailay nengka lugo sa kapedtagudo nengka endu amay ka pegkayaw ka kagina tanda I namba na aden dana na tinay nengka sabap sa kagaw a mana bacteria, virus, parasites.`
-    ]),
+    ],7),
     encodeMemory([
         `* duken * di * (kan|inom|gamit) * gamot_na_tagudo *`,
         `* duken * gamot_na_tagudo * di * (kan|inom|gamit) *`,
     ],[
         `Su gamot na tagudo mana su bismuth subsalicylate enggo mga antimotility a mana su loperamide na di mapya a kanen nu tao a pegkayaw a benel o aden lugo a kadtapik nu kapagaduo nin kagina kalunsanan nin I sakit a nan. Su mga wala na di silan pakanen sa nan ka makadalo silan sa hemolytic uremic syndrome.`
-    ]),
+    ],7),
     encodeMemory([
         `* ten * di * (kan|inom|gamit) * on_the_counter * `,
         `* ten * di * (kan|inom|gamit) * diarrhea_drugs * `,
         `* diarrhea_drugs * di * (kan|inom|gamit) * `,
     ],[
         `Su mga tao a pedtagudo sa aden lugo abpeg na pegkayw na di minom na gamot a dala riseta na doctor.`
-    ]),
+    ],7),
     encodeMemory([
         `* panon * gamot * tagudo * `,
     ],[
         `Kapakay ka keman sa antimotility mana Imodium abpeg a loperamide endu pagkalungad I kapagukit na pegken sa tinay nengka. Kapakay bon I bismuth subsalicylate ( pepto-bismol endu kaopectate ) enggo ka balance I ig na pagukit sa tinay nengka. Kapakay bon I ig a aden glucose-electrolytes nin endu ka ga balansi nin su mamis abpeg a timos nu lawas. Kapakay ka bon penggamit sa hemorriod cream o petroleum jelly amayka pegkagatel I pudit nengka. Aw na to na mapya bon I kainom sa oral rehydration solutions, probiotics abpeg zinc supplements.`
-    ]),
+    ],1),
     encodeMemory([
         `* ngen * problema * tagudo *  `,
     ],[
         `Nan ba na makalunsan sa kalebag a tinay nengka. Ssu mga wala na di silan pakanen sa namba ka basi makadalo silan sa hemolytic uremic syndrome a sabap na shiga-toxic E.coli.`
-    ]),
+    ],7),
 ]
 
 let section17 = []
@@ -44,7 +38,7 @@ let section18 = [
         `* panon * kaugas * lima * `,
     ],[
         `Betadi ka sa sabon I lima nengka sa dwa pulo ka Segundo. Kapasad nengka , kukus I lima nengka sa dwa pulo bon ka Segundo. Edsengal ka sa happy birthday sa makadwa tupan na gagasi ka su sabon. Amayka da sabon nengka na gagasi ka su lima nengka sa sanitizer. Gamit ka sa alchohol a sanitizer upama ka dala ig. Betadi ka lima nengka sa namba pya pya mana kabetad nengka sa losyon. Ilay ka ka nga ka gamit na su 60% I kabagel nin a alchohol. `
-    ]),
+    ],6),
 ]
 
 let section19 = []
@@ -57,7 +51,7 @@ let section20 = [
         `* (ngen|panon) * (awa|gamot|kapya|tabang) * kayaw * `,
     ],[
         `Kapakay ka pagandom sa madakel a ig endu di ka lenukan edsamikel. Aden kapamasa a mga gamot sa botika paya da den riseta nin a kapakay nengka pengamitin. Idesa nengka amayka aden acetaminophen nilan endu kaaga I kasakit na lawas.Upama manem ka pegkayaw ka na tapii ka sa mawasa abpeg a a mayaw a debpas I ulo na pasinti. Pambalegkas ka bun sekanin sa di mageget. Amayka pegkegkel su tao na nya mapya  na pangilay ka sa debpas a makapal ka ibetad nengka sa lekanin. Padegka ka sekanin sa mapya endu pegkabagel sekanin.`
-    ]),
+    ],2),
     encodeMemory([
         `* (ngen|panon) * (awa|gamot|kapya|tabang) * uta * `,
     ],[
@@ -71,7 +65,7 @@ let section20 = [
         
         5. seka kabo kan edtando na umayka makakagaga ka den keman sa pegken a dala nanam nin.
         `
-    ]),
+    ],2),
     encodeMemory([
         `* (ngen|panon) * (awa|gamot|kapya|tabang) * langot *`,
     ],[
@@ -85,7 +79,7 @@ let section20 = [
         •	Di pa pedsambot pedsipilyo kapasad nengka keman
         •	Nya ka bo kan a pegken nan gin I kagaga nengka bo pegkan samana
         `
-    ]),
+    ],2),
     encodeMemory([
         `* (ngen|panon) * (awa|gamot|kapya|tabang) * sakit  * ulo * `,
     ],[
@@ -101,7 +95,7 @@ let section20 = [
         
         6. padegka ka I lawas nengka. Empaygo ka sa mayaw a ig.
         `
-    ]),
+    ],2),
     encodeMemory([
         `* (ngen|panon) * (awa|gamot|kapya|tabang) * sakit  * tyan *`,
         `* (ngen|panon) * (awa|gamot|kapya|tabang) * lipedes  * tyan *`
@@ -112,24 +106,24 @@ let section20 = [
         
         *amay ka tyan nengka sa pedtegas na aw na to na belenukan ka, inom ka aden electrolytes nin a paginomin. Tekawi ka gatoriate o saging. Pagingat ka bo ka su tayn I aden wato na kidney nin na di mapakay kelan sa nam ba a pegken ka aden potassium nin. 
         `
-    ]),
+    ],2),
     encodeMemory([
         `* ngen * (kan|inom|pamasa) * uta * `,
     ],[
         `Tekaw keman apya embabaydo po sa pegken a da nanam nin. Aw na to na kan ka sa saging, emay, applesauce, pan, biskwit. Namba pedtalon nilan a BRAT diet.
         Kan ka sa di ged mawgat a pegken o matabang a pegken mana biskwit or pan.
         `
-    ]),
+    ],2),
     encodeMemory([
         `* ngen * di * (kan|inom|pamasa) * langot * `,
     ],[
         `Kan ka sa di ged mawgat a pegken o matabang a pegken mana biskwit or pan.`
-    ]),
+    ],4),
     encodeMemory([
         `duken * tabel * `,
     ],[
         `Su kapedtabel na penggulan edu pebpatay I kagaw a bacteria, virus, abpeg a protozoa. Tabel ka I ig sa dwa ka minutos.`
-    ]),
+    ],1),
     encodeMemory([
         `* duken * tabel * ig * `,
     ],[
@@ -141,7 +135,7 @@ let section20 = [
         
         *endu pegkapya I nanam na tinabel a nan a ig, na betadi ka sa paydo a benel a timos uman saka litro tupan ibetad nengka sa nalimpyuan a betadan.
         `
-    ]),
+    ],1),
     encodeMemory([
         `* ukit * limpyo * `,
         `* panon * limpyo * ig *`,
@@ -150,12 +144,12 @@ let section20 = [
 
         2. umani ka dwa ka manaw a salidot nan amba sinimbolan nengka nan I lima ka gallon (dwa pulo ka litro) a ig.  Padsimbol ka embpyapya abpeg a padtaday ka muna sa apya tlo pulo bo kaminutos tupan na inom ka.
         `
-    ]),
+    ],1),
     encodeMemory([
         `* ngen * (pamasa|gamit) * limpyo * ig * `,
     ],[
         `Kapakay ka penggamit sa chlorine`
-    ]),
+    ],1),
 ]
 
 let data = 
