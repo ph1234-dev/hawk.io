@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ChatView from '../views/ChatView.vue'
+import LandingView from '../views/LandingView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import SuccessfulRegisterView from "../views/SuccessRegisterView.vue"
 import SignInView from "../views/SignInView.vue"
 import PrivacyView from "../views/PrivacyView.vue"
 import AuthorView from "../views/AuthorView.vue"
 import AboutView from "../views/AboutView.vue"
+import NotFound from "../views/NotFound.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,7 +14,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: ChatView
+      component: LandingView,
     },
     {
       path: '/privacy',
@@ -45,6 +46,10 @@ const router = createRouter({
       path: '/register/successful',
       name: 'successful_register',
       component: SuccessfulRegisterView
+    },
+    {
+      path: "/:catchAll(.*)",
+      component: NotFound
     }
   ]
 })
