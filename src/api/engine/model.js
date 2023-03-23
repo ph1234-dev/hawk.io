@@ -7,14 +7,24 @@ export const encodeTopic = (topicName, userResponses) => {
   }
 }
 
+// export const encodeMemory = (pattern,response,nextTopic,dimension="default") =>{
+//   return{
+//     "pattern": pattern,
+//     "response": response,  
+//     "nextTopic": nextTopic,
+//     "dimension": dimension
+//   }
+// }
 
-export const encodeMemory = (pattern,response,nextTopic) =>{
+
+export const encodeMemory = (pattern,response,dimension) =>{
   return{
     "pattern": pattern,
     "response": response,  
-    "nextTopic": nextTopic
+    "dimension": dimension
   }
 }
+
 
 export const encodeSubstitution = (substitute, terms) => {
   return {
