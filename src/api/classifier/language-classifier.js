@@ -1,4 +1,4 @@
-import NaiveBayes from "./classifier/naive-bayes"
+import NaiveBayes from "@/api/classifier/naive-bayes"
 
 
 class AnnotatedDocument {
@@ -97,6 +97,9 @@ export default class LanguageClassifier{
         console.log(strrep)
     }
 
+    printVocabulary(){
+        this.nb.print().vocabulary()
+    }
 
     printClassifierPropertyValues(){
         console.log("Attemptin to print classifier properties")

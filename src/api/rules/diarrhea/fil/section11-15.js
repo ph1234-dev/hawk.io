@@ -1,4 +1,4 @@
-import { encodeMemory } from "@/api/engine/model"
+import { encodeMemory } from "@/api/configuration/model"
 
 let section11 = [
     encodeMemory([
@@ -65,7 +65,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* ano * dose * (!loperamide|imodium) *`,
-        `* paano * (kainin|gamittin|inumin) * (!loperamide|imodium) *`,
+        `* paano * (kainin|gamitin|inumin) * (!loperamide|imodium) *`,
         `* ano * hakbang * (!loperamide|imodium) *`,
         `* paano * (!loperamide|imodium) * (gamitin|kainin|inumin) *`,
     ],[
@@ -132,7 +132,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* ano * dose * !bismuth !subsalicylate *`,
-        `* paano * (kainin|gamittin|inumin) * !bismuth !subsalicylate *`,
+        `* paano * (kainin|gamitin|inumin) * !bismuth !subsalicylate *`,
         `* ano * hakbang * !bismuth !subsalicylate *`,
         `* paano * !bismuth !subsalicylate * (gamitin|kainin|inumin) *`,
     ],[

@@ -1,4 +1,4 @@
-import { encodeMemory } from "@/api/engine/model"
+import { encodeMemory } from "@/api/configuration/model"
 
 let section4 = [
     encodeMemory([
@@ -61,7 +61,7 @@ let section5 = [
         "Ang isang sintomas ng trangkaso ay isang mataas na lagnat, na maaaring humantong sa pagpapawis. Maaari ka ring dumaranas ng mga pagsusuka o pagtatae. Ang iyong katawan ay nangangailangan ng maraming likido upang palitan ang mga nawawalang likido, at higit pa upang labanan ang impeksiyon"
     ],7),
     encodeMemory([
-        "*(bakit|paano) * kain * masustanya * trangkaso *"
+        "*(bakit|paano) * kain * masustansya * trangkaso *"
     ],[
         "Ang iyong katawan ay nangangailangan ng mas mahusay na nutrisyon upang gumaling mula sa trangkaso. Ang mga sariwang prutas at gulay ay nagbibigay ng mahahalagang bitamina, mineral, at antioxidant na nagpapalakas sa iyong immune system habang nilalabanan nito ang virus."
     ],4),

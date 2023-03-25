@@ -1,4 +1,4 @@
-import { encodeMemory } from "@/api/engine/model"
+import { encodeMemory } from "@/api/configuration/model"
 
 let section11 = [
     encodeMemory([
@@ -46,11 +46,6 @@ let section11 = [
         `* ngen * branded * gamot * diarrhea *`,
     ],[
         `Su Imodium abpeg a pepto bismol na kaped sa mga branded a ngala na gamot sa kadtagudo`
-    ],7),
-    encodeMemory([
-        `* (panon|ngen) * penggulan * nin * `,
-    ],[
-        ``
     ],7),
     // antimotility
     encodeMemory([

@@ -109,6 +109,13 @@ export default class Blackbox{
         console.log("\nPrinting references")
         this.archive.print().references()
       },
+      referencesUntransformed: ()=>{
+        console.log("Calling from >> Blackbox >> Printing Untransformed Pattern")
+        this.archive.print().referencesUntransformed()
+      },
+      referencesUntransformedUniqueTerms: ()=>{
+        this.archive.print().referencesUntransformedPatternsUniqueTerms()
+      },
       memory: ()=>{
         console.log("\nPrinting memory")
         this.archive.print().memory()
@@ -128,13 +135,19 @@ export default class Blackbox{
     }
   }
 
-  retrieveMemory(msg){
-    console.log(`\nFinding >> ${msg}`)
-    let result = this.archive.retrieve(msg)
+  getReplyUsingPatternMatching(msg){
+    console.log(`Finding Reply for ${msg} Using Pattern matching`)
+    let result = this.archive.getReplyUsingPatternMatching(msg)
     console.log(`Response >> ${result}`)
     return result;
   }
 
+  getReplyUsingCosineSimilarity(msg){
+    console.log(`Finding Reply for ${msg} Using Cosine Similarity`)
+    let result = this.archive.getReplyUsingCosineSimilarity(msg,.7)
+    console.log(`Response >> ${result}`)
+    return result;
+  }
   
   sort(){
     this.memory.sort(function(a,b){

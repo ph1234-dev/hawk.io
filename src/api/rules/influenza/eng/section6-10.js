@@ -1,6 +1,4 @@
-import { encodeMemory } from "@/api/engine/model"
-
-
+import { encodeMemory } from "@/api/configuration/model"
 
 let section6 = [
     encodeMemory([

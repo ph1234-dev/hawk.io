@@ -4,6 +4,7 @@
 // const { terms } = require("../data/diarrhea/definitions")
 // const STACK = require("./stack")
 import {STACK} from './stack'
+import { cosineSimilarity } from './distance-formula'
 
 // updating objects in array simultaneously while looping
 // https://stackoverflow.com/questions/12482961/change-values-in-array-when-doing-foreach
@@ -26,8 +27,17 @@ let formatMemory = (val)=>{
 }
 
 let formatReferences = (pattern,index)=>{
+  // pattern = pattern.replace
   return {
     pattern: pattern,
+    index: index
+  }
+}
+
+let formatReferencesForUntransformedPatterns = (pattern,index)=>{
+
+  return {
+    pattern: pattern.replace(/\W+/g, ' '),
     index: index
   }
 }
@@ -55,7 +65,7 @@ class ARCHIVE{
     this.references = []
     
     //holds original untransformed copy of referneces
-    this.references_untransformed_patterns = []
+    this.referencesUntransformedPatterns = []
 
     //stores memories
     this.topics = []
@@ -175,6 +185,28 @@ class ARCHIVE{
           // console.log(el)
           console.log(`\t${el.index} - ${el.pattern}`)
         })
+      },
+      referencesUntransformed:()=>{
+        console.log(`Untransformed References in Archive for Cosine Similarity`)
+        let max = 5
+        this.referencesUntransformedPatterns.forEach(el=>{
+          // console.log(el)
+          if ( max-- > 0 ){
+            console.log(`\t${el.index} - ${el.pattern}`)
+          }
+        })
+      },
+      referencesUntransformedPatternsUniqueTerms: ()=>{
+        let vocab = []
+        this.referencesUntransformedPatterns.forEach(ref=>{
+          let tokens = ref.split(' ')
+          for ( word in tokens ){
+            vocab.push(word)
+          }
+        })
+
+        console.log("Untransformed Pattern Tokens are the following")
+        print (vocab)
       },
       memory: ()=>{
         console.log(`Memories in Archive : ${this.memory.length}`)
@@ -301,10 +333,12 @@ class ARCHIVE{
           
             //NOTE:: BEFORE YOU PUSH REFERENCES
             //YOU NEED TO TRANSFORM THE SUBSTITUTES
-            this.references.push(
-              formatReferences(el,currentValue.index)
-            )    
+            let formattedEntries = formatReferences(el,currentValue.index)
+            this.references.push(formattedEntries)    
 
+            this.referencesUntransformedPatterns.push(
+              formatReferencesForUntransformedPatterns(el,currentValue.index)
+            )
           })
 
         }else{
@@ -429,7 +463,7 @@ class ARCHIVE{
      return str
   }
 
-  retrieve(msg){
+  getReplyUsingPatternMatching(msg){
 
     // normalize the terms by doing substitutions
     msg = this.normalizeString(msg)
@@ -646,7 +680,7 @@ class ARCHIVE{
     // console.log(`\tResponse stack:: ${JSON.stringify(this.responseStack)}`)
     // console.log(`Chat Response << ${response}`)
 
-    return isMemoryFound ? response : "not found"
+    return isMemoryFound ? response : null
   }
 
   getDictionary(term){
@@ -739,8 +773,29 @@ class ARCHIVE{
     return agentResponse
   }
 
+  getReplyUsingCosineSimilarity(msg,threshold){
+    let len = this.referencesUntransformedPatterns.length
 
+    let max = this.referencesUntransformedPatterns[0].pattern
+    for ( let i = 1 ; i < len; i++){
+      let next = this.referencesUntransformedPatterns[i].pattern
+      if ( cosineSimilarity(msg,max) < cosineSimilarity(msg,next) ){
+        max = next
+      }
+    }
+
+    let reply = null
+    if (cosineSimilarity(str,max.pattern) > threshold){
+      response = this.memory[max.index].response
+    }
+
+    return reply
+  }
+
+
+  
 }
+
 
 export{
   ARCHIVE

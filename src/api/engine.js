@@ -1,9 +1,9 @@
-import Blackbox from './engine/blackbox'
+import Blackbox from '@/api/configuration/blackbox'
 import {
     diarrheaEngRules,
     diarrheaFilRules,
     diarrheaMagRules
-} from './rules/diarrhea/rules-diarrhea'
+} from '@/api/rules/diarrhea/rules-diarrhea'
 
 import {
     influenzaEngRules,
@@ -11,8 +11,10 @@ import {
     influenzaMagRules
 } from './rules/influenza/rules-influenza'
 
-import LanguageClassifier from './language-classifier'
-import DomainClassifier from './domain-classifier'
+import LanguageClassifier from '@/api/classifier/language-classifier'
+import DomainClassifier from '@/api/classifier/domain-classifier'
+import { levenshteinDistance } from '@/api/configuration/distance-formula'
+import { RESERVED_WORDS } from '@/api/rules/reserved-words'
 
 export default class Engine {
 
@@ -41,6 +43,8 @@ export default class Engine {
             MAG: 'mag'
         }
 
+        this.spellingArray = RESERVED_WORDS
+
         // refer here
         // https://selfcarejournal.com/article/the-self-care-matrix-a-unifying-framework-for-self-care/
         // seven pillars    
@@ -56,7 +60,6 @@ export default class Engine {
         }
 
         
-        
         this.memory = {}
         
         // USER THIS TO PREDICT THE DIMENSION
@@ -69,7 +72,7 @@ export default class Engine {
         Object.keys(this.LANG)
             .forEach((lang,value)=>{
 
-                console.log(`\tLang - ${lang}`)
+                // console.log(`\tLang - ${lang}`)
                 this.memory[lang] = {}
 
                 // dimensions are the intentsor dimensions we need to perform the classification 
@@ -82,12 +85,14 @@ export default class Engine {
                         })
 
                         if ( filtered.length > 0){
-                            console.log(`\t\tDimension - ${dimension} | ${this.SELFCARE_DIMENSIONS[dimension]}| ${filtered.length} cases\n\t\t\t${filtered}`)
+                            // console.log(`\t\tDimension - ${dimension} | ${this.SELFCARE_DIMENSIONS[dimension]}| ${filtered.length} cases\n\t\t\t${filtered}`)
                             let mem = new Blackbox()
                             mem.storeRules(filtered)
                             mem.transformReferences()
                             mem.sortReferences()
                             this.memory[lang][dimension] = mem
+
+                            mem.print().referencesUntransformed()
                         }
 
 
@@ -108,16 +113,27 @@ export default class Engine {
         // STEP 2: TRAIN THE MODEL
 
 
-        // console.log('Loading language classifier model')
-        // Object.keys(this.RULES).forEach(lang=>{
-        //     console.log(`\tLang // ${lang}`)
-        //     console.log(`\tArray // ${this.RULES[lang]}`)
-        //     this.classifierLanguage.insertCluster(this.RULES[lang],lang)
-        // })
+        console.log('Loading language classifier model')
+        Object.keys(this.RULES).forEach(lang=>{
+            // console.log(`\tLang // ${lang}`)
+            // console.log(`\tArray // ${this.RULES[lang]}`)
+            this.classifierLanguage.insertCluster(this.RULES[lang],lang)
+        })
 
 
-
-        // console.log(`Starting Engine`)
+        let vocab = []
+        Object.keys(this.RULES_DIMENSION_CLASSIFIERS)
+            .forEach(lang=>{
+                console.log(lang)
+                let words = this.RULES_DIMENSION_CLASSIFIERS[lang].getVocabulary()
+                for (let word of words){
+                    if ( !vocab.includes(word) &&
+                        word.length > 2)
+                        vocab.push(word)
+                }
+        })
+        vocab = vocab.sort()
+        console.log("Vocabulary Found\n",vocab)
 
         // load diarrhea rules
 
@@ -131,24 +147,6 @@ export default class Engine {
 
         // NOTE RO REMEMBER YOU NEED TO COMPUTE THE LEVENSHTEIN DISTANCE FOR SELECTED 
         // TERMINOLOGIES
-    }
-
-
-    // print rules for english
-    // we need this 
-    printRules(lang) {
-        // console.log(`Printing rules::?`,lang)
-
-        let mem = this.memory[lang]
-
-        /**RETRIEVE EXISTING PATTERNS*/
-        // console.log("Print rules:: ",lang)
-        // let conversationRules = this.memory[lang].getPatternReferences()
-        // console.log(conversationRules)
-
-        /**RETRIEVE UNIQUE TERMS */
-        let uniqueTerms = mem.getUniqueTermsFromPatterns()
-        // console.log(uniqueTerms)
     }
 
 
@@ -167,9 +165,9 @@ export default class Engine {
      * Final step:
      * 1. trim white spaces 
      * 2. to lower cases
-     * 3. classify language
-     * 4. peform edit distance formula and change term (max edits=2)
-     * 5. perform concept substitution if there are any
+     * 3. peform edit distance formula and change term (max edits=2)
+     * 4. perform concept substitution if there are any
+     * 5. classify language
      * 6. perform dimension classification
      * 7. retrieve response
      * 8. if not found move on to the next narest dimension
@@ -177,43 +175,55 @@ export default class Engine {
      * 10. if not found tell use reponse does not exist
      */
     async getReply(msg) {
-        // let reply = `Unimplemented: Engine reply for msg >> ${msg}`
-        // reply = this.memory['eng'].retrieveMemory(msg)
-        // return reply
-
-
-        // NOTE RO REMEMBER YOU NEED TO COMPUTE THE LEVENSHTEIN DISTANCE FOR SELECTED 
-        // TERMINOLOGIES
- 
-
-        // NOTE THIS IN PROBABILITIES
-        // https://mmuratarat.github.io/2019-07-31/NBClassifier-in-Python-an-example
-        // LETS TRY TO USE LOG TRICK FOR VERY LARGE VALUE OF NUMBER IN 
-        // PROBABILITIES NAIVE BAYES
-        let reply = "Not found"
-
-        let lang
-        let identifyLanguage = new Promise((resolve, reject) => {
-
-            lang = this.classifierLanguage.getPrediction(msg)
-            resolve(lang)
-
-        }).then((response) => {
-
-            // lets fix this.. before retrieving memory, lets try to
-            // 1. identify which pillar it belongs 
-            // 2. if found, then retrieve
-            // psu
-            reply = this.memory[lang].retrieveMemory(msg)
         
-            // if the language predicted is in english then do porter and stemmer
+        // step1 and and step2
+        msg = msg.toLowerCase().trim()
 
-            // if the language is maguindanaon, then do....
+        // step 3
+        // rebuild string
+        // Perform edit distance
+        let tokens = msg.split(' ')
+        let newMSG = new String()
+        tokens.forEach(token=>{
 
+            for ( let i = 0 ; i < this.spellingArray.length; i++ ){
+                let word = this.spellingArray[i]
+                let distance = levenshteinDistance(token,word)
+        
+                // we only allow up to 3 edits to correct
+                if ( distance == 3 ){
+                    token = word
+                    break;
+                }
+            }
 
+            newMSG.concat(token).concat(' ')
         })
 
-        await identifyLanguage
+        msg = new String(newMSG)
+
+        // step 4
+        // Do substitutions
+        
+        // step 5
+        let lang = this.LanguageClassifier.getPrediction(msg)
+
+        // step 6
+        let dimension = this.DomainClassifier.getPrediction(msg)
+
+        // step 7
+        let reply = this.RULES[lang][dimension].getReplyUsingPatternMatching(msg)
+
+        // step 8 
+        if ( reply == null ){
+            // lets do cosine similarity
+            reply = this.RULES[lang][dimension].getReplyUsingCosineSimilarity(msg)
+            if ( null ){
+                reply = 'Im sorry, I am unable to determine how to respond to that question'
+            }
+        }
+    
+
 
         return reply
     }

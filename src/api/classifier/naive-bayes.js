@@ -205,6 +205,10 @@ export default class NaiveBayes{
         return argmax_value.class
     }
 
+    getVocabulary(){
+        return this.vocabulary
+    }
+
     print(){
         console.log("print")
         return{
@@ -216,6 +220,7 @@ export default class NaiveBayes{
                 console.log(`Total vocabulary: ${this.vocabulary.length}`)
                 console.log(this.vocabulary)
                 // return this.vocabulary.length
+                return this.vocabulary
             },
             prior_probabilities: ()=>{
                 console.log("Prior probabilities")

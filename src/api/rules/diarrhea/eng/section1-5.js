@@ -1,4 +1,4 @@
-import { encodeMemory } from "@/api/engine/model"
+import { encodeMemory } from "@/api/configuration/model"
 
 // section 4 falls under 1st dimension
 let section4 = [
@@ -58,7 +58,7 @@ let section4 = [
     encodeMemory([
         "* (will|shall|do|can|would) * get * diarrhea * diarrhea_causes *"
     ],[
-        "Yes.  There are medical reports indicating that you can get diarrrhea from that. So be very careful , if you have it, don’t panic. It will mostly relieve on its own. There are some medicines you can take to relieve some of the discomfort. But if diarrhea persists or you are seeing blood in your stool, it is best to see a doctor for better guidance."
+        "Yes.  There are medical reports indicating that you can get diarrhea from that. So be very careful , if you have it, don’t panic. It will mostly relieve on its own. There are some medicines you can take to relieve some of the discomfort. But if diarrhea persists or you are seeing blood in your stool, it is best to see a doctor for better guidance."
     ],1),
     encodeMemory([
         "* (will|shall|do|can|would) * diarrhea_unabsorbable_sugar_to_some * trigger * diarrhea *"
