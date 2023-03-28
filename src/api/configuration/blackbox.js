@@ -1,8 +1,6 @@
 //throws an error when variable is not defined
 "use strict";
 
-console.log("Blackbox running")
-
 
 // import { topics } f= require("../test/data");
 
@@ -94,12 +92,6 @@ export default class Blackbox{
     this.archive.storeSubstitutions(data)
   }
 
-
-  testTopic(topic,msg){
-    console.log("\nTopic Test")
-    this.archive.scanTopic(topic,msg)
-  }
-
   print(){
     return{
       substitutions: ()=>{
@@ -124,29 +116,17 @@ export default class Blackbox{
         console.log("\nPrinting dictionary")
         this.archive.print().dictionary()
       },
-      stack: ()=>{
-        console.log("\nPrinting stack")
-        this.archive.print().stack()
-      },
-      topics: ()=>{
-        console.log("\nPrinting topics")
-        this.archive.print().topics()
-      }
     }
   }
 
   getReplyUsingPatternMatching(msg){
-    console.log(`Finding Reply for ${msg} Using Pattern matching`)
     let result = this.archive.getReplyUsingPatternMatching(msg)
-    console.log(`Response >> ${result}`)
     return result;
   }
 
   getReplyUsingCosineSimilarity(msg){
-    console.log(`Finding Reply for ${msg} Using Cosine Similarity`)
-    let result = this.archive.getReplyUsingCosineSimilarity(msg,.7)
-    console.log(`Response >> ${result}`)
-    return result;
+    // maybe treshhold should be 
+    return this.archive.getReplyUsingCosineSimilarity(msg,.2);
   }
   
   sort(){
@@ -158,8 +138,3 @@ export default class Blackbox{
 
 
 }
-
-// module.exports = {
-//   Blackbox
-// }
-

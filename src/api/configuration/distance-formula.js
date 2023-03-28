@@ -1,3 +1,37 @@
+
+export function damerauLevenshteinDistance(str1, str2) {
+  const matrix = [];
+
+  // initialize matrix
+  for (let i = 0; i <= str1.length; i++) {
+    matrix[i] = [i];
+    if (i === 0) {
+      for (let j = 1; j <= str2.length; j++) {
+        matrix[i][j] = j;
+      }
+    }
+  }
+
+  // fill in matrix
+  for (let i = 1; i <= str1.length; i++) {
+    for (let j = 1; j <= str2.length; j++) {
+      const substitutionCost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+      matrix[i][j] = Math.min(
+        matrix[i - 1][j] + 1, // deletion
+        matrix[i][j - 1] + 1, // insertion
+        matrix[i - 1][j - 1] + substitutionCost // substitution
+      );
+
+      // check for transposition
+      if (i > 1 && j > 1 && str1[i - 1] === str2[j - 2] && str1[i - 2] === str2[j - 1]) {
+        matrix[i][j] = Math.min(matrix[i][j], matrix[i - 2][j - 2] + substitutionCost);
+      }
+    }
+  }
+
+  return matrix[str1.length][str2.length];
+}
+
 export const levenshteinDistance = (s, t) => {
 
 
@@ -8,11 +42,12 @@ export const levenshteinDistance = (s, t) => {
   // if the first letter is not the same chances
   //  it it is not the word
   // begin modificaiton
-  // if ( s.chatAt(0) !== t.chatAt(0) ) {
-  //   return s.length > t.length ? s.length : t.length
-  // }
+  if ( s.charAt(0) != t.charAt(0) ) {
+    return s.length > t.length ? s.length : t.length
+  }
+
   //check if last word are the same
-  // if ( s.chatAt(s.length-1) !== t.chatAt(t.length-1) ) {
+  // if ( s.charAt(s.length-1) !== t.charAt(t.length-1) ) {
   //   return s.length > t.length ? s.length : t.length
   // }
   //end modification
@@ -34,16 +69,15 @@ export const levenshteinDistance = (s, t) => {
   return arr[t.length][s.length];
 };
 
+export function cosineSimilarity(str1, str2) {
+  // Split the strings into arrays of words
+  const words1 = str1.split(" ");
+  const words2 = str2.split(" ");
 
-export const cosineSimilarity = (str1, str2) => {
-  // Convert the strings to arrays of words
-  const words1 = str1.toLowerCase().match(/\b\w+\b/g);
-  const words2 = str2.toLowerCase().match(/\b\w+\b/g);
-
-  // Build the vocabulary (set of unique words) from both strings
+  // Create a set of all unique words in both strings
   const vocab = new Set([...words1, ...words2]);
 
-  // Calculate the frequency of each word in each string
+  // Create frequency vectors for each string
   const freq1 = Array.from(vocab, word =>
     words1.filter(w => w === word).length
   );
@@ -51,20 +85,20 @@ export const cosineSimilarity = (str1, str2) => {
     words2.filter(w => w === word).length
   );
 
-  // Calculate the dot product and norms of the frequency vectors
+  // Calculate the dot product and magnitudes of the frequency vectors
   let dotProduct = 0;
-  let norm1 = 0;
-  let norm2 = 0;
+  let mag1 = 0;
+  let mag2 = 0;
   for (let i = 0; i < freq1.length; i++) {
     dotProduct += freq1[i] * freq2[i];
-    norm1 += freq1[i] * freq1[i];
-    norm2 += freq2[i] * freq2[i];
+    mag1 += freq1[i] ** 2;
+    mag2 += freq2[i] ** 2;
   }
 
-  // Return the cosine similarity between the frequency vectors
-  if (norm1 == 0 || norm2 == 0) {
+  // Calculate the cosine similarity
+  if (mag1 === 0 || mag2 === 0) {
     return 0;
   } else {
-    return dotProduct / (Math.sqrt(norm1) * Math.sqrt(norm2));
+    return dotProduct / (Math.sqrt(mag1) * Math.sqrt(mag2));
   }
 }

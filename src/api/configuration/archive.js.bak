@@ -4,6 +4,14 @@ import { cosineSimilarity } from '@/api/configuration/distance-formula'
 // const STACK = require("./stack")
 import {STACK} from './stack'
 
+// updating objects in array simultaneously while looping
+// https://stackoverflow.com/questions/12482961/change-values-in-array-when-doing-foreach
+let formatTopic = (unit)=>{
+  return{
+    topicName: unit.topicName,
+    userResponses: unit.userResponses
+  }
+}
 
 let formatMemory = (val)=>{
 
@@ -57,8 +65,14 @@ class ARCHIVE{
     //holds original untransformed copy of referneces
     this.referencesUntransformedPatterns = []
 
+    //stores memories
+    this.topics = []
+
     // TERM
     this.substitutions = []
+
+    // contains all the topic in the stack..
+    this.topicStack = new STACK()
 
     // tracks the agent responses
     this.responseStack = new STACK()
@@ -115,6 +129,7 @@ class ARCHIVE{
     return sub
   }
   
+  //transform alFFINDl rules in topics
   //call after sorting 
   transformReferences(){
 
@@ -146,6 +161,18 @@ class ARCHIVE{
       ref.pattern = transform(ref.pattern)
     })
 
+    // console.log("Transforming topics")
+    this.topics.map(ref=>{
+      let userResponses = ref.userResponses
+      if ( Array.isArray(userResponses) ){
+        userResponses.map(res=>{
+          res.pattern = transform(res.pattern)
+        })
+      }else{
+        ref.userResponses = transform(ref.pattern)
+      }
+    })
+    //transform all from topics
   }
 
   print(){
@@ -185,8 +212,19 @@ class ARCHIVE{
           console.log(
             `\tindex: ${el.index}` +
             `\n\t\tpattern: ${el.pattern}` +
-            `\n\t\tresponses: ${el.response}`
+            `\n\t\tresponses: ${el.response}`+
+            `\n\t\tnext topic: ${el.nextTopic}`
             )
+        })
+      },
+      stack: ()=>{
+        console.log(`Topic Stack`)
+        console.log(this.topicStack.toArray())
+      },
+      topics: ()=>{
+        this.topics.forEach(el=>{
+          console.log(
+            `\tTopic Name: ${JSON.stringify(el)}`)
         })
       },
       dictionary: ()=>{
@@ -203,6 +241,15 @@ class ARCHIVE{
     
   }
 
+  sortTopicResponses(){
+    this.topics.userResponses.sort(function(a,b){
+      // a and b are instance of BasicLines
+      let basicLineAWordLength = a.pattern.split(' ').length
+      let basicLineBWordLength = b.pattern.split(' ').length
+      return basicLineBWordLength - basicLineAWordLength
+    }) 
+  }
+
   sortReferences(){
     
     let callback = (a,b)=>{
@@ -212,10 +259,24 @@ class ARCHIVE{
       return responseBLength - responseALength
     }
 
+    // console.log(`User Responses: ` + this.topics.userResponses)
+    // this.topics.userResponses.sort(callback)
     this.references.sort(callback)
   }
 
 
+  storeTopics(unit){
+    // you need to handle array later
+    // this.topics.push(topic)
+
+    if ( Array.isArray(unit) ){
+      unit.forEach(el=>{
+        this.topics.push(formatTopic(el))
+      })
+    }else{
+      this.topics.push(formatTopic(unit))
+    }
+  }
 
   //stores substitution that will be used to 
   //normalize the words to a base representative 
@@ -405,22 +466,65 @@ class ARCHIVE{
     // normalize the terms by doing substitutions
     msg = this.normalizeString(msg)
 
-    let response = null
 
-    let index = 0 
+    /** Begin check whether there is item in the head of the topic stack */    
+    let headOfTopicStack = this.topicStack.peek()
+    if ( headOfTopicStack != null ){
+
+      /** Begin check whether the head of the topicstack is found in the existing topics*/   
+      let topicIsDeclaredOnTheStack = this.topics.find(el=>el.topicName == headOfTopicStack) 
+      if (topicIsDeclaredOnTheStack){
+
+        /** Begin check whether user response is found on the decalred possible responses*/   
+        let response = this.scanTopic(headOfTopicStack,msg)
+        if (response === undefined){
+
+          // the response should come from the expected answers...
+          // this should not be declared by the user
+
+          response = 
+            `I am unable to understand your response.`+
+            `I will repeat it once again. "${this.responseStack.peek()}"`  
+        }/** Begin check whether user response is found on the decalred possible responses*/  
+      
+        return response
+      
+      }else{
+        //error means current topic declared is not found
+        console.log(`\tTerm [${topOfStack}] NOT found in the stack`)
+        let error = 
+          `Internal application error, ` +
+          `topic [${topOfStack}] is missing`
+
+        return error
+      }/** End check whether the head of the topicstack is found in the existing topics*/ 
+
+    }/** End check whether there is item in the head of the topic stack */ 
+
+
+    /** For cases that ang level 1 (meaning conversations dont have responses to 
+     *  other responses*/  
+    let len = this.references.length
+
+    let isMemoryFound = false
+
+    let i = 0  //tracker reference 
+
+    let ref //holds reference found
+
 
     /** Begin finding the matching singular memory*/
-
-    while ( index < this.references.length ){
+    while ( i < len ){
 
       // we are looking at references which holds the pattern and index
-      let ref = this.references[index]
+      ref = this.references[i]
 
       // i - With this flag the search is case-insensitive
       // g - With this flag the search looks for all matches
       // m - multiline mode
       
       // console.log("Reading Regex: "  + ref.pattern)
+      
       // let regex = new RegExp(ref.pattern,"i")
 
       let regex = new RegExp(ref.pattern)
@@ -430,18 +534,163 @@ class ARCHIVE{
       
       if ( regex.test(msg) ){
 
+        let regexMatch = msg.match(regex)
+        // console.log("Attempting to capture group by porting function:")
+        // captureGroups(msg,ref.pattern)
+        this.storeLearnedData(regexMatch)
         console.log(`Archive:: getReplyUsingPatternMatching (pattern) / ${ref.pattern}`)
-        let mem = this.memory[ref.index]
-        let p = Math.floor(Math.random() * mem.response.length);
-        response = mem.response[p]
+        
+        isMemoryFound = true
         break;
       }
 
-      index++
+      i++
     }/** end finding the matching singular memory*/
 
+    /** Begin scannin the potential responses by iteratin the indexes*/
+    let response = ""
+    if ( isMemoryFound ){
+      
+      let memoryUnit = this.memory[ref.index]
+      let index = memoryUnit.timesRetrieved
 
-    return  response 
+      //check if pattern responsse is array or not
+      //if array iterate trhough it, if not then
+      //memoryUnit.response is the response
+      if ( Array.isArray(memoryUnit.response)){
+        
+        // console.log("Memory as many response")
+        //iterate in the responses
+        if ( index < this.MAX_VARIATION ){
+
+          response = memoryUnit.response[index]
+          console.log('Memory unit reponse index is??:: ', index)
+        
+          memoryUnit.timesRetrieved++  
+
+          console.log('Response in an array so I Should be here')
+          response = memoryUnit.response[index]
+  
+          console.log('Response should be:: ', response)
+        }else{
+  
+          console.log('I Should be here')
+
+          //reset the index tracker of memory bak to zero
+          memoryUnit.timesRetrieved = 0
+          index = memoryUnit.timesRetrieved 
+          response = memoryUnit.response[index]
+  
+          console.log(`Archive:: getReplyUsingPatternMatching (response) / ${response}`)
+          
+          //increment the index
+          memoryUnit.timesRetrieved++
+        }
+
+      }else{
+        response = memoryUnit.response
+      }
+
+      /** Begin scanning the learned memory and replacing the dictionary 
+       * if term exist */
+      // you found the response.. next lets replace the trigger
+      // according to learned data . this time we use "=learnedName" as trigger
+      const responseRegExLearnedData = new RegExp("=(\\w+)","igm")
+      if ( responseRegExLearnedData.test(response) ){
+
+        console.log("found something to be replaced")
+        // it effectively empties the value 
+        const regexp = new RegExp('=(\\w+)','img');
+        const matches = response.matchAll(regexp);
+        
+        //construct responses by getting saved data from memories
+        for (let [match] of matches) {
+          let flag = match.replace("=","").toLowerCase()
+          let fromMemory = this.learnedData.get(flag)
+          
+          if ( fromMemory != undefined ){
+            response = response.replace(match,fromMemory)
+          }else{
+            // this will return the classes without values
+            //to counter them, we do this
+            response = response.replace(match,"")
+          }
+        }
+
+      }  /** end scanning learnedMemory*/
+
+      /** Begin scanning the dictionary and replacing the dictionary 
+       * if term exist */
+      const responseRegExDictionaryAccess = new RegExp("#(\\w+)","igm")
+      if ( responseRegExDictionaryAccess.test(response) ){
+        const regexp = new RegExp('#(\\w+)','img');
+        const matches = response.matchAll(regexp);
+        
+        //construct responses by getting saved data from learned data
+        for (let [match] of matches) {
+          let flag = match.replace("#","").toLowerCase()
+          
+          //find the corresponding term that is saved in the learnedmemeory
+          //this returns the indicating term.. 
+          //example in msg: "what is [term]" , the work term is saved in the learned
+          // memory. in the response will be something like #term.. so we need to 
+          // remove # hash.. then we get the word term. 
+          // but remember we already caputed the value of term and placed them in 
+          // the learned memory.. we need to return the value of corresponding value of term
+          // example term: potato, we get potato. 
+          // afterwards we scan the dictionary..  
+          let fromLearnedData = this.learnedData.get(flag)
+
+
+          // console.log(`Checking from learned data:: ${fromLearnedData}`)
+          //find the object that matches in the dictioanry
+          let fromDictionary = this.dictionary.find(term=>{
+            
+            // console.log(`Found working [term]: ${term.term}` +
+            // `\nFound from learned data: ${fromLearnedData}`)
+            if (new RegExp(term.term).test(fromLearnedData)){
+              console.log(`Found working [term]: ${term.term}` +
+              `\nFound from learned data: ${fromLearnedData}`)
+            //   return true
+            }
+
+            // console.log(`<<<< ${term.term}`)
+            
+            return (new RegExp(term.term).test(fromLearnedData))
+          })
+
+          //if the object has returned anything          
+          if ( fromDictionary != undefined ){
+            console.log("<< Found " + fromDictionary.definition)
+            response = response.replace(match,fromDictionary.definition)
+          
+          }else{
+            // this will return the classes without values
+            //to counter them, we do this
+            response = response.replace(match,"")
+          }
+          response = response.replace(match,fromDictionary)
+
+          
+        }
+      }
+      /** end scanning dictionary*/
+
+      // console.log(`\tHere is what we found << ${response}`)
+      // let headOfStack = memoryUnit.nextTopic
+      // console.log(`Head of stack << ${memoryUnit.nextTopic}`)
+      this.topicStack.push(memoryUnit.nextTopic)
+    }
+    /** End scannin the potential responses */
+
+    // console.log(`\tPutting [${response}] to response stack`)
+    this.responseStack.push(response)
+    // console.log(`\tResponse stack:: ${JSON.stringify(this.responseStack)}`)
+    // console.log(`Chat Response << ${response}`)
+
+
+    // return null if not found
+    return isMemoryFound ? response : null
   }
 
   getDictionary(term){
@@ -452,6 +701,87 @@ class ARCHIVE{
     return this.dictionary[term]
   }
 
+  scanTopic(topicName,msg){
+    //search topic that matches.. 
+    
+    let i = 0
+    let topicLength = this.topics.length
+    let agentResponse = undefined
+
+    while( i < topicLength ){
+
+      // you need to keep track of topic unit
+      let topicUnit = this.topics[i]
+      
+      console.log(`Finding [${topicName}] in Topic Stack`)
+
+      if ( topicName === topicUnit.topicName ){
+        //found the right topic
+
+        console.log(`\tFound Topic:: ${topicName}`)
+
+        //check if msg corresponds to the right topic.
+        let k = 0
+        let userResponsesLength = topicUnit.userResponses.length
+    
+        //this is an array
+        let userResponses = topicUnit.userResponses
+
+        //holds the value if has next topic
+        let nextTopic
+
+        // console.log(`\tTopic Unit value:  [${JSON.stringify(topicUnit)}] `)
+        
+        console.log(`\tFinding response for [${msg}] `)
+        //iterate through
+        //search the possible user responses
+        while( k < userResponsesLength ){
+
+          let unit = userResponses[k]
+          let pattern = unit.pattern
+          let regex = new RegExp(pattern,"gmi")
+        
+          if ( regex.test(msg) ){
+            //found corresponding response
+            agentResponse = unit.response
+            nextTopic = unit.nextTopic
+
+            console.log(`\t\tNext Topic:: ${nextTopic}`)
+            // if has value
+            if ( nextTopic != undefined){
+              this.topicStack.push(nextTopic)
+            }else{
+              console.log("\t\tShould be ending the stacking")
+              this.topicStack.clear()
+            }
+            //if matched then stop
+
+            break
+          }
+
+          k++
+        }
+
+        if ( agentResponse != undefined ){
+
+          //store this so we can access it later
+          console.log(`Putting [${agentResponse}] to response stack`)
+          this.responseStack.push(agentResponse)
+          console.log(`\tFound response for [${msg}] is [${agentResponse}]`)
+          console.log(`\tFound next topic [${nextTopic}]`)
+          
+        }
+
+       
+        //since found stop finding topic
+        break;
+      }
+
+      i++
+    }
+
+    return agentResponse
+  }
 
   getReplyUsingCosineSimilarity(msg,threshold){
     let len = this.referencesUntransformedPatterns.length
@@ -467,17 +797,19 @@ class ARCHIVE{
 
     let reply = null
     let cosine = cosineSimilarity(msg,max.pattern)
-    console.log(`\tFrom Archive:: Cosine Max Pattern Found: ${max.pattern}`)
-    console.log(`\t\tFrom Archive:: Cosine distance:: ${cosine}`)
+    console.log(`From Archive:: Cosine Max Pattern Found: ${max.pattern}`)
+    console.log(`From Archive:: Comparing Messge-Pattern: ${msg} , ${max.pattern}`)
+    console.log(`From Archive:: Cosine distance:: ${cosine}`)
     // console.log(`Pattern:: ${this.memory[max.index].response}`)
     if ( cosine > threshold){
       reply = this.memory[max.index].response
     }
 
-    return {reply,cosine}
+    return reply
   }
 
 
+  
 }
 
 
