@@ -22,7 +22,7 @@ let section11 = [
         `Makadtabang I nya ba upama ka magatel I pes una pudit nengka.`
     ],7),
     encodeMemory([
-        `* (duken|panon) * rehydration solution * (awa|gamot|kapya|tabang) *`,
+        `* (duken|panon) * rehydration * (awa|gamot|kapya|tabang) *`,
     ],[
         `Di nan pakagamot sa kadtagudo, ugayd na makadtabang I namba sa kapagukit na ig sa lawas nu tao endu di ka lenukan edsamik upama ka edtagudo ka`
     ],7),
@@ -174,7 +174,7 @@ let section11 = [
     encodeMemory([
         `* embalangan * !bismuth !subsalicylate * `,
     ],[
-        ``
+        `Su bismuth subsalicylate na nya nin buntal na mana tablitas, capsule, at na to na igen. Depende I nan sa minumbal lon endo so penggamutan nin.`
     ],7),
     encodeMemory([
         `* sambi * !bismuth !subsalicylate * `,

@@ -31,7 +31,7 @@ let section6 = [
     ],5),
     
     encodeMemory([
-      `* endaw * pamasa * gamot * tagudo * `, 
+      `* endaw * ( mamasa | pamasa ) * gamot * tagudo * `, 
     ],[
       `Kapakay I nan pamasan sa botika`,
     ],5),
