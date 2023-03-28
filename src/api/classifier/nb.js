@@ -1,5 +1,5 @@
 // Multinomial Naive Bayes
-export default class NaiveBayes{
+ class NaiveBayes{
 
     constructor(){
         // You can show this object later
@@ -95,7 +95,6 @@ export default class NaiveBayes{
     // https://www.youtube.com/watch?v=km2LoOpdB3A&ab_channel=RafaelMerinoGarc%C3%ADa
     compute_term_likelihood(term,category) {
 
-
         let term_vector = this.class_terms[category]
 
         // if ( term in class_terms ) then 
@@ -126,6 +125,9 @@ export default class NaiveBayes{
 
 
     buildTermProbabilityMap(){
+        console.log('Building Term Probability Map')
+
+       
 
         let classes = Object.keys(this.class_terms)
         
@@ -151,72 +153,12 @@ export default class NaiveBayes{
         // })
     }
 
-    getPredictionOrder(data){
-        let term_vector = data.split(/\s+/)
-
-        // console.log(`NaiveBayes::Predict (input) / ${data}`)
-
-        let results = {}
-        let pool = []
-
-        let classes = Object.keys(this.class_terms)
-        classes.forEach(item_class=>{
-            
-            let prior = this.prior_probabilities[item_class]
-            let term_product = 1
-            // console.log(`\tPrior<< ${prior}`)
-            term_vector.forEach(term=>{
-                // console.log(`\t${term} >> ${this.compute_term_likelihood(term,item_class)}`)
-                term_product *= this.compute_term_likelihood(term,item_class)
-            })
-
-            // the default setup is to multiply
-            let probability = prior * term_product
-
-            // now we apply the log trick
-            prior = Math.log(this.prior_probabilities[item_class])
-            let term_sum = 0
-            term_vector.forEach(term=>{
-                // console.log(`\t${term} >> ${this.compute_term_likelihood(term,item_class)}`)
-                term_sum += Math.log(
-                    this.compute_term_likelihood(term,item_class)
-                )
-            })
-
-            probability += term_sum
-
-            // LETS HIDE THIS FOR NOW THIS SHOWS THE SUMMARY
-            // console.log(`Probability [${item_class}]: ${probability}`)
-
-            results[item_class] = probability
-            pool.push({
-                class: item_class,
-                probability: probability
-            })
-        })
-
-        // scan for the max value
-        let argmax_value = pool[0]
-        for ( let i = 1 ; i < pool.length ; i++){
-            let current = pool[i]
-            if ( current.probability > argmax_value.probability ){
-                argmax_value = current
-            }
-        }
-
-        pool.sort((a,b)=>{
-            return b[1] - a[1]
-        })
-
-        console.log("NaiveBayes:: Probability Order (get prediction order) / ", pool)
-        return pool
-    }
 
     predict(data){
         
         let term_vector = data.split(/\s+/)
 
-        // console.log(`NaiveBayes::Predict (input) / ${data}`)
+        console.log(`\n\nPredicting Language: ${data}`)
 
         let results = {}
         let pool = []
@@ -247,8 +189,7 @@ export default class NaiveBayes{
 
             probability += term_sum
 
-            // LETS HIDE THIS FOR NOW THIS SHOWS THE SUMMARY
-            // console.log(`Probability [${item_class}]: ${probability}`)
+            console.log(`Probability [${item_class}]: ${probability}`)
 
             results[item_class] = probability
             pool.push({
@@ -266,7 +207,7 @@ export default class NaiveBayes{
             }
         }
 
-        // console.log(`NaiveBayes::Predicted based on argmax: ${argmax_value.class}`)
+        console.log(`Predicted based on argmax: ${argmax_value.class}`)
         return argmax_value.class
     }
 
@@ -314,7 +255,7 @@ export default class NaiveBayes{
 
 // NODE JS TESTING UNCOMMENT
 // WATCH THIS REFERENCE https://www.youtube.com/watch?v=km2LoOpdB3A
-/**
+
 //sample training data
 let trainingData = [
     {data: "chinese beijing chinese", class: "c"},
@@ -328,8 +269,8 @@ let testData = "chinese chinese chinese tokyo japan"
 
 let nb = new NaiveBayes()
 nb.train(trainingData)
-nb.buildTermProbabilityMap()
-// nb.print().training_data()
+/**nb.buildTermProbabilityMap()
+nb.print().training_data()
 // nb.print().vocabulary()
 
 // nb.print().prior_probabilities()

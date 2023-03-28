@@ -1,21 +1,11 @@
 import NaiveBayes from "@/api/classifier/naive-bayes"
 
 
-class AnnotatedDocument {
-
-    constructor(data,lang){
-        this.data = data
-        this.class = lang
-    }
-}
-
-export default class DomainClassifier{
+export default class DomainClassifier extends NaiveBayes{
 
     constructor(){
 
-        this.nb = new NaiveBayes()
-
-        this.classes = []
+        super()
 
         // annotated
         this.documents = []
@@ -34,18 +24,13 @@ export default class DomainClassifier{
             doc = doc.toLowerCase()
 
             // step3 is to ignore the
-
-
-            let data = new AnnotatedDocument(
-                doc,
-                lang
-            )
-
+            let data = { data: doc, class: lang }
+            
             this.documents.push(data)
             
             // train only works if its array
             // so lets twap this with array
-            this.nb.train([data])
+            super.train([data])
 
         }
 
@@ -58,22 +43,18 @@ export default class DomainClassifier{
     }
 
     buildTermProbabilityMap(){
-        this.nb.buildTermProbabilityMap()
+        super.buildTermProbabilityMap()
     }
 
     getPrediction(msg){
         // find max
-        return this.nb.predict(msg)
+        return super.predict(msg)
     }
 
 
     printDocuments(){
         let size = this.documents.length
         console.log(`Printing Documents (size: ${size})`)
-        // this.documents.forEach((docs,index)=>{
-        //     console.log(`${index},${docs.class},${docs.data}`)
-        //     // console.log(`${JSON.stringify(docs)}`)
-        // })
         
         let strrep = ''
         this.documents.forEach((docs,index)=>{
@@ -84,13 +65,10 @@ export default class DomainClassifier{
         console.log(strrep)
     }
 
-    printClassifierPropertyValues(){
-        console.log("Attemptin to print classifier properties")
-        this.nb.print().vocabulary()
-        this.nb.print().class_terms()
+    getVocabulary(){
+        // call super 
+        return super.getVocabulary()
     }
 
-    getVocabulary(){
-        return this.nb.getVocabulary()
-    }
+
 }

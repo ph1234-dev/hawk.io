@@ -1,25 +1,12 @@
 import NaiveBayes from "@/api/classifier/naive-bayes"
 
-
-class AnnotatedDocument {
-
-    constructor(data,lang){
-        this.data = data
-        this.class = lang
-    }
-}
-
-export default class LanguageClassifier{
+export default class LanguageClassifier extends NaiveBayes{
 
     constructor(){
-
-        this.nb = new NaiveBayes()
-
-        this.classes = []
-
+        super()
+        
         // annotated
         this.documents = []
-
 
     }
 
@@ -36,19 +23,13 @@ export default class LanguageClassifier{
 
             // step3 is to ignore the
 
-
-            let data = new AnnotatedDocument(
-                doc,
-                lang
-            )
-
-            // 
+            let data = { data: doc, class: lang }
+            
             this.documents.push(data)
             
             // train only works if its array
             // so lets twap this with array
-            this.nb.train([data])
-
+            super.train([data])
             // console.log(`Training Data: ${JSON.stringify(cluster)}`)
         }
 
@@ -59,6 +40,7 @@ export default class LanguageClassifier{
 
             // access responses
             let responses = rule.response
+            // console.log(`Responses: ` , responses)
             responses.forEach(response=>{
                 let splittedSentences = response.split(".")
                 splittedSentences.forEach(insertCallback)
@@ -70,12 +52,11 @@ export default class LanguageClassifier{
 
 
     buildTermProbabilityMap(){
-        this.nb.buildTermProbabilityMap()
+        super.buildTermProbabilityMap()
     }
 
     getPrediction(msg){
-        // find max
-        return this.nb.predict(msg)
+        return super.predict(msg)
     }
 
 
@@ -98,12 +79,18 @@ export default class LanguageClassifier{
     }
 
     printVocabulary(){
-        this.nb.print().vocabulary()
+        super.print().vocabulary()
     }
 
-    printClassifierPropertyValues(){
-        console.log("Attemptin to print classifier properties")
-        this.nb.print().vocabulary()
-        this.nb.print().class_terms()
+    /**
+     * 
+     * @param {input} input is an array
+     */
+    test(input){
+        console.log('Language prediction Test')
+        input.forEach(val=>{
+            console.log('\tInput / ',val)
+            console.log(`Predicting: ${val} as [${this.predict(val)}]`)
+        })
     }
 }
