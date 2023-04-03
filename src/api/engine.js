@@ -13,18 +13,15 @@ import {
 
 import LanguageClassifier from '@/api/classifier/language-classifier'
 import DomainClassifier from '@/api/classifier/domain-classifier'
-import { levenshteinDistance } from '@/api/configuration/distance-formula'
+import { levenshteinDistance,damerauLevenshteinDistance } from '@/api/configuration/distance-formula'
 import { RESERVED_WORDS } from '@/api/rules/reserved-words'
 
 export default class Engine {
 
     constructor() {
-
-        // console.log(`English Rules / ${[].concat(diarrheaEngRules,influenzaEngRules).length}`)
-        // console.log(`Filipino Rules / ${[].concat(diarrheaFilRules,influenzaFilRules).length}`)
-        // console.log(`Maguindanaon Rules / ${[].concat(diarrheaMagRules,influenzaMagRules).length}`)
         
         this.RULES = {
+            
             ENG: [].concat(diarrheaEngRules,influenzaEngRules),
             FIL: [].concat(diarrheaFilRules,influenzaFilRules),
             MAG: [].concat(diarrheaMagRules,influenzaMagRules)
@@ -59,16 +56,57 @@ export default class Engine {
             7: "Rational Use of Product and services"
         }
 
+        this.initializeLanguageClassifier()
+        this.initializeDomainClassifier()
+
+        // this.getReply("how do you treat influenza")
+        // this.getReply("how do you treat influnza")
+        // this.getReply("how do you treat adobo")
         
+        // this.getReply("endaw ako mamasa sa gamot na tagudo")
+        // this.getReply("gusto ko bumili ng gamot ng ubo ko ba san ako pwede pumunta")
+        // this.getReply("how do you treat diarrhea")
+        // this.getReply("drugs that most diarrhea can be treated are what")
+        // this.getReply("paano gamutin ang diarrhea")
+        // this.getReply("gamot diarrhea")
+        // this.getReply(" i was wondering how can one possible fix diarrhea")
+        this.getReply("tell me the what is the proper way of taking antihistamines")
+        this.getReply("tell me the side effects of antihistamines")
+        this.getReply("how much does lozenges cost")
+    }
+
+
+    initializeLanguageClassifier() {
+
+        console.log('Loading language classifier model')
+
+        // USE THIS TO PREDICT THE LANGUAGE
+        this.classifierLanguage = new LanguageClassifier()
+        // STEP 1: LOAD DATASETS
+        // STEP 2: TRAIN THE MODEL
+        Object.keys(this.RULES).forEach(lang => {
+            this.classifierLanguage.insertCluster(this.RULES[lang], lang)
+        })
+
+        // call this after training
+        this.classifierLanguage.buildTermProbabilityMap()
+
+        // this.classifierLanguage.test([
+        //     "i have influenza, what can i do",
+        //     "san pwede bumili ng gamot ",
+        //     "endaw ako makapamasa sa gamot na diarrhea"
+        // ])
+
+    }
+
+    initializeDomainClassifier(){
+        
+        // this is where we access the
+        // memory[lang][domain]
         this.memory = {}
-        
-        // USER THIS TO PREDICT THE DIMENSION
-        this.classifierSelfcareDimensions = new LanguageClassifier()
-        
-        
 
         console.log('Loading domain classifier model')
-        // we create a master memory
+
         Object.keys(this.LANG)
             .forEach((lang,value)=>{
 
@@ -88,11 +126,11 @@ export default class Engine {
                             // console.log(`\t\tDimension - ${dimension} | ${this.SELFCARE_DIMENSIONS[dimension]}| ${filtered.length} cases\n\t\t\t${filtered}`)
                             let mem = new Blackbox()
                             mem.storeRules(filtered)
-                            mem.transformReferences()
                             mem.sortReferences()
+                            mem.transformReferences()
                             this.memory[lang][dimension] = mem
 
-                            mem.print().referencesUntransformed()
+                            // mem.print().referencesUntransformed()
                         }
 
 
@@ -100,6 +138,7 @@ export default class Engine {
                         //THERE IS A PROBLEM HERE.. YOU SHOULD NOT BE TRAINING USING THE RESPONSES 
                         //YOU SHOULD ONLY TRAIN USING THE PATTERNS
                         this.RULES_DIMENSION_CLASSIFIERS[lang].insertCluster(filtered,dimension)
+                        this.RULES_DIMENSION_CLASSIFIERS[lang].buildTermProbabilityMap()
                     })
         })
 
@@ -107,46 +146,21 @@ export default class Engine {
         // TO ACCESS MEMORY this.memory[LANG][DIMENSION] 
         // WE NEED TO IDENTIFY THE VALUE OF LANG AND DIMENSION
 
-        // USE THIS TO PREDICT THE LANGUAGE
-        this.classifierLanguage = new LanguageClassifier()
-        // STEP 1: LOAD DATASETS
-        // STEP 2: TRAIN THE MODEL
 
-
-        console.log('Loading language classifier model')
-        Object.keys(this.RULES).forEach(lang=>{
-            // console.log(`\tLang // ${lang}`)
-            // console.log(`\tArray // ${this.RULES[lang]}`)
-            this.classifierLanguage.insertCluster(this.RULES[lang],lang)
-        })
-
-
-        let vocab = []
-        Object.keys(this.RULES_DIMENSION_CLASSIFIERS)
-            .forEach(lang=>{
-                console.log(lang)
-                let words = this.RULES_DIMENSION_CLASSIFIERS[lang].getVocabulary()
-                for (let word of words){
-                    if ( !vocab.includes(word) &&
-                        word.length > 2)
-                        vocab.push(word)
-                }
-        })
-        vocab = vocab.sort()
-        console.log("Vocabulary Found\n",vocab)
-
-        // load diarrhea rules
-
-
-        // hide this for testing
-        // this.load_data()
-        
-        // this.printRules(this.LANG.ENG)
-        // this.printRules(this.LANG.FIL)
-        // this.printRules(this.LANG.MAG)
-
-        // NOTE RO REMEMBER YOU NEED TO COMPUTE THE LEVENSHTEIN DISTANCE FOR SELECTED 
-        // TERMINOLOGIES
+        // SHOWS THe vocabulary
+        // let vocab = []
+        // Object.keys(this.RULES_DIMENSION_CLASSIFIERS)
+        //     .forEach(lang=>{
+        //         // console.log(lang)
+        //         let words = this.RULES_DIMENSION_CLASSIFIERS[lang].getVocabulary()
+        //         for (let word of words){
+        //             if ( !vocab.includes(word) &&
+        //                 word.length > 2)
+        //                 vocab.push(word)
+        //         }
+        // })
+        // vocab = vocab.sort()
+        // console.log("Vocabulary Found\n",vocab)
     }
 
 
@@ -174,8 +188,11 @@ export default class Engine {
      * 9. if still not satisfied perform cosine similarity on the first target dimension given threshold (.7)
      * 10. if not found tell use reponse does not exist
      */
-    async getReply(msg) {
+    getReply(msg) {
         
+        console.log(`Engine::getReply (original msg) / ${msg}`)
+        let reply = null
+
         // step1 and and step2
         msg = msg.toLowerCase().trim()
 
@@ -183,72 +200,96 @@ export default class Engine {
         // rebuild string
         // Perform edit distance
         let tokens = msg.split(' ')
-        let newMSG = new String()
         tokens.forEach(token=>{
 
             for ( let i = 0 ; i < this.spellingArray.length; i++ ){
                 let word = this.spellingArray[i]
-                let distance = levenshteinDistance(token,word)
-        
                 // we only allow up to 3 edits to correct
-                if ( distance == 3 ){
-                    token = word
-                    break;
+                if ( damerauLevenshteinDistance(token,word) < 2
+                    && token != word
+                    ){
+                    console.log(`\nEngine::getReply (foundh damerau / ${token} | ${word}) / ${damerauLevenshteinDistance(token,word)}`)
+                    msg = msg.replace(token,word)
                 }
             }
 
-            newMSG.concat(token).concat(' ')
         })
 
-        msg = new String(newMSG)
+        console.log(`Engine::getReply (after levenshtien msg) / ${msg}`)
 
-        // step 4
-        // Do substitutions
+        // step 4 Do substitutions
         
         // step 5
-        let lang = this.LanguageClassifier.getPrediction(msg)
+        let lang = this.classifierLanguage.getPrediction(msg)
+        console.log(`Engine::getReply / msg == ${msg}`)
+        console.log(`Engine::getReply / Predicted language == ${lang}`)
 
-        // step 6
-        let dimension = this.DomainClassifier.getPrediction(msg)
+        // IMPORTANT TASK
+        // get the ranking order and iterate through it
 
-        // step 7
-        let reply = this.RULES[lang][dimension].getReplyUsingPatternMatching(msg)
 
-        // step 8 
-        if ( reply == null ){
-            // lets do cosine similarity
-            reply = this.RULES[lang][dimension].getReplyUsingCosineSimilarity(msg)
-            if ( null ){
-                reply = 'Im sorry, I am unable to determine how to respond to that question'
+        // step 6 
+        // select which selfcare dimension ranks higher
+
+        
+
+        // returns an array
+        let searchOrder = this.RULES_DIMENSION_CLASSIFIERS[lang].getPredictionOrder(msg)
+        let searchDimensionLength = searchOrder.length
+
+
+        // let dimensionScanned = [dimension]
+        let selfcareDimension = 0;
+
+        console.log(`Engine:: getReply (scanning dimensions through pattern matching) /  ${selfcareDimension} - Total dimensions = ${this.SELFCARE_DIMENSIONS.length}`)
+        
+        for ( let dimension of searchOrder){
+            let target = dimension.class
+            reply = this.memory[lang][target].getReplyUsingPatternMatching(msg)
+            if (reply != null) {
+                // dimensionScanned.push(dimIndex)
+                console.log(`\tFuond Reply:: (Dimension::${target}) `, reply)
+                break;
             }
         }
-    
 
+        if (reply == null) {
+
+            console.log(`Engine::getReply / Pattern matching had no response. Attempting cosine similarity `)
+            
+            let similarityScorePerDimension = []
+            for ( let dimension of searchOrder){
+                let target = dimension.class
+                similarityScorePerDimension.
+                    push(this.memory[lang][target].getReplyUsingCosineSimilarity(msg))
+           }
+
+           let max = similarityScorePerDimension[0]
+           for (let i = 1; i < similarityScorePerDimension.length; i++){
+            if ( max.cosine < similarityScorePerDimension[i].cosine){
+                max = similarityScorePerDimension[i]
+            }
+
+            // there should be a tweak here.. 
+            // to use cosine similariy.
+            // 1. at least 50 of the words in msg should be seen in the patterns
+           }
+           
+           reply = max.reply
+            // if reply still null
+            // then we couldnt find the repsonse
+            if ( reply == null ){
+                reply = 'Im sorry, I am unable to determine how to respond to that question'
+                console.log(`Engine::getReply (output) / ${reply}\n\n`)
+            }else{
+                console.log(`Engine::getReply (output from cosine matching) / ${reply}\n\n`)
+            }
+        }else{
+            console.log(`Engine::getReply (output from pattern matching) / ${reply}\n\n`)
+        }
 
         return reply
     }
 
-    // to reduce the features
-    // how about we remove common words that
-    // occurs in english/filipino/maguindanaon
-    // so that we are only left with distinct words
-    // that are indicative 
-    // if this happens we dont even have to use
-    // machine learning perhaps
-
-    // then maybe we just have to do voting mechanism
-    // to identify as majority rules
-    // it may be an overkill to use naive bayes
-
-    // remember we are only removing features
-    // that exist in eng, fil, mag
-
-    async getReply(msg, lang) {
-        // console.log(`From Engine: getting reply for:\n\t${msg}\n\t${lang}`)
-        let reply = this.memory[lang].retrieveMemory(msg)
-        // console.log(`\tResponse after memory retrieve:\n\t${reply}`)
-        return reply
-        // return `Engine reponse: ${msg} || ${lang}`
-    }
 
 }

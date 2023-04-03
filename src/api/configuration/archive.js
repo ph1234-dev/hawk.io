@@ -423,19 +423,31 @@ class ARCHIVE{
       // console.log("Reading Regex: "  + ref.pattern)
       // let regex = new RegExp(ref.pattern,"i")
 
-      let regex = new RegExp(ref.pattern)
 
-      // console.log(`Testing:: ${msg} || ${ref.pattern}`)
-      // console.log(`Match?:: ${regex.test(msg)}`)
-      
-      if ( regex.test(msg) ){
+      // this patterns starts with * so all patterns
+      // would start * which is '^(.*)' instead of 
+      // starting with letters
+      if (ref.pattern.includes('^(.*)')){
+        // skip means it is not a regex 
 
-        console.log(`Archive:: getReplyUsingPatternMatching (pattern) / ${ref.pattern}`)
-        let mem = this.memory[ref.index]
-        let p = Math.floor(Math.random() * mem.response.length);
-        response = mem.response[p]
-        break;
+        let regex = new RegExp(ref.pattern)
+
+        // console.log(`Testing:: ${msg} || ${ref.pattern}`)
+        // console.log(`Match?:: ${regex.test(msg)}`)
+  
+  
+        
+        if ( regex.test(msg) ){
+  
+          console.log(`Archive:: getReplyUsingPatternMatching (pattern) / ${ref.pattern}`)
+          let mem = this.memory[ref.index]
+          let p = Math.floor(Math.random() * mem.response.length);
+          response = mem.response[p]
+          break;
+        }
       }
+
+      
 
       index++
     }/** end finding the matching singular memory*/
