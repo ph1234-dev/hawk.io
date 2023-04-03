@@ -121,35 +121,35 @@ let section18 = [
 let section19 = []
 
 let section20 = [
-    encodeMemory([
-        `* (what|how) * (treat|reduce|control) * fever * chills *`,
-        `* (what|how) * (treat|reduce|control) * chills *`,
-        `* (what|how) * (treat|reduce|control) * fever *`,
-        // chatgpt start
-        "What are the treatments for fever?",
-        "How can I relieve a fever?",
-        "What are some ways to reduce a fever?",
-        "What medications can help with fever?",
-        "What are some home remedies for fever?",
-        "How can I bring down a fever?",
-        "What are some natural ways to treat fever?",
-        "What should I do if I have a fever?",
-        "How do doctors treat fever?",
-        "What are the best ways to manage a fever?",
-        "What are the treatment options for fever?", 
-        "How can you alleviate a fever?",  
-        "What are some remedies for fever?",  
-        "What are the best ways to treat fever?",  
-        "How do you manage fever symptoms?",  
-        "What medications can be used to treat fever?",  
-        "What are some natural ways to treat fever?", 
-        "How do you bring down a fever?",  
-        "What should you do to treat a fever?",  
-        "What are some effective treatments for fever?"
-        // chatgpt end
-    ],[
-        `You can drink plenty of fluids to stay hydrated. There are some over-the-counter (otc) pain relievers you can take to reduce discomfort. For example, you can ask your pharmacist for acetaminophen for pain relief. When you have a fever, apply damp, luke warm cloths to the forehead. Wear comfortable cloths. If you have chills, it is best to wear layers and keep warm. Then rest. you need plenty of rest to recover`
-    ],2),
+    // encodeMemory([
+    //     `* (what|how) * (treat|reduce|control) * fever * chills *`,
+    //     `* (what|how) * (treat|reduce|control) * chills *`,
+    //     `* (what|how) * (treat|reduce|control) * fever *`,
+    //     // chatgpt start
+    //     "What are the treatments for fever?",
+    //     "How can I relieve a fever?",
+    //     "What are some ways to reduce a fever?",
+    //     "What medications can help with fever?",
+    //     "What are some home remedies for fever?",
+    //     "How can I bring down a fever?",
+    //     "What are some natural ways to treat fever?",
+    //     "What should I do if I have a fever?",
+    //     "How do doctors treat fever?",
+    //     "What are the best ways to manage a fever?",
+    //     "What are the treatment options for fever?", 
+    //     "How can you alleviate a fever?",  
+    //     "What are some remedies for fever?",  
+    //     "What are the best ways to treat fever?",  
+    //     "How do you manage fever symptoms?",  
+    //     "What medications can be used to treat fever?",  
+    //     "What are some natural ways to treat fever?", 
+    //     "How do you bring down a fever?",  
+    //     "What should you do to treat a fever?",  
+    //     "What are some effective treatments for fever?"
+    //     // chatgpt end
+    // ],[
+    //     `You can drink plenty of fluids to stay hydrated. There are some over-the-counter (otc) pain relievers you can take to reduce discomfort. For example, you can ask your pharmacist for acetaminophen for pain relief. When you have a fever, apply damp, luke warm cloths to the forehead. Wear comfortable cloths. If you have chills, it is best to wear layers and keep warm. Then rest. you need plenty of rest to recover`
+    // ],2),
     encodeMemory([
         `* (what|how) * (treat|reduce|control) * vomiting *`,
         // chatgpt start
@@ -184,21 +184,6 @@ let section20 = [
     encodeMemory([
         `* (what|how) * treat * nausea *`,
         // chatgpt start
-        "What are some ways to manage nausea?",
-        "How can I cope with nausea?",
-        "What are some tips for managing nausea?",
-        "What can I do to reduce nausea?",
-        "How do you deal with nausea?",
-        "What are some remedies for nausea?",
-        "How can I alleviate nausea?",
-        "What are some strategies for managing nausea?",
-        "What can I take to ease nausea?",
-        "How do I control nausea?",
-        "What are some natural ways to manage nausea?",
-        "What are some foods or drinks that can help with nausea?",
-        "How can I prevent nausea?",
-        "What medications can I take for nausea?",
-        "What are some lifestyle changes that can help with nausea?"
         // chatgpt end
     ],[
         `• Drink clear or ice-cold drinks.
@@ -217,71 +202,55 @@ let section20 = [
         
         • Avoid brushing your teeth after eating.
         
-        • Choose foods from all the food groups as you 
-            can tolerate them to get adequate nutrition.
+        • Choose foods from all the food groups as you can tolerate them to get adequate nutrition.
         `
     ],2),
-    encodeMemory([
-        `* (what|how) * treat * headache *`,
-        // chatgpt start
-        "What are some ways to manage a headache?",  
-        "How can I deal with a headache?",  
-        "What are some remedies for a headache?",  
-        "What can I do to alleviate a headache?",  
-        "How do I cope with a headache?",  
-        "What are some strategies to handle a headache?",  
-        "What steps can I take to relieve a headache?",  
-        "How do I treat a headache?",  
-        "What are some tips for managing a headache?",  
-        "What can I do to soothe a headache?",  
-        "How do I manage a headache?",  
-        "What are some ways to ease a headache?",  
-        "What are some ways to lessen a headache?",  
-        "How do I reduce the pain of a headache?",  
-        "What are some ways to cope with a headache?"
-        // chatgpt end
-    ],[
-        `1.  Apply a cold compress or ice pack to the pain site.
+    // encodeMemory([
+    //     `* (what|how) * treat * headache *`,
+    //     // chatgpt start
+    //     // chatgpt end
+    // ],[
+    //     `1.  Apply a cold compress or ice pack to the pain site.
 
-        2.  Drink fluids. If nausea makes it hard to drink, try sucking on ice.
+    //     2.  Drink fluids. If nausea makes it hard to drink, try sucking on ice.
         
-        3.  Rest. Protect yourself from bright light and loud noises.
+    //     3.  Rest. Protect yourself from bright light and loud noises.
         
-        4.  Calm your emotions by imagining a peaceful scene.
+    //     4.  Calm your emotions by imagining a peaceful scene.
         
-        5.  Massage tight neck, shoulder, and head muscles.
+    //     5.  Massage tight neck, shoulder, and head muscles.
         
-        6.  To relax muscles, soak in a hot bath or use a hot shower
+    //     6.  To relax muscles, soak in a hot bath or use a hot shower
         
-        `
-    ],2),
-    encodeMemory([
-        `* (what|how) * treat * abdominal cramp *`,
-        // chatgpt start
-        "What are some ways to alleviate abdominal cramps?",  
-        "How can I relieve abdominal cramps?",  
-        "What are some treatments for abdominal cramps?",  
-        "What can I do to ease abdominal cramps?",  
-        "How to manage abdominal cramps?",  
-        "What remedies can be used to treat abdominal cramps?",  
-        "What are some natural ways to treat abdominal cramps?",  
-        "How to soothe abdominal cramps?",  
-        "What medications are available to treat abdominal cramps?",  
-        "What are some effective ways to treat abdominal cramps?",  
-        "What are some home remedies for abdominal cramps?",  
-        "What are some self-care measures for abdominal cramps?",  
-        "How can I prevent abdominal cramps from occurring?",  
-        "What dietary changes can help alleviate abdominal cramps?",  
-        "What kind of exercises can help with abdominal cramps?"
-        // chatgpt end
-    ],[
-        `* Apply heat. It can help to relax your stomach muscles. This is particularly helpful if muscle strain or overuse  is causing your spasms.
+    //     `
+    // ],2),
+    // encodeMemory([
+    //     `* (what|how) * treat * abdominal cramp *`,
+    //     // chatgpt start
+    //     "What are some ways to alleviate abdominal cramps?",  
+    //     "How can I relieve abdominal cramps?",  
+    //     "What are some treatments for abdominal cramps?",  
+    //     "What can I do to ease abdominal cramps?",  
+    //     "How to manage abdominal cramps?",  
+    //     "What remedies can be used to treat abdominal cramps?",  
+    //     "What are some natural ways to treat abdominal cramps?",  
+    //     "How to soothe abdominal cramps?",  
+    //     "What medications are available to treat abdominal cramps?",  
+    //     "What are some effective ways to treat abdominal cramps?",  
+    //     "What are some home remedies for abdominal cramps?",  
+    //     "What are some self-care measures for abdominal cramps?",  
+    //     "How can I prevent abdominal cramps from occurring?",  
+    //     "What dietary changes can help alleviate abdominal cramps?",  
+    //     "What kind of exercises can help with abdominal cramps?"
+    //     // chatgpt end
+    // ],[
+    //     `* Apply heat. It can help to relax your stomach muscles. This is particularly helpful if muscle strain or overuse  is causing your spasms.
 
-        * Massaging your stomach muscles can help to relax them.
+    //     * Massaging your stomach muscles can help to relax them.
         
-        * If your stomach spasms are caused by dehydration, replenishing  your electrolytes may help. Try drinking a sports drink like  Gatorade or eating a banana. Use caution, however, if you have  a history of kidney failure, because some electrolytes,    particularly potassium, can rise to dangerous levels with supplements.
-        `
-    ]),
+    //     * If your stomach spasms are caused by dehydration, replenishing  your electrolytes may help. Try drinking a sports drink like  Gatorade or eating a banana. Use caution, however, if you have  a history of kidney failure, because some electrolytes, particularly potassium, can rise to dangerous levels with supplements.
+    //     `
+    // ]),
     encodeMemory([
         `* what * take * vomit *`,
         // chatgpt start

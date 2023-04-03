@@ -55,11 +55,11 @@ let section6 = [
     ],[
         `you need to do this because it may have contact with harmful chemicals and infectious agents like bacterial, viruses, and parasites`
     ],5),
-    encodeMemory([
-        `* who * consult * diarrhea *`,
-    ],[
-        `I can give you advises like what medicines can you take and what to do if you feel the symptoms. However, you can also go your baranggay health center, ask any doctor, nurses, and even your nearest pharmacist.`
-    ],5),
+    // encodeMemory([
+    //     `* who * consult * diarrhea *`,
+    // ],[
+    //     `I can give you advises like what medicines can you take and what to do if you feel the symptoms. However, you can also go your baranggay health center, ask any doctor, nurses, and even your nearest pharmacist.`
+    // ],5),
     encodeMemory([
         `* where * eat * diarrhea * `,
         // chatgpt start
@@ -96,12 +96,12 @@ let section6 = [
     ],[
         `There are many things you can do. Perhaps the most obvious ones is to eat foods that are properly prepared. Also drink water from clean sources. Always wash your hands with soap and water, if you don’t have soap try to use hand sanitizers. You may al so want to stop sharing your towels, cutlery and utensils. Sometimes, getting vaccines also help.`
     ],1),
-    encodeMemory([
-        `* (can|will|is) * diarrhea * avoid *`,
-        `* (can|will|is) * diarrhea * prevent *`,
-    ],[
-        `Yes you can avoid it. I can tell you what are these. you just need to ask`
-    ],1),
+    // encodeMemory([
+    //     `* (can|will|is) * diarrhea * avoid *`,
+    //     `* (can|will|is) * diarrhea * prevent *`,
+    // ],[
+    //     `Yes you can avoid it. I can tell you what are these. you just need to ask`
+    // ],1),
 ]
 
 
@@ -253,9 +253,7 @@ let section8 = [
     ],4),
 ]
 
-let section9 = [
-  
-]
+let section9 = []
 
 let section10 = [
   

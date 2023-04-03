@@ -143,7 +143,7 @@ let section11 = [
         `* what * branded * antidiarrheal * drugs *`,
         `* what * branded * diarrhea * drugs * `,
         // edit added
-        `* what * branded * drugs * diarrhea`,
+        `* what * branded * drugs * diarrhea *`,
         // chatgpt start
         "What are the brand name drugs used to treat diarrhea?",
         "Which branded drugs are effective for diarrhea?",
@@ -359,7 +359,7 @@ let section11 = [
         `It can be capsule, a solution, tablet, and suspension`
     ],7),
     encodeMemory([
-        `* what * alternative * (!loperamide|imodium)`,
+        `* what * alternative * (!loperamide|imodium) *`,
         // chatgpt start
         "What are some substitutes for loperamide?", 
         "Are there any other medications I can take instead of loperamide?", 
@@ -804,15 +804,15 @@ let section14 = [
     // ],[
     //     `You can take some on the counter medicines, but you need to watch out what you take if you have bloody stools. On the counter  drugs are not recommended if you are experiencing it`
     // ],1),
-    encodeMemory([
-        `* (are|is) * diarrhea_symptoms * (sign|symptom) * diarrhea *`,
-        `* (are|is) * diarrhea_symptoms * diarrhea * (sign|symptom) *`,
-        // chatgpt start
+    // encodeMemory([
+    //     `* (are|is) * diarrhea_symptoms * (sign|symptom) * diarrhea *`,
+    //     `* (are|is) * diarrhea_symptoms * diarrhea * (sign|symptom) *`,
+    //     // chatgpt start
 
-        // chatgpt end
-    ],[
-        `Yes, it is a symptom`
-    ],1),
+    //     // chatgpt end
+    // ],[
+    //     `Yes, it is a symptom`
+    // ],1),
 ]
 
 let section15 = []

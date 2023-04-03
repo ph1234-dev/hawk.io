@@ -363,12 +363,12 @@ let section5 = [
     ],[
         `Most of the time, your diarrhea may resolve on its own. However, if it gets worse, it lasts more than 2days or you can see blood in your stools. Seek medical help immediately `
     ],5),
-    encodeMemory([
-        "* (can|is|will|would) * diarrhea * treat *",
-        "* (can|shall|will|would) * treat * diarrhea*",
-    ],[
-        `yes, you can manage diarrhea` 
-    ],1),
+    // encodeMemory([
+    //     "* (can|is|will|would) * diarrhea * treat *",
+    //     "* (can|shall|will|would) * treat * diarrhea*",
+    // ],[
+    //     `yes, you can manage diarrhea` 
+    // ],1),
     encodeMemory([
         "* when * consult * doctor * diarrhea * ",
         // chatgpt start
