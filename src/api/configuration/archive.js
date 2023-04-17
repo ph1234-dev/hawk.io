@@ -1,5 +1,7 @@
-"use strict"
 import { cosineSimilarity } from '@/api/configuration/distance-formula'
+import { dictionary } from '@/api/substitutions/dictionary'
+import { BM25 } from '@/api/configuration/distance-formula'
+
 // const { terms } = require("../data/diarrhea/definitions")
 // const STACK = require("./stack")
 import {STACK} from './stack'
@@ -70,6 +72,8 @@ class ARCHIVE{
     // things that the chatbot learned
     // example name etc.
     this.learnedData = new Map()
+
+    this.BM25 = new BM25()
   }
 
   removeReferenceTriggers(){
@@ -115,10 +119,26 @@ class ARCHIVE{
     return sub
   }
   
+
+  getReferences(){
+    return this.references
+  }
+
   //call after sorting 
   transformReferences(){
 
     let transform = (str) =>{
+
+      // step1:: Replacement for substitution
+      // does the replacement using the substitutions
+      let tokens = str.split(' ')
+      tokens.forEach(word=>{
+        let replacement = dictionary.getSubstitute()
+        if ( replacement != null ){
+          str.replace(word,replacement)  
+        }
+      })
+
 
       // for capturing
       // eg. "i am [ren]" then replace [ ] with (?<ren>(.*))
@@ -143,10 +163,19 @@ class ARCHIVE{
     //transform all rules in references
     //do not touch the memory
     this.references.map(ref=>{
+
+      // place them first to preserve 
+      this.BM25.train(ref.pattern,ref.index)
+
+      
       ref.pattern = transform(ref.pattern)
+      
     })
 
   }
+
+  
+  
 
   print(){
     return{
@@ -276,27 +305,14 @@ class ARCHIVE{
             this.referencesUntransformedPatterns.push(
               formatReferencesForUntransformedPatterns(el,currentValue.index)
             )
+
+            // let trainDataForBM25 = str.toLowerCase().trim().replace(/[^\s+\w]/g," ")
+            // trainDataForBM25.replace(/[\s]+/g," ")
+      
+            // this.BM25.train(trainDataForBM25,index)
+            
           })
 
-        }else{
-
-          if ( typeof currentValue.response === 'function' ){
-            // executing stored function
-            // https://stackoverflow.com/questions/53314915/mongodb-how-to-execute-stored-function-in-node-js
-            let x = currentValue.response.toString()
-            console.log("\t\tOh no you are sending a fucntion:: " + currentValue.response())
-          }else{
-            
-            currentValue.pattern = this.normalizeString(currentValue.pattern)
-            
-            
-            this.memory.push(currentValue)
-            this.references.push(
-              formatReferences(currentValue.pattern, currentValue.index)
-            ) 
-            
-          }
-  
         }
 
         //increment the index
@@ -489,6 +505,12 @@ class ARCHIVE{
     return {reply,cosine}
   }
 
+
+  getReplyUsingBM25(msg){
+    // let reply = null
+    return this.BM25.getScore(msg)
+  }
+  
 
 }
 

@@ -122,102 +122,109 @@ class BM25{
   constructor(){
     // holds all docs
     this.docs = []
-    this.docsIndex = []
+    
     // document length
     this.N = 0
       
     // parameters
     this.k1 = 1.5;
     this.b = 0.75;
-    this.sigma = 1;
+
   }
   
   // docs must be an array
-  train(trainingData,index){
+  train(trainingData){
 
-    // console.log(`Distance-formula::train [Train data size::${trainingData.length}]`)
-    if ( Array.isArray(trainingData) ){
-      this.docs = [].concat(trainingData)
-    }else{
-      
-      trainingData = trainingData.toLowerCase().trim().replace(/[^\s+\w]/g," ")
-      trainingData.replace(/[\s]+/g," ")
-      this.docs.push(trainingData)
-      this.docsIndex.push(index)
-    }
-    // this.averageDocumentLength = this.docs.reduce((acc, doc) => acc + doc.length, 0) / this.N;
+    trainingData.forEach(data =>{
+      let tokens = data.split(' ')
+      this.docs.push(tokens)
+    })
+
+    // this.docs = [].concat(trainingData)
+    this.N = this.docs.length;
+    this.avgdl = this.docs.reduce((acc, doc) => acc + doc.length, 0) / this.N;
+    this.averageDocumentLength = this.docs.reduce((acc, doc) => acc + doc.length, 0) / this.N;
     // console.log('Training Data')
     // console.log('\tN = ', this.docs)
     // console.log('\tN = ', trainingData.length)
   }
 
+  calculateBM25(input) {
 
-  getScore(input){
-
-    console.log(`Distance-formula::getScore [${input}] (start)`)
     let tokens = input.split(' ')
     
-    // step1 lets iterate every document
-    this.docs.forEach((doc,index)=>{
+    console.log('Begin BM Calculation')
+
+    this.docs.forEach(doc=>{
 
       let score = 0
-      // step2 lets get through all BM25 scores of each token
-      tokens.forEach(word=>{
-
-        // step2
-        score += this.calculateBM25(word,doc)
+      // console.log(this.docs)
+      tokens.forEach(term=>{
+          let b = this.b
+          let k1 = this.k1
+          const avgdl = this.avgdl
+          const f = doc.filter((token) => token === term).length;
+          const idf = Math.log((this.N - this.docs.filter((doc) => doc.includes(term)).length + 0.5) / (this.docs.filter((doc) => doc.includes(term)).length + 0.5));
+          const tf = (f * (k1 + 1)) / (f + k1 * (1 - b + b * (doc.length / avgdl)));
+          score  += (tf * idf);   
       })
-
-      // checks if score is greater than 0 only
-      if ( score > 0 ){
-        console.log(`Document:: ${doc}`)
-        console.log(`\tDocument Index: ${this.docsIndex[index]}`)
-        console.log(`\tScore: ${score}\n`)
-        console.log(`Distance-formula::getScore [${input}] (end)`)
-      }
+      console.log(`Doc >>`, doc.join(" "))
+      console.log(`\tScore << ${score}`)
     })
 
     
+
   }
-
-    // BM25+
-  calculateBM25(term, doc) {
-      let docs = this.docs
-      let k1 = this.k1
-      let b = this.b
-      let N =  docs.length;
-      let avgdl = docs.reduce((acc, doc) => acc + doc.length, 0) / this.N;
-      let f = doc.split(' ').filter((token) => token === term).length;
-      let idf = Math.log((N - docs.filter((doc) => doc.includes(term)).length + 0.5) / (docs.filter((doc) => doc.includes(term)).length + 0.5));
-      let tf = (f * (k1 + 1)) / (f + k1 * (1 - b + b * (doc.length / avgdl)));
-
-      // return idf * (tf + this.sigma);
-      return idf * tf;
-    }
 }
 
-// const docs = [
-//   // "apple banana orange pear peach",
-//   // "orange orange orange orange orange",
-//   // "apple orange orange peach peach peach",
-//   // "i think i lost my mind a while ago",
-//   // "free fall for now, desert air wont drown you out",
-//   // "for a second the world was ending and i couldn't breath in yeah and",
-//   // "i feel like an orange is ocming to my head",
-//   // "im hungry i want to take and eat orange with peach",
-//   ["apple", "banana", "orange", "pear", "peach"],
-//   ["orange", "orange", "orange", "orange", "orange"],
-//   ["apple", "orange", "orange", "peach", "peach", "peach"],
-// ];
+const docs1
+
+
+= [
+  "apple banana orange pear peach",
+  "orange orange orange orange orange",
+  "apple orange orange peach peach peach",
+  "i think i lost my mind a while ago",
+  "free fall for now, desert air wont drown you out",
+  "for a second the world was ending and i couldn't breath in yeah and",
+  "i feel like an orange is ocming to my head",
+  "im hungry i want to take and eat orange with peach",
+  // ["apple", "banana", "orange", "pear", "peach"],
+  // ["orange", "orange", "orange", "orange", "orange"],
+  // ["apple", "orange", "orange", "peach", "peach", "peach"],
+];
 
 // const algo = new BM25()
 // algo.train(docs)
-// // const input = "and i really like to eat orange with banana but i want peach also";
-// algo.getScore("orange")
+// const input = "and i really like to eat orange with banana but i want peach also";
+// algo.calculateBM25(input)
+// const score = algo.calculateBM25(input,k1, b);
+// console.log(score); // outputs: 0.2223249659481613
 
-export {
-  levenshteinDistance,
-  damerauLevenshteinDistance,
-  cosineSimilarity,
-  BM25
+function calculateBM25(term, doc, docs, k1, b) {
+  const N = docs.length;
+  const avgdl = docs.reduce((acc, doc) => acc + doc.length, 0) / N;
+  const f = doc.filter((token) => token === term).length;
+  const idf = Math.log((N - docs.filter((doc) => doc.includes(term)).length + 0.5) / (docs.filter((doc) => doc.includes(term)).length + 0.5));
+  const tf = (f * (k1 + 1)) / (f + k1 * (1 - b + b * (doc.length / avgdl)));
+  return tf * idf;
 }
+
+const docs = [
+  ["apple", "banana", "orange", "pear", "peach"],
+  ["orange", "orange", "orange", "orange", "orange"],
+  ["apple", "orange", "orange", "peach", "peach", "peach"],
+];
+
+const doc = docs[0];
+const term = "orange";
+const k1 = 1.5;
+const b = 0.75;
+const score = calculateBM25(term, doc, docs, k1, b);
+console.log(score); // outputs: 0.2223249659481613
+
+
+// docs.forEach((doc,index)=>{
+//   let score = calculateBM25(term, doc, docs, k1, b);
+//   console.log(`Index: ${index} | Score: ${score}`)
+// })

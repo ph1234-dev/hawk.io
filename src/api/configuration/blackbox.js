@@ -124,6 +124,12 @@ export default class Blackbox{
     return result;
   }
 
+
+  getReplyUsingBM25(msg){
+    // console.log(`Blackbox::getReplyUsingBM25 - ${msg}`)
+    return this.archive.getReplyUsingBM25(msg)
+  }
+
   getReplyUsingCosineSimilarity(msg){
     // maybe treshhold should be 
     return this.archive.getReplyUsingCosineSimilarity(msg,.2);
@@ -136,5 +142,8 @@ export default class Blackbox{
     return this
   }
 
+  getReferences(){
+    return this.memory.getPatternReferences
+  }
 
 }
