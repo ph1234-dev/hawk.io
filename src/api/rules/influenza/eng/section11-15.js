@@ -717,7 +717,7 @@ let section11 = [
 
     // decongestatnts
     encodeMemory([
-        "* what * generic * (!decongestants?|pseudophedrine|sudafed) *",
+        "* what * generic * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Can you provide me with a list of generic decongestants?",
         "What are the generic names of some common decongestants?",
@@ -739,7 +739,7 @@ let section11 = [
         "A popular generic name of decongestant is pseudoephedrine phenylephrine"
     ],7),
     encodeMemory([
-        "* what * branded * (!decongestants?|pseudophedrine|sudafed) *",
+        "* what * branded * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Can you provide me with a list of brand names of decongestants?",
         "What are some commonly known brands of nasal decongestants?",
@@ -756,10 +756,10 @@ let section11 = [
         "An example of a branded decongestant are decolgen and sudafed"
     ],7),
     encodeMemory([
-        "* what * dosing * (!decongestants?|pseudophedrine|sudafed) *",
-        "* how * (take|use) * (!decongestants?|pseudophedrine|sudafed) *",
-        "* what * direction * (!decongestants?|pseudophedrine|sudafed) *",
-        "* how * (!decongestants?|pseudophedrine|sudafed) *",
+        "* what * dosing * (!decongestants?|pseudoephedrine|sudafed) *",
+        "* how * (take|use) * (!decongestants?|pseudoephedrine|sudafed) *",
+        "* what * direction * (!decongestants?|pseudoephedrine|sudafed) *",
+        "* how * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "What is the recommended dosage for taking decongestant?",
         "What is the proper way to take decongestant?",
@@ -787,7 +787,7 @@ let section11 = [
         `
     ],7),
     encodeMemory([
-        "* what * is * (!decongestants?|pseudophedrine|sudafed) *",
+        "* what * is * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Can you explain what decongestants are?",
         "What are decongestants and how do they work?",
@@ -804,7 +804,7 @@ let section11 = [
         "Decongestants are medicines that relieve congestion by reducing swelling, inflammation and mucus formation within the nasal passages or the eye.  They have no other effect on symptoms such as a runny nose or sneezing."
     ],7),
     encodeMemory([
-        "* what * (!decongestants?|pseudophedrine|sudafed) * use *",
+        "* what * (!decongestants?|pseudoephedrine|sudafed) * use *",
         "* (why|how) * decongestants? * treat *",
         //chatgpt start
         "What conditions are decongestants used to treat?",
@@ -822,7 +822,7 @@ let section11 = [
         "Decongestants are medicines that help relieve a congested (stuffy) nose. The congestion can be caused by a cold virus or by the flu, sinusitis, or allergies"
     ],7),
     encodeMemory([
-        "* how * (!decongestants?|pseudophedrine|sudafed) * work *",
+        "* how * (!decongestants?|pseudoephedrine|sudafed) * work *",
         //chatgpt start
         "What is the mechanism of action of decongestants?",
         "Can you explain how decongestants work?",
@@ -839,7 +839,7 @@ let section11 = [
         "Decongestants work by narrowing the blood vessels in your nose. Swollen tissue inside the nose shrinks, and air can pass through more easily."
     ],7),
     encodeMemory([
-        "* when * ( not (take|use) | avoid ) * (!decongestants?|pseudophedrine|sudafed) *",
+        "* when * ( not (take|use) | avoid ) * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "What are the reasons to avoid decongestants?",
         "What are the situations in which decongestants should be avoided?",
@@ -856,7 +856,7 @@ let section11 = [
         "Don’t take decongestants if you have high blood pressure that isn’t controlled. Taking decongestants can raise your blood pressure even if it is controlled or nearly normal. You may need to look for an alternative to decongestants. Don’t give decongestants to children younger than 6 years of age."
     ],7),
     encodeMemory([
-        "* what * side !effects? * (!decongestants?|pseudophedrine|sudafed) *",
+        "* what * side !effects? * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "What are the potential adverse effects of decongestants?",
         "Can you list some side effects of decongestants?",
@@ -873,7 +873,7 @@ let section11 = [
         "Like any medicine, decongestants can sometimes cause side effects. They can temporarily cause nervousness, dizziness, and sleeping problems. They can cause heart palpitations (feeling like your heart is racing) or higher blood pressure"
     ],7),
     encodeMemory([
-        "* what * tips * (!decongestants?|pseudophedrine|sudafed) *",
+        "* what * tips * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "How should I use decongestants?",
         "What are the best practices for taking decongestants?",
@@ -894,7 +894,7 @@ let section11 = [
         "Decongestants may be taken orally to help relieve congestion that is affecting the nose, sinuses, and eyes or sprayed directly in the nose or instilled in the eye for a more local effect."
     ],7),
     encodeMemory([
-        "* (what|how) * (!decongestants?|pseudophedrine|sudafed) * price *",
+        "* (what|how) * (!decongestants?|pseudoephedrine|sudafed) * price *",
         //chatgpt start
         "Can you tell me the price of decongestants?",
         "What's the cost of decongestants?",
@@ -911,7 +911,7 @@ let section11 = [
         "The price varies according to the form of the medicine. For example, for nasal sprays it starts with 90php, for drops around 78 (rose pharmacy website), and tablets like decolgen it starts with 6php (watsons)."
     ],7),
     encodeMemory([
-        "* what * forms * (!decongestants?|pseudophedrine|sudafed) *",
+        "* what * forms * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Can you tell me the various forms of decongestants?",
         "What are the different types of decongestants?",
@@ -928,7 +928,7 @@ let section11 = [
         "Decongestants are available as nose drops or nasal sprays, eye drops, and as tablets, capsules, and syrup."
     ],7),
     encodeMemory([
-        "* what * alternative * (!decongestants?|pseudophedrine|sudafed) * ",
+        "* what * alternative * (!decongestants?|pseudoephedrine|sudafed) * ",
         //chatgpt start
         "What other options are there besides decongestants?",
         "Are there any alternative treatments to decongestants?",

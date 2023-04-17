@@ -129,19 +129,19 @@ let section6 = [
   
 let section7 = [
     encodeMemory([
-      `* bakit * (inom|kain|bili) * pagkaing_pwede_diarrhea * diarrhea * `,
-      `* pagkaing_pwede_diarrhea * (inom|kain|bili) * diarrhea * `,
-      `* pagkaing_pwede_diarrhea *  (tulong|gamot|buti|galing|gawin)   * diarrhea * `,
-      `* pagkaing_pwede_diarrhea * (inom|kain|bili) * diarrhea * `,
+      `* bakit * (inom|kain|bili) * diarrhea_foods_allowed * diarrhea * `,
+      `* diarrhea_foods_allowed * (inom|kain|bili) * diarrhea * `,
+      `* diarrhea_foods_allowed *  (tulong|gamot|buti|galing|gawin)   * diarrhea * `,
+      `* diarrhea_foods_allowed * (inom|kain|bili) * diarrhea * `,
       //chatgpt start
-      "Ano ang dahilan kung bakit pwede uminom ng pagkaing_pwede_diarrhea pag may diarrhea o pagtatae?",
-      "Bakit hindi bawal ang pagkaing_pwede_diarrhea kapag may diarrhea o pagtatae?",
-      "Paano nakatutulong ang pagkaing_pwede_diarrhea sa pagpapagaling ng diarrhea o pagtatae?",
-      "Mayroon bang mga pagkaing_pwede_diarrhea na makakatulong sa mga may diarrhea o pagtatae?",
-      "Bakit kailangan ng tao ng sapat na nutrisyon tulad ng pagkaing_pwede_diarrhea kahit may diarrhea o pagtatae?",
-      "Pwede bang uminom ng mga pagkaing_pwede_diarrhea kahit may diarrhea o pagtatae?",
-      "Bakit kailangan ng tao ng pagkaing_pwede_diarrhea kapag may diarrhea o pagtatae?",
-      "Paano ang tamang pagkaing_pwede_diarrhea upang maiwasan ang pagkakaroon ng diarrhea o pagtatae?",
+      "Ano ang dahilan kung bakit pwede uminom ng diarrhea_foods_allowed pag may diarrhea o pagtatae?",
+      "Bakit hindi bawal ang diarrhea_foods_allowed kapag may diarrhea o pagtatae?",
+      "Paano nakatutulong ang diarrhea_foods_allowed sa pagpapagaling ng diarrhea o pagtatae?",
+      "Mayroon bang mga diarrhea_foods_allowed na makakatulong sa mga may diarrhea o pagtatae?",
+      "Bakit kailangan ng tao ng sapat na nutrisyon tulad ng diarrhea_foods_allowed kahit may diarrhea o pagtatae?",
+      "Pwede bang uminom ng mga diarrhea_foods_allowed kahit may diarrhea o pagtatae?",
+      "Bakit kailangan ng tao ng diarrhea_foods_allowed kapag may diarrhea o pagtatae?",
+      "Paano ang tamang diarrhea_foods_allowed upang maiwasan ang pagkakaroon ng diarrhea o pagtatae?",
       //chatgpt end
     ],[
       `Ang mga pagkaing ito ay maaaring makatulong sa iyo na mag-hydrate. Kung mayroon kang pagtatae, makakatulong ito na patatagin ang iyong dumi.`
@@ -177,101 +177,101 @@ let section7 = [
   
 let section8 = [
     encodeMemory([
-      `* bakit * diarrhea_pagkain_masama_hydration * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea * `,
-      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_pagkain_masama_hydration * diarrhea * `,
+      `* bakit * diarrhea_foods_not_allowed_bad_hydration * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea * `,
+      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_foods_not_allowed_bad_hydration * diarrhea * `,
       //chatgpt start
-      "Bakit hindi dapat kumain ng diarrhea_pagkain_masama_hydration pag may diarrhea o pagtatae?",
-      "Bakit mahalaga na iwasan ang diarrhea_pagkain_masama_hydration na nakakadagdag ng dehydration sa may diarrhea o pagtatae?",
-      "Anong dahilan kung bakit hindi dapat kumain ng diarrhea_pagkain_masama_hydration na nakakapagpababa ng hydration kapag may diarrhea o pagtatae?",
-      "Paano nakakaapekto sa ating katawan ang diarrhea_pagkain_masama_hydration nagpapadagdag ng dehydration kapag may diarrhea o pagtatae?",
-      "Bakit hindi maganda na kumain ng diarrhea_pagkain_masama_hydration ang mga taong may diarrhea o pagtatae?",
-      "Paano makatutulong ang pagiwas sa diarrhea_pagkain_masama_hydration sa pagpapagaling ng diarrhea o pagtatae?",
+      "Bakit hindi dapat kumain ng diarrhea_foods_not_allowed_bad_hydration pag may diarrhea o pagtatae?",
+      "Bakit mahalaga na iwasan ang diarrhea_foods_not_allowed_bad_hydration na nakakadagdag ng dehydration sa may diarrhea o pagtatae?",
+      "Anong dahilan kung bakit hindi dapat kumain ng diarrhea_foods_not_allowed_bad_hydration na nakakapagpababa ng hydration kapag may diarrhea o pagtatae?",
+      "Paano nakakaapekto sa ating katawan ang diarrhea_foods_not_allowed_bad_hydration nagpapadagdag ng dehydration kapag may diarrhea o pagtatae?",
+      "Bakit hindi maganda na kumain ng diarrhea_foods_not_allowed_bad_hydration ang mga taong may diarrhea o pagtatae?",
+      "Paano makatutulong ang pagiwas sa diarrhea_foods_not_allowed_bad_hydration sa pagpapagaling ng diarrhea o pagtatae?",
       //chatgpt end
     ],[
       `Kailangan mong layuan ang mga iyan. Ang mga ito ay karaniwang hindi mabuti para sa hydration`
     ],4),
     encodeMemory([
-      `* bakit * diarrhea_pagkain_may_gas * (iwasan| (hindi|huwag) (bili|inom|kain) )  * diarrhea *`,
-      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_pagkain_may_gas * diarrhea *`,
+      `* bakit * diarrhea_foods_not_allowed_produces_gas * (iwasan| (hindi|huwag) (bili|inom|kain) )  * diarrhea *`,
+      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_foods_not_allowed_produces_gas * diarrhea *`,
       //chatgpt start
-      "Bakit hindi dapat kumain ng diarrhea_pagkain_may_gas kapag mayroong diarrhea o pagtatae?",  
-      "Ano ang dahilan kung bakit hindi dapat kumain ng diarrhea_pagkain_may_gas kapag mayroong diarrhea o pagtatae?",  
-      "Paano makakaapekto sa katawan ang diarrhea_pagkain_may_gas kung mayroong diarrhea o pagtatae?",  
-      "Bakit masama para sa kalusugan ang diarrhea_pagkain_may_gas kapag mayroong diarrhea o pagtatae?",  
-      "Paano nakakapagpalala ng karamdaman ang diarrhea_pagkain_may_gas mayroong diarrhea o pagtatae?",  
-      "Bakit kailangan iwasan ang diarrhea_pagkain_may_gas kapag mayroong diarrhea o pagtatae?",  
-      "Ano ang epekto sa katawan ng diarrhea_pagkain_may_gas kapag mayroong diarrhea o pagtatae?",  
-      "Bakit hindi inirerekomenda na kumain ng mdiarrhea_pagkain_may_gas kapag mayroong diarrhea o pagtatae?",  
-      "Paano nakakasama sa kalusugan ang diarrhea_pagkain_may_gas kapag mayroong diarrhea o pagtatae?",  
-      "Bakit dapat iwasan ang diarrhea_pagkain_may_gas kapag mayroong diarrhea o pagtatae?"
+      "Bakit hindi dapat kumain ng diarrhea_foods_not_allowed_produces_gas kapag mayroong diarrhea o pagtatae?",  
+      "Ano ang dahilan kung bakit hindi dapat kumain ng diarrhea_foods_not_allowed_produces_gas kapag mayroong diarrhea o pagtatae?",  
+      "Paano makakaapekto sa katawan ang diarrhea_foods_not_allowed_produces_gas kung mayroong diarrhea o pagtatae?",  
+      "Bakit masama para sa kalusugan ang diarrhea_foods_not_allowed_produces_gas kapag mayroong diarrhea o pagtatae?",  
+      "Paano nakakapagpalala ng karamdaman ang diarrhea_foods_not_allowed_produces_gas mayroong diarrhea o pagtatae?",  
+      "Bakit kailangan iwasan ang diarrhea_foods_not_allowed_produces_gas kapag mayroong diarrhea o pagtatae?",  
+      "Ano ang epekto sa katawan ng diarrhea_foods_not_allowed_produces_gas kapag mayroong diarrhea o pagtatae?",  
+      "Bakit hindi inirerekomenda na kumain ng diarrhea_foods_not_allowed_produces_gas kapag mayroong diarrhea o pagtatae?",  
+      "Paano nakakasama sa kalusugan ang diarrhea_foods_not_allowed_produces_gas kapag mayroong diarrhea o pagtatae?",  
+      "Bakit dapat iwasan ang diarrhea_foods_not_allowed_produces_gas kapag mayroong diarrhea o pagtatae?"
       //chatgpt end
     ],[
       `Ang ilan sa mga ito ay maaari ring magdulot ng pangungutot. Marahil ay hindi mo gusto iyon kapag nagtatae. Lalala ito`
     ],4),
     encodeMemory([
-      `* bakit * diarrhea_pagkain_may_lactose * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea *`,
-      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_pagkain_may_lactose * diarrhea *`,
+      `* bakit * diarrhea_foods_not_allowed_contains_lactose * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea *`,
+      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_foods_not_allowed_contains_lactose * diarrhea *`,
       //chatgpt start
-      "Ano ang dahilan kung bakit hindi dapat kumain ng diarrhea_pagkain_may_lactose kapag may diarrhea o pagtatae?",
-      "Bakit hindi inirerekomenda na kumain ng diarrhea_pagkain_may_lactose kapag may diarrhea o pagtatae?",
-      "Paano nakakatulong ang pag-iwas sa diarrhea_pagkain_may_lactose kapag may diarrhea o pagtatae?",
-      "Bakit maaaring lalo pang magdulot ng sakit ang pagkain ng diarrhea_pagkain_may_lactose kapag may diarrhea o pagtatae?",
-      "Ano ang maaring mangyari sa tiyan kapag kumain ng diarrhea_pagkain_may_lactose habang may diarrhea o pagtatae?",
-      "Bakit kailangan na iwasan ang diarrhea_pagkain_may_lactose upang maging mas komportable kapag may diarrhea o pagtatae?"
+      "Ano ang dahilan kung bakit hindi dapat kumain ng diarrhea_foods_not_allowed_contains_lactose kapag may diarrhea o pagtatae?",
+      "Bakit hindi inirerekomenda na kumain ng diarrhea_foods_not_allowed_contains_lactose kapag may diarrhea o pagtatae?",
+      "Paano nakakatulong ang pag-iwas sa diarrhea_foods_not_allowed_contains_lactose kapag may diarrhea o pagtatae?",
+      "Bakit maaaring lalo pang magdulot ng sakit ang pagkain ng diarrhea_foods_not_allowed_contains_lactose kapag may diarrhea o pagtatae?",
+      "Ano ang maaring mangyari sa tiyan kapag kumain ng diarrhea_foods_not_allowed_contains_lactose habang may diarrhea o pagtatae?",
+      "Bakit kailangan na iwasan ang diarrhea_foods_not_allowed_contains_lactose upang maging mas komportable kapag may diarrhea o pagtatae?"
       //chatgpt end
     ],[
       `Kung ikaw ay lactose intolerant, hindi ito mabuti para sa iyo. Ang ibig kong sabihin ay kung pupunta ka sa banyo pagkatapos uminom ng isang bagay na naglalaman ng gatas, kailangan mong iwasan ito`
     ],4),
     encodeMemory([
-      `* bakit * diarrhea_pagkain_may_fructose * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea *`,
-      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_pagkain_may_fructose * diarrhea *`,
+      `* bakit * diarrhea_foods_not_allowed_contains_fructose * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea *`,
+      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_foods_not_allowed_contains_fructose * diarrhea *`,
       //chatgpt start
-      "Bakit hindi dapat kumain ng diarrhea_pagkain_may_fructose kapag may diarrhea o pagtatae?",  
-      "Bakit hindi pwede ang diarrhea_pagkain_may_fructose kapag may diarrhea o pagtatae?",  
-      "Ano ang dahilan kung bakit hindi pwedeng kumain ng diarrhea_pagkain_may_fructose kapag may diarrhea o pagtatae?",  
-      "Bakit dapat iwasan ang diarrhea_pagkain_may_fructose kapag may diarrhea o pagtatae?",  
-      "Ano ang epekto ng pagkain ng diarrhea_pagkain_may_fructose kapag may diarrhea o pagtatae?",  
-      "Bakit hindi maganda kumain ng diarrhea_pagkain_may_fructose kapag may diarrhea o pagtatae?", 
-      "Paano nakakaapekto ang pagkain ng diarrhea_pagkain_may_fructose sa may diarrhea o pagtatae?",  
-      "Bakit hindi maganda kumain ng diarrhea_pagkain_may_fructose kapag may diarrhea o pagtatae?",  
-      "Anong masamang dulot ng pagkain ng diarrhea_pagkain_may_fructose kapag may diarrhea o pagtatae?",  
-      "Bakit dapat iwasan ang diarrhea_pagkain_may_fructose kapag may diarrhea o pagtatae?"
+      "Bakit hindi dapat kumain ng diarrhea_foods_not_allowed_contains_fructose kapag may diarrhea o pagtatae?",  
+      "Bakit hindi pwede ang diarrhea_foods_not_allowed_contains_fructose kapag may diarrhea o pagtatae?",  
+      "Ano ang dahilan kung bakit hindi pwedeng kumain ng diarrhea_foods_not_allowed_contains_fructose kapag may diarrhea o pagtatae?",  
+      "Bakit dapat iwasan ang diarrhea_foods_not_allowed_contains_fructose kapag may diarrhea o pagtatae?",  
+      "Ano ang epekto ng pagkain ng diarrhea_foods_not_allowed_contains_fructose kapag may diarrhea o pagtatae?",  
+      "Bakit hindi maganda kumain ng diarrhea_foods_not_allowed_contains_fructose kapag may diarrhea o pagtatae?", 
+      "Paano nakakaapekto ang pagkain ng diarrhea_foods_not_allowed_contains_fructose sa may diarrhea o pagtatae?",  
+      "Bakit hindi maganda kumain ng diarrhea_foods_not_allowed_contains_fructose kapag may diarrhea o pagtatae?",  
+      "Anong masamang dulot ng pagkain ng diarrhea_foods_not_allowed_contains_fructose kapag may diarrhea o pagtatae?",  
+      "Bakit dapat iwasan ang diarrhea_foods_not_allowed_contains_fructose kapag may diarrhea o pagtatae?"
       //chatgpt end
     ],[
       `May mga ulat na ang ilang mga tao ay nakaranas ng paglala ng kanilang pagtatae dahil sa mataas na dami ng fructose. Malamang na kailangan mong mag-ingat sa mga ito pansamantala`
     ],4),
     encodeMemory([
-      `* bakit * diarrhea_pagkain_nakakairita_tiyan * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea *`,
-      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_pagkain_nakakairita_tiyan * diarrhea *`,
+      `* bakit * diarrhea_foods_not_allowed_irritate_stomach * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea *`,
+      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_foods_not_allowed_irritate_stomach * diarrhea *`,
       //chatgpt start
-      "Ano ang dahilan kung bakit hindi pwedeng kumain ng diarrhea_pagkain_nakakairita_tiyan kapag may diarrhea o pagtatae?",
-      "Bakit dapat iwasan angdiarrhea_pagkain_nakakairita_tiyan kapag may diarrhea o pagtatae?",
-      "Ano ang epekto ng pagkain diarrhea_pagkain_nakakairita_tiyan sa mga may diarrhea o pagtatae?",
-      "Para saan ang pag-iwas sa diarrhea_pagkain_nakakairita_tiyan kapag may diarrhea o pagtatae?",
-      "Bakit dapat iwasan ang mga diarrhea_pagkain_nakakairita_tiyan kapag may diarrhea o pagtatae?",
-      "Ano ang kahalagahan ng pag-iwas sa diarrhea_pagkain_nakakairita_tiyan kapag may diarrhea o pagtatae?",
-      "Bakit hindi dapat kumain ng diarrhea_pagkain_nakakairita_tiyan kapag may diarrhea o pagtatae?",
-      "Paano nakakatulong ang pag-iwas sa diarrhea_pagkain_nakakairita_tiyan sa mga may diarrhea o pagtatae?",
-      "Ano ang magiging epekto kapag kumain ng diarrhea_pagkain_nakakairita_tiyan na pagkain kapag may diarrhea o pagtatae?",
-      "Bakit mahalaga ang pag-iwas sa diarrhea_pagkain_nakakairita_tiyan lalo na kapag may diarrhea o pagtatae?"
+      "Ano ang dahilan kung bakit hindi pwedeng kumain ng diarrhea_foods_not_allowed_irritate_stomach kapag may diarrhea o pagtatae?",
+      "Bakit dapat iwasan ang diarrhea_foods_not_allowed_irritate_stomach kapag may diarrhea o pagtatae?",
+      "Ano ang epekto ng pagkain diarrhea_foods_not_allowed_irritate_stomach sa mga may diarrhea o pagtatae?",
+      "Para saan ang pag-iwas sa diarrhea_foods_not_allowed_irritate_stomach kapag may diarrhea o pagtatae?",
+      "Bakit dapat iwasan ang mga diarrhea_foods_not_allowed_irritate_stomach kapag may diarrhea o pagtatae?",
+      "Ano ang kahalagahan ng pag-iwas sa diarrhea_foods_not_allowed_irritate_stomach kapag may diarrhea o pagtatae?",
+      "Bakit hindi dapat kumain ng diarrhea_foods_not_allowed_irritate_stomach kapag may diarrhea o pagtatae?",
+      "Paano nakakatulong ang pag-iwas sa diarrhea_foods_not_allowed_irritate_stomach sa mga may diarrhea o pagtatae?",
+      "Ano ang magiging epekto kapag kumain ng diarrhea_foods_not_allowed_irritate_stomach na pagkain kapag may diarrhea o pagtatae?",
+      "Bakit mahalaga ang pag-iwas sa diarrhea_foods_not_allowed_irritate_stomach lalo na kapag may diarrhea o pagtatae?"
       //chatgpt end
     ],[
       `Ang pagkaing ito ay maaaring makairita sa iyong tiyan at magpapalala ng iyong pagtatae`
     ],4),
     encodeMemory([
-      `* bakit * diarrhea_pagkain_oily * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea *`,
-      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_pagkain_oily * diarrhea *`,
+      `* bakit * diarrhea_foods_not_allowed_oily * (iwasan| (hindi|huwag) * (bili|inom|kain) )  * diarrhea *`,
+      `* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) )   * diarrhea_foods_not_allowed_oily * diarrhea *`,
       //chatgpt start
-      "Ano ang dahilan kung bakit hindi dapat kumain ng diarrhea_pagkain_oily kapag ikaw ay mayroong pagtatae?",
-      "Bakit hindi pinapayuhan na kumain ng diarrhea_pagkain_oily kapag ikaw ay may diarrhea?",
-      "Ano ang mga dahilan kung bakit hindi dapat diarrhea_pagkain_oily kapag ikaw ay mayroong diarrhea?",
-      "Paano makakatulong ang hindi pagkain ng diarrhea_pagkain_oily sa paggaling ng iyong diarrhea?",
-      "Bakit dapat iwasan ang diarrhea_pagkain_oily kung ikaw ay mayroong pagtatae?",
-      "Ano ang mga epekto ng pagkaindiarrhea_pagkain_oily kapag ikaw ay mayroong diarrhea?",
-      "Paano makakasama sa iyong kalusugan ang pagkain ng diarrhea_pagkain_oily kapag ikaw ay mayroong pagtatae?",
-      "Bakit hindi inirerekomenda na kumain diarrhea_pagkain_oily kapag ikaw ay mayroong diarrhea?",
-      "Paano nakakatulong ang hindi pagkain diarrhea_pagkain_oily sa pagbabawas ng sintomas ng pagtatae?",
-      "Ano ang mga benepisyo ng pag-iwas sa pagkain ng diarrhea_pagkain_oily habang ikaw ay mayroong diarrhea?"
+      "Ano ang dahilan kung bakit hindi dapat kumain ng diarrhea_foods_not_allowed_oily kapag ikaw ay mayroong pagtatae?",
+      "Bakit hindi pinapayuhan na kumain ng diarrhea_foods_not_allowed_oily kapag ikaw ay may diarrhea?",
+      "Ano ang mga dahilan kung bakit hindi dapat diarrhea_foods_not_allowed_oily kapag ikaw ay mayroong diarrhea?",
+      "Paano makakatulong ang hindi pagkain ng diarrhea_foods_not_allowed_oily sa paggaling ng iyong diarrhea?",
+      "Bakit dapat iwasan ang diarrhea_foods_not_allowed_oily kung ikaw ay mayroong pagtatae?",
+      "Ano ang mga epekto ng pagkain diarrhea_foods_not_allowed_oily kapag ikaw ay mayroong diarrhea?",
+      "Paano makakasama sa iyong kalusugan ang pagkain ng diarrhea_foods_not_allowed_oily kapag ikaw ay mayroong pagtatae?",
+      "Bakit hindi inirerekomenda na kumain diarrhea_foods_not_allowed_oily kapag ikaw ay mayroong diarrhea?",
+      "Paano nakakatulong ang hindi pagkain diarrhea_foods_not_allowed_oily sa pagbabawas ng sintomas ng pagtatae?",
+      "Ano ang mga benepisyo ng pag-iwas sa pagkain ng diarrhea_foods_not_allowed_oily habang ikaw ay mayroong diarrhea?"
       //chatgpt end
     ],[
       `Ang mga mamantika na pagkain ay naglalaman ng mataas na dami ng taba, pinapabagal nila ang pag-alis ng laman ng tiyan. Ayaw mo niyan kung natatae ka.`
@@ -319,7 +319,7 @@ let section8 = [
     ],4),
     // encodeMemory([
     //   `* (bili|kain|inom) * 
-    //   (diarrhea_pagkain_masama_hydration| diarrhea_pagkain_may_lactose| diarrhea_pagkain_may_fructose| diarrhea_pagkain_nakakairita_tiyan| diarrhea_pagkain_oily) * diarrhea * 
+    //   (diarrhea_foods_not_allowed_bad_hydration| diarrhea_foods_not_allowed_contains_lactose| diarrhea_foods_not_allowed_contains_fructose| diarrhea_foods_not_allowed_irritate_stomach| diarrhea_foods_not_allowed_oily) * diarrhea * 
     //   `,
     //   //chatgpt start
       

@@ -37,15 +37,15 @@ let section4 = [
         "Maaari kang makakuha ng trangkaso kapag nalalanghap mo o nalalanghap ang hangin na inilabas ng taong bumahing o umuubo kahit kaunti lang. Ang mga virus na ito ay maaari ding maipasa sa pamamagitan ng paghawak sa mga bagay na nahawaan ng virus. Sa simpleng mga salita, maaari mo itong makuha kapag nadikit ka sa mga ibabaw, materyales, at damit na kontaminado ng dischages ng taong nahawahan. Ang mga pana-panahong pagbabago ay maaari ding magdulot ng trangkaso dahil humihina ang mga panlaban natin lalo na sa pagbaba ng temperatura."
     ],1),
     encodeMemory([
-        "* kuha * trangkaso * dahilan_ng_trangkaso *",
+        "* kuha * trangkaso * influenza_causes *",
         //chatgpt start
-        "Nakakahawa ba ang trangkaso dahilan_ng_trangkaso?",
+        "Nakakahawa ba ang trangkaso influenza_causes?",
         "Maaring makahawa ang trangkaso ?",
-        "Maaari bang mahawa sa pamamagitan ng dahilan_ng_trangkaso trangkaso?",
-        "Nakukuha ba ang trangkaso sa pamamagitan ng  dahilan_ng_trangkaso?",
-        "Posible bang magkahawaan ng trangkaso dahil sa dahilan_ng_trangkaso?",
-        "Maaring magdulot ng trangkaso ang dahilan_ng_trangkaso sa ibang tao?",
-        "Maari bang kumalat ang trangkaso sa mga taong nakakasalamuha mo sa pamamagitan ng dahilan_ng_trangkaso?",
+        "Maaari bang mahawa sa pamamagitan ng influenza_causes trangkaso?",
+        "Nakukuha ba ang trangkaso sa pamamagitan ng  influenza_causes?",
+        "Posible bang magkahawaan ng trangkaso dahil sa influenza_causes?",
+        "Maaring magdulot ng trangkaso ang influenza_causes sa ibang tao?",
+        "Maari bang kumalat ang trangkaso sa mga taong nakakasalamuha mo sa pamamagitan ng influenza_causes?",
         //chatgpt end
     ],[
         "Ang paglanghap ng nahawaang hangin at ang pagkakaroon ng pisikal na paghawak sa mga bagay na nahawaan ng virus ay ang mga kilalang paraan ng pagkakaroon ng trangkaso. Palaging magsuot ng mask sa mataong lugar, maghugas ng kamay nang madalas, at gumamit ng hand sanitizer bilang pag-iingat."
@@ -68,7 +68,7 @@ let section4 = [
         "Ang influenza ay sanhi ng virus. Kung huminga ka ng hanging ibinuga ng isang taong nahawahan, maaari mong malanghap ang virus at makakuha ng sakit. Ang parehong bagay ay maaaring mangyari kung hinawakan mo ang isang bagay na nahawakan ng isang nahawaang tao. Maaari kang makakuha ng virus, kung ang iyong mga kamay ay nadikit sa iyong mga mata, ilong, at bibig."
     ],1),
     // encodeMemory([
-    //     "* dahilan_ng_trangkaso * trangkaso *",
+    //     "* influenza_causes * trangkaso *",
     //     //chatgpt start
         
     //     //chatgpt end
@@ -240,8 +240,8 @@ let section5 = [
         "Maaari kang magsanay ng pangangalaga sa sarili sa iyong tahanan. Sa mga may malalang kaso, kailangan mong magpatingin kaagad sa doktor lalo na kung kabilang ka sa mga high risk group"
     ],5),
     encodeMemory([
-        "* saan * bili * gamot_trangkaso *",
-        "* saan * gamot_trangkaso * bili *",
+        "* saan * bili * influenza_drugs *",
+        "* saan * influenza_drugs * bili *",
         "* saan * bili * gamot * trangkaso",
         //chatgpt start
         "Saan makakabili ng gamot para sa trangkaso o influenza?",

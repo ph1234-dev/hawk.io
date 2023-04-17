@@ -74,11 +74,11 @@ let section16 = [
     ],7),
     encodeMemory([
         "* sino * (huwag|hindi) * (gumamit|kain|inom) * on_the_counter * drug * ",
-        "* sino * (huwag|hindi)* (gumamit|kain|inom) * gamot_sa_influenza *",
-        "* sino * iwas * on_the_counter_drug_gamot_sa_influenza *",
-        "* sino * iwas * gamot_sa_influenza *",
-        "* gamot_sa_influenza * (hindi|huwag) * (gumamit|kain|inom) * nino * ",
-        "* gamot_sa_influenza * iwasan * nino *",
+        "* sino * (huwag|hindi)* (gumamit|kain|inom) * influenza_drugs *",
+        "* sino * iwas * on_the_counter_drug_influenza_drugs *",
+        "* sino * iwas * influenza_drugs *",
+        "* influenza_drugs * (hindi|huwag) * (gumamit|kain|inom) * nino * ",
+        "* influenza_drugs * iwasan * nino *",
         //chatgpt start
         
         //chatgpt end

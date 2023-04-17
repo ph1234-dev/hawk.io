@@ -25,7 +25,7 @@ let section4 = [
     encodeMemory([
         `* (duken|panon|kano)  *  gamot * tagudo *`,
     ],[
-        `Su kadtagudo na aw na to na sabap kano mga kinan a gamot.  Aw na to na pads aba I namba na nasubran o nadutian ka na gamot.`,
+        `Su kadtagudo na aw na to na sabap kano mga kinan a gamot.  Aw na to na padsa aba I namba na nasubran o nadutian ka na gamot.`,
     ],1),
     encodeMemory([
         `* (duken|panon|kano)  *  parasite * infection * tagudo *`,
@@ -54,7 +54,7 @@ let section4 = [
         `Madakel I makadtagudo. Nya ba I mga katawan tao saguna. Upama ka malubas su lawas abpeg aden sakit na tinai na makadtagudo bon. Aw na to na sabap I namba sa gamot a kinan nengka. Ugayd na nya kadakelan na pedtagudo na sabap sa kinan nilan. Su kaped manem na sabap sa di nilan kagaga pegkanin su pegken mana su aden mga gatas nin, sorbitol, mamis, fructose a gangatun sa pendagangen a pegken. `,
     ],1),
     encodeMemory([
-        `* kwa * tagudo * dahilan_ng_diarrhea * `,
+        `* kwa * tagudo * diarrhea_causes * `,
     ],[
         `Uway, makadtagudo I namba. Tu ba nan pagingat ka. umayka edtagudo ka na lenek ka. Madadagbun I nan apya da engulan nengka. Aden bun mga gamot a kapaynengka pegkanin para gapkya I ganggedam nengka. Ugayd na upama ka aden lugo na tae nengka na di ka pegkan I namba ka pailay ka den sa doctor. `,
     ],1),
@@ -70,7 +70,7 @@ let section4 = [
         `Nya tano nasabutan saguna na su kadtagudo na sabap I namba sa lebag o dana na kagaw a mana su bacteria, virus endu parasites. Umayka malubay i lawas nengka na malmo ka makadsakit sa nya ba. Minuna den upama ka aden sakit nengka sa tinae. Su kadtagudo na na aw na to na sabap sa kinan nengka a gamot. Kaaped a mga pegken na aden lactose, fructose abpeg a sorbitol ni na makadtagudo bon.  `,
     ],1),
     encodeMemory([
-        `* su_makadtagudo * ngin `,
+        `* diarrhea_causes * ngin `,
     ],[
         `Uway. Makadtagudo I namba.`,
     ],1),
@@ -150,8 +150,8 @@ let section5 = [
         `Upama ka di manem pedsublasubla I kapedtagudo nengka na kapakay bun a gamuti ka den I namba sa walay no. ugayd na upama ka sobra den sa dwa gay, aw na to na ebpelugo pan, o lenekuan ka den edtandang na edtanggit ka den I nan sa ospital. Aw na to na tekaw ka muna sa barangay health center.`,
     ],5),
     encodeMemory([
-        `* endaw * (kwa|pamasa) * gamot_diarrhea * `,
-        `* endaw * gamot_diarrhea *  (kwa|pamasa) *`,
+        `* endaw * (kwa|pamasa) * diarrhea_drugs * `,
+        `* endaw * diarrhea_drugs *  (kwa|pamasa) *`,
         `* endaw * (kwa|pamasa) * gamot * tagudo * `,
     ],[
         `Kapamasa nengka I namba sa botika. Edtalo ka bo sa lekanilan I nasisita nengka I gamot a tagudo. Pangingati ka umpama ka pedtagudo na pakaudo sa aden lugo nin, aw na to na aden pan mayaw nin, na da ka pamasa sa gamot a mana antimotility a mana loperamide abpeg Imodium. Nya mapya ka igamot nengka lol na oral rehydration solutions endu katabangan sekanin a di nin maudo I ig a lawas nin.`,

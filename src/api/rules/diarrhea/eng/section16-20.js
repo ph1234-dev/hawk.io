@@ -30,7 +30,7 @@ let section16 = [
         "What are the side effects of diarrhea_drugs?",
         "Why is it not recommended to take diarrhea_drugs?",
         "What are the dangers of taking diarrhea_drugs",
-        "Why are natural remedies preferred over adiarrhea_drugs?",
+        "Why are natural remedies preferred over a diarrhea_drugs?",
         "What are the potential complications of taking diarrhea_drugs?",
         "Why is it important to avoid taking diarrhea_drugs unless prescribed by a doctor?"
         // chatgpt end
@@ -38,23 +38,23 @@ let section16 = [
         `Anti-diarrheal drugs such as bismuth subsalicylate and  antimotility agents such as loperamide should be avoided in people with high fever or bloody diarrhea as they can worsen severe colon infections. In children, these should be avoided they can lead to complications of  hemolytic uremic syndrome in cases of Shiga-toxin E. col.`
     ],7),
     encodeMemory([
-        `* who * not (take|use) * on_the_counter * drug *`,
+        `* who * not (take|use) * diarrhea_on_the_counter * drug *`,
         `* who * not (take|use) * diarrhea_drugs *`,
-        `* who * avoid * on_the_counter * drug *`,
+        `* who * avoid * diarrhea_on_the_counter * drug *`,
         `* who * avoid * diarrhea_drugs *`,
         `* diarrhea_drugs * not (take|use) * (who|by) *`,
         `* diarrhea_drugs * avoid * (who|by) *`,
         // chatgpt start
-        "Who is not recommended to take on_the_counter drugs?",
-        "What groups of people should avoid taking on_the_counter drugs?",
-        "Are there any individuals who should not take on_the_counter drugs?",
-        "Which people should not take on_the_counter drugs?",
-        "What are the restrictions on taking on_the_counter drugs?",
-        "Who should refrain from taking on_the_counter drugs?",
-        "What are the contraindications for on_the_counter drugs?",
-        "Who should consult a doctor before taking on_the_counter drugs?",
-        "What are the risks of taking on_the_counter drugs?",
-        "Who should be careful when taking on_the_counter drugs?"
+        "Who is not recommended to take diarrhea_on_the_counter drugs?",
+        "What groups of people should avoid taking diarrhea_on_the_counter drugs?",
+        "Are there any individuals who should not take diarrhea_on_the_counter drugs?",
+        "Which people should not take diarrhea_on_the_counter drugs?",
+        "What are the restrictions on taking diarrhea_on_the_counter drugs?",
+        "Who should refrain from taking diarrhea_on_the_counter drugs?",
+        "What are the contraindications for diarrhea_on_the_counter drugs?",
+        "Who should consult a doctor before taking diarrhea_on_the_counter drugs?",
+        "What are the risks of taking diarrhea_on_the_counter drugs?",
+        "Who should be careful when taking diarrhea_on_the_counter drugs?"
         // chatgpt end
     ],[
         `People who have bloody stools or fever should not take on the counter drugs. `

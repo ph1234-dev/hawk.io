@@ -553,7 +553,7 @@ let section11 = [
     ],7),
     // decongestants
     encodeMemory([
-        "* ano * generic * (!decongestants?|pseudophedrine|sudafed) *",
+        "* ano * generic * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Ano ang mga pangalan ng generic na decongestants?",
         "Pangalan ng mga generic na decongestants?",
@@ -570,7 +570,7 @@ let section11 = [
         "Ang isang sikat na generic na pangalan ng decongestant ay pseudoephedrine phenylephrine."
     ],7),
     encodeMemory([
-        "* ano * branded * (!decongestants?|pseudophedrine|sudafed) *",
+        "* ano * branded * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Ano ang mga pangalan ng branded na decongestants?",
         "Mga pangalan ng decongestants na branded, maari mo bang ilarawan?",
@@ -587,10 +587,10 @@ let section11 = [
         "isang halimbawa ng isang branded decongestant ay decolgen at Sudafed"
     ],7),
     encodeMemory([
-        "* ano * dose * (!decongestants?|pseudophedrine|sudafed) *",
-        "* paano * (kainin|gamitin|inumin) * (!decongestants?|pseudophedrine|sudafed) *",
-        "* ano * hakbang * (!decongestants?|pseudophedrine|sudafed) *",
-        "* paano * (!decongestants?|pseudophedrine|sudafed) * (gamitin|kainin|inumin) *",
+        "* ano * dose * (!decongestants?|pseudoephedrine|sudafed) *",
+        "* paano * (kainin|gamitin|inumin) * (!decongestants?|pseudoephedrine|sudafed) *",
+        "* ano * hakbang * (!decongestants?|pseudoephedrine|sudafed) *",
+        "* paano * (!decongestants?|pseudoephedrine|sudafed) * (gamitin|kainin|inumin) *",
         //chatgpt start
         "Ano ang tamang dosage para sa decongestants?",  
         "Paano tamang gamitin ang decongestants?",  
@@ -610,7 +610,7 @@ let section11 = [
         `
     ],7),
     encodeMemory([
-        "* ano  * ang (!decongestants?|pseudophedrine|sudafed) *",
+        "* ano  * ang (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Ano ang mga decongestants?",
         "Bakit mahalaga ang decongestants sa kalusugan?",
@@ -621,7 +621,7 @@ let section11 = [
         "Ang mga decongestant ay mga gamot na nagpapaginhawa sa kasikipan sa pamamagitan ng pagbabawas ng pamamaga, pamamaga at pagbuo ng mucus sa loob ng mga daanan ng ilong o mata. Wala silang ibang epekto sa mga sintomas tulad ng runny nose o pagbahin."
     ],7),
     encodeMemory([
-        "* (saan|ano) * gamit * (!decongestants?|pseudophedrine|sudafed) *",
+        "* (saan|ano) * gamit * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Ano ang mga gamot na decongestants at saan ito ginagamit?",
         "Para saan ang mga decongestants?",
@@ -634,8 +634,8 @@ let section11 = [
         "Ang mga decongestant ay mga gamot na nagpapaginhawa sa kasikipan sa pamamagitan ng pagbabawas ng sakit, pamamaga at pagbuo ng mucus sa loob ng mga daanan ng ilong o mata. Wala silang ibang epekto sa mga sintomas tulad ng runny nose o pagbahin."
     ],7),
     encodeMemory([
-        "* paano * gana * (!decongestants?|pseudophedrine|sudafed) *",
-        "* paano * (!decongestants?|pseudophedrine|sudafed) * gana *",
+        "* paano * gana * (!decongestants?|pseudoephedrine|sudafed) *",
+        "* paano * (!decongestants?|pseudoephedrine|sudafed) * gana *",
         "* (bakit|paano) * decongestants? * (tulong|gamot|buti|galing) *",
         //chatgpt start
         "Paano gumagana ang mga decongestants sa katawan?",
@@ -650,7 +650,7 @@ let section11 = [
         "Gumagana ang mga decongestant sa pamamagitan ng pagpapaliit ng mga daluyan ng dugo sa iyong ilong. Ang namamagang tissue sa loob ng ilong ay lumiliit, at mas madaling dumaan ang hangin."
     ],7),
     encodeMemory([
-        "* kailan * ( (huwag|hindi) * (kain|inom|gamit) | iwas) * (!decongestants?|pseudophedrine|sudafed) *",
+        "* kailan * ( (huwag|hindi) * (kain|inom|gamit) | iwas) * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Kailan hindi dapat gumamit ng mga decongestants?",
         "Ano ang mga sitwasyon na hindi dapat gumamit ng mga decongestants?",
@@ -663,8 +663,8 @@ let section11 = [
         "Huwag uminom ng mga decongestant kung mayroon kang mataas na presyon ng dugo na hindi nakokontrol. Ang pag-inom ng mga decongestant ay maaaring tumaas ang iyong presyon ng dugo kahit na ito ay kontrolado o halos normal. Maaaring kailanganin mong maghanap ng alternatibo sa mga decongestant. Huwag magbigay ng mga decongestant sa mga batang wala pang 6 taong gulang."
     ],7),
     encodeMemory([
-        "* (side|masama) * (effect|epekto) * (!decongestants?|pseudophedrine|sudafed) * ",
-        "* hindi * maganda * epekto * (!decongestants?|pseudophedrine|sudafed) *",
+        "* (side|masama) * (effect|epekto) * (!decongestants?|pseudoephedrine|sudafed) * ",
+        "* hindi * maganda * epekto * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Ano ang mga negatibong epekto ng mga decongestants?",  
         "Ano ang mga posibleng side effects ng decongestants?",
@@ -682,7 +682,7 @@ let section11 = [
         "Tulad ng anumang gamot, ang mga decongestant ay maaaring maging sanhi ng mga side effect. Maaari silang pansamantalang magdulot ng nerbiyos, pagkahilo, at mga problema sa pagtulog. Maaari silang maging sanhi ng palpitations ng puso (pakiramdam na parang tumatakbo ang iyong puso) o mas mataas na presyon ng dugo"
     ],7),
     encodeMemory([
-        "* tips * (!decongestants?|pseudophedrine|sudafed) *",
+        "* tips * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Mayroon ba akong dapat malaman bago kumain ng decongestants?",
         "Ano ang mga dapat kong isaalang-alang sa paggamit ng decongestants?",
@@ -693,8 +693,8 @@ let section11 = [
         "Ang mga decongestant ay maaaring inumin nang pasalita upang makatulong na mapawi ang kasikipan na nakakaapekto sa ilong, sinuses, at mata o direktang i-spray sa ilong o itanim sa mata para sa mas lokal na epekto."
     ],7),
     encodeMemory([
-        "* (price|presyo|gaano kamahal|kano) * (!decongestants?|pseudophedrine|sudafed) *",
-        "* (!decongestants?|pseudophedrine|sudafed) * (price|presyo|gaano kamahal|kano) *",
+        "* (price|presyo|gaano kamahal|kano) * (!decongestants?|pseudoephedrine|sudafed) *",
+        "* (!decongestants?|pseudoephedrine|sudafed) * (price|presyo|gaano kamahal|kano) *",
         //chatgpt start
         "Magkano ang mga decongestants?",
         "Magkano ang presyo ng decongestants?",
@@ -711,7 +711,7 @@ let section11 = [
         "Ang presyo ay nag-iiba ayon sa anyo ng gamot. Halimbawa, para sa nasal sprays ito ay nagsisimula sa 90php , para sa mga patak sa paligid ng 78 (rose pharmacy website), at mga tablet tulad ng decolgen ito ay nagsisimula sa 6php (watsons)."
     ],7),
     encodeMemory([
-        "* uri *  (!decongestants?|pseudophedrine|sudafed) *",
+        "* uri *  (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Ano-ano ang mga uri o anyo ng decongestants?",
         "May iba't-ibang uri ba ng decongestants?",
@@ -728,7 +728,7 @@ let section11 = [
         "Available ang mga decongestant bilang mga patak sa ilong o pang-ilong, patak sa mata, at bilang mga tablet, kapsula, at syrup."
     ],7),
     encodeMemory([
-        "* alternatibo * (!decongestants?|pseudophedrine|sudafed) *",
+        "* alternatibo * (!decongestants?|pseudoephedrine|sudafed) *",
         //chatgpt start
         "Anong mga natural na alternatibo sa mga decongestants?",
         "Mayroon ba ibang gamot na pwede gamitin maliban sa decongestants?",

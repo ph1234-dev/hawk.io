@@ -14,7 +14,7 @@ let section4 = [
         "Makwa nengka I kambabatokbatok umayka gasengap nengka su sambel nun nimbatok a tu. Su mga virus na kapakayan bun a makaalat sa leka amayka maami nengka I mga katamanan a natubpan na kagaw a to. Nya nin mana na kapakay nengka makwa umayka nadeketan nengka I langon na naabpel nu aden a to sakit nn. Ugayd na mapakay bon na upama ka su gay na pedsambi den pendtandang na makandadalo bun I to ba."
     ],1),
     encodeMemory([
-        "* kwa * tagudo * dahilan_ng_influenza * "
+        "* kwa * tagudo * influenza_causes * "
     ],[
         "So kasengap sa sambel a natubpan na virus o kagaw endo su kapangabpel sa katamanan na naabpel nu aden dalu nin na kapakay ka nin kaalatan. I sukob nengka istidi ni mask amayka madadel I taw, gagasi ka su lima nengka , enggo gamit ka sa sabot"
     ],1),
@@ -26,7 +26,7 @@ let section4 = [
         "Su kambabatok na sabap ba I namba sa virus. Amayka makadsembak nengka su taw a to a aden dalo nin na makakwa ka ba nan sa sakit. Pagidsan bon upama ka mangabpel ka sa apya ngen den. Labi den upama ka abepelen nengka I mata, ngilong endu ngali nengka."
     ],1),
     encodeMemory([
-        "* su_makaginfluenza * ngin  *"
+        "* influenza_causes * ngin  *"
     ],[
         "Nya tano nasabutan samaya na nya virus o kagaw i sabap na kambabatok. Amayka masengot nengka namba samit a nan o makabpel ka sa naabpel na kaped nengka na kapakayanan ka mama kwa sa dalo"
     ],1),
@@ -92,8 +92,8 @@ let section5 = [
         "Kapakay nengka bon na tyakapi ka bo I ginawa nengka. Sum ga pedsaldseg i dalu nin na nya labi a mapya na pailay ka sa dokto minuna den upama ka isa ka sa mga tao a to a aden kaped a dalo nin. "
     ],5),
     encodeMemory([
-        "* endaw * (kwa|pamasa) * gamot_influenza * ",
-        "* endaw * gamot_influenza *  (kwa|pamasa) *",
+        "* endaw * (kwa|pamasa) * influenza_drugs * ",
+        "* endaw * influenza_drugs *  (kwa|pamasa) *",
         " endaw * (kwa|pamasa) * gamot * influenza * "
     ],[
         "Su mga over-the-coutner a gamot na pakadtabang ba I nan sa mga sipat nu dalo na kapamasa sa botika. Ugayd na dikena langon na gamot na kapamasa sad ala riseta nin mana su antiviral."

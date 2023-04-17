@@ -65,12 +65,12 @@ let section6 = [
 
 let section7 = [
     encodeMemory([
-        "* duken * (inom|kan) * pegken_kapakay_sa_influenza * influenza * ",
-        "* duken * (pamasa) * pegken_kapakay_sa_influenza * influenza *",
-        "* duken * (inom|kan) *  pegken_kapakay_sa_influenza * influenza * ",
-        "* pegken_kapakay_sa_influenza * (inom|kan) * influenza *  ",
-        "* pegken_kapakay_sa_influenza * (mapya|tabang|kapakay) * influenza *",
-        "* pegken_kapakay_sa_influenza * (mapya|tabang|kapakay) * influenza *",
+        "* duken * (inom|kan) * influenza_foods_allowed * influenza * ",
+        "* duken * (pamasa) * influenza_foods_allowed * influenza *",
+        "* duken * (inom|kan) *  influenza_foods_allowed * influenza * ",
+        "* influenza_foods_allowed * (inom|kan) * influenza *  ",
+        "* influenza_foods_allowed * (mapya|tabang|kapakay) * influenza *",
+        "* influenza_foods_allowed * (mapya|tabang|kapakay) * influenza *",
     ],[
         "Kakan sa namba na makagkapya sa kangegedam nengka abpeg a matakadtabang sa kagkabagel."
     ],4),
@@ -91,32 +91,32 @@ let section7 = [
 
 let section8 = [
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya * di * (inom|kan|pamasan) * influenza *",
-        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya * influenza *",
+        "* duken * influenza_foods_not_allowed * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_foods_not_allowed * influenza *",
     ],[
         "Endu egkabagel ka, nasisita su katyakap nengka sa ginawa nengka. Nasisita na tangka ka sa mga namba kagina di ba I namba pakadtabang sa kangegedam nengka. "
     ],4),
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya_caffeinated * di * (inom|kan|pamasan) * influenza *",
-        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya_caffeinated  * influenza *"
+        "* duken * influenza_foods_not_allowed_caffeinated * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_foods_not_allowed_caffeinated  * influenza *"
     ],[
         "Upama ka pegkayaw ka, aw na to na ebpapulo kayaw nengka engu pagatingan ka edsamikel pan. Su dehydration na ingati ka upama ka aden mayaw nengka. Su caffein abpeg a alchohol na makalunsan sa sakit nengka. Nya mapya na igop ka ig abpeg kapid a aden ig nin uman gay"
     ],4),
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya_lanan * di * (inom|kan|pamasan) * influenza *",
-        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya_lanan * influenza *"
+        "* duken * influenza_foods_not_allowed_greasy_foods * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_foods_not_allowed_greasy_foods * influenza *"
     ],[
         "Da ka ged keman sa pegken a malgen sa tyan nengka. Su mga lanan a benel o madakel I saturated fat nin na tangkay ka, abpeg su sinendag, abpeg a lana nin"
     ],4),
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya_mategas * di * (inom|kan|pamasan) * influenza *",
-        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya_mategas * influenza *"
+        "* duken * influenza_foods_not_allowed_hard_grains * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_foods_not_allowed_hard_grains * influenza *"
     ],[
         "Su flu na aw na to na makagkasakit sa tyan. Bali kan ka bo sa mga pegken a malmo sa tyan nengka mana su simple refined carbohydrates. Su mga pegkina biskwit, pan abpeg a pretzel na kapakay negka bon kanen. Mapya bon upama ka di ka ged keman sa mga kamo a malgen gatunag sa tyan."
     ],4),
     encodeMemory([
-        "* duken * influenza_pegken_di_mapya_mamis  * di * (inom|kan|pamasan) * influenza *",
-        "* duken * di * (inom|kan|pamasan) * influenza_pegken_di_mapya_mamis * influenza *"
+        "* duken * influenza_foods_not_allowed_sugary_foods  * di * (inom|kan|pamasan) * influenza *",
+        "* duken * di * (inom|kan|pamasan) * influenza_foods_not_allowed_sugary_foods * influenza *"
     ],[
         "Su mga madakel I mamis nin na makagkalubay sa immune system nengka a pedtabang sa mga sakit mana su flu."
     ],4),
@@ -128,7 +128,7 @@ let section8 = [
         "Upama ka nya nengka kailay na aden flu nengka na da ka paginom o pegkan sa aden caffein nin, alchohol nin, lanan a pegken, mga malgen katunag a kamo, abpeg mga mamisen a pegken o paginumen. Nya mapya na kan sa aden sabaw nin enggu makatabang na nalyo nengka to a ig. Tekaw ka bon kan sa da nanam nin a pegken mana su pan, patatas, emay, saging, sinabawan a apple, karne a mana manok abpeg a seda."
     ],4),
     encodeMemory([
-        "* (pamasa|kan|inom) * (pegken_di_mapya_influenza | influenza_pegken_di_mapya_caffeinated | influenza_pegken_di_mapya_lanan | influenza_pegken_di_mapya_mategas | influenza_pegken_di_mapya_mamis ) * influenza *"
+        "* (pamasa|kan|inom) * (influenza_foods_not_allowed | influenza_foods_not_allowed_caffeinated | influenza_foods_not_allowed_greasy_foods | influenza_foods_not_allowed_hard_grains | influenza_foods_not_allowed_sugary_foods ) * influenza *"
     ],[
         "Aden mga pegken a panginati ka. Upama ka aden flu nengka, kan ka sa sinabawan, aden probiotic nin a mana su niledak a pegken, mga da nanam nin a pegken a mana su pan, patatas, emay, saging, sinabawan a apple, karne a mana su manok abpeg a seda."
     ],4),

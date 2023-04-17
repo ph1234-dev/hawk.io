@@ -215,20 +215,20 @@ let section11 = [
     ],7),
     // decongestants
     encodeMemory([
-        "* ngen * generic * (!decongestants?|pseudophedrine|sudafed) *"
+        "* ngen * generic * (!decongestants?|pseudoephedrine|sudafed) *"
     ],[
         "Isa sa mga kilala a mga gamot na decongestant na su pseudoephedrine phenylephrine."
     ],7),
     encodeMemory([
-        "* ngen * branded * (!decongestants?|pseudophedrine|sudafed) *"
+        "* ngen * branded * (!decongestants?|pseudoephedrine|sudafed) *"
     ],[
         "Su decolgen abpeg su Sudafed na nya ba nga mga branded a gamot."
     ],7),
     encodeMemory([
-        "* ngen * dose * (!decongestants?|pseudophedrine|sudafed) * ",
-        "* panon * (gamit|kan|inom) * (!decongestants?|pseudophedrine|sudafed) * ",
-        "* ngen * ukit * (!decongestants?|pseudophedrine|sudafed) * ",
-        "* panon * (!decongestants?|pseudophedrine|sudafed)  * (gamit|kan|inom) *"
+        "* ngen * dose * (!decongestants?|pseudoephedrine|sudafed) * ",
+        "* panon * (gamit|kan|inom) * (!decongestants?|pseudoephedrine|sudafed) * ",
+        "* ngen * ukit * (!decongestants?|pseudoephedrine|sudafed) * ",
+        "* panon * (!decongestants?|pseudoephedrine|sudafed)  * (gamit|kan|inom) *"
     ],[
         `Su kapegkan sa nya ba gamot na nakadepended sa gamot a pengkanin. Upamaka ka nya nengka pinamasa na pseudoephedrine o Sudafed, the su gamutan nin na 60mg a tablitas. Umapa ka sui gen I kanen nengka na 30mg in 5ml.
 
@@ -238,51 +238,51 @@ let section11 = [
         `
     ],7),
     encodeMemory([
-        "* ngen * (!decongestants?|pseudophedrine|sudafed)  * "
+        "* ngen * (!decongestants?|pseudoephedrine|sudafed)  * "
     ],[
         "Su decongestant na gamot a pakadtabang sa di ged pakaginawa sa ngilong. Papedtanan nin  I lebag a nan abpeg su ngog nu taw. Da ged epekto nin I namba sa pagigingis I ngog nin abpeg pembaln."
     ],7),
     encodeMemory([
-        "* endaw * (!decongestants?|pseudophedrine|sudafed) * gamit * ",
-        "* endaw * gamit * (!decongestants?|pseudophedrine|sudafed)   * "
+        "* endaw * (!decongestants?|pseudoephedrine|sudafed) * gamit * ",
+        "* endaw * gamit * (!decongestants?|pseudoephedrine|sudafed)   * "
     ],[
         "Su decongestants na mga gamot a pakadtabang sa di pakaginawa ka naalnan I ngilong nin sa ngog. Namba di nin a nan kapenginawa na sabap ba I naman sa sa virus or sakit a flu, sinusitis o allergy."
     ],7),
     encodeMemory([
-        "* panon * galbek * (!decongestants?|pseudophedrine|sudafed) *",
-        "* panon * (!decongestants?|pseudophedrine|sudafed) * galbek * ",
+        "* panon * galbek * (!decongestants?|pseudoephedrine|sudafed) *",
+        "* panon * (!decongestants?|pseudoephedrine|sudafed) * galbek * ",
         "* (duken|panon) * decongestants? * (awa|gamot|kapya|tabang) *"
     ],[
         "Su decongenstant na nya nin galbek na papedsimpiten nin su blood vessels sa ngilon. Su blebag a tissue na ngilong na pegkanawt enggu pegkapya kapengginawa nu taw."
     ],7),
     encodeMemory([
-        "* kano * di * (kan|inom|gamit) * (!decongestants?|pseudophedrine|sudafed) * "
+        "* kano * di * (kan|inom|gamit) * (!decongestants?|pseudoephedrine|sudafed) * "
     ],[
         "Da ka pegkan sa decongenstants upama ka mapulo I lugo nengka o di nengka ka control I namaba kagina makagkapulo nya ba sa lugo. Ilay ka sa kaped a kapakayan nengka kanin. Enggu di ka papegkan su wata a mababa pan sa nem lagon sa nya ba a agamot."
     ],7),
     encodeMemory([
-        "* di * mapya * epekto * (!decongestants?|pseudophedrine|sudafed) * "
+        "* di * mapya * epekto * (!decongestants?|pseudoephedrine|sudafed) * "
     ],[
         "Su decongenstants na aw na to na aden side effect nin. Aw na to na nya ba gamot na malmu ta makakedu, malagot, abpeg makatulog. Aw nato na makagkalngkas I nya ba sa kapenginawa o kapulo I lugo nengka."
     ],7),
     encodeMemory([
-        "* ngen * (tips|enggulan) *  (!decongestants?|pseudophedrine|sudafed)  * "
+        "* ngen * (tips|enggulan) *  (!decongestants?|pseudoephedrine|sudafed)  * "
     ],[
         "Su decongestatnt na kapakay pegkanen sa ngali endu makaginawa taw a aden sakit nin sa ngilog."
     ],7),
     encodeMemory([
-        "* pila * (!decongestants?|pseudophedrine|sudafed) * ",
-        "* (!decongestants?|pseudophedrine|sudafed)  * pila * "
+        "* pila * (!decongestants?|pseudoephedrine|sudafed) * ",
+        "* (!decongestants?|pseudoephedrine|sudafed)  * pila * "
     ],[
         "Su alaga na nya ba gamot na embidabida uman saka botika. Su nasal spray na 90 pilak. Su drops na 78 pilak tig a rose pharmacy. Su tablitas na nem pilak tig a watsons pharmacy"
     ],7),
     encodeMemory([
-        "* embalangan * (!decongestants?|pseudophedrine|sudafed)  * "
+        "* embalangan * (!decongestants?|pseudoephedrine|sudafed)  * "
     ],[
         "Su decongestants na nya kapamasa sekanin sa nose drops , nasal sprays, eye drops, tablitas, capsuls, abpeg syrup. "
     ],7),
     encodeMemory([
-        "* sambi * (!decongestants?|pseudophedrine|sudafed)  * "
+        "* sambi * (!decongestants?|pseudoephedrine|sudafed)  * "
     ],[
         "Amayka di kapakayan su oral decongestants sa lek ana aden kaped nengka pan a manggamot. Umpama ka gamot bon, ka tekawi ka I antihistamines mana su Benadryl, citericine abpeg loratadine. Nya ba na makatabang bon I nya bas a barado I ngilong nin."
     ],7),
@@ -589,8 +589,8 @@ let section14 = [
         "Su Center of Diseases and Control na nya nilan nadtalo na su taw a aden trangkaso nin na aden pila timan nin a sintomas. Aw na to na aden mayaw nilan, batok, blebag a tideg, sepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa."
     ],1),
     encodeMemory([
-        "* padsa_na_influenza * (sign|symptoms|sintomas|senyales|padsa) * influenza * ",
-        "* padsa_na_influenza * influenza * (sign|symptoms|sintomas|senyales|padsa)  * ",
+        "* influenza_causes * (sign|symptoms|sintomas|senyales|padsa) * influenza * ",
+        "* influenza_causes * influenza * (sign|symptoms|sintomas|senyales|padsa)  * ",
     ],[
         "Uway"
     ],1),

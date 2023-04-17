@@ -2,13 +2,13 @@ import { encodeMemory } from "@/api/configuration/model"
 
 let section16 = [
     encodeMemory([
-        `* duken * di * (kan|inom|gamit) * gamot_na_tagudo * `,
+        `* duken * di * (kan|inom|gamit) * diarrhea_drugs * `,
     ],[
         `Su mga doctor na di silan ged myug sa pengamit ka sa gamot a kapamasa sa botika sad ala resita nin upama ka aden kailay nengka lugo sa kapedtagudo nengka endu amay ka pegkayaw ka kagina tanda I namba na aden dana na tinay nengka sabap sa kagaw a mana bacteria, virus, parasites.`
     ],7),
     encodeMemory([
-        `* duken * di * (kan|inom|gamit) * gamot_na_tagudo *`,
-        `* duken * gamot_na_tagudo * di * (kan|inom|gamit) *`,
+        `* duken * di * (kan|inom|gamit) * diarrhea_drugs *`,
+        `* duken * diarrhea_drugs * di * (kan|inom|gamit) *`,
     ],[
         `Su gamot na tagudo mana su bismuth subsalicylate enggo mga antimotility a mana su loperamide na di mapya a kanen nu tao a pegkayaw a benel o aden lugo a kadtapik nu kapagaduo nin kagina kalunsanan nin I sakit a nan. Su mga wala na di silan pakanen sa nan ka makadalo silan sa hemolytic uremic syndrome.`
     ],7),

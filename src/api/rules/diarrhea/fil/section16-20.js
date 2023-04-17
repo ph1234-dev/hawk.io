@@ -2,7 +2,7 @@ import { encodeMemory } from "@/api/configuration/model"
 
 let section16 = [
     encodeMemory([
-        `* bakit * (iwas| (hindi|huwag)  * (kain|inom|gamit))  * gamot_sa_diarrhea * `,
+        `* bakit * (iwas| (hindi|huwag)  * (kain|inom|gamit))  * diarrhea_drugs * `,
         //chatgpt start
         
         //chatgpt end
@@ -10,24 +10,24 @@ let section16 = [
         `Karaniwang hindi inirerekomenda ng mga doktor ang paggamit ng mga over-the-counter na gamot para sa mga taong may dugo sa dumi o lagnat—mga palatandaan ng impeksyon sa bakterya o mga parasito.`
     ],7),
     encodeMemory([
-        `* bakit * (iwas| (hindi|huwag)  * (kain|inom|gamit))  * gamot_sa_diarrhea *`,
-        `* bakit * gamot_sa_diarrhea * (iwas|(hindi|huwag)  * (kain|inom|gamit))  * `,
+        `* bakit * (iwas| (hindi|huwag)  * (kain|inom|gamit))  * diarrhea_drugs *`,
+        `* bakit * diarrhea_drugs * (iwas|(hindi|huwag)  * (kain|inom|gamit))  * `,
         //chatgpt start
-        "Ano ang dahilan kung bakit hindi dapat kumain ng gamot_sa_diarrhea?",
-        "Bakit hindi advisable na magtake ng gamot_sa_diarrhea?",
-        "Bakit kailangan iwasan ang pagtake ng gamot_sa_diarrhea?",
-        "Bakit hindi pwedeng kumain ng gamot_sa_diarrhea sa panahon ng diarrhea o patatae?",
-        "Ano ang pwedeng mangyari kung kumain ng gamot_sa_diarrhea habang may diarrhea o patatae?",
-        "May risk ba sa kalusugan kung magtake ng gamot_sa_diarrhea sa panahon ng diarrhea o patatae?",
-        "Ano ang epekto kung kumain ng gamot_sa_diarrhea habang may diarrhea o patatae?",
+        "Ano ang dahilan kung bakit hindi dapat kumain ng diarrhea_drugs?",
+        "Bakit hindi advisable na magtake ng diarrhea_drugs?",
+        "Bakit kailangan iwasan ang pagtake ng diarrhea_drugs?",
+        "Bakit hindi pwedeng kumain ng diarrhea_drugs sa panahon ng diarrhea o patatae?",
+        "Ano ang pwedeng mangyari kung kumain ng diarrhea_drugs habang may diarrhea o patatae?",
+        "May risk ba sa kalusugan kung magtake ng diarrhea_drugs sa panahon ng diarrhea o patatae?",
+        "Ano ang epekto kung kumain ng diarrhea_drugs habang may diarrhea o patatae?",
         //chatgpt end
     ],[
         `Ang mga anti-diarrheal na gamot tulad ng bismuth subsalicylate at mga antimotility agent tulad ng loperamide ay dapat na iwasan ng mga taong may mataas na lagnat o madugong pagtatae dahil maaari itong magpalala ng impeksyon sa colon. Sa mga bata, dapat itong iwasan na maaari silang humantong sa mga komplikasyon ng hemolytic uremic syndrome sa mga kaso ng Shiga-toxin E. col.`
     ],7),
     // encodeMemory([
-    //     `* sino * (huwag|hindi) * (gumamit|kain|inom) * on_the_counter * drug * `,
+    //     `* sino * (huwag|hindi) * (gumamit|kain|inom) * diarrhea_on_the_counter * drug * `,
     //     `* sino * (huwag|hindi)* (gumamit|kain|inom) * * diarrhea_drugs *`,
-    //     `* sino * iwas * on_the_counter_drug *`,
+    //     `* sino * iwas * diarrhea_on_the_counter_drug *`,
     //     `* sino * iwas * diarrhea_drugs *`,
     //     `* diarrhea_drugs * (hindi|huwag) * (gumamit|kain|inom) * nino * `,
     //     `* diarrhea_drugs * iwasan * nino *`,

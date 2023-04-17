@@ -61,14 +61,14 @@ let section4 = [
     ],[
         "Influenza are caused by virus. If you breath the air exhaled by an infected person, you may breath the virus and get the disease. Same thing can happen if you touch an object which an infected person has touched. You can get the virus, if your hands come in contact with your eyes, nose, and mouth."
     ],1),
-    // encodeMemory([
-    //     "* (can|will|should|would|shall|are|is) * influenza_causes * trigger * influenza *",
-    //     //chatgpt start
+    encodeMemory([
+        "* (can|will|should|would|shall|are|is) * influenza_causes * trigger * influenza *",
+        //chatgpt start
         
-    //     //chatgpt end
-    // ],[
-    //     "What we know is that viruses cause influenza. When you inhale the air breathed by an infected person or touch objects that is touched by someone infected, you can get influenza."
-    // ],1),
+        //chatgpt end
+    ],[
+        "What we know is that viruses cause influenza. When you inhale the air breathed by an infected person or touch objects that is touched by someone infected, you can get influenza."
+    ],1),
 ]
 
 

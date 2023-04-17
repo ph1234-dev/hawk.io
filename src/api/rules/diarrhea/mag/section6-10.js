@@ -56,11 +56,11 @@ let section6 = [
 let section7 = [
     
    encodeMemory([
-    `* duken * (inom|kan) * pegken_kapakay_sa_pedtagudo *  tagudo *`, 
-    `* duken * (pamasa) * pegken_kapakay_sa_pedtagudo * tagudo *`, 
-    `* duken * (inom|kan) * pegken_kapakay_sa_pedtagudo * tagudo *`, 
-    `* pegken_kapakay_sa_pedtagudo * (inom|kan) * tagudo *  `, 
-    `* pegken_kapakay_sa_pedtagudo * (mapya|tabang|kapakay) * tagudo *`, 
+    `* duken * (inom|kan) * diarrhea_foods_allowed *  tagudo *`, 
+    `* duken * (pamasa) * diarrhea_foods_allowed * tagudo *`, 
+    `* duken * (inom|kan) * diarrhea_foods_allowed * tagudo *`, 
+    `* diarrhea_foods_allowed * (inom|kan) * tagudo *  `, 
+    `* diarrhea_foods_allowed * (mapya|tabang|kapakay) * tagudo *`, 
    ],[
      `Nam ba a pegken na makadtabang sa leka para di ka lenukan edsamiken. Upama ka aden pedtagundo na makadtabang I namba ka makadtegas sa tae.`,
    ],1),
@@ -81,32 +81,32 @@ let section7 = [
 
 let section8 = [
     encodeMemory([
-      `* duken * pegken_di_mapya_hydration * di * (inom|kan|pamasan) * tagudo *`, 
-      `* duken * di * (inom|kan|pamasan) * pegken_di_mapya_hydration * tagudo * `,  
+      `* duken * diarrhea_foods_not_allowed_bad_hydration * di * (inom|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_bad_hydration * tagudo * `,  
     ],[
       `Tangkay ka I namaba ka pakalenuk I namba edsamikel.`,
     ],4),
     encodeMemory([
-      `* duken * pegken_a_makadtagetut * di * (inom|kan|pamasan) * tagudo *`, 
-      `* duken * di * (inom|kan|pamasan) * pegken_a_makadtagetut * tagudo * `, 
+      `* duken * diarrhea_foods_not_allowed_produces_gas * di * (inom|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_produces_gas * tagudo * `, 
     ],[
       `Kaped sa nan na makadtagetut. Di nenmba mapya upama ka pedtagudo I taw ka makalunsan sa sakit.`,
     ],4),
     encodeMemory([
-      `* duken * pegken_a_aden_lactose_nin * di * (inom|kan|pamasan) * tagudo *`, 
-      `* duken * di * (inom|kan|pamasan) * pegken_a_aden_lactose_nin * tagudo *`, 
+      `* duken * diarrhea_foods_not_allowed_contains_lactose * di * (inom|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_contains_lactose * tagudo *`, 
     ],[
       `Upama ka di ka kapakyan pegkan sa gatas ka edtagudo ka na di namba mapya pegkanen. Upama ka edtagudo ka tupan na kinapasad nengka keman sa aden gatas nin e telni ka I kakan sa nan`,
     ],4),
     encodeMemory([
-      `* duken * pegken_a_aden_fructose_nin * di * (inom|kan|pamasan) * tagudo *`, 
-      `* duken * di * (inom|kan|pamasan) * pegken_a_aden_fructose_nin * tagudo *`, 
+      `* duken * diarrhea_foods_not_allowed_contains_fructose * di * (inom|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_contains_fructose * tagudo *`, 
     ],[
       `Aden mga tao a galunsanan I kapedtagudo nilan kagina nakakan silan sa pegken a madakel a benel I dalem nin a fructose. Pangingati ka bo I namba.`,
     ],4),
     encodeMemory([
-      `* duken * pegken_a_magatel_sa_tyan * di * (inom|kan|pamasan) * tagudo *`, 
-      `* duken * di * (inom|kan|pamasan) * pegken_a_magatel_sa_tyan * tagudo *`, 
+      `* duken * diarrhea_foods_not_allowed_irritate_stomach * di * (inom|kan|pamasan) * tagudo *`, 
+      `* duken * di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_irritate_stomach * tagudo *`, 
     ],[
       `Nya ba a pegken na makadsakit sa tyan na di mapya upama ka pedtagudo su taw.`,
     ],4),

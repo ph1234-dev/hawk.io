@@ -259,8 +259,8 @@ let section14 = [
         `Kapakay ka paginom sa gamot a kapamasa sa botika apya dala den risita na doctor. Ugayd na bago ka paginom na ilay ka amay ka aden lugo na tay nengka. Amayka aden na di ka paginum sa mga gamot a kapamasa sa botika sad ala riseta nin.`
     ],1),
     encodeMemory([
-        `* padsa_na_tagudo * (sign|symptoms|sintomas|senyales|padsa)   * tagudo * `,
-        `* padsa_na_tagudo * tagudo * (sign|symptoms|sintomas|senyales|padsa)  * `,
+        `* diarrhea_causes * (sign|symptoms|sintomas|senyales|padsa)   * tagudo * `,
+        `* diarrhea_causes * tagudo * (sign|symptoms|sintomas|senyales|padsa)  * `,
     ],[
         `Uway, sipat I namba na sakit a nan.`
     ],1),

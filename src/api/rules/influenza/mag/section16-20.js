@@ -32,8 +32,8 @@ let section16 = [
         "Da ka penggamit sa nasal decongenstants sa sobra sa dwa o tlo a gay. Kagina ka papangilayn ba I namba na ngilong nengka. Kaped pan na pakagkabagel bon I nya bas a pamusungan a side effect nin. Tu ba nan pangingat ka upama ka enggamot ka sa nya ba labi den mapulo lugo nengka, aden sakit na pamusungan nengka o di kena mapya I pusong nengka."
     ],7),
     encodeMemory([
-        "* ten * di * (kan|inom|gamit) * gamot_na_influenza * ",
-        "* ten * di * (kan|inom|gamit) * gamot_na_influenza * ",
+        "* ten * di * (kan|inom|gamit) * influenza_drugs * ",
+        "* ten * di * (kan|inom|gamit) * influenza_drugs * ",
         "* diarrhea_drugs * di * (kan|inom|gamit) * ",
     ],[
         "Niya tig a Center for Disease and Control na su mga antiviral a gamut na trangkaso na iberisita (mga tablitas, ig, inhaled powder, o isa a intravenous solution) na pakadtabang sa virus na lawas. Su ma antivarial a gamut na di pendagaganeng sa counter. Makwa nengka bo I nya ba upama aden riseta nin sa dktor. Su antiviral a gamut na sakabiyas I nya bas a antibiotic a gamut na bacterial infection.  Su mga antiviral a gamut para sa trangkaso na pakadtabang sa kapenggamot sa trangkaso.  "

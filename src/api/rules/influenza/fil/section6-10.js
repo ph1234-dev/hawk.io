@@ -192,10 +192,10 @@ let section6 = [
 
 let section7 = [
     encodeMemory([
-        "* bakit * (inom|kain|bili) * pagkaing_pwede_trangkaso * trangkaso * ",
-        "* pagkaing_pwede_trangkaso * (inom|kain|bili) * trangkaso * ",
-        "* pagkaing_pwede_trangkaso *  (tulong|gamot|buti|galing|gawin)   * trangkaso *  ",
-        "* pagkaing_pwede_trangkaso * (inom|kain|bili) * trangkaso *",
+        "* bakit * (inom|kain|bili) * influenza_foods_allowed * trangkaso * ",
+        "* influenza_foods_allowed * (inom|kain|bili) * trangkaso * ",
+        "* influenza_foods_allowed *  (tulong|gamot|buti|galing|gawin)   * trangkaso *  ",
+        "* influenza_foods_allowed * (inom|kain|bili) * trangkaso *",
         //chatgpt start
         
         //chatgpt end
@@ -220,90 +220,90 @@ let section7 = [
 
 let section8 = [
     encodeMemory([
-        "* bakit * influenza_pagkain_dapat_iwasan * ( iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso *",
-        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso_pagkain_dapat_iwasan * trangkaso * ",
+        "* bakit * influenza_foods_not_allowed * ( iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso *",
+        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza_foods_not_allowed * trangkaso * ",
         //chatgpt start
-        "Bakit hindi dapat kumain ng influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?",
-        "Bakit hindi advisable na kumain  ng influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?",
-        "Bakit kailangan iwasan ang influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?",
-        "Bakit mas mabuting hindi kumain ng influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?",
-        "Bakit nakakatulong na hindi kumain  ng influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?",
-        "Bakit hindi maganda na kumain  ng influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?",
-        "Bakit mas mahalaga na hindi kumain  ng influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?",
-        "Bakit nakasasama ang kumain  ng influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?",
-        "Bakit hindi makakatulong ang pagkain  ng influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?",
-        "Bakit dapat iwasan ang mga pagkaing nakakapagpabigat ng pakiramdam tulad ng  ng influenza_pagkain_dapat_iwasan kapag may trangkaso o influenza?"
+        "Bakit hindi dapat kumain ng influenza_foods_not_allowed kapag may trangkaso o influenza?",
+        "Bakit hindi advisable na kumain  ng influenza_foods_not_allowed kapag may trangkaso o influenza?",
+        "Bakit kailangan iwasan ang influenza_foods_not_allowed kapag may trangkaso o influenza?",
+        "Bakit mas mabuting hindi kumain ng influenza_foods_not_allowed kapag may trangkaso o influenza?",
+        "Bakit nakakatulong na hindi kumain  ng influenza_foods_not_allowed kapag may trangkaso o influenza?",
+        "Bakit hindi maganda na kumain  ng influenza_foods_not_allowed kapag may trangkaso o influenza?",
+        "Bakit mas mahalaga na hindi kumain  ng influenza_foods_not_allowed kapag may trangkaso o influenza?",
+        "Bakit nakasasama ang kumain  ng influenza_foods_not_allowed kapag may trangkaso o influenza?",
+        "Bakit hindi makakatulong ang pagkain  ng influenza_foods_not_allowed kapag may trangkaso o influenza?",
+        "Bakit dapat iwasan ang mga pagkaing nakakapagpabigat ng pakiramdam tulad ng  ng influenza_foods_not_allowed kapag may trangkaso o influenza?"
         //chatgpt end
     ],[
         "Para matulungan kang gumaling, mahalagang pangalagaan mong mabuti ang iyong sarili. Kailangan mong iwasan ang mga iyon dahil maaari itong magpalala sa iyong mga kondisyon sa kalusugan."
     ],4),
     encodeMemory([
-        "* bakit * trangkaso_pagkain_dapat_iwasan_caffeinated * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza * ",
-        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso_pagkain_dapat_iwasan_caffeinated * trangkaso * ",
+        "* bakit * influenza_foods_not_allowed_caffeinated_drinks * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza * ",
+        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza_foods_not_allowed_caffeinated_drinks * trangkaso * ",
         //chatgpt start
-        "Bakit kailangan iwasan ang trangkaso_pagkain_dapat_iwasan_caffeinated kapag may trangkaso o influenza?",
-        "Ano ang dahilan kung bakit dapat iwasan ang trangkaso_pagkain_dapat_iwasan_caffeinated kapag may trangkaso o influenza?",
-        "Bakit hindi maganda na uminom ng trangkaso_pagkain_dapat_iwasan_caffeinated kapag may trangkaso o influenza?",
-        "Paano nakakaimpluwensiya ang trangkaso_pagkain_dapat_iwasan_caffeinated sa pagpapagaling ng trangkaso o influenza?",
-        "May epekto ba ang trangkaso_pagkain_dapat_iwasan_caffeinated sa pagsisimula o pagsasama ng sintomas ng trangkaso o influenza?",
-        "Bakit nakakapagpabagal ng paggaling ang trangkaso_pagkain_dapat_iwasan_caffeinated kapag may trangkaso o influenza?",
-        "May koneksyon ba ang trangkaso_pagkain_dapat_iwasan_caffeinated sa pagkakaroon ng mas malala pang kalagayan kapag may trangkaso o influenza?",
-        "Anong epekto ang maaaring magkaroon ng trangkaso_pagkain_dapat_iwasan_caffeinated sa katawan kapag may trangkaso o influenza?",
-        "Bakit kailangan iwasan ang mga inuming may trangkaso_pagkain_dapat_iwasan_caffeinated kapag may trangkaso o influenza?",
-        "Ano ang maaaring mangyari sa ating katawan kung uminom tayo ng trangkaso_pagkain_dapat_iwasan_caffeinated habang may trangkaso o influenza?"
+        "Bakit kailangan iwasan ang influenza_foods_not_allowed_caffeinated_drinks kapag may trangkaso o influenza?",
+        "Ano ang dahilan kung bakit dapat iwasan ang influenza_foods_not_allowed_caffeinated_drinks kapag may trangkaso o influenza?",
+        "Bakit hindi maganda na uminom ng influenza_foods_not_allowed_caffeinated_drinks kapag may trangkaso o influenza?",
+        "Paano nakakaimpluwensiya ang influenza_foods_not_allowed_caffeinated_drinks sa pagpapagaling ng trangkaso o influenza?",
+        "May epekto ba ang influenza_foods_not_allowed_caffeinated_drinks sa pagsisimula o pagsasama ng sintomas ng trangkaso o influenza?",
+        "Bakit nakakapagpabagal ng paggaling ang influenza_foods_not_allowed_caffeinated_drinks kapag may trangkaso o influenza?",
+        "May koneksyon ba ang influenza_foods_not_allowed_caffeinated_drinks sa pagkakaroon ng mas malala pang kalagayan kapag may trangkaso o influenza?",
+        "Anong epekto ang maaaring magkaroon ng influenza_foods_not_allowed_caffeinated_drinks sa katawan kapag may trangkaso o influenza?",
+        "Bakit kailangan iwasan ang mga inuming may influenza_foods_not_allowed_caffeinated_drinks kapag may trangkaso o influenza?",
+        "Ano ang maaaring mangyari sa ating katawan kung uminom tayo ng influenza_foods_not_allowed_caffeinated_drinks habang may trangkaso o influenza?"
         //chatgpt end
     ],[
         "Kapag mayroon kang lagnat, maaari kang makaranas ng mataas na temperatura at pagtaas ng pagpapawis, ang pag-aalis ng tubig ay isang bagay na dapat mag-ingat kapag mayroon kang lagnat. Ang caffeine at alkohol ay maaaring magpalala sa iyong mga sintomas (lalo na ang mga sintomas na nauugnay sa tiyan). Mas mainam na humigop ng tubig at malinaw na likido sa buong araw."
     ],4),
     encodeMemory([
-        "* bakit * trangkaso_pagkain_dapat_iwasan_mamantikain * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza * ",
-        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso_pagkain_dapat_iwasan_mamantikain * trangkaso * ",
+        "* bakit * influenza_foods_not_allowed_greasy_foods * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza * ",
+        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza_foods_not_allowed_greasy_foods * trangkaso * ",
         //chatgpt start
-        "Bakit kailangang iwasan ang trangkaso_pagkain_dapat_iwasan_mamantikain kapag may trangkaso o influenza?",
-        "Bakit masama ang pagkain ng trangkaso_pagkain_dapat_iwasan_mamantikain kapag may trangkaso o influenza?",
-        "Ano ang masamang epekto ng pagkain ng trangkaso_pagkain_dapat_iwasan_mamantikain kapag may trangkaso o influenza?",
-        "Bakit hindi maganda ang pagkain ng trangkaso_pagkain_dapat_iwasan_mamantikain kapag may trangkaso o influenza?",
-        "Paano nakakaapekto ang pagkain ng trangkaso_pagkain_dapat_iwasan_mamantikain sa kalusugan kapag may trangkaso o influenza?",
-        "Bakit hindi dapat kumain ng trangkaso_pagkain_dapat_iwasan_mamantikain kapag may trangkaso o influenza?",
-        "Bakit hindi maganda kumain ng mga pagkaing prito o trangkaso_pagkain_dapat_iwasan_mamantikain kapag may trangkaso o influenza?",
-        "Paano nakakapagdulot ng masamang epekto sa katawan ang pagkain ng trangkaso_pagkain_dapat_iwasan_mamantikain kapag may trangkaso o influenza?",
-        "Bakit kailangan iwasan ang trangkaso_pagkain_dapat_iwasan_mamantikain kapag may trangkaso o influenza?"
+        "Bakit kailangang iwasan ang influenza_foods_not_allowed_greasy_foods kapag may trangkaso o influenza?",
+        "Bakit masama ang pagkain ng influenza_foods_not_allowed_greasy_foods kapag may trangkaso o influenza?",
+        "Ano ang masamang epekto ng pagkain ng influenza_foods_not_allowed_greasy_foods kapag may trangkaso o influenza?",
+        "Bakit hindi maganda ang pagkain ng influenza_foods_not_allowed_greasy_foods kapag may trangkaso o influenza?",
+        "Paano nakakaapekto ang pagkain ng influenza_foods_not_allowed_greasy_foods sa kalusugan kapag may trangkaso o influenza?",
+        "Bakit hindi dapat kumain ng influenza_foods_not_allowed_greasy_foods kapag may trangkaso o influenza?",
+        "Bakit hindi maganda kumain ng mga pagkaing prito o influenza_foods_not_allowed_greasy_foods kapag may trangkaso o influenza?",
+        "Paano nakakapagdulot ng masamang epekto sa katawan ang pagkain ng influenza_foods_not_allowed_greasy_foods kapag may trangkaso o influenza?",
+        "Bakit kailangan iwasan ang influenza_foods_not_allowed_greasy_foods kapag may trangkaso o influenza?"
         //chatgpt end
     ],[
         "Gusto mong iwasan ang mga pagkaing mahirap masira at mahirap sa iyong gastrointestinal system. Ang mga pagkaing mataas sa saturated fat ay dapat na iwasan o limitahan, gayundin ang pritong, mamantika na pagkain."
     ],4),
     encodeMemory([
-        "* bakit * trangkaso_pagkain_dapat_iwasan_matigas_butil * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso * ",
-        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso_pagkain_dapat_iwasan_matigas_butil * trangkaso * ",
+        "* bakit * influenza_foods_not_allowed_hard_grains * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso * ",
+        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * influenza_foods_not_allowed_hard_grains * trangkaso * ",
         //chatgpt start
-        "Ano ang dahilan kung bakit dapat iwasan ang trangkaso_pagkain_dapat_iwasan_matigas_butil kapag may trangkaso o influenza?",
-        "Bakit hindi dapat kumain ng trangkaso_pagkain_dapat_iwasan_matigas_butil ng trangkaso o influenza?",
-        "Saan nagmumula ang panganib ng pagkain ng trangkaso_pagkain_dapat_iwasan_matigas_butil kapag may trangkaso o influenza?",
-        "Bakit hindi inirerekomenda ang pagkain ng trangkaso_pagkain_dapat_iwasan_matigas_butil sa panahon ng trangkaso o influenza?",
-        "Ano ang magiging epekto sa kalusugan kung kumain ng trangkaso_pagkain_dapat_iwasan_matigas_butil habang may trangkaso o influenza?",
-        "Bakit dapat iwasan ang mga pagkain na may trangkaso_pagkain_dapat_iwasan_matigas_butil sa panahon ng trangkaso o influenza?",
-        "Paano nakakaaapekto ang pagkain ng trangkaso_pagkain_dapat_iwasan_matigas_butil sa kalusugan kapag may trangkaso o influenza?",
-        "Ano ang maaaring masamang epekto ng pagkain ng trangkaso_pagkain_dapat_iwasan_matigas_butil sa katawan kapag may trangkaso o influenza?",
-        "Bakit mas makabubuti na iwasan ang pagkain ng trangkaso_pagkain_dapat_iwasan_matigas_butil kung may trangkaso o influenza?",
-        "Ano ang maaaring magandang alternatibong pagkain sa halip ng trangkaso_pagkain_dapat_iwasan_matigas_butil kapag may trangkaso o influenza?"
+        "Ano ang dahilan kung bakit dapat iwasan ang influenza_foods_not_allowed_hard_grains kapag may trangkaso o influenza?",
+        "Bakit hindi dapat kumain ng influenza_foods_not_allowed_hard_grains ng trangkaso o influenza?",
+        "Saan nagmumula ang panganib ng pagkain ng influenza_foods_not_allowed_hard_grains kapag may trangkaso o influenza?",
+        "Bakit hindi inirerekomenda ang pagkain ng influenza_foods_not_allowed_hard_grains sa panahon ng trangkaso o influenza?",
+        "Ano ang magiging epekto sa kalusugan kung kumain ng influenza_foods_not_allowed_hard_grains habang may trangkaso o influenza?",
+        "Bakit dapat iwasan ang mga pagkain na may influenza_foods_not_allowed_hard_grains sa panahon ng trangkaso o influenza?",
+        "Paano nakakaaapekto ang pagkain ng influenza_foods_not_allowed_hard_grains sa kalusugan kapag may trangkaso o influenza?",
+        "Ano ang maaaring masamang epekto ng pagkain ng influenza_foods_not_allowed_hard_grains sa katawan kapag may trangkaso o influenza?",
+        "Bakit mas makabubuti na iwasan ang pagkain ng influenza_foods_not_allowed_hard_grains kung may trangkaso o influenza?",
+        "Ano ang maaaring magandang alternatibong pagkain sa halip ng influenza_foods_not_allowed_hard_grains kapag may trangkaso o influenza?"
         //chatgpt end
     ],[
         "Ang trangkaso ay paminsan-minsan ay nagdudulot sa iyo na magkaroon ng sakit sa tiyan, kaya ang pagdidikit sa mga pagkaing madaling matunaw tulad ng simple/pinong carbohydrates ay inirerekomenda. Ang mga pagkaing tulad ng dry saltine crackers, toast at pretzel ay madali sa iyong tiyan at malamang na matitiis kapag mayroon kang trangkaso. Mainam din na umiwas pansamantala sa mga pagkaing mahibla."
     ],4),
     encodeMemory([
-        "* bakit * trangkaso_pagkain_dapat_iwasan_matatamis * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso * ",
-        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) *  trangkaso_pagkain_dapat_iwasan_matatamis* trangkaso * ",
+        "* bakit * influenza_foods_not_allowed_sugary_foods * (iwasan| (hindi|huwag) * (bili|inom|kain) ) * trangkaso * ",
+        "* bakit * (iwasan| (hindi|huwag) * (bili|inom|kain) ) *  influenza_foods_not_allowed_sugary_foods* trangkaso * ",
         //chatgpt start
-        "Ano ang dahilan kung bakit kailangan iwasan ang trangkaso_pagkain_dapat_iwasan_matatamis kapag may trangkaso o influenza?",  
-        "Bakit masama ang kumain ng trangkaso_pagkain_dapat_iwasan_matatamis habang may trangkaso o influenza?",  
-        "Paano nakakaapekto sa katawan ang pagkain ng trangkaso_pagkain_dapat_iwasan_matatamis kapag may trangkaso o influenza?",  
-        "May epekto ba sa kalusugan ang pagkain ng trangkaso_pagkain_dapat_iwasan_matatamis habang may trangkaso o influenza?",  
-        "Bakit hindi advisable ang kumain ng trangkaso_pagkain_dapat_iwasan_matatamis kapag may trangkaso o influenza?",  
-        "Anong masamang maidudulot ng pagkain ng trangkaso_pagkain_dapat_iwasan_matatamis habang may trangkaso o influenza?",  
+        "Ano ang dahilan kung bakit kailangan iwasan ang influenza_foods_not_allowed_sugary_foods kapag may trangkaso o influenza?",  
+        "Bakit masama ang kumain ng influenza_foods_not_allowed_sugary_foods habang may trangkaso o influenza?",  
+        "Paano nakakaapekto sa katawan ang pagkain ng influenza_foods_not_allowed_sugary_foods kapag may trangkaso o influenza?",  
+        "May epekto ba sa kalusugan ang pagkain ng influenza_foods_not_allowed_sugary_foods habang may trangkaso o influenza?",  
+        "Bakit hindi advisable ang kumain ng influenza_foods_not_allowed_sugary_foods kapag may trangkaso o influenza?",  
+        "Anong masamang maidudulot ng pagkain ng influenza_foods_not_allowed_sugary_foods habang may trangkaso o influenza?",  
         "Bakit dapat iwasan ang mga matatamis na pagkain kapag may trangkaso o influenza?",  
-        "Paano makakaapekto sa immune system ang pagkain ng trangkaso_pagkain_dapat_iwasan_matatamis kapag may trangkaso o influenza?",  
+        "Paano makakaapekto sa immune system ang pagkain ng influenza_foods_not_allowed_sugary_foods kapag may trangkaso o influenza?",  
         "Anong mga pagkain ang dapat iwasan kapag may trangkaso o influenza, lalo na ang matatamis?",  
-        "Bakit masama ang kumain ng trangkaso_pagkain_dapat_iwasan_matatamis habang may sakit, tulad ng trangkaso o influenza?"
+        "Bakit masama ang kumain ng influenza_foods_not_allowed_sugary_foods habang may sakit, tulad ng trangkaso o influenza?"
         //chatgpt end
     ],[
         "Maaaring kauntihan ng mga pagkaing mayaman sa asukal ang iyong immune system, na kailangan ng iyong katawan upang labanan ang trangkaso"
@@ -330,8 +330,8 @@ let section8 = [
         "Kung sa tingin mo ay mayroon kang trangkaso, kailangan mong iwasan ang mga inuming may caffeine, alkohol, mamantika na pagkain, mahirap matunaw na butil, at matamis na pagkain o inumin. Sa halip, subukang uminom ng mga sopas na nakabatay sa sabaw upang makatulong sa paglalagay ng anumang likido at sodium na maaaring mawala sa iyo. Subukan din ang mga murang pagkain na kinabibilangan ng puting tinapay, patatas, puting bigas, saging, sarsa ng mansanas, walang taba na karne tulad ng manok at isda."
     ],4),
     encodeMemory([
-        `* (bili|kain|inom) * (trangkaso_pagkain_dapat_iwasan|trangkaso_pagkain_dapat_iwasan_caffeinated|trangkaso_pagkain_dapat_iwasan_mamantikain|trangkaso_pagkain_dapat_iwasan_matigas_butil|
-        trangkaso_pagkain_dapat_iwasan_matatamis) * trangkaso *`,
+        `* (bili|kain|inom) * (influenza_foods_not_allowed|influenza_foods_not_allowed_caffeinated_drinks|influenza_foods_not_allowed_greasy_foods|influenza_foods_not_allowed_hard_grains|
+        influenza_foods_not_allowed_sugary_foods) * trangkaso *`,
         //chatgpt start
         
         //chatgpt end

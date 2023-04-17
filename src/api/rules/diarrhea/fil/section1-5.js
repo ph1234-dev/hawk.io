@@ -179,7 +179,7 @@ let section4 = [
         `Maraming paraan para maka diarrhea o magtaetae. Heto ang madalas na dahilan. Kapag mahina ang iyong resistnensya at may problema ka sa bituka. Maaring maging epekto ng gamot na kinain mo.  Pero madalas talaga, ang sanhi ng pagtatae ay pagkain. Iyong ibang mga tao may mga food allergy o bawal kumain ng mga natatanging pagkain. Iyong iba naman hindi kayang tunawing ang pagkaing may gatas, sorbitol, pampatamis, at fructose na madalas nakikita sa mga pinoprosesong pagkain.`
     ], 1),
     // encodeMemory([
-    //     `* kuha * diarrhea * dahilan_ng_diarrhea * `,
+    //     `* kuha * diarrhea * diarrhea_causes * `,
     //     //chatgpt start
         
     //     //chatgpt end
@@ -209,7 +209,7 @@ let section4 = [
         `Ayon sa mga ulat, pwede kang magtaetae dahil sa mga impeksyong dulot ng bacteria, virus, at parasites. Kapag mahina resistensya mo , mas Malaki ang tsansang magkaroon ka nito. Lalo na kapag ikaw ay may problema sa bituka. Ang pagtatae ay maari ding epekto ng gamot. Sa usaping pagkain, iyong may mga lactose, fructose at sorbitol naman ay pwedeng  din makapagpataetae kung hindi mo kaya ng katawan mo tunawin ito.`
     ], 1),
     // encodeMemory([
-    //     `* dahilan_ng_diarrhea * diarrhea * `,
+    //     `* diarrhea_causes * diarrhea * `,
     //     //chatgpt start
         
     //     //chatgpt end
@@ -408,8 +408,8 @@ let section5 = [
         `Kung hindi naman malala ang iyong pagtatae, pwede mo naman to gamutin sa bahay. Pero kapag ito ay mahigit na sa 48 oras, dumudugo ito, o nakakaramdam ka ng pagkadehydrate, dalhin mo na sya sa ospital. Una, pumunta ka muna sa barangay health center.`
     ], 5),
     encodeMemory([
-        `* saan * bili * gamot_diarrhea * `,
-        `* saan * gamot_diarrhea * bili * `,
+        `* saan * bili * diarrhea_drugs * `,
+        `* saan * diarrhea_drugs * bili * `,
         `* saan * bili * gamot * diarrhea  *`,
         //chatgpt start
         
