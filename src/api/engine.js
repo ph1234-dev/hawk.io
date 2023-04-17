@@ -1,9 +1,9 @@
 import Blackbox from '@/api/configuration/blackbox'
-import {
-    diarrheaEngRules,
-    diarrheaFilRules,
-    diarrheaMagRules
-} from '@/api/rules/diarrhea/rules-diarrhea'
+import {dictionary} from '@/api/substitutions/dictionary'
+// import { v1_substitution_tests_cases } from './tests/v1'
+import { testCaseForDiarrhea } from './tests/v1/diarrhea'
+
+import * as rulesDiarrhea from '@/api/rules/diarrhea/rules-diarrhea'
 
 import {
     influenzaEngRules,
@@ -20,11 +20,11 @@ export default class Engine {
 
     constructor() {
         
+
         this.RULES = {
-            
-            ENG: [].concat(diarrheaEngRules,influenzaEngRules),
-            FIL: [].concat(diarrheaFilRules,influenzaFilRules),
-            MAG: [].concat(diarrheaMagRules,influenzaMagRules)
+            ENG: [].concat(rulesDiarrhea.diarrheaEngRules,influenzaEngRules),
+            FIL: [].concat(rulesDiarrhea.diarrheaFilRules,influenzaFilRules),
+            MAG: [].concat(rulesDiarrhea.diarrheaMagRules,influenzaMagRules)
         }
 
         this.RULES_DIMENSION_CLASSIFIERS = {
@@ -55,10 +55,15 @@ export default class Engine {
             6: "Good Hygeine",
             7: "Rational Use of Product and services"
         }
+        
+        // stores the substitutions
+        this.lexicon = {}
+
 
         this.initializeLanguageClassifier()
         this.initializeDomainClassifier()
 
+        // this.getReply("magkano ba ang citirezine")
         // this.getReply("how do you treat influenza")
         // this.getReply("how do you treat influnza")
         // this.getReply("how do you treat adobo")
@@ -70,10 +75,72 @@ export default class Engine {
         // this.getReply("paano gamutin ang diarrhea")
         // this.getReply("gamot diarrhea")
         // this.getReply(" i was wondering how can one possible fix diarrhea")
-        this.getReply("tell me the what is the proper way of taking antihistamines")
-        this.getReply("tell me the side effects of antihistamines")
-        this.getReply("how much does lozenges cost")
+        // this.getReply("tell me the what is the proper way of taking antihistamines")
+        // this.getReply("tell me the side effects of antihistamines")
+        // this.getReply("how much does lozenges cost")
+
+        // this.testSubstitutions("citerizine")
+
+        this.executeTestCases()
     }
+
+    executeTestCases(){
+        console.log('Executing Test Cases')
+        let tests = [].concat(testCaseForDiarrhea)
+
+        tests.forEach(test=>{
+            this.getReply(test)
+        })
+
+    }
+
+    testSubstitutions(word){
+        let subs = dictionary.getSubstitute(word)
+        console.log(`Substitute: ${word} to ${subs}`)
+    }
+
+    // initializeSubstitutions(){
+
+    //     let build = (list) =>{
+
+    //         list.forEach((lexeme)=>{
+
+    //             let terms = lexeme.terms
+    //             lexeme.terms = terms.map(word=>word.toLowerCase()) 
+    //             lexeme.substitute = lexeme.substitute.toLowerCase()
+
+    //             if ( lexeme.substitute in this.lexicon ){
+    //                 // console.log('\t\tShould Be Appending: ', lexeme.terms)
+
+    //                 this.lexicon[lexeme.substitute].concat(lexeme.terms)
+    //             }else{
+    //                 this.lexicon[lexeme.substitute] = [].concat(lexeme.terms)
+    //             }
+    //             // console.log(`\t${lexeme.substitute} - ${substitutes}`)
+    //             // table.push([lexeme.substitute,lexeme.terms.toString()])
+    //         })
+
+    //     }
+
+    //     build(substitutionsGeneric)
+    //     build(substitutionsUnderscored)
+
+    //     this.lexicon = this.lexicon.sort()
+
+        
+    //     console.log(`Lexicon Substitutes`)
+    //     let table = []
+
+    //     for( let lexeme in this.lexicon ){
+    //         // console.log(lexeme.toString(),)
+    //         table.push([lexeme,this.lexicon[lexeme].toString()])
+    //         // table.push([lexeme.substitute,lexeme.terms])
+    //     }
+
+    //     console.table(table)
+
+        
+    // }
 
 
     initializeLanguageClassifier() {
@@ -96,6 +163,8 @@ export default class Engine {
         //     "san pwede bumili ng gamot ",
         //     "endaw ako makapamasa sa gamot na diarrhea"
         // ])
+
+        // this.classifierLanguage.printVocabularyWithUnderscores()
 
     }
 
@@ -147,7 +216,7 @@ export default class Engine {
         // WE NEED TO IDENTIFY THE VALUE OF LANG AND DIMENSION
 
 
-        // SHOWS THe vocabulary
+        // // SHOWS THe vocabulary
         // let vocab = []
         // Object.keys(this.RULES_DIMENSION_CLASSIFIERS)
         //     .forEach(lang=>{
@@ -155,7 +224,7 @@ export default class Engine {
         //         let words = this.RULES_DIMENSION_CLASSIFIERS[lang].getVocabulary()
         //         for (let word of words){
         //             if ( !vocab.includes(word) &&
-        //                 word.length > 2)
+        //                 word.length > 3)
         //                 vocab.push(word)
         //         }
         // })
@@ -168,6 +237,38 @@ export default class Engine {
         return this.classifierLanguage.getPrediction(msg)
     }
 
+
+    // getSubstitute(token){
+    //     let replacement = null
+        
+    //     for ( let keyword in this.lexicon ){
+           
+    //         let lexeme = this.lexicon[keyword]
+    //         let potentialSubstitutes = lexeme
+    //         // console.log(`\nTesting Key: `,keyword)
+    //         // console.log(`Testing Substitutes\n`,potentialSubstitutes)
+
+    //         let broken = false
+
+    //         for ( let i = 0 ; i < potentialSubstitutes.length; i++){
+
+    //             let term = potentialSubstitutes[i]
+    //             if ( token.match(term) ){
+    //                 replacement = keyword
+    //                 // console.log(`<< Testing Substitutions: ${token} replaced to ${replacement}`)
+    //                 return replacement
+    //                 // broken = true
+    //                 // break
+    //             }
+
+    //         }
+
+    //         // if ( broken) break
+
+    //     }
+
+    //     return replacementlanguage
+    // }
 
     /**
      * 
@@ -189,103 +290,138 @@ export default class Engine {
      * 10. if not found tell use reponse does not exist
      */
     getReply(msg) {
-        
-        console.log(`Engine::getReply (original msg) / ${msg}`)
+
+        console.log("\nTest Case:: ", msg)
         let reply = null
 
-        // step1 and and step2
-        msg = msg.toLowerCase().trim()
+        // step1 and step2
+        // trimmed message
+        let trimmed = msg.toLowerCase().replace(/[^\s\w]/g," ").trim()
 
-        // step 3
-        // rebuild string
-        // Perform edit distance
-        let tokens = msg.split(' ')
+        // step 3rebuild string through edit distance
+        let tokens = trimmed.split(' ')
+
+
+        // log:: storing token
+        let replacements = {}
+        
+        // console.log(`Engine::getReply [Edit Distance::${distance}] -> From ${token} to ${word}`)
+
         tokens.forEach(token=>{
 
             for ( let i = 0 ; i < this.spellingArray.length; i++ ){
+
                 let word = this.spellingArray[i]
+                let distance = damerauLevenshteinDistance(token,word) 
                 // we only allow up to 3 edits to correct
-                if ( damerauLevenshteinDistance(token,word) < 2
-                    && token != word
-                    ){
-                    console.log(`\nEngine::getReply (foundh damerau / ${token} | ${word}) / ${damerauLevenshteinDistance(token,word)}`)
-                    msg = msg.replace(token,word)
+
+                if ( distance <= 2 && token != word){
+                    replacements[token] = word
+                    trimmed = trimmed.replace(token,word)
                 }
+
+            }
+
+        })
+        
+
+        // 
+        let cleaned = trimmed
+
+        
+        tokens = msg.split(' ')
+
+        tokens.forEach(token=>{
+            
+            let word = dictionary.getSubstitute(token)
+
+            if ( word != null ){
+                // console.log('>> Testing: ',token, ' replace to', word )
+                cleaned = cleaned.replace(token,word)
             }
 
         })
 
-        console.log(`Engine::getReply (after levenshtien msg) / ${msg}`)
-
-        // step 4 Do substitutions
+        // reconstructed message
+        let reconstructed = cleaned
         
+
+        // summary start
+        console.log(`Engine::getReply [Raw Text] - ${msg}`)
+        console.log(`Engine::getReply [Cleaned Message] - ${cleaned}`)
+        for ( let word in replacements ){
+            console.log(`\tFrom ${word} to ${replacements[word]}`)
+        }
+        console.log(`Engine::getReply [Reconstructed] - ${reconstructed}`)
+        // summary end
+
         // step 5
-        let lang = this.classifierLanguage.getPrediction(msg)
-        console.log(`Engine::getReply / msg == ${msg}`)
-        console.log(`Engine::getReply / Predicted language == ${lang}`)
+        let lang = this.classifierLanguage.getPrediction(reconstructed)
+        
+        console.log(`Engine::getReply [Language Predicted] - ${lang}`)
+        // console.log(`Engine::getReply / msg == ${msg}`)
 
         // IMPORTANT TASK
         // get the ranking order and iterate through it
 
-
         // step 6 
         // select which selfcare dimension ranks higher
 
-        
-
         // returns an array
-        let searchOrder = this.RULES_DIMENSION_CLASSIFIERS[lang].getPredictionOrder(msg)
-        let searchDimensionLength = searchOrder.length
+        let searchOrder = this.RULES_DIMENSION_CLASSIFIERS[lang].getPredictionOrder(reconstructed)
 
 
         // let dimensionScanned = [dimension]
-        let selfcareDimension = 0;
 
-        console.log(`Engine:: getReply (scanning dimensions through pattern matching) /  ${selfcareDimension} - Total dimensions = ${this.SELFCARE_DIMENSIONS.length}`)
-        
+        let target = null
+
         for ( let dimension of searchOrder){
-            let target = dimension.class
-            reply = this.memory[lang][target].getReplyUsingPatternMatching(msg)
+            target = dimension.class
+            reply = this.memory[lang][target].getReplyUsingPatternMatching(reconstructed)
             if (reply != null) {
-                // dimensionScanned.push(dimIndex)
-                console.log(`\tFuond Reply:: (Dimension::${target}) `, reply)
                 break;
             }
         }
 
-        if (reply == null) {
+        console.log(`Engine::getReply [Attempting Pattern Matching]`)
+        console.log(`\tTarget Dimension - ${target}`)
+        console.log(`\tTarget Response  - ${reply}`)
+        // this.memory[lang][target].getReplyUsingBM25(reconstructed)
 
-            console.log(`Engine::getReply / Pattern matching had no response. Attempting cosine similarity `)
+        if (reply == null) {
+            console.log(`Engine::getReply [Attempting Cosine Similarity]`)
             
             let similarityScorePerDimension = []
             for ( let dimension of searchOrder){
                 let target = dimension.class
-                similarityScorePerDimension.
-                    push(this.memory[lang][target].getReplyUsingCosineSimilarity(msg))
-           }
-
-           let max = similarityScorePerDimension[0]
-           for (let i = 1; i < similarityScorePerDimension.length; i++){
-            if ( max.cosine < similarityScorePerDimension[i].cosine){
-                max = similarityScorePerDimension[i]
+                similarityScorePerDimension.push(this.memory[lang][target].getReplyUsingCosineSimilarity(reconstructed)) 
             }
 
-            // there should be a tweak here.. 
-            // to use cosine similariy.
-            // 1. at least 50 of the words in msg should be seen in the patterns
-           }
+            let max = similarityScorePerDimension[0]
+
+            for (let i = 1; i < similarityScorePerDimension.length; i++){
+                if ( max.cosine < similarityScorePerDimension[i].cosine){
+                    max = similarityScorePerDimension[i]
+                }
+                // there should be a tweak here.. 
+                // to use cosine similariy.
+                // 1. at least 50 of the words in msg should be seen in the patterns
+            }
            
-           reply = max.reply
+            reply = max.reply
+            
             // if reply still null
             // then we couldnt find the repsonse
             if ( reply == null ){
                 reply = 'Im sorry, I am unable to determine how to respond to that question'
-                console.log(`Engine::getReply (output) / ${reply}\n\n`)
-            }else{
-                console.log(`Engine::getReply (output from cosine matching) / ${reply}\n\n`)
             }
+            
+            console.log(`Engine::getReply [Cosine Similarity Response] - ${reply}\n`)
+        
         }else{
-            console.log(`Engine::getReply (output from pattern matching) / ${reply}\n\n`)
+
+            console.log(`Engine::getReply [Retrieving pattern matching] - ${reply}\n`)
+        
         }
 
         return reply
