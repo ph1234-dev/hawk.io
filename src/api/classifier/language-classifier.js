@@ -79,7 +79,13 @@ export default class LanguageClassifier extends NaiveBayes{
     }
 
     printVocabulary(){
-        super.print().vocabulary()
+        super.get().vocabulary()
+    }
+
+    printVocabularyWithUnderscores(){
+        let vocab = super.get().vocabularyWithUnderscores()
+        console.log(`Vocabulary with underscores`)
+        console.log(vocab)
     }
 
     /**

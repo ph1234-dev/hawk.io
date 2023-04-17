@@ -208,7 +208,10 @@ export default class NaiveBayes{
             return b[1] - a[1]
         })
 
-        console.log("NaiveBayes:: Probability Order (get prediction order) / ", pool)
+        // console.log("NaiveBayes:: Showing Probability Order of Dimensions ")
+        // pool.forEach(dim=>{
+        //     console.log(`\tDimension [${dim.class}] - Probability[${dim.probability}] `)
+        // })
         return pool
     }
 
@@ -274,7 +277,7 @@ export default class NaiveBayes{
         return this.vocabulary
     }
 
-    print(){
+    get(){
         console.log("print")
         return{
             training_data: ()=>{
@@ -286,6 +289,12 @@ export default class NaiveBayes{
                 console.log(this.vocabulary)
                 // return this.vocabulary.length
                 return this.vocabulary
+            },
+            vocabularyWithUnderscores:()=>{
+                let vocab = this.vocabulary.filter((word)=>{
+                    return word.includes('_')
+                })
+                return vocab
             },
             prior_probabilities: ()=>{
                 console.log("Prior probabilities")
