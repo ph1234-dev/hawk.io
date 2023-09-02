@@ -1,484 +1,385 @@
-import { encodeMemory } from "@/api/configuration/model"
+import { encodeMemory } from "@/api/config/model"
+
 
 // you need to substitute diarrhea into pag tatae or can be both
 
 let section4 = [
     encodeMemory([
-        `* (bakit|paano|kailan) * mahina * immune system * diarrhea * `,
-        //chatgpt start
-        "Ano ang dahilan kung bakit maaaring magka-diarrhea ang isang tao kapag mahina ang kanyang immune system?",
-        "Paano nangyayari na kapag mahina ang immune system, maari itong magka-diarrhea?",
-        "Bakit maari magka-diarrhea ang isang tao kapag mahina ang kanyang immune system?",
-        "Ano ang koneksyon ng mahinang immune system sa pagkakaroon ng diarrhea?",
-        "Kung mahina ang immune system, bakit prone ang isang tao sa pagkakaroon ng diarrhea?",
-        "Bakit sa mga taong may mahinang immune system ay maari magka-diarrhea?",
-        "Ano ang epekto ng mahinang immune system sa katawan na maari nitong magka-diarrhea?",
-        "Kung mayroong mahinang immune system, ano ang maaaring sanhi ng pagkakaroon ng diarrhea?",
-        "Bakit maaring magka-diarrhea ang isang tao kapag may mahinang immune system?",
-        "Paano nakakaapekto ang mahinang immune system sa pagkakaroon ng diarrhea ng isang tao?"
-        //chatgpt end
+        `* mahina * immune * diarrhea *`,
+        `Ano ang dahilan kung bakit maaaring magka-diarrhea ang isang tao kapag mahina ang kanyang immune system?`,
+        `Ano ang epekto ng mahinang immune system sa katawan na maari nitong magka-diarrhea?`,
+        `Bakit maari magka-diarrhea ang isang tao kapag mahina ang kanyang immune system?`,
+        `Bakit maaring magka-diarrhea ang isang tao kapag may mahinang immune system?`,
+        `Bakit sa mga taong may mahinang immune system ay maari magka-diarrhea?`,
+        `Kung mahina ang immune system, bakit prone ang isang tao sa pagkakaroon ng diarrhea?`,
+        `Paano nakakaapekto ang mahinang immune system sa pagkakaroon ng diarrhea ng isang tao?`,
+        `Paano nangyayari na kapag mahina ang immune system, maari itong magka-diarrhea?`,
+        `bakit humihina ang immune system pag may diarrhea`,
     ], [
-        `Kung parati kang nagtatae, umuutot o kinakabag, baka mahina ang iyong resistensya.`
-    ], 1),
-    encodeMemory([
-        `* (bakit|paano|kailan) * tamis  * diarrhea *`,
-        //chatgpt start
-        "Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kung mahilig ka sa matatamis?",
-        "Paano nakakaapekto ang sobrang pagkain ng matatamis sa katawan na nagdudulot ng diarrhea?",
-        "Bakit nakakapagdulot ng diarrhea ang sobrang pagkain ng matatamis?",
-        "Ano ang maaaring sanhi ng pagkakaroon ng diarrhea kung mahilig ka sa matatamis?",
-        "Bakit mas prone sa diarrhea ang mga mahilig sa matatamis?",
-        "Paano nakakaapekto ang pagiging mahilig sa matatamis sa pagkakaroon ng diarrhea?",
-        "Bakit dapat iwasan ang sobrang pagkain ng matatamis para maiwasan ang diarrhea?",
-        "Ano ang epekto ng sobrang tamis sa katawan na nagdudulot ng diarrhea?",
-        "Bakit hindi maganda ang sobrang pagkain ng matatamis para sa kalusugan ng tiyan?",
-        "Ano ang koneksyon ng pagiging mahilig sa matatamis sa pagkakaroon ng diarrhea?"
-        //chatgpt end
-    ], [
-        `May mga taong nahihirapang I digest ang sorbitol na makikita sa mga nabibiling pagkain`
-    ], 1),
-    encodeMemory([
-        `* (bakit|paano|kailan) * allergy * pagkain  * diarrhea *`,
-        //chatgpt start
-        "Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kapag may allergy ka sa pagkain?",
-        "Paano nakakaapekto ang allergy sa pagkain sa pagkakaroon ng diarrhea o pagtatae?",
-        "Bakit nakakapagdulot ng diarrhea o pagtatae ang allergy sa pagkain?",
-        "Ano ang maaaring sanhi ng pagkakaroon ng diarrhea o pagtatae kapag may allergy sa pagkain?",
-        "Bakit mas prone sa diarrhea o pagtatae ang mga may allergy sa pagkain?",
-        "Paano nakakaapekto ang pagkakaroon ng allergy sa pagkain sa kalusugan ng tiyan?",
-        "Bakit dapat iwasan ang pagkain ng mga pagkain na mayroon kang allergy para maiwasan ang diarrhea o pagtatae?",
-        "Ano ang epekto ng allergy sa pagkain sa katawan na nagdudulot ng diarrhea o pagtatae?",
-        "Bakit hindi maganda ang sobrang pagkain ng mga pagkain na mayroon kang allergy para sa kalusugan ng tiyan?",
-        "Ano ang koneksyon ng pagkakaroon ng allergy sa pagkain sa pagkakaroon ng diarrhea o pagtatae?"
-        //chatgpt end
-    ], [
-        `Ang mga hindi natunaw na disacchirides ay nakakahatak ng tubig at electrolytes sa katawan. Dahil dito, maaring hindi na aabsorb ng nutrients galling sa pagkain.`
-    ], 1),
-    encodeMemory([
-        `* (bakit|paano|kailan) * malnutrition  * diarrhea *`,
-        //chatgpt start
-        "Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kapag nakakaranas ka ng malnutrition?",
-        "Paano nakakaapekto ang malnutrition sa pagkakaroon ng diarrhea o pagtatae?",
-        "Bakit nakakapagdulot ng diarrhea o pagtatae ang malnutrition?",
-        "Ano ang maaaring sanhi ng pagkakaroon ng diarrhea o pagtatae kapag nakakaranas ka ng malnutrition?",
-        "Bakit mas prone sa diarrhea o pagtatae ang mga taong nakakaranas ng malnutrition?",
-        "Paano nakakaapekto ang pagkakaroon ng malnutrition sa kalusugan ng tiyan?",
-        "Bakit mahalaga ang tamang nutrisyon upang maiwasan ang diarrhea o pagtatae?",
-        "Ano ang epekto ng malnutrition sa katawan na nagdudulot ng diarrhea o pagtatae?",
-        "Bakit hindi maganda ang sobrang pagkakaroon ng malnutrition para sa kalusugan ng tiyan?",
-        "Ano ang koneksyon ng pagkakaroon ng malnutrition sa pagkakaroon ng diarrhea o pagtatae?"
-        //chatgpt end
-    ], [
-        `Ang malabsorption ay pwedeng makapagbigay ng diarrhea at maaring magdulot ng kakulangan sa nutrisyon. Kapag Malala ito, maaring ang isang pangmataglang pagtatae ay hindi gagaling dahil sa mahinang resistensya sa katawan at mahinang mucosal recovery. Nakakapalala din ng matagalang pag tatae ang food intolerance and hindi magandang diet.`
-    ], 1),
-    encodeMemory([
-        `* (bakit|paano|kailan) * gamot  * diarrhea *`,
-        //chatgpt start
-        "Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kapag uminom ka ng gamot?",
-        "Paano nakakaapekto ang pag-inom ng gamot sa iyong tiyan na maaaring magdulot ng diarrhea o pagtatae?",
-        "Bakit may mga gamot na nakakadulot ng diarrhea o pagtatae?",
-        "Ano ang epekto ng gamot sa tiyan na nagdudulot ng diarrhea o pagtatae?",
-        "Bakit kailangan ng pag-iingat sa pag-inom ng gamot upang maiwasan ang pagkakaroon ng diarrhea o pagtatae?",
-        "Paano mo malalaman kung ang diarrhea o pagtatae mo ay sanhi ng pag-inom ng gamot?",
-        "Bakit hindi dapat basta-basta uminom ng gamot upang maiwasan ang diarrhea o pagtatae?",
-        "Ano ang mga gamot na may mataas na posibilidad na magdulot ng diarrhea o pagtatae?",
-        "Paano maiiwasan ang pagkakaroon ng diarrhea o pagtatae dahil sa pag-inom ng gamot?",
-        "Ano ang dapat gawin kapag nagdulot ng diarrhea o pagtatae ang pag-inom ng gamot?"
-        //chatgpt end
-    ], [
-        `Ang diarrhea ay maaring seryosong epekto ng mga gamot. Ito ay maaring paunang senyales ng pagkalason sa mga gamot.`,
-    ], 1),
-    encodeMemory([
-        `* (bakit|paano|kailan) * parasite * infection  * diarrhea *`,
-        //chatgpt start
-        "Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae dahil sa parasite?",
-        "Paano nakakahawa ang mga parasite at magdudulot ng diarrhea o pagtatae?",
-        "Bakit importante ang proper hygiene para maiwasan ang pagkakaroon ng parasitic infection?",
-        "Ano ang mga sintomas ng parasitic infection na maaaring magdulot ng diarrhea o pagtatae?",
-        "Paano maiiwasan ang pagkakaroon ng parasitic infection na nagdudulot ng diarrhea o pagtatae?",
-        "Bakit kailangan ng pagpapatingin sa doktor kapag nagkaroon ng parasitic infection na mayroong diarrhea o pagtatae?",
-        "Paano ma-diagnose ang parasitic infection na sanhi ng diarrhea o pagtatae?",
-        "Ano ang mga pagkain na dapat iwasan para maiwasan ang pagkakaroon ng parasitic infection?",
-        "Bakit mahalagang magpakonsulta sa doktor upang malaman kung anong uri ng parasite ang nagdudulot ng diarrhea o pagtatae?",
-        "Paano matutukoy kung ang diarrhea o pagtatae ay sanhi ng parasitic infection?"
-        //chatgpt end
-    ], [
-        `Ang parasites ay maaaring dumikit as bituka ng tao at pwede maka sira sa kakayahan ng katawan na sumipsip ng fats at carbohydrates sa mga tinutunaw na pagkain.`
-    ], 1),
-    encodeMemory([
-        `* (bakit|paano|kailan) * bacterial * infection  * diarrhea *`,
-        //chatgpt start
-        "Paano nakakapagdulot ng diarrhea o pagtatae ang mga bakterya?",
-        "Bakit nakakalason ang ilang uri ng bakterya at nagdudulot ng diarrhea o pagtatae?",
-        "Ano ang mga pangunahing uri ng mga bakterya na nagdudulot ng diarrhea o pagtatae?",
-        "Bakit mahalagang maghugas ng kamay upang maiwasan ang pagkakaroon ng bacterial infection?",
-        "Paano maipapakita ang tamang paglilinis ng mga kagamitan at paligid upang maiwasan ang pagkakaroon ng bacterial infection?",
-        "Bakit kailangan ng wastong pagluluto at pag-iingat sa pagkain upang maiwasan ang pagkakaroon ng bacterial infection?",
-        "Paano nagkakaroon ng bacterial overgrowth sa ating digestive system at nakakapagdulot ng diarrhea o pagtatae?",
-        "Bakit dapat maiwasan ang pag-inom ng contaminated na tubig upang hindi magka-bacterial infection?",
-        "Ano ang mga sintomas ng bacterial infection at paano ito maaaring maiwasan?",
-        "Bakit mahalagang magpakonsulta sa doktor kapag mayroong bacterial infection na nagdudulot ng diarrhea o pagtatae?"
-        //chatgpt end
-    ], [
-        `Ang bacterial gastroenteritis ay nangyayari kapag bakterya ang dulot ng impeksyon sa iyong bituka. Ang impeksyong dulot nito ay nakakadulot ng pamamaga sa tiyan at bituka.`
-    ], 1),
-    encodeMemory([
-        `* (bakit|paano|kailan) * virus * infection  * diarrhea *`,
-        //chatgpt start
-        "Paano nakakapagdulot ng diarrhea o pagtatae ang mga virus?",
-        "Ano ang mga pangunahing uri ng mga virus na nagdudulot ng diarrhea o pagtatae?",
-        "Bakit mahalagang maghugas ng kamay upang maiwasan ang pagkakaroon ng viral infection?",
-        "Paano maipapakita ang tamang paglilinis ng mga kagamitan at paligid upang maiwasan ang pagkakaroon ng viral infection?",
-        "Bakit kailangan ng wastong pagluluto at pag-iingat sa pagkain upang maiwasan ang pagkakaroon ng viral infection?",
-        "Paano nakakahawa ang viral infection at paano ito maaaring maiwasan?",
-        "Ano ang mga sintomas ng viral infection na nagdudulot ng diarrhea o pagtatae?",
-        "Bakit dapat maiwasan ang pag-inom ng contaminated na tubig upang hindi magka-viral infection?",
-        "Ano ang mga pamamaraan sa paggamot ng viral infection na nagdudulot ng diarrhea o pagtatae?",
-        "Bakit mahalagang magpakonsulta sa doktor kapag mayroong viral infection na nagdudulot ng diarrhea o pagtatae?"
-        //chatgpt end
-    ], [
-        `Ang viral gastroenteritis ay isang pamamaga sa lining ng bituka. Ito ay maaring sanhi ng mga virus tulad ng rotavirus, norovirus, adenovirus at iba pa. Ang mga sanggol ay pwedeng protektahan gamit ang bakuna. Ang kadalasang sintomas nito ay pagkahilo, pagsusuka at matubig na pagtatae.`
-    ], 1),
-    encodeMemory([
-        `* (bakit|paano|kailan) * sakit * tiyan * diarrhea *`,
-        //chatgpt start
-        "Bakit pag masakit ang tiyan, may posibilidad na magkaroon ng diarrhea?",
-        "Ano ang dahilan kung bakit mayroong pagtatae kapag masakit ang tiyan?",
-        "Bakit pag may sakit sa tiyan, pwede kang magka-diarrhea?",
-        "Bakit ang sakit ng tiyan ay maaaring magdulot ng pagtatae?",
-        "Bakit masakit ang tiyan ay maaaring magdulot ng diarrhea?",
-        "Bakit pag masakit ang tiyan, may posibilidad na magka-tae?",
-        "Anong koneksyon ng sakit ng tiyan sa pagkakaroon ng diarrhea?",
-        "Bakit pag masakit ang tiyan, mayroong tendency na magkaroon ng pagtatae?",
-        "Bakit kapag may sakit ang tiyan, maari kang magka-diarrhea?",
-        "Bakit ang masakit na tiyan ay maaaring magdulot ng pagtatae o diarrhea?"
-        //chatgpt end
-    ], [
-        `Ang pagtatae ay maaring sanhi ng abnormalidad o sakit sa maliit at malaking bituka. Ngunin ito rin ay maaring sanhi ng ibang sakit tulad ng IBS, Chrons disease, Ulcerative colitis, celiac disease, microscopic colitis at small intestinal bacterial overgrowth (SIBO).`
-    ], 1),
-    encodeMemory([
-        `* (paano|saan) * kuha * diarrhea * `,
-        `* kuha * diarrhea * (paano|saan) *`,
-        //chatgpt start
-        "Anong mga paraan para magka-diarrhea o pagtatae ang isang tao?",
-        "Saan maaaring makuha ang diarrhea o pagtatae?",
-        "Ano-ano ang mga sanhi ng pagkakaroon ng diarrhea o pagtatae?",
-        "Paano nakukuha ang pagtatae o diarrhea?",
-        "Ano-ano ang mga dahilan kung bakit nagkakaroon ng diarrhea o pagtatae?",
-        "Paano magkakaroon ng diarrhea o pagtatae?",
-        "Mga pangkaraniwang paraan para magka-diarrhea o pagtatae?",
-        "Ano ang mga pinagmumulan ng diarrhea o pagtatae?",
-        "Ano ang mga paraan ng pagkakahawa ng diarrhea o pagtatae?",
-        "Paano nakukuha ng isang tao ang diarrhea o pagtatae?",
-        "Ano ang mga sanhi ng pagkakaroon ng diarrhea o pagtatae?",
-        "Saan nagmumula ang diarrhea o pagtatae?",
-        "Paano nangyayari ang pagkakaroon ng diarrhea o pagtatae?",
-        "Ano ang mga bagay na nagdudulot ng diarrhea o pagtatae?",
-        //chatgpt end
-    ], [
-        `Maraming paraan para maka diarrhea o magtaetae. Heto ang madalas na dahilan. Kapag mahina ang iyong resistnensya at may problema ka sa bituka. Maaring maging epekto ng gamot na kinain mo.  Pero madalas talaga, ang sanhi ng pagtatae ay pagkain. Iyong ibang mga tao may mga food allergy o bawal kumain ng mga natatanging pagkain. Iyong iba naman hindi kayang tunawing ang pagkaing may gatas, sorbitol, pampatamis, at fructose na madalas nakikita sa mga pinoprosesong pagkain.`
-    ], 1),
-    // encodeMemory([
-    //     `* kuha * diarrhea * diarrhea_causes * `,
-    //     //chatgpt start
+        `
+        Ang mahinang immune system ay hindi gaanong epektibo sa pagtatanggol ng katawan laban sa mga nakakapinsalang pathogen. Dahil dito, ang mga impeksyong ito ay maaaring magdulot ng pamamaga at pangangati a nagreresulta sa pagtatae.
+
+        Ang pagtatae ay kadalasang paraan para alisin ng katawan ang mga nakakapinsalang bacteria at lason sa bituka. Maaaring pigilan ng nakompromisong immune system ang katawan sa epektibong pagtugon sa mga mananakop na ito, na nagreresulta sa patuloy na pagtatae. Bukod pa rito, ang mahinang immune system ay maaaring makagambala sa balanse sa pagitan ng mabuti at masamang bakterya sa bituka, na nagpapahintulot sa mga nakakapinsalang bakterya na lumaki at maging sanhi ng pagtatae. 
         
-    //     //chatgpt end
-    // ], [
-    //     `Oo. May mga ulat na pwede kang magtaetae dahil jan. Kaya mag ingat ka. Kapag meron ka nito wag ka mag panic. Mawawala din ito ng kusa. May mga gamot kang pwede gamitin para maibsan ang dinadanas mo. Ngunit kapag nagdudugo ang iyong pagtatae, mas mabuting magpatingin ka sa doctor o ospital`
-    // ], 1),
-    // encodeMemory([
-    //     `* kuha * diarrhea * diarrhea_unabsorbable_sugar_to_some * *`,
-    //     //chatgpt start
-        
-    //     //chatgpt end
-    // ], [
-    //     ``
-    // ], 1),
-    encodeMemory([
-        `* ano * (trigger|dulot|resulta|bigay|dahilan) * diarrhea `,
-        //chatgpt start
-        "Ano-ano ang mga dahilan ng pagkakaroon ng diarrhea o pagtatae ng isang tao?",
-        "Mga bagay na maaaring magdulot ng pagtatae o diarrhea sa isang tao.",
-        "Ano ang mga pangunahing sanhi ng pagkakaroon ng diarrhea o pagtatae?",
-        "Mga nakapagpapahirap na pagkain na maaaring magdulot ng pagtatae o diarrhea.",
-        "Ano-ano ang mga bakterya o virus na maaring magdulot ng diarrhea o pagtatae?",
-        "Mga pagkain o inumin na maaaring magdulot ng diarrhea o pagtatae.",
-        "Mga posibleng dahilan ng panandaliang pagkakaroon ng diarrhea o pagtatae.",
-        //chatgpt end
-    ], [
-        `Ayon sa mga ulat, pwede kang magtaetae dahil sa mga impeksyong dulot ng bacteria, virus, at parasites. Kapag mahina resistensya mo , mas Malaki ang tsansang magkaroon ka nito. Lalo na kapag ikaw ay may problema sa bituka. Ang pagtatae ay maari ding epekto ng gamot. Sa usaping pagkain, iyong may mga lactose, fructose at sorbitol naman ay pwedeng  din makapagpataetae kung hindi mo kaya ng katawan mo tunawin ito.`
+        Sa pangkalahatan, ang mahinang immune system ay nagiging mas madaling kapitan sa mga impeksyon sa bituka na maaaring magdulot ng pagtatae. Mahalagang magkaroon ng malusog na diyeta, maraming pahinga, at pagiging malinis dahil maaari itong makatulong na mabawasan ang panganib ng mga impeksyong ito at maiwasan ang pagtatae.
+        `
     ], 1),
-    // encodeMemory([
-    //     `* diarrhea_causes * diarrhea * `,
-    //     //chatgpt start
+    encodeMemory([
+        `* tamis * diarrhea *`,
+        `Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kung mahilig ka sa matatamis?`,
+        `Ano ang epekto ng sobrang pagkain ng matatamis sa katawan na nagdudulot ng diarrhea?`,
+        `Bakit dapat iwasan ang sobrang pagkain ng matatamis para maiwasan ang diarrhea?`,
+        `Bakit hindi maganda ang sobrang pagkain ng matatamis para sa kalusugan ng tiyan?`,
+        `Bakit nakakapagdulot ng diarrhea ang sobrang pagkain ng matatamis?`,
+        `Paano nakakaapekto ang pagiging mahilig sa matatamis sa pagkakaroon ng diarrhea?`,
+        `Paano nakakaapekto ang sobrang pagkain ng matatamis sa katawan na nagdudulot ng diarrhea?`,
+        `bakit ang pagkain ng matamis ay  diarrhea`,
+    ], [
+        `Ang mga matamis ay maaaring mag-trigger ng pagtatae dahil sa kanilang kakayahang lumikha ng isang osmotic na epekto sa mga bituka, kumukuha ng tubig mula sa katawan patungo sa digestive tract, at dahil din sa kanilang kakayahang pasiglahin ang paggawa ng mga digestive enzymes at dagdagan ang paggalaw ng bituka, na humahantong sa hindi kumpletong pagsipsip ng sustansya at tubig.
         
-    //     //chatgpt end
-    // ], [
-    //     `Oo kaibigan. Pwedeng pwede yan makapagpa tae tae.`
-    // ], 1),
+        Gayundin, kung minsan ang mga matatamis ay hindi masyadong nasisipsip ng katawan at maaaring mag-ferment sa bituka, na nagiging sanhi ng gas, bloating at pagtatae sa mga madaling kapitan. Halimbawa, ang mga taong lactose-intolerant ay kulang sa enzyme lactase, na kinakailangan upang masira ang lactose sa gatas at mga produkto ng pagawaan ng gatas. Kung ang lactose ay hindi nasira nang maayos, maaari itong maging sanhi ng pagtatae`
+    ], 1),
+    encodeMemory([
+        `* allergy * diarrhea *`,
+        `Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kapag may allergy`,
+        `Bakit nakakapagdulot ng diarrhea  ang allergy?`,
+        `Paano nakakaapekto ang allergy sa pagkain sa pagkakaroon ng diarrhea ?`,
+        `Paano nakakaapekto ang pagkakaroon ng allergy sa kalusugan ng tiyan?`,
+        `bakit ang allergy ng matamis ay diarrhea`,
+    ], [
+        `Ang mga allergy ay maaaring mag-trigger ng pagtatae bilang resulta ng immune response ng katawan sa isang allergen. Kapag may nakitang allergen, ang immune system ay naglalabas ng histamine at iba pang mga kemikal na maaaring magdulot ng pamamaga at pangangati sa bituka. 
+        
+        Ang pamamaga na ito ay maaaring humantong sa pagtaas ng paggalaw ng bituka, pagbawas ng pagsipsip ng tubig, at ang pagtatago ng labis na likido sa mga bituka, na nagreresulta sa pagtatae.`
+    ], 1),
+    encodeMemory([
+        `* malnutrition * diarrhea *`,
+        `Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kapag nakakaranas ka ng malnutrition?`,
+        `Ano ang epekto ng malnutrition sa katawan na nagdudulot ng diarrhea ?`,
+        `Ano ang koneksyon ng pagkakaroon ng malnutrition sa pagkakaroon ng diarrhea ?`,
+        `Bakit hindi maganda ang sobrang pagkakaroon ng malnutrition para sa kalusugan ng tiyan?`,
+        `Bakit mahalaga ang tamang nutrisyon upang maiwasan ang diarrhea ?`,
+        `Bakit mas prone sa diarrhea  ang mga taong nakakaranas ng malnutrition?`,
+        `Bakit nakakapagdulot ng diarrhea  ang malnutrition?`,
+        `Paano nakakaapekto ang malnutrition sa pagkakaroon ng diarrhea ?`,
+        `Paano nakakaapekto ang pagkakaroon ng malnutrition sa kalusugan ng tiyan?`,
+        `bakit pag hindi kumain ng tama ang tao ay pwedeng magka diarrhea`,
+    ], [
+        `Ang malnutrisyon ay maaaring humantong sa pagtatae dahil pinapahina nito ang immune system kaya nagiging mas madaling magka impeksyon ang isang tao. Pinapahina din ng malnutrisyon ang lining ng bituka, kung saan ang bakterya at mga lason ay mas madaling makapasok sa daluyan ng dugo na nagiging sanhi ng pagtatae. Ang malnutrisyon ay maaaring ding sirain ang balanse ng bakterya sa tyan na humahantong sa pagbaba ng immune response at pagtaas ng pamamaga ng bituka na maaaring humantong sa pagtatae.`
+    ], 1),
+    encodeMemory([
+        `Ano ang dahilan kung bakit mayroong pagtatae kapag may problema sa bituka`,
+        `Bakit ang sakit sa bituka ay maaaring magdulot ng pagtatae?`,
+        `Bakit kapag may sakit ang tiyan, maari kang magka-diarrhea?`,
+    ], [
+        `Ang pagtatae ay maaring sanhi ng abnormalidad o sakit sa maliit at malaking bituka.Halimbawa, ang pamamaga, pangangati at pinsala sa lining ng bituka ay maaaring sanhi ng mga kondisyon tulad ng Inflammatory Bowel Disease, Ulcerative colitis, small intestinal bacterial overgrowth,  Irritable bowel Syndromes o Celiac disease na humahantong sa Diarrhoea.`
+    ], 1),
+    encodeMemory([
+        `Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kapag uminom ka ng gamot?`,
+        `Ano ang epekto ng gamot sa tiyan na nagdudulot ng diarrhea ?`,
+        `Bakit kailangan ng pag-iingat sa pag-inom ng gamot upang maiwasan ang pagkakaroon ng diarrhea ?`,
+        `Bakit may mga gamot na nakakadulot ng diarrhea ?`,
+        `Paano nakakaapekto ang pag-inom ng gamot sa iyong tiyan na maaaring magdulot ng diarrhea ?`,
+    ], [
+        `Ang pagtatae ay maaaring isang senyales ng seryosong reaksyon ng isang gamot. Halimbawa, ang mga antibiotic ay maaaring makagambala sa balanse ng mabuti at masamang bakterya sa bituka, na humahantong sa pagtatae. Ang mga nonsteroidal anti-inflammatory drugs o nsaid ay maaaring makairita sa lining ng tiyan, na nagiging sanhi ng pamamaga at pagtatae. At saka, ang ilang mga gamot tulad ng mga laxative at chemotherapy ay maaaring magstimulate ng bituka at pwedeng humantong sa madalas na paggalaw ng bituka at pagtatae.`,
+    ], 1),
+    encodeMemory([
+        `* parasite * diarrhea *`,
+        `Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae dahil sa parasite?`,
+        `Ano ang mga parasitic infection na maaaring magdulot ng diarrhea ?`,
+        `Bakit importante ang proper hygiene para maiwasan ang pagkakaroon ng parasitic infection?`,
+        `Paano ma-diagnose ang parasitic infection na sanhi ng diarrhea ?`,
+        `Paano maiiwasan ang pagkakaroon ng parasitic infection na nagdudulot ng diarrhea ?`,
+        `Paano matutukoy kung ang diarrhea  ay sanhi ng parasitic infection?`,
+        `bakit ang parasite ay nakapagtatae`
+    ], [
+        `Ang parasites ay maaaring dumikit as bituka na nagdudulot ng pinsala at naglalabas ng mga lason na maaaring mag-trigger ng immune response at pamamaga. Ang pamamaga na ito ay maaaring humantong sa mas madalas na paggalaw ng bituka, pagbawas ng pagsipsip ng tubig, at labis na pagkaubos ng likido ng katawan na nagreresulta sa pagtatae. At saka, ang ilang mga parasito ay maaaring gumawa ng mga enzyme na nakakasagabal sa pagsipsip ng mga sustansya na humahantong sa malabsorption at pagtatae.
+        `
+    ], 1),
+    encodeMemory([
+        `* bacterial * diarrhea *`,
+        `Ano ang bacterial infection at paano ito maaaring maiwasan?`,
+        `Bakit dapat maiwasan ang pag-inom ng contaminated na tubig upang hindi magka-bacterial infection?`,
+        `Bakit kailangan ng wastong pagluluto at pag-iingat sa pagkain upang maiwasan ang pagkakaroon ng bacterial infection?`,
+        `Bakit mahalagang maghugas ng kamay upang maiwasan ang pagkakaroon ng bacterial infection?`,
+        `Paano nakakapagdulot ng diarrhea  ang mga bakterya?`,
+        `bakit ang bacterial ay nakapagtatae`
+    ], [
+        `Ang mga impeksyon dulot ng bakterya ay maaaring magdulot ng pagtatae dahil sa ito ay nakakalason. Ito ay pumipinsala sa bituka, na nagiging sanhi ng pamamaga at pangangati. At saka ang mga bakterya ay nag tritrigger sa paglabas ng tubig sa katawan ng dahil sa pagtatae. Ang mga bakterya nag naglalabas ng mga enzymes na nakakaapekto sa kakayahan ng bituka na sumipsip ng nutrisyon at tubig na pwedeng humantong sa malabsorption.`
+    ], 1),
+    encodeMemory([
+        `* virus * diarrhea *`,
+        `Ano ang mga pamamaraan sa paggamot ng viral infection na nagdudulot ng diarrhea ?`,
+        `Ano ang mga pangunahing uri ng mga virus na nagdudulot ng diarrhea ?`,
+        `Ano ang mga viral infection na nagdudulot ng diarrhea ?`,
+        `Paano nakakahawa ang viral infection at paano ito maaaring maiwasan?`,
+        `Paano nakakapagdulot ng diarrhea  ang mga virus?`,
+        `bakit ang bacterial ay nakapagtatae`
+    ], [
+        `Ang mga impeksyong dulot ng mga virus ay maaaring humantong sa pinsala sa lining ng bituka, na maaaring magpababa sa kakayahan ng iyong katawan na sumipsip ng tubig at nutrients. Ang mga virus ay maaaring magagpapalabas sa katawan ng mga kemikal na nagpapataas ng motility ng bituka, na hahantong sa pagtatae. 
+        
+        Mayroong iba't ibang mga virus na maaaring magdulot ng pagtatae, kabilang ang mga norovirus, rotavirus at adenovirus na madaling kumalat sa pamamagitan ng kontaminadong pagkain o tubig; malapit na pakikipag-ugnayan sa isang taong nahawahan.
+        `
+    ], 1),
+    encodeMemory([
+        `* kuha * diarrhea *`,
+        `Ano ang mga bagay na nagdudulot ng diarrhea ?`,
+        `Ano ang mga paraan ng pagkakahawa ng diarrhea ?`,
+        `Ano ang mga pinagmumulan ng diarrhea ?`,
+        `Ano ang mga sanhi ng pagkakaroon ng diarrhea ?`,
+        `Ano-ano ang mga dahilan kung bakit nagkakaroon ng diarrhea ?`,
+        `Ano-ano ang mga sanhi ng pagkakaroon ng diarrhea ?`,
+        `Anong mga paraan para magka-diarrhea  ang isang tao?`,
+        `Mga pangkaraniwang paraan para magka-diarrhea ?`,
+        `Paano magkakaroon ng diarrhea ?`,
+        `Paano nakukuha ang pagtatae o diarrhea?`,
+        `Paano nakukuha ng isang tao ang diarrhea ?`,
+        `Paano nangyayari ang pagkakaroon ng diarrhea ?`,
+        `Saan maaaring makuha ang diarrhea ?`,
+        `Saan nagmumula ang diarrhea ?`,
+        `saan nakukuha ang pagtatae`
+    ], [
+        `Maraming bagay bagay na nag dudulot ng diarrhea o magtaetae. Halimbawa nito ay kapag mahina ang iyong resistnensya at may problema ka sa bituka. Maari ding epekto ito ng gamot na kinain mo.  Pero madalas talaga, ang sanhi ng pagtatae ay pagkain. Iyong ibang mga tao may mga food allergy o bawal kumain ng mga natatanging pagkain. Iyong iba naman hindi kayang tunawing ang pagkaing may gatas, sorbitol, pampatamis, at fructose na madalas nakikita sa mga pinoprosesong pagkain.`
+    ], 1),
+    encodeMemory([
+        `* dahilan * diarrhea `,
+        `* dulot * diarrhea `,
+        `* trigger * diarrhea `,
+        `Ano-ano ang mga dahilan ng pagkakaroon ng diarrhea  ng isang tao?`,
+        `anong Mga bagay na maaaring magdulot ng pagtatae o diarrhea sa isang tao.`,
+        `Ano ang mga pangunahing sanhi ng pagkakaroon ng diarrhea ?`,
+        `ang Mga nakapagpapahirap na pagkain na maaaring magdulot ng pagtatae o diarrhea.`,
+        `anong Mga pagkain na maaaring magdulot ng diarrhea .`,
+        `ano ang Mga posibleng dahilan ng panandaliang pagkakaroon ng diarrhea .`,
+        `ano ang dahilan ng pagtatae`
+    ], [
+        `
+        Ang kontaminasyon ng pagkain at tubig, halimbawa ay ang mga pagkain na hindi maayos na inihanda o pinangangasiwaan, ay maaaring magdulot ng pagtatae.
+
+        At saka, ang ilang mga gamot tulad ng mga antibiotic ay maaaring baguhin ang balanse ng bakterya sa iyong digestive tract at humantong sa mga gastrointestinal disorder.
+        
+        Ang stress, mga pagbabago sa dieta at mga ibang kondisyon ng katawan ay maaari ding mag-resulta sa pagkakaroon ng pagtatae. Ang panganib na magkaroon ng pagtatae ay maaaring mabawasan sa pamamagitan ng madalas na paglinis tulad ng ng madalas na paghuhugas ng kamay at ligtas na paghawak ng pagkain.`
+    ], 1),
 ]
 
 let section5 = [
     encodeMemory([
-        `*(bakit|paano) * hydrate  * (tulong|gamot|buti|galing) * diarrhea * `,
-        //chatgpt start
-        "Bakit nakakatulong ang pag-iinom ng tubig sa may diarrhea o pagtatae?",
-        "Ano ang magandang gawin sa may diarrhea o pagtatae upang mapanatili ang tamang hydration?",
-        "Bakit importante ang pag-iinom ng maraming tubig sa may diarrhea o pagtatae?",
-        "Paano makakatulong ang pagpapa-hydrate sa pagbabawas ng sintomas ng diarrhea o pagtatae?",
-        "Bakit dapat palaging mag-inom ng tubig ang may diarrhea o pagtatae?",
-        "Ano ang magandang uri ng inumin para sa may diarrhea o pagtatae upang mapanatili ang hydration?",
-        "Paano nakatutulong ang pag-inom ng mga electrolyte solution sa may diarrhea o pagtatae?",
-        "Bakit kailangan mag-inom ng sapat na tubig upang maiwasan ang dehydration dahil sa diarrhea o pagtatae?",
-        "Paano malalaman kung sapat na ang pag-inom ng tubig para sa may diarrhea o pagtatae?",
-        "Paano nakatutulong ang pag-inom ng coconut water sa may diarrhea o pagtatae?",
-        "Ano ang ibang uri ng pagkain o inumin na nakatutulong sa pagpapa-hydrate sa may diarrhea o pagtatae?",
-        "Bakit importante ang hydration para sa may diarrhea o pagtatae?",
-        //chatgpt end
+        `* hydrate  * treat * diarrhea * `,
+        `* tubig  * treat * diarrhea *`,
+        `Ano ang magandang gawin kung hindi kayang uminom ng malaking halaga ng tubig ang may diarrhea ?`,
+        `Ano ang magandang gawin sa may diarrhea  upang mapanatili ang tamang hydration?`,
+        `Ano ang magandang uri ng inumin para sa may diarrhea  upang mapanatili ang hydration?`,
+        `Bakit dapat palaging mag-inom ng tubig ang may diarrhea ?`,
+        `Bakit importante ang hydration o pag-iinom ng maraming tubig  para sa may diarrhea ?`,
+        `Bakit kailangan mag-inom ng sapat na tubig upang maiwasan ang dehydration dahil sa diarrhea ?`,
+        `Bakit nakakatulong ang pag-iinom ng tubig sa may diarrhea ?`,
+        `Paano makakatulong ang pagpapa-hydrate sa pagbabawas ng diarrhea ?`,
+        `Paano malalaman kung sapat na ang pag-inom ng tubig para sa may diarrhea ?`,
+        `Paano mapipigilan ang pagkakaroon ng dehydration dahil sa diarrhea ?`,
+        `bakit mag hydrate o uminom ng tubig`
     ], [
-        `Kailangan mong uminom ng uminom para hindi ka madehydrate. Kapag ikaw ay nag tatae, bumababa ang dami ng tubig sa iyong katawan. Kaya mabuting uminom ng mga fluids tulad ng tubig, buko juice, oral rehydration solutions, am arrozcaldo, sopas, sports drinks at sabaw. `
-    ], 7),
-    encodeMemory([
-        `*(bakit|paano) * tubig  * (tulong|gamot|buti|galing) * diarrhea *`,
-        //chatgpt start
-        "Bakit nakakatulong ang pag-iinom ng tubig sa may diarrhea o pagtatae?",
-        "Ano ang magandang gawin sa may diarrhea o pagtatae upang mapanatili ang tamang hydration?",
-        "Bakit importante ang pag-iinom ng maraming tubig sa may diarrhea o pagtatae?",
-        "Paano makakatulong ang pagpapa-hydrate sa pagbabawas ng sintomas ng diarrhea o pagtatae?",
-        "Bakit dapat palaging mag-inom ng tubig ang may diarrhea o pagtatae?",
-        "Bakit kailangan mag-inom ng sapat na tubig upang maiwasan ang dehydration dahil sa diarrhea o pagtatae?",
-        "Ano ang magandang gawin kung hindi kayang uminom ng malaking halaga ng tubig ang may diarrhea o pagtatae?",
-        "Ano ang ibang uri ng pagkain o inumin na nakatutulong sa pagpapa-hydrate sa may diarrhea o pagtatae?",
-        //chatgpt end
-    ], [
-        `Kapag ikaw ay nagtatae, nauubosan ka ng tubig sa katawan. Uminom ka ng tubig para mapalitan ang nawawalang tubig sa iyong katawan.`
-    ], 7),
-    encodeMemory([
-        `*(bakit|paano) * zinc  * (tulong|gamot|buti|galing)  * diarrhea *`,
-        //chatgpt start
+        `
+        Ang pananatiling hydrated ay mahalaga dahil ang pagtatae ay maaaring humantong sa pagkaubos sa likido ng katawan. Ang pagtatae ay nagiging sanhi ng pagkawala ng tubig at mga electrolyte ng katawan, tulad ng sodium at potassium, na mahalaga para sa normal na paggana ng katawan. 
         
-        //chatgpt end
-    ], [
-        `Ang paggamit ng zinc ay nakakatulong sa batang nagtatae dahil ito ay importantent micronutrient para sa protein synthesis, cell growth and differentiation, immune function, at paggalaw ng ng tubig at electrolytes sa katawan. Ito rin ay mabisang paraan para bumilis ang paggaling and humina ang paglala ng pagtatae at mga ipeksyon.`
+        Kaya, ang taong nagtatae ay pinapayuhang uminom ng maraming likido, tulad ng tubig, buko juice, am, arrozcaldo, soup, sports drink, sabaw, at oral rehydration solution, ay maaaring palitan ang mga nawawalang likido at electrolyte at maiwasan ang dehydration. Inirerekomenda din na iwasan ang mga inumin na maaaring higit pang makairita sa tiyan, tulad ng alkohol, caffeine, at matamis na inumin.
+       
+        Ang wastong hydration sa panahon ng pagtatae ay makakatulong na mapawi ang mga sintomas at maiwasan ang mga komplikasyon na maaaring magmula sa dehydration.
+        `
     ], 7),
     encodeMemory([
-        `*(bakit|paano) * masustansya  * (tulong|gamot|buti|galing)  * diarrhea *`,
-        //chatgpt start
-        "Ano ang dahilan kung bakit nakapagpapagaling ang pag-inom ng zinc sa may diarrhea o pagtatae?",  
-        "Bakit epektibo ang pag-inom ng zinc sa pagpapagaling ng diarrhea o pagtatae?",  
-        "Paano nakakatulong ang zinc sa pagpapagaling ng may diarrhea o pagtatae?",  
-        "Bakit nakakatulong ang zinc sa pagbabawas ng sintomas ng diarrhea o pagtatae?",  
-        "Ano ang nagpapabuti sa kalagayan ng may diarrhea o pagtatae kapag nag-inom ng zinc?",  
-        "Bakit dapat mag-inom ng zinc ang may diarrhea o pagtatae?",  
-        "Paano nakapagpapagaling ang zinc sa may diarrhea o pagtatae?",  
-        "Bakit isang epektibong gamot ang zinc para sa may diarrhea o pagtatae?",  
-        "Paano nakakapagbigay ng benepisyo ang zinc sa may diarrhea o pagtatae?",  
-        "Bakit nakakatulong ang zinc sa pagpapagaling ng mayroong diarrhea o pagtatae?"
-        //chatgpt end
+        `* zinc  * treat  * diarrhea *`,
+        `Ano ang dahilan kung bakit nakapagpapagaling ang pag-inom ng zinc sa may diarrhea ?`,  
+        `Ano ang nagpapabuti sa kalagayan ng may diarrhea  kapag nag-inom ng zinc?`,  
+        `Bakit dapat mag-inom ng zinc ang may diarrhea ?`,  
+        `Bakit dapat mag-inom o uminom ng zinc ang may diarrhea ?`,
+        `Bakit epektibo ang pag-inom ng zinc sa pagpapagaling ng diarrhea ?`,  
+        `Bakit importante ang pag-iinom ng zinc sa may diarrhea ?`,
+        `Bakit importante ang zinc para sa may diarrhea ?`,
+        `Bakit isang epektibong gamot ang zinc para sa may diarrhea ?`,  
+        `Bakit nakakatulong ang pag-iinom ng zinc sa may diarrhea ?`,
+        `Bakit o paano nakakatulong ang zinc sa pagbabawas ng diarrhea ?`,  
+        `Bakit nakakatulong ang zinc sa pagpapagaling ng mayroong diarrhea ?`,
+        `Paano malalaman kung sapat na ang zinc para sa may diarrhea ?`,
+        `Paano nakakapagbigay ng benepisyo o nakakatulong ang zinc sa may diarrhea ?`, 
+        `Paano nakapagpapagaling ang zinc sa may diarrhea ?`,  
+        `Paano nakatutulong ang pag-inom ng zinc sa may diarrhea ?`,
     ], [
-        `Kapag ika’y nag tatae, ang mga kinakain at ang pagkain mo ay napaka importante sa iyong paggaling. `
+        `Ang zinc ay nakakabawas ng tagal at kalubhaan ng pagtatae at posibilidad ng kasunod na impeksyon. Maaari rin itong makatulong na mapanatili ang balanse ng mga likido at electrolyte, na maaaring maabala kapag nagkakaroon ng pagtatae. Bukod dito, ang zinc ay maaari ding makatulong sa pagpapanumbalik ng malusog na flora ng bituka. Gayunpaman, dahil ang labis na paggamit nito ay maaaring makapinsala, ipinapayong lahat ng mga suplemento ay dapat talakayin sa isang propesyonal sa pangangalagang pangkalusugan bago gamitin.
+        `
+    ], 7),
+    encodeMemory([
+        `* masustansya  * treat  * diarrhea *`,
+        `Ano ang benepisyo ng pagkain ng mga masustansyang pagkain habang mayroong diarrhea ?`,
+        `Ano ang dahilan kung bakit kailangang magpakain ng masustansya kapag may diarrhea ?`,
+        `Ano ang epekto ng masustansyang pagkain sa paggaling ng mayroong diarrhea ?`,
+        `Bakit dapat kumain ng pagkain na mayaman sa sustansiya upang gumaling sa diarrhea ?`,
+        `Bakit dapat pag-iinom o pagkain ng masustansya ang may diarrhea ?`,
+        `Bakit hindi sapat ang kumain ng kahit ano lamang sa panahon ng pagkakaroon ng diarrhea ?`,
+        `Bakit importante ang pag-iinom o pagkain ng masustansya pag sa may diarrhea ?`,
+        `Bakit importante na kumain ng masustansya habang mayroong diarrhea ?`,
+        `Bakit importante pag-iinom o pagkain ng masustansya  para sa may diarrhea ?`,
+        `Bakit mahalagang kumain ng mga pagkain na mayaman sa sustansiya para sa mayroong diarrhea ?`,
+        `Bakit nakakatulong ang pag-iinom o pagkain ng masustansya pag may diarrhea ?`,
+        `Paano makakatulong ang masustansyang pagkain sa paggaling ng diarrhea ?`,
+        `Paano makakatulong ang pag-iinom o pagkain ng masustansya sa pagbabawas ng  diarrhea ?`,
+        `Paano makakatulong ang pagkain na mayaman sa sustansiya sa pagpapagaling ng diarrhea ?`,
+        `Paano malalaman kung sapat ang pag-iinom o pagkain ng masustansya pag may diarrhea ?`,
+        `Paano nakatutulong ang pag-iinom o pagkain ng masustansya sa may diarrhea ?`,
+        `Sa anong paraan ang masustansyang pagkain ay nakatutulong sa pagpapagaling ng diarrhea ?`,
+    ], [
+        `Mahalagang kumain ng maayos dahil sinusuportahan nito ang immune system ng iyong katawan. Posible ring mabawasan ang pangangati ng digestive tract at maiwasan ang karagdagang pagtatae kung kakain ka pagkaing madaling matunaw tulad ng saging, kanin, nilutong patatas o anumang iba pang manok o isda. At saka ang mga pagkaing ito ay naglalaman ng mataas na fiber, potassium at protina na mahalaga para sa pagbawi. Upang maiwasan ang karagdagang pangangati ng bituka at mabawasan ang panganib ng komplikasyon, inirerekumenda na hindi ka kumain ng mga pagkaing maraming fats, maalat, maanghang o matamis.
+        `
     ], 4),
     encodeMemory([
-        `*(bakit|paano) * doctor * (tulong|gamot|buti|galing)  * diarrhea *`,
-        //chatgpt start
-        "Ano ang magiging benepisyo ng pagpapatingin sa doktor kung mayroon kang diarrhea o pagtatae?",
-        "Bakit importante na magpatingin sa doktor kung nagkakaroon ng diarrhea o pagtatae?",
-        "Paano nakakatulong ang pagpapatingin sa doktor sa paggaling ng may diarrhea o pagtatae?",
-        "Saan makakakuha ng tamang gamot para sa may diarrhea o pagtatae kundi sa doktor?",
-        "Bakit hindi dapat balewalain ang pagpapatingin sa doktor kung mayroong diarrhea o pagtatae?",
-        "Ano ang mga magiging benepisyo ng pagpapatingin sa doktor kung mayroong diarrhea o pagtatae?",
-        "Paano maiiwasan ang posibleng komplikasyon ng diarrhea o pagtatae sa pamamagitan ng pagpapatingin sa doktor?",
-        "Bakit mahalaga na alamin ang sanhi ng diarrhea o pagtatae sa pamamagitan ng pagpapatingin sa doktor?",
-        "Paano magagamot ang mayroong diarrhea o pagtatae sa pamamagitan ng pagpapatingin sa doktor?",
-        "Sino lang ba ang dapat magpatingin sa doktor kung mayroong diarrhea o pagtatae?"
-        //chatgpt end
+        `* consult * doktor * diarrhea * `,
+        `* doctor * treat  * diarrhea *`,
+        `Ano ang magiging benepisyo ng pagpapatingin sa doktor kung mayroon kang diarrhea ?`,
+        `Bakit hindi dapat balewalain ang pagpapatingin sa doktor kung mayroong diarrhea ?`,
+        `Bakit importante na magpatingin sa doktor kung nagkakaroon ng diarrhea ?`,
+        `Kailan dapat magpa-checkup kung mayroong diarrhea ?`,
+        `Kailan dapat magpatingin sa doktor kapag may diarrhea ?`,
+        `Kailangan ba ng doktor kung mayroong diarrhea ?`,
+        `Kailangan ba ng medical attention kung mayroong diarrhea ?`,
+        `Kailangan bang magpa-checkup kung mayroong diarrhea ?`,
+        `Kailangan bang magpakonsulta sa doktor kaagad kapag mayroong diarrhea ?`,
+        `Kailangan bang magpakonsulta sa doktor kapag mayroong diarrhea ?`,
+        `Kailangan bang magpatingin sa doktor kaagad kung mayroong diarrhea ?`,
+        `Paano nakakatulong ang pagpapatingin sa doktor sa paggaling ng may diarrhea ?`,
+        `Sa anong punto kailangan magpakonsulta sa doktor kapag may diarrhea ?`,
+        `Saan makakakuha ng tamang gamot para sa may diarrhea  kundi sa doktor?`,
+        `Sino lang ba ang dapat magpatingin sa doktor kung mayroong diarrhea ?`,
     ], [
-        `Magpatingin ka kaagad sa doctor kapag ikaw ay nakakaranas ng alin man sa mga sumusunod. Dalawang araw o mas matagal pang pagtatae. Pagtatae na may lagnat na umaabot ng 102 degrees ( kaumbas ng 38.8888 degrees celcius ) o mas mataas pa. Pagbabawas sa ng anim na beses o mas mahigit pa sa loob ng 24 oras. `
+        `Kung ang pagtatae ay nagpapatuloy nang mas mahabang panahon o humantong sa iba pang mga sintomas tulad ng lagnat, malubhang sakit sa gastrointestinal at dugo sa dumi, mahalagang makipag-usap sa iyong doktor. Ang isang doctor ay maaaring makatulong sa pag-diagnose ng pangunahing sanhi ng pagtatae at magbigay ng tamang paggamot na maaaring kasama ang gamot, mga pagbabago sa diyeta o karagdagang pagsusuri. Mahalagang magpagamot. Kapag ang pagtatae na hindi ginagamot maari itong humantong sa dehydration o mas malubhang komplikasyon.
+        `
     ], 5),
-    // encodeMemory([
-    //     `* bakit * inom * tubig * `,
-    //     //chatgpt start
-        
-    //     //chatgpt end
-    // ], [
-    //     `Kailangan mong palitan ang tubig na nababawas sayo tuwing nagtatae para maiwasan ang dehydration.`
-    // ], 7),
-    // encodeMemory([
-    //     `* bakit * hydrate * `,
-    //     //chatgpt start
-        
-    //     //chatgpt end
-    // ], [
-    //     `Ang oral rehydration salts ay hindi nakakapigil ng pagtatae. Pero ito ay nakakatulong para mapalitan ang tubig at essential salts na Nawala sayo para maibsan ang dehydration. Dahil jan, pwede itong maktulong sa iyong pagtatae.`
-    // ], 7),
-    // encodeMemory([
-    //     `* bakit * (gamit|kain|inom) * zinc * diarrhea * `,
-    //     //chatgpt start
-        
-    //     //chatgpt end
-    // ], [
-    //     `Ang paggamit ng 20 milligram zinc kada araw para sa batang mahigit sa anim na buwan o kaya 10 milligram kada araw sa mga batang mas mababa sa 10-14 days ay pwedeng makatulong.`
-    // ], 7),
     encodeMemory([
-        `* bakit * (kain|inom) * masustansya * pagkain * diarrhea * `,
-        //chatgpt start
-        "Bakit dapat kumain ng pagkain na mayaman sa sustansiya upang gumaling sa diarrhea o pagtatae?",
-        "Ano ang dahilan kung bakit kailangang magpakain ng masustansya kapag may diarrhea o pagtatae?",
-        "Paano makakatulong ang masustansyang pagkain sa paggaling ng diarrhea o pagtatae?",
-        "Bakit importante na kumain ng masustansya habang mayroong diarrhea o pagtatae?",
-        "Ano ang epekto ng masustansyang pagkain sa paggaling ng mayroong diarrhea o pagtatae?",
-        "Sa anong paraan ang masustansyang pagkain ay nakatutulong sa pagpapagaling ng diarrhea o pagtatae?",
-        "Bakit mahalagang kumain ng mga pagkain na mayaman sa sustansiya para sa mayroong diarrhea o pagtatae?",
-        "Paano makakatulong ang pagkain na mayaman sa sustansiya sa pagpapagaling ng diarrhea o pagtatae?",
-        "Ano ang benepisyo ng pagkain ng mga masustansyang pagkain habang mayroong diarrhea o pagtatae?",
-        "Bakit hindi sapat ang kumain ng kahit ano lamang sa panahon ng pagkakaroon ng diarrhea o pagtatae?"
-        //chatgpt end
+        `* treat * diarrhea * `,
+        `Ano ang mga dapat gawin kung hindi agad gumaling ang taong may diarrhea ?`,
+        `Ano ang mga dapat gawin upang maiwasan ang pagkakaroon ng diarrhea ?`,
+        `Ano ang mga gamot na pwedeng ibigay sa taong may diarrhea ?`,
+        `ano ang gamot sa diarrhea`,
+        `paano ginagamot ang diarrhea`
     ], [
-        `Kapag nagtatae, ang pagkaing kinakain mo at ang mga ito ay importante para sa iyong paggaling.`
-    ], 4),
-    encodeMemory([
-        `* paano * (tulong|gamot|buti|galing) * diarrhea * `,
-        //chatgpt start
-        "Ano ang mga gamot na pwedeng ibigay sa taong may diarrhea o pagtatae?",
-        "Ano ang mga dapat gawin kung hindi agad gumaling ang taong may diarrhea o pagtatae?",
-        "Ano ang mga dapat gawin upang maiwasan ang pagkakaroon ng diarrhea o pagtatae?",
-        //chatgpt end
-    ], [
-        `May mga bagay ka naman na pwedeng gawin kapag ikaw ay nag tatae. Pwede kang gumamit ng oral rehydration solutions para mapalitan ang nabawas sayo na tubig. Pwede ding gumamit ng zinc supplements. Kumain ka din ng masustansyang pagkain. Pero , kung maari, magpataingin ka sa doctor kapag nagtatae kana ng mahigit 48 hours ( dalawang araw ) o kapag nagdudugo ito. `
+        `Ang paggamot sa pagtatae ay depende sa dahilan. Para sa mga hindi malalang kaso, maaaring makatulong ang mga over the counter na mga gamot tulad ng loperamide o bismuth subsicylate. Gayunpaman, ang pag-inom ng maraming likido tulad ng tubig, sabaw, sopas, inuming pampalakasan, tubig ng niyog, mga solusyon sa oral rehydration at pag-iwas sa mga inumin na maaaring magpalubha ng tiyan, tulad ng alchohol, ay dapat isaalang-alang. Kailangan mong manatiling hydrated. Kung nagpapatuloy ang mga sintomas, mahalagang magpatingin sa iyong doktor para sa tamang diagnosis at paggamot.
+        `
     ], 1),
     encodeMemory([
-        `* sino *  (tulong|gamot|buti|galing) *diarrhea * `,
-        //chatgpt start
-        "Sino ang maaaring magbigay ng tulong sa taong may diarrhea o pagtatae?",
-        "Sino ang pwedeng humingi ng tulong kapag may diarrhea o pagtatae?",
-        "Sino ang makakatulong sa taong may diarrhea o pagtatae?",
-        "Sino ang dapat hingan ng tulong kapag may diarrhea o pagtatae?",
-        "Sino ang may kakayahang magbigay ng lunas sa taong may diarrhea o pagtatae?",
-        "Sino ang maaaring mag-alaga sa taong may diarrhea o pagtatae?",
-        "Sino ang dapat lapitan kung mayroong problema sa diarrhea o pagtatae?",
-        "Sino ang may kakayahan na magbigay ng payo o tulong sa may diarrhea o pagtatae?",
-        "Sino ang pwedeng magbigay ng mga gamot sa taong may diarrhea o pagtatae?",
-        "Sino ang maaaring magdala sa taong may diarrhea o pagtatae sa doktor o ospital?"
-        //chatgpt end
+        `* sino* treat *diarrhea * `,
+        `Sino ang dapat hingan ng tulong kapag may diarrhea ?`,
+        `Sino ang dapat lapitan kung mayroong problema sa diarrhea ?`,
+        `Sino ang maaaring mag-alaga sa taong may diarrhea ?`,
+        `Sino ang maaaring magbigay ng tulong sa taong may diarrhea ?`,
+        `Sino ang maaaring magdala sa taong may diarrhea  sa doktor o ospital?`,
+        `Sino ang makakatulong sa taong may diarrhea ?`,
+        `Sino ang may kakayahan na magbigay ng payo o tulong sa may diarrhea ?`,
+        `Sino ang may kakayahang magbigay ng lunas sa taong may diarrhea ?`,
+        `Sino ang pwedeng humingi ng tulong kapag may diarrhea ?`,
+        `Sino ang pwedeng magbigay ng mga gamot sa taong may diarrhea ?`,
     ], [
-        `Madalas,ang pagtatae ay gumagaling ng kusa. Pero kapag ito ay hindi, o kaya ay mahigit dalawang araw na o nagdudugo na ito, magpatingin kana sa doctor kaagad.`
-    ], 5),
-    // encodeMemory([
-    //     `* pwede * diarrhea * gamutin * `,
-    //     `* pwede * gamutin * diarrhea * `,
-    //     //chatgpt start
-        
-    //     //chatgpt end
-    // ], [
-    //     `Oo, pwede mo naman I manage ang iyong pagtatae.`
-    // ], 1),
-    encodeMemory([
-        `* kailan * consult * doktor * diarrhea * `,
-        //chatgpt start
-        "Kailan dapat magpatingin sa doktor kapag may diarrhea o pagtatae?",
-        "Kailangan bang magpakonsulta sa doktor kapag mayroong diarrhea o pagtatae?",
-        "Anong oras dapat magpatingin sa doktor kapag may diarrhea o pagtatae?",
-        "Sa anong punto kailangan magpakonsulta sa doktor kapag may diarrhea o pagtatae?",
-        "Kailangan ba ng doktor kung mayroong diarrhea o pagtatae?",
-        "Kailangan bang magpatingin sa doktor kaagad kung mayroong diarrhea o pagtatae?",
-        "Kailangan bang magpa-checkup kung mayroong diarrhea o pagtatae?",
-        "Kailangan ba ng medical attention kung mayroong diarrhea o pagtatae?",
-        "Kailan dapat magpa-checkup kung mayroong diarrhea o pagtatae?",
-        "Kailangan bang magpakonsulta sa doktor kaagad kapag mayroong diarrhea o pagtatae?"
-        //chatgpt end
-    ], [
-        `Kapag ang iyong pagtatae ay mahigit na sa 48 oras, o kapag nagdudugo na tae mo, o nakakaramdam kana ng senyales ng dehydration, kailangan mo na talagang magpatingin sa doctor o ospital.`
+        `Maaari kang kumunsulta sa ilang propesyonal sa pangangalagang pangkalusugan ayon sa kalubhaan at pinagbabatayan ng iyong kondisyon.
+
+        Maaaring magbigay ng payo ang mga general practitioner kung paano pangalagaan ang iyong sarili. Halimbawa panatilihing uminom ng tubig at isaayos ang diyeta, sa mga maliliit na kaso ng pagtatae. Upang mabawasan ang bilis ng pagdumi, maaari rin silang magrekomenda ng mga over the counter na gamot tulad ng loperamide.
+
+        Ang mga pasyente na may mas malubhang sakit ay maaaring i-refer para sa espesyal na pangangalaga at paggamot ng isang gastrointestinal na espesyalista. Upang masuri ang pinagbabatayan ng sanhi ng pagtatae at makapagtatag ng kaukulang plano sa paggamot, maaaring mangailangan sila ng mga pagsusuri gaya ng pagsusuri sa dumi o colonoscopy
+
+        Mahalagang tandaan na dapat humingi ng agarang medikal na atensyon kung ang pagtatae ay sinamahan ng iba pang mga sintomas tulad ng lagnat, matinding pananakit ng tiyan o dehydration.
+        `
     ], 5),
     encodeMemory([
-        `*saan * gamutin * diarrhea * `,
         `* gamutin * diarrhea * saan * `,
-        //chatgpt start
-        "Ano ang mga gamot na maaaring gamitin sa pagpapagaling ng diarrhea o pagtatae?",
-        "Saang mga botika o parmasya maaaring makabili ng gamot para sa diarrhea o pagtatae?",
-        "Mayroon bang mga natural na lunas para sa diarrhea o pagtatae?",
-        "Paano gamutin ang diarrhea o pagtatae sa bahay?",
-        "Sa ospital ba dapat magpagamot kapag may diarrhea o pagtatae?",
-        "Saan maaaring makahanap ng mga doktor na makakatulong sa pagpapagaling ng diarrhea o pagtatae?",
-        "Ano ang mga alternative na paraan ng pagpapagaling ng diarrhea o pagtatae?",
-        "Mayroon bang mga pagkain o inumin na makakatulong sa pagpapagaling ng diarrhea o pagtatae?",
-        "Paano malalaman kung anong uri ng gamot ang dapat gamitin para sa diarrhea o pagtatae?",
-        "Ano ang mga gamot na hindi dapat gamitin para sa diarrhea o pagtatae?"      
-        //chatgpt end
+        `* saan * gamutin * diarrhea * `,
+        `saan pwedeng magagamot ang diarrhea`,
+        `saan pwede mag punta pag ako may nagtatae`,
+        `asan ko ba pwede gamuting ang pagtatae`,
+        `Sa ospital ba dapat magpagamot kapag may diarrhea ?`,
+        `Saan maaaring makahanap ng mga doktor na makakatulong sa pagpapagaling ng diarrhea ?`, 
+        `Saan ka pupunta kung nais mong magpagamot ng diarrhea?`,  
+        `Saan puwedeng magpagamot ng diarrhea?`,  
+        `Saang mga establisyemento ka pwedeng magpatingin kung ikaw ay may diarrhea?`,  
+        `Saang mga lugar puwedeng makabili ng mga natural na lunas para sa diarrhea?`,
     ], [
-        `Kung hindi naman malala ang iyong pagtatae, pwede mo naman to gamutin sa bahay. Pero kapag ito ay mahigit na sa 48 oras, dumudugo ito, o nakakaramdam ka ng pagkadehydrate, dalhin mo na sya sa ospital. Una, pumunta ka muna sa barangay health center.`
-    ], 5),
-    encodeMemory([
-        `* saan * bili * diarrhea_drugs * `,
-        `* saan * diarrhea_drugs * bili * `,
-        `* saan * bili * gamot * diarrhea  *`,
-        //chatgpt start
+        `Depende sa kalubhaan ng mga sintomas, ang paggamot na may pagtatae ay maaaring gawin sa bahay o sa isang pasilidad ng pangangalagang pangkalusugan. Ang pahinga, hydration at dietary modification ay karaniwang ang pinaka-epektibong paraan upang gamutin ang mga banayad na kaso ng pagtatae. 
         
-        //chatgpt end
-    ], [
-        `Pwede mo itong bilhin sa mga botika, sabihin mo lang sa kanila na kailangan mo ng gamot. Tandaan, kapag ang pasyente ay nagdudugo ng tae o nilalagnat, wag bumili ng antimotility drugs tulad ng loperamide at Imodium. Pwede kang bumili ng oral rehydration solutions para makatulong na pagpalit ng fluid o tubig na Nawala sa pasyente.`
+        Ang mga sintomas ay maaari ding mapawi sa pamamagitan ng paggamit ng mga over the counter na mga produktong panggamot tulad ng loperamide at bismuth subsicylate. 
+        
+        Ngunit ang agarang paggamot ay dapat na simulan kung ang pagtatae ay malubha o sinamahan ng anumang iba pang mga sintomas, kabilang ang lagnat, pag-aalis ng tubig at dugo sa dumi. Gayundin kung ang pagtatae ay nagpapatuloy ng higit sa 48 oras, dalhin ang pasyente sa isang pasilidad ng pangangalagang pangkalusugan. Pumunta sa pinakamalapit na barangay health center
+        .`
     ], 5),
     encodeMemory([
-        `* ano *  (tulong|gamot|buti|galing|gawin)   * dugo * (tae|diarrhea) *`,
-        `* dugo * (tae|diarrhea) * ano * gawin *`,
-        //chatgpt start
-        "Anong dapat gawin kapag may dugo sa diarrhea o pagtatae?",
-        "Paano matatanggal ang dugo sa diarrhea o pagtatae?",
-        "Ano ang mga dapat gawin kung may kasamang dugo sa diarrhea o pagtatae?",
-        "Paano malulunasan ang diarrhea o pagtatae na may kasamang dugo?",
-        "Ano ang mga pamamaraan para maiwasan ang dugo sa diarrhea o pagtatae?",
-        "Saan pwede magpatingin kung may kasamang dugo ang diarrhea o pagtatae?",
-        "Ano ang mga pagkain na dapat kainin o iwasan kapag may kasamang dugo sa diarrhea o pagtatae?",
-        "Ano ang mga dapat inuming gamot kapag may kasamang dugo sa diarrhea o pagtatae?",
-        "Paano maiiwasan ang pagkakaroon ng dugo sa diarrhea o pagtatae?",
-        "Anong mga herbal na gamot ang pwedeng inumin kapag may kasamang dugo sa diarrhea o pagtatae?"
-        //chatgpt end
+        `* bili * (zinc|bismuth|antimotility) oral rehydration * `,
+        `* (zinc|bismuth|antimotility) oral rehydration * bili * `,
+        `* bili * gamot * diarrhea  *`,
+        `* bili * gamot *`,
+        `saan bumibili ng gamot`,
+        `saan nakakabili ng gamot ng diarrhea`,
+        `san pwede bumili ng gamot para sa pagtatae`
     ], [
-        `Ang dumudugong pagtatae ay indikasyon ng impeksyon sa bituka. Wag na wag kang bumili ng gamot o antimotility tulad ng loperamide, Imodium, peptobismol. Panatilihing uminom parati. Pinapayuhan ka rin na magpatingin sa doctor kung maari. Sila ang mas nakakaalam kung ano gagawin mo kung nag dudugo ang iyong pagtatae.`
+        `Ang mga gamot ay pwede mong mabili sa mga botika. Ngunit, maging mapanuri dahil naglipana ang mga pekeng gamot sa merkado`
+    ], 5),
+    encodeMemory([
+        `* treat * dugo * (tae|diarrhea) *`,
+        `* dugo * (tae|diarrhea) * gawin *`,
+        `Ano ang mga dapat gawin kung may kasamang dugo sa diarrhea ?`,
+        `Ano ang mga dapat inuming gamot kapag may kasamang dugo sa diarrhea ?`,
+        `Ano ang mga pagkain na dapat kainin o iwasan kapag may kasamang dugo sa diarrhea ?`,
+        `Ano ang mga pamamaraan para maiwasan ang dugo sa diarrhea ?`,
+        `Anong dapat gawin kapag may dugo sa diarrhea ?`,
+        `Anong mga herbal na gamot ang pwedeng inumin kapag may kasamang dugo sa diarrhea ?`,
+        `Paano maiiwasan ang pagkakaroon ng dugo sa diarrhea ?`,
+        `Paano malulunasan ang diarrhea  na may kasamang dugo?`,
+        `Paano matatanggal ang dugo sa diarrhea ?`,
+        `Saan pwede magpatingin kung may kasamang dugo ang diarrhea ?`,
+        `ano ang gamot kapag nag dudugo na nagtatae`
+    ], [
+        `Mahalagang humingi kaagad ng propesyonal na payo kung may napansin kang dugo sa iyong pagtatae. Maaaring ito ay isang senyales ng matinding karamdaman, halimbawa, pamamaga ng bituka, impeksyon o iba pang mga digestive disorder. Huwag uminom ng mga gamot na nasa counter gaya ng mga antimotility agent tulad ng loperamide imodium at pepto bismol. Panatilihing uminom palagi ng tubig. Upang magamot ang pinagbabatayan ng sanhi ng madugong pagtatae, maaaring magrekomenda ang iyong doktor ng pagsusuri at pagrereseta ng mga produktong panggamot.
+        `
     ], 2),
     encodeMemory([
-        `* ano * (tulong|gamot|buti|galing|gawin) * lagnat * diarrhea * `,
-        `* ano * (tulong|gamot|buti|galing|gawin)   * diarrhea * lagnat * `,
-        //chatgpt start
-        "Ano ang dapat gawin kung may lagnat na kasabay ng diarrhea o pagtatae?",
-        "Paano malunasan ang may lagnat na kasama ng diarrhea o pagtatae?",
-        "Saan pwede magpatingin kung may lagnat na kasabay ng diarrhea o pagtatae?",
-        "Kailan dapat mag-alala kung may lagnat na kasabay ng diarrhea o pagtatae?",
-        "May mga gamot ba para sa may lagnat na kasabay ng diarrhea o pagtatae?",
-        "Ano ang mga dapat inuming gamot para sa may lagnat na kasabay ng diarrhea o pagtatae?",
-        "Paano mapapababa ang lagnat sa may kasamang diarrhea o pagtatae?",
-        //chatgpt end
+        `* treat * diarrhea * lagnat * `,
+        `* treat * lagnat * diarrhea * `,
+        `Ano ang dapat gawin kung may lagnat na kasabay ng diarrhea ?`,
+        `Ano ang mga dapat inuming gamot para sa may lagnat na kasabay ng diarrhea ?`,
+        `Kailan dapat mag-alala kung may lagnat na kasabay ng diarrhea ?`,
+        `May mga gamot ba para sa may lagnat na kasabay ng diarrhea ?`,
+        `Paano malunasan ang may lagnat na kasama ng diarrhea ?`,
+        `Paano mapapababa ang lagnat sa may kasamang diarrhea ?`,
+        `ano ang gamot sa nilalagnat na may diarrhea`,
     ], [
-        `Wag kang gumamit ng antimotility agents tulad ng loperamide at Imodium.  Sa halip, uminom ka ng fluids o tubig. Kung maari, ay kaagad magpatingin sa doctor.`
+        
+
+        `Kung ikaw ay nilalagnat, maglagay ng basa at mainit init na tela sa iyong noo. Mag suot din ng komportableng damit. Kung ikaw naman ay nanginging ay mag damit ka ng marami. Tapos mag pahinga ka, kailangan mo yan.
+
+        Kapag nagtatae ka din, ay uminom ka ng maraming tubig o di kaya iyong mga sabaw, sports drinks, tubig na galing sa nyog, oral rehydration solutions at umiwas ka sa mga inuming nakakakati ng bituka tulad ng alchohol.
+
+        Pwede ka din gumamit ng antimotility o bismuth subsalicylate. Ngunit wag mo iyon gamitin kung ikaw ay nilalagat.
+
+        Kapag hindi parin mawala ang iyong sakit ay magpatingin kana sa doktor.
+        `
+
     ], 2),
     encodeMemory([
-        `* diarrhea * (tulong|gamot|buti|galing|gawin)   * paano * `,
-        `*  (tulong|gamot|buti|galing|gawin)   * diarrhea * paano * `,
-        `* paano *  (tulong|gamot|buti|galing|gawin)   * diarrhea * `,
-        `* ano *  (tulong|gamot|buti|galing|gawin)   * diarrhea * `,
-        `* ano * diarrhea *  (tulong|gamot|buti|galing|gawin)   * `,
-        `*  (tulong|gamot|buti|galing|gawin)   * diarrhea * paano * `,
-        `* ano *  (tulong|gamot|buti|galing|gawin)   * diarrhea *`,
-        `* diarrhea *  (tulong|gamot|buti|galing|gawin)   * ano * `,
-        `*  (tulong|gamot|buti|galing|gawin)   * diarrhea * ano * `,
-        //chatgpt start
-        "Ano ang mga paraan para maagapan o maiwasan ang diarrhea o pagtatae?",
-        "Mayroon bang mga natural na lunas para sa diarrhea o pagtatae?",
-        "Ano ang mga pagkain na dapat iwasan sa may diarrhea o pagtatae?", 
-        "Anong mga gamot ang dapat inumin para sa diarrhea o pagtatae?", 
-        "Paano malalaman kung ang diarrhea o pagtatae ay nagiging malubha na?", 
-        "Paano mapipigilan ang pagkakaroon ng dehydration dahil sa diarrhea o pagtatae?", 
-        "Ano ang mga dapat gawin para mapabilis ang paggaling mula sa diarrhea o pagtatae?", 
-        "Mayroon bang mga herbal na gamot na makakatulong sa paggaling mula sa diarrhea o pagtatae?", 
-        "Paano magkakaroon ng malusog na digestive system upang maiwasan ang diarrhea o pagtatae?", 
-        "Ano ang mga dapat sundin na hygiene practices para maiwasan ang diarrhea o pagtatae?", 
-        "Paano maiiwasan ang pagkalat ng sakit na sanhi ng diarrhea o pagtatae?", 
-        "Mayroon bang mga vitamins at supplements na makakatulong sa paggaling mula sa diarrhea o pagtatae?", 
-        "Ano ang mga natural na probiotics na makakatulong sa pagpapalakas ng immune system at paggaling mula sa diarrhea o pagtatae?", 
-        "Paano mapipigilan ang pag-ulan ng diarrhea o pagtatae sa mga lugar na mayroong mababang kalidad ng tubig?", 
-        "Anong mga lifestyle changes ang dapat gawin upang maiwasan ang diarrhea o pagtatae?"
-        //chatgpt end
+        `* treat * diarrhea * `,
+        `* diarrhea * treat * ano * `,
+        `Ano ang mga alternative na paraan ng pagpapagaling ng diarrhea ?`,
+        `Ano ang mga dapat gawin para mapabilis ang paggaling mula sa diarrhea ?`, 
+        `Ano ang mga gamot na hindi dapat gamitin para sa diarrhea ?` ,
+        `Ano ang mga gamot na maaaring gamitin sa pagpapagaling ng diarrhea ?`,
+        `Anong mga gamot ang dapat inumin para sa diarrhea ?`, 
+        `Mayroon bang mga herbal na gamot na makakatulong sa paggaling mula sa diarrhea ?`, 
+        `Mayroon bang mga natural na lunas para sa diarrhea ?`,
+        `Mayroon bang mga pagkain na makakatulong sa pagpapagaling ng diarrhea ?`,
+        `Paano gamutin ang diarrhea  sa bahay?`,
+        `anong gamot ang dapat gamitin para sa diarrhea ?`,
+        `sabihin mo sakin paano ba dapat gamutin ang diarrhea`,
+        `paano ginagamot ang pagtatae`,
+        `ano ang pwede kong gawin para bumuti ang aking pagtatae`
     ], [
-        `Madalas, ang di malalang pagtatae ay gumagaling ng kusa. Pwede kang uminom ng antimotility agents tulad ng loperamide, Imodium at bismuth subsalicylate. Ngunit, huwag kang gumamit nito kung ikaw ay nilalagnat o nagdudugo ang iyong pagttae.  Kapag ikaw ay nagtatae, nauubos ang tubig sa iyong katawan. Kailangan mong uminom ng fluids tulad ng sabaw, sopas, sports drinks, coconut water, tubig o oral rehydration solutions. Pwede ka ding uminom ng zinc. Kumain ka din ng mga masusustansyang pagkain. Kapag ang iyong pagtatae ay tumagal ng dalawang araw ay pinapapayuhan kang mag patingin kaagad sa doctor.`
+        `
+        Ang paggamot sa pagtatae ay depende sa dahilan. Para sa mga hindi malalang kaso, maaaring makatulong ang mga over the counter na mga gamot tulad ng loperamide o bismuth subsicylate.Ngunit, huwag kang gumamit nito kung ikaw ay nilalagnat o nagdudugo ang iyong pagtatae. 
+        
+        Gayunpaman, ang pag-inom ng maraming likido tulad ng tubig, sabaw, sopas, inuming pampalakasan, tubig ng niyog, mga solusyon sa oral rehydration at pag-iwas sa mga inumin na maaaring magpalubha ng tiyan, tulad ng alchohol, ay dapat isaalang-alang. Kailangan mong manatiling hydrated. Kung nagpapatuloy ang mga sintomas, mahalagang magpatingin sa iyong doktor para sa tamang diagnosis at paggamot.
+        
+        Kapag ang iyong pagtatae ay tumagal ng dalawang araw ay pinapapayuhan kang mag patingin kaagad sa doctor.
+        `
     ], 1),
 ]
 

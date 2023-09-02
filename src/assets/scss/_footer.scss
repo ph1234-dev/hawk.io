@@ -1,6 +1,8 @@
 @use "variable";
 
 
+$width-max-footer: 1024px;
+
 .footer{
     &-content{
         display: flex;
@@ -22,7 +24,7 @@
         
         &-content{
             width: 100%;
-            max-width: 960px;
+            max-width: $width-max-footer;
             margin: auto;
             display: flex;
             flex-direction: row;

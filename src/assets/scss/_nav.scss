@@ -1,7 +1,7 @@
 @use 'variable';
 @use 'sass:math';
 
-$width-max-nav: 960px;
+$width-max-nav: 1024px;
 
 @mixin paint {
     background-color: variable.$bg-white;

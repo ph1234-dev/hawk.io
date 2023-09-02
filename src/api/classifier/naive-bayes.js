@@ -67,7 +67,7 @@ export default class NaiveBayes{
                 }
 
                 // push term into class 
-                this.class_terms[td_class].push(term)
+                this.class_terms[td_class].push()
             })
 
             //store class frequencies of class in the document
@@ -104,7 +104,7 @@ export default class NaiveBayes{
         //      countwc = 0
 
 
-        let tf = this.class_term_frequency_map[category][term] 
+        let tf = this.  [category][term] 
         let countwc = tf ? tf : 0
          
         // laplace factor

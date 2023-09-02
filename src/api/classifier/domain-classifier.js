@@ -15,29 +15,39 @@ export default class DomainClassifier extends NaiveBayes{
     insertCluster(rules,lang){
 
         let insertCallback = (doc)=>{
+            
 
-            // data clearning 
-            // step1 replace non-word with space
-            doc = doc.replace(/\W/g, " ").replace(/\s\s+/g, ' ')
-            
-            // step2 lowercase to reduce reduncant
-            doc = doc.toLowerCase()
+            // this fixes the pattern error
+            // since we are attempting to separate those with wildcard * and those without
+            // if ( !doc.contains("*") ) {
 
-            // step3 is to ignore the
-            let data = { data: doc, class: lang }
-            
-            this.documents.push(data)
-            
-            // train only works if its array
-            // so lets twap this with array
-            super.train([data])
+                // data clearning 
+                // step1 replace non-word with space
+                doc = doc.replace(/\W/g, " ").replace(/\s\s+/g, ' ')
+                
+                // step2 lowercase to reduce reduncant
+                doc = doc.toLowerCase()
+
+                // step3 is to ignore the
+                let data = { data: doc, class: lang }
+                
+                this.documents.push(data)
+                
+                // train only works if its array
+                // so lets twap this with array
+                super.train([data])
+            // }
+
 
         }
 
         rules.forEach((rule, index) => {
             // access patters
             let patterns = rule.pattern
-            patterns.forEach(insertCallback)
+            
+            // if (patterns != undefined ) {
+                patterns.forEach(insertCallback)
+            // }
         })
 
     }

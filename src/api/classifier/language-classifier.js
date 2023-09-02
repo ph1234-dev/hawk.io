@@ -34,18 +34,23 @@ export default class LanguageClassifier extends NaiveBayes{
         }
 
         rules.forEach((rule, index) => {
+                
             // access patters
             let patterns = rule.pattern
-            patterns.forEach(insertCallback)
+            
+            if (Array.isArray(patterns) ) {
+                patterns.forEach(insertCallback)
 
-            // access responses
-            let responses = rule.response
-            // console.log(`Responses: ` , responses)
-            responses.forEach(response=>{
-                let splittedSentences = response.split(".")
-                splittedSentences.forEach(insertCallback)
-            })
-                // this.document.responses.push(response)
+                // access responses
+                let responses = rule.response
+                // console.log(`Responses: ` , responses)
+                responses.forEach(response=>{
+                    let splittedSentences = response.split(".")
+                    splittedSentences.forEach(insertCallback)
+                })
+                    // this.document.responses.push(response)
+            
+            }
         })
 
     }

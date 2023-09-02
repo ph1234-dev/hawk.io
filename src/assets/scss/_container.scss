@@ -5,8 +5,11 @@ $gap-vertical: variable.$gap-vertical *2;
 
 // container is block type
 // meaning its vertical
+$width-max-container: 1024px;
+
 .container{
     max-width: 960px;
+    max-width: $width-max-container;
     margin: auto;
     width: 100%;
     display: flex;

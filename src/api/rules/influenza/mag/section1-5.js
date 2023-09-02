@@ -1,115 +1,178 @@
-import { encodeMemory } from "@/api/configuration/model"
+import { encodeMemory } from "@/api/config/model"
+
 
 
 let section4 = [
     encodeMemory([
-        "* (duken|panon|kano) * virus * influenza *"
+        `* virus * influenza *`,
+        ` panon a to ka so virus na  maka influenza `,
+        `ngin to ka so virus na  maka influenza `,
+        `nginto  ka paka influenza i virus`,
+        `panon a to  ka paka influenza i virus`,
+        `panon na ato ka upama ka da aden virus na maka kwa ka sa influenza `,
+        `enduken ka su virus na maka influenza`,
     ],[
-        "Su mga kagaw na makambababatok. Pakaalat I namba amayka su taw na pembatok, pembalen, o pedtagedteb ka pakadtubpa nin I yug nin sa sa sambel. Namba na paakalat sa tao amayka ka sengot nin sa ngali o ngilong nin."
+        `Su mga kagaw a mana su virus na maka influenza. Pakaalat I namba amayka su taw na pembatok, pembalen, o pedtagedteb ka pakadtubpa nin I yug nin sa sa sambel. Namba na paakalat sa tao amayka ka sengot nin sa ngali o ngilong nin.`
     ],1),
     encodeMemory([
-        "* (panon|endaw) * kwa * influenza *",
-        "* kwa * influenza * (panon|endaw) * "
+        `*  kwa * influenza *`,
+        `ngin to ka ga gaalatan taw i influenza`,
+        `ga kwa na taw i influenza`,
+        `panon a to besen i ka kwa na influenza su taw`,
+        `panon a to besen gaalatan na influenza su taw`,
+        `ngin i makakwa sa influenza`,
     ],[
-        "Makwa nengka I kambabatokbatok umayka gasengap nengka su sambel nun nimbatok a tu. Su mga virus na kapakayan bun a makaalat sa leka amayka maami nengka I mga katamanan a natubpan na kagaw a to. Nya nin mana na kapakay nengka makwa umayka nadeketan nengka I langon na naabpel nu aden a to sakit nn. Ugayd na mapakay bon na upama ka su gay na pedsambi den pendtandang na makandadalo bun I to ba."
+        `Makwa nengka I influenza umayka makasengap ka sa sambel nu aden sakit nin. Su mga virus na kapakayan bun a makaalat sa leka amayka maami nengka I mga katamanan a natubpan na kagaw a to. Nya nin mana na kapakay nengka makwa umayka nadeketan nengka I langon na naabpel nu aden a to sakit nn. Ugayd na mapakay bon na upama ka su gay na pedsambi den pendtandang na makandadalo bun I to ba.`
     ],1),
     encodeMemory([
-        "* kwa * tagudo * influenza_causes * "
+        `* (trigger|enggay) * influenza * `,
+        `* makainfluenza * `,
+        `aden pakangguna sa influenza`,
+        `aden paka trigger sa influenza`,
+        `aden mga paka influenza`,
+        `ngin i pakatrigger sa influenza`,
     ],[
-        "So kasengap sa sambel a natubpan na virus o kagaw endo su kapangabpel sa katamanan na naabpel nu aden dalu nin na kapakay ka nin kaalatan. I sukob nengka istidi ni mask amayka madadel I taw, gagasi ka su lima nengka , enggo gamit ka sa sabot"
-    ],1),
-    encodeMemory([
-        "* ngin * enggay * influenza * ",
-        "* ngin * maka * influenza * ",
-        "* ngin * makainfluenza * "
-    ],[
-        "Su kambabatok na sabap ba I namba sa virus. Amayka makadsembak nengka su taw a to a aden dalo nin na makakwa ka ba nan sa sakit. Pagidsan bon upama ka mangabpel ka sa apya ngen den. Labi den upama ka abepelen nengka I mata, ngilong endu ngali nengka."
-    ],1),
-    encodeMemory([
-        "* influenza_causes * ngin  *"
-    ],[
-        "Nya tano nasabutan samaya na nya virus o kagaw i sabap na kambabatok. Amayka masengot nengka namba samit a nan o makabpel ka sa naabpel na kaped nengka na kapakayanan ka mama kwa sa dalo"
+        `Su kambabatok na sabap ba I namba sa virus. Amayka makadsembak nengka su taw a to a aden dalo nin na makakwa ka ba nan sa sakit. Pagidsan bon upama ka mangabpel ka sa apya ngen den. Labi den upama ka abepelen nengka I mata, ngilong endu ngali nengka.`
     ],1),
 ]
 
 
 let section5 = [
     encodeMemory([
-        "* (duken|panon) * degka * (awa|gamot|kapya|tabang) *  influenza *"
+        `* degka *  influenza *`,
+        `nginto to  ka demegka su taw a aden influenza nin`,
+        `panon a to  ka demegka su taw a aden influenza nin`,
+        `panon a to ka mapya su kadegka amayka aden influenza nu taw`,
+        `enduken ka demegka amayka aden influenza`
     ],[
-        "Nya tinumo I da ka bylu sa walatay taman sa di maawa su kayaw nengka sa sa gay. Su taw a aden sakit nin na kagamotan bun apya di enggamot duwa taman sa pito gay. Su kadegka na mapya ka pakagkabagel sa lawas. Lyu sa katulog, na su kandegka sa walay na makatabang endu di ka kaalatan I mga kaped nengka."
+        `Su taw a pegkayaw na nya mapya a enggulan nin demegka sa walay sa apya sagay. Su taw a aden influenza nin na pegkabagel mga dwa o pito gay inganat na kinaludso na sakit nin. Upama ka demegka su taw, su lawas nengka na maka pokus sa kaawa na virus a nan. Endo, su kadegka sa walay na makatabang endu di ka kaalatan I mga kaped nengka.`
     ],1),
     encodeMemory([
-        "* (duken|panon) * ig * (awa|gamot|kapya|tabang) *  influenza *"
+        `* inom * influenza *`,
+        `* ig * influenza *`,
+        `nginto ka amayka minom edtandang su taw sa ig na egkakabagel sekanin sa influenza nin`,
+        `panon a to ka mapya su kapaginom bo sa ig i kagkabagel na taw a aden influenza nin`,
+        `enduken ka di nimon sa influenza`
     ],[
-        "Su isa a pagilayan upama ka aden sakit nengka a kambabatokbatok na amayka pegkegkel su tao abpeg a pagatingan den pedsamikel. Kapakay bun na makauta ka o edtagudo ka. Su lawas nengka na nasisita nin ig umpa mangegedam nengka I nyama enggo kasambiyan su ig na na lyo nengka sa lawas nengka."
+        `Su isa a pagilayan upama ka aden sakit nengka a kambabatokbatok na amayka pegkegkel o pegkayaw su lawas nin. Namba na makapagating. Kaped a mga taw na aw na to a manguta endu edtagudo. Tu ba nana, nasisita su ka inom sa madakel a ig endu kasambiyan i ig a blyu na lawas nengka`
     ],1),
     encodeMemory([
-        "* (duken|panon) * degka * (awa|gamot|kapya|tabang) *  influenza *"
+        'duken ka di ged enggagalbek su taw upama ka aden influenza nengka',
+        `enduken ka da ka papegkalugat upama ka aden influenza nengka`,
+        `duken ka di ka ged pegkategel upama ka aden influenza nengka`,
+        `panon a to ka su di ged kanggagalbek na pakatabang sa kagamot sa influenza`,
+        `panon a to a amayka demegka su taw na egkabagel sekanin sa influenza`,
+        `enduken ka nasisita i kadegka amayka aden influenza nengka`,
+        `enduken ka di ka papegkalugat amayka aden influenza nengka`,
+        `ngin to ka di ka ged paka lugat amayka aden influenza nengka`,
     ],[
-        "Su kagkategel edsamikel na awna to na makambatok, makambalen, enggu makaibped sa sambel. Kapakay negka makaalat I sakit sa maya ba. Tu ba nan , degka ka sa walay bago ka gagalbek."
+        'Amayka enggagalbek ka ensamikel na malmo ka malugat na makambatok, makambaln edsamikel, endu di ka ged makaginawa a makalunsan sa kangedam nengka. Pangata ka pila gay endu malmo i kagkapya na lawas nengka.'
     ],1),
     encodeMemory([
-        "* (duken|panon) * mapya * pegken * (awa|gamot|kapya|tabang) *  influenza *"
+        `*  mapya * pegken * influenza *`,
+        `ngin to ka keman sa mapya upama ka su taw na pakagedam sa influenza`,
+        `nasisita ko kakan sa malimpyo amay ka aden influenza nu taw , eduken`,
+        `nginto ka nya mapya enggulan nu taw a pakagedam sa influenza na keman sa pegken a mapya sa lawas`,
+        `ngin to ka su kakan sa mapya na makagkabagel sa aden influenza nin.`,
+        `panon a to ka su kakan sa mapya na makagkabagel sa aden influenza nin.`,
+        `enduken ka keman sa mapya a pegken sa influenza`,
     ],[
-        "su lawas nengka na nasisita nin I mapya a pegken enggo ka pegkabagel. Su mga unga na kayo endu kamo na mapya ba I namba ka madakel I vitamins, mineral endu anti oxidant nin na makagkabagel a lawas."
+        `su lawas nengka na nasisita nin I mapya a pegken enggo ka pegkabagel. Su mga unga na kayo endu kamo na mapya ba I namba ka madakel I vitamins, mineral endu anti oxidant nin na makagkabagel a lawas.`
     ],4),
     encodeMemory([
-        "* (duken|panon) * doctor * (awa|gamot|kapya|tabang) *  (awa|gamot|kapya) * influenza *"
+        `* doctor * influenza *`,
+        `kano besen i ka angay sa doctor amayka pakagedam i taw sa influenza`,
+        `ngin to ka nasisita i ka angay sa doktor upama ka aden influenza nu taw`,
+        `panon a to ka mangay su taw a pedsakit sa influenza sa doktor`,
+        `kano i ka angay sa doctor amayka aden influenza na taw`,
+        `kano i kapangilay ko sa doktor upama ka aden influenza ko`,
+        `enduken ka pailay sa doctor amayka aden influenza nin`,
     ],[
-        "Su namba a sakit na kagamutan bon apya dala enggulan nengka. Ugayd na aw na to na pedsaldseg I namba sa kaped a mga tao. Tu ba nan upa nya nengka kailay sa ginawa nengka na aden kaped nengka a dalo, na embawang ka sa doctor upama ka aden den mangedamgedam nengka."
+        `Su namba a sakit na kagamutan bon apya dala enggulan nengka. Ugayd na aw na to na pedsaldseg I namba sa kaped a mga tao. Tu ba nan upa nya nengka kailay sa ginawa nengka na aden kaped nengka a dalo, na embawang ka sa doctor upama ka aden den mangedamgedam nengka.`
     ],5),
+
     encodeMemory([
-        "* (duken|panon) * inom * ig * (awa|gamot|kapya|tabang) *  influenza *"
+        `* ten * (awa|gamot|kapya|tabang|ebpawang) * influenza *`,
+        `mapakay ko gamutan i influenza ko sa walay`,
+        `nasisita i tabang upama ka pengamutan ko i influenza`,
+        `tayn i maka tabang sa laki amayka aden influenza ko`,
+        `kagamutan ko i influenza sa saki bo?`,
     ],[
-        "Su isa sa padsa na namba a sakit na mapulo a mayaw, na awna to na pagatingan ka edsamikel. Aw na to na makauta ka endu makawudo ka edsamikel. Su lawas nengka na nasisita nun I madakel a ig endu kagabagel."
-    ],7),
-    encodeMemory([
-        "* (duken|panon) * mapya * pegken * (awa|gamot|kapya|tabang) *  influenza *"
-    ],[
-        "su lawas nengka na nasisita nin I mapya a pegken enggo ka pegkabagel. Su mga unga na kayo endu kamo na mapya ba I namba ka madakel I vitamins, mineral endu anti oxidant nin na makagkabagel a lawas."
-    ],4),
-    encodeMemory([
-        "* ten * (awa|gamot|kapya|tabang|ebpawang) * influenza *"
-    ],[
-        "Katyakapan nengka su dalo nengka sa ginawa nengka. And bum ga over-the-counter a gamot a makadtabang sa leka sa kaped nin a sakit mana su mayaw endu kadsakit na ulo. Upamaka ka aden dalo nengka na degka ka pan sa walay taman sa di embaba su kayaw nengka sa 24 oras. Iom ka sa madakel a ig, da ka ged pegkategel, endu kan na ebpyapya. Ugayd na labi bon I kapya nin upama ka mapailay sa doctor ka engu ka nilan ka enggan sa risita na gamot endu madtalo nila ngin I kapayan nengka engullan."
+        `
+        Su Center of Diseases and Control na nya nilan nadtalo na su taw a aden trangkaso nin na aden pila timan nin a sintomas. Aw na to na aden mayaw nilan, batok, blebag a tideg, sepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa.
+
+        Katyakapan nengka su dalo nengka apya da kaped nengka. Aden mga gamot a gapamasa sa botika sa da riseta nin a makadtabang sa leka sa kaped nin a sakit mana su mayaw endu kadsakit na ulo. Upamaka ka aden dalo nengka na degka ka pan sa walay taman sa di embaba su kayaw nengka sa 24 oras. Iom ka sa madakel a ig, da ka ged pegkategel, endu kan na ebpyapya. 
+        
+        Ugayd na labi bon I kapya nin upama ka mapailay sa doctor ka engu ka nilan ka enggan sa risita na gamot endu madtalo nila ngin I kapayan nengka engullan.`
     ],1),
     encodeMemory([
-        "* kapakay * influenza * gamot *",
-        "* kapakay * gamot * influenza *"
+        `* influenza * gamot *`,
+        `* kapakay * gamot * influenza *`,
+        `endaw mangay i taw a aden influenza nin`,
+        `endaw ako makakwa sa gamot na influenza`,
+        `endaw ako makakwa sa tabang na influenza`,
+        `ngin i pakagamot sa influenza`,
+        `ngin i gamot na influenza`
     ],[
-        "Uway. Upama ka adel dalo nengka na degka ka. Da ka blyu sa walay taman sa di maawa I kayaw nengka sa 24 oras, inom ka sa madael a ig, di ka blugata I lawas nengka, endu kan ka empyapya. Kagamutan ka bon upama ka makakan ka sa gamot a ka nga ton bun sa botika. "
+        `Su pedsakit sa influenza na aw na to na egkayaw sekanin abpeg embabatok, blebag a tidek nin, pedsepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa.
+
+        Upama ka aden dalo nengka na degka ka. Da ka blyu sa walay taman sa di maawa I kayaw nengka sa 24 oras, inom ka sa madael a ig, di ka blugata I lawas nengka, endu kan ka ebpyapya. Kagamutan ka bon upama ka makakan ka sa gamot a ka nga ton bun sa botika.
+        
+        Ugayd na labi bon I kapya nin upama ka mapailay sa doctor ka engu ka nilan ka enggan sa risita na gamot endu madtalo nila ngin I kapayan nengka engullan.
+        `
     ],1),
     encodeMemory([
-        "* kano * (ebpawang|kailay) * doctor * influenza * ",
+        `* (ebpawang|kailay) * doctor * influenza * `,
+        `nginto ka mangay to taw sa doktor amayka nakagedam sa influenza`,
+        `kano besen i dayt a ka angay nu taw a  nakagedam sa influenza sa doktor`,
+        `panon i katabang na doktor sa aden influenza nin`,
     ],[
-        "Su kambabatok na kagamutan bun apya da enggulan nengka. Ugayd na makalunsan ba I nya ba sa kaped a sakit nu tao. Upama ka aden kaped a sakit nengka , na nya basi mpya enggulan na pailay ka sa doctor."
+        `Su kambabatok na kagamutan bun apya da enggulan nengka. Ugayd na makalunsan ba I nya ba sa kaped a sakit nu tao. Upama ka aden kaped a sakit nengka , na nya basi mpya enggulan na pailay ka sa doctor.`
     ],5),
     encodeMemory([
-        "* endaw * gamutan * influenza * ",
-        "* gamutan * influenza * endaw *"
+        `* endaw * gamutan * influenza * `,
+        `* gamutan * influenza * endaw *`,
+        `endaw dayt a penggamutan i influenza`,
+        `kagamutan i influenza sa walay bo`,
+        `mapakay a gamutan i influenza apya sy bo sa walay`,
     ],[
-        "Kapakay nengka bon na tyakapi ka bo I ginawa nengka. Sum ga pedsaldseg i dalu nin na nya labi a mapya na pailay ka sa dokto minuna den upama ka isa ka sa mga tao a to a aden kaped a dalo nin. "
+        `Su pedsakit sa influenza na aw na to na egkayaw sekanin abpeg embabatok, blebag a tidek nin, pedsepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa.
+
+        Kapakay nengka bon na tyakapi ka bo I ginawa nengka. Tupan ka pedsaldseg i dalu nin na nya labi a mapya na pailay ka sa doktor minuna den upama ka isa ka sa mga aden kaped nin pan a dalo. `
     ],5),
     encodeMemory([
-        "* endaw * (kwa|pamasa) * influenza_drugs * ",
-        "* endaw * influenza_drugs *  (kwa|pamasa) *",
-        " endaw * (kwa|pamasa) * gamot * influenza * "
+        ` * (kwa|pamasa) * (analgesics?|ibuprofen|advil|naproxen|paracetamol|aspirin|antihistamines?|benadryl|cetirizine|decongestants?|expectorants?|antitussives?|cough suppressants?|dextromethorphan|guaifenesin|robitussin)  * `,
+        ` * (analgesics?|ibuprofen|advil|naproxen|paracetamol|aspirin|antihistamines?|benadryl|cetirizine|decongestants?|expectorants?|antitussives?|cough suppressants?|dextromethorphan|guaifenesin|robitussin)  *  (kwa|pamasa) *`,
+        ` *  endaw * (kwa|pamasa) * gamot * influenza * `,
+        `edaw gapamasa su mga gamot`,
+        `endaw mamasa sa gamot na influenza?`,
+        `edtalo ka endaw gapamasa su mga gamot na influenza`,
+        `endaw mamasa sa gamot i influenza`,
     ],[
-        "Su mga over-the-coutner a gamot na pakadtabang ba I nan sa mga sipat nu dalo na kapamasa sa botika. Ugayd na dikena langon na gamot na kapamasa sad ala riseta nin mana su antiviral."
+        `Su mga over-the-coutner a gamot na pakagkapya sa kangedam nu taw sa mga sintomas na sakit na gapamasa sa botika. Ugayd na dikena langon na gamot na kapamasa sad ala riseta nin mana su antiviral.`
     ],5),
     encodeMemory([
-        "* influenza * (awa|gamot|kapya|tabang) * panon *",
-        "* (awa|gamot|kapya|tabang) * influenza * panon * ",
-        "* panon  * (awa|gamot|kapya|tabang) * influenza * ",
-        "* ngen * (awa|gamot|kapya|tabang) * influenza * ",
-        "* ngen * influenza * (awa|gamot|kapya|tabang) * ",
-        "* (awa|gamot|kapya|tabang) * influenza * panon * ",
-        "* ngen * gamot * influenza * ",
-        "* influenza * gamot * ngen * ",
-        "* gamot * influenza * ngen *",
+        `* influenza * (awa|gamot|kapya|tabang) *`,
+        `* (awa|gamot|kapya|tabang) * influenza * `,
+        `* gamot * influenza * `,
+        `* influenza * gamot * `,
+        `aden mga gamot na influenza`,
+        `aden mapakay a kanen, inomen, gamiten, enggamuten nu taw a pakagedam sa influenza?`,
+        `aden mga gamot na influenza a gapamasa?`,
+        `pano i enggulan na taw amayka nakagedam sa influenza `,
+        `ngin i mapya a ebpasen amayka influenza`,
+        `labit ka sa mapakay a galbeken nu taw a aden influenza`,
+        `ngin i galbeken na taw a pakagedam sa influenza`,
+        `panon i kagamot sa influenza`,
+        `panon i kaawa na influenza`,
     ],[
-        "Aden dwa a embalangan nu gamot na kambabatok. Isa na sum ga gamot a pegkontrolen nin bo su sipat nu sakit mana su antiviral. Kapakay apya seka bo I temyakap sa ginawa nengka. kagina aden mga over-the-counter a mga gamot a kapakay nengka paginumen para sa mayaw, sakit a ulo, batok endu kaped pan. Su sakit nu lawas a kagamutn manm na ibuprofen endu acetaminophen (paracetaml). Kapakay ka bon minom sa decongestant para katabangan ka sa sepu nengka. Su suppressant manem na mana su robitussin na makadtabang sa katabang sa aden batok nin. Madtabang bon su expectorant sa klad nengka. Su antihistamine na makadtabang bon sa  kaped a dalo nin mana su kambalen pedsamikel, kangagatel, endu kaawa na ngog. Sya manem sa ka tyakap sa ginawa, na upama ka aden sakit nengka na degka ka. Da ka ged blyu sa walay nengka amayka aden mayaw nengka sa naipus a 24 na oras. Inom ka bon sa madakel a ig. Da ka ged pegkategel. Kan ka sa ebpyapya. Ugayd na nya bun a benel mapya na upama ka kagaga nengka bon a angay ka sa penggamot a mana su doktol. Namba silan na kaenggan ka nilan sa riseta na gamot a mabagel endu madtalo nilan sa leka ngin I mapya enggulan."
+        `
+        Su influenza o flu na viral infect na pakabinasa sa kapenginawa nu respiratory system. Nya mapya enggulan na taw upama ka pakagedam sekanin sa namba na minom sekanin sa madakel a ig endu di sekanin ma dehydrate.
+        
+        Aden bon mga gamot a gapamasa sa botika a da resita nin a mapakay nengka paginumen. Mapakay a enggamot ka sa antihistamines endu egkapya mangiginawa nengka amayka aden magatel nengka, aden ngug nengka o pegkagatel ka. Su analgesic manem mana su acetaminophen o ibuprofen na pakagamot sa sakit na lawas abpeg sa mayaw. Su mga non steroidal anti-inflammatory drugs (nsaids) na meto bun ba i penggulan nun. Upama ka pedsepu ka a benel a di ka pagainawa na mapakay ka enggamot sa decongestants. Upama manem ka pembatoken ka na tekaw na gemamit sa antitussives. Mapakay bon a keman ka sa lozenges upama manem ka magatel i tidek nengka o pembatok ka.  
+
+        Aw na to na su pagospitalen su taw upama ka di den a benel menda i influenza nin. Nya mapya a enggulan nu taw tangkan nin su nganin nganin a makainfluenza endu mapatebek sikanin sa bakuna endu di edsakit.
+        `
     ],1),
 ]
 
