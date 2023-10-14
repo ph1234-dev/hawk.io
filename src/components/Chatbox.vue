@@ -1,7 +1,7 @@
 <script setup>
 
 import {ref,watch,onMounted,nextTick } from 'vue'
-import { useBackendAPI } from '../stores/api';
+import { useBackendAPI } from '@/stores/api';
 
 let msg = ref('')
 let userMessages = ref([])
@@ -25,6 +25,7 @@ let sendMessage = async () => {
     store.storeLog(msg.value,reply,lang)
     // console.log(`Storing Log:\n\tMsg: ${msg.value}\n\tLang: ${lang}\n\tReply: ${reply}`)
     userMessages.value.push({
+        // reply here is an object so wer need to return reply.reply
         "bot": reply,
         "user": msg.value
     })
@@ -55,8 +56,18 @@ watch(userMessages.value,function(){
 })
 
 let showOverlay = ()=>{
+     
     let el = document.querySelector(".nav-overlay")
-    el.style.display = "flex"
+    
+    let style = el.style.display 
+    if (style=="flex"){
+        el.style.display="none"
+    }else{
+        el.style.display="flex"
+        el.style.borderBottom = "3px inset rgba(50, 49, 53,.7)"
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
 }
 
 </script>
@@ -88,7 +99,7 @@ let showOverlay = ()=>{
                     {{ item.user }}
                 </p> 
                 <p class="chatbox-message-chatbot">
-                    {{ item.bot }}
+                    {{ item.bot.reply }}
                 </p>
             </template>
         </div>
@@ -121,7 +132,9 @@ let showOverlay = ()=>{
     display: block;
 }
 
+
 @media screen and (min-width: 768px) {
+
     .chatbox-nav-actions{
         display: none !important;
     }

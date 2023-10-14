@@ -37,7 +37,10 @@ export default class DomainClassifier extends NaiveBayes{
         rules.forEach((rule, index) => {
             // access patters
             let patterns = rule.pattern
-            patterns.forEach(insertCallback)
+            
+            if (patterns != undefined ) {
+                patterns.forEach(insertCallback)
+            }
         })
 
     }

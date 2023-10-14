@@ -64,9 +64,6 @@ export default class Blackbox{
     this.archive.removeReferenceTriggers()
   }
 
-  findSubstitute(term){
-    this.archive.findSubstitute(term)
-  }
 
   sortReferences(){
     this.archive.sortReferences()
@@ -75,13 +72,6 @@ export default class Blackbox{
 
   transformReferences(){
     this.archive.transformReferences()
-  }
-
-  normalizeString(str){
-    console.log("Normalization")
-    console.log(`Before, string was [${str}]`)
-    str = this.archive.normalizeString(str)
-    console.log(`After, string was [${str}]`)
   }
 
   storeRules(data){
@@ -112,11 +102,11 @@ export default class Blackbox{
         console.log("\nPrinting memory")
         this.archive.print().memory()
       },
-      dictionary: ()=>{
-        console.log("\nPrinting dictionary")
-        this.archive.print().dictionary()
-      },
     }
+  }
+
+  removeUntransformedPatternsExtraSpaces(){
+    return this.archive.removeUntransformedPatternsExtraSpaces()
   }
 
   getReplyUsingPatternMatching(msg){
@@ -146,4 +136,23 @@ export default class Blackbox{
     return this.memory.getPatternReferences
   }
 
+  getReplyUsingTanimotoCoefficient(msg){
+    return this.archive.getReplyUsingTanimotoCoefficient(msg)
+  }
+
+  getReplyUsingOverlapCoefficient(msg){
+    return this.archive.getReplyUsingOverlapCoefficient(msg)
+  }
+
+  replaceSubstitutesInUntransformedReferences(){
+    return this.archive.replaceSubstitutesInUntransformedReferences()
+  }
+
+  removeStopWordsInReferencePatterns(){
+    return this.archive.removeStopWordsInReferencePatterns()
+  }
+
+  printBM25Docs(){
+    return this.archive.printBM25Docs()
+  }
 }

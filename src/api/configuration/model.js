@@ -32,3 +32,13 @@ export const encodeSubstitution = (substitute, terms) => {
     "terms": terms
   }
 }
+
+
+export const encodeTestCase = (a, b, c,d) => {
+  return {
+    "msg": a,
+    "lang": b,
+    "dimension": c,
+    "index": d
+  }
+}

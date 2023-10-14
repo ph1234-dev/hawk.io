@@ -172,15 +172,11 @@ class BM25{
       console.log(`\tScore << ${score}`)
     })
 
-    
 
   }
 }
 
-const docs1
-
-
-= [
+const docs1= [
   "apple banana orange pear peach",
   "orange orange orange orange orange",
   "apple orange orange peach peach peach",
@@ -194,34 +190,34 @@ const docs1
   // ["apple", "orange", "orange", "peach", "peach", "peach"],
 ];
 
-// const algo = new BM25()
-// algo.train(docs)
-// const input = "and i really like to eat orange with banana but i want peach also";
-// algo.calculateBM25(input)
-// const score = algo.calculateBM25(input,k1, b);
+const algo = new BM25()
+algo.train(docs1)
+const input = "and i really like to eat orange with banana but i want peach also";
+algo.calculateBM25(input)
+const score = algo.calculateBM25(input);
 // console.log(score); // outputs: 0.2223249659481613
 
-function calculateBM25(term, doc, docs, k1, b) {
-  const N = docs.length;
-  const avgdl = docs.reduce((acc, doc) => acc + doc.length, 0) / N;
-  const f = doc.filter((token) => token === term).length;
-  const idf = Math.log((N - docs.filter((doc) => doc.includes(term)).length + 0.5) / (docs.filter((doc) => doc.includes(term)).length + 0.5));
-  const tf = (f * (k1 + 1)) / (f + k1 * (1 - b + b * (doc.length / avgdl)));
-  return tf * idf;
-}
+// function calculateBM25(term, doc, docs, k1, b) {
+//   const N = docs.length;
+//   const avgdl = docs.reduce((acc, doc) => acc + doc.length, 0) / N;
+//   const f = doc.filter((token) => token === term).length;
+//   const idf = Math.log((N - docs.filter((doc) => doc.includes(term)).length + 0.5) / (docs.filter((doc) => doc.includes(term)).length + 0.5));
+//   const tf = (f * (k1 + 1)) / (f + k1 * (1 - b + b * (doc.length / avgdl)));
+//   return tf * idf;
+// }
 
-const docs = [
-  ["apple", "banana", "orange", "pear", "peach"],
-  ["orange", "orange", "orange", "orange", "orange"],
-  ["apple", "orange", "orange", "peach", "peach", "peach"],
-];
+// const docs = [
+//   ["apple", "banana", "orange", "pear", "peach"],
+//   ["orange", "orange", "orange", "orange", "orange"],
+//   ["apple", "orange", "orange", "peach", "peach", "peach"],
+// ];
 
-const doc = docs[0];
-const term = "orange";
-const k1 = 1.5;
-const b = 0.75;
-const score = calculateBM25(term, doc, docs, k1, b);
-console.log(score); // outputs: 0.2223249659481613
+// const doc = docs[0];
+// const term = "orange";
+// const k1 = 1.5;
+// const b = 0.75;
+// const score = calculateBM25(term, doc, docs, k1, b);
+// console.log(score); // outputs: 0.2223249659481613
 
 
 // docs.forEach((doc,index)=>{

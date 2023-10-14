@@ -1,7 +1,11 @@
 @use "variable";
 
 
+$width-max-footer: 1024px;
+
 .footer{
+
+    display: none;
     &-content{
         display: flex;
         flex-direction: column;
@@ -11,18 +15,56 @@
 
 }
 
-@media screen and (min-width: 321px) {
+// @media screen and (min-width: 321px) {
+
+//     .footer{
+
+//         display: flex;
+//         width: 100%;
+
+
+//         background-color: variable.$bg-whiter;
+        
+//         &-content{
+//             width: 100%;
+//             max-width: $width-max-footer;
+//             margin: auto;
+//             display: flex;
+//             flex-direction: row;
+//             padding: variable.$padding;
+//             gap: variable.$gap-horizontal;
+
+//             >*{
+//                 color: variable.$bg-gray-dark;
+//             }
+//         }
+
+//         > * {
+//             font-size: small;
+//         }
+
+//     }
+// }
+
+
+/** 
+FIX FOR THE WEIRD BEHAVIOR OBSERVED THIS OCTOBER 15, 2023
+WARNING: DEFAULT WIDTH BEFORE WAS 321px , but to elimtate the behavior of not working properly
+we only enable the footer after screen size is beyond 769px
+*/
+@media screen and (min-width: 769px) {
 
     .footer{
 
         display: flex;
         width: 100%;
 
+
         background-color: variable.$bg-whiter;
         
         &-content{
             width: 100%;
-            max-width: 960px;
+            max-width: $width-max-footer;
             margin: auto;
             display: flex;
             flex-direction: row;
@@ -40,3 +82,4 @@
 
     }
 }
+

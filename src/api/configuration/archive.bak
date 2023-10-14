@@ -25,6 +25,7 @@ let formatMemory = (val)=>{
 }
 
 let formatReferences = (pattern,index)=>{
+  // pattern = pattern.replace
   return {
     pattern: pattern,
     index: index
@@ -44,7 +45,9 @@ class ARCHIVE{
 
   constructor(){
 
-    this.TRIGGERS = { "SKIP_SUBSTITUTION": "!" }
+    this.TRIGGERS = {
+      "SKIP_SUBSTITUTION": "!"
+    }
 
     //counter for the units
     this.index = 0;
@@ -68,6 +71,11 @@ class ARCHIVE{
     // tracks the agent responses
     this.responseStack = new STACK()
 
+    // stores predefined objects
+    // use indexer approach ex. dictionary[new val] = val
+    this.dictionary = []
+
+    // things that the chatbot learned
     // example name etc.
     this.learnedData = new Map()
 
@@ -77,10 +85,46 @@ class ARCHIVE{
   removeReferenceTriggers(){
     console.log("Removing reference triggers")
     this.references.map((el,index)=>{
-      el.pattern = el.pattern.replace(/[!]/g,``)
+      el.pattern = el.pattern.replace(/[!]/,``)
     })
   }
 
+  // findSubstitue
+  findSubstitute(term){
+
+    let sub
+    // return term
+
+    if ( term.match(`${this.TRIGGERS.SKIP_SUBSTITUTION}(\\w+)`)){
+      // console.log(`Found >> ${term} << Must skip`)
+      return term
+    }
+
+    this.substitutions.forEach(el=>{
+      //substitute word
+      let terms = el.terms
+      
+      // pattern is found
+      let found = terms.find(pattern=>{
+        // console.log("\t<< " + term + " << " + pattern)
+        // let regex = new RegExp(pattern,"igm")
+       
+        return term.match(`^${pattern}$`)
+      })
+      
+
+      if ( found != undefined ){
+        sub = el.substitute
+        // console.log(`\tFound Substitute for [${sub}] | ${sub}<< `)
+      }
+    
+    })      
+    
+    // console.log(`>> Substitute for [${term}] is [${sub}]`)
+   
+    return sub
+  }
+  
   printBM25Docs(){
     return this.BM25.printDocs()
   }
@@ -147,6 +191,7 @@ class ARCHIVE{
 
         if ( sub != null ){
             // console.log('>> Testing: ',token, ' replace to', word )
+            
             const regex = new RegExp("\\b" + word + "\\b", "g");
             reconstructed = reconstructed.replace(regex,sub)
         }
@@ -155,12 +200,14 @@ class ARCHIVE{
       
       // console.log(`\t After Reconstruction > ${reconstructed} `)
       
+
       this.BM25.train(reconstructed,ref.index)
       ref.pattern = transform(reconstructed)
 
       // old and produces error
       // this.BM25.train(ref.pattern,ref.index)
       // ref.pattern = transform(ref.pattern)
+      
     })
 
   }
@@ -189,16 +236,9 @@ class ARCHIVE{
         })
       }
 
-  }
 
-  removeUntransformedPatternsExtraSpaces(){
-    let len = this.referencesUntransformedPatterns.length
-    for ( let i = 0 ; i < len; i++){
-      let ref = this.referencesUntransformedPatterns[i].pattern
-      
-      this.referencesUntransformedPatterns[i].pattern = ref.replace(/\s+/g,' ')
-    }
 
+      // console.log ("invoking replace substitute")
   }
 
   removeStopWordsInReferencePatterns(){
@@ -264,6 +304,16 @@ class ARCHIVE{
             )
         })
       },
+      dictionary: ()=>{
+        console.log(this.dictionary)
+      },
+      substitutions: ()=>{
+        console.log("Printing Substitutes from archive")
+        this.substitutions.forEach(el=>{
+          console.log(`Substitute: ${el.substitute}`)
+          console.log(`\tpatterns: ${el.terms}`)
+        })
+      }
     }
     
   }
@@ -278,6 +328,27 @@ class ARCHIVE{
     }
 
     this.references.sort(callback)
+  }
+
+
+
+  //stores substitution that will be used to 
+  //normalize the words to a base representative 
+  storeSubstitutions(data){
+    /**
+     * let animal = [
+     *    'cat',
+     *    'dog'
+     * ]
+     * 
+     */
+    if (Array.isArray(data)){
+      data.forEach(el=>{
+        this.substitutions.push(el)
+      })
+    }else{
+      this.substitutions.push(data)
+    }
   }
 
   // key - the term with definition
@@ -296,7 +367,14 @@ class ARCHIVE{
         
         //checks if conversation unit contains multiptle patterns
         if ( Array.isArray(pattern) ){
-                         
+        
+          // repalace item in element
+          // https://www.codegrepper.com/code-examples/javascript/loop+through+array+and+change+value+javascript
+          // store the normalized value of the memory
+          pattern.forEach((el,index)=>{
+            pattern[index] = this.normalizeString(el)
+          })
+                  
           // stores the original value of the memory
           this.memory.push(currentValue)
           // console.log("?? Current value + " + JSON.stringify(currentValue))
@@ -329,6 +407,7 @@ class ARCHIVE{
     }else{
       
       unit.index = this.index++
+      unit.pattern = this.normalizeString(unit.pattern)
       this.memory.push(unit)
       this.references.push(formatMemory(unit))
     }
@@ -346,8 +425,87 @@ class ARCHIVE{
     }
   }
 
+  storeDictionary(term){
+    
+    if ( Array.isArray(term) ){
+      console.log("Pushing an array of definition")
+      term.forEach(el=>{
+
+        let formatNeeded = "^(.*)$"
+        let regEx = new RegExp(formatNeeded)     
+        
+        if ( regEx.test(el.term) ){
+          // no need to format
+        }else{
+          el.term = `^${el.term}$`
+        }
+        
+        this.dictionary.push(el)
+      })
+    }else{
+      console.log("Pushing individual definition")
+      this.dictionary.set(term.term,term.definition)
+    }
+
+
+  }
+
+  normalizeString(str){
+    
+    let tokens = str
+    
+    //  ngram splitting argmax=3
+    //  https://stackoverflow.com/questions/48826622/split-string-into-pairs-triplets-quadruplets-and-on-ngrams
+    function* ngrams(a, n) { 
+      let buf = [];
+  
+      for (let x of a) {
+          buf.push(x);
+          if (buf.length === n) {
+              yield buf;
+              buf.shift();
+          }
+      }
+    }
+   
+    const MAX_SPLIT_GRAMS = 3
+    let current_split_grams = 1
+    let skipSymbol = this.TRIGGERS.SKIP_SUBSTITUTION
+    // pattern !antidiarrhea
+  
+    while(current_split_grams <= MAX_SPLIT_GRAMS){
+      // console.log("Split:: " + current_split_grams)
+      for (let g of ngrams(tokens.split(' '), current_split_grams)){
+        let split = g.join(' ')
+
+        let substitute = this.findSubstitute(split)
+        
+        
+        // console.log(`\t>> Substitute for [${split}] is [${substitute}]`)
+        
+        if ( substitute != undefined ){
+          // console.log(`\t\t -- Replacing ${split} | ${substitute} `)
+          str = str.replace(split,substitute)
+        }
+      }
+    
+      // console.log(`End of NGRAM : ${current_split_grams}`)
+      // console.log("++ Normalized >> " + str)
+      tokens = str
+      current_split_grams++
+    }
+
+     // join tokens split
+     str = tokens
+ 
+    //  console.log(`Message after substitution:: ${str}`)
+     return str
+  }
 
   getReplyUsingPatternMatching(msg){
+
+    // normalize the terms by doing substitutions
+    msg = this.normalizeString(msg)
 
     let response = null
     let matchingPattern = ""
@@ -379,6 +537,8 @@ class ARCHIVE{
         // console.log(`Testing:: ${msg} || ${ref.pattern}`)
         // console.log(`Match?:: ${regex.test(msg)}`)
   
+  
+        
         if ( regex.test(msg) ){
           matchingPattern = ref.pattern
           console.log(`Archive:: getReplyUsingPatternMatching (pattern) / ${ref.pattern}`)
@@ -389,6 +549,7 @@ class ARCHIVE{
         }
       }
 
+      
 
       index++
     }/** end finding the matching singular memory*/
@@ -400,9 +561,16 @@ class ARCHIVE{
     }
   }
 
+  getDictionary(term){
+
+    // let res = this.dictionary.find(el=>el.term.match(term))
+    // console.log(`Dictionary Test for >> ${term}`)
+    // console.log(`Found definition of ${term} << ${res.definition}`)
+    return this.dictionary[term]
+  }
+
 
   getReplyUsingCosineSimilarity(msg,threshold){
-    console.log('Attempting Cosine Similarity:: ', msg)
     let len = this.referencesUntransformedPatterns.length
 
     let max = this.referencesUntransformedPatterns[0]
@@ -418,23 +586,37 @@ class ARCHIVE{
     let score = cosineSimilarity(msg,max.pattern)
     // console.log(`\tFrom Archive:: Cosine Max Pattern Found: ${JSON.stringify(max)}`)
     // console.log(`\t\tFrom Archive:: Cosine distance:: ${score}`)
-    // if ( score > threshold){
+    if ( score > threshold){
       reply = this.memory[max.index].response
-    // 
+    }
 
-    return {reply,score: score,pattern:max.pattern}
+    return {reply,score,pattern:max.pattern}
   }
 
   
-  getReplyUsingBM25(msg){ 
-    msg = msg.replace(/\s+/g," ")
-    console.log('BM25 Test Input:: ',msg)
+
+
+  getReplyUsingBM25(msg){
+    // let reply = null
     let {score,pattern,index} = this.BM25.getScore(msg)
+
+    // console.log(`\Archive::getReplyUsingBM25 [${msg}]`)
+    // console.log(`\tPattern found:: ${pattern}`)
+    // console.log(`\tScore: ${score}`)
+    // console.log(`Archive::getReplyUsingBM25:: Reply:: ${index}`)
+    // console.log(`Archive::getReplyUsingBM25:: Reply:: ${this.memory[index].response}`)
+
     return {
       score,
       reply: this.memory[index].response[0],
       pattern
     }
+    // return {
+    //   score,
+    //   pattern,
+    //   // reply: this.memory[index].response
+    //   reply: "none"
+    // }
   }
 
   getReplyUsingTanimotoCoefficient(msg){

@@ -46,10 +46,17 @@ let submit = async () => {
     // form = reactive(formInitialValue)
 }
 
+let closeMobileLoginForm = () => {
+    let el = document.querySelector(".nav-overlay")
+    el.style.display = "none"
+}
+
 </script>
 
 <template>
 
+
+<div>
 
     <form class="form" @submit.prevent="submit()">
 
@@ -57,7 +64,7 @@ let submit = async () => {
             <strong class="">Account Details  <span class="icofont-safety"></span></strong>
             <p class="text-small ">Use the account you registered.</p>
         </div>
-        
+
         <span class="" v-if="showDoesNotExistAccount"> Account Does Not Exist</span>
 
         <!-- <label>Username</label> -->
@@ -79,10 +86,26 @@ let submit = async () => {
             <p>Click <a><strong>here</strong></a> to use the application without logging in</p>
         </div>
     </form>
+
+    <div id="login-swipe-instruction-panel" class="panel">
+        <span class="text text-small">Swipe upwards to return to chatbox</span>
+        <br>
+        <br>
+        <button @click="closeMobileLoginForm" class="text-small">Go back</button>
+    </div>
+</div>
     
 </template>
 
 <style lang="scss" scoped>
+
+    @media screen and (min-width: 769px) {
+        #login-swipe-instruction-panel{
+            display: none;
+            // background-color: orange !important;
+        }
+    }
+
 
     $scoped-opacity: .77;
     $scoped-color-white:  rgba(255,255,255,$scoped-opacity) !important;
