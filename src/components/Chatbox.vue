@@ -30,6 +30,7 @@ let sendMessage = async () => {
         "user": msg.value
     })
 
+    msg.value = ""
 }
 
 

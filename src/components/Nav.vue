@@ -39,4 +39,14 @@ let logout = ()=>{
 .nav-content{
     // max-width: 100%;
 }
+
+.nav{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav{
+        display: flex;
+    }
+}
 </style>

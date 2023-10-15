@@ -3,6 +3,51 @@ import Nav from '@/components/Nav.vue'
 import Footer from '@/components/Footer.vue'
 import NavOverlay from '@/components/NavOverlay.vue'
 
+
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
+
+// these pertaining files makes the app installable.. (aside form being pwa you need to make it instlalable also)
+// you can refer to chatgpt 
+
+    const beforeInstallPrompt = (event) => {
+      // Prevent the default behavior to prevent the browser's install prompt
+      event.preventDefault();
+      
+      // Store the event for later use
+      installPromptEvent.value = event;
+    };
+
+
+    const installApp = () => {
+      if (installPromptEvent.value) {
+        // Trigger the installation by calling prompt() on the stored event
+        installPromptEvent.value.prompt();
+        
+        // Wait for the user to respond to the prompt
+        installPromptEvent.value.userChoice.then(choiceResult => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the installation');
+          } else {
+            console.log('User dismissed the installation');
+          }
+          
+          // Clear the install prompt event after user choice
+          installPromptEvent.value = null;
+        });
+      }
+    };
+
+    onMounted(() => {
+      // Add event listener when the component is mounted
+      window.addEventListener('beforeinstallprompt', beforeInstallPrompt);
+    });
+
+    onBeforeUnmount(() => {
+      // Remove event listener when the component is unmounted
+      window.removeEventListener('beforeinstallprompt', beforeInstallPrompt);
+    });
+
 </script>
 
 <template>

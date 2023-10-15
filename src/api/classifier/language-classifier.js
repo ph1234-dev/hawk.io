@@ -38,7 +38,7 @@ export default class LanguageClassifier extends NaiveBayes{
             // access patters
             let patterns = rule.pattern
             
-            if (patterns != undefined ) {
+            if (Array.isArray(patterns) ) {
                 patterns.forEach(insertCallback)
 
                 // access responses

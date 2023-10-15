@@ -1,24 +1,25 @@
 <script setup>
 import Chatbox from '@/components/Chatbox.vue'
-let scrollDown = ()=>{
-  let el = document.querySelector("#template-body-section-2")
-  if ( el ){
-    el.scrollIntoView({ behavior: "smooth" });
-  }
+let scrollDown = () => {
+    let el = document.querySelector("#template-body-section-2")
+    if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+    }
 }
 </script>
 
 <template>
-
-<section id="template-body-content-1" class="container container-split-2">
-        <div class="area-information">
+    <section id="template-body-content-1" class="container container-split-2">
+        <div class="area-information" >
 
             <div class="title-container">
                 <strong class="catch-phrase text-biggest">Hawk</strong>
+                <!-- <strong class="catch-phrase text-bigger">Hawk</strong> -->
                 <!-- <i class="hawk-outline"></i> -->
             </div>
 
             <div class="subtitle-container text-big">
+            <!-- <div class="subtitle-container text"> -->
                 <strong>A selfcare Assistant</strong>
             </div>
 
@@ -39,10 +40,8 @@ let scrollDown = ()=>{
 </template>
 
 <style lang="scss" scoped>
-
-
 $scoped-opacity: .77;
-$scoped-color-white:  rgba(255,255,255,$scoped-opacity) !important;
+$scoped-color-white: rgba(255, 255, 255, $scoped-opacity) !important;
 $scoped-blue: #2a52be;
 $scoped-padding: 7rem;
 
@@ -62,15 +61,15 @@ p {
         gap: .5rem;
     }
 
-    .subtitle-container{
+    .subtitle-container {
         font-size: 1.25rem;
     }
 
-    .catch-phrase{
+    .catch-phrase {
         max-width: 35ch;
     }
 
-    .details{
+    .details {
         display: none;
     }
 
@@ -114,7 +113,7 @@ p {
             color: $scoped-color-white;
         }
 
-        min-width: 50%;
+        width: 30%;
 
 
     }
@@ -129,11 +128,12 @@ p {
 @media screen and (min-width: 1024px) {
     .area-information {
         align-items: flex-start;
-    
-        .details{
+
+        .details {
             display: block;
         }
-        .title-container{
+
+        .title-container {
             margin-bottom: 3rem;
         }
 

@@ -1,4 +1,4 @@
-import { ref, computed ,reactive,watch} from 'vue'
+import { ref, computed ,reactive} from 'vue'
 import { defineStore } from 'pinia'
 import { useRoute, useRouter } from 'vue-router'
 
@@ -12,14 +12,16 @@ export const useBackendAPI = defineStore('backend', () => {
     authenticated: false,
     token: ''
   }
+
   let user = reactive(userInitialValue)
 
-  const URL_BASE = "http://flask.activlab.pro/"
-  // const URL_BASE = "http://127.0.0.1:5000"
+  // const URL_BASE = "http://flask.activlab.pro/"
+  const URL_BASE = "http://127.0.0.1:5000"
   const URL_REGISTER = `${URL_BASE}/user/api/register`
   const URL_LOGIN = `${URL_BASE}/user/api/login`
   const URL_STORE_LOG = `${URL_BASE}/log/api/post`
   const URL_PREDICT_LANGUAGE = `${URL_BASE}/classify/api/predict`
+  const URL_TEST_RECORDS = `${URL_BASE}/test/api/store`
   
   const ENGINE = new Engine()
 
@@ -207,6 +209,80 @@ export const useBackendAPI = defineStore('backend', () => {
     }
   }
 
+  let beginDevTest = async() =>{
+    let testData = [].concat(ENGINE.getTestCases())
+    let payload = []
+    console.log('Begin Testing with VuePinia')
+    console.log('api::useBackendAPI::beginDevTest() ')
+    console.log('Total Test Cases: ',testData.length)
+
+    let testMax = 5
+    for ( let i=0; i < testData.length; i++){
+      
+      // stop case
+      // if ( i > 0 ) break;
+      let test = testData[i]
+      let result = ENGINE.getReply(test)
+      
+      // if ( i < testMax ){
+      //   console.log(`${JSON.stringify(result)}`)
+      // }
+      
+      let data = {
+        "userMessage": test ,
+        "reply": result.reply,
+        "lang":  result.lang,
+        // "dimensionCode":  result.dimensionCode,
+        // "dimensionLabel":  result.dimensionLabel,
+        "pattern":  result.pattern,
+        "patternMatchingMethod":  result.patternMatchingMethod,
+        "testNumber": 11,
+        "score": result.score,
+        "reconstructedMessage": result.reconstructed,
+        "originalPatternFound": result.originalPatternFound
+      }
+
+      // if (result.originalPatternFound == undefined){
+      //   console.log('xx >> Error found in: ', JSON.stringify(data))
+      // }
+      payload.push(data)
+      // requestData(URL_TEST_RECORDS,data,'POST')
+      // console.log(JSON.stringify(JSON.stringify(load))
+    }
+
+    // IMPORTANT NOTE:: test numbers
+    // 5 was the previous - before may 30
+    // 6 was the previous - May 30
+    // 7 was the previous - June 5 - 
+                            // improvements on the regext wildcard expressions and fixes on the responses/paterns/manual optimizaiton of rules
+                            // improved weighted cosine similarity scoreing with thresholds/priority word detection/etc..
+    
+    // 8 - JUNE 7 .. OPTIMIZATION AND FIXING OF ERROS REMOVED REDUNDANT RULES AND DESTRUCTURE SOME OF THE PATTERNS TO FIX SOME ERRORS
+                // further optimized the rule and removed redundant like fever in NSAIDs 
+
+    // 9 - improvements on the searchinng and making queries a little atomic
+    // 10 - has improvements june 13
+
+                  
+    requestData(URL_TEST_RECORDS,payload,'POST')
+        .then((data) => {
+          console.log(data); // JSON data parsed by `data.json()` call
+        })
+        .catch(e => {
+          console.error('Action: Attempted to store log into server. It was Executed but error was found. ' ,e)
+        });
+
+    // 12 - august 13 test for cosine similarity - final
+
+  }
+
+  // we can automate the scoring 
+  // we know what should be the target response bec ause we know where 
+  // we defined the test item
+  // target  = reply block number (we can check this through the rule index.. or the memory index it retrieves)
+  // if true, the answer is correct
+  // beginDevTest()
+
   return {
     storeLog,
     registerUser,
@@ -223,6 +299,7 @@ export const useBackendAPI = defineStore('backend', () => {
 
 window.addEventListener('online', () => console.log('Became online ', window.navigator.onLine));
 window.addEventListener('offline', () => console.log('Became offline'));
+
 
 async function requestData(url = '', data = {}, operation = 'GET',token='') {
   // console.log(`JSON passed: ${data}`)
@@ -242,6 +319,28 @@ async function requestData(url = '', data = {}, operation = 'GET',token='') {
     referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
     // body: JSON.stringify({"user_id": 1, "message": "hello world", "reply": "no rep"})
     body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  return response; // parses JSON response into native JavaScript objects
+}
+
+async function requestDataButNotStringified(url = '', data = {}, operation = 'GET',token='') {
+  // console.log(`JSON passed: ${data}`)
+
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: operation, // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json',
+      // 'Authorization': `Bearer ${token}`
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    // body: JSON.stringify({"user_id": 1, "message": "hello world", "reply": "no rep"})
+    body: data// body data type must match "Content-Type" header
   });
   return response; // parses JSON response into native JavaScript objects
 }
