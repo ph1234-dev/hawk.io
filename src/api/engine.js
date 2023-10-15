@@ -40,11 +40,11 @@ export default class Engine {
     constructor() {
         
 
-        // this.RULES = {
-        //     ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
-        //     FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
-        //     MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
-        // }
+        this.RULES = {
+            ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
+            FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
+            MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
+        }
 
         // this.RULES = {
         //     ENG: [].concat(genericEngRules),
@@ -52,11 +52,11 @@ export default class Engine {
         //     MAG: [].concat(genericMagRules)
         // }
 
-        this.RULES = {
-            ENG: [].concat(genericEngRules),
-            FIL: [].concat(genericFilRules),
-            MAG: [].concat(genericMagRules)
-        }
+        // this.RULES = {
+        //     ENG: [].concat(genericEngRules),
+        //     FIL: [].concat(genericFilRules),
+        //     MAG: [].concat(genericMagRules)
+        // }
 
 
         this.vocabulary = {
