@@ -18,8 +18,7 @@ data.push(encodeMemory([
     `what to do to hydrate`,
 ],[
     `Staying hydrated is important to replenish fluid in your body. There are diseases like like diarrhea and influeza can cause the body to lose water and electrolytes. So it's best if you keep this in mind.  Drinking fluids, such as  water, buko juice, am, arrozcaldo, soups, sports drinks, broths, and oral rehydration solutions, can replace lost fluids and electrolytes and prevent it. It is also recommended to avoid beverages that can further irritate the stomach, such as alcohol, caffeine, and sugary drinks. Proper hydration can help relieve symptoms and prevent complications  that can arise from dehydration. `
-    
-],))
+],1))
 
 // healthy food
 data.push(encodeMemory([
@@ -34,7 +33,7 @@ data.push(encodeMemory([
     `tell why eat healthy food to treat conditions`
 ],[
     `It's a vital thing to eat well because it supports your body's immune system. `
-],))
+],1))
 
 // consult doctor 
 data.push(encodeMemory([
@@ -46,7 +45,7 @@ data.push(encodeMemory([
     `tell or give reasons why consult doctors to treat conditions`
 ],[
     `It has always been recommended to seek help from medical professionals. They can help diagnose and administer proper treatment for health conditions.`
-],))
+],1))
 
 // where to buy medicines
 data.push(encodeMemory([
@@ -60,7 +59,7 @@ data.push(encodeMemory([
     `tell me where can i buy medicines or drugs`
 ],[
     `Keep in mind that only buy medicines from reputable drug stores. Some grocery outlets may also have sections for medicines your can buy.`
-],))
+],1))
 
 // SYMPTOMS 
 

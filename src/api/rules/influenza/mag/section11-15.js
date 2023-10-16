@@ -23,7 +23,6 @@ let section11 = [
         `pangilay ako sa branded a antihistamine`,
         `ngen i branded a antihistamine`,
     ],[
-    ],[
         `Su Bendryl na isa sa mga kila a branded a antihistamine. Tanay na na nya ba mga gamot na kanen bo upama ka aden guide na health profession. Upama ka pakagedam ka sa influenza, na degka ka, inom sa ig, endu da ka pagubay sa bel.`
     ],7),
     encodeMemory([
@@ -831,7 +830,7 @@ let section11 = [
 
         Nya ba nadtalo ko a nya na mga upaman bo na panon i kakan sa antitussive. Nasisista i kaangay nengka sa doktor engu madtalo nin ngin i mapya o nakasugat a dose para sa leka.
         `
-    ]),
+    ],7),
     encodeMemory([
         `* antitussive   * `,
         `ngin i pidtalo a antitussives`,
@@ -1078,13 +1077,13 @@ let section11 = [
 ]
 
 let section12 = [
+    encodeMemory([
         `* endaw * ebpawang * influenza *`,
         `* endaw * gamot * influenza * `,
         `endaw kagamutan su influenza`,
         `endaw mangay i taw upama ka influenza`,
         `endaw mapakay penggamotan i influenza`,
         `influenza ako, endaw ako ebpawang`,
-    encodeMemory([
     ],[
         `Kapakayan nengka pedtyakapan sakit nengka sa walay. Ugay na angay ka sa doctor upama ka nga nengka kailay na masla I mangguna na flu a nan sa leka. `
     ],5),

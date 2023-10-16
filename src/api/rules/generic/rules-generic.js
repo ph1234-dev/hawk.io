@@ -1,6 +1,6 @@
 import { eng } from "./eng"
-import {fil} from "./engfil"
-import {mag} from "./engmag"
+import {fil} from "./fil"
+import {mag} from "./mag"
 
 
 

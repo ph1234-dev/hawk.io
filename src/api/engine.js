@@ -105,7 +105,7 @@ export default class Engine {
         // set this to TRUE To show debug message
         // this is default for local tests
         // this.debug = false
-        this.debug = true
+        // this.debug = true
 
         this.REPLY_THRESHOLD = .3
         this.MAX_TOTAL_WORDS_OUTSIDE_DICTIONARY = 2
@@ -120,6 +120,111 @@ export default class Engine {
         // console.log(this.printWildCards('MAG'))
         // console.log(this.printWildCards('FIL'))
         // console.log(this.printWildCards('ENG'))
+
+        this.showTopicStatistics()
+        this.showAllPatternStatistics()
+        this.showAllDimensionStatistics()
+    }
+
+    showAllPatternStatistics(){
+
+        let counter = (topics)=>{
+            let count = 0
+            topics.forEach(topic=>{
+
+                if ( Array.isArray(topic.pattern) ){
+                    count +=topic.pattern.length
+                }else{
+                    count++
+                }
+            })
+            return count
+        }
+
+        let totalDiarrheaPatterns = {
+            eng: counter(diarrheaEngRules),
+            fil: counter(diarrheaFilRules),
+            mag: counter(diarrheaMagRules),
+        }
+
+        let totalInfluenzaPatterns = {
+            eng: counter(influenzaEngRules),
+            fil: counter(influenzaFilRules),
+            mag: counter(influenzaMagRules),
+        }
+
+        let totalGenericPatterns = {
+            eng: counter(genericEngRules),
+            fil: counter(genericFilRules),
+            mag: counter(genericMagRules),
+        }
+
+        console.log(
+            `Topic Patterns Defined:\n
+                \tDiarrhea  - en [${totalDiarrheaPatterns.eng}]  , fil [${totalDiarrheaPatterns.fil}] , mag [${totalDiarrheaPatterns.mag}]
+                \tInfluenza - en [${totalInfluenzaPatterns.eng}] , fil [${totalInfluenzaPatterns.fil}] , mag [${totalInfluenzaPatterns.mag}]
+                \tGeneric   - en [${totalGenericPatterns.eng}] , fil [${totalGenericPatterns.fil}] , mag [${totalGenericPatterns.mag}]
+                `)
+
+    }
+
+    showAllDimensionStatistics(){
+
+        let dimensionFrequencies ={
+            1: 0,
+            2: 0,
+            3: 0,
+            4: 0,
+            5: 0,
+            6: 0,
+            7: 0,
+        }
+
+        // this.RULES.forEach(Object.keys())
+        Object.keys(this.RULES)
+            .forEach(lang=>{
+                let topics = this.RULES[lang]
+                topics.forEach(topic=>{
+                    dimensionFrequencies[topic.dimension] += 1
+                })
+            })
+            
+        console.log(`Dimension Frequencies`)
+        for ( let f in dimensionFrequencies ){
+            console.log(`\t[${f}] - ${dimensionFrequencies[f]}`)
+        }
+        // console.table(dimensionFrequencies)
+    }
+
+    showTopicStatistics (){
+
+        let totalDiarrheaTopics = {
+            eng: diarrheaEngRules.length,
+            fil: diarrheaFilRules.length,
+            mag: diarrheaMagRules.length
+        }
+
+        let totalInfluenzaTopics = {
+            eng: influenzaEngRules.length,
+            fil: influenzaFilRules.length,
+            mag: influenzaMagRules.length
+        }
+
+        let totalGenericTopics = {
+            eng: genericEngRules.length,
+            fil: genericFilRules.length,
+            mag: genericMagRules.length,
+        }
+
+
+        console.log(
+            `Topic Contained Rules:\n
+                \tDiarrhea  - en [${totalDiarrheaTopics.eng}]  , fil [${totalDiarrheaTopics.fil}] , mag [${totalDiarrheaTopics.mag}]
+                \tInfluenza - en [${totalInfluenzaTopics.eng}] , fil [${totalInfluenzaTopics.fil}] , mag [${totalInfluenzaTopics.mag}]
+                \tGeneric   - en [${totalGenericTopics.eng}] , fil [${totalGenericTopics.fil}] , mag [${totalGenericTopics.mag}]
+                `)
+
+
     }
     
 

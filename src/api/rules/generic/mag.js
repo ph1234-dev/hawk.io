@@ -17,7 +17,7 @@ data.push(encodeMemory([
         
     Nya ba kapaginom a nya na makatabang sa kagamot sa sintomas endu di galunsanan i kapedtagudo sabap sa dehydration`
     
-],))
+],1))
 
 // healthy food
 data.push(encodeMemory([
@@ -28,7 +28,7 @@ data.push(encodeMemory([
 ],[
     `Nasisita su kakan ebpyapya kagina pakatabang i namaba ka kagkabagel na immune system nu taw o su lawas nin
     `
-],))
+],1))
 
 // consult doctor 
 data.push(encodeMemory([
@@ -37,7 +37,7 @@ data.push(encodeMemory([
     `ngin to ka nasisita i ka angay sa doktor upama ka pedtagudo ako`,
 ],[
     `Nya bon mapya na pailay ksa sa doktor ka silan na katawan nilan panon endu ngin i gamot na mga sakit nu taw`
-],))
+],1))
 
 // where to buy medicines
 data.push(encodeMemory([
@@ -46,7 +46,7 @@ data.push(encodeMemory([
     `endaw mamasa sa gamot`,
 ],[
     `Tanday ka na su gamot na sya bo pamasen sa kila a mga botika. Aden bon mga grocery a pendagang sa gamot.`
-],))
+],5))
 
 // SYMPTOMS 
 
@@ -57,14 +57,10 @@ data.push(
     encodeMemory([
         `* (awa|gamot|kapya|tabang) * uta * `,
         `amayka su taw na nanguta na ngin i pakan o painom lon`,
-        `amayka su taw na nanguta na ngin i pakan o painom lon`,
         `ngen i kanen o inumen a taw a banguta`,
         `ngen i mapakay a kanen, inomen, o pamasan na taw a panguta`,
         `ngin i enggulan o galbeken na taw a mana pakauta`,
-        `ngin i enggulan o galbeken na taw a mana pakauta`,
         `ngin i mapya a enggulan na taw a pakauta`,
-        `ngin i mapya a enggulan na taw a pakauta`,
-        `su taw a panguta na ngin i enggulan nin`,
         `su taw a panguta na ngin i enggulan nin`,
         `umapa ka panguta i taw na ngin i pakan o painom lon`,
         `upama ka pakagedam sa kapaguta i taw na ngen i enggulan nin`,

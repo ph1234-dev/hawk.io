@@ -360,7 +360,7 @@ let section11 = [
         `paano ang alternatibo sa analgesics`,
     ], [
         `Ang Philippine Institute of Traditional and Alternative Healthcare ay nagpahiwatig na maaari mong Ampalaya, Yerba Buena, ulasimang bato o pansit-pansitan, at bayabas ay may analagesic effect.`
-    ]),
+    ],7),
     // nsaids
     encodeMemory([
         `* generic * nsaid*`,

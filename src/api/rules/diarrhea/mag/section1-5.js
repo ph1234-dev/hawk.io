@@ -82,8 +82,7 @@ let section4 = [
         `endoken ka su pedtagudo na masakit i tyan nin`,
     ],[
         `
-        Su galbek nu tinae na aw na to na gabinasa sabap sa sakit na tinae mana su lebag, kapegkagatel abpeg kabinasa na tinae. Kaped sa mga sakit a to na su irritable bowel disease, ulcerative collitis, small intestine bacterial overgrowth, irritable bowel syndrome, or celiac disease. Aden bon mga kapedtagudo na sabap sa mga kinan a gamot apeg su ukit na kakan nu taw. Upama ka penggamutan su taw a pedtagudo, na nasisita i nakasugat a diagnisis apeng kagamot lun.`
-,
+        Su galbek nu tinae na aw na to na gabinasa sabap sa sakit na tinae mana su lebag, kapegkagatel abpeg kabinasa na tinae. Kaped sa mga sakit a to na su irritable bowel disease, ulcerative collitis, small intestine bacterial overgrowth, irritable bowel syndrome, or celiac disease. Aden bon mga kapedtagudo na sabap sa mga kinan a gamot apeg su ukit na kakan nu taw. Upama ka penggamutan su taw a pedtagudo, na nasisita i nakasugat a diagnisis apeng kagamot lun.`,
     ],1),
     encodeMemory([
         `* kwa * tagudo *`,

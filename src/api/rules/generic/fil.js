@@ -22,7 +22,7 @@ data.push(encodeMemory([
     Ang pananatiling hydrated ay mahalaga dahil maaaring maubosan ng tubig ang katawan dulot ng dehydration. Ang ilang pwedeng maging sanhi nito ay ang pagtatae o sobra sobrang pagpapawis. Kaya, ang pinapayuhang uminom ka ng maraming likido, tulad ng tubig, buko juice, am, arrozcaldo, soup, sports drink, sabaw, at oral rehydration solution, ay maaaring palitan ang mga nawawalang likido at electrolyte at maiwasan ito. Inirerekomenda din na iwasan ang mga inumin na maaaring higit pang makairita sa tiyan, tulad ng alchohol, caffeine, at matamis na inumin.  Ang wastong hydration ay makakatulong na mapawi ang mga sintomas at maiwasan ang mga komplikasyon na maaaring magmula sa dehydration.
     `
     
-],))
+],1))
 
 // healthy food
 data.push(encodeMemory([
@@ -40,7 +40,7 @@ data.push(encodeMemory([
     `Sa anong paraan ang masustansyang pagkain ay nakatutulong sa pagpapagaling `,
 ],[
     `Mahalagang kumain ng maayos dahil sinusuportahan nito ang immune system ng iyong katawan.` 
-],))
+],1))
 
 // consult doctor 
 data.push(encodeMemory([
@@ -53,7 +53,7 @@ data.push(encodeMemory([
     `Sa anong punto kailangan magpakonsulta sa doktor ?`,
 ],[
     `Ipinapayo sa nakakarami na magpatingin sa mga medical professsionals pag may sakit dahil sila ang may higit na alam kung paano gamutin ang mga sakit.`
-],))
+],1))
 
 // where to buy medicines
 data.push(encodeMemory([
@@ -63,7 +63,7 @@ data.push(encodeMemory([
     `san ko pwede bilhin ang gamot`,
 ],[
     ` Ang mga gamot sa sakit ay maari mong bilhin sa mga bokita. Ang ibang mga grocery outles ay mayron din mga drug sections kung saan pwede kang bumili ng gamot.`
-],))
+],5))
 
 // SYMPTOMS 
 

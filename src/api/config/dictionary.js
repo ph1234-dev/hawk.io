@@ -161,7 +161,7 @@ class Dictionary{
             // table.push([lexeme.substitute,lexeme.terms])
         }
 
-        console.table(table) 
+        // console.table(table) 
     
     }
 
