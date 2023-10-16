@@ -1,7 +1,6 @@
 import { encodeMemory } from "@/api/config/model"
 
 let section11 = [
-
     // antihistamines
     encodeMemory([
         `* generic * antihistamine * `,
@@ -620,6 +619,7 @@ let section11 = [
     ], [
         `Ang mga decongestant ay mga gamot na nagpapaginhawa sa pamamagitan ng pagbabawas ng pamamaga, pamamaga at pagbuo ng mucus sa loob ng mga daanan ng ilong o mata. Wala silang ibang epekto sa mga sintomas tulad ng runny nose o pagbahin.`
     ],7),
+    encodeMemory([
         `* gamit * decongestant *`,
         `Ano ang mga gamot na decongestants at saan ito ginagamit?`,
         `Ano ang mga kondisyon ng pagkakaroon ng sipon at saan ginagamit ang mga decongestants?`,
@@ -630,7 +630,6 @@ let section11 = [
         `anong gamit ng decongestants`,
         `saan ginagamit ang decongestants`,
         `paano ginagamit ang decongestants`,
-    encodeMemory([
     ], [
         `
         Ang mga decongestants ay mga gamot na tumutulog magpaginhawa ng baradong ilong. Ang pagbara nito na nararamdaman kapag may flu ay dahil sa virus na nag dudulot ng flu, sinusitis o allergy.`

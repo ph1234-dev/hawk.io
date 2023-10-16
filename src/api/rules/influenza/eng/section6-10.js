@@ -2,6 +2,7 @@ import { encodeMemory } from "@/api/config/model"
 
 
 let section6 = [
+    encodeMemory([
         `* get * flu * vaccine * `,
         `How does getting a flu vaccine help?`,
         `How does the flu vaccine prevent the flu?`,
@@ -16,7 +17,6 @@ let section6 = [
         `Why is it important to get a flu vaccine?`,  
         `Why is it recommended to get a flu vaccine?`,
         `tell me about why get flu vaccine when having influenza`,
-    encodeMemory([
     ],[
         `Although there is no medicine that can prevent flu, flu vaccine are found to help protect you. Flu vaccination prevents illnesses and flu-related doctors visit each year. It help reduce the severity of illnesses in people who get vaccinated but stil get sick. This particularly help people with certain chronic health conditions (such as heart conditions). With this, it reduces flu associated hospitalization. It also protect pregnant , children and people around you.`
     ],5),

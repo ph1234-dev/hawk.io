@@ -53,9 +53,9 @@ export default class Engine {
         // }
 
         // this.RULES = {
-        //     ENG: [].concat(genericEngRules),
-        //     FIL: [].concat(genericFilRules),
-        //     MAG: [].concat(genericMagRules)
+        //     ENG: [].concat(diarrheaEngRules),
+        //         FIL: [].concat(influenzaFilRules),
+        //         MAG: [].concat(genericMagRules)
         // }
 
 
@@ -171,13 +171,13 @@ export default class Engine {
     showAllDimensionStatistics(){
 
         let dimensionFrequencies ={
-            1: 0,
-            2: 0,
-            3: 0,
-            4: 0,
-            5: 0,
-            6: 0,
-            7: 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
         }
 
         // this.RULES.forEach(Object.keys())
@@ -185,7 +185,11 @@ export default class Engine {
             .forEach(lang=>{
                 let topics = this.RULES[lang]
                 topics.forEach(topic=>{
-                    dimensionFrequencies[topic.dimension] += 1
+                    if ( topic.dimension in dimensionFrequencies ){
+                        dimensionFrequencies[topic.dimension] += 1
+                    }else{
+                        console.log(`Undefined: ${lang}\n\t${topic.pattern}` )
+                    }
                 })
             })
             
@@ -197,6 +201,15 @@ export default class Engine {
     }
 
     showTopicStatistics (){
+
+        console.log('Redundant')
+        Object.keys(this.RULES)
+            .forEach(lang=>{
+                let topics = this.RULES[lang]
+                console.log(`->Lang: ${lang} | ${topics.length}`)
+            })
+        console.log('End Redundant')
+
 
         let totalDiarrheaTopics = {
             eng: diarrheaEngRules.length,
