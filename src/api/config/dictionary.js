@@ -14,6 +14,12 @@ class Dictionary{
 
         // build stopwords
         this.stopWords = [].concat(eng).concat(fil).concat(mag)
+
+        console.log('dictionary::Constructor Total Stop Words: ', this.stopWords.length)
+        console.log('dictionary::Constructor Eng Stop Words: ', eng.length)
+        console.log('dictionary::Constructor Fil Stop Words: ', fil.length)
+        console.log('dictionary::Constructor Mag Stop Words: ', mag.length)
+
     }
 
     isStopWord(word){
@@ -162,6 +168,8 @@ class Dictionary{
         }
 
         // console.table(table) 
+
+        console.log('Total Lexemes: ', table.length)
     
     }
 

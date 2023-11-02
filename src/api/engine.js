@@ -123,7 +123,8 @@ export default class Engine {
 
         this.showTopicStatistics()
         this.showAllPatternStatistics()
-        this.showAllDimensionStatistics()
+        this.showAllDimensionStatisticsPerTopic()
+        this.showAllDimensionStatisticsPerDisease()
     }
 
     showAllPatternStatistics(){
@@ -168,7 +169,86 @@ export default class Engine {
 
     }
 
-    showAllDimensionStatistics(){
+    showAllDimensionStatisticsPerDisease(){
+
+        let diarrheaDimensionFrequencies ={
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+        }
+        
+        let diarrhea = [].concat(diarrheaEngRules)
+                    .concat(diarrheaFilRules)
+                    .concat(diarrheaMagRules)
+
+        diarrhea.forEach(topic=>{
+            diarrheaDimensionFrequencies[topic.dimension] += 1 
+        })
+
+        
+        
+        let influenzaDimensionFrequencies ={
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+        }
+        
+        let influenza = [].concat(influenzaEngRules)
+                    .concat(influenzaFilRules)
+                    .concat(influenzaMagRules)
+
+        influenza.forEach(topic=>{
+            influenzaDimensionFrequencies[topic.dimension] += 1 
+        })
+
+        
+
+  
+        let genericDimensionFrequencies ={
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+        }
+        
+        let generic = [].concat(genericEngRules)
+                    .concat(genericFilRules)
+                    .concat(genericMagRules)
+
+        generic.forEach(topic=>{
+            genericDimensionFrequencies[topic.dimension] += 1 
+        })
+
+        
+        console.log(`Dimension Frequencies: Diarrhea `)
+        for ( let f in diarrheaDimensionFrequencies ){
+            console.log(`\t[${f}] - ${diarrheaDimensionFrequencies[f]}`)
+        }
+
+        console.log(`Dimension Frequencies: Influenza `)
+        for ( let f in influenzaDimensionFrequencies ){
+            console.log(`\t[${f}] - ${influenzaDimensionFrequencies[f]}`)
+        }
+        
+        console.log(`Dimension Frequencies: Generic `)
+        for ( let f in genericDimensionFrequencies ){
+            console.log(`\t[${f}] - ${genericDimensionFrequencies[f]}`)
+        }
+        // console.table(dimensionFrequencies)
+    }
+
+    showAllDimensionStatisticsPerTopic(){
 
         let dimensionFrequencies ={
             "1": 0,
@@ -193,7 +273,7 @@ export default class Engine {
                 })
             })
             
-        console.log(`Dimension Frequencies`)
+        console.log(`Topic Dimension Frequencies`)
         for ( let f in dimensionFrequencies ){
             console.log(`\t[${f}] - ${dimensionFrequencies[f]}`)
         }
@@ -202,13 +282,13 @@ export default class Engine {
 
     showTopicStatistics (){
 
-        console.log('Redundant')
-        Object.keys(this.RULES)
-            .forEach(lang=>{
-                let topics = this.RULES[lang]
-                console.log(`->Lang: ${lang} | ${topics.length}`)
-            })
-        console.log('End Redundant')
+        // console.log('Redundant')
+        // Object.keys(this.RULES)
+        //     .forEach(lang=>{
+        //         let topics = this.RULES[lang]
+        //         console.log(`->Lang: ${lang} | ${topics.length}`)
+        //     })
+        // console.log('End Redundant')
 
 
         let totalDiarrheaTopics = {
@@ -1433,8 +1513,8 @@ export default class Engine {
             let dimensions = Object.keys(this.SELFCARE_DIMENSIONS)
             for (let dimension of searchOrder) {
                 targetDimension = dimension.class
-                // let finding = this.memory[lang][targetDimension].getReplyUsingWeightedCosineSimilarity(finalNormalizedInput)
-                let finding = this.memory[lang][targetDimension].getReplyUsingCosineSimilarity(finalNormalizedInput)
+                let finding = this.memory[lang][targetDimension].getReplyUsingWeightedCosineSimilarity(finalNormalizedInput)
+                // let finding = this.memory[lang][targetDimension].getReplyUsingCosineSimilarity(finalNormalizedInput)
 
                 searchOrderDimensionResults.push({
                     dimension: targetDimension,
