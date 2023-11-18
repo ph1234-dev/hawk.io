@@ -32,6 +32,10 @@ class Blackbox{
   }
 
 
+  getReplyUsingTFIDFCosineSimilarity(str){
+    return this.archive.getReplyUsingTFIDFCosineSimilarity(str)
+  }
+  
   getReplyUsingCosineSimilarity(str){
     return this.archive.getReplyUsingCosineSimilarity(str)
   }

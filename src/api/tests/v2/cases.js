@@ -6,10 +6,18 @@ import { data as ifil } from "./influenza/fil"
 import { data as imag } from "./influenza/mag"
 
 export const testCaseForDiarrhea = 
-    [].concat(deng,dfil,dmag)
+    [].concat(
+        deng
+        ,dfil,
+        dmag
+        )
 
 export const testCaseForInfluenza = 
-    [].concat(ieng,ifil,imag)
+    [].concat(
+        ieng,
+        ifil,
+        imag
+        )
 
     
 // export const testCaseForDiarrhea = 

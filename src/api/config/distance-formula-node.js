@@ -77,6 +77,7 @@ const levenshteinDistance = (s, t) => {
   return arr[t.length][s.length];
 };
 
+
 function cosineSimilarity(str1, str2) {
   // Split the strings into arrays of words
   const words1 = str1.split(" ");

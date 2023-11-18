@@ -20,7 +20,7 @@ import {
     influenzaMagRules
 } from './rules/influenza/rules-influenza'
 
-import LanguageClassifier from '@/api/classifier/language-classifier'
+import LanguageClassifier from '@/api/classifier/language-classifier'  
 import DomainClassifier from '@/api/classifier/domain-classifier'
 import { 
     overlapCoefficient,
@@ -79,6 +79,8 @@ export default class Engine {
             MAG: 'mag'
         }
 
+        this.tfidfPrompts = 0
+
         // refer here
         // https://selfcarejournal.com/article/the-self-care-matrix-a-unifying-framework-for-self-care/
         // seven pillars    
@@ -105,7 +107,7 @@ export default class Engine {
         // set this to TRUE To show debug message
         // this is default for local tests
         // this.debug = false
-        // this.debug = true
+        this.debug = true
 
         this.REPLY_THRESHOLD = .3
         this.MAX_TOTAL_WORDS_OUTSIDE_DICTIONARY = 2
@@ -114,18 +116,121 @@ export default class Engine {
 
         // this.executeTestCasesWithError()
         // print dictionary terms
-        // this.showDictionaryTerms()
+        this.showDictionaryTerms()
 
         // this.executeTestCasesWithErrorDataSet10()
         // console.log(this.printWildCards('MAG'))
         // console.log(this.printWildCards('FIL'))
         // console.log(this.printWildCards('ENG'))
 
-        this.showTopicStatistics()
-        this.showAllPatternStatistics()
-        this.showAllDimensionStatisticsPerTopic()
-        this.showAllDimensionStatisticsPerDisease()
+        // this.showTopicStatistics()
+        // this.showAllPatternStatistics()
+        // this.showAllDimensionStatisticsPerTopic()
+        // this.showAllDimensionStatisticsPerDisease()
+
+        // this.showLanguagePredictionStatistics()
     }
+
+
+    showLanguagePredictionStatistics(){
+        
+        let predictions = []
+
+        Object.keys(this.RULES).forEach(lang => {
+            console.log(`Inserting Key:: ${lang}`)
+            // total rules in this language
+
+            let count = 1
+            this.RULES[lang].forEach(rule=>{
+                // do some clenaup first for all rules
+
+                if ( count-- == 0 ){
+                    return;
+                }
+                
+                rule.pattern.forEach(pattern=>{
+
+                    pattern = pattern.replace(/\W/g, " ").replace(/\s\s+/g, ' ').toLowerCase()
+                    let predictedLanguage = this.getLanguage(pattern)
+                    // console.log(`\tPrediction set:: ${lang} | ${predictedLanguage}`)
+
+                    predictions.push({
+                        "lang" : lang,
+                        "predicted": predictedLanguage
+                    })
+    
+                })
+
+
+            })
+
+        })
+
+
+        //      en / fil / mag
+        // eng  x
+        // fil        x
+        // mag              x
+
+        let resultMatrix = []
+
+        // row
+        Object.keys(this.RULES).forEach(row=>{
+            
+            let rowValues = []
+            Object.keys(this.RULES).forEach(col=>{
+                let count = 0
+                // count how many predictions that english such that they 
+                // were originally english
+                predictions.forEach(x=>{
+                    
+                    if ( row == x.lang ){
+                        if ( col == x.predicted ){
+                            count++
+                        }
+                    }
+                
+                })
+
+                rowValues.push(count)
+            })
+
+            resultMatrix.push(rowValues)
+        })
+
+        // how many of the predictions were supposedly english but predicted filipiono
+        let peek = (lang,pred)=>{
+            console.log()
+            let count =0
+            predictions.forEach(x=>{
+                if ( x.lang == lang ){
+                    if ( x.predicted == pred ){
+                        count++
+                    }
+                }
+            })
+            
+            console.log(`Predictions:: There are  ${count} predictions that are supposedly [${lang}]but predicted as [${pred}] `)
+        }
+
+
+        
+        console.log(`Classification Result Matrix`)
+        console.log(`Total Rules To be Predicted:: `, predictions.length)
+        console.table(resultMatrix)
+
+        peek("ENG","ENG")
+        peek("ENG","FIL")
+        peek("ENG","MAG")
+        peek("FIL","ENG")
+        peek("FIL","FIL")
+        peek("FIL","MAG")
+        peek("MAG","ENG")
+        peek("MAG","FIL")
+        peek("MAG","MAG")
+    }
+
+
 
     showAllPatternStatistics(){
 
@@ -1231,7 +1336,10 @@ export default class Engine {
     }
 
 
-    async getLanguage(msg) {
+    // if this gets error later, add the uncomment the async
+    // we edited this today november 7,2023 undo this if error
+    // async getLanguage(msg) {
+    getLanguage(msg) {
         return this.classifierLanguage.getPrediction(msg)
     }
 
@@ -1513,8 +1621,11 @@ export default class Engine {
             let dimensions = Object.keys(this.SELFCARE_DIMENSIONS)
             for (let dimension of searchOrder) {
                 targetDimension = dimension.class
+
                 let finding = this.memory[lang][targetDimension].getReplyUsingWeightedCosineSimilarity(finalNormalizedInput)
                 // let finding = this.memory[lang][targetDimension].getReplyUsingCosineSimilarity(finalNormalizedInput)
+                // let finding = this.memory[lang][targetDimension].getReplyUsingTFIDFCosineSimilarity(finalNormalizedInput)
+                
 
                 searchOrderDimensionResults.push({
                     dimension: targetDimension,
@@ -1534,8 +1645,10 @@ export default class Engine {
 
             }
 
-            // method = "Weighted Cosine Similarity/BM25 Lucene"
-            method = "Regular Cosine Similarity"
+            method = "Weighted Cosine Similarity/BM25 Lucene"
+            // method = "Regular Cosine Similarity"
+            // method = "TFIDF Cosine"
+
 
 
             if (this.debug){

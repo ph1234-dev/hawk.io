@@ -211,43 +211,50 @@ export const useBackendAPI = defineStore('backend', () => {
 
   let beginDevTest = async() =>{
     let testData = [].concat(ENGINE.getTestCases())
+    // let testData = []
     let payload = []
     console.log('Begin Testing with VuePinia')
     console.log('api::useBackendAPI::beginDevTest() ')
     console.log('Total Test Cases: ',testData.length)
 
-    let testMax = 5
+    let testMax = 15
     for ( let i=0; i < testData.length; i++){
       
       // stop case
-      // if ( i > 0 ) break;
+      // if ( i > testMax ) break;
       let test = testData[i]
       let result = ENGINE.getReply(test)
       
+     
       // if ( i < testMax ){
       //   console.log(`${JSON.stringify(result)}`)
       // }
       
       let data = {
-        "userMessage": test ,
+        "userMessage": result.userMessage ,
         "reply": result.reply,
         "lang":  result.lang,
         // "dimensionCode":  result.dimensionCode,
         // "dimensionLabel":  result.dimensionLabel,
         "pattern":  result.pattern,
         "patternMatchingMethod":  result.patternMatchingMethod,
-        "testNumber": 11,
+        "testNumber": 13,
         "score": result.score,
         "reconstructedMessage": result.reconstructed,
         "originalPatternFound": result.originalPatternFound
       }
 
+      
+      // console.log(`[${i}] Input: ${test}`)
+      console.log(`\tTest Result:: ${JSON.stringify(data)}`)
+
       // if (result.originalPatternFound == undefined){
       //   console.log('xx >> Error found in: ', JSON.stringify(data))
       // }
       payload.push(data)
-      // requestData(URL_TEST_RECORDS,data,'POST')
+      // requestData(URL_TEST_RECORDS,data,'POST') 
       // console.log(JSON.stringify(JSON.stringify(load))
+      // console.log('i:: ', i)
     }
 
     // IMPORTANT NOTE:: test numbers
@@ -262,18 +269,21 @@ export const useBackendAPI = defineStore('backend', () => {
 
     // 9 - improvements on the searchinng and making queries a little atomic
     // 10 - has improvements june 13
+    // 11 - is a tf (traditional) cosine similarity
+    // 12 - august 13 test for cosine similarity (something wrong with th ecomputation of idf here where Math.log(((N+1)/(df+1)+ 1)) - final
+    // 13 - final sklearn implementation
 
+    // console.log('Store::API - Bulk Test:: Total Payload:: ', payload.length)
                   
-    requestData(URL_TEST_RECORDS,payload,'POST')
-        .then((data) => {
-          console.log(data); // JSON data parsed by `data.json()` call
-        })
-        .catch(e => {
-          console.error('Action: Attempted to store log into server. It was Executed but error was found. ' ,e)
-        });
+    // requestData(URL_TEST_RECORDS,payload,'POST')
+    //     .then((data) => {
+    //       console.log(data); // JSON data parsed by `data.json()` call
+    //     })
+    //     .catch(e => {
+    //       console.error('Action: Attempted to store log into server. It was Executed but error was found. ' ,e)
+    //     });
 
-    // 12 - august 13 test for cosine similarity - final
-
+    
   }
 
   // we can automate the scoring 

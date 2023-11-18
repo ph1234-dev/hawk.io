@@ -368,55 +368,6 @@ class BM25{
     }
   }
 
-
-  calculateTFIDF(term,doc){
-    let tokens = doc.split(' ')
-
-    let tf = tokens.reduce((acc,token)=>{
-      if ( token === term ){
-        acc += 1
-      }
-      return acc
-    },0)  
-  
-
-    // count how many tf in the temr
-
-    let N = this.docs.length
-
-    // let df = this.invertedIndex[term]
-    let df =0
-    if ( term in this.invertedIndex){
-      df = this.invertedIndex[term].length
-    }
-    // this.docs.forEach(x=>{
-    //   if ( x.includes(term) ){
-    //     df++
-    //   }
-    // })
-
-
-    // scikit implementation
-    // https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html#:~:text=The%20formula%20that%20is%20used,document%20frequency%20of%20t%3B%20the
-    // let idf = Math.log(((N+1)/(df+1)+ 1)) -- wrong this was what we used in test number 12
-
-    let idf = Math.log(((N+1)/(df+1))) + 1
-  
-    // remmeber we add +1 here , for the reason that we treat that the current document
-    // we are comparing is actually part of the entire corpus. So 
-    // we are not just separating the term
-    // let idf = Math.log((N+1)/(df+1))
-    
-
-    
-    // console.log(`term[${term}] [${doc}]= tf[${tf}] / idf[${idf}]`)
-    // count how man idf in the term
-    // lets do log trick... if we put 
-    // return Math.log(tf) + Math.log(idf)
-    return tf * idf
-  }
-
-
 //     // BM25+
   // remember we are using okapi bm25
   // https://en.wikipedia.org/wiki/Okapi_BM25

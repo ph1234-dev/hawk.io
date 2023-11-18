@@ -1,4 +1,10 @@
-import { countMatchingWords, cosineSimilarity, BM25, tanimotoCoefficient,overlapCoefficient,} from '@/api/config/metrics'
+import { 
+  countMatchingWords, 
+  cosineSimilarity,
+  BM25, 
+  tanimotoCoefficient,
+  overlapCoefficient,
+} from '@/api/config/metrics'
 import { DICTIONARY } from './dictionary'
 import { DOMAIN_ENTITIES} from '@/api/rules/priority-words'
 import { reactive,ref } from 'vue'
@@ -217,6 +223,81 @@ class Archive{
   getVocabulary(){
     return this.vocabulary
   }
+
+
+  computeForTFIDF(sentence1,sentence2){
+    
+    // Split the sentences into arrays of words
+    const words1 = sentence1.toLowerCase().split(/[^\w]+/);
+    const words2 = sentence2.toLowerCase().split(/[^\w]+/);
+
+    // Compute the word frequencies for each sentence
+    const freq1 = {};
+    const freq2 = {};
+    
+    for (const word of words1) {
+      freq1[word] = (freq1[word] || 0) + 1;
+    }
+    
+    for (const word of words2) {
+      freq2[word] = (freq2[word] || 0) + 1;
+    }
+
+
+    
+    // Compute the dot product of the word frequency vectors
+    let dotProduct = 0;
+    for (const word in freq1) {
+      if (word in freq2) {
+        dotProduct += this.BM25.calculateTFIDF(word, sentence1) * (this.BM25.calculateTFIDF(word, sentence2));
+        
+      }
+    }
+    
+    const mag1 = Math.sqrt(words1.reduce((sum, word) =>{
+      let tfidf = this.BM25.calculateTFIDF(word, sentence1)**2
+      // return sum + ( VOCABULARY.value.includes(word) || words2.includes(word) ? bm25: bm25 * scaleFactor) 
+      return sum + ( VOCABULARY.value.includes(word) ? tfidf: 0) 
+    } , 0));
+
+    const mag2 = Math.sqrt(words2.reduce((sum, word) => {
+      let tfidf = this.BM25.calculateTFIDF(word, sentence2)**2
+      return sum + ( VOCABULARY.value.includes(word) ? tfidf: 0) 
+    } , 0));
+    
+
+    return dotProduct / (mag1 * mag2);
+  }
+
+  getReplyUsingTFIDFCosineSimilarity(msg){
+
+  
+    msg = _removeTrailingLeadingDuplicateSpaces(msg)
+
+    let len = this.forwardIndex.length
+
+    let max = this.forwardIndex[0]
+    for ( let i = 1 ; i < len; i++){
+      let next = this.forwardIndex[i]
+      next.pattern = _removeTrailingLeadingDuplicateSpaces(next.pattern)
+
+      if ( this.computeForTFIDF(msg,max.pattern) < this.computeForTFIDF(msg,next.pattern ) ){
+        max = next
+      }
+    }
+
+    let reply = null
+    let score = this.computeForTFIDF(msg,max.pattern)
+    // score = 0
+    // console.log(`\tFrom Archive:: Cosine Max Pattern Found: ${JSON.stringify(max)}`)
+    // console.log(`\t\tFrom Archive:: Cosine distance:: ${score}`)
+    // if ( score > threshold)
+      reply = this.memory[max.index].response[0]
+    // 
+
+    return {reply,score: score,pattern:max.pattern, rawPattern: max.rawPattern}
+  }
+  
 
   getReplyUsingCosineSimilarity(msg){
 

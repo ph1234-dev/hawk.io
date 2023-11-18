@@ -59,7 +59,7 @@ export const substitutionsGeneric = [
     encodeSubstitution('buy',['(.*)order(.*)', '(.*)purchas(.*)']),
     encodeSubstitution('buy',['(m|n|p|(g|n|b|m|k)ap|pin)amasan?', '(.*)pamasa(.*)','pamasen']),
     encodeSubstitution('buy',['bought', '(.*)b(um|in)?ili']),
-    encodeSubstitution('caffiene',['(.*)caffi(.*)']),
+    encodeSubstitution('caffeine',['(.*)caff(.*)']),
     encodeSubstitution('can',['(m|n|k|g)apakay(.*)']),
     encodeSubstitution('can',['allow(.*)']),
     encodeSubstitution('can',['approved']),

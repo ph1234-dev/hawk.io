@@ -22,7 +22,7 @@ let sendMessage = async () => {
 
     let response = await query
     let {reply,lang} = response
-    store.storeLog(msg.value,reply,lang)
+    // store.storeLog(msg.value,reply,lang)
     // console.log(`Storing Log:\n\tMsg: ${msg.value}\n\tLang: ${lang}\n\tReply: ${reply}`)
     userMessages.value.push({
         // reply here is an object so wer need to return reply.reply

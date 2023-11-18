@@ -42,7 +42,7 @@ let section6 = [
     "preventing diarrhea is easy? how?",
     "how can i avoid having diarrhea?",
     "is it possible to avoid diarrhea?",
-    "i want to avoid diarrhea"
+    "i want to avoid diarrhea",
 ]
 
 
@@ -51,7 +51,7 @@ let section7 = [
     "what foods should i eat when having diarhhea?",
     "show me the foods that are okay to eat when feeling diarrhea",
     "get me the foods that can be eaten if i think i have diarrhea",
-    "i want to eat food, what can i eat when having diaarhea?"
+    "i want to eat food, what can i eat when having diaarhea?",
     // add more
 ]
 
@@ -182,12 +182,12 @@ export const data =
         .concat(section5)
         .concat(section6)
         .concat(section7)
-        .concat(section8)
+        // .concat(section8)
         .concat(section10)
         .concat(section11)
         .concat(section12)
         .concat(section13)
         .concat(section14)
-        .concat(section16)
+        // .concat(section16)
         .concat(section18)
         .concat(section20)

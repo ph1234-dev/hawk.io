@@ -164,12 +164,12 @@ class Dictionary{
         for( let lexeme in this.lexicon ){
             // console.log(lexeme.toString())
             table.push([lexeme,this.lexicon[lexeme].toString()])
-            // table.push([lexeme.substitute,lexeme.terms])
+            table.push([lexeme.substitute,lexeme.terms])
         }
 
         // console.table(table) 
 
-        console.log('Total Lexemes: ', table.length)
+        // console.log('Total Lexemes: ', table.length)
     
     }
 
