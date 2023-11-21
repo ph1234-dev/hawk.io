@@ -12,6 +12,22 @@ export default class DomainClassifier extends NaiveBayes{
 
     }
 
+    
+    loadWeights( 
+        vocabulary,
+        prior_probabilities,
+        class_frequencies,
+        class_terms,
+        class_term_frequency_map
+    ){
+        this.vocabulary = vocabulary
+        this.prior_probabilities = prior_probabilities
+        this.class_frequencies = class_frequencies
+        this.class_terms = class_terms
+        this.class_term_frequency_map = class_term_frequency_map
+    }
+
+
     insertCluster(rules,lang){
 
         let insertCallback = (doc)=>{
@@ -81,4 +97,8 @@ export default class DomainClassifier extends NaiveBayes{
     }
 
 
+
+    serialize(){
+        
+    }
 }

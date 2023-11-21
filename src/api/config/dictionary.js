@@ -15,27 +15,14 @@ class Dictionary{
         // build stopwords
         this.stopWords = [].concat(eng).concat(fil).concat(mag)
 
-        console.log('dictionary::Constructor Total Stop Words: ', this.stopWords.length)
-        console.log('dictionary::Constructor Eng Stop Words: ', eng.length)
-        console.log('dictionary::Constructor Fil Stop Words: ', fil.length)
-        console.log('dictionary::Constructor Mag Stop Words: ', mag.length)
+        // console.log('dictionary::Constructor Total Stop Words: ', this.stopWords.length)
+        // console.log('dictionary::Constructor Eng Stop Words: ', eng.length)
+        // console.log('dictionary::Constructor Fil Stop Words: ', fil.length)
+        // console.log('dictionary::Constructor Mag Stop Words: ', mag.length)
 
     }
 
     isStopWord(word){
-
-        // let exist = false
-        // let len = this.stopWords.length
-        // for ( let i = 0 ; i < len ; i++){
-        //     let target = this.stopWords[i]
-        //     const regex = new RegExp("\\b" + target + "\\b", "g");
-        //     if ( regex.test(word) ){
-        //         exist = true
-        //         break;
-        //     }
-        // }   
-
-        // return exist
         return this.stopWords.includes(word)
     }
 

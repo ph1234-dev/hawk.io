@@ -143,7 +143,7 @@ let section11 = [
         `ngen i mga balangan na antihistamines`,
         `ngen i mga embalangan nu gamot a antihistamines`,
         `di ko katawan ngin i mga balangan na antihistamines`,
-        `aden mga balangan na antihistamine?`,
+        `aden mga balangan na antihistamine`,
         `labit ka ngin i mga balangan na antihistamine`,
         `panon i balangan na antihistamine`
     ],[
@@ -155,7 +155,7 @@ let section11 = [
         `ngen i kaped a gamot a gapakay isambi sa antihistamines`,
         `aden pan kaped a gamot a mapakay inomen o kanen na taw lyu sa antihistamines para kagamotan i influenza`,
         `di ko katawan ngin pan i mga kaped a gamot lyu sa antihistamines`,
-        `aden manggamot na taw lyu sa antihistamine?`,
+        `aden manggamot na taw lyu sa antihistamine`,
     ],[
         `Tekaw ka kan sa luya. Niya tig na Sinus and Allergy Wellness Center na namba na natural a histamine. Niya nin mana na isa sekanin a pakadtabang sa lawas. So luya na mapya a makadtabang a gamot kagina pakadtabang sekanin sa lawas. Kapakay ka mumbal sa sa ti para makatabang sa kapedsakit na ulo. Upama ka pagigop ka manem sa ti na, pagebaw ka it to ba. Mayto bon na tekaw ka gamit sa kaped pan a gamut mana su kalawag ka mabagel I namba a natural a gamot.`
     ],7),
@@ -301,7 +301,7 @@ let section11 = [
         `ngen i mga balangan na analgesics`,
         `ngen i mga embalangan nu gamot a analgesics`,
         `di ko katawan i mga balangan na analgesics`,
-        `aden mga balangan na analgesics?`,
+        `aden mga balangan na analgesics`,
         `labit ka ngin i mga balangan na analgesics`,
         `panon i balangan na analgesics`
     ],[
@@ -318,148 +318,148 @@ let section11 = [
         `Su Philippine Institute of Traditional and Alternative Healthcare na niya nilan tig na makadtabang kon su palya, yerba Buena, ulasimang bato o pansit-pansita, endu so bayabas kagina aden kon analgesic effect nilan.`
     ],7),
     // nsaids
-    encodeMemory([
-        `* generic * nsaid*`,
-        `ngen i mga ngala na generic a nsaids a gamot na influenza`,
-        `ngin e mga generic a mga nsaids a gamot na influenza`,
-        `enggay ka sa mga ngala na generic a nsaids a gamot na influenza`,
-        `di ko katawan ngin i generic a nsaids`,
-        `labit ka sa mga generic a nsaids`,
-        `ngen i generic a nsaids`,
-    ],[
-        `Su NSAID na mga ngala na generic a gamut a mana su ibuprofen, naproxen abpeg a aspirin na kapamasa sa botika a anti-inflammatory`
-    ],7),
-    encodeMemory([
-        `* branded * nsaid*`,
-        `ngen i mga ngala na branded a nsaids a gamot na influenza`,
-        `ngin e mga branded a mga nsaids a gamot na influenza`,
-        `enggay ka sa mga ngala na branded a nsaids a gamot na influenza`,
-        `di ko katawan ngin i branded a nsaids`,
-        `labit ka sa mga branded a nsaids`,
-        `ngen i branded a nsaids`,
-    ],[
-        `Su advil na isa sa na namba a kila a ibuprofen. Su Flanax forte manem na isa bon sa kila a Naproxen.`
-    ],7),
-    encodeMemory([
-        `* dose * nsaid * `,
-        `* (gamit|kan|inom) * nsaid * `,
-        `* ukit * nsaid * `,
-        `* nsaid* (gamit|kan|inom) *`,
-        `ngin i nakasugat a ukit ka kapegkan , kagamot o kainom sa nsaids`,
-        `panon i kapegkan  o kainom o kapenggamot sa nsaids`,
-        `panon i kakan o kainom sa gamot a nsaids`,
-        `di ako mataw panon i dosage, dose, kakan, kainom o kanggamot sa nsaids`,
-        `di ko katawan panon i  dosage, dose, kakan, kainom o kanggamot sa nsaids`,
-        `ngin i dose na nsaid`,
-        `panon i dose na nsaid`,
-    ],[
-        `
-        Nya ba edtalon ko ba nya na aw na to na gapakay pagunutan sa kapegkan sa mga NSAIDs.
-        Upama ka keman su taw sa ibuprofen na nya den pinaka masla dose a kapayan kanen nu isa na 400mg. Sa isa a gay na taman bo sa 1200mg. Upama manem ka naproxen, na taman sa 500mg bo sa makaisa a kainom. Sa sagay na taman bo sa 750mg. Upama manem ka aspirin, na taman sa 1000mg sa saka inuman. Taman bo sa 3000mg sa sagay sa taw a 65 lagon. Su mga mas matuwa pan san na taman bo sa 200mg.
-        `,
-    ],7),
-    encodeMemory([
-        `* nsaid * `,
-        `ngin i pidtalo a nsaids`,
-        `ngen besen i nsaids`,
-        `di ko katawan ngin i nsaids`,
-        `ngin i nsaids`,
-    ],[
-        `Su non-steroidal anti-inflammatory drugs o NSAIDs na mga gamot a pakadtabang sa kagamot sa mga sakit nu lawas, lebag abpeg mayaw.`
-    ],7),
-    encodeMemory([
-        `* nsaid * gamit * `,
-        `* gamit * nsaid * `,
-        `endaw kagamit i nsaids`,
-        `ngin besen i penggamutan na nsaids`,
-        `edaw i nsaids kagamit`,
-        `di ko katawan endaw kagamit i nsaids`,
-        `kano i kainom,kakan,kagamit sa nsaids`,
-        `ngin i gamit na nsaids`,
-    ],[
-        `Nya ba mga gamot na pengamiten na madakel sa sakit sa ulo, upama ka nalepu I taw, aden sepu ni, aden rayuma nin abpeg ped pan a sakit.`
-    ],7),
-    encodeMemory([
-        `* galbek * nsaid *`,
-        `* nsaid * galbek * `,
-        `* nsaids? * (awa|gamot|kapya|tabang) *`,
-        `panon i kapenggalbek na nsaids`,
-        `ngin i galbek na nsaids`,
-        `panon besen i kapenggamot na nsaids`,
-        `di ko katawan ngin i galbek na nsaids`,
-        `labit ka kon panun i galbekan nu nsaids`,
-        `panon i kagalbek na nsaids`,
-    ],[
-        `Nya penggulan na NSAID na papagendan nin su cyclooxygenase na pengamiten nu lawas sa kapagumbal sa prostaglandins. Sabap sa kapagenda nin sa lawas sa kapagumbal sa namba, na nya ba gamot na pakadtabang sa mayaw abpeg a lebag enggu mga masakit sa lawas`
-    ],7),
-    encodeMemory([
-        `* di * (kan|inom|gamit) * nsaid  * `,
-        `kano i di kakan , kainom o kagamit sa nsaids`,
-        `nginto ka di mapakay a keman, minom o enggamot sa nsaids`,
-        `ngen to ka so nsaids na di mapya a kanen , inomen o gamiten nu taw aden influenza`,
-        `enduken ka di keman o minom sa nsaids i taw a aden influenza`,
-        `panon a to ka di mapakay a keman i taw sa nsaids i taw a aden influenza`,
-        `di ko katawan kano i di kaka, kainom, o kanggamot sa nsaids`,
-        `aden di gapakay pegkan sa nsaids?`,
-        `tayn i di dayt a keman sa nsaids`,
-    ],[
-        `Su NSAID a mga gamot na dikena ba I nya ba mapya sa mga taw a aden sakit nin sa kidney, pamusungan, atay o cirrhosis, abpeg tayn I pegkan sa padtagiti. Su kaped a pasinti na na pagallergy sa aspirin na kapakay pegkan sa nya bam ga gamot ugayd na imbityala nengka muna I namba sa doctor. `
-    ],7),
-    encodeMemory([
-        `* di * mapya * epekto * nsaid* `,
-        `ngen i di mapya a manggula na taw a keman o mininom sa nsaids`,
-        `ngen i mga di mapya a epekto amayka keman o minom i taw sa nsaids`,
-        `di ko katawan ngin di mapya manggula nu taw amayka enggamot  sa nsaids`,
-        `aden di mapya epekto na nsaids`,
-        `aden mga side effect na nsaids`,
-        `ngin i di mapya epekto na nsaid`,
-    ],[
-        `Mana kaped a gamot, aden bun dikena mapya a manggula nu taw amayka keman sekanin sa NSAID. Su mga side effects na mangedam nu taw amayka sobra I kadakel a kanggamot nin, aw na to na matuwa den su penggamot, o aw na to dikena mapya I kangiginawa nin.
+    // encodeMemory([
+    //     `* generic * nsaid*`,
+    //     `ngen i mga ngala na generic a nsaids a gamot na influenza`,
+    //     `ngin e mga generic a mga nsaids a gamot na influenza`,
+    //     `enggay ka sa mga ngala na generic a nsaids a gamot na influenza`,
+    //     `di ko katawan ngin i generic a nsaids`,
+    //     `labit ka sa mga generic a nsaids`,
+    //     `ngen i generic a nsaids`,
+    // ],[
+    //     `Su NSAID na mga ngala na generic a gamut a mana su ibuprofen, naproxen abpeg a aspirin na kapamasa sa botika a anti-inflammatory`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * nsaid*`,
+    //     `ngen i mga ngala na branded a nsaids a gamot na influenza`,
+    //     `ngin e mga branded a mga nsaids a gamot na influenza`,
+    //     `enggay ka sa mga ngala na branded a nsaids a gamot na influenza`,
+    //     `di ko katawan ngin i branded a nsaids`,
+    //     `labit ka sa mga branded a nsaids`,
+    //     `ngen i branded a nsaids`,
+    // ],[
+    //     `Su advil na isa sa na namba a kila a ibuprofen. Su Flanax forte manem na isa bon sa kila a Naproxen.`
+    // ],7),
+    // encodeMemory([
+    //     `* dose * nsaid * `,
+    //     `* (gamit|kan|inom) * nsaid * `,
+    //     `* ukit * nsaid * `,
+    //     `* nsaid* (gamit|kan|inom) *`,
+    //     `ngin i nakasugat a ukit ka kapegkan , kagamot o kainom sa nsaids`,
+    //     `panon i kapegkan  o kainom o kapenggamot sa nsaids`,
+    //     `panon i kakan o kainom sa gamot a nsaids`,
+    //     `di ako mataw panon i dosage, dose, kakan, kainom o kanggamot sa nsaids`,
+    //     `di ko katawan panon i  dosage, dose, kakan, kainom o kanggamot sa nsaids`,
+    //     `ngin i dose na nsaid`,
+    //     `panon i dose na nsaid`,
+    // ],[
+    //     `
+    //     Nya ba edtalon ko ba nya na aw na to na gapakay pagunutan sa kapegkan sa mga NSAIDs.
+    //     Upama ka keman su taw sa ibuprofen na nya den pinaka masla dose a kapayan kanen nu isa na 400mg. Sa isa a gay na taman bo sa 1200mg. Upama manem ka naproxen, na taman sa 500mg bo sa makaisa a kainom. Sa sagay na taman bo sa 750mg. Upama manem ka aspirin, na taman sa 1000mg sa saka inuman. Taman bo sa 3000mg sa sagay sa taw a 65 lagon. Su mga mas matuwa pan san na taman bo sa 200mg.
+    //     `,
+    // ],7),
+    // encodeMemory([
+    //     `* nsaid * `,
+    //     `ngin i pidtalo a nsaids`,
+    //     `ngen besen i nsaids`,
+    //     `di ko katawan ngin i nsaids`,
+    //     `ngin i nsaids`,
+    // ],[
+    //     `Su non-steroidal anti-inflammatory drugs o NSAIDs na mga gamot a pakadtabang sa kagamot sa mga sakit nu lawas, lebag abpeg mayaw.`
+    // ],7),
+    // encodeMemory([
+    //     `* nsaid * gamit * `,
+    //     `* gamit * nsaid * `,
+    //     `endaw kagamit i nsaids`,
+    //     `ngin besen i penggamutan na nsaids`,
+    //     `edaw i nsaids kagamit`,
+    //     `di ko katawan endaw kagamit i nsaids`,
+    //     `kano i kainom,kakan,kagamit sa nsaids`,
+    //     `ngin i gamit na nsaids`,
+    // ],[
+    //     `Nya ba mga gamot na pengamiten na madakel sa sakit sa ulo, upama ka nalepu I taw, aden sepu ni, aden rayuma nin abpeg ped pan a sakit.`
+    // ],7),
+    // encodeMemory([
+    //     `* galbek * nsaid *`,
+    //     `* nsaid * galbek * `,
+    //     `* nsaids? * (awa|gamot|kapya|tabang) *`,
+    //     `panon i kapenggalbek na nsaids`,
+    //     `ngin i galbek na nsaids`,
+    //     `panon besen i kapenggamot na nsaids`,
+    //     `di ko katawan ngin i galbek na nsaids`,
+    //     `labit ka kon panun i galbekan nu nsaids`,
+    //     `panon i kagalbek na nsaids`,
+    // ],[
+    //     `Nya penggulan na NSAID na papagendan nin su cyclooxygenase na pengamiten nu lawas sa kapagumbal sa prostaglandins. Sabap sa kapagenda nin sa lawas sa kapagumbal sa namba, na nya ba gamot na pakadtabang sa mayaw abpeg a lebag enggu mga masakit sa lawas`
+    // ],7),
+    // encodeMemory([
+    //     `* di * (kan|inom|gamit) * nsaid  * `,
+    //     `kano i di kakan , kainom o kagamit sa nsaids`,
+    //     `nginto ka di mapakay a keman, minom o enggamot sa nsaids`,
+    //     `ngen to ka so nsaids na di mapya a kanen , inomen o gamiten nu taw aden influenza`,
+    //     `enduken ka di keman o minom sa nsaids i taw a aden influenza`,
+    //     `panon a to ka di mapakay a keman i taw sa nsaids i taw a aden influenza`,
+    //     `di ko katawan kano i di kaka, kainom, o kanggamot sa nsaids`,
+    //     `aden di gapakay pegkan sa nsaids`,
+    //     `tayn i di dayt a keman sa nsaids`,
+    // ],[
+    //     `Su NSAID a mga gamot na dikena ba I nya ba mapya sa mga taw a aden sakit nin sa kidney, pamusungan, atay o cirrhosis, abpeg tayn I pegkan sa padtagiti. Su kaped a pasinti na na pagallergy sa aspirin na kapakay pegkan sa nya bam ga gamot ugayd na imbityala nengka muna I namba sa doctor. `
+    // ],7),
+    // encodeMemory([
+    //     `* di * mapya * epekto * nsaid* `,
+    //     `ngen i di mapya a manggula na taw a keman o mininom sa nsaids`,
+    //     `ngen i mga di mapya a epekto amayka keman o minom i taw sa nsaids`,
+    //     `di ko katawan ngin di mapya manggula nu taw amayka enggamot  sa nsaids`,
+    //     `aden di mapya epekto na nsaids`,
+    //     `aden mga side effect na nsaids`,
+    //     `ngin i di mapya epekto na nsaid`,
+    // ],[
+    //     `Mana kaped a gamot, aden bun dikena mapya a manggula nu taw amayka keman sekanin sa NSAID. Su mga side effects na mangedam nu taw amayka sobra I kadakel a kanggamot nin, aw na to na matuwa den su penggamot, o aw na to dikena mapya I kangiginawa nin.
         
-        Su taw na pegkan sa nya ba na aw na to na makagedam sa sakit na ulo, kapegkalangot, allergy, sakit sa atay, kidey, pamusungan abpeg a stroke. 
+    //     Su taw na pegkan sa nya ba na aw na to na makagedam sa sakit na ulo, kapegkalangot, allergy, sakit sa atay, kidey, pamusungan abpeg a stroke. 
         
-        Su NSAID a kapamasa sa botika na mas paydo I side effect nin upama ka ilayn ta i mga mas mabagel a embalangan na gamot a nya a nasisita su riseta nu doktor. `
-    ],7),
-    encodeMemory([
-        `* tips*  nsaid* `,
-        `enggay ka sa mga tanda na kapegkan sa nsaids`,
-        `panon i mga ula ula na kapegkan sa nsaids`,
-        `aden mga tips san ka kakan, kainom, o kanggamot sa nsaids`,
-        `ngin i tips na nsaids`,
-    ],[
-        `Da ka pegkan sa kaped a nsaid upama ka mininom ka den sa nya ba agmot. Upama ka keman ka sa aspirin o iburprofen , na dala ka pegkan sa kaped a NSAID bon. `
-    ],7),
-    encodeMemory([
-        `* pila * nsaid* `,
-        `* nsaid* pila * `,
-        `ngen i alaga na nsaids`,
-        `gagapila i nsaids`,
-        `pila i alaga na nsaids`,
-    ],[
-        `Nya alaga na nya ba gamot tig a Watson pharmacy na walo pilak uman isa. `
-    ],7),
-    encodeMemory([
-        `* embalangan * nsaid * `,
-        `ngen i mga balangan na nsaids`,
-        `ngen i mga embalangan nu gamot a nsaids`,
-        `di ko katawan i balangan na nsaids`,
-        `aden mga balangan na nsaids?`,
-        `labit ka ngin i mga balangan na nsaids`,
-        `panon i balangan na nsaids`
-    ],[
-        `Su nsaids na aw na to na nya nin buntal na capsules, tablitas, ipegkugil, o gel. `
-    ],7),
-    encodeMemory([
-        `* sambi * nsaid* `,
-        `ngen i kaped a gamot a gapakay isambi sa nsaids`,
-        `aden pan kaped a gamot a mapakay kanen na taw lyu sa nsaids para kagamotan i influenza`,
-        `aden pan kaped a gamot a mapakay inomen na taw lyu sa nsaids para kagamotan i influenza`,
-        `di ko katawan i kaped a gamot lyu sa nsaids`,
-        `aden kaped a mapakay inumen , kanen, gamiten lyu sa nsaids?`,
-    ],[
-        `Isa sa nya ba na su paracetamol a kapamasa bon sa mga botika sa apya da den resita nin. 
-        `
-    ],7),
+    //     Su NSAID a kapamasa sa botika na mas paydo I side effect nin upama ka ilayn ta i mga mas mabagel a embalangan na gamot a nya a nasisita su riseta nu doktor. `
+    // ],7),
+    // encodeMemory([
+    //     `* tips*  nsaid* `,
+    //     `enggay ka sa mga tanda na kapegkan sa nsaids`,
+    //     `panon i mga ula ula na kapegkan sa nsaids`,
+    //     `aden mga tips san ka kakan, kainom, o kanggamot sa nsaids`,
+    //     `ngin i tips na nsaids`,
+    // ],[
+    //     `Da ka pegkan sa kaped a nsaid upama ka mininom ka den sa nya ba agmot. Upama ka keman ka sa aspirin o iburprofen , na dala ka pegkan sa kaped a NSAID bon. `
+    // ],7),
+    // encodeMemory([
+    //     `* pila * nsaid* `,
+    //     `* nsaid* pila * `,
+    //     `ngen i alaga na nsaids`,
+    //     `gagapila i nsaids`,
+    //     `pila i alaga na nsaids`,
+    // ],[
+    //     `Nya alaga na nya ba gamot tig a Watson pharmacy na walo pilak uman isa. `
+    // ],7),
+    // encodeMemory([
+    //     `* embalangan * nsaid * `,
+    //     `ngen i mga balangan na nsaids`,
+    //     `ngen i mga embalangan nu gamot a nsaids`,
+    //     `di ko katawan i balangan na nsaids`,
+    //     `aden mga balangan na nsaids`,
+    //     `labit ka ngin i mga balangan na nsaids`,
+    //     `panon i balangan na nsaids`
+    // ],[
+    //     `Su nsaids na aw na to na nya nin buntal na capsules, tablitas, ipegkugil, o gel. `
+    // ],7),
+    // encodeMemory([
+    //     `* sambi * nsaid* `,
+    //     `ngen i kaped a gamot a gapakay isambi sa nsaids`,
+    //     `aden pan kaped a gamot a mapakay kanen na taw lyu sa nsaids para kagamotan i influenza`,
+    //     `aden pan kaped a gamot a mapakay inomen na taw lyu sa nsaids para kagamotan i influenza`,
+    //     `di ko katawan i kaped a gamot lyu sa nsaids`,
+    //     `aden kaped a mapakay inumen , kanen, gamiten lyu sa nsaids`,
+    // ],[
+    //     `Isa sa nya ba na su paracetamol a kapamasa bon sa mga botika sa apya da den resita nin. 
+    //     `
+    // ],7),
     // decongestants
     encodeMemory([
         `* generic * decongestant *`,
@@ -737,7 +737,7 @@ let section11 = [
         `ngen i mga di mapya a epekto amayka minom i taw sa expectorants`,
         `ngen i mga di mapya a epekto amayka keman i taw sa expectorants`,
         `di ko katawan ngin e di mapya a epekto na expectorants`,
-        `aden mga di mapya epekto o side effect na expectorants?`,
+        `aden mga di mapya epekto o side effect na expectorants`,
         `ngin i di mapya epekto na expectorants`,
     ],[
         `Su expectorant na da ged masla a side effect nin. Ugayd, na makandadadalangot ba I nya ba abpeg makanggagatel`
@@ -746,7 +746,7 @@ let section11 = [
         `* tips*  expectorant * `,
         `enggay ka sa mga tanda na kapegkan sa expectorants`,
         `panon i mga ula ula na kapegkan sa expectorants`,
-        `aden mga tips nengka san ka kapegkan sa expectorants?`,
+        `aden mga tips nengka san ka kapegkan sa expectorants`,
         `ngin i tips na expectorants`,
     ],[
         `Di ka blupet I gamot a nan. Upama ka nya nengka paginumen sui gen a gamot na bilang ka I kadakel nin. Inom ka bon sa madakel a ig upama ka pegkan ka sa expectorant.`
@@ -765,7 +765,7 @@ let section11 = [
         `ngen i mga balangan na expectorants`,
         `ngen i mga embalangan nu gamot a expectorants`,
         `di ko katawan i mga kaped a balangan na expectorants`,
-        `aden mga balangan na expectorants?`,
+        `aden mga balangan na expectorants`,
         `labit ka ngin i mga balangan na expectorant`,
         `panon i balangan na expectorant`
     ],[
@@ -898,7 +898,7 @@ let section11 = [
         `* tips*  antitussive  * `,
         `enggay ka sa mga tanda na kapegkan sa antitussives`,
         `panon i mga ula ula na kapegkan sa antitussives`,
-        `aden mga tips nengka sa kapegkan sa antitussives?`,
+        `aden mga tips nengka sa kapegkan sa antitussives`,
         `ngin i tips na antitussives`,
     ],[
         `Kapakayan ba I nya ba pegkanin apya dala ka kan basta inom ka sa ig a madakel ( mga walo ka baso)`
@@ -917,7 +917,7 @@ let section11 = [
         `ngen i mga balangan na antitussives`,
         `ngen i mga embalangan nu gamot a antitussives`,
         `di ko katawan i balangan na antitussives`,
-        `aden mga balangan na antitussives?`,
+        `aden mga balangan na antitussives`,
         `panon i balangan na antitussives`
     ],[
         `Su antitussive na madakel I embalangan nin. Aw na to na tablitas, capsul, gel, igen, syrup , lozenge o strips I nya ba. Ugayd na na saki na nya ko bo ma recommend na su legengez abpeg a syrup bo.`
@@ -928,7 +928,7 @@ let section11 = [
         `aden pan kaped a gamot a mapakay kanen na taw lyu sa antitussives para kagamotan i influenza`,
         `aden pan kaped a gamot a mapakay inomen  na taw lyu sa antitussives para kagamotan i influenza`,
         `di ko katawan ngin pan i kaped a gamot lyu sa antitussives`,
-        `aden mapakay pamasen, inomen, kanen, enggamuten lyu sa antitussives?`,
+        `aden mapakay pamasen, inomen, kanen, enggamuten lyu sa antitussives`,
     ],[
         `Su teneb na na gamot ba I nya ba.  Su mga nangagi sa nya ba gamot na ya tig nilan na makatabang ba I nya sa kambabatok enggu nya pan mapya sa kapamasa a gamot sa otika. `
     ],7),
@@ -1025,7 +1025,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* di * mapya * epekto * lozenge  * `,
-        `aden di mapya epekto o side effects na lozenges?`,
+        `aden di mapya epekto o side effects na lozenges`,
         `di ko katawan i epekto na lozenges`,
         `ngen i di mapya a manggula na taw a keman sa lozenges`,
         `ngen i di mapya a manggula na taw a mininom sa lozenges`,
@@ -1039,7 +1039,7 @@ let section11 = [
         `* tips*  lozenge * `,
         `enggay ka sa mga tanda na kapegkan sa lozenges`,
         `panon i mga ula ula na kapegkan sa lozenges`,
-        `aden mga tips nengka san kano i kakan, kainom, kanggamot sa lozenges?`,
+        `aden mga tips nengka san kano i kakan, kainom, kanggamot sa lozenges`,
         `ngin i tips na lozenge`,
     ],[
         `Di ka pedsepa o blenok I gamot a nya. Tunag ka sa ngali nengka. Uman dwa ka oras I kakan nengka sa nya ba gamot.`
@@ -1055,7 +1055,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* embalangan * lozenge * `,
-        `aden mga balangan na lozenges?`,
+        `aden mga balangan na lozenges`,
         `di ko katawan i balangan na lozenges`,
         `ngen i mga balangan na lozenges`,
         `ngen i mga embalangan nu gamot a lozenges`,
@@ -1066,7 +1066,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* sambi * lozenge * `,
-        `aden ba mga gamot ka gapakay pegkanen, paginumen, penggamuten lyu sa lozenges?`,
+        `aden ba mga gamot ka gapakay pegkanen, paginumen, penggamuten lyu sa lozenges`,
         `aden pan kaped a gamot a mapakay inomen na taw lyu sa lozenges para kagamotan i influenza`,
         `aden pan kaped a gamot a mapakay kanen na taw lyu sa lozenges para kagamotan i influenza`,
         `di ko katawan i kaped a pakasambi sa lyu sa lozenges`,
@@ -1087,36 +1087,36 @@ let section12 = [
     ],[
         `Kapakayan nengka pedtyakapan sakit nengka sa walay. Ugay na angay ka sa doctor upama ka nga nengka kailay na masla I mangguna na flu a nan sa leka. `
     ],5),
-    encodeMemory([
-        `* influenza * type a * `,
-        `bityala ka sa laki i influenza type a`,
+    // encodeMemory([
+    //     `* influenza * type a * `,
+    //     `bityala ka sa laki i influenza type a`,
         
-    ],[
-        `Su embalangan na flu a influenza a na pakaalat kanu binatang. Ugayd na sya ba I nya ba kangailay sa tao a aden mga sakit nin a makapantag kano flu.`
-    ],1),
-    encodeMemory([
-        `*  influenza * type b * `,
-        `bityala ka sa laki i influenza type b`,
-    ],[
-        `Dikena mana su “type A” a embalangan na flu, su “type B” na sya bo gaton sa taw. Nya ba na dikena ged makadsakit su tao , dikena mana su “type a”. ugayd na sambidawbidaw a to na nya ba na dikena makangguna sa di ged mapya. Dikena ba I nya ba pakangguna sa pandemic.`
-    ],1),
-    encodeMemory([
-        `*  influenza * type c * `,
-        `bityala ka sa laki i influenza type c`,
-    ],[
-        `Su “influenza c” virus na sya bon ga ton sa taw. Ugayd na nya ba na maslasla bon I kagkayd nin sa tao upama ka ilayn ta su “type A” abpeg su “type B”. Su taw na di ged makadalo sa nya ba. Enggu dikena bon I nya ba sekanin pakangguna sa epidemic. `
-    ],1),
-    encodeMemory([
-        `* bidayan * type A * type B * type c *`,
-        `*  bidayan * type b * type c * type a * `,
-        `* bidayan * type c * type a * type b * `,
-        `*  bidayan * type A * type c * type b * `,
-        `* bidayan * type b * type a * type c * `,
-        `*  bidayan * type c * type B * type a *`,
-        `ngin i bidayan na influenza b,c,a`
-    ],[
-        `Su “type a” virus na pakaalat sa binatang ugayd na gaton bon sa tao. Pakanggula ba I nya bas a pandemic. Su “type b” influenza na sya bo ga ton sa tao. Dikena ged I nya ba makandadalo mana su “type a”. su “type c” na sya bon ga ton sa tao. Dikena bon I nya makandadali. Mana su “type B”, dikena bun I nya ba makaguula sa epidemic. `
-    ],1),
+    // ],[
+    //     `Su embalangan na flu a influenza a na pakaalat kanu binatang. Ugayd na sya ba I nya ba kangailay sa tao a aden mga sakit nin a makapantag kano flu.`
+    // ],1),
+    // encodeMemory([
+    //     `*  influenza * type b * `,
+    //     `bityala ka sa laki i influenza type b`,
+    // ],[
+    //     `Dikena mana su “type A” a embalangan na flu, su “type B” na sya bo gaton sa taw. Nya ba na dikena ged makadsakit su tao , dikena mana su “type a”. ugayd na sambidawbidaw a to na nya ba na dikena makangguna sa di ged mapya. Dikena ba I nya ba pakangguna sa pandemic.`
+    // ],1),
+    // encodeMemory([
+    //     `*  influenza * type c * `,
+    //     `bityala ka sa laki i influenza type c`,
+    // ],[
+    //     `Su “influenza c” virus na sya bon ga ton sa taw. Ugayd na nya ba na maslasla bon I kagkayd nin sa tao upama ka ilayn ta su “type A” abpeg su “type B”. Su taw na di ged makadalo sa nya ba. Enggu dikena bon I nya ba sekanin pakangguna sa epidemic. `
+    // ],1),
+    // encodeMemory([
+    //     `* bidayan * type A * type B * type c *`,
+    //     `*  bidayan * type b * type c * type a * `,
+    //     `* bidayan * type c * type a * type b * `,
+    //     `*  bidayan * type A * type c * type b * `,
+    //     `* bidayan * type b * type a * type c * `,
+    //     `*  bidayan * type c * type B * type a *`,
+    //     `ngin i bidayan na influenza b,c,a`
+    // ],[
+    //     `Su “type a” virus na pakaalat sa binatang ugayd na gaton bon sa tao. Pakanggula ba I nya bas a pandemic. Su “type b” influenza na sya bo ga ton sa tao. Dikena ged I nya ba makandadalo mana su “type a”. su “type c” na sya bon ga ton sa tao. Dikena bon I nya makandadali. Mana su “type B”, dikena bun I nya ba makaguula sa epidemic. `
+    // ],1),
 ]
 
 let section13 = [
@@ -1139,17 +1139,17 @@ let section13 = [
 ]
 
 let section14 = [
-    encodeMemory([
-        `*  idsa * sintomas  * influenza * `,
-        `*sintomas  * influenza *  idsa *`,
-        `endaw mapakay midsa sa sintomas na influenza`,
-        `tayn i mapakay idsan sa sintomas na influenza`,
-        `endaw ako mangay para midsa sa senyales na influenza`,
-        `tayn i kaidsan sa sintomas, symptoms, senyales , padsa , tanda na influenza`,
-        `endaw midsa sa sintomas na influenza`
-    ],[
-        `Madtalo ko sa leka i mga sintomas na influenza. Ugayd na upama ka nya nengka nasisita i madakel a ulaula na tekaw ka midsa lu sa Center for Disease and Control abpeg sa Department of Health. `
-    ],1),
+    // encodeMemory([
+    //     `*  idsa * sintomas  * influenza * `,
+    //     `*sintomas  * influenza *  idsa *`,
+    //     `endaw mapakay midsa sa sintomas na influenza`,
+    //     `tayn i mapakay idsan sa sintomas na influenza`,
+    //     `endaw ako mangay para midsa sa senyales na influenza`,
+    //     `tayn i kaidsan sa sintomas, symptoms, senyales , padsa , tanda na influenza`,
+    //     `endaw midsa sa sintomas na influenza`
+    // ],[
+    //     `Madtalo ko sa leka i mga sintomas na influenza. Ugayd na upama ka nya nengka nasisita i madakel a ulaula na tekaw ka midsa lu sa Center for Disease and Control abpeg sa Department of Health. `
+    // ],1),
     encodeMemory([
         `* ebpawang * influenza *`,
         `endaw mangay i aden influenza nin`,

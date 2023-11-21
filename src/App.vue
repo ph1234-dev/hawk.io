@@ -3,9 +3,8 @@ import Nav from '@/components/Nav.vue'
 import Footer from '@/components/Footer.vue'
 import NavOverlay from '@/components/NavOverlay.vue'
 
-
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-
+import { useRoute, useRouter } from 'vue-router'
 
 // these pertaining files makes the app installable.. (aside form being pwa you need to make it instlalable also)
 // you can refer to chatgpt 
@@ -41,6 +40,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
     onMounted(() => {
       // Add event listener when the component is mounted
       window.addEventListener('beforeinstallprompt', beforeInstallPrompt);
+
     });
 
     onBeforeUnmount(() => {
@@ -53,14 +53,13 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 <template>
   <NavOverlay></NavOverlay>
   <div class="template">
-    <header class="template-header">
+    <header class="template-header" >
       <Nav />
     </header>
     <main class="template-body">
-
       <RouterView></RouterView>
     </main>
-    <footer class="template-footer">
+    <footer class="template-footer" >
       <Footer />
     </footer>
   </div>
@@ -123,7 +122,7 @@ $scoped-padding: 7rem;
     // background-color: cornflowerblue;
     display: block;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     // scale: (2.95);
     // transform: rotate(-3deg);  
     // in order for absoluate to work you need to set the parent

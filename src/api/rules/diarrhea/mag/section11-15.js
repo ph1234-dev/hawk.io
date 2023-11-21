@@ -89,7 +89,7 @@ let section11 = [
         `panon a to ka di mapakay a keman i taw sa loperamide  i taw a pedtagudo`,
         `duken ka di pegkanen su antimotility`,
         `di ko katawan kano i di kanggamot, kakan, kainom, kagamit, sa antimotility`,
-        `aden mga tao a di mapakay o dayt a keman, minom, enggamot, o gemamit sa antimotility?`,
+        `aden mga tao a di mapakay o dayt a keman, minom, enggamot, o gemamit sa antimotility`,
     ],[
         `So mga antimotility na di dayt inumen nu taw amengka gailay nengka a dehydrated to taw, mapulu i kayaw nin o aden lugo na gaudo nin ka nya ba na padsa na kaped a sakit na nasisita i pendoktor.`
     ],7),
@@ -102,7 +102,7 @@ let section11 = [
         `labit ka sa mga di mapya epekto sa taw na loperamide `,
         `panon a to ka aden di mapya epekto na loperamide `,
         `di ko katawan ngen di mapya manggula nu taw amayka keman sa antimotility`,
-        `aden di mapya epekto o side effect na antimotility?`,
+        `aden di mapya epekto o side effect na antimotility`,
         `ngin i di mapya epekto na antimotility`,
     ],[
         `Su antimotilities na makalangot aw na to na makalugat pan. Da ka pendrive o penggulan sa mga galbel nasisita I kabfocus taman sa sa di nengka katawan ngin I enggulan na gamot a nan sa leka. Upamaka ka lemebag su tyan nengka na angay ka sa doctor gagan.`
@@ -133,7 +133,7 @@ let section11 = [
         `ngen i mga embalangan nu gamot a loperamide `,
         `madakel i embalangan, upaman o buntal na antimotility`,
         `di ko katawan i balangan na mga antimotility`,
-        `aden mga balangan na antimotility?`,
+        `aden mga balangan na antimotility`,
         `labit ka ngin i balangan na antimotility`,
         `panon i balangan na antimotility`
     ],[
@@ -168,7 +168,7 @@ let section11 = [
         `ngin e mga branded a mga bismuth subsalicylate a gamot na diarrhea `,
         `enggay ka sa mga ngala na branded a bismuth subsalicylate a gamot na diarrhea `,
         `di ko katawan ngen i mga branded a bismuth subsalicylate`,
-        `aden branded a bismuth subsalicylate?`,
+        `aden branded a bismuth subsalicylate`,
         `ngen i branded a bismuth`,
     ],[
         `Su Pepto-Bismon abpeg a Bismatrol na mga branded i namba. Endu gi ka makadalo upamaka ka kanen nengka namba na nasisista i unuti ka i nakasugat a kapegkan lon`
@@ -255,7 +255,7 @@ let section11 = [
         `ngen i mga di mapya a epekto amayka minom i taw sa bismuth subsalicylate`,
         `labit ka sa mga di mapya epekto sa taw na bismuth subsalicylate`,
         `panon a to ka aden di mapya epekto na bismuth subsalicylate`,
-        `di ko katawan ngin manggula nu taw amayka keman sekanin sa bismuth subsalicylate`,,
+        `di ko katawan ngin manggula nu taw amayka keman sekanin sa bismuth subsalicylate`,
         `ngin i di mapya epekto na bismuth`,
     ],[
         `Aw na to na gaitem I tai nengka o dila nengka sa gamot a nan. Amayka makanggedam ka sa allergy mana di ka paka ginawa, blyu mga tapilak, blebag ka,  endu rye syndrome a katusan amayka pedtagudo ka a pakauta ka na dala bagel nengka abpeg kalangot ka a mana ka ga beleg na edtanggit ka I pasente sa doctor`
@@ -265,7 +265,7 @@ let section11 = [
         `enggay ka sa mga tanda na kapegkan sa bismuth subsalicylate`,
         `panon i mga ula ula na kapegkan sa bismuth subsalicylate`,
         `ngen i enggulan nu taw amayka pegkan sekanin sa bismuth subsalicylate`,
-        `aden mga tips nengka san ka kakan, kanggamot, o kainom sa bismuth subsalicylate?`,
+        `aden mga tips nengka san ka kakan, kanggamot, o kainom sa bismuth subsalicylate`,
         `ngin i tips na bismuth`,
     ],[
         `Inom ka sa di maldsik a ig umayka mininom ka sa bismuth subsalicylate ( pepto-bismol). Su kadtagudo ga ludus nis u ig na lawas bali lenukan ka edsamikel. Tu banan su kapaginom sa ig na masya I makatabang nin kano taw. Upama ka enggamot ka na lenuk ka su capsule. Di ka pedsepa su gamot.`
@@ -285,7 +285,7 @@ let section11 = [
         `madakel i embalangan, upaman o buntal na bismuth subsalicylate`,
         `ngen i mga kaped a balangan , upaman , o buntal na bismuth subsalicylate `,
         `ngen i mga kaped a embalangan nu gamot a bismuth subsalicylate `,
-        `aden balangan na bismuth subsalicylate?`,
+        `aden balangan na bismuth subsalicylate`,
         `labit ka ngin i balangan na bismuth`,
         `panon i balangan na bismuth`
     ],[
@@ -323,37 +323,37 @@ let section12 = [
     ],[
         `Su kadtagudo na mapakay na apya sa walay nu bo gamuti. Kapya bon I nan mga pila gay. Ugayd na amayka di den a benel mapya I kangegedam nengka, limambas den sa dwa gay I kauget nin, pebpilugo I tay nin o pegkayaw pan sekanin, na nya mapya san na edtanggit ka den sa ospital I pasente nengka.`
     ],5),
-    encodeMemory([
-        `*  acute * diarrhea * `,
-        `ngen i pidtalo a acute diarrhea`,
-    ],[
-        `Umayka su kadtagudo na sagay o dwa gay bo na aw na to namba I pedtalon nilan a mabagel a tagudo. Aw na to na aden nakan nengka o nainom nengka a aden kagaw nin a mana bacteria, vairus, o parasites. Umayka pendadalakaw na ka nidtagudo ka nan amba I pedtalon nilan a “travellers diarrhea”. Nya kagamot sa namba na kapaginom  sa mga kapamasa bon a gamot sa buti kya abpeg ka stidi den mon a kapagainom. Umayka edsalseg I namba sa dwa gay  na ilay ka base aden lugo na tay nin. Aw na to na basi aden mayaw nin. Upama ka mailay nengka i nya ba na edtanggit ka den sekanin sa doktor. `
-    ],1),
-    encodeMemory([
-        `*  chronic * diarrhea *`,
-        `ngen i pidtalo a chronic diarrhea`,
-    ],[
-        `Katawan nengka amayka namba kadtagudo nengka na maugel maawa upama ka embabalingan I namba edsamikel uman padian. Aw na to na nya sabap I namba na sakit sa tyan. Kagamotan nengka I namba sa kapaginom sa ig endu gamot. Nya bon pinakamapya na edtanggit ka su pasete sa doctor ka silan I mataw panon I pakaira sa namba pembabalingan a nan a kadtagudo.`
-    ],1),
-    encodeMemory([
-        `*  bidayan * acute diarrhea * chronic diarrhea * `,
-        `* bidayan * chronic diarrhea * acute diarrhea * `,
-        `ngin i bidayan na chronic diarrhea * acute diarrhea * `
-    ],[
-        `Su kadtagudo na aw na to na mababel aw na to na pembabalingan. Umayka du kadtagudo na sagay o dwa gay mo na mabagel I sakit a nan. Ugayd na tu pembabalingan a kadtagudo a mana di den gaawa ka uman padian den na mauget I namba mawa a tagudo.  Basta edtagudo ka na nya mapya san na inom ka edsamikel sa ig endu kasambiyan su langon a ig a nadtapik na kinaudo nengka.`
-    ],1),
-    encodeMemory([
-        `* gamot * acute * diarrhea * `,
-        `panon i kapenggamot sa acute diarrhea`,
-    ],[
-        `Nya una enggulan a taw upamaka ka mabagel I kadtagudo nin na kainom nin sa ig edsamikel. Nya mapya inomin nin na oral rehydration solution. Su kainom sa antimotilities na mapakay bon ka makagkapegkag sa mangigignawa I namba. `
-    ],1),
-    encodeMemory([
-        `* gamot * chronic * diarrhea * `,
-        `panon i kapenggamot sa chronic diarrhea`,
-    ],[
-        `Nasisita su kainom edtangang sa ig ka endu kasambiyan su ig a pakaud nengka sya ebpon sa lawas nengka. Nya bon mapya na pangeni ka sa tabang sa mataw enggamot a doctor endu maton nilan I sabap na kapedtagudo a nan`
-    ],1),
+    // encodeMemory([
+    //     `*  acute * diarrhea * `,
+    //     `ngen i pidtalo a acute diarrhea`,
+    // ],[
+    //     `Umayka su kadtagudo na sagay o dwa gay bo na aw na to namba I pedtalon nilan a mabagel a tagudo. Aw na to na aden nakan nengka o nainom nengka a aden kagaw nin a mana bacteria, vairus, o parasites. Umayka pendadalakaw na ka nidtagudo ka nan amba I pedtalon nilan a “travellers diarrhea”. Nya kagamot sa namba na kapaginom  sa mga kapamasa bon a gamot sa buti kya abpeg ka stidi den mon a kapagainom. Umayka edsalseg I namba sa dwa gay  na ilay ka base aden lugo na tay nin. Aw na to na basi aden mayaw nin. Upama ka mailay nengka i nya ba na edtanggit ka den sekanin sa doktor. `
+    // ],1),
+    // encodeMemory([
+    //     `*  chronic * diarrhea *`,
+    //     `ngen i pidtalo a chronic diarrhea`,
+    // ],[
+    //     `Katawan nengka amayka namba kadtagudo nengka na maugel maawa upama ka embabalingan I namba edsamikel uman padian. Aw na to na nya sabap I namba na sakit sa tyan. Kagamotan nengka I namba sa kapaginom sa ig endu gamot. Nya bon pinakamapya na edtanggit ka su pasete sa doctor ka silan I mataw panon I pakaira sa namba pembabalingan a nan a kadtagudo.`
+    // ],1),
+    // encodeMemory([
+    //     `*  bidayan * acute diarrhea * chronic diarrhea * `,
+    //     `* bidayan * chronic diarrhea * acute diarrhea * `,
+    //     `ngin i bidayan na chronic diarrhea * acute diarrhea * `
+    // ],[
+    //     `Su kadtagudo na aw na to na mababel aw na to na pembabalingan. Umayka du kadtagudo na sagay o dwa gay mo na mabagel I sakit a nan. Ugayd na tu pembabalingan a kadtagudo a mana di den gaawa ka uman padian den na mauget I namba mawa a tagudo.  Basta edtagudo ka na nya mapya san na inom ka edsamikel sa ig endu kasambiyan su langon a ig a nadtapik na kinaudo nengka.`
+    // ],1),
+    // encodeMemory([
+    //     `* gamot * acute * diarrhea * `,
+    //     `panon i kapenggamot sa acute diarrhea`,
+    // ],[
+    //     `Nya una enggulan a taw upamaka ka mabagel I kadtagudo nin na kainom nin sa ig edsamikel. Nya mapya inomin nin na oral rehydration solution. Su kainom sa antimotilities na mapakay bon ka makagkapegkag sa mangigignawa I namba. `
+    // ],1),
+    // encodeMemory([
+    //     `* gamot * chronic * diarrhea * `,
+    //     `panon i kapenggamot sa chronic diarrhea`,
+    // ],[
+    //     `Nasisita su kainom edtangang sa ig ka endu kasambiyan su ig a pakaud nengka sya ebpon sa lawas nengka. Nya bon mapya na pangeni ka sa tabang sa mataw enggamot a doctor endu maton nilan I sabap na kapedtagudo a nan`
+    // ],1),
 ]
 
 let section13 = [
@@ -367,7 +367,7 @@ let section13 = [
         `ngin i mabproblema nu taw a pedtagudo`,
         `amayka padtadayn i kapedtagudo na ngin i manggula`,
         `aden mga taw a kalunsanan i sakit nin sa kapedtagudo`,
-        `aden mga taw a mangingat sa kapedtagudo?`,
+        `aden mga taw a mangingat sa kapedtagudo`,
         `ngen i kapedtagudo`,
         `ngin i mabproblema na pedtagudo`,
         `ngin i problema na tagudo`
@@ -377,24 +377,24 @@ let section13 = [
 ]
 
 let section14 = [
-    encodeMemory([
-        `* idsa * sintomas  * tagudo * `,
-        `* sintomas  * tagudo *  idsa * `,
-        `endaw mapakay midsa sa sintomas na kadtagudo`,
-        `tayn i mapakay idsan sa sintomas na kapedtagudo`,
-        `endaw ako mangay para makaidsa sa senyales na tagudo`,
-        `ten gapakay a idsan ko sa kapedtagudo`,
-        `aden kaidsan sa sintomas, senyales, o tanda na kapedtagudo?`,
-        `endaw midsa sa signs na tagudo`
-    ],[
-        `Kapakay ako nengka edsan sa mga ngin i enggulan nu tao amayka pedsakit. Ugayd na nya bon mapya na edsa ka sa mataw enggamot.`
-    ],5),
+    // encodeMemory([
+    //     `* idsa * sintomas  * tagudo * `,
+    //     `* sintomas  * tagudo *  idsa * `,
+    //     `endaw mapakay midsa sa sintomas na kadtagudo`,
+    //     `tayn i mapakay idsan sa sintomas na kapedtagudo`,
+    //     `endaw ako mangay para makaidsa sa senyales na tagudo`,
+    //     `ten gapakay a idsan ko sa kapedtagudo`,
+    //     `aden kaidsan sa sintomas, senyales, o tanda na kapedtagudo`,
+    //     `endaw midsa sa signs na tagudo`
+    // ],[
+    //     `Kapakay ako nengka edsan sa mga ngin i enggulan nu tao amayka pedsakit. Ugayd na nya bon mapya na edsa ka sa mataw enggamot.`
+    // ],5),
     encodeMemory([
         `* ebpawang * tagudo * `,
         `endaw mangay i taw a pedtagudo`,
         `endaw dayt a ebpawang i pedtagudo`,
         `gapakay penggamutan i kapedtagudo sa walay`,
-        `aden kabpawangan a taw a pedtagudo?`
+        `aden kabpawangan a taw a pedtagudo`
     ],[
         `Kagamutan nengka bon I kadtagudo apya san ka bo sa walay. Nya kan enggula na inom ka sa gamot a gapamasa bon sa botika endu pegkapya I kanggegedam nengka. Amayka maylay nengka a pebpilugo I kapagudo nengka, pegkayaw ka o di nan aka dwa gay den I kapedtagudo nengka na nya mapya na pailay ka sa doctor.`
     ],5),
@@ -408,8 +408,8 @@ let section14 = [
         `ngen i mga senyales na kapedtagudo`,
         `ngen i sintomas na kapedtagudo`,
         `ngin i pagilayn sa pedtagudo`,
-        `aden mga signs, symptoms, sintomas, senyales , padsa o tanda na kapedtagudo?`,
-        `aden pagilayn sa taw a pedtagudo?`,
+        `aden mga signs, symptoms, sintomas, senyales , padsa o tanda na kapedtagudo`,
+        `aden pagilayn sa taw a pedtagudo`,
         `labit ka o enggay ka sa listahan na sintomas o senyales ng pedtagudo`,
         `ngin i sintomas na diarrhea`
     ],[

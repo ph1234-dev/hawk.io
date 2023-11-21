@@ -6,60 +6,60 @@ import { encodeMemory } from "@/api/config/model"
 let data = []
 
 // hydration
-data.push(encodeMemory([
-    `* hydrate * treat *`,
-    `* take * water * treat *`,
-    `How does drinking water help`,
-    `How does replenishing fluids help`,
-    `What is the role of water`,
-    `Why is it important to drink water`,
-    `Why is it important to stay hydrated`,
-    `tell or explain why hydrate`,
-    `what to do to hydrate`,
-],[
-    `Staying hydrated is important to replenish fluid in your body. There are diseases like like diarrhea and influeza can cause the body to lose water and electrolytes. So it's best if you keep this in mind.  Drinking fluids, such as  water, buko juice, am, arrozcaldo, soups, sports drinks, broths, and oral rehydration solutions, can replace lost fluids and electrolytes and prevent it. It is also recommended to avoid beverages that can further irritate the stomach, such as alcohol, caffeine, and sugary drinks. Proper hydration can help relieve symptoms and prevent complications  that can arise from dehydration. `
-],1))
+// data.push(encodeMemory([
+//     `* hydrate * treat *`,
+//     `* take * water * treat *`,
+//     `How does drinking water help`,
+//     `How does replenishing fluids help`,
+//     `What is the role of water`,
+//     `Why is it important to drink water`,
+//     `Why is it important to stay hydrated`,
+//     `tell or explain why hydrate`,
+//     `what to do to hydrate`,
+// ],[
+//     `Staying hydrated is important to replenish fluid in your body. There are diseases like like diarrhea and influeza can cause the body to lose water and electrolytes. So it's best if you keep this in mind.  Drinking fluids, such as  water, buko juice, am, arrozcaldo, soups, sports drinks, broths, and oral rehydration solutions, can replace lost fluids and electrolytes and prevent it. It is also recommended to avoid beverages that can further irritate the stomach, such as alcohol, caffeine, and sugary drinks. Proper hydration can help relieve symptoms and prevent complications  that can arise from dehydration. `
+// ],1))
 
 // healthy food
-data.push(encodeMemory([
-    `* healthy * food  * treat * `,
-    `How does a healthy diet help `,
-    `How does eating a healthy diet help to treat `,
-    `What are some foods to avoid during diarrhea?`,
-    `What are the benefits of eating a healthy diet`,
-    `What are the risks of not eating a healthy diet`,
-    `What is the role of a healthy diet in treating`,
-    `Why is it important to eat healthy`,
-    `tell why eat healthy food to treat conditions`
-],[
-    `It's a vital thing to eat well because it supports your body's immune system. `
-],1))
+// data.push(encodeMemory([
+//     `* healthy * food  * treat * `,
+//     `How does a healthy diet help `,
+//     `How does eating a healthy diet help to treat `,
+//     `What are some foods to avoid during diarrhea`,
+//     `What are the benefits of eating a healthy diet`,
+//     `What are the risks of not eating a healthy diet`,
+//     `What is the role of a healthy diet in treating`,
+//     `Why is it important to eat healthy`,
+//     `tell why eat healthy food to treat conditions`
+// ],[
+//     `It's a vital thing to eat well because it supports your body's immune system. `
+// ],1))
 
 // consult doctor 
-data.push(encodeMemory([
-    `* consult * doctor *`,
-    `How can a doctor help me to treat `,
-    `What are the benefits of consulting a doctor for treatment?`,
-    `When should I seek medical attention`,
-    `Why is self-diagnosing and self-treating not recommended?`,
-    `tell or give reasons why consult doctors to treat conditions`
-],[
-    `It has always been recommended to seek help from medical professionals. They can help diagnose and administer proper treatment for health conditions.`
-],1))
+// data.push(encodeMemory([
+//     `* consult * doctor *`,
+//     `How can a doctor help me to treat `,
+//     `What are the benefits of consulting a doctor for treatment`,
+//     `When should I seek medical attention`,
+//     `Why is self-diagnosing and self-treating not recommended`,
+//     `tell or give reasons why consult doctors to treat conditions`
+// ],[
+//     `It has always been recommended to seek help from medical professionals. They can help diagnose and administer proper treatment for health conditions.`
+// ],1))
 
 // where to buy medicines
-data.push(encodeMemory([
-    `Are drugs available over the counter?`,
-    `Can I find medication at a grocery store?`,
-    `What stores sell medication?`,
-    `Where can I buy medication`,
-    `Where can I find medication `,
-    `Where can I find or buy medicines `,
-    `Where can I purchase medication`,
-    `tell me where can i buy medicines or drugs`
-],[
-    `Keep in mind that only buy medicines from reputable drug stores. Some grocery outlets may also have sections for medicines your can buy.`
-],1))
+// data.push(encodeMemory([
+//     `Are drugs available over the counter`,
+//     `Can I find medication at a grocery store`,
+//     `What stores sell medication`,
+//     `Where can I buy medication`,
+//     `Where can I find medication `,
+//     `Where can I find or buy medicines `,
+//     `Where can I purchase medication`,
+//     `tell me where can i buy medicines or drugs`
+// ],[
+//     `Keep in mind that only buy medicines from reputable drug stores. Some grocery outlets may also have sections for medicines your can buy.`
+// ],1))
 
 // SYMPTOMS 
 
@@ -69,19 +69,13 @@ data.push(encodeMemory([
 data.push(
     encodeMemory([
         `* (treat|reduce|control|TAKE) * vomit *`,
-        `How to manage, handle,prevent,reduce,supress vomiting?`,
-        `What are natural ways to control vomiting?`,
-        `What are the remedies, measures or ways to ease or stop vomiting?`,
-        `What are vomiting management strategies?`,
-        `What can be done to control vomiting?`,
-        `What to do to stop vomiting?`,
-        `how do i manage vomit`,
-        `how do you treat vomiting`,
-        `how to control vomiting`,
+        // `How to manage, handle,prevent,reduce,supress vomiting`,
+        `What are natural ways to treat manage control vomiting`,
+        `What can be done to treat manage control vomiting`,
+        `What to do treat manage control stop vomiting`,
+        `how do i treat manage control vomit`,
+        `how what do you treat manage control vomiting`,
         `what should i do when vomiting`,
-        `tell me how do you treat vomiting`,
-        `what to do when vomiting`,
-        `what to do when feeling vomiting`,
     ],[
         `
         Vomiting is the involuntary forceful expulsion of the contents of one's stomach through the mouth and sometimes the nose which can deplete you of fluids and electrolytes. It is often a symptom of an underlying medical condition such as gastroenteritis, food poisoning, motion sickness, pregnancy, or certain medications.
@@ -104,22 +98,12 @@ data.push(
     // nausea should be added in the dictionary
     encodeMemory([
         `* (treat|reduce|control|TAKE) * nausea *`,
-        `How can I prevent , alleviate, or cope with nausea?`,
-        `How do I control or deal with nausea?`,
-        `What are natural ways to manage nausea?`,
-        `What are remedies for nausea?`,
-        `What are tips or strategies for managing nausea?`,
-        `What are ways to manage nausea?`,
-        `What can I do to reduce or take to ease nausea?`,
-        `What medications can I take for nausea?`,
-        `What to do are bland foods that can be eaten after experiencing nausea?`,
-        `how do i manage nausea`,
-        `how do you treat nausea`,
-        `how to control nausea`,
-        `tell or explain how do you control feeling nausea`,
-        `what to do when nausea`,
-        `what to do whem having nausea`,
-        `what to do when feeling nausea`,
+        `How do I control or deal with nausea`,
+        `What are tips or strategies for  treat manage control nausea`,
+        `What can I do to  treat manage control to ease nausea`,
+        `tell or explain how do you  treat manage control feeling nausea`,
+        `what to do when treat manage control nausea`,
+        `what to do whem feeling having nausea`,
     ],[
         // reference
         // https://www.urmc.rochester.edu/encyclopedia/content.aspx?contenttypeid=56&contentid=2939
@@ -133,23 +117,13 @@ data.push(
 data.push(
     encodeMemory([
         `* boil * water *`,
-        `Can you explain how to boil water?`, 
-        `Can you give me instructions on boiling water?`,  
-        `Can you tell me how to properly boil water?`,  
-        `Can you walk me through boiling water?`,  
-        `How can I boil water effectively?`,  
-        `How can I ensure that I'm boiling water correctly?`,
-        `How do I boil water correctly?`,  
-        `How should I boil water?`,  
-        `What are the steps to boiling water?`,  
-        `What do I need to know to boil water?`,  
-        `What the best, recommended, or proper way to boil water?`,  
-        `What the correct process for boiling water?`,  
-        `What the right method for boiling water?`,  
-        `What the way to boil water?`,  
+        `Can you give explain or tell me or walk me through how to properly boil water`,  
+        `How can I boil water effectively`,  
+        `How should I boil water`,  
+        `What do I need to know to boil water`,  
+        `What the best, recommended, or proper way to boil water`,  
+        `What the correct process or right method for boiling water`,  
         `tell me why do you boil water`,
-        `what to do to  boil water`,
-        `what to do when  boil water`,
     ],[
         `Boiling is done to kill pathogenic bacteria, viruses and protozoa. If water appears cloudy, let it settle and filter it through a clean cloth, paper boiling water towel, or coffee filter. Then bring water to a rolling boil for at least one minute. Let water cool naturally and store it in clean containers with covers. To improve the flat taste of boiled water, add one pinch of salt to each quart or liter of water, or pour the water from one clean container to another several times.
         `
@@ -160,21 +134,12 @@ data.push(
 data.push(
     encodeMemory([
         `* disinfect * water *`,
-        `How can I make water safe to drink?`,
-        `How can I remove bacteria and viruses from water?`,
-        `How do you make sure water is clean enough to drink?`,
-        `How do you purify water for drinking?`,
-        `What are effective ways to disinfect water?`,
-        `What are the methods to decontaminate water?`,
-        `What are the steps to disinfect water?`,
-        `What are ways to treat water to make it safe?`,
-        `What is the best way to sanitize water for drinking?`,     
-        `What is the process of sanitizing water?`,
-        `What steps should I take to make water potable?`,
-        `how do you clean water`,
-        `how is disinfecting water done`,
-        `tell me how do you clean water`,
-        `what to disinfecting water`,
+        `How can I make water safe remove bacteria and viruses from water`,
+        `How do you purify make sure water is clean enough to drink`,
+        `What are effective ways to disinfect decontaminate water`,
+        `What are the steps to disinfect water`,
+        `What is the best way to sanitize water for drinking`,   
+        `tell me how do you disinfect clean water`,
     ],[
         `
         Disinfecting water is important because it helps to remove harmful bacteria, viruses, and parasites that can cause serious illnesses such as cholera, typhoid, dysentery, and diarrhea. When water is not disinfected, it can become contaminated with these microorganisms and can spread diseases rapidly. Disinfection helps to reduce the risk of waterborne illnesses and ensures that the water is safe for consumption.
@@ -191,27 +156,13 @@ data.push(
     // 
     encodeMemory([
         `* (treat|reduce|control) * fever *`,
-        `How can I relieve, alleviate or bring down a fever?`,
-        `How do you bring down a fever?`,  
-        `How do you manage fever?`,  
-        `What are effective treatments for fever?`,
-        `What are home remedies for fever?`,
-        `What are natural ways to treat fever?`,
-        `What are remedies for fever?`,  
-        `What are the best ways to manage or treat a fever?`,
-        `What are the treatment options for fever?`, 
-        `What are the treatments for fever?`,
-        `What are ways to reduce a fever?`,
-        `What medications can be used to treat or help fever?`, 
-        `What should I do if I have a fever?`,
-        `What should you do to treat a fever?`, 
-        `tell me what do i do when i feel having fever or chills`,
+        `How do you treat manage control relieve bring down a fever`,  
+        `What are ways to treat remedies for fever`,
+        `What are the best ways to manage or treat a fever`,
+        `What are ways to reduce treat a fever`,
         'i feel fever and chills please tell me what to',
         'how to get better if i feel fever and chills',
-        `tell me how do i treat fever`,
-        `what to do when having fever`,
-        `what to do if feeling fever`,
-        `im not feeling well because of fever`,
+        `tell me how do i treat manage control fever`,
     ],[
         `When you have a fever, apply damp, luke warm cloths to the forehead. Wear comfortable cloths. If you have chills, it is best to wear layers and keep warm. Then rest. you need plenty of rest to recover.
         
@@ -226,21 +177,10 @@ data.push(
     // add to dictionary stuffed or clogged
     encodeMemory([
         `* (treat|reduce|control) * clog * nose *`,
-        `How can I relieve, alleviate or bring down stuffed or clogged nose`,
-        `How do you manage stuffed or clogged nose`,  
-        `What are effective treatments for stuffed or clogged nose`,
-        `What are home remedies for stuffed or clogged nose?`,
-        `What are natural ways to treat stuffed or clogged nose?`,
-        `What are remedies for stuffed or clogged nose?`,  
-        `What are the best ways to manage or treat stuffed or clogged nose`,
-        `What are the treatment options for stuffed or clogged nose?`, 
-        `What are ways to reduce a stuffed or clogged nose?`,
-        `What should I do if I have a stuffed or clogged nose?`,
-        `What should you do to treat a stuffed or clogged nose?`,  
-        `tell me what do i do when i feel having stuffed or clogged nose`,
-        'i feel stuffed or clogged nose please tell me what to',
-        'how to get better if i feel stuffed or clogged nose',
-        'my nose is not feeling well'
+        `How can I treat manage , control relieve, alleviate or bring down stuffed or clogged nose`,
+        `How what do you treat manage control  stuffed or clogged nose`,  
+        `What are natural ways remedies for stuffed or clogged nose`,
+        `What should you do to treat manage control a stuffed or clogged nose`,  
     ],[
         `
         A clogged nose happens where there is an obstruction or blockage in the nasal passages. It is also known as nasal congestion and can be caused by various factors such as allergies, colds, flu, sinus infections, and other respiratory illnesses. Symptoms of a clogged nose include difficulty breathing, a runny or stuffy nose, pressure or pain around the nasal area, and decreased sense of smell or taste. 
@@ -253,22 +193,13 @@ data.push(
 // headache
 data.push(
     encodeMemory([
-        `* treat * (head|headache) *`,
-        `How can I deal with a headache? or painful head`,  
-        `How do I cope with a headache or head pains?`,  
-        `How do I manage , treat or reduce the pain of a headache or head pains?`,  
-        `What are remedies for or strategies to handle a headache  or head pains?`,  
-        `What are tips for managing or e ways to cope with a headache  or head pains?`,  
-        `What are ways to lessen,soothe, manage, ease and alleviate a headache or head pains?`,  
-        `What steps can I take to relieve a headache  or head pains?`,  
-        `tell me what do i do when i feel headache or pain in my head`,
+        `* (treat|manage|control) * (head|headache) *`,
+        `How can I treat manage control deal with a headache or painful head`,
+        `How do I manage treat reduce the pain of a headache or head pains`,  
+        `What are tips for treat manage control headache or head pains`,   
+        `What steps can I take to relieve a headache  or head pains`,  
         'i headache or pain in my head  please tell me what to',
-        'how to get better if i feel headache or pain in my head',
-        `i feel that my head hurts or painful`,
-        `my head feels painful or hurts`,
-        `what to do if feeling headache`,
-        `what to do when having headache`,
-        'my head is not feeling well'
+        `what to do if feeling painful hurt headache treat manage control`,
     ],[
         `Each type of headache has different treatment methods that can be effective in treating headache pain.Tension headaches are also known as hatband headaches. This is because the pain from these headaches is located around the back of the head, the temples and forehead. They can last from a few hours to a few days. Some treatment options that are effective for tension headaches include physical therapy, muscle relaxants and over-the-counter pain releivers (aspirin and ibuprofen). Another type of headache is migrain headache. To relieve yourself, try to rest in a quite and darkroom, take hot or cold compress, and try massages.`
     ],2),
@@ -278,23 +209,13 @@ data.push(
 // abdominal crams
 data.push(
     encodeMemory([
-        `* treat * abdominal *`,
-        `How can I prevent or relieve abdominal cramps from occurring?`,  
-        `How to manage or soothe abdominal cramps?`,  
-        `What are effective ways to treat , home remedies, natural ways to treat abdominal cramps?`,   
-        `What are self-care measures, treatments or ways to alleviate for abdominal cramps?`, 
-        `What can I do to ease abdominal cramps?`,  
-        `What dietary changes can help alleviate abdominal cramps?`,  
-        `What medications are available to treat abdominal cramps?`,  
-        `What remedies can be used to treat abdominal cramps?`,  
-        `tell me what do i do when i feel pain in my stomach or abdominal cramps`,
-        'i stomach or abdominal cramps  please tell me what to',
-        'how to get better if i feel stomach or abdominal cramps',
-        `i dont feel like my stomach is doing well`,
-        `my stomach hurts`,
-        `what to do if feeling abdominal cramps`,
-        `what to do when having abdominal cramps`,,
-        'my stomach dont feeling well'
+        `* (treat|manage|control)  * abdominal *`,
+        `How can I prevent or relieve abdominal cramps from occurring`,  
+        `How What to treat manage control abdominal cramps`,  
+        'how to get better treat manage control if i feel stomach or abdominal cramps',
+        `i dont feel like my stomach is doing well treat manage control`,
+        `my stomach hurts dont feeling well`,
+        `what to treat manage control if feeling abdominal cramps`,
     ],[
         `Most abdominal pain goes away without special treatment. However,there are still things you can do to relieve pain. Try to place a hot water bottle or heated wheat bag on your abdomen. Soak in a warm bath. Take care not to scald yourself. Drink plenty of clear fluids such as water. Reduce your intake of coffee, tea and alcohol as these can make the pain worse. When you are allowed to eat again, start with clear liquids, then progress to bland foods such as crackers, rice, bananas or toast. Get plenty of rest. `
     ],2),
@@ -304,63 +225,47 @@ data.push(
 data.push(
     encodeMemory([
         `* (treat|reduce|control) * sore throat *`,
-        `How can I ease the pain or relieve a sore throat?`,  
-        `What are home remedies for or natural ways to treat a sore throat?`,  
-        `What are over-the-counter treatments for a sore throat?`,
-        `What are the best ways to treat or treatment options for a sore throat?`,  
-        `What can I do to treat my sore throat?`,  
-        `What medications are used to treat a sore throat?`,  
-        `What remedies are there for a sore throat?`,  
-        `tell me what do i do when i feel sore throat`,
-        'i have sore throat please tell me what to',
-        'how to get better if i feel sore throat',
-        `i feel sore throat`,
-        `my thoart is sore , painful or  hurts`,
-        `tell me how do you treat sore throat`,
+        `How What can I treat manage control relieve a sore throat`,  
+        `What treat manage control are there for a sore throat`,  
+        'how to get better i have sore throat please tell me what to',
+        `my thoart is sore , painful or hurts`,
+        `i feel sore throat tell me how do you treat manage control sore throat`,
         `what to do if feeling sore throat`,
-        `what to do when having sore throat`,
     ],[
         `If you have sore throat, here is what you can do. Drink lots of water and other fluids to thin our mucus or soothe your dry throat. Take medicine as directed by your doctor.  Prop up your head on pillows to help you breath and ease a dry cough. Try cough drops to soothe your throat. Stay away from any smoke.  You can also try gargling with warm water but we do not recommend children to do this.  `
     ],2),
 )
 
 // stiffness
-data.push(
-    encodeMemory([
-        `* (treat|reduce|control) * stiffness *`,
-        `How can I loosen up or alleviate my body stiffness?`,
-        `What are home remedies for reducing body stiffness?`,
-        `What are strategies or techniques for reducing or lessen body stiffness?`,
-        `What are ways to decrease or relieve body stiffness?`,
-        `What can I do to ease body stiffness?`,
-        `What exercises can help reduce body stiffness?`,
-        `What stretches can I do to alleviate body stiffness?`,
-        `tell me what do i do when i feel  body stiffness`,
-        'i have body stiffness please tell me what to',
-        'how to get better if i feel  body stiffness',
-        `what to do if feeling stiffness`,
-        `what to do when having stiffness`,
-    ],[
-        `To manage body stiffness you may do the following. You may be able to treat muscle stiffness with rest, massage and application of heat and cold compress. Applying heat to muscle may help loosen tightness and applying cold to inflamed part of your body may reduce swelling.`
-    ],2),
-)
+// data.push(
+//     encodeMemory([
+//         `* (treat|reduce|control) * stiffness *`,
+//         `How can I loosen up or alleviate my body stiffness`,
+//         `What are home remedies for reducing body stiffness`,
+//         `What are strategies or techniques for reducing or lessen body stiffness`,
+//         `What are ways to decrease or relieve body stiffness`,
+//         `What can I do to ease body stiffness`,
+//         `What exercises can help reduce body stiffness`,
+//         `What stretches can I do to alleviate body stiffness`,
+//         `tell me what do i do when i feel  body stiffness`,
+//         'i have body stiffness please tell me what to',
+//         'how to get better if i feel  body stiffness',
+//         `what to do if feeling stiffness`,
+//         `what to do when having stiffness`,
+//     ],[
+//         `To manage body stiffness you may do the following. You may be able to treat muscle stiffness with rest, massage and application of heat and cold compress. Applying heat to muscle may help loosen tightness and applying cold to inflamed part of your body may reduce swelling.`
+//     ],2),
+// )
 
 
 // SNEEZE
 data.push(
     encodeMemory([
         `* cover * sneeze *`,
-        `How should you cover your mouth when you sneeze?`,
-        `What are some ways to cover your mouth when you sneeze?`,
-        `What are the best practices for covering your mouth when you sneeze?`,
-        `What are the guidelines for sneezing into your sleeve?`,
-        `What is the correct way to sneeze into your elbow?`,
-        `What is the proper way to cover your mouth when you sneeze?`,
-        `tell me what to do when sneezing`,
-        `explain why do you need to cover when sneezing or coughing`,
-        `why is it necessary to cover when influenza`,
-        `what to do if feeling sneeze`,
-        `what to do when having sneeze`,
+        `How should you cover your mouth when you sneeze`,
+        `What is the proper correct way to sneeze `,
+        `tell explain why do you need to cover when sneezing or coughing`,
+        `why is it necessary to cover when sneezing or coughing`,
     ],[
         `It is highly recommended that you cover your mouth and nose when sneezing or coughing to prevent spread of the virus. You can sneeze or couch into a tissue. Make sure to dispose them properly.  If you don’t have a tissue, cough or sneeze in your elbow and not in your hands. Afterwards, wash your hands or use sanitizer.`
     ],2),
@@ -370,20 +275,11 @@ data.push(
 data.push(
     encodeMemory([
         `* wash * hands *`,
-        `Can you explain the proper way to wash your hands?`,
-        `Can you tell me how to wash my hands thoroughly?`,
-        `Could you walk me through the process of washing my hands?`,
-        `How do you properly wash your hands?`,
-        `What are the necessary steps to wash your hands correctly?`,
-        `What are the recommended steps for washing your hands?`,
-        `What are the steps for washing your hands effectively?`,
-        `What is the correct method for washing your hands?`,
-        `What is the recommended way to wash your hands?`,
-        `What's the procedure for washing your hands?`,
-        `tell me about how do you wash hands`,
-        `give me the list of steps on how to wash hands`,
-        `what to do wash hands`,
-        `what to do when wash hands`,
+        `Can you tell explain the proper way to wash your hands`,
+        `Could you walk me through the process of washing my hands`,
+        `What are the correct necessary recommended steps to wash your hands correctly`,
+        `give tell me the list of steps on how to wash hands`,
+        `How what to do wash hands`,
     ],[
         `Washing your hands often will help protect you from germs. To properly do it , lather with soap for at least 20 seconds. After putting soap on your hands, rub your hands together for at least 20 seconds. This is about as long as it takes to sing Happy Birthday twice. Use hand sanitizer when washing isn't possible. Use an alcohol-based hand sanitizer when you can't get to a sink. Apply the hand sanitizer as you would hand lotion, making sure to cover the fronts and backs of both hands. Use a product that contains at least 60% alcohol. `
     ],6)

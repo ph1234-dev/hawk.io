@@ -21,7 +21,7 @@ export default class NaiveBayes{
         // stores the term frequency within the class
         this.class_term_frequency_map = {}
     }
-
+    
     /**
      * data passed here requires the variable data and class
      * such as 
@@ -318,6 +318,9 @@ export default class NaiveBayes{
             }
         }
     }
+
+    
+
 }
 
 

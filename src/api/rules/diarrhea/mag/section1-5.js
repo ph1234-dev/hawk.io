@@ -3,19 +3,19 @@ import { encodeMemory } from "@/api/config/model"
 
 let section4 = [
 
-    encodeMemory([
-        `* malubay * tagudo *`,
-        `ngin to ka amayka da bagel nu lawas nengka na edtagudo ka`,
-        `panon na ato ka upama ka da bagel nengka na edtagudo ka`,
-        `nginto ka pakadtagudo i da bagel nin`,
-    ],[
-        `Su malubay a immune system na di pakagagasa sa katabang sa lawas nengka sa mga pathogens. Nya ba silan na pakalebag sa tinae na pakadtagudo. 
+    // encodeMemory([
+    //     `* malubay * tagudo *`,
+    //     `ngin to ka amayka da bagel nu lawas nengka na edtagudo ka`,
+    //     `panon na ato ka upama ka da bagel nengka na edtagudo ka`,
+    //     `nginto ka pakadtagudo i da bagel nin`,
+    // ],[
+    //     `Su malubay a immune system na di pakagagasa sa katabang sa lawas nengka sa mga pathogens. Nya ba silan na pakalebag sa tinae na pakadtagudo. 
         
-        So kapedtagudo na penggulan nu lawas nu taw engo gaawa i di mapya a mga baktekya abpeg a duti sa tinai. So di mabagel a immune system na di pakakaga sa namba a mga kagaw na kadsabapan na kadtagudo. Endu, so malubay a immune system na di nin ga balance i mapya abpeg a di mapya a bacteria na tyan. 
+    //     So kapedtagudo na penggulan nu lawas nu taw engo gaawa i di mapya a mga baktekya abpeg a duti sa tinai. So di mabagel a immune system na di pakakaga sa namba a mga kagaw na kadsabapan na kadtagudo. Endu, so malubay a immune system na di nin ga balance i mapya abpeg a di mapya a bacteria na tyan. 
 
-        Nasisita na su taw na aden enggulan nin endo pegkabagel i immune system nin mana su ka kan sa mapya, kainom sa ig, abpeg ka limpyo.
-        `,
-    ],1),
+    //     Nasisita na su taw na aden enggulan nin endo pegkabagel i immune system nin mana su ka kan sa mapya, kainom sa ig, abpeg ka limpyo.
+    //     `,
+    // ],1),
     encodeMemory([
         `* mamis * tagudo *`,
         `pano a to ka su kakan sa mamis a pegken na makadtagudo`,
@@ -30,26 +30,26 @@ let section4 = [
     ],[
         `Su allergies na pakadtagudo sabap sa immune response nu taw sa allergen. Upama ka ka su allergen na nadetect nu lawas, na su immune system na pablyu sa histamine abpeg kaped pan a chemicals na pakalebag abpeg pakagkagatel sa tinae, pakagkapaydo sa ka sesep nu tinae sa ig, abpeg nu ka lyu nu ig sa lawas sya kano tinae na gadsabapan na kapedtagudo.`,
     ],1),
-    encodeMemory([
-        `* malnutrition * tagudo *`,
-        `ngin to ka amay ka di ka keman ebpyapya na edtatagudo ka`,
-        `panon a to ka pakadtagudo i di kakan sa mapya`,
-        `ngen to ka amayka malnourished su taw na edtagudo`,
-        `Ngin to ka pakadtagudo i di kakan sa mapya`,
-        `Ngin to ka amayka pegkan ebpyapya na edtagudo su taw`,
-    ],[
-        `Su malnutrition na makadtagudo abpeg a makagkalubay sa lawas a gadsabapan na infections na pakadtagudo. Su malnutrition na pakalubay sa tinae. Upama ka manggula i nya ba na su mga di mapya a mga bacteria abpeg mga duti na makaludep sa blood stream o masesep nu lawas a makadsimbol pan sa lugo. Namba na pakadtagudo. Abpeg na su malnutrition na gaawa ni su balanse na microbiota sa tyan na gaumbal a kadsabapan na kablebag na tinae.  `,
-    ],1),
-    encodeMemory([
-        `* duken  *  gamot * tagudo *`,
-        `ngin sabapan nin ka makadtagudo i kakan sa gamot`,
-        `ngin to ka su mga kakan gamot na aw na to pakadtagudo`,
-        `enduken ka pakadtagudo su kakan sa kinina`,
-        `enduken ka pakadtagudo su kakan sa gamot `,
-        `ngen to ka su gamot na pakadtagudo `,
-    ],[
-        `Su kapedtagudo na aw na to na penggulan nu lawas umayka aden nakan nengka a gamot. Nya ba i tig nilan a toxic reaction. Example na aw na to umengka keman ka sa antibiotics na gabinasa nin su balanse na bacteria sa tinae. Upama ka nya ba i manggula na aw na to na edtagudo su taw. Su mga nonsteroidal anti-inflammatory drugs (NSAIDs) na kapagkagatel sa tinai na aw na to na makalebag abpeg a makadtagudo. Aden bon kaped a mga gamot mana su laxatives abepg su chemotherapy a mga gamot na pakagkagatel sa nya a gaumbal a sabapan na kapedtagudo`,
-    ],1),
+    // encodeMemory([
+    //     `* malnutrition * tagudo *`,
+    //     `ngin to ka amay ka di ka keman ebpyapya na edtatagudo ka`,
+    //     `panon a to ka pakadtagudo i di kakan sa mapya`,
+    //     `ngen to ka amayka malnourished su taw na edtagudo`,
+    //     `Ngin to ka pakadtagudo i di kakan sa mapya`,
+    //     `Ngin to ka amayka pegkan ebpyapya na edtagudo su taw`,
+    // ],[
+    //     `Su malnutrition na makadtagudo abpeg a makagkalubay sa lawas a gadsabapan na infections na pakadtagudo. Su malnutrition na pakalubay sa tinae. Upama ka manggula i nya ba na su mga di mapya a mga bacteria abpeg mga duti na makaludep sa blood stream o masesep nu lawas a makadsimbol pan sa lugo. Namba na pakadtagudo. Abpeg na su malnutrition na gaawa ni su balanse na microbiota sa tyan na gaumbal a kadsabapan na kablebag na tinae.  `,
+    // ],1),
+    // encodeMemory([
+    //     `* duken  *  gamot * tagudo *`,
+    //     `ngin sabapan nin ka makadtagudo i kakan sa gamot`,
+    //     `ngin to ka su mga kakan gamot na aw na to pakadtagudo`,
+    //     `enduken ka pakadtagudo su kakan sa kinina`,
+    //     `enduken ka pakadtagudo su kakan sa gamot `,
+    //     `ngen to ka su gamot na pakadtagudo `,
+    // ],[
+    //     `Su kapedtagudo na aw na to na penggulan nu lawas umayka aden nakan nengka a gamot. Nya ba i tig nilan a toxic reaction. Example na aw na to umengka keman ka sa antibiotics na gabinasa nin su balanse na bacteria sa tinae. Upama ka nya ba i manggula na aw na to na edtagudo su taw. Su mga nonsteroidal anti-inflammatory drugs (NSAIDs) na kapagkagatel sa tinai na aw na to na makalebag abpeg a makadtagudo. Aden bon kaped a mga gamot mana su laxatives abepg su chemotherapy a mga gamot na pakagkagatel sa nya a gaumbal a sabapan na kapedtagudo`,
+    // ],1),
     encodeMemory([
         `* parasite * tagudo *`,
         `enduken ka su parasite na pakadtagudo`,
@@ -74,16 +74,16 @@ let section4 = [
     ],[
         `So mga infection a sabap sa virus na pakabinasa sa lining nu tinae. Nya ba na pakabinasa sa kapedsesep nu taw sa ig abpeg nutrents na mga pegken. So mga virus na aw na to na paka stimulate o papengalbeken nin su lawas na taw endu pakalyu sa mga checmicals a papengalbek sa tinae. Nya ba na pakadtagudo. Aden mga kila a mga virus a pakadtagudo mana su norovirus, rotavirus abpeg adenovirus. nya ba na mlmo i kaalat nin sa taw amayka ga contaiminate su pegken o ig abpeg upama ka umayn nu taw i aden sakit nin. `,
     ],1),
-    encodeMemory([
-        `* sakit * tiyan * tagudo *`,
-        `ngin to ka ka upama na masakit i tyan nu taw na edtagudo sekanin`,
-        `ngin i sabapan nin ka su taw a masakit i tyan nin na aw na to a pedtagudo sekanin`,
-        `ngin to ka su masakit a tyan na makadtagudo`,
-        `endoken ka su pedtagudo na masakit i tyan nin`,
-    ],[
-        `
-        Su galbek nu tinae na aw na to na gabinasa sabap sa sakit na tinae mana su lebag, kapegkagatel abpeg kabinasa na tinae. Kaped sa mga sakit a to na su irritable bowel disease, ulcerative collitis, small intestine bacterial overgrowth, irritable bowel syndrome, or celiac disease. Aden bon mga kapedtagudo na sabap sa mga kinan a gamot apeg su ukit na kakan nu taw. Upama ka penggamutan su taw a pedtagudo, na nasisita i nakasugat a diagnisis apeng kagamot lun.`,
-    ],1),
+    // encodeMemory([
+    //     `* sakit * tiyan * tagudo *`,
+    //     `ngin to ka ka upama na masakit i tyan nu taw na edtagudo sekanin`,
+    //     `ngin i sabapan nin ka su taw a masakit i tyan nin na aw na to a pedtagudo sekanin`,
+    //     `ngin to ka su masakit a tyan na makadtagudo`,
+    //     `endoken ka su pedtagudo na masakit i tyan nin`,
+    // ],[
+    //     `
+    //     Su galbek nu tinae na aw na to na gabinasa sabap sa sakit na tinae mana su lebag, kapegkagatel abpeg kabinasa na tinae. Kaped sa mga sakit a to na su irritable bowel disease, ulcerative collitis, small intestine bacterial overgrowth, irritable bowel syndrome, or celiac disease. Aden bon mga kapedtagudo na sabap sa mga kinan a gamot apeg su ukit na kakan nu taw. Upama ka penggamutan su taw a pedtagudo, na nasisita i nakasugat a diagnisis apeng kagamot lun.`,
+    // ],1),
     encodeMemory([
         `* kwa * tagudo *`,
         `panon a to besen i kapedtagudo na taw`,
@@ -136,18 +136,18 @@ let section5 = [
         `Su kanggamot sa zinc na natun a pakagkalngkas sa kaawa na kapedtagudo. Pakadtabang bon i nya ba endu ga maintain su balans na ig abpeg electrolytes nu lawas a ga disturbo umayka pedtagudo su taw. Engo nya ba na kapenggamot sa zinc na na pakadtabang endu di ka makakwa sa kaped pan a infection. Ugayd na so sobla sobla a kakan sa nya ba na di mapya. Pangingidsa ka sa doctor o panun i mapya a kakan sa nya ba a gamot.
         `,
     ],7),
-    encodeMemory([
-        `* mapya * pegken * (awa|gamot|kapya|tabang) * pegken * tagudo *`,
-        `ngin to ka keman sa mapya upama ka su taw na pedtagudo`,
-        `nasisita ko kakan sa malimpyo amay ka pedtagudo , eduken`,
-        `nginto ka nya mapya enggulan nu taw a pedtagudo na keman sa pegken a mapya sa lawas`,
-        `ngin to ka su kakan sa mapya na makagkapya sa taw a pedtagudo`,
-        `panon a to ka su kakan sa mapya na makagkapya sa taw a pedtagudo`,
-        `Ngin to ka su keman sa mapya a pegken  amayka pedtagudo su taw`,
-        `panon a to ka su keman sa mapya a pegken  amayka pedtagudo su taw`,
-    ],[
-        `Nasisita na keman su taw ebpyapya endu pegkabagel i lawas nin. Pakadtabang bon i nya ba endu di pengkagtel i tinai nu taw engu di sekanin edtagudo. Kan sa sa mga pegken a malmo gatunag sa tyan mana su saging, emay, patatas, manok o seda. Endo kan ka bon sa mga pegken a madakel i fiber content nin,potassium abpeg a protein kagina pakadtabang i namba. Endu di kalunsanan i kangggedam nengka, na da ka pegkan sa mga lanan, matimos, malalas o mamis ged a mga pegken.`,
-    ],4),
+    // encodeMemory([
+    //     `* mapya * pegken * (awa|gamot|kapya|tabang) * pegken * tagudo *`,
+    //     `ngin to ka keman sa mapya upama ka su taw na pedtagudo`,
+    //     `nasisita ko kakan sa malimpyo amay ka pedtagudo , eduken`,
+    //     `nginto ka nya mapya enggulan nu taw a pedtagudo na keman sa pegken a mapya sa lawas`,
+    //     `ngin to ka su kakan sa mapya na makagkapya sa taw a pedtagudo`,
+    //     `panon a to ka su kakan sa mapya na makagkapya sa taw a pedtagudo`,
+    //     `Ngin to ka su keman sa mapya a pegken  amayka pedtagudo su taw`,
+    //     `panon a to ka su keman sa mapya a pegken  amayka pedtagudo su taw`,
+    // ],[
+    //     `Nasisita na keman su taw ebpyapya endu pegkabagel i lawas nin. Pakadtabang bon i nya ba endu di pengkagtel i tinai nu taw engu di sekanin edtagudo. Kan sa sa mga pegken a malmo gatunag sa tyan mana su saging, emay, patatas, manok o seda. Endo kan ka bon sa mga pegken a madakel i fiber content nin,potassium abpeg a protein kagina pakadtabang i namba. Endu di kalunsanan i kangggedam nengka, na da ka pegkan sa mga lanan, matimos, malalas o mamis ged a mga pegken.`,
+    // ],4),
     encodeMemory([
         `* doctor * (awa|gamot|kapya|tabang) *  (awa|gamot|kapya) * tagudo *`,
         `kano besen i ka angay sa doctor amayka pedtagudo i taw`,
@@ -187,27 +187,27 @@ let section5 = [
         `amayka pedtagudo su taw na ngen ebpasen nin`,
         `ngen i enggulan sa pedtagudo a taw`,
         `aden pakagamot sa kapedtagudo`,
-        `aden gamot na kapedtagudo?`
+        `aden gamot na kapedtagudo`
     ],[
         `So kapenggamot sa tagudo na depende sa sabap nin. Su mga minor cases, na gapakay a minom su taw sa antimotility o bismuth subsalicylate. Ugayd na inom ka bon sa madakel o aden ig nin a mga pegken mana su sabaw, sports drinks, ig a nyog, ig, oral rehydration solutions endu tanga ka sa mga paginumen a aden alchohol nin. Nasisita na engula ka su kainom sa ig. Upama ka di gaawa na nya ba i kapedtagudo , na angay ka den sa doctor endu kagamutan ka ebpyapya.`,
     ],1),
-    encodeMemory([
-        `* (awa|gamot|kapya|tabang|ebpawang) * tagudo *`,
-        `endaw mangay i taw a pedtagudo den`,
-        `amayka pedtagudo su taw a endaw ebpawang`,
-        `endaw mapakay ebpawang i taw a pedtagudo`,
-        `endaw mapagamot su taw a pedtagudo`,
-    ],[
-        `
-        Aden mga emblangan na mga penggamot a makatabang sa leka depende sa sabap nu kapedtagudo. 
+    // encodeMemory([
+    //     `* (awa|gamot|kapya|tabang|ebpawang) * tagudo *`,
+    //     `endaw mangay i taw a pedtagudo den`,
+    //     `amayka pedtagudo su taw a endaw ebpawang`,
+    //     `endaw mapakay ebpawang i taw a pedtagudo`,
+    //     `endaw mapagamot su taw a pedtagudo`,
+    // ],[
+    //     `
+    //     Aden mga emblangan na mga penggamot a makatabang sa leka depende sa sabap nu kapedtagudo. 
 
-        Su general practioners na mapakay mengay sa advice o ula ula sa panon i katabang sa ginawa nengka mana su kapaginom sa ig, ngin i kanen nengka. Endu di ka ged edtagudo na aw na to na edtaluan ka nilan sa kan ka sa gamot mana su loperamide.
+    //     Su general practioners na mapakay mengay sa advice o ula ula sa panon i katabang sa ginawa nengka mana su kapaginom sa ig, ngin i kanen nengka. Endu di ka ged edtagudo na aw na to na edtaluan ka nilan sa kan ka sa gamot mana su loperamide.
 
-        So mga pasente manem a pedsublasubla i kapedtagudo nin na kapakay manga sa specialista a mana su mga gastro interstinal specialist. Namba silan na pendiagnose sa sabap nu kapedtagudo nengka endu katawan nilan panon i kagamot sa leka. Ugayd na nam ba silan na aw na to na ipa laboratory test ka nila mana su para kano tay apged su colonoscopy na tinae.
+    //     So mga pasente manem a pedsublasubla i kapedtagudo nin na kapakay manga sa specialista a mana su mga gastro interstinal specialist. Namba silan na pendiagnose sa sabap nu kapedtagudo nengka endu katawan nilan panon i kagamot sa leka. Ugayd na nam ba silan na aw na to na ipa laboratory test ka nila mana su para kano tay apged su colonoscopy na tinae.
 
-        Upama ka pakagedam ka sa may, masakit a tyan o dehydration , nasisita na pailay ka engagayas sa doktor.
-        `,
-    ],5),
+    //     Upama ka pakagedam ka sa may, masakit a tyan o dehydration , nasisita na pailay ka engagayas sa doktor.
+    //     `,
+    // ],5),
     encodeMemory([
         `* (ebpawang|kailay)* doctor * tagudo * `,
         `nginto ka mangay to taw sa doktor amayka pedtagudo`,
@@ -229,18 +229,18 @@ let section5 = [
     ],[
         `Depende sa kapedtagudo nu tao, su kapenggamot lon na mapakay apya sya bo sa walay o sya mangay sa ospital. Su ka degka, hydrate o kainom sa ig, abpeg kasambi sa pegkanen na mga mapya a enggulan na taw umayka pakagedam sekanin sa dikena bon ged mapasang a kapedtagudo. Su mga sintomas manem na kapakay pengamutan na mga gamot a gapamasa sa botika mana su lopermaide abpeg bismuth subsalicylate. Ugayd na upama ka mapasang den a benel su kapedtagudo ka pegkayaw su taw, ga dehydrate abped pebpaugo i tay nin na angay ka den sa doctor. Meto bun upama ka pedtagudo su taw na naipos a dwa gay. Aw na to na angay ka sa barangay health center`,
     ],5),
-    encodeMemory([
-        `* (kwa|pamasa) * (zinc|bismuth|antimotility) oral rehydration (solutions?|salts?) * `,
-        `* (zinc|bismuth|antimotility) oral rehydration (solutions?|salts?) *  (kwa|pamasa) *`,
-        `* (kwa|pamasa) * gamot * tagudo * `,
-        `endaw besen gapamasa i (zinc|bismuth|antimotility) oral rehydration (solutions?|salts?) `,
-        `endaw pamasan su (zinc|bismuth|antimotility) oral rehydration (solutions?|salts?) `,
-        `endaw mamasa sa gamot na kapedtagudo?`,
-        `edtalo ka endaw gapamasa su mga gamot na kapedtagudo`,
-        `endaw mamasa sa gamot i pedtagudo`
-    ],[
-        `Kapamasa nengka I namba sa botika. Edtalo ka bo sa lekanilan I nasisita nengka I gamot a tagudo. Pangingati ka umpama ka pedtagudo na pakaudo sa aden lugo nin, aw na to na aden pan mayaw nin, na da ka pamasa sa gamot a mana antimotility a mana loperamide abpeg Imodium. Nya mapya ka igamot nengka lol na oral rehydration solutions endu katabangan sekanin a di nin maudo I ig a lawas nin.`,
-    ],5),
+    // encodeMemory([
+    //     `* (kwa|pamasa) * (zinc|bismuth|antimotility) oral rehydration (solutions?|salts?) * `,
+    //     `* (zinc|bismuth|antimotility) oral rehydration (solutions?|salts?) *  (kwa|pamasa) *`,
+    //     `* (kwa|pamasa) * gamot * tagudo * `,
+    //     `endaw besen gapamasa i (zinc|bismuth|antimotility) oral rehydration (solutions?|salts?) `,
+    //     `endaw pamasan su (zinc|bismuth|antimotility) oral rehydration (solutions?|salts?) `,
+    //     `endaw mamasa sa gamot na kapedtagudo`,
+    //     `edtalo ka endaw gapamasa su mga gamot na kapedtagudo`,
+    //     `endaw mamasa sa gamot i pedtagudo`
+    // ],[
+    //     `Kapamasa nengka I namba sa botika. Edtalo ka bo sa lekanilan I nasisita nengka I gamot a tagudo. Pangingati ka umpama ka pedtagudo na pakaudo sa aden lugo nin, aw na to na aden pan mayaw nin, na da ka pamasa sa gamot a mana antimotility a mana loperamide abpeg Imodium. Nya mapya ka igamot nengka lol na oral rehydration solutions endu katabangan sekanin a di nin maudo I ig a lawas nin.`,
+    // ],5),
     encodeMemory([
         `* (tabang|enggulan|kapya) * lugo * (tagudo|tai) *`,
         `* lugo * (tagudo|tai) * (tabang|enggulan|kapya) * `,
@@ -256,7 +256,6 @@ let section5 = [
     encodeMemory([
         `* (gamot|tabang|kapya) * tagudo * pegkayaw * `,
         `* (gamot|tabang|kapya) * pegkayaw * tagudo * `,
-        `* (gamot|tabang|kapya) * tagudo * pegkayaw *`,
         `panon i pakairan sa taw a mayaw abpeg a pedtagudo`,
         'ngen i enggulan nu taw amayka pegkayaw a pedtagudo ',
         `amayka pedtagudo su taw na mayaw pan i kanggegedam nin na ngin e enggulan nin`,

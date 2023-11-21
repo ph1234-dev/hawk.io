@@ -1,8 +1,9 @@
-import { ref, computed ,reactive} from 'vue'
+import { ref, computed ,reactive, onMounted,watch} from 'vue'
 import { defineStore } from 'pinia'
 import { useRoute, useRouter } from 'vue-router'
 
 import Engine from '@/api/engine'
+
 
 export const useBackendAPI = defineStore('backend', () => {
 
@@ -23,12 +24,15 @@ export const useBackendAPI = defineStore('backend', () => {
   const URL_PREDICT_LANGUAGE = `${URL_BASE}/classify/api/predict`
   const URL_TEST_RECORDS = `${URL_BASE}/test/api/store`
   
-  const ENGINE = new Engine()
+  let router = useRouter()
 
+
+  let ENGINE = new Engine()
 
   if (localStorage.getItem("user")){
     user = JSON.parse(localStorage.getItem("user"))
   }
+
 
   // https://www.youtube.com/watch?v=059fh7Gobho
   // persisting vue pinia using watch
@@ -37,7 +41,13 @@ export const useBackendAPI = defineStore('backend', () => {
   // },{deep:true})
   // // adding deep is true here meaning we will track depe changes
 
-  let router = useRouter()
+
+  // watch(ENGINE_LOADED,val=>{
+  //   localStorage.setItem("ENGINE_LOADED",JSON.stringify(val))
+  // },{deep:true})
+
+
+  
   let logoutUserAccount = ()=>{
     localStorage.removeItem("user")
     user.id = ''
@@ -299,7 +309,7 @@ export const useBackendAPI = defineStore('backend', () => {
     getReply,
     user,
     loginUserAccount,
-    logoutUserAccount
+    logoutUserAccount,
   }
 })
 

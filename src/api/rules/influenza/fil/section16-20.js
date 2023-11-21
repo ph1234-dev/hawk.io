@@ -3,14 +3,14 @@ import { encodeMemory } from "@/api/config/model"
 let section16 = [
         `* (iwas| hindi * (kain|inom|gamit)) * antibiotics *`,
         `* antibiotics * (iwas| hindi * (kain|inom|gamit)) *`,
-        `Ano ang dahilan kung bakit kailangan iwasan ang antibiotics?`,
-        `Ano ang mga epekto ng sobrang paggamit ng antibiotics?`,
-        `Ano ang mga rason kung bakit kailangan mag-ingat sa paggamit ng antibiotics?`,
-        `Bakit hindi advisable na mag-take ng antibiotics nang basta-basta?`,
-        `Bakit hindi dapat mag-self medicate ng antibiotics?`,
-        `Bakit hindi dapat uminom ng antibiotics kung hindi ito kinakailangan?`,
-        `Bakit hindi dapat uminom ng antibiotics kung hindi kailangan?`,
-        `Bakit hindi dapat uminom ng antibiotics kung hindi pa nakakapagpatingin sa doktor?`,
+        `Ano ang dahilan kung bakit kailangan iwasan ang antibiotics`,
+        `Ano ang mga epekto ng sobrang paggamit ng antibiotics`,
+        `Ano ang mga rason kung bakit kailangan mag-ingat sa paggamit ng antibiotics`,
+        `Bakit hindi advisable na mag-take ng antibiotics nang basta-basta`,
+        `Bakit hindi dapat mag-self medicate ng antibiotics`,
+        `Bakit hindi dapat uminom ng antibiotics kung hindi ito kinakailangan`,
+        `Bakit hindi dapat uminom ng antibiotics kung hindi kailangan`,
+        `Bakit hindi dapat uminom ng antibiotics kung hindi pa nakakapagpatingin sa doktor`,
     encodeMemory([
     ],[
         `Gumagana lamang ang mga antibiotic sa bacteria Ang influenza ay sanhi ng virus kaya hindi gagana ang mga antibiotic. Pag may trangkaso ang isang tao ay, antiviral ang nararapat gamitin.`
@@ -18,13 +18,13 @@ let section16 = [
     encodeMemory([
         `* (iwas| hindi * (kain|inom|gamit)) * aspirin *`,
         `* aspirin * (iwas| hindi * (kain|inom|gamit)) *`,
-        `Ano ang dahilan kung bakit kailangan umiwas sa aspirin?`,  
-        `Ano ang mga side effects ng aspirin?`,
-        `Bakit hindi dapat mag-take ng aspirin?`,  
-        `Bakit hindi pwede sa mga bata ang aspirin?`,  
-        `Bakit mas delikado sa mga matatanda ang pag-take ng aspirin?`,  
-        `May mga rason ba kung bakit hindi pwede uminom ng aspirin?`,  
-        `Paano nakakaapekto ang aspirin sa katawan?`,  
+        `Ano ang dahilan kung bakit kailangan umiwas sa aspirin`,  
+        `Ano ang mga side effects ng aspirin`,
+        `Bakit hindi dapat mag-take ng aspirin`,  
+        `Bakit hindi pwede sa mga bata ang aspirin`,  
+        `Bakit mas delikado sa mga matatanda ang pag-take ng aspirin`,  
+        `May mga rason ba kung bakit hindi pwede uminom ng aspirin`,  
+        `Paano nakakaapekto ang aspirin sa katawan`,  
     ],[
         `Ang pag-inom ng aspirin upang gamutin ang naturang impeksiyon ay lubos na nagpapataas ng panganib ng Reye's Syndrome na isang sakit na nagdudulot ng pinsala sa utak at atay.`
     ],7),

@@ -244,36 +244,36 @@ class BM25{
   // docs must be an array
   train(trainingData, index) {
 
-    trainingData = trainingData.toLowerCase().trim().replace(/[^\s+\w]/g, " ")
+    // trainingData = trainingData.toLowerCase().trim().replace(/[^\s+\w]/g, " ")
 
     // remove stop words
-    let tokens = trainingData.split(' ')
-    tokens.forEach(token => {
-      if (DICTIONARY.isStopWord(token.trim())) {
-        // you need to set the boundary
-        const regex = new RegExp("\\b" + token + "\\b", "g");
-        trainingData = trainingData.replace(regex, '')
-      }
-    })
+    // let tokens = trainingData.split(' ')
+    // tokens.forEach(token => {
+    //   if (DICTIONARY.isStopWord(token.trim())) {
+    //     // you need to set the boundary
+    //     const regex = new RegExp("\\b" + token + "\\b", "g");
+    //     trainingData = trainingData.replace(regex, '')
+    //   }
+    // })
 
     // replace redundant
-    trainingData = trainingData.replace(/[\s]+/g, " ")
+    // trainingData = trainingData.replace(/[\s]+/g, " ")
 
-    tokens = trainingData.split(' ')
-    tokens.forEach(word => {
+    // tokens = trainingData.split(' ')
+    // tokens.forEach(word => {
 
-      let sub = DICTIONARY.getSubstitute(word.trim())
+    //   let sub = DICTIONARY.getSubstitute(word.trim())
 
-      if (sub != null) {
-        // console.log('>> Testing: ',token, ' replace to', word )
-        // trainingData = trainingData.replace(word,sub)
+    //   if (sub != null) {
+    //     // console.log('>> Testing: ',token, ' replace to', word )
+    //     // trainingData = trainingData.replace(word,sub)
 
-        const regex = new RegExp("\\b" + word + "\\b", "g");
-        trainingData = trainingData.replace(regex, sub)
+    //     const regex = new RegExp("\\b" + word + "\\b", "g");
+    //     trainingData = trainingData.replace(regex, sub)
 
-      }
+    //   }
 
-    })
+    // })
 
     // object of "trainingData: DATA, "rawPattern": RAW
     this.docs.push(trainingData)

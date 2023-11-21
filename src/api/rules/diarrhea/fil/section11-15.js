@@ -5,28 +5,17 @@ let section11 = [
     // antimotility
     encodeMemory([
         `* generic * antimotility * `,
-        `Mayroon bang mga generic na antimotility na maaaring gamitin para sa pagtigil ng tae?`,
-        `Anong mga generic na antimotility ang pwedeng gamitin para sa diarrhea?`,
-        `Alin sa mga generic na antimotility ang maganda para sa pagtatae?`,
-        `Ano ang mga generic na antimotility na maaaring mabili sa parmasya para sa pagtigil ng tae?`,
-        `Mayroon bang mabibiling generic na antimotility sa mga botika para sa pagtigil ng diarrhea?`,
-        `Ano-ano ang mga generic na antimotility pangtigil-tae na maaaring ibenta sa botika?`,
-        `Saan maaaring makabili ng mga generic na antimotility para sa pagtigil ng tae?`,
-        `Anong mga generic na antimotility ang pwede kong bilhin sa parmasya?`,
+        `Anong mga generic na antimotility ang pwedeng gamitin para sa diarrhea`,
         `ano ang generic na antimotility`,
     ],[
         `Ang Loperamide ay isang generic na antimotility na gamot na makikita mo sa mga parmasya .Mahalagang sundin ang inirerekumendang dosis at mga tagubilin sa paggamit upang maiwasan ang anumang potensyal na epekto o komplikasyon.`
     ],7),
     encodeMemory([
         `* branded * antimotility *`,
-        `Ano-ano ang mga branded na antimotility na pwedeng gamitin para sa pagtigil ng pagtatae?`,
-        `May mga branded na antimotility ba para sa pagtigil ng pagtatae?`,
-        `Anong mga pangalan ng mga branded na antimotility ang pwede para sa pagtatae?`,
-        `May mga branded na antimotility medicine ba?`,
-        `Ano ang mga branded na anti-motility medication para sa diarrhea?`,
-        `Ano ang mga brand name ng mga antimotility na pwedeng gamitin sa pagtigil ng diarrhea?`,
-        `Mayroon bang branded na antimotility drugs?`,
-        `Anong mga branded na pangalan ng antimotility ang maaaring gamitin para sa pagtatae?`,
+        `Anong mga pangalan ng mga branded na antimotility ang pwede para sa pagtatae`,
+        `Ano ang mga brand name ng mga antimotility na pwedeng gamitin sa pagtigil ng diarrhea`,
+        `Mayroon bang branded na antimotility drugs`,
+        `Anong mga branded na pangalan ng antimotility ang maaaring gamitin para sa pagtatae`,
         `ano ang branded na antimotility`
     ],[
         `Ang Imodium ay isang branded na antimotility na nabibili sa mgabotika.Upang maiwasan ang mga posibleng epekto o komplikasyon, dapat sundin ang inirerekomendang dosis at mga tagubilin sa paggamit.`
@@ -36,16 +25,13 @@ let section11 = [
         `* hakbang * antimotility *`,
         `* (kainin|gamitin|inumin) * antimotility *`,
         `* antimotility * (gamitin|kainin|inumin) *`,
-        `Ano ang dapat sundin na dosage ng antimotility para sa sakit na diarrhea ?`,
-        `Ano ang dapat tandaan sa pag-inom o paggamit ng antimotility para sa diarrhea ?`,
-        `Ano ang tamang dosage ng antimotility para sa diarrhea ?`,
-        `Anong mga dapat isaalang-alang sa pag-inom o paggamit ng antimotility para sa sakit na diarrhea ?`,
-        `Anong tamang paraan ng pag-inom o paggamit ng antimotility o dosage para sa diarrhea ?`,
-        `Paano ang tamang paraan ng pag-inom ng gamot na antimotility para sa sakit na diarrhea ?`,
-        `Paano dapat inumin o gamitin ang antimotility sa sakit na diarrhea ?`,
-        `Paano dapat inumin o gamitin ang gamot na antimotility sa pagkakaroon ng diarrhea ?`,
-        `Paano tamang dosage ng antimotility para sa sakit na diarrhea ?`,
-        `Paano tamang gamitin ang antimotility sa sakit na diarrhea ?`,
+        `Ano ang dapat tandaan sundin na dosage sa pag-inom o paggamit ng antimotility para sa sakit na diarrhea `,
+        `Ano ang tamang dosage ng antimotility para sa diarrhea `,
+        `Anong mga dapat isaalang-alang sa pag-inom o paggamit ng antimotility para sa sakit na diarrhea `,
+        `Anong tamang paraan ng pag-inom paggamit ng antimotility o dosage para sa diarrhea `,
+        `Paano ang tamang paraan ng pag-inom ng gamot na antimotility para sa sakit na diarrhea `,
+        `Paano dapat inumin o gamitin ang antimotility sa sakit na diarrhea `,
+        `Paano tamang dosage gamitin ang antimotility sa sakit na diarrhea `,
         `ano ang dose ng antimotility`,
     ],[
         `Uminom ng maraming tubig habang ginagamot mo ang iyong pagtatae gamit ang antimotilities. Ang pagtatae ay maaaring magpa-dehydrate sa iyo. 
@@ -63,41 +49,29 @@ let section11 = [
     ],7),
     encodeMemory([
         `* ano * antimotility *`,
-        `Ano ang ibig sabihin ng antimotility?`,
-        `Ano ang kahulugan ng antimotility?`,
-        `Anong nangyayari kapag uminom ng antimotility?`,
-        `Ano ang mga sakit na nakakatulong ang antimotility?`,
+        `Ano ang ibig sabihin kahulugan ng antimotility`,
+        `Anong nangyayari kapag uminom ng antimotility`,
+        `Ano ang mga sakit na nakakatulong ang antimotility`,
         `ano ang antimotility`
     ],[
         `Ang mga antimotility ay ginagamit upang pabagalin o pahintuhin ang paggalaw ng bituka. Gumagana ito sa pamamagitan ng pagbubuklod sa mga opioid receptor ng bituka na nag babawas  sa contraction ntio at tumutulong na pabagalin ang pagdaan ng dumi sa bituka.`
     ],7),
     encodeMemory([
-        `* gamit *  antimotility *`,
-        `Saan ginagamit ang antimotility?`,
-        `Para sa anong karamdaman ginagamit ang antimotility?`,
-        `Anong mga kondisyon ang pinapakitunguhan ng antimotility?`,
-        `Sa mga anong pagtatae ginagamit ang antimotility?`,
-        `Bakit mahalaga ang antimotility sa pangangalaga ng kalusugan?`,
-        `anong gamit ng antimotility`,
-        `saan ginagamit ang antimotility`,
-        `paano ginagamit ang antimotility`,
+        `* gamit * antimotility *`,
+        `Saan ginagamit ang antimotility`,
+        `Para sa anong karamdaman ginagamit ang antimotility`,
+        `paano anong saan gamit ng antimotility`,
     ],[
         `Ang mga antimotility ay nagbabawas o nagpigil sa mga pag-galaw ng bituka. Nagbibigay din ito sa katawan ng mas maraming oras upang sumipsip ng tubig at mga sustansya mula sa natitirang mga nilalaman ng bituka, na maaaring humantong sa pagbaba sa dalas at intensity ng pagdumi.`
     ],7),
     encodeMemory([
         `* gana * antimotility * `,
         `* antimotility * gana * `,
-        `Ano ang ginagawa ng antimotility sa katawan?`,
-        `Paano gumagana ang antimotility?`,
-        `Paano nakakatulong ang antimotility para sa pagtigil ng pagdumi?`,
-        `Paano gumagana ang antimotility upang mapigilan ang pagtatae?`,
-        `Paano nakakatulong ang antimotility sa pagpapalambot ng stool?`,
-        `Ano ang epekto ng antimotility sa intestinal motility?`,
-        `Paano nakakapagpahinga ang antimotility sa bituka?`,
-        `Paano nakakapagbigay ng ginhawa ang antimotility sa diarrhea?`,
-        `Paano nakakaapekto ang antimotility sa pagbabago ng frequency ng pagdumi?`,
-        `paano gumagana ang antimotility.`,
-        `paano nagpapagaling ang antimotility`
+        `Paano gumagana ang antimotility`,
+        `Paano gumagana ang antimotility upang mapigilan ang pagtatae`,
+        `Paano nakakatulong ang antimotility sa pagpapalambot ng stool`,
+        `Paano nakakapagbigay ng ginhawa ang antimotility sa diarrhea`,
+        `paano gumagana nagpapagaling ang antimotility`
     ],[
         `Ang mga antimotility, tulad ng Loperamide at Imodium, ay pumipigil sa paggalaw ng bituka at maaaring gamitin upang gamutin ang pagtatae. 
         
@@ -107,23 +81,20 @@ let section11 = [
     ],7),
     encodeMemory([
         `* hindi * ((kain|inom|gamit) | iwas)  * antimotility *`,
-        `Kailan hindi dapat gamitin ang antimotility?`,
-        `Paano malalaman kung hindi dapat gumamit ng antimotility?`,
-        `Kailan hindi epektibo ang antimotility?`,
+        `Kailan hindi dapat gamitin ang antimotility`,
+        `Paano malalaman kung hindi dapat gumamit ng antimotility`,
+        `Kailan hindi epektibo ang antimotility`,
     ],[
         `Dapat na iwasan ang mga antimotility agent kung may mga senyales ng matinding dehydration, mataas na lagnat, o may dugo ang iyong dumi, dahil ang mga ito ay maaaring magpahiwatig ng mas malubhang kondisyon na nangangailangan ng medikal na atensyon`
     ],7),
     encodeMemory([
         `* effect * antimotility  * `,
         `* hindi * maganda * epekto * antimotility  *`,
-        `Ano ang maaaring maging side effect ng antimotility?`,
-        `Ano ang mga posibleng masamang epekto ng antimotility?`,
-        `Ano-ano ang mga negatibong reaksyon sa antimotility?`,
-        `Mayroon bang mga epekto ang antimotility na dapat bantayan?`,
-        `Mayroon bang mga hindi inaasahang epekto sa antimotility?`,
-        `Mayroon bang mga hindi magandang epekto ang antimotility?`,
-        `Nakakaranas ba ng mga negatibong epekto ang antimotility?`,
-        `Paano nakakaapekto ang antimotility sa katawan?`,
+        `Ano ang maaaring maging side effect ng antimotility`,
+        `Ano ang mga posibleng masamang negatibong epekto reaksyon sa antimotility`,
+        `Mayroon bang mga epekto ang antimotility na dapat bantayan`,
+        `Mayroon bang mga hindi inaasahang magandang epekto ang antimotility`,
+        `Paano nakakaapekto ang antimotility sa katawan`,
         `ano ang side effect ng antimotility`,
         `ano ang hindi magandang epekto ng antimotility`,
     ],[
@@ -132,13 +103,9 @@ let section11 = [
     ],7),
     encodeMemory([
         `* tips * antimotility *`,
-        `Ano ang mga dapat kong gawin habang nag take ako ng antimotility?`,
-        `Ano ang mga dapat na kainin para maiwasan ang side effects ng antimotility?`,
-        `Ano ang mga dapat tandaan sa pagkain habang gumagamit ng antimotility?`, 
-        `Ano ang mga payo sa pagkain ng antimotility?`, 
-        `Ano ang mga rekomendasyon sa pagkain ng antimotility?`, 
-        `Mayroon bang mga pagkain na dapat iwasan kapag gumagamit ng antimotility?`, 
-        `Paano dapat kumain nang tama habang gumagamit ng antimotility?`,
+        `Ano ang mga dapat kong gawin habang nag gumagamit uminom kain ako ng antimotility`,
+        `Ano ang mga payo sa pagkain ng antimotility`, 
+        `Ano ang mga rekomendasyon sa pagkain ng antimotility`, 
         `ano ang mga tips sa pagkain o inom ng antimotility`,
     ],[
         `Huwag gumamit ng antimotilities kung mayroong dugo sa iyong dumi o itim na dumi. Kung mayroon kang kasaysayan ng sakit sa atay o mga problema sa ritmo ng puso, maaaring hindi rin ito ang pinakamahusay na gamot para sa iyo`
@@ -146,25 +113,15 @@ let section11 = [
     encodeMemory([
         `* price* antimotility  *`,
         `* antimotility * price * `,
-        `Ano ang halagang kailangan para sa antimotility?`,
-        `Ano ang presyo ng gamot na antimotility?`,
-        `Ilan ang presyo ng antimotility?`,
-        `Magkano ang dapat bayaran sa antimotility?`,
-        `Magkano ang halaga ng antimotility?`,
-        `Magkano ba ang dapat kong ipambili para sa antimotility?`,
-        `Saan ako makakabili ng antimotility at magkano ito?`,
+        `Ano ang presyo ng gamot na antimotility`,
+        `Magkano ang halaga ng antimotility`,
     ],[
         `Available ang Loperamide bilang isang generic na gamot at maaaring mas mura kumpara sa bersyon ng brand. Sa watsons, ito ay ibinebenta sa halagang 2mg (4pcs) sa halagang 72 pesos. Maaaring mas mababa ito sa ibang mga parmasya.`
     ],7),
     encodeMemory([
         `* uri *  antimotility *`,
-        `Ano ang mga uri ng antimotility?`,
-        `Ano ang mga pangalan ng mga uri ng antimotility?`,
-        `Anong mga klasipikasyon ng antimotility ang alam ninyo?`,
-        `Iba't ibang uri ng antimotility, alin ang mga ito?`,
-        `May iba't ibang antas ng antimotility, alin-alin ang mga ito?`,
-        `May iba't ibang uri ng antimotility, alin-alin ang mga ito?`,
-        `Meron bang iba't ibang uri ng antimotility?`,
+        `Ano ang mga uri ng antimotility`,
+        `Meron bang iba ibang uri ng antimotility`,
         `sabihin mo sakin ano ang mga porma ng antimotility`,
         // `ano ang mga uri ng antimotility, sabihin mo nga sakin`
     ],[
@@ -172,17 +129,13 @@ let section11 = [
     ],7),
     encodeMemory([
         `* alternatibo *  antimotility *`,
-        `Ano ang ibang alternatibo sa paggamit ng antimotility?`,  
-        `Ano ang mga herbal na panlunas sa pagtatae na puwedeng gamitin sa halip na antimotility?`,  
-        `Ano ang mga ibang gamot na puwedeng gamitin bukod sa antimotility?`,  
-        `Ano ang mga natural na paraan na puwedeng gawin sa pagpapakalma ng tiyan nang hindi gumagamit ng antimotility?`,  
-        `Mayroon bang ibang solusyon sa pagtigil ng pagtatae maliban sa antimotility?`,  
+        `Ano ang ibang alternatibo herbal na gamot sa antimotility`,  
+        `Ano ang mga herbal na panlunas sa pagtatae na puwedeng gamitin sa halip na antimotility`,  
+        `Ano ang mga ibang herbal na gamot na puwedeng gamitin bukod sa antimotility`,  
+        `Ano ang mga natural na paraan na puwedeng gawin sa pagpapakalma ng tiyan nang hindi gumagamit ng antimotility`,  
         `Mayroon bang mga pagkain na nakakatulong sa pagtigil ng pagtatae nang hindi kailangang gumamit ng antimotility`,
-        `Mayroon bang natural na paraan para mapigilan ang pagtatae nang hindi gumagamit ng antimotility?`,  
-        `Paano maiiwasan ang pagtatae na hindi kailangan gumamit ng antimotility?`,  
-        `Paano malulunasan ang pagtatae kung hindi puwedeng gumamit ng antimotility?`,  
-        `ano ang alternatibo sa antimotility`,
-        `paano ang alternatibo sa antimotility`,
+        `Mayroon bang natural na paraan para mapigilan ang pagtatae nang hindi gumagamit ng antimotility`,  
+        `paano ano ang alternatibo herbal na gamot sa antimotility`,
     ],[
         `Mayroong ilang mga natural o herbal na alternatibo sa mga antimotilities.
         
@@ -196,45 +149,30 @@ let section11 = [
     // bismuth subsalicylate
     encodeMemory([
         `* generic *bismuth *`,
-        `Ano-ano ang mga generic na gamot na may bismuth subsalicylate para sa diarrhea?`,
-        `Meron bang mga generic na gamot na naglalaman ng bismuth subsalicylate na nakakapagpabuti ng diarrhea?`,
-        `Mayroon bang mga pangalan ng gamot na naglalaman ng bismuth subsalicylate na mabisa sa pagtatae?`,
-        `Ano ang mga pangalan ng gamot na mayroong bismuth subsalicylate na mabibili sa botika?`,
-        `Meron bang ibang mga brand ng gamot na may bismuth subsalicylate na mabisa sa pagpapagaling ng diarrhea?`,
-        `Saan maaaring makabili ng mga gamot na naglalaman ng bismuth subsalicylate para sa diarrhea?`,
-        `Anong mga generic na gamot ang mayroong bismuth subsalicylate at nakakapagpapagaling ng diarrhea?`,
+        `Ano ang mga generic na gamot na may bismuth subsalicylate para sa diarrhea`,
+        `Anong mga generic na gamot ang mayroong bismuth subsalicylate at nakakapagpapagaling ng diarrhea`,
     ],[
         `Ang bismuth subsalicylate ay isang generic na gamot.Upang maiwasan ang mga posibleng epekto o komplikasyon, dapat sundin ang inirerekomendang dosis at mga tagubilin sa paggamit.`
         
     ],7),
     encodeMemory([
         `* branded *bismuth * `,
-        `Alin-aling mga brand ng bismuth subsalicylate ang pwede para sa pagtatae o diarrhea?`,  
-        `Ano-ano ang mga brand name na bismuth subsalicylate para sa diarrhea ?`,  
-        `Anong mga bismuth subsalicylate na brand name ang gamot sa diarrhea ?`,  
-        `Anong mga branded na gamot na may bismuth subsalicylate ang pwedeng gamitin sa pagtatae?`,  
-        `Mayroon bang mga branded na bismuth subsalicylate na gamot sa pagtatae o diarrhea?`,  
-        `Mayroon bang mga branded na bismuth subsalicylate na pwedeng gamot sa diarrhea ?`,
+        `Alin mga brand ng bismuth subsalicylate ang pwede para sa pagtatae o diarrhea`,  
+        `Anong mga branded na gamot na may bismuth subsalicylate ang pwedeng gamitin sa pagtatae`,  
+        `Mayroon bang mga branded na bismuth subsalicylate na gamot sa pagtatae o diarrhea`,  
     ],[
         `Ang pepto-bismol at Bismatrol ay mga branded na bismuth subsalicylate.Upang maiwasan ang mga posibleng epekto o komplikasyon, dapat sundin ang inirerekomendang dosis at mga tagubilin sa paggamit.`
     ],7),
     encodeMemory([
-        `* dose *bismuth *`,
-        `* hakbang *bismuth *`,
-        `* gamitin *bismuth *`,
-        `* kainin *bismuth *`,
-        `* inumin *bismuth *`,
-        `*bismuth * inumin *`,
-        `*bismuth * kainin *`,
-        `*bismuth * gamitin *`,
-        `Ano ang mga dapat tandaan sa pag-inom at gamit ng Bismuth Subsalicylate para sa mga may diarrhea ?`,
-        `Ano ang tamang dosis ng Bismuth Subsalicylate para sa mga may diarrhea ?`,
-        `Anong paraan ng pag-inom o paggamit ng Bismuth Subsalicylate ang dapat sundin para sa diarrhea ?`,
-        `Gaano kadalas dapat inumin o gamitin ang Bismuth Subsalicylate para sa mga may diarrhea ?`,
-        `Paano dapat gamitin at i-inom ang Bismuth Subsalicylate para sa diarrhea ?`,
-        `Paano dapat i-adjust ang dosis ng Bismuth Subsalicylate depende sa kalagayan ng tao na mayroong diarrhea ?`,
-        `Paano gamitin ng wasto ang Bismuth subsalicylate?`,
-        `Paano malalaman ang tamang dosage at pag-inom ng Bismuth Subsalicylate para sa mga may diarrhea ?`,
+        `* (hakbang|gamitin|kainin|inumin|dose) * bismuth *`,
+        `* bismuth * (hakbang|gamitin|kainin|inumin|dose)  *`,
+        `Ano ang mga dapat tandaan sa pag-inom at gamit ng Bismuth Subsalicylate para sa mga may diarrhea `,
+        `Ano ang tamang paraan hakbang dosis ng Bismuth Subsalicylate para sa mga may diarrhea `,
+        `Anong paraan hakbang ng pag-inom o paggamit ng Bismuth Subsalicylate ang dapat sundin para sa diarrhea `,
+        `Gaano kadalas dapat inumin o gamitin ang Bismuth Subsalicylate para sa mga may diarrhea `,
+        `Paano dapat gamitin at inumin o kainin ang Bismuth Subsalicylate para sa diarrhea `,
+        `Paano dapat ang dose ng Bismuth Subsalicylate sa taong may diarrhea `,
+        `Paano gamitin inumin kainin ng wasto ang Bismuth subsalicylate`,
         `ano ba ang dose sa pag gamit ng bismuth subsalicylate`
     ],[
         `May pagkakaiba sa pagitan ng tablet at likidong anyo.Ilan sa paraan o karaniwang dosing ng Bismuth Subsalicylate ay ang mga sumusunod. 
@@ -247,39 +185,27 @@ let section11 = [
     ],7),
     encodeMemory([
         `* bismuth *`,
-        `Ano ba talaga ang Bismuth subsalicylate?`,  
-        `Ano ang kahulugan ng Bismuth subsalicylate?`,  
-        `Ano ang Bismuth subsalicylate?`,  
-        `Paano mo maipapaliwanag ang Bismuth subsalicylate?`,  
-        `Saan ginagamit ang Bismuth subsalicylate?`,  
-        `Para saan ang Bismuth subsalicylate?`,  
-        `Bakit kailangan ng Bismuth subsalicylate?`,  
-        `Ano ang mga benepisyo ng Bismuth subsalicylate?`,  
-        `Ano ang epekto ng Bismuth subsalicylate sa katawan?`,
+        `Ano ba talaga ang kahulugan Bismuth subsalicylate`,  
+        `Paano mo maipapaliwanag ang Bismuth subsalicylate`,  
+        `Para saan ginagamit ang Bismuth subsalicylate`, 
+        `Bakit kailangan ng Bismuth subsalicylate`,  
+        `Ano ang mga benepisyo ng Bismuth subsalicylate`,  
     ],[
         `Ang Bismuth subsalicylate ay isang over-the-counter na gamot na ginagamit upang gamutin ang sira ng tiyan at pagtatae. Gumagana ito nang maayos upang ihinto ang pagtatae, ngunit maaaring kailanganin mong inumin ito nang maraming beses sa isang araw. Ang gamot na ito ay karaniwang okay naman kainin ng isang tao, ngunit maaari itong magdulot ng hindi nakakapinsalang pagdidilim ng iyong dila o dumi.`
     ],7),
     encodeMemory([
         `* gamit * bismuth *`,
-        `Ano ang mga benepisyo ng paggamit ng Bismuth subsalicylate?`,
-        `Ano ang mga kondisyon na maaaring gamutin ng Bismuth subsalicylate?`,
-        `Kailan dapat gamitin ang Bismuth subsalicylate?`,
-        `Para saan ginagamit ang Bismuth subsalicylate?`,
-        `Sa anong mga karamdaman ang pwedeng gamitin ang Bismuth subsalicylate?`,
-        `Sino ang dapat gumamit ng Bismuth subsalicylate?`,
+        `Para saan Kailan dapat gamitin ang Bismuth subsalicylate`,
+        `Sino ang dapat gumamit ng Bismuth subsalicylate`,
         `anong gamit ng Bismuth`,
-        `saan ginagamit ang Bismuth`,
-        `paano ginagamit ang Bismuth`,
+        `paano saan ginagamit ang Bismuth`,
     ],[
         `Ang bismuth subsalicylate ay isang over-the-counter na gamot na ginagamit para sa paggamot ng pagtatae, kabag, sakit sa tiyan, hindi pagkatunaw ng pagkain, heartburn, pagduduwal at bilang isang prophylaxis para sa pagtatae ng manlalakbay`
     ],7),
     encodeMemory([
         `* bismuth * gana * `,
-        `* gana *  bismuth * `,
-        `Paano ba gumagana ang Bismuth subsalicylate?`,
-        `Paano nagpapababa ng pamamaga ang Bismuth subsalicylate?`,
-        `Paano nagpapagaling ang Bismuth subsalicylate?`,
-        `Paano nakakapagbigay ng ginhawa sa pagtatae ang Bismuth subsalicylate?`,
+        `* gana * bismuth * `,
+        `Paano ba gumagana nagpapagaling ang Bismuth subsalicylate`,
         `paano nagpapagaling ang Bismuth`
     ],[
         `
@@ -288,43 +214,34 @@ let section11 = [
     ],7),
     encodeMemory([
         `* huwag * ( (kain|inom|gamit) | iwas )  *bismuth *`,
-         `Ano ang mga babala sa paggamit ng Bismuth subsalicylate?`,
-         `Ano ang mga kondisyon kung saan hindi dapat uminom o kumain ng Bismuth subsalicylate?`,  
-         `Ano ang mga sitwasyon na hindi dapat uminom o kumain ng Bismuth subsalicylate?`,  
-         `Kailan hindi advisable ang pag-inom o pagkain ng Bismuth subsalicylate?`, 
-         `Kailan hindi inirerekomenda ang pag-inom o pagkain ng Bismuth subsalicylate?`,  
-         `Kailan hindi safe ang pag-inom o pagkain ng Bismuth subsalicylate?`,  
-         `May mga pagkakataon ba na hindi magandang uminom o kumain ng Bismuth subsalicylate?`,  
-         `May mga pagkakataon ba na hindi pwede uminom o kumain ng Bismuth subsalicylate?`,  
-        `Kailan hindi dapat uminom o kumain ng Bismuth subsalicylate?`, 
+         `Ano ang mga babala sa paggamit ng Bismuth subsalicylate`,
+         `Ano ang mga kondisyon kung saan hindi dapat uminom o kumain ng Bismuth subsalicylate`,  
+         `Ano ang mga sitwasyon na hindi dapat uminom o kumain ng Bismuth subsalicylate`,  
+         `Kailan hindi inirerekomenda ang pag-inom o pagkain ng Bismuth subsalicylate`,  
+         `Kailan hindi safe ang pag-inom o pagkain ng Bismuth subsalicylate`,  
+         `May mga pagkakataon ba na hindi magandang uminom o kumain ng Bismuth subsalicylate`,  
+         `Kailan hindi dapat uminom o kumain ng Bismuth subsalicylate`, 
     ],[
         `Hindi mo ito dapat inumin kung mayroon kang mga problema sa pagdurugo, ulser sa tiyan, dugo sa iyong dumi, o kung ikaw ay alerdyi sa aspirin o iba pang gamot. Huwag ibigay ang gamot na ito sa isang bata o teenager na may lagnat, sintomas ng trangkaso, o bulutong-tubig`
     ],7),
     encodeMemory([
         `* effect *bismuth * `,
-        `* hindi * maganda * epekto *  bismuth subsalicylate *`,
-        `Ano ang mga negatibong epekto ng paggamit ng Bismuth subsalicylate?`,  
-        `Ano-ano ang mga side effect ng paggamit ng Bismuth subsalicylate?`,  
-        `Maaari bang magdulot ng masamang epekto ang sobrang paggamit ng Bismuth subsalicylate?`,  
-        `May mga pre-existing conditions ba na hindi dapat gumamit ng Bismuth subsalicylate?`,
-        `Mayroon bang hindi magandang epekto ang Bismuth subsalicylate?`,  
-        `Mayroon bang mga panganib sa paggamit ng Bismuth subsalicylate?`,
-        `Mga alin-alin ang mga epekto ng Bismuth subsalicylate na dapat bantayan?`,  
-        `Mga babala at epekto ng Bismuth subsalicylate na dapat malaman`,  
-        `Nakakaranas ba ng hindi magandang epekto ang pag-inom ng Bismuth subsalicylate?`,  
-        `ano ang side effect ng Bismuth`,
-        `ano ang hindi magandang epekto ng Bismuth`,
+        `* hindi * maganda * epekto * bismuth subsalicylate *`,
+        `Ano ang mga negatibong side effect ng paggamit ng Bismuth subsalicylate`,  
+        `Maaari bang magdulot ng masamang epekto ang paggamit ng Bismuth subsalicylate`,  
+        `Mayroon bang panganib hindi magandang epekto ang Bismuth subsalicylate`,  
+        `Nakakaranas ba ng hindi magandang epekto ang pag-inom ng Bismuth subsalicylate`, 
+        `ano ang hindi magandang epekto o side effect ng Bismuth`,
     ],[
         `Maaari kang makaranas ng pansamantalang pangingitim ng dumi o dila. Kung makaranas ng matinding reaksiyong alerhiya tulad ng kahirapan sa paghinga, pantal sa balat, at pamamaga, at Rye's syndrome na nagpapakita ng pagtatae, pagsusuka, hindi pangkaraniwang mababang enerhiya, pagkawala ng malay, seizure, pagbabago sa pag-uugali, pagkalito, panghihina ng kalamnan, pagbabago sa paningin o pandinig, makipag-ugnayan kaagad sa iyong doktor`
     ],7),
     encodeMemory([
         `* tips *bismuth *`,
-        `Anong mga babala o precautions ang dapat malaman bago gamitin ang Bismuth Subsalicylate para sa mga may diarrhea ?`,
-        `Ano ang mga dapat tandaan sa paggamit ng Bismuth subsalicylate?`,
-        `Mayroon bang mga babala o paalala sa pag-inom ng Bismuth subsalicylate?`,
-        `Paano dapat gamitin ang Bismuth subsalicylate nang tama?`,
-        `Mayroon bang mga tips sa paggamit ng Bismuth subsalicylate?`,
-        `Ano ang mga kailangan malaman tungkol sa paggamit ng Bismuth subsalicylate?`,
+        `Anong mga babala ang dapat malaman bago gamitin ang Bismuth Subsalicylate para sa mga may diarrhea `,
+        `Ano ang mga dapat tandaan sa paggamit ng Bismuth subsalicylate`,
+        `Mayroon bang mga babala o paalala sa pag-inom ng Bismuth subsalicylate`,
+        `Mayroon bang mga tips sa paggamit ng Bismuth subsalicylate`,
+        `Ano ang mga kailangan malaman tungkol sa paggamit ng Bismuth subsalicylate`,
         `ano ang mga tips sa pagkain o inom ng Bismuth`,
     ],[
         `Uminom ng maraming tubig habang umiinom ka ng bismuth subsalicylate. Ang pagtatae ay maaaring magdulot ng dehydration at ang pag-inom ng sapat na likido ay makakatulong na maiwasan ito. Lunukin ang mga kapsula nang buo sa tubig. Huwag nguyain ang mga ito. Lunukin ang mga kapsula nang buo sa tubig. Huwag nguyain ang mga ito.`
@@ -332,38 +249,25 @@ let section11 = [
     encodeMemory([
         `* price * bismuth * `,
         `*bismuth * price  *`,
-        `Ano ang bayad sa Bismuth subsalicylate?`,
-        `Ano ang halaga ng Bismuth subsalicylate?`,
-        `Ano ang presyo ng Bismuth subsalicylate ngayon?`,
-        `Gaano kamahal ang Bismuth subsalicylate?`,
-        `Ilan ang presyo ng Bismuth subsalicylate?`,
-        `Magkano ang Bismuth subsalicylate sa botika?`,
-        `Magkano ang Bismuth subsalicylate sa merkado?`,
-        `Magkano ang dapat na budget sa Bismuth subsalicylate?`,
-        `Magkano ang presyo ng Bismuth subsalicylate?`,
+        `Ano ang halaga presyo ng Bismuth subsalicylate `,
+        `Gaano kamahal ang Bismuth subsalicylate`,
     ],[
         `Madalas itong ibinebenta bilang pack. Base sa mga listing sa iprice ph, mga 500 pesos. Maaaring mas mura ito para sa mga indibidwal na tablet`
     ],7),
     encodeMemory([
         `* uri *bismuth *`,
-        `Ano ang iba't ibang form ng Bismuth subsalicylate?`,  
-        `Ano ang mga klasipikasyon ng Bismuth subsalicylate?`,  
-        `Ano ang mga variant ng Bismuth subsalicylate?`,  
-        `Mayroon bang iba't ibang uri ng Bismuth subsalicylate?`,  ,
-        `sabihin mo sakin ano ang mga porma ng Bismuth`
+        `Ano ang iba ibang uri ng Bismuth subsalicylate`,  
+        `sabihin mo sakin ano ang mga uri ng Bismuth subsalicylate`
     ],[
         `Ang bismuth subsalicylate ay may iba't ibang anyo. Mabibili ito bilang tablet, kapsula, likidong suspensyon, at chewable na tablet, depende sa tagagawa at sa partikular na kondisyong ginagamot.`
     ],7),
     encodeMemory([
         `* alternatibo * bismuth *`,
-        `Ano ang ibang mga active ingredient ng gamot na pwedeng magamit na alternatibo sa Bismuth subsalicylate?`, 
-        `Ano ang ibang mga natural supplements na pwedeng magamit na pamalit sa Bismuth subsalicylate?`,  
-        `Ano ang mga herbal na pwedeng magamit na pamalit sa Bismuth subsalicylate?`,  
-        `Ano ang mga ibang gamot na pwedeng gamitin sa halip ng Bismuth subsalicylate?`,  
-        `May ibang brand ng gamot na pwedeng magamit na pamalit sa Bismuth subsalicylate?`,  
-        `May mga natural na alternatibo ba sa Bismuth subsalicylate?`,  
-        `May mga pwedeng gamitin na pamalit sa Bismuth subsalicylate?`,  
-        `Mayroon bang mga natural na lunas para sa diarrhea na pwedeng magamit na alternatibo sa Bismuth subsalicylate?`,  
+        `Ano ang ibang mga natural herbal alternatives na pwedeng magamit na pamalit sa Bismuth subsalicylate`,  
+        `Ano ang mga herbal na pwedeng magamit na pamalit sa Bismuth subsalicylate`,  
+        `Ano ang mga ibang alternative gamot na pwedeng gamitin sa halip ng Bismuth subsalicylate`,  
+        `May mga natural na herbal alternatibo ba sa Bismuth subsalicylate`,  
+        `Mayroon bang mga natural na lunas para sa diarrhea na pwedeng magamit na alternatibo sa Bismuth subsalicylate`,  
         `ano ang alternatibo sa bismuth`,
         `paano ang alternatibo sa bismuth`,
     ],[
@@ -381,90 +285,87 @@ let section12 = [
     ],[
         `Sa karamihan ng mga kaso, ang pagtatae ay maaaring gamutin sa bahay at malulutas nito ang sarili sa loob ng ilang araw. Kung talagang nakakaramdam ka ng matinding discomfort, tumagal ito ng higit sa 2 araw, nakakakita ng dugo sa iyong dumi, o nilalagnat, pinakamainam para sa iyo na pumunta sa malapit na healthcare center`
     ],5),
-    encodeMemory([
-        `* acute * diarrhea *  `,
-        `Ano ang ibig sabihin ng acute diarrhea ?`,
-        `Ano ang acute diarrhea?`,
-        `Paano mo ilarawan ang acute diarrhea?`,
-        `Bakit nangyayari ang acute diarrhea?`,
-        `ano ang acute diarrhea`
-    ],[
-        `Kapag ang pagtatae ay tumagal ng 1 o 2 araw pagkatapos posibleng mayron ka ng matinding pagtatae. Maaaring sanhi ito ng pagkain o tubig na nahawahan ng bacteria, virus, o parasito. Kapag naglalakbay ka, may pagkakataong makuha mo ang tinatawag nilang “travelers diarrhea”. Magagamot mo ang iyong pagtatae sa pamamagitan ng pag-inom ng mga gamot at sa pamamagitan ng rehydration. Kung nagpapatuloy ang kondisyon nang higit sa 2 araw, tingnan ang dugo sa iyong dumi o may lagnat, maaaring gusto mong pumunta sa malapit na healthcare center para sa mas mabuting tulong.`
-    ],1),
-    encodeMemory([
-        `* chronic * diarrhea * `,
-        `Paano maipapaliwanag ang chronic diarrhea?`,  
-        `Bakit mahalagang malaman ang tungkol sa chronic diarrhea?`,  
-        `Pakisabi po sa akin kung ano ang ibig sabihin ng chronic diarrhea `,
-        `Maaring maipaliwanag mo po ba sa akin kung ano ang chronic diarrhea ?`,
-        `Pakipaliwanag naman po kung ano ang chronic diarrhea `,
-        `Ano po ba talaga ang ibig sabihin ng chronic diarrhea ?`,
-        `Pwede mo bang ipaklaro kung ano ang chronic diarrhea ?`,
-        `Gusto ko po sanang malaman kung ano ang chronic diarrhea `,
-        `Pwede nyo po bang maipaliwanag kung ano ang chronic diarrhea ?`,
-        `Paano nyo po i explain ang chronic diarrhea ?`,
-        `Maaari po bang magbigay ng paliwanag kung ano ang chronic diarrhea ?`,
-        `ano ang chronic diarrhea`
-    ],[
-        `Malalaman mo kung mayroon kang pangmatagalang pagtatae kapag tumagal ito ng ilang linggo. Ito ay maaaring sanhi ng isa pang problema sa kalusugan tulad ng irritable bowel syndrome. Maaari rin itong sanhi ng sakit sa bituka. Mapapamahalaan mo ang iyong pagtatae sa pamamagitan ng pag-inom ng mga gamot at sa pamamagitan ng rehydration. Gayunpaman, maaaring gusto mong pumunta sa malapit na sentro ng pangangalagang pangkalusugan upang mahanap nila kung ano ang sanhi nito at upang magbigay ng mas naaangkop na tulong.`
-    ],1),
-    encodeMemory([
-        `* iba * acute * chronic * diarrhea * `,
-        `* iba * chronic * acute * diarrhea * `,
-        `Ano ang pagkakaiba ng acute at chronic diarrhea ?`,
-        `Paano nagkakaiba ang acute at chronic diarrhea ?`,
-        `Alin ang mas malubha, ang acute o chronic diarrhea ?`,
-        `Ano ang mga pangunahing pagkakaiba ng acute at chronic diarrhea ?`,
-        `Saan nakikita ang pagkakaiba ng acute at chronic diarrhea ?`,
-        `Paano matutukoy kung acute o chronic ang isang diarrhea ?`,
-        `Bakit mahalagang malaman ang pagkakaiba ng acute at chronic diarrhea ?`,,
-        `ano ang pinagkaiba ng acute sa chronic diarrhea`
-        //chatgpt end
-    ],[
-        `Ang pagtatae ay maaaring matindi o pangmatagalan. Ang matinding pagtatae ay kilala na tumatagal ng 1 hanggang 2 araw. Ang pagmatagalang pagtatae, sa kabilang banda, ay tumatagal ng ilang linggo. Ang parehong uri ng pagtatae ay maaaring maging sanhi ng pag-aalis ng tubig kaya panatilihing mag-hydrate upang maiwasan ito.`
-    ],1),
-    encodeMemory([
-        `* gamutin * acute * diarrhea * `,
-        `Ano ang mga gamot para sa acute diarrhea ?`,
-        `Paano maiiwasan ang acute diarrhea ?`,
-        `Ano ang mga dapat inumin para mapabilis ang paggaling mula sa acute diarrhea ?`,
-        `Paano gamutin ang acute diarrhea  sa pamamagitan ng pagbabago ng diet?`,
-        `Ano ang mga dapat kainin kapag may acute diarrhea ?`,
-        `Mayroon bang home remedy para sa acute diarrhea ?`,
-        `paano ginagamot ang acute diarrhea`,
-        `ano ang gamot sa acute diarrhea`,
-    ],[
-        `Ang unang hakbang sa paggamot sa matinding pagtatae ay rehydration, mas mabuting uminom ng ng oral rehydration. Ang pag-inom ng antimotilities ay maaaring magbigay ng mas mabilis at mas kumpletong kaginhawaan sa matinding pagtatae at kakulangan sa ginhawa na nauugnay sa pangungutot kaysa sa alinmang gamot lamang.`
-    ],1),
-    encodeMemory([
-        `* gamutin * chronic * diarrhea * `,
-        `Ano ang mga gamot para sa chronic diarrhea ?`,
-        `Paano malulunasan ang chronic diarrhea ?`,
-        `May mga natural na lunas ba para sa chronic diarrhea ?`,
-        `Paano maiiwasan ang chronic diarrhea ?`,
-        `Ano ang mga panganib na kaakibat ng paggamot sa chronic diarrhea ?`,
-        `Mayroon bang mga natural na pagkain na makakatulong sa paggamot ng chronic diarrhea ?`,
-        `paano ginagamot ang chronic diarrhea`,
-        `ano ang gamot sa chronic diarrhea`
-    ],[
-        `Kailangan mong patuloy na mag-hydrate upang mapunan ang mga likidong iyong inilabas. Gayunpaman, inirerekomenda para sa iyo na humingi ng medikal na tulong mula sa doktor upang mahanap nila ang sanhi nito at magamot ka para sa anumang mga komplikasyon.`
-    ],1),
+    // encodeMemory([
+    //     `* acute * diarrhea *  `,
+    //     `Ano ang ibig sabihin ng acute diarrhea `,
+    //     `Ano ang acute diarrhea`,
+    //     `Paano mo ilarawan ang acute diarrhea`,
+    //     `Bakit nangyayari ang acute diarrhea`,
+    //     `ano ang acute diarrhea`
+    // ],[
+    //     `Kapag ang pagtatae ay tumagal ng 1 o 2 araw pagkatapos posibleng mayron ka ng matinding pagtatae. Maaaring sanhi ito ng pagkain o tubig na nahawahan ng bacteria, virus, o parasito. Kapag naglalakbay ka, may pagkakataong makuha mo ang tinatawag nilang “travelers diarrhea”. Magagamot mo ang iyong pagtatae sa pamamagitan ng pag-inom ng mga gamot at sa pamamagitan ng rehydration. Kung nagpapatuloy ang kondisyon nang higit sa 2 araw, tingnan ang dugo sa iyong dumi o may lagnat, maaaring gusto mong pumunta sa malapit na healthcare center para sa mas mabuting tulong.`
+    // ],1),
+    // encodeMemory([
+    //     `* chronic * diarrhea * `,
+    //     `Paano maipapaliwanag ang chronic diarrhea`,  
+    //     `Bakit mahalagang malaman ang tungkol sa chronic diarrhea`,  
+    //     `Pakisabi po sa akin kung ano ang ibig sabihin ng chronic diarrhea `,
+    //     `Maaring maipaliwanag mo po ba sa akin kung ano ang chronic diarrhea `,
+    //     `Pakipaliwanag naman po kung ano ang chronic diarrhea `,
+    //     `Ano po ba talaga ang ibig sabihin ng chronic diarrhea `,
+    //     `Pwede mo bang ipaklaro kung ano ang chronic diarrhea `,
+    //     `Gusto ko po sanang malaman kung ano ang chronic diarrhea `,
+    //     `Pwede nyo po bang maipaliwanag kung ano ang chronic diarrhea `,
+    //     `Paano nyo po i explain ang chronic diarrhea `,
+    //     `Maaari po bang magbigay ng paliwanag kung ano ang chronic diarrhea `,
+    //     `ano ang chronic diarrhea`
+    // ],[
+    //     `Malalaman mo kung mayroon kang pangmatagalang pagtatae kapag tumagal ito ng ilang linggo. Ito ay maaaring sanhi ng isa pang problema sa kalusugan tulad ng irritable bowel syndrome. Maaari rin itong sanhi ng sakit sa bituka. Mapapamahalaan mo ang iyong pagtatae sa pamamagitan ng pag-inom ng mga gamot at sa pamamagitan ng rehydration. Gayunpaman, maaaring gusto mong pumunta sa malapit na sentro ng pangangalagang pangkalusugan upang mahanap nila kung ano ang sanhi nito at upang magbigay ng mas naaangkop na tulong.`
+    // ],1),
+    // encodeMemory([
+    //     `* iba * acute * chronic * diarrhea * `,
+    //     `* iba * chronic * acute * diarrhea * `,
+    //     `Ano ang pagkakaiba ng acute at chronic diarrhea `,
+    //     `Paano nagkakaiba ang acute at chronic diarrhea `,
+    //     `Alin ang mas malubha, ang acute o chronic diarrhea `,
+    //     `Ano ang mga pangunahing pagkakaiba ng acute at chronic diarrhea `,
+    //     `Saan nakikita ang pagkakaiba ng acute at chronic diarrhea `,
+    //     `Paano matutukoy kung acute o chronic ang isang diarrhea `,
+    //     `Bakit mahalagang malaman ang pagkakaiba ng acute at chronic diarrhea `,
+    //     `ano ang pinagkaiba ng acute sa chronic diarrhea`
+    //     //chatgpt end
+    // ],[
+    //     `Ang pagtatae ay maaaring matindi o pangmatagalan. Ang matinding pagtatae ay kilala na tumatagal ng 1 hanggang 2 araw. Ang pagmatagalang pagtatae, sa kabilang banda, ay tumatagal ng ilang linggo. Ang parehong uri ng pagtatae ay maaaring maging sanhi ng pag-aalis ng tubig kaya panatilihing mag-hydrate upang maiwasan ito.`
+    // ],1),
+    // encodeMemory([
+    //     `* gamutin * acute * diarrhea * `,
+    //     `Ano ang mga gamot para sa acute diarrhea `,
+    //     `Paano maiiwasan ang acute diarrhea `,
+    //     `Ano ang mga dapat inumin para mapabilis ang paggaling mula sa acute diarrhea `,
+    //     `Paano gamutin ang acute diarrhea  sa pamamagitan ng pagbabago ng diet`,
+    //     `Ano ang mga dapat kainin kapag may acute diarrhea `,
+    //     `Mayroon bang home remedy para sa acute diarrhea `,
+    //     `paano ginagamot ang acute diarrhea`,
+    //     `ano ang gamot sa acute diarrhea`,
+    // ],[
+    //     `Ang unang hakbang sa paggamot sa matinding pagtatae ay rehydration, mas mabuting uminom ng ng oral rehydration. Ang pag-inom ng antimotilities ay maaaring magbigay ng mas mabilis at mas kumpletong kaginhawaan sa matinding pagtatae at kakulangan sa ginhawa na nauugnay sa pangungutot kaysa sa alinmang gamot lamang.`
+    // ],1),
+    // encodeMemory([
+    //     `* gamutin * chronic * diarrhea * `,
+    //     `Ano ang mga gamot para sa chronic diarrhea `,
+    //     `Paano malulunasan ang chronic diarrhea `,
+    //     `May mga natural na lunas ba para sa chronic diarrhea `,
+    //     `Paano maiiwasan ang chronic diarrhea `,
+    //     `Ano ang mga panganib na kaakibat ng paggamot sa chronic diarrhea `,
+    //     `Mayroon bang mga natural na pagkain na makakatulong sa paggamot ng chronic diarrhea `,
+    //     `paano ginagamot ang chronic diarrhea`,
+    //     `ano ang gamot sa chronic diarrhea`
+    // ],[
+    //     `Kailangan mong patuloy na mag-hydrate upang mapunan ang mga likidong iyong inilabas. Gayunpaman, inirerekomenda para sa iyo na humingi ng medikal na tulong mula sa doktor upang mahanap nila ang sanhi nito at magamot ka para sa anumang mga komplikasyon.`
+    // ],1),
 ]
 
 let section13 = [
     encodeMemory([
         `* diarrhea * problema * `,
         `* problema * diarrhea * `,
-        `Ano ang mga banta sa kalusugan kapag mayroong diarrhea ?`,
-        `Ano ang mga maaring maging komplikasyon sa mayroong diarrhea ?`,
-        `Ano ang mga panganib kapag mayroong diarrhea ?`,
-        `Ano ang mga posibleng epekto ng diarrhea  sa katawan?`,
-        `Ano ang mga posibleng mga kumplikasyon na maaring maidulot ng diarrhea ?`,
-        `Ano ang pwedeng mangyari kapag hindi agad ginamot ang diarrhea ?`,
-        `May mga posibleng kumplikasyon ba kapag nagkakaroon ng diarrhea ?`,
-        `Mayroon bang posibilidad na lumala ang kalagayan sa mayroong diarrhea ?`,
-        `Paano ang diarrhea makakaapekto sa kalusugan?`,
-        `Paano magiging delikado ang diarrhea  kung hindi ito gagamutin?`,
+        `Ano ang mga maaring maging komplikasyon banta sa kalusugan kapag mayroong diarrhea `,
+        `Ano ang mga panganib kapag mayroong diarrhea `,
+        `Ano ang pwedeng mangyari kapag hindi agad ginamot ang diarrhea `,
+        `May mga posibleng kumplikasyon ba kapag nagkakaroon ng diarrhea `,
+        `Mayroon bang posibilidad na lumala ang kalagayan sa mayroong diarrhea `,
+        `Paano ang diarrhea makakaapekto sa kalusugan`,
+        `Paano magiging delikado ang diarrhea kung hindi ito gagamutin`,
         `ano ang pwede maging problema pag may diarrhea`,
     ],[
         `
@@ -479,55 +380,44 @@ let section13 = [
 ]
 
 let section14 = [
-    encodeMemory([
-        `* (sino|saan) * tanong * symptoms * diarrhea *`,
-        `* symptoms * diarrhea * (sino|saan) * tanong *`,
-        `Anong mga ahensya ang pwedeng magbigay ng impormasyon tungkol sa mga sintomas ng pagtatae?`,  
-        `Anong mga institusyon ang pwedeng lapitan para magtanong tungkol sa mga sintomas ng pagtatae?`,  
-        `Mayroon bang mapagtanungan tungkol sa mga senyales ng pagtatae?`,  
-        `Mayroon bang mga grupo na pwedeng magbigay ng impormasyon tungkol sa mga sintomas ng pagtatae?`,  
-        `Saan pwede humingi ng payo tungkol sa mga senyales ng diarrhea?`,  
-        `Saan pwede mag-inquire tungkol sa mga senyales ng diarrhea ?`,  
-        `Saan pwede magtanong tungkol sa kalagayan ng katawan kung may diarrhea ?`,  
-        `Saan pwede magtanong tungkol sa mga senyales ng diarrhea ?`,  
-        `Saang lugar pwede magtanong tungkol sa sintomas ng diarrhea ?`,  
-    ],[
-        `Maaari mo akong tanungin ng mga pangunahing kaalaman. Ngunit lubos kong inirerekumenda na magtanong ka sa malapit na propesyonal sa pangangalagang pangkalusugan`
-    ],5),
+    // encodeMemory([
+    //     `* (sino|saan) * tanong * symptoms * diarrhea *`,
+    //     `* symptoms * diarrhea * (sino|saan) * tanong *`,
+    //     `Anong mga ahensya ang pwedeng magbigay ng impormasyon tungkol sa mga sintomas ng pagtatae`,  
+    //     `Anong mga institusyon ang pwedeng lapitan para magtanong tungkol sa mga sintomas ng pagtatae`,  
+    //     `Mayroon bang mapagtanungan tungkol sa mga senyales ng pagtatae`,  
+    //     `Mayroon bang mga grupo na pwedeng magbigay ng impormasyon tungkol sa mga sintomas ng pagtatae`,  
+    //     `Saan pwede humingi ng payo tungkol sa mga senyales ng diarrhea`,  
+    //     `Saan pwede mag-inquire tungkol sa mga senyales ng diarrhea `,  
+    //     `Saan pwede magtanong tungkol sa kalagayan ng katawan kung may diarrhea `,  
+    //     `Saan pwede magtanong tungkol sa mga senyales ng diarrhea `,  
+    //     `Saang lugar pwede magtanong tungkol sa sintomas ng diarrhea `,  
+    // ],[
+    //     `Maaari mo akong tanungin ng mga pangunahing kaalaman. Ngunit lubos kong inirerekumenda na magtanong ka sa malapit na propesyonal sa pangangalagang pangkalusugan`
+    // ],5),
     encodeMemory([
         `* saan * gamutin * senyales * diarrhea * `,
-        `Ano ang mga lugar na pwedeng magbigay ng tulong sa mga taong may sintomas ng diarrhea o patatae?`,  
-        `Anong mga lugar ang pwede puntahan kung mayroong sintomas ng diarrhea o patatae?`,  
-        `Mayroon bang clinic o hospital na pwedeng puntahan kapag mayroong diarrhea o patatae?`,  
-        `Saan pwede magpatingin kung may nararamdaman ng sintomas ng diarrhea o patatae?`,  
-        `Saan pwedeng magpatingin kapag mayroong sintomas ng diarrhea o patatae?`,  
+        `saang lugar na pwedeng magbigay ng tulong sa mga taong may sintomas ng diarrhea o patatae`,  
+        `saang lugar ang pwede puntahan kung mayroong sintomas ng diarrhea o patatae`,  
+        `Saan pwede magpatingin kung may nararamdaman ng sintomas ng diarrhea o patatae`,  
+        `Saan pwedeng magpatingin kapag mayroong sintomas ng diarrhea o patatae`,  
     ],[
         `Maaari mo gamutin ang iyong pagtatae sa iyong tahanan. Pwede kang uminom ng ilang gamot na mabibili sa botika kahit walang riseta upang maibsan ang iyong nararamdaman. Kung makakita ka ng dugo sa iyong dumi, may lagnat, o tumagal ng 2 araw, mas mabuting magpatingin kaagad sa doktor para sa karagdagang tulong`
     ],5),
     encodeMemory([
         `* diarrhea * symptoms *`,
-        `* symptoms * diarrhea * `,
-        `* masabi * diarrhea * `,
-        `Ano ang mga palatandaan ng isang tao na may diarrhea ?`,  
-        `Ano ang mga senyales na nagpapakita na may diarrhea  ang isang tao?`,  
-        `Ano ang mga senyales o sintomas na mayroon ang isang tao na nagdudulot ng diarrhea ?`,  
-        `Ano ang mga sintomas na nararanasan ng isang tao kapag may diarrhea ?`,  
-        `Ano-ano ang mga indikasyon na nagpapakita na mayroong diarrhea  ang isang tao?`,
-        `Ano-ano ang mga palatandaan na nagpapakita na mayroong diarrhea  ang isang tao?`,  
-        `Ano-ano ang mga senyales at sintomas ng isang taong mayroong diarrhea ?`, 
-        `Paano malalaman kung mayroong diarrhea  ang isang tao?`,  
-        `Paano malalaman kung mayroong pagtatae ang isang tao?`,  
-        `Paano malalaman kung nagkakaroon ng diarrhea  ang isang tao?`,  
-        `Paano mo malalaman kung mayroon ngang diarrhea  ang isang tao?`,
-        `Ano ang mga senyales at sintomas na nagpapakita na mayroong diarrhea  ang isang tao?`,  
-        `Paano mo malalaman kung mayroong diarrhea  ang isang tao?`,  
-        `Paano mo malalaman kung nagkakaroon ng pagtatae ang isang tao?`,  
-        `Paano mo masasabi na mayroong diarrhea  ang isang tao?`,  
-        `sabihin o ibigay mo sakin ang listahan ng sintomas o senyales ng pagtatae`,,
-        `paano ba malaman kung ako ay nagtatae`,
+        `* (symptoms|masabi) * diarrhea * `,
+        `Ano ang mga palatandaan indikasyon na nagpapakita na mayroong diarrhea ang isang tao`,  
+        `Ano ang mga palatandaan senyales at sintomas ng taong may diarrhea o nag tatae`,  
+        `Ano ang mga senyales at sintomas ng isang taong mayroong diarrhea `, 
+        `Ano ang mga senyales o sintomas na mayroon ang isang may diarrhea `,  
+        `Ano ang mga sintomas na nararanasan ng isang tao kapag may diarrhea `,  
         `Ano nga ba ang diarrhea`,
+        `Paano mo malalaman masasabi kung mayroong diarrhea o nag tatae ang isang tao`,  
+        `ano ang sintomas ng diarrhea`,
         `ano ba ang sinasabing diarrhea`,
-        `ano ang sintomas ng diarrhea`
+        `paano ba malaman kung ako ay nagtatae`,
+        `sabihin o ibigay mo sakin ang listahan ng sintomas o senyales ng pagtatae`,
     ],[
         `Maraming sintomas ang pagtatae. Kadalasan kapag mayroon ka nito makakaramdam ka ng pananakit ng tiyan , bloating, dugo sa dumi, masakit na kabag o utot, pagkapagod, lagnat, panginginig, madalas na pagnanais na magbawas, malaking dami ng uhog ng dumi, pagduduwal, at patuloy na pagsusuka.`
     ],1),

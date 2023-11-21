@@ -53,25 +53,20 @@ let section6 = [
 let section7 = [
     
    encodeMemory([
-    `* (inom|kan) * diarrhea_foods_allowed *  tagudo *`, 
-    `* (pamasa) * diarrhea_foods_allowed * tagudo *`, 
-    `* (inom|kan) * diarrhea_foods_allowed * tagudo *`, 
-    `* diarrhea_foods_allowed * (inom|kan) * tagudo *  `, 
-    `* diarrhea_foods_allowed * (mapya|tabang|kapakay) * tagudo *`, 
-    `ngin to ka day a keman su taw sa diarrhea_foods_allowed upama ka pedtagudo`,
-    `ngin to ka day a minom  su taw sa diarrhea_foods_allowed upama ka pedtagudo`,
-    `mapakay a keman sa diarrhea_foods_allowed i pedtagudo`,
-    `mapakay a minom sa diarrhea_foods_allowed i pedtagudo`,
+    `* (inom|kan|pamasa) * diarrhea_foods_allowed * tagudo *`, 
+    `* diarrhea_foods_allowed * (inom|kan|mapya|tabang|kapakay) * tagudo *`, 
+    `ngin to ka day a keman minom su taw sa diarrhea_foods_allowed upama ka pedtagudo`,
+    `mapakay a keman minom sa diarrhea_foods_allowed i pedtagudo`,
    ],[
     `Kapakay ka pegkan sa arroscaldo, saging, sabaw, manok, binubog, electrolyte drinks, oatmeal, peanutbutter, patatas, emay, sports drinks, toast, ig, yogurt, am, abpeg a beteng. Mapakay ko bun edalon ngin I di ka pegkan upama ka pedtagudo ka.  `,
   ],4),
    encodeMemory([
-    `* (kanen|pegken|inumen)  * (kapakay|mapya|tabang) * tagudo *`, 
-    `* (kanen|pegken|inumen)  * tagudo  * (kapakay|mapia|tabang) * `, 
+    `* (kanen|pegken|inumen) * (kapakay|mapya|tabang) * tagudo *`, 
+    `* (kanen|pegken|inumen) * tagudo * (kapakay|mapia|tabang) * `, 
     `* (kapakay|mapya|tabang) * (kanen|pegken|inumen) * tagudo * `, 
     `* (kapakay|mapya|tabang) * tagudo * (kanen|pegken|inumen)  * `, 
-    `* tagudo *  (kapakay|mapya|tabang) * (kanen|pegken|inumen)  * `, 
-    `* tagudo * (kanen|pegken|inumen)  * (kapakay|mapya|tabang) *`, 
+    `* tagudo * (kapakay|mapya|tabang) * (kanen|pegken|inumen)  * `, 
+    `* tagudo * (kanen|pegken|inumen) * (kapakay|mapya|tabang) *`, 
     `amayka pedtagudo su taw na ngin i pakan sa lekanin`,
     `labit ka sa laki ngin besen i mga pegken a makadtabang sa taw a pedtagudo`,
     `ngen i mapya ipakan sa taw a pedtagudo`,
@@ -83,7 +78,7 @@ let section7 = [
     `ngin i pakan sa taw a pedtagudo`,
     `ngin i pamasen nu taw a pedtagudo`,
     `su pedtagudo a taw na ngin i mapakay a kanen nin`,
-    `aden mapakay kanen nu taw a pedtagudo?`,
+    `aden mapakay kanen nu taw a pedtagudo`,
     `ngin i pegken a mapakay kanen na aden pedtagudo`,
    ],[
      `Kapakay ka pegkan sa arroscaldo, saging, sabaw, manok, binubog, electrolyte drinks, oatmeal, peanutbutter, patatas, emay, sports drinks, toast, ig, yogurt, am, abpeg a beteng. Mapakay ko bun edalon ngin I di ka pegkan upama ka pedtagudo ka.  `,
@@ -105,19 +100,19 @@ let section8 = [
     ],[
       `Enggulan nu taw su di kakan sa mga pegken a di mapya sa hyrdation mana namba nilabit nengka kagina namba silan na pakalunsan sa dyhdration nu lawas. Nya mapya na kan ka sa mga pegken a malmo ka tunag sa tyan endu madakel i ig nin mana su sabay, tininda a kamo, abpeg mga unga na kayo ka madakel i ig nilan a makatabang sa kasambi na nadadag a ig nu taw abpeg electrolyes.`,
     ],4),
-    encodeMemory([
-      `* duken * diarrhea_foods_not_allowed_produces_gas * di * (inom|kan|pamasan) * tagudo *`, 
-      `* duken * di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_produces_gas * tagudo * `,   
-      `nginto ka di pakanen su taw sa diarrhea_foods_not_allowed_produces_gas upama pedtagudo`,
-      `ngin to ka temangka su taw sa diarrhea_foods_not_allowed_produces_gas amayka pakagedam sa kapedtagudo`,
-      `mapakay a keman o minom su taw a pedtagudo sa diarrhea_foods_not_allowed_produces_gas`,
-      `kapakayan a keman o minum sa diarrhea_foods_not_allowed_produces_gas i taw a pedtagudo`,
-      `ngin i mapya a galbeken nu taw amayka aden diarrhea_foods_not_allowed_produces_gas`,
-      `enduken ka di mamasa sa diarrhea_foods_not_allowed_produces_gas i tayn san a pedtagudo`,
-      `ngin sabap nin ka , da ka pamasa sa diarrhea_foods_not_allowed_produces_gas upama ka pedtagudo su taw`,
-    ],[
-      `Nasisita su di kakan nu taw sa mga pegken a pakadtagetut endu di penggedi i tyan nin. Su Kapedtagetut abpeg diarrhea na galunsanan na mga pegken a sobra i kadakel na fiber nin mana su beans, lentils, abpeg madakel i lawn nin a kamo. Su tut na ga kwa bon sa mga softdrinks, chewing gum, abpeg mga mamis. Makatabang sa kangedam nu taw amayka keman sekanin sa mga pegken a di ged madakel i fiber nin endu su katanga sa mga pegken a makadtagetut.`,
-    ],4),
+    // encodeMemory([
+    //   `* duken * diarrhea_foods_not_allowed_produces_gas * di * (inom|kan|pamasan) * tagudo *`, 
+    //   `* duken * di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_produces_gas * tagudo * `,   
+    //   `nginto ka di pakanen su taw sa diarrhea_foods_not_allowed_produces_gas upama pedtagudo`,
+    //   `ngin to ka temangka su taw sa diarrhea_foods_not_allowed_produces_gas amayka pakagedam sa kapedtagudo`,
+    //   `mapakay a keman o minom su taw a pedtagudo sa diarrhea_foods_not_allowed_produces_gas`,
+    //   `kapakayan a keman o minum sa diarrhea_foods_not_allowed_produces_gas i taw a pedtagudo`,
+    //   `ngin i mapya a galbeken nu taw amayka aden diarrhea_foods_not_allowed_produces_gas`,
+    //   `enduken ka di mamasa sa diarrhea_foods_not_allowed_produces_gas i tayn san a pedtagudo`,
+    //   `ngin sabap nin ka , da ka pamasa sa diarrhea_foods_not_allowed_produces_gas upama ka pedtagudo su taw`,
+    // ],[
+    //   `Nasisita su di kakan nu taw sa mga pegken a pakadtagetut endu di penggedi i tyan nin. Su Kapedtagetut abpeg diarrhea na galunsanan na mga pegken a sobra i kadakel na fiber nin mana su beans, lentils, abpeg madakel i lawn nin a kamo. Su tut na ga kwa bon sa mga softdrinks, chewing gum, abpeg mga mamis. Makatabang sa kangedam nu taw amayka keman sekanin sa mga pegken a di ged madakel i fiber nin endu su katanga sa mga pegken a makadtagetut.`,
+    // ],4),
     encodeMemory([
       `* diarrhea_foods_not_allowed_contains_lactose * di * (inom|kan|pamasan) * tagudo *`, 
       `* di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_contains_lactose * tagudo *`, 
@@ -132,21 +127,21 @@ let section8 = [
     ],[
       `Upama ka pedtagudo so taw na di kapakay a keman su taw sa mga pegken a aden lactose nin ka pakabinasa sa tinay i to ba endu di makambal sa lactase a enzyme a pedtabang sa kasesep sa lactose su taw. Upama ka di masesep nu lawas ebpyapya su lactose, na di maawa i namba sa tinae. Namba na pakadtagetut abpeg pakadsakit sa tyan. Tu ba nan, nasisita su katangka sa mga pegken a aden lactose nin mana su mga gatas , cheese abpeg ice cream. `,
     ],4),
-    encodeMemory([
-      `* di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_contains_fructose * tagudo *`, 
-      `* diarrhea_foods_not_allowed_contains_fructose * di * (inom|kan|pamasan) * tagudo *`, 
-      `enduken ka di mamasa sa diarrhea_foods_not_allowed_contains_fructose i tayn san a pedtagudo`,
-      `kapakayan a keman o minum sa diarrhea_foods_not_allowed_contains_fructose i taw a pedtagudo`,
-      `mapakay a keman o minom su taw a pedtagudo sa diarrhea_foods_not_allowed_contains_fructose`,
-      `ngin i mapya a galbeken nu taw amayka aden diarrhea_foods_not_allowed_contains_fructose`,
-      `ngin sabap nin ka , da ka pamasa sa diarrhea_foods_not_allowed_contains_fructose upama ka pedtagudo su taw`,
-      `ngin to ka temangka su taw sa diarrhea_foods_not_allowed_contains_fructose amayka pakagedam sa kapedtagudo`,
-      `nginto ka di pakanen su taw sa diarrhea_foods_not_allowed_contains_fructose upama pedtagudo`,
-    ],[
-      `
-      Su fructose na mamis i namba a sya gaton sa mga unga na kayo, teneb abpeg mga kamo. Su kapedtagudo na galunsanan na nya ba ka aden mga tao a di nilan gasesep empyapya su fructose. Nasisista i katanga sa mga pegken a aden fructose nin upama ka pedtagudo i taw.
-      `,
-    ],4),
+    // encodeMemory([
+    //   `* di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_contains_fructose * tagudo *`, 
+    //   `* diarrhea_foods_not_allowed_contains_fructose * di * (inom|kan|pamasan) * tagudo *`, 
+    //   `enduken ka di mamasa sa diarrhea_foods_not_allowed_contains_fructose i tayn san a pedtagudo`,
+    //   `kapakayan a keman o minum sa diarrhea_foods_not_allowed_contains_fructose i taw a pedtagudo`,
+    //   `mapakay a keman o minom su taw a pedtagudo sa diarrhea_foods_not_allowed_contains_fructose`,
+    //   `ngin i mapya a galbeken nu taw amayka aden diarrhea_foods_not_allowed_contains_fructose`,
+    //   `ngin sabap nin ka , da ka pamasa sa diarrhea_foods_not_allowed_contains_fructose upama ka pedtagudo su taw`,
+    //   `ngin to ka temangka su taw sa diarrhea_foods_not_allowed_contains_fructose amayka pakagedam sa kapedtagudo`,
+    //   `nginto ka di pakanen su taw sa diarrhea_foods_not_allowed_contains_fructose upama pedtagudo`,
+    // ],[
+    //   `
+    //   Su fructose na mamis i namba a sya gaton sa mga unga na kayo, teneb abpeg mga kamo. Su kapedtagudo na galunsanan na nya ba ka aden mga tao a di nilan gasesep empyapya su fructose. Nasisista i katanga sa mga pegken a aden fructose nin upama ka pedtagudo i taw.
+    //   `,
+    // ],4),
     encodeMemory([
       `* di * (inom|kan|pamasan) * diarrhea_foods_not_allowed_irritate_stomach * tagudo *`, 
       `* diarrhea_foods_not_allowed_irritate_stomach * di * (inom|kan|pamasan) * tagudo *`, 
@@ -187,7 +182,7 @@ let section8 = [
       `ngin i mga pegken a di kanen nu taw a pedtagudo`,
       `ngin i mga pegken a tangkan nu taw a pedtagudo`,
       `ngin i mga pegken o paginumen a di dayt a kanen nu taw a pedtagudo`,
-      `aden mga pegken di dayt a kanen o inumen nu taw a pedtagudo?`,
+      `aden mga pegken di dayt a kanen o inumen nu taw a pedtagudo`,
       `ngin i pegken a di mapakay kanen a pedtagudo`,
     ],[
       `
@@ -211,7 +206,7 @@ let section10 = [
       `su wata o matuwa na mangingat sa kadtagudo`,
       `tayn a mga taw i temangka sa kapedtagudo`,
       `aden taw a kalunsanan i kadtagudo nin`,
-      `aden taw a magkaproblema sa kapedtagudo?`,
+      `aden taw a magkaproblema sa kapedtagudo`,
     ],[
       `Su wata a naka tlo lagon pan, su mga matuwa na malubay I lawas nin, su di pakakan pyapya, tayn I pedtagudo sa naipos a dwa gay, su pegkayaw sa 39 degree celcius, su aden dana na tai nin, su mapulo I lugo nin, su aden pagangayan nin, abpeg na su aden bon sakit ni andang n abasi kalunsanan I sakit nilan.`,
     ],1),

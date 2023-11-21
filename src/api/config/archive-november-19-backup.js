@@ -7,7 +7,7 @@ import {
 } from '@/api/config/metrics'
 import { DICTIONARY } from './dictionary'
 import { DOMAIN_ENTITIES} from '@/api/rules/priority-words'
-import { reactive,ref } from 'vue'
+import { ref } from 'vue'
 
 let _transformWildcards = (str)=>{
   //replace * to accept any character
@@ -160,7 +160,7 @@ class Archive{
           //   }
           // })
           
-          // remove stopwords
+          // // remove stopwords
           // targetPattern.split(' ').forEach(word=>{
           //   if ( DICTIONARY.isStopWord(word) ){
           //     const regex = new RegExp("\\b" + word + "\\b", "g");
@@ -168,8 +168,7 @@ class Archive{
           //   }
           // })
  
-
-          // the bottleneck is here...
+ 
           targetPattern.split(' ').forEach(word=>{
             let sub = DICTIONARY.getSubstitute(word)
             if ( sub != null ){
@@ -197,16 +196,14 @@ class Archive{
  
 
 
-          // undo this november 20
-          // targetPattern = _removeTrailingLeadingDuplicateSpaces(targetPattern)
+          targetPattern = _removeTrailingLeadingDuplicateSpaces(targetPattern)
 
           
           // we have to purge duplicate words , this particular to those with synonyms
           // but this is only allowed on the informaiton retreival approach.. you cannot remove duplicates 
           // in regex matching
 
-          // undo this november 20
-          // targetPattern = _removeDuplicateWords(targetPattern)
+          targetPattern = _removeDuplicateWords(targetPattern)
 
           this.forwardIndex.push({
             pattern: targetPattern,

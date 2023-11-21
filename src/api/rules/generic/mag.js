@@ -6,47 +6,47 @@ import { encodeMemory } from "@/api/config/model"
 let data = []
 
 // hydration
-data.push(encodeMemory([
-    `* ig * (awa|gamot|kapya|tabang) *  tagudo * `,
-    `nginto ka amayka minom edtandang su taw sa ig na egkakabagel sekanin sa kadtagudo nin`,
-    `panon a to ka mapya su kapaginom bo sa ig i kagkabagel na taw a pedtagudo`,
-],[
-    `So ka inom sa ig na nasisita enggo kasambiyan su ig abpeg a mga electrolytes a mana su sodium abpeg potassium a nasisita nu lawas nu taw.
+// data.push(encodeMemory([
+//     `* ig * (awa|gamot|kapya|tabang) *  tagudo * `,
+//     `nginto ka amayka minom edtandang su taw sa ig na egkakabagel sekanin sa kadtagudo nin`,
+//     `panon a to ka mapya su kapaginom bo sa ig i kagkabagel na taw a pedtagudo`,
+// ],[
+//     `So ka inom sa ig na nasisita enggo kasambiyan su ig abpeg a mga electrolytes a mana su sodium abpeg potassium a nasisita nu lawas nu taw.
 
-    Tu ba nan ka inom ka sa aden ig nin mana su ig, beteng, buko juice, oral rehydration solutions, am, arroscalso, sabaw, o sports drinks. Da ka paginom sa mga aden alchohol nin, caffeine nin o su mga mamis a to a paginumen. 
+//     Tu ba nan ka inom ka sa aden ig nin mana su ig, beteng, buko juice, oral rehydration solutions, am, arroscalso, sabaw, o sports drinks. Da ka paginom sa mga aden alchohol nin, caffeine nin o su mga mamis a to a paginumen. 
         
-    Nya ba kapaginom a nya na makatabang sa kagamot sa sintomas endu di galunsanan i kapedtagudo sabap sa dehydration`
+//     Nya ba kapaginom a nya na makatabang sa kagamot sa sintomas endu di galunsanan i kapedtagudo sabap sa dehydration`
     
-],1))
+// ],1))
 
 // healthy food
-data.push(encodeMemory([
-    `* mapya * pegken * tagudo *`,
-    `nasisita ko kakan sa malimpyo amay ka pedtagudo , eduken`,
-    `ngin to ka keman sa mapya upama ka su taw na pedtagudo`,
-    `nginto ka nya mapya enggulan nu taw a pedtagudo na keman sa pegken a mapya sa lawas`,
-],[
-    `Nasisita su kakan ebpyapya kagina pakatabang i namaba ka kagkabagel na immune system nu taw o su lawas nin
-    `
-],1))
+// data.push(encodeMemory([
+//     `* mapya * pegken * tagudo *`,
+//     `nasisita ko kakan sa malimpyo amay ka pedtagudo , eduken`,
+//     `ngin to ka keman sa mapya upama ka su taw na pedtagudo`,
+//     `nginto ka nya mapya enggulan nu taw a pedtagudo na keman sa pegken a mapya sa lawas`,
+// ],[
+//     `Nasisita su kakan ebpyapya kagina pakatabang i namaba ka kagkabagel na immune system nu taw o su lawas nin
+//     `
+// ],1))
 
 // consult doctor 
-data.push(encodeMemory([
-    `* doctor * (awa|gamot|kapya|tabang) *  (awa|gamot|kapya) * tagudo *`,
-    `kano besen i ka angay sa dotor amayka pedtagudo i taw`,
-    `ngin to ka nasisita i ka angay sa doktor upama ka pedtagudo ako`,
-],[
-    `Nya bon mapya na pailay ksa sa doktor ka silan na katawan nilan panon endu ngin i gamot na mga sakit nu taw`
-],1))
+// data.push(encodeMemory([
+//     `* doctor * (awa|gamot|kapya|tabang) *  (awa|gamot|kapya) * tagudo *`,
+//     `kano besen i ka angay sa dotor amayka pedtagudo i taw`,
+//     `ngin to ka nasisita i ka angay sa doktor upama ka pedtagudo ako`,
+// ],[
+//     `Nya bon mapya na pailay ksa sa doktor ka silan na katawan nilan panon endu ngin i gamot na mga sakit nu taw`
+// ],1))
 
 // where to buy medicines
-data.push(encodeMemory([
-    `endaw gailay i gamot`,
-    `endaw gapamasa i gamot`,
-    `endaw mamasa sa gamot`,
-],[
-    `Tanday ka na su gamot na sya bo pamasen sa kila a mga botika. Aden bon mga grocery a pendagang sa gamot.`
-],5))
+// data.push(encodeMemory([
+//     `endaw gailay i gamot`,
+//     `endaw gapamasa i gamot`,
+//     `endaw mamasa sa gamot`,
+// ],[
+//     `Tanday ka na su gamot na sya bo pamasen sa kila a mga botika. Aden bon mga grocery a pendagang sa gamot.`
+// ],5))
 
 // SYMPTOMS 
 
@@ -75,7 +75,7 @@ data.push(
         
         3. Upama ka kagutem ka na mapakay ka keman sa saging, emay, pan, abpeg soda crackers. Upama ka makakagaga ka keman sa mga da ged nanam ni a pegken, na tupamba ka makakan ka sa apya ngen. Tanday ka su mga da nanam nin a pegken na nya nin mga kaped na su tinanda a patatas, emay, pasta, naluto a unga na kayo, naluto a kamo, abpeg a karne. 
 
-        Ingati ka ka su pembabalingan a kapanguta na nasisista nin i kapendoktor labi den upama ka pakagedam ka sa kapegkalangot o amayka da bagel nengka.
+        Ingati ka ka su pembabalingan a kapanguta na nasisista nin i kapendoktor labi den upama ka pakagedam ka sa kapegka(langot|langut) o amayka da bagel nengka.
         `
     ],2)
 )
@@ -84,22 +84,22 @@ data.push(
 data.push(
     // nausea should be added in the dictionary
     encodeMemory([
-        `* (awa|gamot|kapya|tabang) * langot *`,
-        `ga langot ako`,
-        `galangot ako , ngen i mapya a enggulan ko`,
-        `ngen i di mapakay a kanen o inomen nu taw a galanot`,
-        `ngen i enggulan o galbeken na taw a galangont`,
-        `ngen i gamot na taw a galangot`,
-        `ngen i mga di mapya a kenen na taw a galangot`,
-        `ngin i enggulan ko mana ko galangot`,
+        `* (awa|gamot|kapya|tabang) * (langot|langut) *`,
+        `ga(langot|langut) ako`,
+        `ga(langot|langut) ako , ngen i mapya a enggulan ko`,
+        `ngen i di mapakay a kanen o inomen nu taw a ga(langot|langut)`,
+        `ngen i enggulan o galbeken na taw a ga(langot|langut)`,
+        `ngen i gamot na taw a ga(langot|langut)`,
+        `ngen i mga di mapya a kenen na taw a ga(langot|langut)`,
+        `ngin i enggulan ko mana ko ga(langot|langut)`,
         `panon i kagamot sa taw a galanot`,
-        `* (ngen|panon) * (awa|gamot|kapya|tabang) * langot *`,
-        `* ngen * di * (kan|inom|pamasa) * langot * `,
+        `* (ngen|panon) * (awa|gamot|kapya|tabang) * (langot|langut) *`,
+        `* ngen * di * (kan|inom|pamasa) * (langot|langut) * `,
         // chatgpt end
     ],[
         // reference
         // https://www.urmc.rochester.edu/encyclopedia/content.aspx?contenttypeid=56&contentid=2939
-        `Uman balangan na langot o sakit na ulo na embidabida i kapenggamot lun. Su tension headaches na kila sa tawag a hatband headache. Sya manggedam na taw i nya ba sa taligkudan na ulo nin abpeg sa bunan bunan nu taw. Nya ba na aw na to na taman sa pila kaoras taman sa pila gay. Nya kapenggamot na sya ba na physical therapy, muscle relaxants, engo mga pain relievers mana su aspirin abpeg ibuprofen. Aden pan kaped a balangan na sakit na ulo a nya tawag lun na migraine. Engu pegkapya mangiginawa nengka na degka ka sa malibuting a kwartu, depbpasi ka ulo nengka sa mayaw o matengaw , engo pamisel ka ulo nengka`
+        `Uman balangan na (langot|langut) o sakit na ulo na embidabida i kapenggamot lun. Su tension headaches na kila sa tawag a hatband headache. Sya manggedam na taw i nya ba sa taligkudan na ulo nin abpeg sa bunan bunan nu taw. Nya ba na aw na to na taman sa pila kaoras taman sa pila gay. Nya kapenggamot na sya ba na physical therapy, muscle relaxants, engo mga pain relievers mana su aspirin abpeg ibuprofen. Aden pan kaped a balangan na sakit na ulo a nya tawag lun na migraine. Engu pegkapya mangiginawa nengka na degka ka sa malibuting a kwartu, depbpasi ka ulo nengka sa mayaw o matengaw , engo pamisel ka ulo nengka`
     ],4),
 )
 
@@ -223,15 +223,15 @@ data.push(
 )
 
 // stiffness
-data.push(
-    encodeMemory([
-        `* (awa|gamot|kapya|tabang) * kapanegas * `,
-        `mana pangegas lawas ko, ngen enggulan o galbeken ko`,
-        //chatgpt end
-    ],[
-        `Upama ka penegas i lawas nengka na degka ka, papamesel ka endu betadi ka sa mayaw o matengaw a compress so panegas sa lawas nengka. Su kabetad sa mayaw sa muscle nengka na makagkaluwag sa mangegedam nu taw. Upama manem ka nya nengka engulan na betadan nengka sa matengaw lawas nengka na makatabang i namba endu di kalunsanan kablebag nengka.`
-    ],2),
-)
+// data.push(
+//     encodeMemory([
+//         `* (awa|gamot|kapya|tabang) * kapanegas * `,
+//         `mana pangegas lawas ko, ngen enggulan o galbeken ko`,
+//         //chatgpt end
+//     ],[
+//         `Upama ka penegas i lawas nengka na degka ka, papamesel ka endu betadi ka sa mayaw o matengaw a compress so panegas sa lawas nengka. Su kabetad sa mayaw sa muscle nengka na makagkaluwag sa mangegedam nu taw. Upama manem ka nya nengka engulan na betadan nengka sa matengaw lawas nengka na makatabang i namba endu di kalunsanan kablebag nengka.`
+//     ],2),
+// )
 
 
 // SNEEZE
@@ -423,9 +423,9 @@ data.push(
 
 data.push(
     encodeMemory([
-        `*langot*`,
+        `*(langot|langut)*`,
     ],[
-        `Ampon ka bo, ka di ko samana gasabutan i pedtalon nengka pantag sa taw a galangot. Ugayd na mapakay ko labiten sa leka ngi i mga mapya enggulan endo pegkapya kangegedam nu taw a pedsakit sa namba ba`
+        `Ampon ka bo, ka di ko samana gasabutan i pedtalon nengka pantag sa taw a ga(langot|langut). Ugayd na mapakay ko labiten sa leka ngi i mga mapya enggulan endo pegkapya kangegedam nu taw a pedsakit sa namba ba`
     ],1)
 )
 

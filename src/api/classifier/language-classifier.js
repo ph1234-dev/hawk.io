@@ -6,9 +6,42 @@ export default class LanguageClassifier extends NaiveBayes{
         super()
         
         // annotated
-        this.documents = []
+        // undo this:: we hide it this november 19
+        // this.documents = []
 
+        this.vocabulary = []
+
+        // refers to the ratio of documents of type A (or b or c...) 
+        // over the total number of documents 
+        this.prior_probabilities = {}        
+
+        //store class frequencies
+        this.class_frequencies = {}
+
+        // en: [ a, b, c ] fi: [ a, b, c]
+        this.class_terms = {}
+
+
+        // stores the term frequency within the class
+        this.class_term_frequency_map = {}
+
+        
     }
+
+    loadWeights( 
+        vocabulary,
+        prior_probabilities,
+        class_frequencies,
+        class_terms,
+        class_term_frequency_map
+    ){
+        this.vocabulary = vocabulary
+        this.prior_probabilities = prior_probabilities
+        this.class_frequencies = class_frequencies
+        this.class_terms = class_terms
+        this.class_term_frequency_map = class_term_frequency_map
+    }
+
 
     insertCluster(rules,lang){
 
@@ -25,7 +58,9 @@ export default class LanguageClassifier extends NaiveBayes{
 
             let data = { data: doc, class: lang }
             
-            this.documents.push(data)
+            
+            // lets hide this - november 19 for optimization
+            // this.documents.push(data)
             
             // train only works if its array
             // so lets twap this with array
@@ -41,13 +76,13 @@ export default class LanguageClassifier extends NaiveBayes{
             if (Array.isArray(patterns) ) {
                 patterns.forEach(insertCallback)
 
-                // access responses
-                let responses = rule.response
-                // console.log(`Responses: ` , responses)
-                responses.forEach(response=>{
-                    let splittedSentences = response.split(".")
-                    splittedSentences.forEach(insertCallback)
-                })
+                // access responses -- lets hide this for now
+                // let responses = rule.response
+                // // console.log(`Responses: ` , responses)
+                // responses.forEach(response=>{
+                //     let splittedSentences = response.split(".")
+                //     splittedSentences.forEach(insertCallback)
+                // })
                     // this.document.responses.push(response)
             
             }
@@ -103,5 +138,10 @@ export default class LanguageClassifier extends NaiveBayes{
             console.log('\tInput / ',val)
             console.log(`Predicting: ${val} as [${this.predict(val)}]`)
         })
+    }
+
+
+    toJSON(){
+        
     }
 }

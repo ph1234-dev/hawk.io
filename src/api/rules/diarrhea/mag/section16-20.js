@@ -2,17 +2,10 @@ import { encodeMemory } from "@/api/config/model"
 
 
 let section16 = []
-
 let section17 = []
-
-let section18 = [
-]
-
+let section18 = []
 let section19 = []
-
-
 let section20 = []
-
 export let data = 
     [].concat(section16)
         .concat(section17)
