@@ -30,7 +30,6 @@ let section4 = [
         `Bakit dapat iwasan hindi maganda ang sobrang pagkain ng matatamis para maiwasan ang diarrhea`,
         `Bakit nakakapagdulot ng diarrhea ang sobrang pagkain ng matatamis`,
         `Paano nakakaapekto ang pagiging mahilig sa matatamis sa pagkakaroon ng diarrhea`,
-        `Paano bakit nakakaapekto ang sobrang pagkain ng matatamis sa katawan na nagdudulot ng diarrhea`,
         `bakit ang pagkain ng matamis ay nakakadiarrhea`,
     ], [
         `Ang mga matamis ay maaaring mag-trigger ng pagtatae dahil sa kanilang kakayahang lumikha ng isang osmotic na epekto sa mga bituka, kumukuha ng tubig mula sa katawan patungo sa digestive tract, at dahil din sa kanilang kakayahang pasiglahin ang paggawa ng mga digestive enzymes at dagdagan ang paggalaw ng bituka, na humahantong sa hindi kumpletong pagsipsip ng sustansya at tubig.
@@ -82,7 +81,6 @@ let section4 = [
     encodeMemory([
         `* parasite * diarrhea *`,
         `Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae dahil sa parasite`,
-        `Ano ang mga parasitic infection na maaaring magdulot ng diarrhea `,
         `Bakit importante ang proper hygiene para maiwasan ang pagkakaroon ng parasitic infection`,
         `Paano maiiwasan ang pagkakaroon ng parasitic infection na nagdudulot ng diarrhea `,
         `Paano matutukoy kung ang diarrhea  ay sanhi ng parasitic infection`,
@@ -113,21 +111,18 @@ let section4 = [
     ], 1),
     encodeMemory([
         `* kuha * diarrhea *`,
-        `Ano ang mga bagay paraan na nagdudulot pagkakahawa ng diarrhea `,
-        `Ano ang mga pinagmumulan ng diarrhea `,
-        `Ano ang mga dahilan sanhi sanhi kung bakit nagkakaroon ng diarrhea `,
+        `Ano ang mga bagay na nagdudulot pagkakahawa ng diarrhea `,
+        `Ano ang mga pinagmumulan dahilan sanhi sanhi kung bakit nagkakaroon ng diarrhea `,
         `Anong mga paraan para magka-diarrhea  ang isang tao`,
         `Mga pangkaraniwang paraan para magka-diarrhea `,
         `Paano Saan magkakaroon ng diarrhea `,
-        `Paano Saan nakukuha ang pagtatae o diarrhea`,
-        `Saan maaaring nagmumula makuha ang diarrhea `,
+        `Paano Saan nakukuha nagmumula makuha ang pagtatae o diarrhea`,
     ], [
         `Maraming bagay bagay na nag dudulot ng diarrhea o magtaetae. Halimbawa nito ay kapag mahina ang iyong resistnensya at may problema ka sa bituka. Maari ding epekto ito ng gamot na kinain mo.  Pero madalas talaga, ang sanhi ng pagtatae ay pagkain. Iyong ibang mga tao may mga food allergy o bawal kumain ng mga natatanging pagkain. Iyong iba naman hindi kayang tunawing ang pagkaing may gatas, sorbitol, pampatamis, at fructose na madalas nakikita sa mga pinoprosesong pagkain.`
     ], 1),
     encodeMemory([
         `* (dulot|trigger|dahilan) * diarrhea*`,
-        `Ano ang mga pangunahing dahilan sanhi ng pagkakaroon ng diarrhea `,
-        `ano ang Mga posibleng dahilan ng pagkakaroon ng diarrhea`,
+        `Ano ang mga posibleng pangunahing dahilan sanhi ng pagkakaroon ng diarrhea `,
         `anong Mga pagkain na maaaring magdulot ng diarrhea`,
     ], [
         `
@@ -142,12 +137,11 @@ let section4 = [
 let section5 = [
     encodeMemory([
         `* (tubig|hydrate) * treat * diarrhea * `,
-        `Ano ang magandang gawin sa may diarrhea upang mapanatili ang tamang hydration`,
         `Bakit dapat palaging mag-inom ng tubig ang may diarrhea `,
         `Bakit importante ang hydration o pag-iinom ng maraming tubig para sa may diarrhea `,
         `Paano makakatulong ang pagpapa-hydrate pag-iinom ng tubig sa pag gamot ng diarrhea `,
         `Paano mapipigilan ang pagkakaroon ng dehydration dahil sa diarrhea `,
-        `bakit mag hydrate o uminom ng tubig`
+        `bakit mag hydrate o uminom ng tubig kapag nagtatae`
     ], [
         `
         Ang pananatiling hydrated ay mahalaga dahil ang pagtatae ay maaaring humantong sa pagkaubos sa likido ng katawan. Ang pagtatae ay nagiging sanhi ng pagkawala ng tubig at mga electrolyte ng katawan, tulad ng sodium at potassium, na mahalaga para sa normal na paggana ng katawan. 
@@ -160,10 +154,7 @@ let section5 = [
     encodeMemory([
         `* zinc * treat * diarrhea *`,
         `Ano ang dahilan kung bakit nakapagpapagaling ang pag-inom ng zinc sa may diarrhea `,  
-        `Bakit importante dapat mag-inom o uminom ng zinc ang may diarrhea `,
-        `Bakit epektibo ang pag-inom ng zinc sa pagpapagaling ng diarrhea `,  
-        `Bakit importante ang pag-iinom ng zinc sa may diarrhea `,
-        `Bakit nakakatulong ang pag-iinom ng zinc sa may diarrhea `,
+        `Bakit dapat importante epektibo ang pag-inom ng zinc sa pagpapagaling ng diarrhea `,  
         `Bakit nakakatulong ang zinc sa pagpapagaling ng mayroong diarrhea `,
         `Bakit Paano nakapagpapagaling nakatutulong ang zinc sa may diarrhea `,  
     ], [
@@ -210,8 +201,7 @@ let section5 = [
         `Ano ang mga dapat gawin kung hindi agad gumaling ang taong may diarrhea `,
         `Ano ang mga dapat gawin unpang maiwasa ang pagkakaroon ng diarrhea `,
         `Ano ang mga gamot na pwedeng ibigay sa taong may diarrhea `,
-        `ano ang gamot sa diarrhea`,
-        `paano ginagamot ang diarrhea`
+        `paano ano ang gamot sa diarrhea`,
     ], [
         `Ang paggamot sa pagtatae ay depende sa dahilan. Para sa mga hindi malalang kaso, maaaring makatulong ang mga over the counter na mga gamot tulad ng loperamide o bismuth subsicylate. Gayunpaman, ang pag-inom ng maraming likido tulad ng tubig, sabaw, sopas, inuming pampalakasan, tubig ng niyog, mga solusyon sa oral rehydration at pag-iwas sa mga inumin na maaaring magpalubha ng tiyan, tulad ng alchohol, ay dapat isaalang-alang. Kailangan mong manatiling hydrated. Kung nagpapatuloy ang mga sintomas, mahalagang magpatingin sa iyong doktor para sa tamang diagnosis at paggamot.
         `
@@ -303,8 +293,7 @@ let section5 = [
         `* treat * diarrhea * `,
         `* diarrhea * treat * ano * `,
         `Ano ang mga dapat gawin para mapabilis ang paggaling mula sa diarrhea `, 
-        `Ano ang mga gamot na hindi dapat gamitin para sa diarrhea ` ,
-        `Ano ang mga gamot na maaaring gamitin sa pagpapagaling ng diarrhea `,
+        `Ano ang mga gamot na hindi dapat maaaring gamitin sa pagpapagaling ng diarrhea `,
         `Anong mga gamot ang dapat inumin para sa diarrhea `, 
         `Paano gamutin ang diarrhea sa bahay`,
         `anong gamot ang dapat gamitin para sa diarrhea `,

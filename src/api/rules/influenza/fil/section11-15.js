@@ -4,21 +4,15 @@ let section11 = [
     // antihistamines
     encodeMemory([
         `* generic * antihistamine * `,
-        `Alin ano ang mga pangalan ng generic na antihistamines`,
+        `bigay ilista sabihin ano ang mga pangalan ng generic na antihistamines`,
         `Mayroon ka bang listahan o Maaari mo bang sabihin ang mga pangalan ng generic na antihistamines`,
-        `Mga generic na antihistamines, anong mga pangalan nila`,
-        `Pwede mo bang ibigay ang mga pangalan ng generic na antihistamines`,
     ], [
         `Ang Citerizine ay isa sa mga kilalang generic na antihistamine. Mahalagang tandaan na ang mga gamot na ito ay maaaring may iba't ibang mga pangalan o brand depende sa bansa at tagagawa. Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
         `
     ],7),
     encodeMemory([
         `* branded * antihistamine * `,
-        `Ano ang mga pangalan ng branded na antihistamines`,    
-        `Ilista mo sa akin ang mga antihistamines na kilala at may brand name.`, 
-        `Maaari mo bang bigyan ako ng mga pangalan ng branded na antihistamines`,
-        `Magturo Magbigay ka ng mga pangalan ng branded na antihistamines.`,
-        `May alam ka bang mga branded na antihistamines`,
+        `bigay ilista sabihin ano ang mga pangalan ng branded na antihistamines`,
     ], [
         `Ang Benadryl ay isa sa mga sikat na branded na antihistamine. Mahalagang tandaan na ang mga antihistamine ay dapat lamang inumin sa ilalim ng gabay ng isang doktor.Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
         `
@@ -28,8 +22,7 @@ let section11 = [
         `* hakbang * antihistamine *`,
         `* (paano|ano) * (gamitin|inumin|kainin) * antihistamine *`,
         `* (paano|ano) * antihistamine * (gamitin|inumin|kainin) *`,
-        `Aling paraan ang tama sa paggamit ng antihistamines at ano ang tamang dosis para sa akin`,
-        `Ano paano ang mga alituntunin bagay na dapat isaalang-alang sa paggamit ng antihistamines, kasama na ang tamang dosis`,      
+        `Aling paraan ang tama sa paggamit ng antihistamines at ano ang tamang dosis para sa akin`,      
         `Ano paano ang tamang dosis ng antihistamines at paano ito dapat gamitin`,
         `Anong paano tamang paraan sa pag inom ng antihistamines at paano malalaman ang tamang dosis`,
         `Kailan dapat inumin ang antihistamines at paano ito dapat gamitin nang tama`,
@@ -44,17 +37,13 @@ let section11 = [
     ],7),
     encodeMemory([
         `* antihistamine *`,
-        `Alam ano mo ba ang antihistamines`,  
-        `Ano ang antihistamines at para saan ito`,  
-        `Ano ba ang kahulugan ng antihistamines`, 
-        `Mga antihistamines, alam mo ba kung ano ito`,  
-        `Paano mo malalaman kung ano ang antihistamines`, 
+        `Ano ang ipaliwanag kahulugan ibig sabihin ng antihistamine at para saan ito`,  
     ], [
         `Ang mga antihistamine ay ginagamit upang mapawi o maiwasan ang mga sintomas ng hay fever at iba pang uri ng allergy. Gumagana ang mga ito sa pamamagitan ng pagpigil sa mga epekto ng histamine, na ginawa ng katawan bilang reaksyon tuwing may sakit. Ang histamine ay maaaring maging sanhi ng pangangati, pagbahing, sipon, at matubig na mga mata. Gayundin, sa ilang mga tao ay maaaring isara ng histamine ang mga bronchial tubes (mga daanan ng hangin ng mga baga) at nagpapahirap sa paghinga.`
     ],7),
     encodeMemory([
         `* gamit * antihistamine *`,
-        `Para saan maaaring magamit ang antihistamines`,       
+        `Para saan at paano maaaring gatimin ang antihistamines`,       
         `anong gamit ng antihistamines`,
         `saan paano ginagamit ang antihistamines`,
     ], [
@@ -64,10 +53,7 @@ let section11 = [
     encodeMemory([
         `* antihistamine * gana *`,
         `* paano * gana * antihistamine * `,
-        `Ano ang proseso ng pagiging epektibo ng antihistamines`,
         `Paano ba gumagana nagpapagaling ang antihistamines`,
-        `Paano ginagamit ng katawan ang antihistamines`,
-        `Paano nagagamot ng antihistamines ang mga `,
     ], [
         `Ang mga antihistamine ay hindi karaniwang ginagamit upang gamutin ang trangkaso.  Ang mga antihistamine ay ginagamit upang mapawi ang ilan sa mga sintomas ng allergy, tulad ng pagbahing, runny nose, at pangangati, ngunit hindi ito epektibo laban sa flu virus. Gumagana ang mga gamot na ito sa pamamagitan ng paghihinto sa mga histamine na inilalabas ng katawan pag nagkaka-allergy. Bukod pa rito, maaaring gamitin ang iba pang mga gamot tulad ng mga pain reliever at pampababa ng lagnat ay maari ding gamitin upang malunasan ang iba pang mga sintomas.
         `
@@ -76,20 +62,16 @@ let section11 = [
         `* ( huwag * (kain|inom|gamit) | iwas ) * antihistamine *`,
         `Kailan hindi dapat uminom ng antihistamines`,
         `Paano malalaman kung hindi dapat uminom ng antihistamines`,
-        `bakit iwasan ang antihistamines`,
-        `bakit hindi uminom kainin ng antihistamines`,
+        `bakit iwasan hindi uminom kainin ng antihistamines`,
     ], [
         `Karamihan sa mga tao ay maaaring ligtas na uminom ng mga antihistamine. Gayunpaman, ang mga taong buntis, nagpapasuso, bata, umiinom ng iba pang mga gamot, may pinagbabatayan na mga kondisyon tulad ng sakit sa puso, sakit sa atay, sakit sa bato o epilepsy ay kinakailangang maging maingat kapag umiinom nito.`
     ],7),
     encodeMemory([
         `* effect * antihistamine * `,
         `* hindi * maganda * epekto * antihistamine *`,
-        `Ano ang mga side effects ng pag-inom ng antihistamines`,
-        `Ano-ano ang mga hindi magandang epekto ng antihistamines`,
-        `May mga posibleng masamang epekto ba ang pag-inom ng antihistamines`,
+        `Ano ang mga posibleng hindi magandang side effects ng pag kain pag-inom pag gamit ng antihistamines`,
         `Mayroon bang hindi magandang o masamang epekto sa katawan ang antihistamines`,
         `Nakakapagdulot ba ng side effects ang antihistamines`,
-        `ano ang side effect o hindi magandang epekto ng antihistamines`,
     ], [
         `Ang mga antihistamine ay maaaring magdulot ng mga side effect. Ito ay maaaring mag-iba depende sa gamot na kinuha. Gayunpaman, ang mga antihistamine ay maaaring magdulot sa iyo ng antok, pagkahilo, tuyong bibig, malabo ang paningin, paninigas ng dumi, at kahirapan sa pag-ihi. Kung mayroon kang iniindang  kondisyong medikal o umiinom ng iba pang mga gamot, mahalagang magtanong muna sa doktor bago gamitin ito. 
         `
@@ -107,45 +89,39 @@ let section11 = [
     encodeMemory([
         `* price * antihistamine *`,
         `* antihistamine * price *`,
-        `Ano ang halaga ng antihistamines`,
-        `Ano ang pinakamurang brand ng antihistamines`,
-        `Magkano ang presyo ng antihistamines`,
+        `Magkano ang halaga presyo ng antihistamines`,
     ], [
         `Ang presyo ng antihistamine ay magkaiba sa bawat pharmacy. Ang citerizine na 10mg halimbawa ay tig 15 pesos kada tableta ayos sa Watson pharmacy. Ang Benadryl naman ay nagkakahalaga ng 41 pesos kada tabletas.
         `
     ],7),
     encodeMemory([
         `* uri * antihistamine *`,
-        `Ano ang mga iba ibang uri ng antihistamines`,
-        `Meron bang iba ibang uri ng antihistamines`,
-        `ano ang uri ng antihistamines`,
+        `Ano ang mga uri ng antihistamines`,
     ], [
         `Ang mga antihistamine ay may iba't ibang anyo. Pwede ito maging mga likido, lotion, syrup, gel, eyedrops, tablet, kapsula, cream, at suppositories`
     ],7),
     encodeMemory([
         `* alternatibo * antihistamine *`,
-        `Ano ang mga herbal na gamot na pwedeng gamitin maliban at  kaysa sa antihistamines`,
-        `May alternatibo gamot ba sa antihistamines`,
-        `ano ang alternatibo sa antihistamines`,
+        `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa antihistamines`,
+        `ano ang mga pwedeng pamalit sa antihistamines`,
+        `sabihin bigay listahan ng iba pang alterantibong natural na herbal na gamot bukod sa antihistamine`,
+        `Ano ang mga natural herbal na gamot para mabawasan ang allergy`, 
+        `Ano pa ang ibang paraan sa paggamot ng allergy maliban sa mga decongestant`, 
+        `Mayroon bang alternative herbal na gamot na pwede kong gamitin para magamot ang allergy`,
     ], [
         `Subukan mong kumain ng luya. Ayon sa Sinus and Allergy Wellness Center, ito ay isang natural na histamine, potent antiviral agent at isang immute booster. Ang luya ay isang ligtas at lubos na epektibong halamang gamot na nagpapaginhawa sa sistema ng pagtunaw at nagpapabuti sa sirkulasyon. Maaari kang gumawa ng ilang tsaa ng luya upang maibsan ang pagsisikip ng ilong at pananakit ng ulo. Habang humihigop ka ng iyong tsaa, langhapin ang singaw na lumalabas sa iyong tasa. Gayundin, subukang gamitin ito kasama ng iba pang mga halamang gamot, tulad ng turmeric, na isa pang malakas na natural na manggagamot.`
     ],7),
     // analgesics
     encodeMemory([
         `* generic * analgesics * `,
-        `Alin ang mga pangalan ng mga generic na analgesics`,
-        `Ano ang mga generic na pangalan ng mga analgesics`,
-        `Ano-ano ang mga pangalan ng mga generic na analgesics`,
+        `bigay ilista sabihin ano ang mga pangalan ng generic na analgesics`,
     ], [
         `Ang ilang karaniwang generic na analgesics ay kinabibilangan ng ibuprofen, acetaminophen, aspirin, paracetamol, naproxen, at ketoprofen. Gumagana ang mga gamot na ito sa pamamagitan ng pagharang o pagbabawas ng produksyon ng mga prostaglandin ng katawan. Ito ay mga kemikal na nagdudulot ng pamamaga at pananakit. Sa pamamagitan ng pagbabawas ng produksyon ng mga prostaglandin, ang mga gamot na ito ay makakatulong upang mabawasan ang sakit at pamamaga sa katawan.Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
         `
     ],7),
     encodeMemory([
         `* branded * analgesics *`,
-        `Ano po ang mga kilalang brand ng analgesics sa merkado`,
-        `Maaari po bang magbigay ng mga kilalang pangalan ng analgesics`,
-        `Pwede bang malaman ang mga pangalan ng branded na analgesics`,
-        `ano ang branded na analgesics`
+        `bigay ilista sabihin ano ang mga pangalan ng branded na analgesics`,
     ], [
         `Ang ilan sa mga branded na pangalan ng paracetamol ay Biogesic at Calpol. Gumagana ang mga gamot na ito sa pamamagitan ng pagharang o pagbabawas ng produksyon ng katawan ng mga prostaglandin, na mga kemikal na nagdudulot ng pamamaga at pananakit. Sa pamamagitan ng pagbabawas ng produksyon ng mga prostaglandin, ang mga gamot na ito ay makakatulong upang mabawasan ang sakit at pamamaga sa katawan.Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. 
         
@@ -156,8 +132,7 @@ let section11 = [
         `* (hakbang|dose) * analgesics *`,
         `* paano * (inumin|gamitin|kainin) * analgesics *`,
         `* paano * analgesics * (inumin|gamitin|kainin) *`,
-        `Ano ang tamang dosage paraan ng pag-inom ng mga analgesics`,
-        `Ano ang tamang dosis o paraan ng paggamit ng mga analgesics`,
+        `Ano ang tamang dosage dosis o paraan ng pag-inom paggamit ng mga analgesics`,
         `Paano ba dapat inumin o kainin ang analgesics nang maayos`,
         `Paano dapat gamitin ang mga analgesics`,
         `Paano maiiwasan ang sobrang dosage sa paggamit ng mga analgesics`,
@@ -176,9 +151,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* analgesics *`,
-        `Ano nga ba ang gamot na analgesics`,
-        `Ano ang ibig sabihin ng analgesics`,
-        `Ano ang dapat kong malaman tungkol sa mga analgesics`,
+        `Ano ang ipaliwanag kahulugan ibig sabihin ng analgesics at para saan ito`, 
     ], [
         `
         Ang mga analgesics kay kilala din bilang pain killers. Ito ay mga gamot na ginagamit para maibsan ang mga masasakit na bahagi ng katawan tulad ng sakit as ulo at pinsala sa katawan. Ang mga anti-inflammatory analagesics ay tumutulong sa mga pamamaga sa katawan, habang ang mga opioi analgesics naman ay sinasalin kung paano nararamadaman ang sakit sa utak.`
@@ -187,8 +160,6 @@ let section11 = [
         `* gamit * analgesics *`,
         `Ano ang mga sakit na ginagamot ng analgesics`,
         `Paano nakakatulong ang analgesics sa mga pasyente o may sakit`,
-        `Saan mas ligtas gamitin ang analgesics`, 
-        `anong gamit ng analgesics`,
         `saan paano ginagamit ang analgesics`,
     ], [
         `
@@ -197,9 +168,7 @@ let section11 = [
     encodeMemory([
         `* analgesics * treat *`,
         `* treat * analgesics *`,
-        `* analgesics * treat *`,
-        `Paano ba gumagana nakakatulong ang analgesics`,
-        `Paano ginagamit nakakatulong ang analgesics para mabawasan ang karamdaman sakit`,
+        `Paano ginagamit gumagana nakakatulong ang analgesics `,
     ], [
         `Ang analgesics, o mga pain reliever, ay maaaring makatulong sa pagpapagaan ng karamdaman at lagnat na nauugnay sa trangkaso. Gumagana ang mga ito sa pamamagitan ng pagharang sa paggawa ng ilang mga kemikal sa katawan na nagdudulot ng pananakit at pamamaga. Ang mga karaniwang analgesics na ginagamit para sa trangkaso ay kinabibilangan ng acetaminophen, ibuprofen, at aspirin. Gayunpaman, mahalagang sundin ang mga inirerekomendang dosis at pag-iingat, dahil ang ilang analgesics ay maaaring hindi angkop para sa ilang partikular na indibidwal o maaaring magkaroon ng masamang epekto kapag ginamit nang hindi wasto.
         `
@@ -207,18 +176,16 @@ let section11 = [
     encodeMemory([
         `* ( huwag * (kain|inom|gamit) | iwas) * analgesics *`,
         `Paano malalaman kung hindi dapat kumain ng analgesics`,
-        `bakit iwasan ang analgesics`,
-        `bakit hindi uminom kainin ang analgesics`,  
+        `bakit iwasan hindi uminom kainin ang analgesics`,  
     ], [
         `Ayon sa WebMD, hindi mo dapat inumin ang gamot na ito para sa self-treatment ng sakit nang mas mahaba kaysa sa 10 araw. Hindi mo dapat gamitin ang gamot na ito upang gamutin ang sarili ng lagnat na tumatagal ng higit sa 3 araw. Sa mga ganitong kaso, kumunsulta sa doktor dahil maaaring mas malubha ang kondisyon mo`
     ],7),
     encodeMemory([
         `* effect * analgesics * `,
         `* hindi * maganda * epekto * analgesics *`,
-        `Ano ang mga hindi magandang side effect ng analgesics`,
-        `Mayroon bang masamang epekto ang pag-inom ng analgesics`,
-        `Paano malalaman kung mayroon ka nang side effect sa paggamit ng analgesics`,
-        `ano ang hindi magandang epekto side effect ng analgesics`,
+        `Ano ang mga posibleng hindi magandang side effects ng pag kain pag-inom pag gamit ng analgesics`,
+        `Mayroon bang hindi magandang o masamang epekto sa katawan ang analgesics`,
+        `Nakakapagdulot ba ng side effects ang analgesics`,
     ], [
         `Ang mga anti-inflammatory analgesics ay karaniwang ligtas. Ngunit maaari silang magdulot ng mga side effect at komplikasyon, kung madalas mong gamitin ang mga ito, nang masyadong mahaba o sa napakalaking dosis: Pinsala sa lamang loob tulad ng atay o bato, pagtatae o paninigas ng dumi, mga problema sa puso, hypersensitivity, pagduduwal, sakit ng tiyan,  at ulser sa tiyan`
     ],7),
@@ -234,28 +201,25 @@ let section11 = [
     encodeMemory([
         `* price * analgesics *`,
         `* analgesics * price *`,
-        `Ano ang mga presyong dapat kong malaman tungkol sa analgesics`,
-        `Ilan ang halaga ng analgesics`,
-        `Magkano ba ang presyo ng analgesics`,
+        `Magkano ang halaga presyo ng analgesics`,
     ], [
         `Ayon sa botika ng Muramed at Watsons, ang paracetamol tulad ng biogesic ay maaaring magsimula sa 4 pesos. Samantala, ang aspirin ay maaaring magsimula sa 3.50 pesos na nakalista ng watsons pharmacy. Gayunpaman, hindi mo ito mabibili nang walang reseta at maaaring mag-iba ang mga presyo depende sa kung saan mo binili ang mga ito.`
     ],7),
     encodeMemory([
         `* uri * analgesics *`,
         `Ano ang mga uri ng analgesics`,
-        `May iba ibang uri ba ang analgesics`,
-        `ano ang uri ng analgesics`,
-        `sabihin mo sakin ano ang mga anyo ng analgesics`
     ], [
         `Maraming anyo ang analgesics tulad ng mga films, likido, mga patch ng pang-ilong, mga tabletas, mga tablet, mga kapsula, at pinaghalong powder.`
     ],7),
     encodeMemory([
         `* alternatibo * analgesics *`,
-        `Ano ang mga herbal na gamot na pwedeng gamitin sa halip ng analgesics`,
-        `Ano ang mga ibang paraan para maibsan ang sakit bukod sa analgesics`,
-        `Mayroon bang halamang gamot na pwedeng gamitin sa halip ng analgesics`,
-        `Mayroon bang mga natural na pamamaraan na pwedeng gawin para mawala ang sakit kaysa sa pagtake ng analgesics`,
-        `ano paano ang alternatibo halamang gamot sa analgesics`,
+        `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa analgesics`,
+        `ano ang mga pwedeng pamalit sa analgesics`,
+        `sabihin bigay listahan ng iba pang alterantibong natural na herbal na gamot bukod sa analgesics`,
+        
+        `Ano ang mga natural herbal na gamot para mabawasan ang masakit na katawan`, 
+        `Ano pa ang ibang paraan sa paggamot ng masakit na katawan maliban sa mga analgesics`, 
+        `Mayroon bang alternative herbal na gamot na pwede kong gamitin para magamot ang masakit na katawan`,
     ], [
         `Ang Philippine Institute of Traditional and Alternative Healthcare ay nagpahiwatig na maaari mong Ampalaya, Yerba Buena, ulasimang bato o pansit-pansitan, at bayabas ay may analagesic effect.`
     ],7),
@@ -450,10 +414,7 @@ let section11 = [
     // decongestants
     encodeMemory([
         `* generic * decongestant *`,
-        `Alam mo ba kung ano ang mga pangalan ng generic na decongestants`,
-        `Ano ang mga pangalan ng generic na decongestants`,
-        `Mayroon ka bang alam na mga pangalan ng generic na decongestants`,
-        `Pangalan ng decongestants na generic`,
+        `bigay ilista sabihin ano ang mga pangalan ng generic na decongestant`,
     ], [
         `Ang ilang halimbawa ng mga generic na decongestant ay phenylephrine, pseudoephedrine, at oxymetazoline. Ang mga gamot na ito ay bibili sa counter at may iba't ibang anyo gaya ng mga tablet, kapsula, spray ng ilong, o likido. Mahalagang sundin ang inirerekomendang dosis at pag-iingat kapag umiinom ng mga decongestant dahil maaari silang magdulot ng mga side effect gaya ng pagiging nerbiyoso, pagtaas ng tibok ng puso, at mataas na presyon ng dugo sa ilang indibidwal.
                 
@@ -462,11 +423,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* branded * decongestant *`,
-        `Ano ang mga pangalan ng branded na decongestants`,
-        `Ilista mo naman, kung mayroon, ang mga branded na pangalan ng decongestants`,
-        `Maaari bang humingi magbigay ng mga pangalan ng decongestants na branded`,
-        `Mga pangalan ng decongestants na branded, maari mo bang ilarawan ilista ibigay`,
-        `Pwede mo bang bigyan ako ng mga pangalan ng decongestants na branded`,
+        `bigay ilista sabihin ano ang mga pangalan ng branded na decongestant`,
     ], [
         `Ang ilan sa mga branded na decongestant ay decolgen at sudafed.Mahalagang sundin ang inirerekomendang dosis at pag-iingat kapag umiinom ng mga decongestant dahil maaari silang magdulot ng mga side effect gaya ng pagiging nerbiyoso, pagtaas ng tibok ng puso, at mataas na presyon ng dugo sa ilang indibidwal.`
     ],7),
@@ -478,9 +435,7 @@ let section11 = [
         `Ano ang tamang dose dosage paraan ng paggamit ng decongestants`, 
         `Gaano kadalas dapat uminom at gaano karami ang dapat na decongestants na inumin`,  
         `Ilabas ang tamang dose para sa decongestants.`, 
-        `Paano ba dapat i take ang decongestants`,  
-        `Paano ko dapat gamitin ng tama ang decongestants`,
-        `Paano tamang gamitin ang decongestants`,  
+        `Paano ko dapat take kainin inumin gamitin ng tama ang decongestants`,
     ], [
         `Ang karaniwang dosis ay depende sa gamot na iyong iinumin. Para sa Pseudoephedrine (sudafed) gayunpaman narito ang ilan sa mga rekomendasyon. 
         
@@ -495,53 +450,42 @@ let section11 = [
     ],7),
     encodeMemory([
         `* decongestant *`,
-        `Ano ang mga decongestants`,
-        `Bakit mahalaga ang decongestants sa kalusugan`,
-        `Ano ang gamot na decongestants`,
-        `Anong mga ginagamot ng mga decongestants`,
+        `Ano ang ipaliwanag kahulugan ibig sabihin ng decongestant at para saan ito`, 
     ], [
         `Ang mga decongestant ay mga gamot na nagpapaginhawa sa pamamagitan ng pagbabawas ng pamamaga, pamamaga at pagbuo ng mucus sa loob ng mga daanan ng ilong o mata. Wala silang ibang epekto sa mga sintomas tulad ng runny nose o pagbahin.`
     ],7),
     encodeMemory([
         `* gamit * decongestant *`,
         `Ano ang mga gamot na decongestants at saan ito ginagamit`,
-        `Para saan Kailan ang mga decongestants`,
-        `Saan pwedeng magamit ang mga decongestants`,
-        `anong gamit ng decongestants`,
-        `saan paano ginagamit ang decongestants`,
-    ], [
+        `saan paano Kailan ginagamit ang decongestants`,
+    ], [ 
         `
         Ang mga decongestants ay mga gamot na tumutulog magpaginhawa ng baradong ilong. Ang pagbara nito na nararamdaman kapag may flu ay dahil sa virus na nag dudulot ng flu, sinusitis o allergy.`
     ],7),
     encodeMemory([
         `* gana * decongestant *`,
         `* decongestant * (gana|treat) *`,
-        `Ano ang ginagawa ng mga decongestants sa ating katawan`,
+        `Ano ang ginagawa ng mga decongestants`,
         `Paano ba nagpapababa ng pamamaga ang mga decongestants`,
-        `Paano gumagana ang mga decongestants sa katawan`,
-        `Paano nakakatulong ang mga decongestants sa pagpapagaling`,
+        `Paano nakakatulong gumagana ang mga decongestants sa pagpapagaling`,
     ], [
         `Gumagana ang mga decongestant sa pamamagitan ng pagpapaliit ng mga daluyan ng dugo sa iyong ilong. Ang namamagang tissue sa loob ng ilong ay lumiliit, at mas madaling dumaan ang hangin.`
     ],7),
     encodeMemory([
         `* ( huwag * (kain|inom|gamit) | iwas) * decongestant *`,
         `Kailan hindi dapat gumamit ng mga decongestants`,
-        `Paano malalaman kung hindi ka dapat gumamit ng mga decongestants`,
-        `Saan hindi dapat gamitin ang mga decongestants`,
-        `bakit iwasan ang decongestants`,
-        `bakit hindi kainin uminom ng decongestants`,
+        `Saan Paano malalaman kung  hindi dapat gamitin ang mga decongestants`,
+        `bakit iwasan hindi kainin uminom ng decongestants`,
     ], [
         `Huwag uminom ng mga decongestant kung mayroon kang mataas na presyon ng dugo na hindi nakokontrol. Ang pag-inom ng mga decongestant ay maaaring magpataan ng iyong presyon ng dugo kahit na ito ay kontrolado o halos normal. Maaaring kailanganin mong maghanap ng alternatibo sa mga decongestant. Huwag magbigay ng mga decongestant sa mga batang wala pang 6 taong gulang.`
     ],7),
     encodeMemory([
         `* effect * decongestant * `,
         `* hindi * maganda * epekto * decongestant *`,
-        `Ano ang mga negatibong epekto ng sobrang paggamit ng decongestants`,
-        `Ano ang mga posibleng side effects ng decongestants`,
-        `Maaari bang magdulot ng problema sa kalusugan ang paggamit ng decongestants`,
-        `Mayroon bang mga masamang nakakahamak epekto ang paggamit ng decongestants`,
-        `Paano malalaman kung may adverse reaction sa decongestants`,
-        `ano ang side effect o hindi magandang epekto ng decongestants`,
+        `Ano ang mga posibleng hindi magandang side effects ng pag kain pag-inom pag gamit ng decongestant`,
+        `Mayroon bang hindi magandang o masamang epekto sa katawan ang decongestant`,
+        `Nakakapagdulot ba ng nakakahamak side effects adverse reaction ang decongestant`,
+
     ], [
         `Ang mga decongestant ay maaaring magka side effect. Maaari silang pansamantalang magdulot ng nerbiyos, pagkahilo, at mga problema sa pagtulog. Maaari silang maging sanhi ng palpitations ng puso (pakiramdam na mabilis na pagtibog ng iyong puso) o mas mataas na presyon ng dugo`
     ],7),
@@ -557,57 +501,37 @@ let section11 = [
     encodeMemory([
         `* price * decongestant *`,
         `* decongestant * price *`,
-        `Ano ang presyo ng mga decongestants`,
-        `Gaano kahalaga ang decongestants`,
-        `Magkano ang presyo o halaga ng decongestants`,
-        `Mayroon bang murang decongestants`,
+        `Magkano ang halaga presyo ng decongestant`,
     ], [
         `Ang presyo ay nag-iiba ayon sa anyo ng gamot. Halimbawa, para sa nasal sprays ito ay nagsisimula sa 90php , para sa mga patak sa paligid ng 78 (rose pharmacy website), at mga tablet tulad ng decolgen ito ay nagsisimula sa 6php (watsons).`
     ],7),
     encodeMemory([
         `* uri *  decongestant *`,
-        `Anoo ang mga uri o anyo ng decongestants`,
-        `Anong mga anyo ang mga decongestants`,
-        `Mayroon bang iba ibang anyo ng decongestants at ano-ano ito`,
-        `Mayroon bang mga decongestants na iba't ibang anyo o presentation`,
-        `Saan makakabili ng mga decongestants at anong mga uri ang pwedeng mabili`,
-        `ano ang uri ng decongestant`,
+        `Ano ang mga uri ng decongestant`,
     ], [
         `Available ang mga decongestant bilang mga patak sa ilong, patak sa mata, at bilang mga tablet, kapsula, at syrup.`
     ],7),
     encodeMemory([
         `* alternatibo * decongestant *`,
-        `Ano ang ibang mga gamot na maaaring gamitin bilang alternatibo sa decongestants`,
-        `Ano ang ibang mga herbal na gamot na pwedeng gamitin para sa sipon`,
-        `Ano ang mga alternatibo sa mga decongestants`,
-        `Ano ang mga alternative medicine na pwedeng gamitin sa lugar ng decongestants`,
-        `Ano ang mga natural na herbal na alternatibo paraan upang para mawala ang sipon`,
-        `Anong mga natural na alternatibo sa mga decongestants`,
-        `May ibang mga gamot ba na pwedeng gamitin bukod sa decongestants`,
-        `Mayroon ba ibang gamot na pwede gamitin maliban sa decongestants`,
-        `paano ano ang alternatibo sa decongestants`,
+        `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa decongestant`,
+        `ano ang mga pwedeng pamalit sa decongestant`,
+        `sabihin bigay listahan ng iba pang alterantibong natural na herbal na gamot bukod sa decongestant`,
+        `Ano ang mga natural herbal na gamot para mabawasan ang sipon`, 
+        `Ano pa ang ibang paraan sa paggamot ng sipon maliban sa mga decongestant`, 
+        `Mayroon bang alternative herbal na gamot na pwede kong gamitin para magamot ang sipon`,
     ], [
         `Available ang mga alternatibo sa oral decongestant. Sa larangan ng droga, ang mga antihistamine tulad ng diphenhydramine (Benadryl), chlorpheniramine (Chlor-Trimeton), cetirizine (Zyrtec), at loratadine (Claritin) ay makakatulong sa baradong ilong na ligtas para sa pandinig`
     ],7),
     // expectorant
     encodeMemory([
         `* generic * expectorant*`,
-        `Ano ang mga pangalan ng mga generic na gamot na pampatanggal ng plema o expectorants`, 
-        `Ano-ano ang mga pangalan ng mga generic na gamot na nagpapababa ng plema`, 
-        `Anong mga generic na expectorants ang maaaring gamitin`, 
-        `Anong mga generic na expectorants na pampababa ng plema ang mayroong pinakamababang presyo`,
-        `Ibigay ang mga pangalan ng mga generic na gamot na nagpapaluwag sa plema o expectorants.`, 
-        `Mayroon bang ibang mga generic na gamot na pampatanggal ng plema o expectorants`, 
-        `Mga pangalan ng generic na gamot na pampatanggal ng plema, alam mo ba`, 
+        `bigay ilista sabihin ano ang mga pangalan ng generic na expectorant`,
     ], [
        `Ang Guiafenesin at Potassium iodide ay mga halimbawa ng generic na expectorant. Ang mga ito ay matatagpuan din sa mga produkto tulad ng Mucinex at Robitussin. Ang mga gamot na ito ay karaniwang ginagamit upang gamutin ang mga kondisyon ng paghinga tulad ng bronchitis, hika, at karaniwang sipon. Mahalagang tandaan na ang mga gamot na ito ay maaaring hindi angkop para sa lahat at dapat gamitin ayon sa mga tagubilin ng isang propesyonal sa pangangalagang pangkalusugan.`
     ],7),
     encodeMemory([
         `* branded * expectorant*`, 
-        `Ano ang mga pangalan tatak ng mga branded na expectorants`,  
-        `Maaari mo bang ibigay Ilista ang mga pangalan ng mga branded na expectorants`,  
-        `Mayroon ka bang listahan ng mga branded na pangalan ng mga expectorants`,
-        `ano ang branded na expectorant` 
+        `bigay ilista sabihin ano ang mga pangalan ng branded na expectorant`,
     ], [
         `Ang Mucinex at Robitussin ay iilan lang sa mga branded na expectorants.Mahalagang tandaan na ang mga gamot na ito ay maaaring hindi angkop para sa lahat at dapat gamitin ayon sa mga tagubilin ng isang propesyonal sa pangangalagang pangkalusugan.`
     ],7),
@@ -616,8 +540,7 @@ let section11 = [
         `* hakbang * expectorant*`,
         `* paano * (kainin|gamitin|inumin) * expectorant*`,
         `* paano * expectorant * (kainin|gamitin|inumin)  *`,
-        `Mayroon ba akong mga bagay na dapat malaman tungkol sa paggamit ng mga expectorants`,
-        `Paano ba tamang gamitin o dose ng mga expectorants`,
+        `Paano ba tamang pag kain inom gamitin o dose ng mga expectorants`,
         `Paano dapat iinumin gamitin inumin ang mga expectorants`,
         `Paano ko malalaman kung tamang ang dose ng expectorants na gagamitin ko`,
         `Paano kung hindi ako sigurado sa tamang dosage ng expectorants na gagamitin ko`,
@@ -639,9 +562,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* expectorant*`,
-        `Ano nga ba ang mga expectorants`, 
-        `Ano ang ibig sabihin ng mga expectorants`,  
-        `Para saan ba na gamot gamot expectorants`,  
+        `Ano ang kahulugan ibig sabihin ng expectorant at para saan ito`,  
     ], [
 
         `Ang mga expectorant ay mga sangkap na nagpapaluwag sa daluyan ng hangin. Ginagawa nila ito sa pamamagitan ng pagtaas ng tubig na nilalaman ng mga secretions na nagpapababa ng kanilang lagkit upang mas madaling maibo ito. Ang mga expectorant ay kadalasang ginagamit upang tumulong sa paggamot sa mga kondisyon ng paghinga tulad ng bronchitis, pulmonya, at karaniwang sipon.
@@ -649,9 +570,8 @@ let section11 = [
     ],7),
     encodeMemory([
         `* gamit * expectorant*`,
-        `Anong sakit sa katawan ang ginagamot ng mga expectorants`,
+        `Anong ang ginagamot ng mga expectorants`,
         `Para saan ba talaga ginagamit ang mga expectorants`,
-        `anong gamit ng expectorants`,
         `saan paano ano ginagamit ang expectorants`,
     ], [
         `Maaari kang uminom ng expectorant upang makahinga ng mabuti kung mayroon kang sipon o trangkaso. Available ang mga ito bilang mga standalone na gamot o bilang isang sangkap sa isang all-in-one na gamot sa sipon o trangkaso.`
@@ -659,9 +579,7 @@ let section11 = [
     encodeMemory([
         `* gana * expectorant* `,
         `* expectorant* (gana|treat) * `,
-        `Paano gumagana ang mga expectorants`,  
-        `Paano gumagana ang expectorants upang mapagaan ang pananakit ng lalamunan at pagpapakilos ng plema`,
-        `Ano ang proseso ng pagpapakilos ng expectorants sa pag-aalis ng plema sa baga`,
+        `Paano gumagana ang expectorants `,
         `paano nagpapagaling ang expectorants`
     ], [
         `Ang mga expectorant ay nagpapadulas sa iyong daanan ng hangin. Nakakatulong ito na lumuwag ang uhog at gawing mas manipis ang daluyan ng hangin pag humihinga. Sa pamamagitan ng pagluwag ng uhog, ginagawang mas produktibo ng mga expectorant ang iyong ubo. Ginagawa nitong mas madali para sa iyo na mabisang umubo ng uhog at malinis ang iyong lalamunan.`
@@ -669,7 +587,6 @@ let section11 = [
     encodeMemory([
         `* ( huwag * (kain|inom|gamit) | iwas) * expectorant*`,
         `Kailan hindi dapat ligtas na gumamit ng expectorants`,
-        `May mga panahon sitwasyon ba na hindi pwedeng uminom mag-take ng expectorants`,
         `Saan hindi dapat gamitin uminom kain ng expectorants`,
         `bakit iwasan hindi uminom kainin ng expectorants`,    
     ], [
@@ -680,12 +597,9 @@ let section11 = [
     encodeMemory([
         `* effect * expectorant* `,
         `* hindi * maganda * epekto * expectorant *`,
-        `Ano ang mga posibleng side effects ng pag-inom ng expectorants`,
-        `Ano ang mga epekto sa katawan kapag kumukuha ng mga expectorants`,
-        `Maaari bang magdulot ng negatibong epekto ang mga expectorants sa kalusugan`,
-        `Mayroon bang mga hindi ka nais na epekto sa paggamit ng expectorants`,
-        `Mayroon bang mga masamang epekto sa kalusugan o side effects na nararanasan kapag gumagamit ng expectorants`,
-        `ano ang side effect o hindi magandang epekto ng expectorants`,
+        `Ano ang mga posibleng hindi magandang side effects ng pag kain pag-inom pag gamit ng expectorant`,
+        `Mayroon bang hindi magandang o masamang epekto sa katawan ang expectorant`,
+        `Nakakapagdulot ba ng nakakahamak side effects adverse reaction ang expectorant`,
     ], [
         `Ang mga expectorant ay hindi karaniwang nagdudulot ng malubhang epekto. Ang pinakakaraniwang epekto ay ang pagkahilo, pag-aantok, at pantal.`
     ],7),
@@ -703,36 +617,25 @@ let section11 = [
     encodeMemory([
         `* price * expectorant*`,
         `* expectorant* price *`,
-        `Magkano ang presyo ng expectorants`,
-        `Ano ang presyo ng expectorants`,
-        `Ilan ang magagastos sa pagbili ng expectorants`,
-        `Saang presyo mabibili ang expectorants`,
+        `Magkano ang halaga presyo ng expectorant`,
     ], [
         `Sa watsons, ang robitussin guaifenesin price ay nagsisimula sa 92php.`
     ],7),
     encodeMemory([
         `* uri *  expectorant*`,
-        `Ano-ano ang mga uri o form ng mga expectorants`,
-        `Iba't ibang anyo ba ang mga expectorants`,
-        `May iba't ibang uri ba ng mga gamot na pang-alis ng plema`,
-        `Saan makakabili ng mga iba't ibang uri ng expectorants`,
-        `May tablet, syrup, at capsule ba na uri ng expectorants`,
-        `Ano-ano ang mga porma ng mga gamot na pangtanggal ng plema`,
-        `Ano-ano ang mga porma ng mga natural na pangtanggal ng plema`,
-        `ano ang uri ng expectorant`,
-        `sabihin mo sakin ano ang mga porma ng expectorant`
+        `Ano ang mga uri ng expectorant`,
     ], [
         `Sa pangkalahatan, available ang mga expectorant na over-the-counter (OTC) sa mga form na likido, tableta, at tablet.`
     ],7),
     encodeMemory([
         `* alternatibo * expectorant*`,
-        `Ano ang ibang alternative herbal treatments para sa ubo maliban sa pag-inom ng expectorants`,
-        `Ano ang ibang herbal gamot na puwedeng gamitin bilang alternative sa expectorants`,
-        `Ano ang ibang options na pwede kong gawin kung ayaw kong uminom ng expectorants`,
-        `Ano ang mga herbal na alternative sa expectorants`,
-        `Mayroon bang ibang alternative sa pag-inom ng expectorants`,
-        `Saan pwedeng makakuha ng alternative na gamot sa expectorants`,
-        `paano ano ang alternatibong herbal na gamot sa expectorants`,
+        `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa expectorant`,
+        `ano ang mga pwedeng pamalit sa expectorant`,
+        `sabihin bigay listahan ng iba pang alterantibong natural na herbal na gamot bukod sa expectorant`,
+        `Ano ang mga natural herbal na gamot para mabawasan ang plema pleghm`, 
+        `Ano pa ang ibang paraan sa paggamot ng plema pleghm maliban sa mga expectorant`, 
+        `Mayroon bang alternative herbal na gamot na pwede kong gamitin para magamot ang plema pleghm`, 
+
     ], [
         `Ang mga natural na expectorant ay isa pang opsyon kung sinusubukan mong paluwagin ang uhog at mapawi ang pagsikip ng dibdib. Kasama sa mga natural na expectorant ang:Menthol, Ivyleaf extract , oral hydration (pag-inom ng maraming tubig), steaming (paglanghap ng mainit na basang hangin), at honey (pagdaragdag ng pulot sa mga inumin)`
     ],7),
@@ -740,20 +643,13 @@ let section11 = [
     // antitussives
     encodeMemory([
         `* generic * antitussive *`,
-        `Alin Ano ang mga pangalan ng generic na antitussives`,
-        `ang mga pangalan ng generic na antitussives`,
-        `Mayroon bang Listahan ng mga pangalan ng generic na antitussives`,
-        `Mga pangalan ng generic na antitussives`,
+        `bigay ilista sabihin ano ang mga pangalan ng generic na antitussive`,
     ], [
         `Ang Dexthromethorphan, codeine at diphenhydramine ay mga generic antitussive na nabibili sa botika. Mahalagang tandaan na ang mga generic na antitussive ay naglalaman ng mga katulad na aktibong sangkap na matatagpuan din sa isang branded`
     ],7),
     encodeMemory([
         `* branded * antitussive *`,
-        `Mayroon ka bang listahan ng mga antitussives na may tatak`,
-        `Pwede mo bang ibigay ang mga pangalan ng branded na antitussives`,
-        `Mga branded na pangalan ng antitussives na alam mo`,
-        `ano ang mga pangalan branded na antitussives`,
-        `ibigay mo ang mga branded na antitussives`
+        `bigay ilista sabihin ano ang mga pangalan ng branded na antitussive`,
     ], [
         `Ang Robitussin ay isang sikat na antitussive na mabibili sa mga parmasya. Dapat mong tandaan na sa kabila ng pagkakaroon ng magkatulad na sangkap, ang mga branded ay mas mahal kaysa sa mga generic`
     ],7),
@@ -763,6 +659,7 @@ let section11 = [
         `Gaano kadalas dapat ang antitussives gamitin kainin inumin dose`,  
         `May mga bagay ba na dapat isaalan bago gumamit ng antitussives`,
         `Paano dapat gamitin kainin inumin dose ang mga antitussives`,    
+        `ano ang tamang dose pag kain o pag inom sa antitussives`,
         `Paano malalaman kung tama ang dosage ng antitussives na gagamitin`,  
     ], [
         `Sa pangkalahatan, ang mga antitussive ay iniinom at may iba't ibang anyo, tulad ng mga tablet, kapsula, syrup, at patak. Ang dosis ay karaniwang tinutukoy ng isang doktor at maaaring iakma batay sa mga salik tulad ng edad at bigat ng pasyente, ang kalubhaan ng ubo, at anumang iba pang kondisyong pangkalusugan na maaaring mayroon ang pasyente.
@@ -776,21 +673,14 @@ let section11 = [
     ],7),
     encodeMemory([
         `* ano * antitussive  *`,
-        `Alam mo ba kung ano ang antitussives`,  
-        `Ano ang mga kahulugan benepisyo ng antitussives`,
-        `Maaari mo bang ipaliwanag kung ano ang antitussives`,  
-        `Para saan ang antitussives`,  
+        `Ano ang ipaliwanag kahulugan ibig sabihin ng antitussive at para saan ito`,  
     ], [
         `Ang mga antitussive ay mga reseta o over-the-counter na gamot na ginagamit para sa pagsugpo sa ubo.`
     ],7),
     encodeMemory([
         `* gamit * antitussive *`,
-        `Bakit kailangan ng antitussives`,
         `Kailan dapat uminom pwedeng gamitin ang antitussives`,
-        `Paano nagagamit nakakatulong ang antitussives`,
-        `Para saan ginagamit ang antitussives`,
-        `gamit ng antitussives`,
-        `paano  saan ginagamit ang antitussives`,
+        `paano Para saan nakakatulong ginagamit ang antitussives`,
     ], [
         `Karaniwang ginagamit ang mga ito upang gamutin ang tuyong ubo na dulot ng mga allergy, sakit sa paghinga, o impeksyon. Maaari ding gamutin ng mga antitussive ang post-viral na ubo, o isang patuloy na ubo na nabubuo pagkatapos malutas ang isang impeksiyon`
     ],7),
@@ -808,21 +698,16 @@ let section11 = [
         `Kailan sino hindi dapat uminom o magtake ng antitussives`,
         `Kailan sino hindi ligtas recommended ang paggamit pag-inom ng antitussives`,
         `May mga tao ba na hindi dapat uminom ng antitussives`,
-        `bakit iwasan ang antitussives`,
-        `bakit hindi kainin uminom ang antitussives`,
+        `bakit iwasan hindi kainin uminom ang antitussives`,
     ], [
         `Ang gamot na ito ay hindi ligtas para sa mga batang wala pang 4 taong gulang.`
     ],7),
     encodeMemory([
         `* effect * antitussive  *`,
         `* hindi * maganda * epekto * antitussive *`,
-        `Ano ang dapat malaman tungkol sa mga masamang epekto ng antitussives bago ito gamitin`,
-        `Ano ang mga kadalasang  negatibong epekto ng paggamit ng antitussives`,
-        `Maaaring magdulot ba ang antitussives ng mga di ka nais nais na epekto`,
-        `Mayroon bang mga hindi magandang epekto ang pag-inom ng antitussives`,
-        `Paano maiiwasan ang mga side effects ng antitussives`,
-        `ano ang hindi magandang epekto ng antitussives`,
-        `ano ang side effect ng antitussives`,
+        `Ano ang mga posibleng hindi magandang side effects ng pag kain pag-inom pag gamit ng antitussive`,
+        `Mayroon bang hindi magandang o masamang epekto sa katawan ang antitussive`,
+        `Nakakapagdulot ba ng nakakahamak side effects adverse reaction ang antitussive`,
     ], [
         `Ang pinakakaraniwang epekto ay kinabibilangan ng pagduduwal at pag-aantok. Ang ilang mga pasyente ay maaaring makaranas ng pantal o kahirapan sa paghinga. Ang mataas na dosis ay maaaring magdulot ng mga guni-guni at pagkakahiwalay, at ang gamot ay naiulat na ginagamit bilang isang panlibang na gamot. Kaya dapat mag ingat pag kumain ng antitussives`
     ],7),
@@ -838,35 +723,25 @@ let section11 = [
     encodeMemory([
         `* price * antitussive *`,
         `* antitussive * price *`,
-        `Ano ang presyo ng antitussives`,
-        `Gaano kamahal ang antitussives`,
-        `Magkano ang halagang presyo kailangan mong bayaran para sa antitussives`,
+        `Magkano ang halaga presyo ng antitussive`,
     ], [
         `Sa southstar drug store, ang halaga ng dextromethorphan syrup ay nagsisimula sa 113php. It watsons, nasa 189php. Maaaring mag-iba ito sa ibang mga parmasya`
     ],7),
     encodeMemory([
         `* uri * antitussive  *`,
-        `Ano ang iba't ibang anyo ng antitussives at saan ito karaniwang ginagamit`,
-        `Ano ang mga pangkaraniwang anyo ng antitussives na available sa botika`,
-        `Ano ang pinakamabisang anyo ng antitussives at bakit`,
-        `Ano-ano ang mga uri o anyo ng antitussives`,
-        `May ibang anyo pa bang nagagamit ang antitussives maliban sa tablet at capsule`,
-        `Mayroon bang iba't ibang anyo o uri ang antitussives`,
-        `Sa anong anyo o uri madalas nakukuha ang antitussives`,
-        `ano ang uri ng antitussives`,
-        `sabihin mo sakin ano ang mga porma ng antitussives`
+        `Ano ang mga uri ng antitussive`,
     ], [
         `Ang mga antitussive ay may maraming anyo. Maaari itong maging isang tableta, kapsula, gel, likido, syrup, lozenge o strips. Gayunpaman, maaari ko lamang irekomenda ang karaniwang dosis ng mga logenze at syrup form nito.`
     ],7),
     encodeMemory([
         `* alternatibo * antitussive  *`,
-        `Ano ang mga alternatibong herbal paraan para maibsan ang ubo maliban sa pag-inom ng antitussives`,
-        `Ano ang mga herbal ng gamot na pwede kong subukan kung ayaw ko ng antitussives`,
-        `Ano ang mga natural herbal na lunas para sa ubo kung ayaw mag-take ng antitussives`,
-        `May ibang paraan ba para maibsan ang ubo kaysa sa pag-inom ng antitussives`,
-        `May mga herbal o natural na mga gamot ba na pwede kong gamitin kaysa sa antitussives`,
-        `Paano kung ayaw ko uminom ng antitussives, may ibang pwedeng herbal `,
-        `paano ano ang alternatibo herbal sa antitussives`,
+        `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa antitussive`,
+        `ano ang mga pwedeng pamalit sa antitussive`,
+        `sabihin bigay listahan ng iba pang alterantibong natural na herbal na gamot bukod sa antitussive`,
+        `Ano ang mga natural herbal na gamot para mabawasan ang ubo`, 
+        `Ano pa ang ibang paraan sa paggamot ng ubo maliban sa mga antitussive`, 
+        `Mayroon bang alternative herbal na gamot na pwede kong gamitin para magamot ang ubo`, 
+
     ], [
         `Ang pulot ay isang napapanahong lunas para sa namamagang lalamunan. Ayon sa isang pag-aaral, maaari din nitong mapawi ang ubo nang mas epektibo kaysa sa mga OTC na gamot na naglalaman ng dextromethorphan (DM), isang panpigil sa ubo.`
     ],7),
@@ -874,19 +749,13 @@ let section11 = [
     // lozenges
     encodeMemory([
         `* generic * lozenge*`,
-        `Ano ang mga pangalan ng generic na lozenges`,
-        `Mga generic na gamot na pampawala ng pamamaga sa lalamunan`,
+        `bigay ilista sabihin ano ang mga pangalan ng generic na lozenge`,
     ], [
         `Ang ilan sa mga generic na pangalan ng logenzes ay kinabibilangan ng dextromethorphan at benzocaine-menthol`
     ],7),
     encodeMemory([
         `* branded * lozenge*`,
-        `Ano ang mga pangalan ng branded na lozenges`,
-        `Maari bang malaman kung ano ang mga pangalan ng branded na lozenges`,
-        `Magbigay ka ng mga pangalan ng lozenges na branded.`,
-        `Magbigay ka nga ng mga pangalan ng lozenges na may brand.`,
-        `Pangalan ng mga branded na lozenges, maari bang humingi ng listahan`,
-        `ano ang branded na lozenges`
+        `bigay ilista sabihin ano ang mga pangalan ng branded na lozenge`,
     ], [
         `Ang Bactidol at strepsils ay ilan sa mga branded na pangalan ng logenzes na makakatulong na mapawi ang iyong lalamunan`
     ],7),
@@ -903,19 +772,13 @@ let section11 = [
     ],7),
     encodeMemory([
         `* lozenge*`,
-        `Ano ang mga lozenges`,
-        `Gusto kong malaman kung ano ang mga lozenges. Pwede mo bang ipaliwanag sa akin`, 
-        `Paano ba ginagamit ang lozenges at para saan ito`,  
-        `Puwede bang ipaliwanag mo sa akin kung ano ang mga lozenges`,  
+        `Ano ang ipaliwanag kahulugan ibig sabihin ng lozenge at para saan ito`,  
     ], [
         `Ginagamit ang produktong ito upang pansamantalang mapawi ang pananakit mula sa maliliit na problema sa bibig (tulad ng mga ulser, namamagang gilagid/lalamunan, pinsala sa bibig/gigilid).`
     ],7),
     encodeMemory([
         `* gamit * lozenge*`,
-        `Ano ang layunin ng paggamit ng mga lozenges`,
-        `Ano ba talaga ang lozenges at paano ito ginagamit`,  
         `Kailan dapat kainin gamitin inumin ang lozenges`,
-        `anong gamit ng lozenges`,
         `paano Para saan ginagamit ang lozenges`,
     ], [
         `Ang pag-inom ng Lozenges ay isang abot-kayang opsyon para sa nagpapakilalang paggamot ng talamak at talamak na pharyngitis, pangangati o pamamaga ng upper respiratory tract at pagpapagaan ng hindi kasiya-siyang sensasyon sa lalamunan.`
@@ -924,9 +787,7 @@ let section11 = [
         `* lozenges * treat *`,
         `* gana * lozenge*`,
         `* lozenge * gana *`,
-        `Ano ang mga benepisyo ng paggamit ng lozenges para sa kalusugan ng lalamunan`,
         `Bakit nagpapagaling nakakatulong nakakagamot ang lozenges sa pagtanggal ng sakit pag-irita pamamaga sa lalamunan`,
-        `paano nagpapagaling nakakatulong nakakagamot ang lozenges`
     ], [
         `Kapag sumipsip ka ng lozenge, nagsisimula itong matunaw at maglalabas ng gamot. Kaya dapat itong tunawin nang dahan-dahan sa bibig upang pansamantalang sugpuin ang ubo, at mag-lubricate at paginhawahin ang nanggagalit na mga tisyu ng lalamunan.
         
@@ -937,20 +798,16 @@ let section11 = [
         `Kailan bakit hindi dapat gumamit ng lozenges`,  
         `Mayroon bang mga kondisyon na hindi pinapayagan ang paggamit ng lozenges`,  
         `Sa mga anong sitwasyon hindi dapat mag-take ng lozenges`,
-        `bakit iwasan ang lozenges`,
-        `bakit hindi uminom kainin gumamit ng lozenges`,    
+        `bakit iwasan hindi uminom kainin gumamit ng lozenges`,    
     ], [
         `Kung mayroon kang namamagang lalamunan na malubha o tumatagal ng higit sa 2 araw, o ubo na tumatagal ng higit sa 7 araw na patuloy na bumabalik, o may mga sintomas na may lagnat, sakit ng ulo, pantal, pamamaga, pagduduwal, o pagsusuka, magpatingin na sa iyong doktor kaagad`
     ],7),
     encodeMemory([
         `* effect * lozenge*`,
         `* hindi * maganda * epekto * lozenge*`,
-        `Ano ang mga dapat bantayan maaaring maging negatibong epekto ng paggamit ng mga lozenges`,
-        `Maaaring magdulot ba ng mga negatibong epekto reaksyon ang mga lozenges`,
-        `Maaaring magdulot ng anong uri ng epekto ang pag-inom ng mga lozenges`,
-        `Mayroon bang mga hindi magandang epekto side effects ang pagkain ng mga lozenges`,
-        `Mayroon bang posibleng side effects ang mga lozenges`,
-        `ano ang hindi magandang epekto side effect ng lozenges`,
+        `Ano ang mga posibleng hindi magandang side effects ng pag kain pag-inom pag gamit ng lozenge`,
+        `Mayroon bang hindi magandang o masamang epekto sa katawan ang lozenge`,
+        `Nakakapagdulot ba ng nakakahamak side effects adverse reaction ang lozenge`,
     ], [
         `Maaaring mangyari ang bahagyang paghapdi ng lalamunan. Kung ang alinman sa mga epektong ito ay tumagal o lumala, sabihin kaagad sa iyong doktor o parmasyutiko.`
     ],7),
@@ -966,32 +823,24 @@ let section11 = [
     encodeMemory([
         `* price * lozenge*`,
         `* lozenge* price * `,
-        `Ano ang presyo ng mga lozenges`,
-        `Gaano kamahal ang mga lozenges`,
-        `Magkano ang bayad halaga presyo ng mga lozenges`,
+        `Magkano ang halaga presyo ng lozenge`,
     ], [
         `Sa rose pharmacy nagsisimula ito sa paligid ng 5php bawat piraso. Maaaring mag-iba ang presyo sa ibang mga parmasya`
     ],7),
     encodeMemory([
         `* uri * lozenge*`,
-        `Ano ang mga pagkakaiba ng mga lozenges ayon sa form`,
-        `Ano ang mga uri porma ng mga lozenges`,
-        `Mayroon bang iba ibang uri form ng mga lozenges`,
-        `ano ang uri ng lozenges`,
+        `Ano ang mga uri ng lozenge`,
     ], [
         `Ang mga form ng dosis na mabagal na natutunaw sa bibig o maaaring nguyain at madaling lunukin ay nagiging popular, lalo na para sa mga pediatric na pasyente. Ang matigas (na-compress o hinulma) na paghahanda ng form na ito ng dosis ay tinatawag na lozenges, troches, o patak. Ang malambot (molded) na lozenges o troches ay kadalasang tinatawag na pastilles, at ang chewable, gelatin-based na lozenges o troches ay kadalasang tinatawag na gummy, bagong-bagong mga produkto.`
     ],7),
     encodeMemory([
         `* alternatibo * lozenge*`,
-        `Ano ang iba pang mga paraan para maibsan ang sakit sa lalamunan`, 
-        `Ano ang mga alternative herbal remedies para sa sakit sa lalamunan`,
-        `Ano ang mga natural herbal na pamamaraan para mabawasan ang sakit sa lalamunan`, 
+        `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa lozenge`,
+        `ano ang mga pwedeng pamalit sa lozenge`,
+        `sabihin bigay listahan ng iba pang alterantibong natural na herbal na gamot bukod sa lozenge`,
+        `Ano ang mga natural herbal na gamot para mabawasan ang sakit sa lalamunan`, 
         `Ano pa ang ibang paraan sa paggamot ng sakit sa lalamunan maliban sa mga lozenges`, 
-        `Mayroon bang alternative herbal na gamot na pwede kong gamitin sa sakit sa lalamunan`, 
-        `Mayroon bang ibang herbal gamot na maaaring gamitin kaysa sa mga lozenges`, 
-        `Ano ang mga alternatibo sa mga lozenges`,
-        `Mayroon bang natural na paraan para makatulong sa sakit sa lalamunan`, 
-        `paano ano ang alternatibo herbal sa lozenges`,
+        `Mayroon bang alternative herbal na gamot na pwede kong gamitin para magamot ang sakit sa lalamunan`, 
     ], [
         `Ang pagsipsip ng tsaa na may pulot ay maaaring makatulong at mapawi ang mga kondisyon ng lalamunan.`
     ],7),
@@ -1095,8 +944,7 @@ let section14 = [
     encodeMemory([
         `* saan * (punta|gamutin) * senyales * trangkaso * `,
         `Ano ang mga dapat gawin kapag mayroong sintomas ng trangkaso`,
-        `Kailangan bang magpatingin sa doktor kapag mayroong sintomas ng trangkaso`,
-        `May mga home remedy ba para sa sintomas ng trangkaso`,
+        `May mga gamot sa bahay ba para sa sintomas ng trangkaso`,
         `Saan pwede magpatingin kung mayroong sintomas ng trangkaso`,
     ], [
         `
@@ -1110,15 +958,9 @@ let section14 = [
     encodeMemory([
         `* sintomas * trangkaso * `,
         `* masabi * trangkaso *`,
-        `Ano ang mga palatandaan ng trangkaso`,
-        `Ano ang mga sintomas ng trangkaso`,
         `Ano ang mga palatandaan senyales sintomas ng trangkaso`,
-        `Maaari bang malaman ang mga senyales ng influenza`,
         `Paano ko malalaman kung may trangkaso ako`,
-        `Paano malalaman kung may sakit na trangkaso`,
-        `sabihin o ibigay mo sakin ang listahan ng sintomas o senyales ng flu`,
-        `paano ba malaman kung ako ay may influenza`,
-        `ano ang sintomas ng trangkaso`
+        `sabihin o ibigay mo sakin ang listahan ng sintomas palatandaan o senyales ng flu`,
     ], [
         `Ayon sa Center of Disease and Control, ang mga taong may trangkaso ay maaring makaranas ng lagnat, ubo, namamagang lalamunan, sipon o baradong ilong, pananakit ng kalamnan o katawan, pananakit ng ulo, at pagkapagod (pagkapagod). Ang ilan sa iba ay maaaring magkaroon ng pagsusuka at pagtatae kahit na ito ay mas karaniwan sa mga bata at matatanda.`
     ],1),

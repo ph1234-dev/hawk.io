@@ -25,13 +25,11 @@ let section11 = [
         `* hakbang * antimotility *`,
         `* (kainin|gamitin|inumin) * antimotility *`,
         `* antimotility * (gamitin|kainin|inumin) *`,
-        `Ano ang dapat tandaan sundin na dosage sa pag-inom o paggamit ng antimotility para sa sakit na diarrhea `,
+        `Ano ang dapat tandaan sundin na dosage sa pag-inom o paggamit ng antimotility `,
         `Ano ang tamang dosage ng antimotility para sa diarrhea `,
-        `Anong mga dapat isaalang-alang sa pag-inom o paggamit ng antimotility para sa sakit na diarrhea `,
-        `Anong tamang paraan ng pag-inom paggamit ng antimotility o dosage para sa diarrhea `,
-        `Paano ang tamang paraan ng pag-inom ng gamot na antimotility para sa sakit na diarrhea `,
-        `Paano dapat inumin o gamitin ang antimotility sa sakit na diarrhea `,
-        `Paano tamang dosage gamitin ang antimotility sa sakit na diarrhea `,
+        `Anong dapat isaalang-alang na tamang paraan ng pag-inom paggamit ng antimotility`,
+        `Paano ang tamang paraan ng pag-inom ng gamot na antimotility `,
+        `Paano tamang dapat inumin o gamitin dosage gamitin ang antimotility `,
         `ano ang dose ng antimotility`,
     ],[
         `Uminom ng maraming tubig habang ginagamot mo ang iyong pagtatae gamit ang antimotilities. Ang pagtatae ay maaaring magpa-dehydrate sa iyo. 
@@ -67,10 +65,8 @@ let section11 = [
     encodeMemory([
         `* gana * antimotility * `,
         `* antimotility * gana * `,
-        `Paano gumagana ang antimotility`,
-        `Paano gumagana ang antimotility upang mapigilan ang pagtatae`,
-        `Paano nakakatulong ang antimotility sa pagpapalambot ng stool`,
-        `Paano nakakapagbigay ng ginhawa ang antimotility sa diarrhea`,
+        `Paano nakakatulong gumagana ang antimotility upang mapigilan ang pagtatae`,
+        `Paano nakakapagbigay ng ginhawa ang antimotility`,
         `paano gumagana nagpapagaling ang antimotility`
     ],[
         `Ang mga antimotility, tulad ng Loperamide at Imodium, ay pumipigil sa paggalaw ng bituka at maaaring gamitin upang gamutin ang pagtatae. 
@@ -81,22 +77,18 @@ let section11 = [
     ],7),
     encodeMemory([
         `* hindi * ((kain|inom|gamit) | iwas)  * antimotility *`,
-        `Kailan hindi dapat gamitin ang antimotility`,
+        `Kailan hindi dapat epektibo gamitin ang antimotility`,
         `Paano malalaman kung hindi dapat gumamit ng antimotility`,
-        `Kailan hindi epektibo ang antimotility`,
     ],[
         `Dapat na iwasan ang mga antimotility agent kung may mga senyales ng matinding dehydration, mataas na lagnat, o may dugo ang iyong dumi, dahil ang mga ito ay maaaring magpahiwatig ng mas malubhang kondisyon na nangangailangan ng medikal na atensyon`
     ],7),
     encodeMemory([
         `* effect * antimotility  * `,
         `* hindi * maganda * epekto * antimotility  *`,
-        `Ano ang maaaring maging side effect ng antimotility`,
-        `Ano ang mga posibleng masamang negatibong epekto reaksyon sa antimotility`,
-        `Mayroon bang mga epekto ang antimotility na dapat bantayan`,
-        `Mayroon bang mga hindi inaasahang magandang epekto ang antimotility`,
+        `Ano ang mga maaaring posibleng masamang negatibong epekto reaksyon sa antimotility`,
+        `Mayroon bang mga hindi inaasahang magandang epekto ang antimotility na dapat bantayan`,
         `Paano nakakaapekto ang antimotility sa katawan`,
-        `ano ang side effect ng antimotility`,
-        `ano ang hindi magandang epekto ng antimotility`,
+        `ano ang hindi magandang side effect ng antimotility`,
     ],[
         `Ang mga antimotility, tulad ng Loperamide, ay maaaring magdulot ng mga side effect. Madalas na makaramdam ang mga tao ng kabag, pananakit ng tiyan, pagduduwal, pagsusuka, at tuyong bibig. Ang ilang mga tao ay maaari ring makaranas ng pagkahilo, pag-aantok, at hirap sa pag-ihi. Mahalagang sundin nang mabuti ang mga tagubilin ng iyong doktor o ang label ng gamot.
         `
@@ -104,9 +96,8 @@ let section11 = [
     encodeMemory([
         `* tips * antimotility *`,
         `Ano ang mga dapat kong gawin habang nag gumagamit uminom kain ako ng antimotility`,
-        `Ano ang mga payo sa pagkain ng antimotility`, 
         `Ano ang mga rekomendasyon sa pagkain ng antimotility`, 
-        `ano ang mga tips sa pagkain o inom ng antimotility`,
+        `ano ang mga payo tips sa pagkain o inom ng antimotility`,
     ],[
         `Huwag gumamit ng antimotilities kung mayroong dugo sa iyong dumi o itim na dumi. Kung mayroon kang kasaysayan ng sakit sa atay o mga problema sa ritmo ng puso, maaaring hindi rin ito ang pinakamahusay na gamot para sa iyo`
     ],7),
@@ -166,11 +157,11 @@ let section11 = [
     encodeMemory([
         `* (hakbang|gamitin|kainin|inumin|dose) * bismuth *`,
         `* bismuth * (hakbang|gamitin|kainin|inumin|dose)  *`,
-        `Ano ang mga dapat tandaan sa pag-inom at gamit ng Bismuth Subsalicylate para sa mga may diarrhea `,
-        `Ano ang tamang paraan hakbang dosis ng Bismuth Subsalicylate para sa mga may diarrhea `,
-        `Anong paraan hakbang ng pag-inom o paggamit ng Bismuth Subsalicylate ang dapat sundin para sa diarrhea `,
-        `Gaano kadalas dapat inumin o gamitin ang Bismuth Subsalicylate para sa mga may diarrhea `,
-        `Paano dapat gamitin at inumin o kainin ang Bismuth Subsalicylate para sa diarrhea `,
+        `Ano ang mga dapat tandaan sa pag-inom at gamit ng Bismuth Subsalicylate `,
+        `Ano ang tamang paraan hakbang dosis ng Bismuth Subsalicylate`,
+        `Anong paraan hakbang ng pag-inom o paggamit ng Bismuth Subsalicylate ang dapat sundin`,
+        `Gaano kadalas dapat inumin o gamitin ang Bismuth Subsalicylate`,
+        `Paano dapat gamitin at inumin o kainin ang Bismuth Subsalicylate`,
         `Paano dapat ang dose ng Bismuth Subsalicylate sa taong may diarrhea `,
         `Paano gamitin inumin kainin ng wasto ang Bismuth subsalicylate`,
         `ano ba ang dose sa pag gamit ng bismuth subsalicylate`
@@ -185,8 +176,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* bismuth *`,
-        `Ano ba talaga ang kahulugan Bismuth subsalicylate`,  
-        `Paano mo maipapaliwanag ang Bismuth subsalicylate`,  
+        `Paano ba talaga ang kahulugan maipapaliwanag ang Bismuth subsalicylate`,  
         `Para saan ginagamit ang Bismuth subsalicylate`, 
         `Bakit kailangan ng Bismuth subsalicylate`,  
         `Ano ang mga benepisyo ng Bismuth subsalicylate`,  
@@ -196,9 +186,7 @@ let section11 = [
     encodeMemory([
         `* gamit * bismuth *`,
         `Para saan Kailan dapat gamitin ang Bismuth subsalicylate`,
-        `Sino ang dapat gumamit ng Bismuth subsalicylate`,
-        `anong gamit ng Bismuth`,
-        `paano saan ginagamit ang Bismuth`,
+        `Sino ang dapat  paano saan anong gamit ng Bismuth`,
     ],[
         `Ang bismuth subsalicylate ay isang over-the-counter na gamot na ginagamit para sa paggamot ng pagtatae, kabag, sakit sa tiyan, hindi pagkatunaw ng pagkain, heartburn, pagduduwal at bilang isang prophylaxis para sa pagtatae ng manlalakbay`
     ],7),
@@ -216,17 +204,15 @@ let section11 = [
         `* huwag * ( (kain|inom|gamit) | iwas )  *bismuth *`,
          `Ano ang mga babala sa paggamit ng Bismuth subsalicylate`,
          `Ano ang mga kondisyon kung saan hindi dapat uminom o kumain ng Bismuth subsalicylate`,  
-         `Ano ang mga sitwasyon na hindi dapat uminom o kumain ng Bismuth subsalicylate`,  
-         `Kailan hindi inirerekomenda ang pag-inom o pagkain ng Bismuth subsalicylate`,  
-         `Kailan hindi safe ang pag-inom o pagkain ng Bismuth subsalicylate`,  
+         `Kailan hindi inirerekomenda ang pag-inom o pagkain ng Bismuth subsalicylate`,    
          `May mga pagkakataon ba na hindi magandang uminom o kumain ng Bismuth subsalicylate`,  
          `Kailan hindi dapat uminom o kumain ng Bismuth subsalicylate`, 
     ],[
         `Hindi mo ito dapat inumin kung mayroon kang mga problema sa pagdurugo, ulser sa tiyan, dugo sa iyong dumi, o kung ikaw ay alerdyi sa aspirin o iba pang gamot. Huwag ibigay ang gamot na ito sa isang bata o teenager na may lagnat, sintomas ng trangkaso, o bulutong-tubig`
     ],7),
     encodeMemory([
-        `* effect *bismuth * `,
-        `* hindi * maganda * epekto * bismuth subsalicylate *`,
+        `* effect * bismuth * `,
+        `* hindi * maganda * epekto * bismuth *`,
         `Ano ang mga negatibong side effect ng paggamit ng Bismuth subsalicylate`,  
         `Maaari bang magdulot ng masamang epekto ang paggamit ng Bismuth subsalicylate`,  
         `Mayroon bang panganib hindi magandang epekto ang Bismuth subsalicylate`,  
@@ -242,7 +228,6 @@ let section11 = [
         `Mayroon bang mga babala o paalala sa pag-inom ng Bismuth subsalicylate`,
         `Mayroon bang mga tips sa paggamit ng Bismuth subsalicylate`,
         `Ano ang mga kailangan malaman tungkol sa paggamit ng Bismuth subsalicylate`,
-        `ano ang mga tips sa pagkain o inom ng Bismuth`,
     ],[
         `Uminom ng maraming tubig habang umiinom ka ng bismuth subsalicylate. Ang pagtatae ay maaaring magdulot ng dehydration at ang pag-inom ng sapat na likido ay makakatulong na maiwasan ito. Lunukin ang mga kapsula nang buo sa tubig. Huwag nguyain ang mga ito. Lunukin ang mga kapsula nang buo sa tubig. Huwag nguyain ang mga ito.`
     ],7),
@@ -268,8 +253,7 @@ let section11 = [
         `Ano ang mga ibang alternative gamot na pwedeng gamitin sa halip ng Bismuth subsalicylate`,  
         `May mga natural na herbal alternatibo ba sa Bismuth subsalicylate`,  
         `Mayroon bang mga natural na lunas para sa diarrhea na pwedeng magamit na alternatibo sa Bismuth subsalicylate`,  
-        `ano ang alternatibo sa bismuth`,
-        `paano ang alternatibo sa bismuth`,
+        `paano ano ang alternatibo sa bismuth`,
     ],[
         `Pwede kang bumili ng antimotilities. Mayroon ding mga natural na gamot. Halimbawa, maaari kang uminom ng luya at kalawag dahil mayroon itong mga anti-inflammatory at antimicrobial na katangian na maaaring makatulong na mabawasan ang mga sintomas ng pagtatae. Maaari ka ring uminom ng tubig ng niyog na may mataas na nilalaman ng electrolyte.`
     ],7),
@@ -397,9 +381,8 @@ let section14 = [
     // ],5),
     encodeMemory([
         `* saan * gamutin * senyales * diarrhea * `,
-        `saang lugar na pwedeng magbigay ng tulong sa mga taong may sintomas ng diarrhea o patatae`,  
-        `saang lugar ang pwede puntahan kung mayroong sintomas ng diarrhea o patatae`,  
-        `Saan pwede magpatingin kung may nararamdaman ng sintomas ng diarrhea o patatae`,  
+        `saan pwedeng magbigay ng tulong sa mga taong may sintomas ng diarrhea o patatae`,  
+        `Saan pwede magpunta magpatingin kung may mayroong nararamdaman ng sintomas ng diarrhea o patatae`,  
         `Saan pwedeng magpatingin kapag mayroong sintomas ng diarrhea o patatae`,  
     ],[
         `Maaari mo gamutin ang iyong pagtatae sa iyong tahanan. Pwede kang uminom ng ilang gamot na mabibili sa botika kahit walang riseta upang maibsan ang iyong nararamdaman. Kung makakita ka ng dugo sa iyong dumi, may lagnat, o tumagal ng 2 araw, mas mabuting magpatingin kaagad sa doktor para sa karagdagang tulong`
@@ -409,9 +392,8 @@ let section14 = [
         `* (symptoms|masabi) * diarrhea * `,
         `Ano ang mga palatandaan indikasyon na nagpapakita na mayroong diarrhea ang isang tao`,  
         `Ano ang mga palatandaan senyales at sintomas ng taong may diarrhea o nag tatae`,  
-        `Ano ang mga senyales at sintomas ng isang taong mayroong diarrhea `, 
-        `Ano ang mga senyales o sintomas na mayroon ang isang may diarrhea `,  
-        `Ano ang mga sintomas na nararanasan ng isang tao kapag may diarrhea `,  
+        `Ano ang mga senyales at sintomas ng isang taong mayroong diarrhea`, 
+        `Ano ang mga sintomas na nararanasan ng isang tao kapag may diarrhea`,  
         `Ano nga ba ang diarrhea`,
         `Paano mo malalaman masasabi kung mayroong diarrhea o nag tatae ang isang tao`,  
         `ano ang sintomas ng diarrhea`,

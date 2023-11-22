@@ -49,32 +49,19 @@ let section5 = [
     
     encodeMemory([
         `* rest * treat * influenza *`,
-        `How does rest aid in the recovery process from influenza`, 
-        `How does rest help in treating influenza`, 
+        `How does rest help the recovery process in treating influenza`, 
         `How does taking rest help in recovering from influenza`, 
-        //`What are the benefits of resting while suffering from influenza`, 
-        `What effect does rest have on influenza`,
-        // `What makes rest an effective treatment for influenza`, 
-        `Why is it advised to rest while having influenza`, 
-        // `Why is rest recommended for influenza patients`, 
+        `Why is it advised recommended to rest while treating having influenza`,  
         `Why is resting important when dealing with influenza`, 
-        `tell me why does resting help treat influenza`
     ],[
         `You should stay home until your fever has been gone for at least 24 hours. Someone with influenza will recover naturally within 2 to 7 days. By resting during the day, your body can devote more resources to fighting the virus. On top of helping you recover, staying home also prevents spreading the flu to other people in your community or workplace`
     ],1),
     encodeMemory([
         `* drink * water * treat * influenza *`,
         `* take * water * influenza * `,
-        // `How can drinking water speed up the recovery from influenza`,
         `How does drinking water help treat influenza`,
-        // `How does staying hydrated help combat influenza`,
-        // `How does water help alleviate influenza`,
-        // `In what ways does water help with influenza`,
         `What are the benefits of drinking water during influenza`,
-        // `What is the connection between drinking water and influenza treatment`,
-        `What role does water play in treating influenza`,
-        `Why is drinking water important when you have influenza`,
-        `Why is it recommended to drink water when you have influenza`,
+        `Why is drinking water important recommended when you have influenza`,
         `tell me why drinking water help treat influenza`
     ],[
         `Drinking fluids are recommended when having influenza. One symptom of the flu is a high fever, which can lead to sweating. Some people may experience vomiting and diarrhea. Therefore, it is best that you hydrate or drink plenty of fluids to replace lost liquids, and even more to fight off the infection`
@@ -115,7 +102,7 @@ let section5 = [
         // `How do I know when it's time to see a doctor for the flu`,
         // `What are the indications that I need to seek medical advice for the flu`, 
         // `What are the signs that I should seek medical attention for the flu`,
-        `What is the importance of or benefits can one get from consulting a doctor for influenza treatment`, 
+        `What is the importance of onsulting a doctor for influenza treatment`, 
         `When do I need to consult or go to thedoctor for the flu`,
         // `When is it appropriate to seek medical care for the flu`,
         // `When is it necessary to see a healthcare professional for the flu`,
@@ -126,23 +113,18 @@ let section5 = [
         `Flu will often get better on its own, but it can make some people seriously ill.In some cases, the flu can lead to complications such as pneumonia, which can be serious and even life-threatening. A doctor can also prescribe antiviral medication. If you are at special risk of complications, contact your doctor as soon as your symptoms begin`
     ],5),
     encodeMemory([
-        `can i manage influenza on my own`,
-        `can i treat influenza myself`,
+        `can i treat manage influenza myself`,
         `do i need help when i treat influenza`,
-        `is it  to treat influenza at home`,
-        `who can take care of me when having influenza`,
         `tell me who can help me treat influenza`,
-        `is it okay to treat influenza on home`,
+        `is it okay to treat influenza at home`,
     ],[
         `You can manage influenza by your own. There are over the counter medicines that can help ease symptoms such as fevers, aches and coughing. If you have the virus, you need to have adequate rest. You should stay home until your fever has been gone for at least 24 hours, drink plenty of fluids, avoid exertion, eat healthy foods. However, going to see a doctor can better help you if your are feeling worse. They can prescribe you specific medication and directions.`
     ],1),
     encodeMemory([
         `* treat * influenza * where *`,
         `* where * treat * influenza *`,
-        // `Do you know of any clinics that offer treatment for influenza`,
-        // `Is there a specific hospital that specializes in treating influenza`,
         `Where can I receive treatment for influenza`,
-        `Where is the best place to receive treatment for influenza`,
+        `Where to receive treatment for influenza`,
         `Where should I go to get treated for influenza`,
         // `Which healthcare facilities provide treatment for influenza`,
     ],[
@@ -192,10 +174,7 @@ let section5 = [
         `How can I manage or relieve my influenza`,
         `How can I speed up my recovery from the flu`,
         `How do I cure the flu`,
-        `What are home natural treatments for the flu`,
-        `What are my options for treating influenza`,
-        `What are the remedies for influenza`,
-        `What is the best way to treat the flu`,
+        `What are home treatments remedies options for the flu`,
         // `What should I do if I have the flu`,
         `how do you treat influenza`,
         `tell me about the things i can do to treat influenza`,

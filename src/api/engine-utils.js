@@ -1,22 +1,6 @@
-import { DICTIONARY } from "./config/dictionary"
+import { DICTIONARY } from "@/api/config/dictionary"
 
 export const showPreTransformedRules =(lang,rules)=>{
-    // let list = []
-    // rule.forEach(r=>{
-    //     let item = r
-    //     let pattern = item.pattern
-    //     pattern.split(' ').forEach(word=>{
-    //         let sub = DICTIONARY.getSubstitute(word)
-    //         if ( sub != null ){
-    //             const regex = new RegExp("\\b" + word + "\\b", "g");
-    //             item.pattern = item.pattern.replace(regex,sub)
-    //         }
-    //     })
-        
-    //     list.push(item)
-    // })
-
-    let control = 20
     
     rules.forEach(rule=>{
         let patterns = rule.pattern
@@ -26,7 +10,7 @@ export const showPreTransformedRules =(lang,rules)=>{
         //     console.log('Patterns:: ',patterns )
         // }
 
-        patterns.forEach((p,index)=>{
+        patterns.forEach((p)=>{
 
             p = p.toLowerCase()
             p = p.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/g,' ')
@@ -75,3 +59,18 @@ export const removeRedundantSpaces = (str)=>{
     return str
 }
 
+export const transformWildcards = (str)=>{
+    //replace * to accept any character
+    str = str.replace(/\s/igm, '')
+    // str = str.replace(/[\*]/g, '(.*)')
+    str = str.replace(/[\*]/g, '(.*)')
+    // str = str.replace("*", '(.*)')
+          
+    //replace spaces such to fix space between 
+    // str = str.replace(/\s/igm, '(\\s*)')
+    // str = removeRedundantSpaces(str)
+    // str = str.replace(/\s/igm, '(.*)')
+    //enclose for strict  
+    return  `^${str}$`
+    // return  `${str}`
+  }

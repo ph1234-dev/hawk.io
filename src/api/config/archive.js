@@ -8,100 +8,34 @@ import {
 import { DICTIONARY } from './dictionary'
 import { DOMAIN_ENTITIES} from '@/api/rules/priority-words'
 import { reactive,ref } from 'vue'
+import { removeRedundantSpaces, transformWildcards } from '@/api/engine-utils'
 
-let _transformWildcards = (str)=>{
-  //replace * to accept any character
-  str = str.replace(/\s/igm, '')
-  // str = str.replace(/[\*]/g, '(.*)')
-  str = str.replace(/[\*]/g, '(.*)')
-  // str = str.replace("*", '(.*)')
-        
-  //replace spaces such to fix space between 
-  // str = str.replace(/\s/igm, '(\\s*)')
-  // str = _removeTrailingLeadingDuplicateSpaces(str)
-  // str = str.replace(/\s/igm, '(.*)')
-  //enclose for strict  
-  return  `^${str}$`
-  // return  `${str}`
-}
-
-function _countWordDifferences(sentence1, sentence2) {
-  const words1 = sentence1.split(' ');
-  const words2 = sentence2.split(' ');
-
-  let count = 0;
-
-  for (let i = 0; i < words1.length; i++) {
-    if (words1[i] !== words2[i]) {
-      count++;
-    }
-  }
-
-  return count;
-}
-
-let _removeTrailingLeadingDuplicateSpaces = (str) =>{
-  str = str.replace(
-    /(^\s+|\s+$)|\s+/g, 
-    function (match, leadingTrailing, duplicate) {
-        if (leadingTrailing) {
-            return '';
-        } else if (duplicate) {
-            return ' ';
-        }
-    }
-  )
-
-  return str
-}
 
 // https://medium.com/@bsalwiczek/ref-vs-reactive-in-vue-3-whats-the-right-choice-7c6f7265ce39
 // https://medium.com/js-dojo/vue-3-reactivity-basics-784363fab03e
 let VOCABULARY = ref([])
 
-function _removeDuplicateWords(str) {
-  const words = str.split(' ');
-
-  const uniqueWords = words.filter((word, index) => {
-    return words.indexOf(word) === index;
-  });
-
-  const result = uniqueWords.join(' ');
-
-  return result;
-}
 
 // class database contains all definitions
 class Archive{
 
   constructor(){
 
-    //counter for the units
-    this.index = 0;
+    
+    this.index = 0; //counter for the units
 
-    //stores memories
-    this.memory = []
+    this.memory = [] //stores memories
 
-    //holds original untransformed copy of referneces:: previously as referencesUntransformedPatterns
     this.forwardIndex = []
 
-    this.forwardIndexUntransformed = []
-    
-    // this.vocabulary = []
-
-    // WE ONLY ALLOW to have 3 word differences to penalize very long rules
+    this.wildcardIndex = []
+        
     this.MAX_WORD_DIFFERENCE = 3
 
     this.BM25 = new BM25()
   }
 
-  printBM25Docs(){
-    return this.BM25.printDocs()
-  }
-
-  getReferences(){
-    return this.references
-  }
+  printBM25Docs(){return this.BM25.printDocs() }
 
   sortReferences(){
     
@@ -130,45 +64,11 @@ class Archive{
 
         underlyingPattern.forEach(rawPattern => {
 
-          // required to have at least two tokens
-          // if ( rawPattern.includes('*') ) return
-
-          // if ( rawPattern.split(' ').length < 3) return
-
           let targetPattern = rawPattern
-          
-          // lower case
           targetPattern = targetPattern.toLowerCase()
-
-          this.forwardIndexUntransformed.push(targetPattern)
-
-          // replace all nonword characters 
           targetPattern = targetPattern.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/g,' ')
-
-          targetPattern = _removeTrailingLeadingDuplicateSpaces(targetPattern)
+          targetPattern = removeRedundantSpaces(targetPattern)
         
-          // do substitutions first before remove to catch word equivalence in difference language
-          // example, why , bakit , enduken - normalized to - why then we can remove
-          // begin substitutions
-
-          // WORKING - COMMENTED ONLY FOR OPTIMIZATION
-          // targetPattern.split(' ').forEach(word=>{
-          //   let sub = DICTIONARY.getSubstitute(word)
-          //   if ( sub != null ){
-          //     const regex = new RegExp("\\b" + word + "\\b", "g");
-          //     targetPattern = targetPattern.replace(regex,sub)
-          //   }
-          // })
-          
-          // remove stopwords
-          // targetPattern.split(' ').forEach(word=>{
-          //   if ( DICTIONARY.isStopWord(word) ){
-          //     const regex = new RegExp("\\b" + word + "\\b", "g");
-          //     targetPattern = targetPattern.replace(regex,'')
-          //   }
-          // })
- 
-
           // the bottleneck is here...
           targetPattern.split(' ').forEach(word=>{
             let sub = DICTIONARY.getSubstitute(word)
@@ -184,10 +84,6 @@ class Archive{
               const regex = new RegExp("\\b" + word + "\\b", "g");
               targetPattern = targetPattern.replace(regex,'')
             }else{
-              // record all words that are not stop words
-              // if ( !this.vocabulary.includes(word) ){
-              //   this.vocabulary.push(word)
-              // }
 
               if ( !VOCABULARY.value.includes(word) ){
                 VOCABULARY.value.push(word)
@@ -195,18 +91,6 @@ class Archive{
             }
           })
  
-
-
-          // undo this november 20
-          // targetPattern = _removeTrailingLeadingDuplicateSpaces(targetPattern)
-
-          
-          // we have to purge duplicate words , this particular to those with synonyms
-          // but this is only allowed on the informaiton retreival approach.. you cannot remove duplicates 
-          // in regex matching
-
-          // undo this november 20
-          // targetPattern = _removeDuplicateWords(targetPattern)
 
           this.forwardIndex.push({
             pattern: targetPattern,
@@ -222,9 +106,6 @@ class Archive{
 
       this.index++
     })
-  }
-  getVocabulary(){
-    return this.vocabulary
   }
 
 
@@ -246,14 +127,11 @@ class Archive{
       freq2[word] = (freq2[word] || 0) + 1;
     }
 
-
-    
     // Compute the dot product of the word frequency vectors
     let dotProduct = 0;
     for (const word in freq1) {
       if (word in freq2) {
         dotProduct += this.BM25.calculateTFIDF(word, sentence1) * (this.BM25.calculateTFIDF(word, sentence2));
-        
       }
     }
     
@@ -273,16 +151,14 @@ class Archive{
   }
 
   getReplyUsingTFIDFCosineSimilarity(msg){
-
   
-    msg = _removeTrailingLeadingDuplicateSpaces(msg)
+    msg = removeRedundantSpaces(msg)
 
     let len = this.forwardIndex.length
-
     let max = this.forwardIndex[0]
     for ( let i = 1 ; i < len; i++){
       let next = this.forwardIndex[i]
-      next.pattern = _removeTrailingLeadingDuplicateSpaces(next.pattern)
+      next.pattern = removeRedundantSpaces(next.pattern)
 
       if ( this.computeForTFIDF(msg,max.pattern) < this.computeForTFIDF(msg,next.pattern ) ){
         max = next
@@ -295,8 +171,7 @@ class Archive{
     // console.log(`\tFrom Archive:: Cosine Max Pattern Found: ${JSON.stringify(max)}`)
     // console.log(`\t\tFrom Archive:: Cosine distance:: ${score}`)
     // if ( score > threshold)
-      reply = this.memory[max.index].response[0]
-    // 
+    reply = this.memory[max.index].response[0]
 
     return {reply,score: score,pattern:max.pattern, rawPattern: max.rawPattern}
   }
@@ -304,14 +179,12 @@ class Archive{
 
   getReplyUsingCosineSimilarity(msg){
 
-    msg = _removeTrailingLeadingDuplicateSpaces(msg)
-
+    msg = removeRedundantSpaces(msg)
     let len = this.forwardIndex.length
-
     let max = this.forwardIndex[0]
     for ( let i = 1 ; i < len; i++){
       let next = this.forwardIndex[i]
-      next.pattern = _removeTrailingLeadingDuplicateSpaces(next.pattern)
+      next.pattern = removeRedundantSpaces(next.pattern)
 
       if ( cosineSimilarity(msg,max.pattern) < cosineSimilarity(msg,next.pattern ) ){
         max = next
@@ -323,9 +196,8 @@ class Archive{
     // console.log(`\tFrom Archive:: Cosine Max Pattern Found: ${JSON.stringify(max)}`)
     // console.log(`\t\tFrom Archive:: Cosine distance:: ${score}`)
     // if ( score > threshold){
-      reply = this.memory[max.index].response[0]
-    // 
-
+    reply = this.memory[max.index].response[0]
+    
     return {reply,score: score,pattern:max.pattern, rawPattern: max.rawPattern}
   }
 
@@ -347,13 +219,11 @@ class Archive{
       freq2[word] = (freq2[word] || 0) + 1;
     }
 
-    
     // Compute the dot product of the word frequency vectors
     let dotProduct = 0;
     for (const word in freq1) {
       if (word in freq2) {
         dotProduct += this.BM25.calculateBM25(word, sentence1) * (this.BM25.calculateBM25(word, sentence2));
-      
       }
     }
     
@@ -380,7 +250,6 @@ class Archive{
       let bm25 = this.BM25.calculateBM25(word, sentence2)**2
       return sum + ( VOCABULARY.value.includes(word) ? bm25: 0) 
     } , 0));
-    
 
     return dotProduct / (mag1 * mag2);
   }
@@ -388,7 +257,7 @@ class Archive{
   getReplyUsingWeightedCosineSimilarity(msg){
     // console.log('Attempting Cosine Similarity:: ', msg)
 
-    msg = _removeTrailingLeadingDuplicateSpaces(msg)
+    msg = removeRedundantSpaces(msg)
 
     let identifyPrioriyWords = (input)=>{
 
@@ -402,7 +271,6 @@ class Archive{
       })
 
       return list
-      
     }
 
     let len = this.forwardIndex.length
@@ -424,14 +292,13 @@ class Archive{
       })
       
       // priority words must be at least 2
-
       let count = countMatchingWords(pMsg.join(' '),pPattern.join(' '))
       return count
     }
 
     for ( let i = 1 ; i < len; i++){
       let next = this.forwardIndex[i]
-      next.pattern = _removeTrailingLeadingDuplicateSpaces(next.pattern)
+      next.pattern = removeRedundantSpaces(next.pattern)
 
       // 1. if it contains priority words msg
       // 2. then priority word must be present in pattenr too
@@ -461,8 +328,6 @@ class Archive{
       // identify priority words in target
       let patternPriorityWords = identifyPrioriyWords(next.pattern) 
           
-
-
       // test if priority words matches
       // idea is that at least one of the priority words must match
       let priortyWordExist = false
@@ -473,7 +338,6 @@ class Archive{
       }
 
       if ( !priortyWordExist ) continue
-
 
       // we posit that maximum the rule we are finding must have very few word difference
       // 
@@ -487,24 +351,21 @@ class Archive{
       // rawPatternWithTermSubstitutes
     }
     
-
     let reply = null
     // NOTE:: THIS IS THE ORIGINAL
     let score = this.getWeightedCosineSimilarityScore(msg,max.pattern)
     // console.log(`\tFrom Archive:: Cosine Max Pattern Found: ${JSON.stringify(max)}`)
     // console.log(`\t\tFrom Archive:: Cosine distance:: ${score}`)
     // if ( score > threshold){
-      reply = this.memory[max.index].response[0]
-    // 
+    reply = this.memory[max.index].response[0]
 
     return {reply,score: score,pattern:max.pattern, rawPattern: max.rawPattern}
   }
 
-
   
   getReplyUsingVanillaCosineSimilarity(msg){
 
-    msg = _removeTrailingLeadingDuplicateSpaces(msg)
+    msg = removeRedundantSpaces(msg)
 
     let identifyPrioriyWords = (input)=>{
 
@@ -528,7 +389,7 @@ class Archive{
 
     for ( let i = 1 ; i < len; i++){
       let next = this.forwardIndex[i]
-      next.pattern = _removeTrailingLeadingDuplicateSpaces(next.pattern)
+      next.pattern = removeRedundantSpaces(next.pattern)
  
       // ERROR MUST BE FIXED:: TO AVOID MATCHING 1 SENTENCE, patterns should be at least a triplet
       // if ( next.rawPattern.split(' ').length < 2 ) continue
@@ -585,73 +446,22 @@ class Archive{
     }
   }
 
-  getReplyUsingTanimotoCoefficient(msg){
-    let len = this.forwardIndex.length
-    
-    let target = this.forwardIndex[0]
-    let targetTanimotoScore = 0
-    let nextTanimotoScore = 0
-    let next = null
-    for ( let i = 1 ; i < len; i++){
-      next = this.forwardIndex[i]
-      targetTanimotoScore = tanimotoCoefficient(msg,target.pattern)
-      nextTanimotoScore = tanimotoCoefficient(msg,next.pattern)
-      
-      if ( targetTanimotoScore < nextTanimotoScore ){
-        target = next
-      }
-    }
- 
-    return {
-      reply:  this.memory[target.index].response[0],
-      pattern:target.pattern,
-      score: targetTanimotoScore,
-    }
-  }
-
-  getReplyUsingOverlapCoefficient(msg){
-    let len = this.forwardIndex.length
-    
-    let target = this.forwardIndex[0]
-    let targetOverlapScore = 0
-    let nextOverlapScore = 0
-    let next = null
-
-    for ( let i = 1 ; i < len; i++){
-      
-      next = this.forwardIndex[i]
-      targetOverlapScore = overlapCoefficient(msg,target.pattern)
-      nextOverlapScore = overlapCoefficient(msg,next.pattern)
-      
-      if ( nextOverlapScore > targetOverlapScore  ){
-        target = next
-      }
-    }
- 
-    return {
-      reply: this.memory[target.index].response[0],
-      pattern: target.pattern,
-      score: targetOverlapScore,
-    }
-  }
-
-
 }
 
 class WilcardArchive{
   
   constructor(){
-    // contains the index numbers
-    this.forwardIndex = []
+    this.forwardIndex = [] // contains the index numbers
 
-    // stores the rules
-    this.memory = []
+    this.memory = []  // stores the rules
 
-    // tracks the index number
-    this.index = 0
+    this.index = 0  // tracks the index number
   }
 
   getReplyUsingWildcardMatching(msg){
+
+    // console.error(`Archive::getReplyUsingWildcardMatching:
+    //             \n\tForward index length:${this.forwardIndex}`)
     let response = null
     let matchingPattern = null
     let originalPattern = null
@@ -674,7 +484,6 @@ class WilcardArchive{
       }
     }
 
-    
     console.log(`\tArchive::Pattern::  ${JSON.stringify(originalPattern)}`)
 
     return {
@@ -702,26 +511,22 @@ class WilcardArchive{
   storeMemory(rule){
     // rule must contain ([wildcard rules],[response],)
     
-    // tranform rules 
-    let transformedPatterns = []
     let rawPatterns = rule.patterns
 
     rule.patterns.forEach((pattern,index)=>{
-      rule.patterns[index] = _removeTrailingLeadingDuplicateSpaces(pattern)
+      
       let words = pattern.split(/\W+/g)
       // pattern.split(//g).
-      words.forEach(word=>{
-        let sub = DICTIONARY.getSubstitute(word)
-        if ( sub != null ){
-          const regex = new RegExp("\\b" + word + "\\b", "g");
-          // pattern = pattern.replace(regex,sub)
-          rule.patterns[index] = rule.patterns[index].replace(regex,sub)
-        }
-      })
+      // words.forEach(word=>{
+      //   let sub = DICTIONARY.getSubstitute(word)
+      //   if ( sub != null ){
+      //     const regex = new RegExp("\\b" + word + "\\b", "g");
+      //     // pattern = pattern.replace(regex,sub)
+      //     rule.patterns[index] = rule.patterns[index].replace(regex,sub)
+      //   }
+      // })
 
       
-
-
       // lets store all words
       pattern.split(/\W/).forEach(word => {
         if ( !VOCABULARY.value.includes(word)) {
@@ -729,17 +534,6 @@ class WilcardArchive{
         }
       })
 
-      // let patternWithNoDuplicateWords = pattern.split(' ').reduce((unique, word) => {
-      //   if (!unique.includes(word)) {
-      //     unique.push(word);
-      //   }
-      //   return unique;
-      // },[])
-
-      // pattern = patternWithNoDuplicateWords.join(' ')
-
-      // transformedPatterns.push(pattern)s
-      // return pattern
     })
 
 
@@ -749,12 +543,6 @@ class WilcardArchive{
       response: rule.response,
       index: this.index
     }
-
-    // console.log(`Raw >> ${rule.rawPatterns}`)
-    // console.log(`\tTransformed >> ${rule.patterns}`)
-
-    // console.log(`Wildcard::
-    //   \n${JSON.stringify(rule)}`)
 
     this.memory.push(rule)
 
@@ -777,7 +565,7 @@ class WilcardArchive{
               // raw pattern here is the original
               rawPattern: mem.rawPattern[index],
               // patten here is the transformed
-              pattern: _transformWildcards(p), 
+              pattern: transformWildcards(p), 
               // pattern:p,
               index: mem.index
             })    
@@ -795,9 +583,7 @@ class WilcardArchive{
       let target = this.forwardIndex[i]
       let mem = this.memory[target.index]
       console.log(`\t${target.pattern}`)
-      // console.log(`\t\t${mem.response[0]}`)
     }
-    // console.log(`${this.forwardIndex}`)
   }
   
 }

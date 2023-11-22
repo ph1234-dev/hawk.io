@@ -1,7 +1,7 @@
 import {Blackbox,WildcardBlackbox} from '@/api/config/blackbox'
 import {DICTIONARY} from '@/api/config/dictionary'
 // import {testCaseForDiarrhea, testCaseForInfluenza } from '@/api/tests/v2/cases'
-import { VOCABULARY } from './config/archive'
+import { VOCABULARY } from '@/api/config/archive.js'
 
 import { showPreTransformedRules, removeRedundantSpaces} from './engine-utils'
 
@@ -12,24 +12,25 @@ import {transFormedMaguindanaonRules} from './rules_pre_transformed/mag.js'
 import {transFormedFilipinoRules } from './rules_pre_transformed/fil.js'
 
 
-// import { eng as genericEngRules } from './rules/generic/eng'
-// import { fil as genericFilRules } from './rules/generic/fil'
-// import { mag as genericMagRules } from './rules/generic/mag'
+import { eng as genericEngRules } from './rules/generic/eng'
+import { fil as genericFilRules } from './rules/generic/fil'
+import { mag as genericMagRules } from './rules/generic/mag'
 
-// import {
-//     diarrheaEngRules,
-//     diarrheaFilRules,
-//     diarrheaMagRules
-// } from './rules/diarrhea/rules-diarrhea'
-// import {
-//     influenzaEngRules,
-//     influenzaFilRules,
-//     influenzaMagRules
-// } from './rules/influenza/rules-influenza'
+import {
+    diarrheaEngRules,
+    diarrheaFilRules,
+    diarrheaMagRules
+} from './rules/diarrhea/rules-diarrhea'
+import {
+    influenzaEngRules,
+    influenzaFilRules,
+    influenzaMagRules
+} from './rules/influenza/rules-influenza'
 
 
 import {weight_classifier_langauge} from '@/api/weights/weights-langauge-classifier'
 import {weight_classifier_dimension } from '@/api/weights/weights-dimension-classifier.js'
+import {weight_wildcard_blackbox} from '@/api/weights/weights-wildcards-blackbox.js'
 
 import LanguageClassifier from '@/api/classifier/language-classifier'  
 import DomainClassifier from '@/api/classifier/domain-classifier'
@@ -57,25 +58,22 @@ export default class Engine {
 
         //end transformation
 
-        // this.RULES = {
-        //     ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
-        //     FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
-        //     MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
-        // }
-
+     
         // this.LANGUAGE_RULES = {
         //     ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
         //     FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
         //     MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
         // }
 
+
+        // remember dont use the the transformed rules when initializing the
+        // wildcard archive
         this.RULES = {
             ENG: [].concat(transFormedEnglishRules),
             FIL: [].concat(transFormedFilipinoRules),
             MAG: [].concat(transFormedMaguindanaonRules)
         }
 
-        this.RULES_WILDCARDS = {}
         // console.log(JSON.stringify(this.RULES["ENG"]))
         this.LANG = {
             ENG: 'eng',
@@ -160,19 +158,45 @@ export default class Engine {
             weight_classifier_dimension["MAG"]["class_term_frequency_map"]
         )
 
-        
+
+        this.ru
         /** STEP 3 */
         /** Build memory*/
-        // what we did is to separate the process..
+
+        this.RULES = {
+            ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
+            FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
+            MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
+        }
+
         this.buildMemory()
         
-
+        
         /** STEP 4*/
         /** Build wildcard blackbox*/
-        this.buildWildcardBlackbox()
-        // INSTRUCTION:: USE TO GET THE PRIORITY TERMS
-        // this.buildSymmetricDifference()
+        this.RULES_WILDCARDS = {}
+        // this.buildWildcardBlackbox()
 
+        this.RULES_WILDCARDS["ENG"] = new WildcardBlackbox()
+        this.RULES_WILDCARDS["ENG"].loadWeights(
+            weight_wildcard_blackbox["ENG"]["wildcardArchive"].forwardIndex,
+            weight_wildcard_blackbox["ENG"]["wildcardArchive"].index,
+            weight_wildcard_blackbox["ENG"]["wildcardArchive"].memory
+        ) 
+
+        this.RULES_WILDCARDS["FIL"] = new WildcardBlackbox()
+        this.RULES_WILDCARDS["FIL"].loadWeights(
+            weight_wildcard_blackbox["FIL"]["wildcardArchive"].forwardIndex,
+            weight_wildcard_blackbox["FIL"]["wildcardArchive"].index,
+            weight_wildcard_blackbox["FIL"]["wildcardArchive"].memory
+        ) 
+        
+        this.RULES_WILDCARDS["MAG"] = new WildcardBlackbox()
+        this.RULES_WILDCARDS["MAG"].loadWeights(
+            weight_wildcard_blackbox["MAG"]["wildcardArchive"].forwardIndex,
+            weight_wildcard_blackbox["MAG"]["wildcardArchive"].index,
+            weight_wildcard_blackbox["MAG"]["wildcardArchive"].memory
+        ) 
 
         // set this to TRUE To show debug message
         // this is default for local tests
@@ -300,7 +324,6 @@ export default class Engine {
         peek("MAG","MAG")
     }
 
-
     printWildCards(lang){
         console.log(`Lang selected:: ${lang}`)
         let forwardIndex = this.RULES_WILDCARDS[lang]
@@ -339,10 +362,6 @@ export default class Engine {
                     
                     if ( Array.isArray(rule.pattern )){
 
-                        // let wildcardPatterns = rule.pattern.filter(candidate => {
-                        //     return candidate.includes('*')
-                        // })
-
                         let wildcardPatterns = []
                         rule.pattern.forEach(p=>{
                             if ( p.includes('*') ){
@@ -368,6 +387,8 @@ export default class Engine {
             })
 
         
+        console.log(`Engine::Wildcard blackbox:: `)
+        console.log(this.RULES_WILDCARDS)
     }
 
     buildLanguageClassifier() {
@@ -446,7 +467,7 @@ export default class Engine {
         console.log('Loading Memory Model')
 
         Object.keys(this.LANG)
-            .forEach((lang,value)=>{
+            .forEach((lang)=>{
 
                 this.memory[lang] = {}
 
@@ -460,9 +481,10 @@ export default class Engine {
                         })
 
                         if ( filtered.length > 0){
-                            // console.log(`\t\tDimension - ${dimension} | ${this.SELFCARE_DIMENSIONS[dimension]}| ${filtered.length} cases\n\t\t\t${filtered}`)
+                            // console.log(`\t\tDimension - ${dimension} | ${this.SELFCARE_DIMENSIONS[dimension]}| 
+                            // ${filtered.length} cases\n\t\t\t${filtered}`)
                             let mem = new Blackbox()
-                            mem.storeRules(filtered)
+                            mem.storeMemories(filtered)
                             mem.sortReferences()
                             this.memory[lang][dimension] = mem
                         }
@@ -620,6 +642,8 @@ export default class Engine {
         let searchOrderDimensionResults = []
 
         let executeWildcardMatching = (str,lang,note="")=>{
+
+            // console.error(`Engine::executewildcardMatching:: should begin `)
             let result = this.RULES_WILDCARDS[lang].getReplyUsingWildcardMatching(str)
 
             method = "Wildcard matching"
@@ -745,7 +769,7 @@ export default class Engine {
         // Precondition 5 For BM25+ 
         // remaining sentences must be more than two words else
         // else mas madali kasi mag match this will also avoid skewing the results favoring longer
-        allowBM25Matching = finalNormalizedInput.length > 2 ? true: false
+        allowBM25Matching = finalNormalizedInput.split(' ').length > 2 ? true: false
 
         // also make it an error if the user asks more than 2 sentences
         // say that they can only respond one at a time
@@ -785,8 +809,6 @@ export default class Engine {
             // method = "Regular Cosine Similarity"
             // method = "TFIDF Cosine"
 
-
-
             if (this.debug){
                 // SUMMARY INFORMATION RETRIEVAL
                 console.log("\nTest Case:: ", msg)
@@ -813,6 +835,8 @@ export default class Engine {
             }
 
             if ( targetRule.score < this.REPLY_THRESHOLD  ){
+                // console.log(`Engine::getReply -> Should Execute Wildcard matching after Cosine Similarity
+                //                 \n\tInput::${finalNormalizedInput}\n\tLength::${finalNormalizedInput.split(' ').length}`)
                 let additionalMessage = "[Executing Wildcard Matching due to low BM25score]"
                 executeWildcardMatching(finalNormalizedInput,lang,additionalMessage)
             }else{
@@ -854,6 +878,8 @@ export default class Engine {
                 console.log(`Engine::getReply [Total not found in vocabulary] - ${wordsNotFoundInVocabularyList}`)
             }
 
+            // console.log(`Engine::getReply -> Should Execute Wildcard matching (no cosine matching since its direct)
+            //                 \n\tInput::${finalNormalizedInput}\n\tLength::${finalNormalizedInput.split(' ').length}`)
             executeWildcardMatching(finalNormalizedInput,lang,"[Executing Wildcard Matching because domain word not found]")
     
         }

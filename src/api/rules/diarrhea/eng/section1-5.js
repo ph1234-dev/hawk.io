@@ -18,11 +18,9 @@ let section4 = [
     // ],1),
     encodeMemory([
         `* sweet * diarrhea *`,
-        `How do artificial sweet induce diarrhea`,
-        `How do sweet lead contribute to diarrhea`,
-        `What causes sweeteners to trigger diarrhea`,
-        `tell why does sweet result trigger diarrhea`,
-        `how can sweets make you diarrhea`,
+        `tell why does How artificial sweeteners contribute lead trigger induce diarrhea`,
+        // `sweeteners causes result trigger diarrhea`,
+        // `how can sweets make you diarrhea`,
     ],[
         `
         Sweets could trigger diarrhea due to their ability to create an osmotic effect in the intestines, drawing water from the body into the digestive tract, and also due to their ability to stimulate the production of digestive enzymes and increase gut motility, leading to incomplete absorption of nutrients and water. Also , sometimes sweets are not well absorbed by the body and can ferment in the gut, causing gas, bloating and diarrhea in susceptible individuals. For example, lactose-intolerant people lack the enzyme lactase, which is necessary to break down the lactose in milk and dairy products. If lactose is not broken down properly, it can cause diarrhea.
@@ -30,9 +28,8 @@ let section4 = [
     ],1),
     encodeMemory([
         `* allergy * diarrhea *`,
-        `How does a allergy lead contribute to diarrhea`,
         `What causes allergies to trigger diarrhea`,
-        `tell why does allergy result trigger diarrhea`,
+        `tell why how does allergy result ead contribute trigger diarrhea`,
     ],[
         `Allergies can trigger diarrhea as a result of the body's immune response to an allergen. When an allergen is detected, the immune system releases histamine and other chemicals that can cause inflammation and irritation in the gut. This inflammation can lead to increased gut motility, reduced water absorption, and the secretion of excess fluid into the intestines, resulting in diarrhea.`
     ],1),
@@ -59,8 +56,8 @@ let section4 = [
     // ],1),
     encodeMemory([
         `* parasite * diarrhea *`,
-        `tell What How causes parasite infection to trigger diarrhea`,
-        `tell Why does parasitic infection result in diarrhea`,
+        `tell What How Why causes parasite infection to trigger diarrhea`,
+        // `tell  does parasitic infection result in diarrhea`,
   
     ],[
         `Parasites can attach themselves to the intestinal walls, causing damage and releasing toxins that can trigger an immune response and inflammation. This inflammation can lead to increased gut motility, reduced water absorption, and the secretion of excess fluid into the intestines, resulting in diarrhea. Additionally, some parasites can produce enzymes that interfere with the digestion and absorption of nutrients, leading to malabsorption and diarrhea.
@@ -68,18 +65,16 @@ let section4 = [
     ],1),
     encodeMemory([
         `* bacteria * diarrhea * `,
-        `How does bacterial infection contribute lead to diarrhea`,
-        `What causes bacterial infection to trigger diarrhea`,
-        `Why does bacterial infection result in diarrhea`,
-        `tell why  does bacteria cause diarrhea`,
+        `How Why does bacterial infection result contribute lead to diarrhea`,
+        `tell why what do causes bacterial infection to trigger diarrhea`,
     ],[
         `Bacterial infections are able to cause diarrhoea because of the production of toxins which damage the intestine, causing inflammation and irritation. Also, it triggers the release of fluid from the gastrointestinal tract. By secreting enzymes which break down food in the gut and lead to malabsorption and diarrhea, bacteria can interrupt absorption of nutrients and water.`
     ],1),
     encodeMemory([
-        `*  virus * diarrhea * `,
-        `tell How does virus infection trigger result to diarrhea`,
-        `What causes virus infection to trigger diarrhea`,
-        `tell why  does virus cause lead diarrhea`,
+        `* virus * diarrhea * `,
+        // `tell How does virus infection trigger result to diarrhea`,
+        `tell how why What causes virus lead infection result to trigger diarrhea`,
+        // `tell why does virus cause lead diarrhea`,
     ],[
         `Infections caused by viruses may lead to damage to the lining of the intestinal tract, which can decrease your body's ability to absorb water and nutrients. The viruses could be stimulating the body's release of chemicals that are increasing gut motility, which would lead to diarrhea. There are a variety of viruses that can cause diarrhoea, including noroviruses, rotavirus and adenoviruses which may spread easily through contaminated food or water; close contact with an infected person.`
     ],1),
@@ -92,12 +87,10 @@ let section4 = [
     //     `Gastrointestinal tract function can be impaired due to digestive problems. For example, inflammation, irritation and damage to the intestinal lining can be caused by conditions like Inflammatory Bowel Disease, Ulcerative colitis, small intestinal bacterial overgrowth,Irritable bowel Syndromes or Celiac disease which leads to Diarrhoea. There may also be digestive problems causing diarrhoea associated with some medications and dietary habits. In the management of diarrhoea it is vital to correctly diagnose and treat an underlying digestive condition.`
     // ],1),
     encodeMemory([
-        `* get *  diarrhea * where *`,
-        `How does someone contract diarrhea`,
-        `What are the factors causes lead contribute to diarrhea`,
-        `What are the ways diarrhea can be acquired`,
+        `* get * diarrhea * where *`,
+        `tell what are the factors gives causes lead contribute diarrhea`,
+        `What are the ways contract diarrhea can be acquired`,
         `how do you get diarrhea`,
-        `tell me what are the causes of diarrhea`,
     ],[
         `Contamination of food and water, e.g. foodstuffs that were not properly prepared or handled, can cause diarrhoea. Taking some medicines such as antibiotics can also cause diarrhea by altering the balance of bacteria in your digestive tract and lead to gastrointestinal disorders. Stress, dietary adjustments and health conditions may also contribute to the development of diarrhoea. Some foods containing lactose and fructose can also cause diarrhea for some people who are unable to digest them. The risk of developing diarrhoea may be reduced. This can be done by ensuring good hygiene such as frequent hand washing, safe handling of food, and avoiding certain foods containing lactose and fructose which are present in dairy products and sweets.
         `
@@ -109,9 +102,8 @@ let section5 = [
     encodeMemory([
         `* hydrate * treat * diarrhea *`,
         `* take * water * treat * diarrhea *`,
-        `How does replenishing fluids drinking water treat diarrhea`,
-        `What are the benefits of drinking water when dealing with diarrhea`,
-        `Why is it important to drink water when experiencing diarrhea`,
+        `What how does the benefits of drinking water treat when dealing with diarrhea`,
+        `Why how is it important to keep hydrated when having diarrhea`,
     ],[
         `
         Staying hydrated is important because diarrhea can lead to significant fluid loss. Diarrhea causes the body to lose water and electrolytes, such as sodium and potassium, which are essential for normal bodily functions.
@@ -123,10 +115,8 @@ let section5 = [
     ],7),
     encodeMemory([
         `* zinc * treat * diarrhea *`,
-        `How does zinc treat diarrhea`,
-        `How does zinc help reduce the duration and severity of diarrhea`,
-        `What are the effects of taking zinc for treatment`,
-        `tell why does zinc help with diarrhea`,
+        `tell how does zinc help treat reduce the duration and severity of diarrhea`,
+        `tell What are the effects of taking zinc for treatment`,
     ],[
         `
         Zinc supplementation has been found to reduce the duration and severity of diarrhoeal episodes and likelihood of subsequent infection. It may also help to maintain the balance of fluids and electrolytes, which can be disturbed when diarrhoea occurs. Moreover, to prevent the risk of further infections, zinc supplements can also help restore healthy intestinal flora. However, because excessive zinc intake can be detrimental, it is advisable that all supplements should be discussed with a healthcare professional prior to use.
@@ -145,9 +135,8 @@ let section5 = [
     // ],4),
     encodeMemory([
         `* consult * doctor * treat * diarrhea *`,
-        `How can a doctor help me to treat my diarrhea`,
-        `When does diarrhea require medical attention`,
-        `When is it necessary important to consult for diarrhea`,
+        `How when can a doctor consult necessary help me to treat my diarrhea`,
+        `When does diarrhea require medical doctor attention`,
     ],[
         `If diarrhoea persists for a longer period of time or leads to other symptoms like fever, serious gastrointestinal pain and blood in the stool, it's important to talk to your doctor. The physician may be able to help diagnose the primary cause of diarrhea and give proper treatment that might include medication, dietary changes or further testing. It is important to seek treatment. If untreated diarrhoea may cause dehydration or more serious complications.`
     ],5),
@@ -172,9 +161,7 @@ let section5 = [
     encodeMemory([
         `* where * treat * diarrhea *`,
         `* treat * diarrhea * where *`,
-        `Where can I be treated for diarrhea`,
-        `Where can I receive treatment for diarrhea`,
-        `Where should I go to get help with diarrhea`,
+        `Where should can I go to receive treatment help for diarrhea`,
     ],[
         `
         Depending on the severity of symptoms, treatment with diarrhea can be taken at home or in a healthcare facility. Rest, hydration and dietary modification are usually the most effective ways to treat mild cases of diarrhoea. Symptoms may also be relieved by the use of over the counter medicinal products such as loperamide and bismuth subsalicylate. But urgent treatment should be initiated if diarrhea is severe or accompanied by any other symptoms, including fever, dehydration and blood in the stool.Also if diarrhea persist more than 48 hours, bring the patient to a healthcare facility immediately. Go to nearest baranggay health center
@@ -195,10 +182,9 @@ let section5 = [
     // ],5),
     encodeMemory([
         `* blood * (stool|diarrhea) *`,
-        `If I notice  there is blood in my stool, what steps should I take`,
-        `Is it concerning if there is blood in my stool, and what should I do`,
-        `What is the recommended proper response action if I have blood in my stool`,
-        `What should I do if I find blood in my stool`,
+        // `If I notice there is blood in my stool, what steps should I take`,
+        `what should I do if there is blood in my stool`,
+        `What is the recommended proper response action if I have seen blood in my stool`,
     ],[
         `
         It is essential to seek professional advice immediately if you notice blood in your diarrhea. It could be a sign of severe illness, for example Inflammatory bowel disease, infection or other digestive disorders.  Don’t take on the counter medicines such as antimotility agents like antimotilities and bismuth subsalicylate. Keep hydrating yourself. In order to treat the underlying cause of the bloody diarrhoea, your doctor may recommend testing and prescribing medicinal products.
@@ -207,15 +193,13 @@ let section5 = [
     encodeMemory([
         `* diarrhea * fever *`,
         `* fever * diarrhea *`,
-        `how do you treat diarrhea with fever`,
-        `How should I manage fever and diarrhea at the same time`,
-        `If I have a fever and diarrhea, what steps should I take`,
+        `How should you tream manage fever and diarrhea at the same time`,
+        `If Im suffering from fever and diarrhea, what steps should I take`,
         `I have fever and diarrhea`,
         `tell me what to do when i have fever with diarrhea`,
-        `If suffering experiencing  from fever and diarrhea`,
-        `What can I do to manage if I have a fever and diarrhea together`,
-        `What should I do if I have a fever with diarrhea`,
-        `What the treatment if I have a fever while experiencing diarrhea`,
+        `tell What can I do to manage if I have a fever and diarrhea together`,
+        // `What should I do if I have a fever with diarrhea`,
+        `tell What the treatment should I do  if I have a fever while experiencing diarrhea`,
     ],[
         `
         When you have a fever, apply damp, luke warm cloths to the forehead. Wear comfortable cloths. If you have chills, it is best to wear layers and keep warm. Then rest. You need plenty of rest to recover.
@@ -230,14 +214,10 @@ let section5 = [
     encodeMemory([
         `* treat * diarrhea *`,
         `(pills?|Medicine) for diarrhea`,
-        `How can I relieve treat manage diarrhea`,
-        `What are some natural remedies ways to treat diarrhea`,
-        `What are some treatment options for diarrhea`,
-        `What can I do to treat diarrhea`,
-        `What drugs can be used to treat diarrhea`,
-        `What home remedies can treat diarrhea`,
-        `What remedies medicines can I use to treat diarrhea`,
-        `how do you treat manage diarrhea`,
+        `How do you can I manage relieve treat manage diarrhea`,
+        `What are natural remedies drugs treatment options for diarrhea`,
+        `tell What can I do to treat diarrhea`,
+        `tell What remedies medicines can I use to treat diarrhea`,
     ],[
         `The treatment of diarrhea depends on the underlying cause. For minor cases, over the counter remedies such as antimotility or bismuth subsicylate can help. However, drinking plenty of fluids like broths, soups, sports drinks, coconut water, water, oral rehydration solutions and avoiding drinks which can aggravate a stomach , like alchohol , should be taken into account. You need to stay hydrated. If symptoms persist, it is important to consult your doctor for a proper diagnosis and treatment.`
 

@@ -29,7 +29,7 @@ let logout = ()=>{
                     <a ><span class="icofont-safety"></span> {{ user.name }}</a>
                     <a @click.stop="logout()" ><span class="icofont-sign-out"></span>Logout</a>
                 </span>
-            </template>
+            </template> 
             
         </span>
     </nav>
