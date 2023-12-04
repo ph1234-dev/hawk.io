@@ -2,18 +2,18 @@ import { encodeMemory } from "@/api/config/model"
 
 
 let section11 = [
-    encodeMemory([
-        `* generic * antimotility *`,
-        `tell show give about What are common names branded list antimotility`, 
-        ],[
-        `Loperamide is a popular example of an antimotility drug. It is available in various forms, including tablets, capsules, and liquid suspensions, and is typically taken orally . It is important to follow the recommended dosage and usage instructions to avoid any potential side effects or complications. `
-    ],7),
-    encodeMemory([
-        `* branded * antimotility *`,
-        `tell show give about What are common names branded list antimotility`, 
-    ],[
-        `There is Imodium which is a branded name for antimotility.  To avoid  side effects or complications, the recommended dosage and use instructions should be followed.`
-    ],7),
+    // encodeMemory([
+    //     `* generic * antimotility *`,
+    //     `tell show give about What are common names branded list antimotility`, 
+    //     ],[
+    //     `Loperamide is a popular example of an antimotility drug. It is available in various forms, including tablets, capsules, and liquid suspensions, and is typically taken orally . It is important to follow the recommended dosage and usage instructions to avoid any potential side effects or complications. `
+    // ],7),
+    // encodeMemory([
+    //     `* branded * antimotility *`,
+    //     `tell show give about What are common names branded list antimotility`, 
+    // ],[
+    //     `There is Imodium which is a branded name for antimotility.  To avoid  side effects or complications, the recommended dosage and use instructions should be followed.`
+    // ],7),
     encodeMemory([
         `* (what|how) * (take|direction|dosing) * antimotility *`,
         `* how * antimotility * take *`,
@@ -31,7 +31,7 @@ let section11 = [
         `What is the definition of antimotility`,
         `tell me describe about antimotility`,
     ],[
-        `Antimotility drugs are used to slow down or stop the movement of the gastrointestinal tract. It works by binding to the opioid receptors in the intestinal muscles, which reduces their contractions and helps to slow down the passage of stool through the gut. `
+        `Antimotility drugs such as loperamide and immodium are used to slow down or stop the movement of the gastrointestinal tract. It works by binding to the opioid receptors in the intestinal muscles, which reduces their contractions and helps to slow down the passage of stool through the gut. These medicines are available in various forms such as tablets, capsules, liquids and suspensions.`
     ],7),
     encodeMemory([
         `* what * use * antimotility *`,
@@ -39,12 +39,12 @@ let section11 = [
         `tell me What conditions does antimotility treat`,
         `What is the purpose of antimotility`,
     ],[
-        `Antimotility agents mainly focus on treating symptoms of diarrhea by reducing or preventing intestinal contractions that restrict the movements of food and liquids through the GI tract. It also provides the body with more time to absorb water and nutrients from remaining intestinal contents, which may lead to a decrease in bowel movement frequency and intensity.`
+        `Antimotility agents  such as loperamide and immodium  mainly focus on treating symptoms of diarrhea by reducing or preventing intestinal contractions that restrict the movements of food and liquids through the GI tract. It also provides the body with more time to absorb water and nutrients from remaining intestinal contents, which may lead to a decrease in bowel movement frequency and intensity. These medicines are available in various forms such as tablets, capsules, liquids and suspensions. `
     ],7),
     encodeMemory([
         `* how * antimotility * work *`,
         `tell me How does antimotility work reduce stool frequency bowel movements diarrhea`,  
-        `How does the use function of antimotility improve treat diarrhea`,
+        `How does the use function of antimotility`,
     ],[
         `Antimotility medicines,such as Loperamide and Imodium, prevents the intestines from moving and may be used to treat diarrhea. These works by making the absorption of water and electrolytes more rapid in your stool. Thus, it gives you a better or lesser frequency of bowel movements. The medicine normally takes about an hour to help with your diarrhea symptoms, but it can vary from  person to person. However, it bear in mind that they may not be appropriate for every patient and can have a potential side effect.`
     ],7),
@@ -63,7 +63,7 @@ let section11 = [
     encodeMemory([
         `* effect * antimotility *`,
         `What are the side effects of taking antimotilities `,
-        `What are the adverse risks negative side effects reactions of using antimotility to treat diarrhea`,
+        `What are the adverse risks negative side effects reactions of using antimotility`,
         `What are the potential side effects dangers complications that may occur when taking antimotility`,
     ],[
         `Antimotilities can cause dizziness, drowsiness, or tiredness.  Don't drive or do anything that requires you to focus until you know how the medication affects you. If you happen to experience stomach swelling, contact a doctor immediately`
@@ -80,29 +80,28 @@ let section11 = [
 
         It is important to follow the instructions of your healthcare provider or the medication label carefully.`
     ],7),
-    encodeMemory([
-        `* price  * antimotility *`,
-        `* antimotility * price *`,
-        `How expensive Loperamide cost`,
-        `Please tell give me What the cost price of Loperamide.`,
-    ],[
-        `Loperamide  is available as a generic medication and may be significantly cheaper compared to the brand version. In watsons, it is sold at 2mg (4pcs) for 72 pesos. It may be lower in other pharmacies.`
-    ],7),
-    encodeMemory([
-        `* forms * antimotility *`,
-        `show me a list of What are the different types of Loperamide available`,
-        `What does Loperamide come in tell me about the forms`
-    ],[
-        `Antimotilities are available in various forms such as tablets, capsules, liquids and suspensions. Rectally administering certain medicinal products such as suppositories or enemas may also be . Loperamide, which is available in both tablets and liquid forms, is a very common antimotility medicine.`
-    ],7),
+    // encodeMemory([
+    //     `* price  * antimotility *`,
+    //     `* antimotility * price *`,
+    //     `How expensive Loperamide cost`,
+    //     `Please tell give me What the cost price of Loperamide.`,
+    // ],[
+    //     `Loperamide  is available as a generic medication and may be significantly cheaper compared to the brand version. In watsons, it is sold at 2mg (4pcs) for 72 pesos. It may be lower in other pharmacies.`
+    // ],7),
+    // encodeMemory([
+    //     `* forms * antimotility *`,
+    //     `show me a list of What are the different types of Loperamide available`,
+    //     `What does Loperamide come in tell me about the forms`
+    // ],[
+    //     `Antimotilities are available in various forms such as tablets, capsules, liquids and suspensions. Rectally administering certain medicinal products such as suppositories or enemas may also be . Loperamide, which is available in both tablets and liquid forms, is a very common antimotility medicine.`
+    // ],7),
     encodeMemory([
         `* alternative * antimotility *`,
         `Are there any other herbal medications remedies I can take instead of Loperamide`, 
         `Are there natural alternative remedies that can replace Loperamide`, 
         `Can you recommend alternative herbal treatments to Loperamide`, 
-        `Is there anything else I can take besides Loperamide for diarrhea`, 
+        `Is there anything else I can take besides Loperamide`, 
         `What are some options herbal substitutes besides Loperamide`, 
-        `What other herbal drugs are available for diarrhea`, 
         `tell me what about the natural alternative to antimotilities`,
     ],[
         // 
@@ -111,19 +110,19 @@ let section11 = [
         `
     ],7),
     // bismuth subsalicylate
-    encodeMemory([
-        `* generic * bismuth *`,
-        `tell show give about What are common names branded list bismuth`, 
-    ],[
-        `Bismuth subsalicylate is a generic drug that can be bought in pharmacies. To avoid  side effects or complications, the recommended dosage and usage instructions should be followed.`
-    ],7),
-    encodeMemory([
-        // https://www.mayoclinic.org/drugs-supplements/bismuth-subsalicylate-oral-route/description/drg-20068521
-        `* branded * bismuth * drugs *`,
-        `tell show give about What are common names branded list bismuth drugs`, 
-    ],[
-        `Some of the known ones are Pepto-Bismol and Bismatrol. To avoid  side effects or complications, the recommended dosage and usage instructions should be followed.`
-    ],7),
+    // encodeMemory([
+    //     `* generic * bismuth *`,
+    //     `tell show give about What are common names branded list bismuth`, 
+    // ],[
+    //     `Bismuth subsalicylate is a generic drug that can be bought in pharmacies. To avoid  side effects or complications, the recommended dosage and usage instructions should be followed.`
+    // ],7),
+    // encodeMemory([
+    //     // https://www.mayoclinic.org/drugs-supplements/bismuth-subsalicylate-oral-route/description/drg-20068521
+    //     `* branded * bismuth * drugs *`,
+    //     `tell show give about What are common names branded list bismuth drugs`, 
+    // ],[
+    //     `Some of the known ones are Pepto-Bismol and Bismatrol. To avoid  side effects or complications, the recommended dosage and usage instructions should be followed.`
+    // ],7),
     encodeMemory([
 
         `* (how|what) * (direction|dose|take|eat) * bismuth*`,
@@ -131,7 +130,7 @@ let section11 = [
         `What are directions for taking bismuth subsalicylate`,
         `What How is the proper way to take bismuth subsalicylate`,
         `tell me What correct recommended dosage administration of bismuth subsalicylate`,
-        `tell me how do you use bismuth subsalicylate to treat diarrhea`,
+        `tell me how do you use bismuth subsalicylate`,
     ],[
         `The proper way of taking of Bismuth Subsalicylate usually depends. There are difference between the tablets and the liquid forms.
          
@@ -149,14 +148,14 @@ let section11 = [
         `What is the definition meaning of bismuth subsalicylate`,
         `tell me what about bismuth subsalicylate`  
     ],[
-        `Bismuth subsalicylate (Pepto-Bismol) is an over-the-counter medication used to treat upset stomach and diarrhea. It works well to stop diarrhea, but you might need to take it multiple times a day. This medicine is generally well-tolerated, but it can cause harmless darkening of your tongue or stools.
+        `Bismuth subsalicylate (such as Pepto-Bismol and Bismatrol) is an over-the-counter medication used to treat upset stomach and diarrhea. It works well to stop diarrhea, but you might need to take it multiple times a day. This medicine is generally well-tolerated, but it can cause harmless darkening of your tongue or stools. It also comes in several forms, including tablets, capsules, liquid suspension, and chewable tablets, depending on the manufacturer and the specific condition being treated
         `
     ],7),
     encodeMemory([
         `* use * bismuth *`,
         `tell me what is the purpose usage of bismuth subsalicylate`,
     ],[
-        `Bismuth subsalicylate is an over-the-counter medication used for treatment of diarrhea, gas, upset stomach, indigestion, heartburn,nausea and as a prophylaxis for traveler's diarrhea`
+        `Bismuth subsalicylate (such as Pepto-Bismol and Bismatrol) is an over-the-counter medication used for treatment of diarrhea, gas, upset stomach, indigestion, heartburn,nausea and as a prophylaxis for traveler's diarrhea. It also comes in several forms, including tablets, capsules, liquid suspension, and chewable tablets, depending on the manufacturer and the specific condition being treated.`
     ],7),
     encodeMemory([
         `* bismuth * work *`,
@@ -166,7 +165,7 @@ let section11 = [
         `tell me how does bismuth subsalicylate work for treating`,
     ],[
         `
-        Bismuth subsalicylate is an oral antidiarrheal medicine which decreases inflammation and fluid in the gastrointestinal tract. It's also antibacterial, which can assist in fighting off the pathogens that cause diarrhea. Bismuth subsalicylate may help to treat symptoms such as abdominal cramping, diarrhoeal stools or nausea due to the reduction of inflammation and loss of fluids. However, it is important to note that bismuth subsalicylate should not be used by individuals with aspirin allergies, bleeding disorders, or renal impairment, and it should be used with caution in children and pregnant women.You shouldn’t use bismuth subsalicylate (Pepto-Bismol) for more than 2 days. 
+        Bismuth subsalicylate  (such as Pepto-Bismol and Bismatrol)is an oral antidiarrheal medicine which decreases inflammation and fluid in the gastrointestinal tract. It's also antibacterial, which can assist in fighting off the pathogens that cause diarrhea. Bismuth subsalicylate may help to treat symptoms such as abdominal cramping, diarrhoeal stools or nausea due to the reduction of inflammation and loss of fluids. However, it is important to note that bismuth subsalicylate should not be used by individuals with aspirin allergies, bleeding disorders, or renal impairment, and it should be used with caution in children and pregnant women.You shouldn’t use bismuth subsalicylate (Pepto-Bismol) for more than 2 days. 
         `
     ],7),
     encodeMemory([
@@ -196,19 +195,19 @@ let section11 = [
     ],[
         `Drink plenty of clear liquids while you are taking bismuth subsalicylate (Pepto-Bismol). Diarrhea can cause dehydration and drinking enough liquids will help prevent this. Swallow the capsules whole with water. Do not chew them. Swallow the capsules whole with water. Do not chew them.`
     ],7),
-    encodeMemory([
-        `* bismuth * price *`,
-        `How expensive is bismuth subsalicylate`,
-        `What How is the cost of bismuth subsalicylate`,
-    ],[
-        `It is often sold as pack. Based on the listings in iprice ph, its about 500 pesos. It may cost less though for individual tablets`
-    ],7),
-    encodeMemory([
-        `* forms * bismuth *`,
-        `Can you tell What list the different various available forms of bismuth subsalicylate`,  
-    ],[
-        `Bismuth subsalicylate is available in several forms, including tablets, capsules, liquid suspension, and chewable tablets, depending on the manufacturer and the specific condition being treated.`
-    ],7),
+    // encodeMemory([
+    //     `* bismuth * price *`,
+    //     `How expensive is bismuth subsalicylate`,
+    //     `What How is the cost of bismuth subsalicylate`,
+    // ],[
+    //     `It is often sold as pack. Based on the listings in iprice ph, its about 500 pesos. It may cost less though for individual tablets`
+    // ],7),
+    // encodeMemory([
+    //     `* forms * bismuth *`,
+    //     `Can you tell What list the different various available forms of bismuth subsalicylate`,  
+    // ],[
+    //     `Bismuth subsalicylate is available in several forms, including tablets, capsules, liquid suspension, and chewable tablets, depending on the manufacturer and the specific condition being treated.`
+    // ],7),
     encodeMemory([
         `* alternative * bismuth *`,
         `What natural herbal alternatives substitutes medications for bismuth subsalicylate`,
@@ -225,8 +224,8 @@ let section11 = [
 
 let section12 = [
     encodeMemory([
-        `* where * go * have * diarrhea *`,
-        `* where * treat * have * diarrhea *`,
+        `* where * go * have * diarrhea`,
+        `* where * treat * have * diarrhea`,
         `where What are the places to go seek relief for diarrhea treatment`,
     ],[
         `In most cases, diarrhea can be treated at home and it will resolve itself in a few days. 
@@ -235,7 +234,7 @@ let section12 = [
         If you really feel great discomfort , it has lasted for more than 2 days,seeing blood in your stool , or have fever, it is best for you to  go to nearby healthcare center`
     ],5),
     // encodeMemory([
-    //     `* acute * diarrhea *`,
+    //     `* acute * diarrhea`,
     //     `Can you explain what acute diarrhea is`,
     //     `How is acute diarrhea diagnosed`,
     //     `How would you describe acute diarrhea`,
@@ -247,7 +246,7 @@ let section12 = [
     //     `When diarrhea lasts 1 or 2 days then you have an acute one.  This may be caused by food or water that was contaminated -by bacteria, viruses, or parasites.  When you travel , there is a chance that you'll get what they call “travelers diarrhea”. You can manage your diarrhea by taking on the counter drugs and through rehydration. If  condition persist for more than 2 days, see blood in  your stool or have fever, you may want to go nearby     healthcare center for better help. `
     // ],1),
     // encodeMemory([
-    //     `* chronic * diarrhea *`,
+    //     `* chronic * diarrhea`,
     //     `Can you describe chronic diarrhea`,
     //     `What is the definition of chronic diarrhea`,
     //     `What is the meaning of chronic diarrhea`,   
@@ -271,7 +270,7 @@ let section12 = [
     //     `Diarrhea can be acute or chronic. Acute diarrhea is known to last for 1 to 2 days. Chronic diarrhea , on the other hand, last for several weeks. Both types of diarrhea may cause dehydration so keep hydrating to prevent this.`
     // ],1),
     // encodeMemory([
-    //     `* how * treat * acute * diarrhea *`, 
+    //     `* how * treat * acute * diarrhea`, 
     //     `What are some ways to manage acute diarrhea`,  
     //     `How do you control acute diarrhea`,   
     //     `How do you prevent dehydration during acute diarrhea`,  
@@ -282,7 +281,7 @@ let section12 = [
     //     `The first step to treating acute diarrhea is rehydration, preferably oral rehydration. Taking antimotilities may provide faster and more complete relief of acute nonspecific diarrhea and gas-related discomfort than either medication alone.`
     // ],1),
     // encodeMemory([
-    //     `* how * treat * chronic * diarrhea *`,
+    //     `* how * treat * chronic * diarrhea`,
     //     // chatgpt start
     //     `What are the treatment options for chronic diarrhea`,
     //     `How can chronic diarrhea be treated`,
@@ -298,24 +297,24 @@ let section12 = [
 ]
 
 let section13 = [
-    encodeMemory([
-        `* problem * diarrhea *`,
-        `* diarrhea * problem *`,
-        `tell What describe about diarrhea`,
-        `How can diarrhea affect your body`,  
-        `Tell me about the when having diarrhea`,
-        `What are the risks potential complications side effects dangers of untreated diarrhea`,    
-        `What health issues can arise from diarrhea`,  
-        `What other health problems can diarrhea lead to`,  
-    ],[
-        `Diarrhea is loose, watery stools three or more times a day. It can lead to low, moderate or very high dehydration which is the depletion of sufficient fluids in the body. In addition, a person may lose electrolytes, sodium chloride,potassium or bicarbonate which are needed by the body to properly function. This may be life threatening, so keep hydrated to replenish the lost fluids. Malabsorption may also be caused by diarrhoea. Insufficient absorption of nutrients from food into the body may result in malnutrition. Diarrhoea is associated with a number of other problems.
-        `
-    ],1),
+    // encodeMemory([
+    //     `* problem * diarrhea`,
+    //     `* diarrhea problem *`,
+    //     `tell What describe about diarrhea`,
+    //     `How can diarrhea affect your body`,  
+    //     `Tell me about the when having diarrhea`,
+    //     `What are the risks potential complications side effects dangers of untreated diarrhea`,    
+    //     `What health issues can arise from diarrhea`,  
+    //     `What other health problems can diarrhea lead to`,  
+    // ],[
+    //     `Diarrhea is loose, watery stools three or more times a day. It can lead to low, moderate or very high dehydration which is the depletion of sufficient fluids in the body. In addition, a person may lose electrolytes, sodium chloride,potassium or bicarbonate which are needed by the body to properly function. This may be life threatening, so keep hydrated to replenish the lost fluids. Malabsorption may also be caused by diarrhoea. Insufficient absorption of nutrients from food into the body may result in malnutrition. Diarrhoea is associated with a number of other problems.
+    //     `
+    // ],1),
 ]
 
 let section14 = [
     // encodeMemory([
-    //     `* ask * (sign|symptom) * diarrhea *`,
+    //     `* ask * (sign|symptom) * diarrhea`,
     //     `Can you direct me to information about the symptoms of diarrhea`,
     //     `Can you recommend a source to learn about the symptoms of diarrhea`,
     //     `I'm looking for information about the signs of diarrhea, where should I look`,
@@ -331,15 +330,15 @@ let section14 = [
     //     `I can provide you basic information on diarrhea such as the symptoms, causes, things to avoid, foods you can and shouldnt take, the treatments, and how to manage it. Further, I can explain these to help you perform self-care. However, I not a medical practicitioner and the information I provide are meant for awareness only.If you find the it inadequate , it is best to ask your doctor for advises.
     //     `
     // ],5),
+    // encodeMemory([
+    //     `* where * (go|treat) * (sign|symptom) * diarrhea`,
+    //     `Where can go for help or find seek treatment for diarrhea symptoms signs`,
+    // ],[
+    //     `In most cases, diarrhea can be treated at home with home remedies and over-the-counter medications. Home remedies include rest, drinking plenty of fluids , like water and buko juice , and eating a bland diet.  Taking over-the-counter medications such as Loperamide, oral rehydration solutions, and bismuth subsalicylate may also help relieve the symptoms. However, if symptoms are severe, or there are signs of dehydration, it is important to seek medical attention. Primary care physicians can  evaluate you and provide appropriate guidance to help manage the your diarrhea.`
+    // ],5),
     encodeMemory([
-        `* where * (go|treat) * (sign|symptom) * diarrhea *`,
-        `Where can go for help or find seek treatment for diarrhea symptoms signs`,
-    ],[
-        `In most cases, diarrhea can be treated at home with home remedies and over-the-counter medications. Home remedies include rest, drinking plenty of fluids , like water and buko juice , and eating a bland diet.  Taking over-the-counter medications such as Loperamide, oral rehydration solutions, and bismuth subsalicylate may also help relieve the symptoms. However, if symptoms are severe, or there are signs of dehydration, it is important to seek medical attention. Primary care physicians can  evaluate you and provide appropriate guidance to help manage the your diarrhea.`
-    ],5),
-    encodeMemory([
-        `* how * tell * has * diarrhea *`,
-        `* symptom * diarrhea *`,
+        `* how * tell * has * diarrhea`,
+        `* symptom * diarrhea`,
         `What are the common characteristics typical visible warning signs and symptoms of diarrhea`,
         `get give show tell explain describe list of the symptom signs of diarrhea`,
         `how can you tell if someone suffering has diarrhea`,

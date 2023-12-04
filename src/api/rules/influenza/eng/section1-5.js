@@ -95,23 +95,23 @@ let section5 = [
     // ],[
     //     `Your body needs better nutrition to recover from the flu. Fresh fruits and vegetables provide important vitamins, minerals, and antioxidants that strengthen your immune system as it fights off the virus.`
     // ],4),
-    encodeMemory([
-        `* consult * doctor * treat * influenza *`,
-        // `At what point should I see a doctor for the flu`,
-        // `At what stage of the flu should I consider consulting a doctor`,
-        // `How do I know when it's time to see a doctor for the flu`,
-        // `What are the indications that I need to seek medical advice for the flu`, 
-        // `What are the signs that I should seek medical attention for the flu`,
-        `What is the importance of onsulting a doctor for influenza treatment`, 
-        `When do I need to consult or go to thedoctor for the flu`,
-        // `When is it appropriate to seek medical care for the flu`,
-        // `When is it necessary to see a healthcare professional for the flu`,
-        `When should I see a doctor for the flu`,
-        `Why is it recommended to see a doctor for influenza treatment`,  
-        `tell me why do i need to see a doctor when having influenza`
-    ],[
-        `Flu will often get better on its own, but it can make some people seriously ill.In some cases, the flu can lead to complications such as pneumonia, which can be serious and even life-threatening. A doctor can also prescribe antiviral medication. If you are at special risk of complications, contact your doctor as soon as your symptoms begin`
-    ],5),
+    // encodeMemory([
+    //     `* consult * doctor * treat * influenza *`,
+    //     // `At what point should I see a doctor for the flu`,
+    //     // `At what stage of the flu should I consider consulting a doctor`,
+    //     // `How do I know when it's time to see a doctor for the flu`,
+    //     // `What are the indications that I need to seek medical advice for the flu`, 
+    //     // `What are the signs that I should seek medical attention for the flu`,
+    //     `What is the importance of onsulting a doctor for influenza treatment`, 
+    //     `When do I need to consult or go to thedoctor for the flu`,
+    //     // `When is it appropriate to seek medical care for the flu`,
+    //     // `When is it necessary to see a healthcare professional for the flu`,
+    //     `When should I see a doctor for the flu`,
+    //     `Why is it recommended to see a doctor for influenza treatment`,  
+    //     `tell me why do i need to see a doctor when having influenza`
+    // ],[
+    //     `Flu will often get better on its own, but it can make some people seriously ill.In some cases, the flu can lead to complications such as pneumonia, which can be serious and even life-threatening. A doctor can also prescribe antiviral medication. If you are at special risk of complications, contact your doctor as soon as your symptoms begin`
+    // ],5),
     encodeMemory([
         `can i treat manage influenza myself`,
         `do i need help when i treat influenza`,

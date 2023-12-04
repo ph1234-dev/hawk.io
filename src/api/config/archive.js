@@ -498,8 +498,8 @@ class WilcardArchive{
     
     let callback = (a,b)=>{
       // a and b are instance of BasicLines
-      let responseALength = a.pattern.split(' ').length
-      let responseBLength = b.pattern.split(' ').length
+      let responseALength = a.rawPattern.split(' ').length
+      let responseBLength = b.rawPattern.split(' ').length
       return responseBLength - responseALength
     }
 
@@ -574,7 +574,6 @@ class WilcardArchive{
       }
     })
 
-    this.sortMemory()
   }
 
   printForwardIndex(){

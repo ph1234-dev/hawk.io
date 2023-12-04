@@ -133,13 +133,13 @@ let section5 = [
     // ],[
     //     `It's a vital thing to eat well because it supports your body's immune system. It is also possible to decrease irritation of the digestive tract and avoid further diarrhoea. Eat bland, easy to digest foods such as bananas, rice, cooked potatoes or any other chicken or fish. In addition, these foods have a high content of fibre, potassium and protein which are important for recovery. To prevent further gastrointestinal irritation and reduce the risk of complication, it is recommended that you do not eat high fat, salty, spicy or sugary foods.`  
     // ],4),
-    encodeMemory([
-        `* consult * doctor * treat * diarrhea *`,
-        `How when can a doctor consult necessary help me to treat my diarrhea`,
-        `When does diarrhea require medical doctor attention`,
-    ],[
-        `If diarrhoea persists for a longer period of time or leads to other symptoms like fever, serious gastrointestinal pain and blood in the stool, it's important to talk to your doctor. The physician may be able to help diagnose the primary cause of diarrhea and give proper treatment that might include medication, dietary changes or further testing. It is important to seek treatment. If untreated diarrhoea may cause dehydration or more serious complications.`
-    ],5),
+    // encodeMemory([
+    //     `* consult * doctor * treat * diarrhea *`,
+    //     `How when can a doctor consult necessary help me to treat my diarrhea`,
+    //     `When does diarrhea require medical doctor attention`,
+    // ],[
+    //     `If diarrhoea persists for a longer period of time or leads to other symptoms like fever, serious gastrointestinal pain and blood in the stool, it's important to talk to your doctor. The physician may be able to help diagnose the primary cause of diarrhea and give proper treatment that might include medication, dietary changes or further testing. It is important to seek treatment. If untreated diarrhoea may cause dehydration or more serious complications.`
+    // ],5),
     // encodeMemory([
     //     `* who * treat * diarrhea *`,
     //     `Who can diagnose and treat my diarrhea`,
@@ -218,6 +218,9 @@ let section5 = [
         `What are natural remedies drugs treatment options for diarrhea`,
         `tell What can I do to treat diarrhea`,
         `tell What remedies medicines can I use to treat diarrhea`,
+        `tell me how do you treat or recover from diarrhea`,
+        `how do you take treat manage care of yourself when having diarrhea`,
+
     ],[
         `The treatment of diarrhea depends on the underlying cause. For minor cases, over the counter remedies such as antimotility or bismuth subsicylate can help. However, drinking plenty of fluids like broths, soups, sports drinks, coconut water, water, oral rehydration solutions and avoiding drinks which can aggravate a stomach , like alchohol , should be taken into account. You need to stay hydrated. If symptoms persist, it is important to consult your doctor for a proper diagnosis and treatment.`
 

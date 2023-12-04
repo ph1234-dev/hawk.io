@@ -55,6 +55,7 @@ let data = []
 
 data.push(
     encodeMemory([
+        `* gamot * uta *`
         `* (awa|gamot|kapya|tabang) * uta * `,
         `amayka su taw na nanguta na ngin i pakan o painom lon`,
         `ngen i mapakay a kanen, inomen, o pamasan na taw a panguta`,
@@ -80,6 +81,7 @@ data.push(
 // nausea
 data.push(
     // nausea should be added in the dictionary
+    encodeMemory([
         `* (awa|gamot|kapya|tabang) * (langot|langut) *`,
         `* (ngen|panon) * (awa|gamot|kapya|tabang) * (langot|langut) *`,
         `* ngen * di * (kan|inom|pamasa) * (langot|langut) * `,
@@ -89,7 +91,6 @@ data.push(
         `ngen i gamot na taw a ga(langot|langut)`,
         `ngen i mga di mapya a kenen na taw a ga(langot|langut)`,
         `panon i kagamot sa taw a galanot`,
-    encodeMemory([
         // chatgpt end
     ],[
         // reference

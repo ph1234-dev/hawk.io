@@ -54,7 +54,7 @@ let section6 = [
     encodeMemory([
         `* (wear|use) * mask * `,
         `What the advantage of wearing a face mask when suffering from influenza`,
-        `Why do recommend wearing a face mask when you have the flu`,
+        `Why do recommend wearing a face mask when you have the flu`,   
         `Why should people wear face masks when they have the flu`,
         `tell me why do you use or wear mask if coughing , sneezing or having influenza`
     ],[
@@ -169,7 +169,7 @@ let section8 = [
     encodeMemory([
         `* influenza_foods_not_allowed_sugary_foods * `,
         `* influenza_foods_not_allowed_sugary_foods * influenza *`,
-        `why avoid not eat drink food that has a lot of sugar sugars or sweet sweets when having diarrhea`,
+        `why avoid not eat drink food that has a lot of sugar or sweet sweets when having diarrhea`,
         `why should avoid not eat drink food that are influenza_foods_not_allowed_sugary_foods when having influenza`,
     ],[
         `Sugar-rich foods can weaken your immune system, which your body needs to fight off the flu. Eating too many sugary foods can also lead to inflammation, which can worsen symptoms like sore throat and cough. Additionally, sugary foods can cause spikes in blood sugar levels, which can lead to fatigue and other symptoms that can make it more difficult to recover from the flu.

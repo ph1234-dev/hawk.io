@@ -5,7 +5,7 @@ import { encodeMemory } from "@/api/config/model"
 
 let section4 = [
     // encodeMemory([
-    //     `* mahina * immune * diarrhea *`,
+    //     `* mahina * immune * \bdiarrhea\b(?!_) *`,
     //     `Ano ang dahilan kung bakit maaaring magka-diarrhea ang isang tao kapag mahina ang kanyang immune system`,
     //     `Ano ang epekto ng mahinang immune system sa katawan na maari nitong magka-diarrhea`,
     //     `Bakit maari magka-diarrhea ang isang tao kapag mahina ang kanyang immune system`,
@@ -25,7 +25,7 @@ let section4 = [
     //     `
     // ], 1),
     encodeMemory([
-        `* tamis * diarrhea *`,
+        `* tamis * \bdiarrhea\b(?!_) *`,
         `bakit pwede kang magka-diarrhea o magtatae kung mahilig ka sa matatamis`,
         `Bakit dapat iwasan hindi maganda ang sobrang pagkain ng matatamis para maiwasan ang diarrhea`,
         `Bakit nakakapagdulot ng diarrhea ang sobrang pagkain ng matatamis`,
@@ -37,7 +37,7 @@ let section4 = [
         Gayundin, kung minsan ang mga matatamis ay hindi masyadong nasisipsip ng katawan at maaaring mag-ferment sa bituka, na nagiging sanhi ng gas, bloating at pagtatae sa mga madaling kapitan. Halimbawa, ang mga taong lactose-intolerant ay kulang sa enzyme lactase, na kinakailangan upang masira ang lactose sa gatas at mga produkto ng pagawaan ng gatas. Kung ang lactose ay hindi nasira nang maayos, maaari itong maging sanhi ng pagtatae`
     ], 1),
     encodeMemory([
-        `* allergy * diarrhea *`,
+        `* allergy * \bdiarrhea\b(?!_) *`,
         `Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kapag may allergy`,
         `Bakit nakakapagdulot ng diarrhea ang allergy`,
         `Paano nakakaapekto ang pagkakaroon ng allergy sa pagkain sa pagkakaroon ng diarrhea `,
@@ -48,7 +48,7 @@ let section4 = [
         Ang pamamaga na ito ay maaaring humantong sa pagtaas ng paggalaw ng bituka, pagbawas ng pagsipsip ng tubig, at ang pagtatago ng labis na likido sa mga bituka, na nagreresulta sa pagtatae.`
     ], 1),
     // encodeMemory([
-    //     `* malnutrition * diarrhea *`,
+    //     `* malnutrition * \bdiarrhea\b(?!_) *`,
     //     `Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae kapag nakakaranas ka ng malnutrition`,
     //     `Ano ang epekto ng malnutrition sa katawan na nagdudulot ng diarrhea `,
     //     `Ano ang koneksyon ng pagkakaroon ng malnutrition sa pagkakaroon ng diarrhea `,
@@ -79,7 +79,7 @@ let section4 = [
     //     `Ang pagtatae ay maaaring isang senyales ng seryosong reaksyon ng isang gamot. Halimbawa, ang mga antibiotic ay maaaring makagambala sa balanse ng mabuti at masamang bakterya sa bituka, na humahantong sa pagtatae. Ang mga nonsteroidal anti-inflammatory drugs o nsaid ay maaaring makairita sa lining ng tiyan, na nagiging sanhi ng pamamaga at pagtatae. At saka, ang ilang mga gamot tulad ng mga laxative at chemotherapy ay maaaring magstimulate ng bituka at pwedeng humantong sa madalas na paggalaw ng bituka at pagtatae.`,
     // ], 1),
     encodeMemory([
-        `* parasite * diarrhea *`,
+        `* parasite * \bdiarrhea\b(?!_) *`,
         `Ano ang dahilan kung bakit pwede kang magka-diarrhea o magtatae dahil sa parasite`,
         `Bakit importante ang proper hygiene para maiwasan ang pagkakaroon ng parasitic infection`,
         `Paano maiiwasan ang pagkakaroon ng parasitic infection na nagdudulot ng diarrhea `,
@@ -90,7 +90,7 @@ let section4 = [
         `
     ], 1),
     encodeMemory([
-        `* bacterial * diarrhea *`,
+        `* bacterial * \bdiarrhea\b(?!_) *`,
         `Ano ang bacterial infection at paano ito maaaring maiwasan`,
         `Paano bakit nakakapagdulot ng diarrhea ang mga bakterya`,
         `bakit ang bacteria ay nakapagtatae`
@@ -98,7 +98,7 @@ let section4 = [
         `Ang mga impeksyon dulot ng bakterya ay maaaring magdulot ng pagtatae dahil sa ito ay nakakalason. Ito ay pumipinsala sa bituka, na nagiging sanhi ng pamamaga at pangangati. At saka ang mga bakterya ay nag tritrigger sa paglabas ng tubig sa katawan ng dahil sa pagtatae. Ang mga bakterya nag naglalabas ng mga enzymes na nakakaapekto sa kakayahan ng bituka na sumipsip ng nutrisyon at tubig na pwedeng humantong sa malabsorption.`
     ], 1),
     encodeMemory([
-        `* virus * diarrhea *`,
+        `* virus * \bdiarrhea\b(?!_) *`,
         `Ano ang mga pamamaraan sa paggamot ng viral infection na nagdudulot ng diarrhea `,
         `Paano nakakahawa ang viral infection at paano ito maaaring maiwasan`,
         `Paano nakakapagdulot ng diarrhea ang mga virus`,
@@ -110,7 +110,7 @@ let section4 = [
         `
     ], 1),
     encodeMemory([
-        `* kuha * diarrhea *`,
+        `* kuha * \bdiarrhea\b(?!_) *`,
         `Ano ang mga bagay na nagdudulot pagkakahawa ng diarrhea `,
         `Ano ang mga pinagmumulan dahilan sanhi sanhi kung bakit nagkakaroon ng diarrhea `,
         `Anong mga paraan para magka-diarrhea  ang isang tao`,
@@ -136,7 +136,7 @@ let section4 = [
 
 let section5 = [
     encodeMemory([
-        `* (tubig|hydrate) * treat * diarrhea * `,
+        `* (tubig|hydrate) * treat * \bdiarrhea\b(?!_) * `,
         `Bakit dapat palaging mag-inom ng tubig ang may diarrhea `,
         `Bakit importante ang hydration o pag-iinom ng maraming tubig para sa may diarrhea `,
         `Paano makakatulong ang pagpapa-hydrate pag-iinom ng tubig sa pag gamot ng diarrhea `,
@@ -152,7 +152,7 @@ let section5 = [
         `
     ], 7),
     encodeMemory([
-        `* zinc * treat * diarrhea *`,
+        `* zinc * treat * \bdiarrhea\b(?!_) *`,
         `Ano ang dahilan kung bakit nakapagpapagaling ang pag-inom ng zinc sa may diarrhea `,  
         `Bakit dapat importante epektibo ang pag-inom ng zinc sa pagpapagaling ng diarrhea `,  
         `Bakit nakakatulong ang zinc sa pagpapagaling ng mayroong diarrhea `,
@@ -162,7 +162,7 @@ let section5 = [
         `
     ], 7),
     // encodeMemory([
-    //     `* masustansya  * treat  * diarrhea *`,
+    //     `* masustansya  * treat  * \bdiarrhea\b(?!_) *`,
     //     `Ano ang benepisyo ng pagkain ng mga masustansyang pagkain habang mayroong diarrhea `,
     //     `Ano ang dahilan kung bakit kailangang magpakain ng masustansya kapag may diarrhea `,
     //     `Ano ang epekto ng masustansyang pagkain sa paggaling ng mayroong diarrhea `,
@@ -184,20 +184,20 @@ let section5 = [
     //     `Mahalagang kumain ng maayos dahil sinusuportahan nito ang immune system ng iyong katawan. Posible ring mabawasan ang pangangati ng digestive tract at maiwasan ang karagdagang pagtatae kung kakain ka pagkaing madaling matunaw tulad ng saging, kanin, nilutong patatas o anumang iba pang manok o isda. At saka ang mga pagkaing ito ay naglalaman ng mataas na fiber, potassium at protina na mahalaga para sa pagbawi. Upang maiwasan ang karagdagang pangangati ng bituka at mabawasan ang panganib ng komplikasyon, inirerekumenda na hindi ka kumain ng mga pagkaing maraming fats, maalat, maanghang o matamis.
     //     `
     // ], 4),
+    // encodeMemory([
+    //     `* consult * doktor * \bdiarrhea\b(?!_) * `,
+    //     `* doctor * treat  * \bdiarrhea\b(?!_) *`,
+    //     `Bakit importante na magpatingin sa doktor kung nagkakaroon ng diarrhea `,
+    //     `Kailan dapat magpatingin sa doktor kapag may diarrhea `,
+    //     `Kailangan bang magpakonsulta magpatingin sa doktor kaagad kapag mayroong diarrhea `,
+    //     `Paano nakakatulong ang pagpapatingin sa doktor sa paggaling ng may diarrhea `,
+    //     `Sa anong punto kailangan magpakonsulta sa doktor kapag may diarrhea `,
+    // ], [
+    //     `Kung ang pagtatae ay nagpapatuloy nang mas mahabang panahon o humantong sa iba pang mga sintomas tulad ng lagnat, malubhang sakit sa gastrointestinal at dugo sa dumi, mahalagang makipag-usap sa iyong doktor. Ang isang doctor ay maaaring makatulong sa pag-diagnose ng pangunahing sanhi ng pagtatae at magbigay ng tamang paggamot na maaaring kasama ang gamot, mga pagbabago sa diyeta o karagdagang pagsusuri. Mahalagang magpagamot. Kapag ang pagtatae na hindi ginagamot maari itong humantong sa dehydration o mas malubhang komplikasyon.
+    //     `
+    // ], 5),
     encodeMemory([
-        `* consult * doktor * diarrhea * `,
-        `* doctor * treat  * diarrhea *`,
-        `Bakit importante na magpatingin sa doktor kung nagkakaroon ng diarrhea `,
-        `Kailan dapat magpatingin sa doktor kapag may diarrhea `,
-        `Kailangan bang magpakonsulta magpatingin sa doktor kaagad kapag mayroong diarrhea `,
-        `Paano nakakatulong ang pagpapatingin sa doktor sa paggaling ng may diarrhea `,
-        `Sa anong punto kailangan magpakonsulta sa doktor kapag may diarrhea `,
-    ], [
-        `Kung ang pagtatae ay nagpapatuloy nang mas mahabang panahon o humantong sa iba pang mga sintomas tulad ng lagnat, malubhang sakit sa gastrointestinal at dugo sa dumi, mahalagang makipag-usap sa iyong doktor. Ang isang doctor ay maaaring makatulong sa pag-diagnose ng pangunahing sanhi ng pagtatae at magbigay ng tamang paggamot na maaaring kasama ang gamot, mga pagbabago sa diyeta o karagdagang pagsusuri. Mahalagang magpagamot. Kapag ang pagtatae na hindi ginagamot maari itong humantong sa dehydration o mas malubhang komplikasyon.
-        `
-    ], 5),
-    encodeMemory([
-        `* treat * diarrhea * `,
+        `* treat * \bdiarrhea\b(?!_) * `,
         `Ano ang mga dapat gawin kung hindi agad gumaling ang taong may diarrhea `,
         `Ano ang mga dapat gawin unpang maiwasa ang pagkakaroon ng diarrhea `,
         `Ano ang mga gamot na pwedeng ibigay sa taong may diarrhea `,
@@ -207,7 +207,7 @@ let section5 = [
         `
     ], 1),
     // encodeMemory([
-    //     `* sino* treat *diarrhea * `,
+    //     `* sino* treat *\bdiarrhea\b(?!_) * `,
     //     `Sino ang dapat hingan ng tulong kapag may diarrhea `,
     //     `Sino ang dapat lapitan kung mayroong problema sa diarrhea `,
     //     `Sino ang maaaring mag-alaga sa taong may diarrhea `,
@@ -229,8 +229,8 @@ let section5 = [
     //     `
     // ], 5),
     encodeMemory([
-        `* gamutin * diarrhea * saan * `,
-        `* saan * gamutin * diarrhea * `,
+        `* gamutin * \bdiarrhea\b(?!_) * saan * `,
+        `* saan * gamutin * \bdiarrhea\b(?!_) * `,
         `saan pwede mag punta magagamot pag ako may nagtatae`,
         `asan ko ba pwede gamuting ang pagtatae`, 
         `Saan ka pupunta kung nais mong magpagamot ng diarrhea`,  
@@ -269,8 +269,8 @@ let section5 = [
         `
     ], 2),
     encodeMemory([
-        `* treat * diarrhea * lagnat * `,
-        `* treat * lagnat * diarrhea * `,
+        `* treat * \bdiarrhea\b(?!_) * lagnat * `,
+        `* treat * lagnat * \bdiarrhea\b(?!_) * `,
         `Ano ang mga dapat gawin inuming gamot para sa may lagnat na kasabay ng diarrhea `,
         `Kailan dapat mag-alala kung may lagnat na kasabay ng diarrhea `,
         `May mga gamot ba para sa may lagnat na kasabay ng diarrhea `,
@@ -290,8 +290,8 @@ let section5 = [
 
     ], 2),
     encodeMemory([
-        `* treat * diarrhea * `,
-        `* diarrhea * treat * ano * `,
+        `* treat * \bdiarrhea\b(?!_) * `,
+        `* \bdiarrhea\b(?!_) * treat * ano * `,
         `Ano ang mga dapat gawin para mapabilis ang paggaling mula sa diarrhea `, 
         `Ano ang mga gamot na hindi dapat maaaring gamitin sa pagpapagaling ng diarrhea `,
         `Anong mga gamot ang dapat inumin para sa diarrhea `, 

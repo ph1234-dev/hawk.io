@@ -3,19 +3,19 @@ import { encodeMemory } from "@/api/config/model"
 
 let section11 = [
     // antihistamine
-    encodeMemory([
-        `* generic * antihistamine *`,
-        `tell show give about What are common names generic list antihistamine`, 
-    ],[
-        `Citerizine is one of the popular generic antihistamines you can buy.It is important to note that these medications may have different brand names depending on the country and manufacturer.If you feel like having influenza , get plenty of rest, stay hydrated, move away from smokes. It is always best to consult with a doctor or pharmacist before taking any medication. 
-        `
-    ],7),
-    encodeMemory([
-        `* branded * antihistamine *`,
-        `tell show give about What are common names branded list antihistamine`, 
-    ],[
-        `Benadryl is one of the popular branded antihistamine you can buy.It's important to note that antihistamines should only be taken under the guidance of a healthcare professional. Also, if you feel like having influenza , get plenty of rest, stay hydrated, move away from smokes. `
-    ],7),
+    // encodeMemory([
+    //     `* generic * antihistamine *`,
+    //     `tell show give about What are common names generic list antihistamine`, 
+    // ],[
+    //     `Citerizine is one of the popular generic antihistamines you can buy.It is important to note that these medications may have different brand names depending on the country and manufacturer.If you feel like having influenza , get plenty of rest, stay hydrated, move away from smokes. It is always best to consult with a doctor or pharmacist before taking any medication. 
+    //     `
+    // ],7),
+    // encodeMemory([
+    //     `* branded * antihistamine *`,
+    //     `tell show give about What are common names branded list antihistamine`, 
+    // ],[
+    //     `Benadryl is one of the popular branded antihistamine you can buy.It's important to note that antihistamines should only be taken under the guidance of a healthcare professional. Also, if you feel like having influenza , get plenty of rest, stay hydrated, move away from smokes. `
+    // ],7),
     encodeMemory([
         
         `* (what|how) * (dosing|take|direction) * antihistamine *`,
@@ -31,7 +31,7 @@ let section11 = [
         // `What is the standard dosage of antihistamine`,   
         // `tell me about how to eat antihistamines`,
     ],[
-        `Antihistamines can be taken with food, a glass of water or milk to lessen stomach irritation if necessary. For cetirizine, here is how you can take it. 6 years of age and older can have 5 to 10 miligrams once a day. Those who are 4-6 years old can take maximum of 5mg once or 2.5mg twice a day. Those who are younger than that (4 below) should not take this medicine.
+        `Antihistamines like Citerizine and Benadryl can be taken with food, a glass of water or milk to lessen stomach irritation if necessary. For cetirizine, here is how you can take it. 6 years of age and older can have 5 to 10 miligrams once a day. Those who are 4-6 years old can take maximum of 5mg once or 2.5mg twice a day. Those who are younger than that (4 below) should not take this medicine.
         
         The information I represented is an example of how you take it. Proper dosage must be observed. If you have further questions, please refer to your healthcare provider. 
         `
@@ -40,7 +40,7 @@ let section11 = [
         `* antihistamine *`,
         `explain tell definition describe exactly what about antihistamine`,  
     ],[
-        `Antihistamines are a class of drugs commonly used to treat symptoms of allergies. These drugs help treat conditions caused by too much histamine, a chemical created by your body’s immune system. Antihistamines are most commonly used by people who have allergic reactions to pollen and other allergens. They are also used to treat a variety of other conditions such as stomach problems, colds, anxiety and more.`
+        `Antihistamines ,like Citerizine and Benadryl , are a class of drugs commonly used to treat symptoms of allergies. These drugs help treat conditions caused by too much histamine, a chemical created by your body’s immune system. Antihistamines are most commonly used by people who have allergic reactions to pollen and other allergens. They are also used to treat a variety of other conditions such as stomach problems, colds, anxiety and more. Antihistamines come in several forms including liquids, lotions, syrups, gels, eyedrops, tablets, capsules, creams, and suppositories`
     ],7),
     encodeMemory([
         `* use * antihistamine *`,
@@ -48,7 +48,7 @@ let section11 = [
         `explain What where are antihistamine and how do they work used`,
         `What conditions are treated help with antihistamine`,
     ],[
-        `Antihistamines are used to relieve or prevent the symptoms of hay fever and other types of allergy. They work by preventing the effects of a substance called histamine, which is produced by the body. Histamine can cause itching, sneezing, runny nose, and watery eyes. Also, in some persons histamine can close up the bronchial tubes (air passages of the lungs) and make breathing difficult.`
+        `Antihistamines are used to relieve or prevent the symptoms of hay fever and other types of allergy. They work by preventing the effects of a substance called histamine, which is produced by the body. Histamine can cause itching, sneezing, runny nose, and watery eyes. Also, in some persons histamine can close up the bronchial tubes (air passages of the lungs) and make breathing difficult. This medicine come in several forms including liquids, lotions, syrups, gels, eyedrops, tablets, capsules, creams, and suppositories`
     ],7),
     encodeMemory([
         `* work * treat *`,
@@ -85,19 +85,19 @@ let section11 = [
     ],[
         `When taking this medicine, try to avoid alcohol, sedatives, and tranquilizers, due to increased risk of drowsiness. It may cause Central nervous system depression. So avoid activities requiring mental alertness. Be careful when patient has hepatic or renal impairment. Same with the elderly as they are more sensitive to adverse effects.`
     ],7),
-    encodeMemory([
-        `* antihistamine * price *`,
-        `How expensive are antihistamines`,
-        `What is the average price cost of antihistamines`,
-    ],[
-        `The price range for antihistamine varies from pharmacy to pharmacy. Antihistamines such as citerezine (10mg) costs around 15 pesos (according to watsons pharmacy). Benadryl , on the otherhand cost around 41 pesos for one tablet.`
-    ],7),
-    encodeMemory([
-        `* forms * antihistamine *`,
-        `Could you tell inform me of the various different forms  typesof antihistamines`,
-    ],[
-        `Antihistamines come in several forms including liquids, lotions, syrups, gels, eyedrops, tablets, capsules, creams, and suppositories`
-    ],7),
+    // encodeMemory([
+    //     `* antihistamine * price *`,
+    //     `How expensive are antihistamines`,
+    //     `What is the average price cost of antihistamines`,
+    // ],[
+    //     `The price range for antihistamine varies from pharmacy to pharmacy. Antihistamines such as citerezine (10mg) costs around 15 pesos (according to watsons pharmacy). Benadryl , on the otherhand cost around 41 pesos for one tablet.`
+    // ],7),
+    // encodeMemory([
+    //     `* forms * antihistamine *`,
+    //     `Could you tell inform me of the various different forms  typesof antihistamines`,
+    // ],[
+    //     `Antihistamines come in several forms including liquids, lotions, syrups, gels, eyedrops, tablets, capsules, creams, and suppositories`
+    // ],7),
     encodeMemory([
         `* alternative * antihistamine * `,
         `suggest any antihistamine alternative options besides antihistamine`,
@@ -107,18 +107,18 @@ let section11 = [
         `Try taking Ginger. According to Sinus and Allergy Wellness Center, it is a natural histamine, potent antiviral agent and an immute booster. Ginger is a safe and highly effective herb that soothes the digestive system and improves circulation. You can make some ginger tea to alleviate nasal congestion and headaches. While you sip your tea, inhale the steam coming out of your cup. Also, try to use it with other herbs, such as turmeric, which is another powerful natural healer.`
     ],7),
     // analgesics rule 20 above
-    encodeMemory([
-        `* generic * analgesics*`,
-        `tell show give about What are common names generic list analgesics`, 
-    ],[
-        `Some common generic analgesics include ibuprofen, acetaminophen, aspirin,paracetamol, naproxen, and ketoprofen. These medications work by blocking or reducing the body's production of prostaglandins, which are chemicals that cause inflammation and pain. By reducing the production of prostaglandins, these drugs can help to reduce pain and inflammation in the body.`,
-    ],7),
-    encodeMemory([
-        `* branded * analgesics *`,
-        `tell show give about What are common names branded list analgesics`, 
-    ],[
-        `Some of the branded names of paracetamol is Biogesic and Calpol.These medications work by blocking or reducing the body's production of prostaglandins, which are chemicals that cause inflammation and pain. By reducing the production of prostaglandins, these drugs can help to reduce pain and inflammation in the body.`
-    ],7),
+    // encodeMemory([
+    //     `* generic * analgesics*`,
+    //     `tell show give about What are common names generic list analgesics`, 
+    // ],[
+    //     `Some common generic analgesics include ibuprofen, acetaminophen, aspirin,paracetamol, naproxen, and ketoprofen. These medications work by blocking or reducing the body's production of prostaglandins, which are chemicals that cause inflammation and pain. By reducing the production of prostaglandins, these drugs can help to reduce pain and inflammation in the body.`,
+    // ],7),
+    // encodeMemory([
+    //     `* branded * analgesics *`,
+    //     `tell show give about What are common names branded list analgesics`, 
+    // ],[
+    //     `Some of the branded names of paracetamol is Biogesic and Calpol.These medications work by blocking or reducing the body's production of prostaglandins, which are chemicals that cause inflammation and pain. By reducing the production of prostaglandins, these drugs can help to reduce pain and inflammation in the body.`
+    // ],7),
     encodeMemory([
         `* (what|how) * (direction|dosing|take) * analgesics *`,
         `* (direction|dosing|take) * analgesics *`,
@@ -144,13 +144,13 @@ let section11 = [
         `* analgesics *`,
         `Tell explain give me information about analgesics and their uses.`,
     ],[
-        `Analgesics, also called painkillers, are medications that relieve different types of pain — from headaches to injuries to arthritis. Anti-inflammatory analgesics reduce inflammation, and opioid analgesics change the way the brain perceives pain.`
+        `Analgesics, also called painkillers , such as ibuprofen, acetaminophen, aspirin,paracetamol, Biogesic and Calpol, are medications that relieve different types of pain — from headaches to injuries to arthritis. Anti-inflammatory analgesics reduce inflammation, and opioid analgesics change the way the brain perceives pain.Analgesics are available in many forms such as films, liquid, nasal sprays patches, pills, tablets, capsules, and powder mix.`
     ],7),
     encodeMemory([
         `* analgesics * use  *`,
         `tell me about What are the uses applications of analgesics`
     ],[
-        `Over-the-counter painkillers available from pharmacies, such as ibuprofen or acetaminophen (paracetamol), can relieve acute pain. Their effectiveness will depend on things like the type and severity of the pain and the dose of the medication. Painkillers that are available without a prescription have been approved for the treatment of mild to moderate pain. They shouldn't be used for more than a few days in a row, and the specified maximum daily dose shouldn't be exceeded.`
+        `Over-the-counter painkillers ,such as ibuprofen, acetaminophen, aspirin,paracetamol, Biogesic and Calpol, can relieve acute pain. Their effectiveness will depend on things like the type and severity of the pain and the dose of the medication. Painkillers that are available without a prescription have been approved for the treatment of mild to moderate pain. They shouldn't be used for more than a few days in a row, and the specified maximum daily dose shouldn't be exceeded. These medicines comes in many forms such as films, liquid, nasal sprays patches, pills, tablets, capsules, and powder mix.`
     ],7),
     encodeMemory([
         `* analgesics * (treat|work) *`,
@@ -187,19 +187,19 @@ let section11 = [
     ],[
         `Take this medication by mouth. Drink a full glass of water (8 ounces/240 milliliters) with it unless your doctor tells you otherwise. Do not lie down for at least 10 minutes after you have taken this drug. If stomach upset occurs while you are taking this medication, you may take it with food or milk.`
     ],7),
-    encodeMemory([
-        `* analgesics * price *`,
-        `How expensive are analgesics`,
-        `tell What is the average cost price of analgesics`,
-    ],[
-        `According to Muramed and Watsons pharmacy, paracetamol such as biogesic may start at 4 pesos. Meanwhile, aspirin can start at 3.50 pesos as listed by watsons pharmacy. You, however, cannot buy this without prescription and the prices may vary depending on where you bought these.`
-    ],7),
-    encodeMemory([
-        `* forms * analgesics *`,
-        `Can you tell give me the various common different forms of analgesics`,
-    ],[
-        `Analgesics are available in many forms such as films, liquid, nasal sprays patches, pills, tablets, capsules, and powder mix.`
-    ],7),
+    // encodeMemory([
+    //     `* analgesics * price *`,
+    //     `How expensive are analgesics`,
+    //     `tell What is the average cost price of analgesics`,
+    // ],[
+    //     `According to Muramed and Watsons pharmacy, paracetamol such as biogesic may start at 4 pesos. Meanwhile, aspirin can start at 3.50 pesos as listed by watsons pharmacy. You, however, cannot buy this without prescription and the prices may vary depending on where you bought these.`
+    // ],7),
+    // encodeMemory([
+    //     `* forms * analgesics *`,
+    //     `Can you tell give me the various common different forms of analgesics`,
+    // ],[
+    //     `Analgesics are available in many forms such as films, liquid, nasal sprays patches, pills, tablets, capsules, and powder mix.`
+    // ],7),
     encodeMemory([
         `* alternative * analgesics* `,
         `What are some alternative herbal medications that can be used instead of analgesics`,
@@ -413,18 +413,18 @@ let section11 = [
     // ],7),
 
     // decongestatnts
-    encodeMemory([
-        `*  generic * decongestant*`,
-        `tell show give about What are common names generic list decongestant`, 
-    ],[
-        `Generic decongestants include phenylephrine, pseudoephedrine, and oxymetazoline. These medications are available over the counter and can come in various forms such as tablets, capsules, nasal sprays, or liquids. It is important to follow the recommended dosage and precautions when taking decongestants as they can cause side effects such as nervousness, increased heart rate, and high blood pressure in some individuals.`
-    ],7),
-    encodeMemory([
-        `* branded * decongestant*`,
-        `tell show give about What are common names branded list decongestant`, 
-    ],[
-        `Some known branded decongestant are decolgen and sudafed. It is important to follow the recommended dosage and precautions when taking decongestants as they can cause side effects such as nervousness, increased heart rate, and high blood pressure in some individuals.`
-    ],7),
+    // encodeMemory([
+    //     `*  generic * decongestant*`,
+    //     `tell show give about What are common names generic list decongestant`, 
+    // ],[
+    //     `Generic decongestants include phenylephrine, pseudoephedrine, and oxymetazoline. These medications are available over the counter and can come in various forms such as tablets, capsules, nasal sprays, or liquids. It is important to follow the recommended dosage and precautions when taking decongestants as they can cause side effects such as nervousness, increased heart rate, and high blood pressure in some individuals.`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * decongestant*`,
+    //     `tell show give about What are common names branded list decongestant`, 
+    // ],[
+    //     `Some known branded decongestant are decolgen and sudafed. It is important to follow the recommended dosage and precautions when taking decongestants as they can cause side effects such as nervousness, increased heart rate, and high blood pressure in some individuals.`
+    // ],7),
     encodeMemory([
         `* (what|how) * (take|direction|dosing) * decongestant *`,
         `tell How should decongestant proper dosing be taken`,
@@ -446,7 +446,7 @@ let section11 = [
         `What are decongestants and how do they work`,
         `What do you know about decongestants`,
     ],[
-        `Decongestants are medicines that relieve congestion by reducing swelling, inflammation and mucus formation within the nasal passages or the eye.  They have no other effect on symptoms such as a runny nose or sneezing.`
+        `Decongestants such as pseudoephedrine, decolgen and sudafed are medicines that relieve congestion by reducing swelling, inflammation and mucus formation within the nasal passages or the eye.  They have no other effect on symptoms such as a runny nose or sneezing. These medicines are available as nose drops or nasal sprays, eye drops, and as tablets, capsules, and syrup.`
     ],7),
     encodeMemory([
         `* decongestants * (treat|use) *`,
@@ -454,7 +454,7 @@ let section11 = [
         `What conditions are decongestants used to treat`,
         `tell me what does decongestants treat`,
     ],[
-        `Decongestants are medicines that help relieve a congested (stuffy) nose. The congestion can be caused by a cold virus or by the flu, sinusitis, or allergies`
+        `Decongestants such as pseudoephedrine, decolgen and sudafed are medicines that help relieve a congested (stuffy) nose. The congestion can be caused by a cold virus or by the flu, sinusitis, or allergies.  These medicines are available as nose drops or nasal sprays, eye drops, and as tablets, capsules, and syrup.`
     ],7),
     encodeMemory([
         `* decongestant * work *`,
@@ -488,19 +488,19 @@ let section11 = [
     ],[
         `Decongestants may be taken orally to help relieve congestion that is affecting the nose, sinuses, and eyes or sprayed directly in the nose or instilled in the eye for a more local effect.`
     ],7),
-    encodeMemory([
-        `* decongestant * price *`,
-        `How much does it cost to buy decongestants`,
-        `tell What the cost of decongestants`,
-    ],[
-        `The price varies according to the form of the medicine. For example, for nasal sprays it starts with 90php, for drops around 78 (rose pharmacy website), and tablets like decolgen it starts with 6php (watsons).`
-    ],7),
-    encodeMemory([
-        `* what * forms * decongestant*`,
-        `give tell me the various different forms of decongestants`,
-    ],[
-        `Decongestants are available as nose drops or nasal sprays, eye drops, and as tablets, capsules, and syrup.`
-    ],7),
+    // encodeMemory([
+    //     `* decongestant * price *`,
+    //     `How much does it cost to buy decongestants`,
+    //     `tell What the cost of decongestants`,
+    // ],[
+    //     `The price varies according to the form of the medicine. For example, for nasal sprays it starts with 90php, for drops around 78 (rose pharmacy website), and tablets like decolgen it starts with 6php (watsons).`
+    // ],7),
+    // encodeMemory([
+    //     `* what * forms * decongestant*`,
+    //     `give tell me the various different forms of decongestants`,
+    // ],[
+    //     `Decongestants are available as nose drops or nasal sprays, eye drops, and as tablets, capsules, and syrup.`
+    // ],7),
     encodeMemory([
         `* alternative * decongestant* `,
         `What are herbal alternative substitutes medications that can be used instead of decongestants`,
@@ -511,19 +511,19 @@ let section11 = [
     ],7),
 
     // expectorants
-    encodeMemory([
-        `* generic * expectorant*`,
-        `tell show give about What are common names generic list expectorant`, 
-    ],[
-        `Guiafenesin and potassium iodide are examples of a generic expectorant.These are also foud in products such as Mucinex and Robitussin. These medications are commonly used to treat respiratory conditions such as bronchitis, asthma, and the common cold. It is important to note that these medications may not be suitable for everyone and should be used according to the instructions of a healthcare professional.
-        `
-    ],7),
-    encodeMemory([
-        `* branded * expectorant*`,
-        `tell show give about What are common names branded list expectorant`, 
-    ],[
-        `Mucinex and Robitussin are some of the popular ones. It is important to note that, while there are different names and formulations for brand expectorants, they all work together with the aim of reducing mucus retention in the respiratory system which makes it easier to cough or clear your body. Follow the recommended dosage of this medicine, or as requested by a healthcare professional`
-    ],7),
+    // encodeMemory([
+    //     `* generic * expectorant*`,
+    //     `tell show give about What are common names generic list expectorant`, 
+    // ],[
+    //     `Guiafenesin and potassium iodide are examples of a generic expectorant.These are also foud in products such as Mucinex and Robitussin. These medications are commonly used to treat respiratory conditions such as bronchitis, asthma, and the common cold. It is important to note that these medications may not be suitable for everyone and should be used according to the instructions of a healthcare professional.
+    //     `
+    // ],7),
+    // encodeMemory([
+    //     `* branded * expectorant*`,
+    //     `tell show give about What are common names branded list expectorant`, 
+    // ],[
+    //     `Mucinex and Robitussin are some of the popular ones. It is important to note that, while there are different names and formulations for brand expectorants, they all work together with the aim of reducing mucus retention in the respiratory system which makes it easier to cough or clear your body. Follow the recommended dosage of this medicine, or as requested by a healthcare professional`
+    // ],7),
     encodeMemory([
         `* (how|what) * (direction|take|dosing) * expectorant *`,
         `Can you tell me how to properly take expectorants`,
@@ -549,7 +549,7 @@ let section11 = [
         `tell How do you explain define expectorants`,
         `tell What exactly is the purpose of expectorants`,
     ],[
-        `Expectorants are ingredients that increase airway secretions. They do this by increasing the water content of the secretions which decreases their stickiness, making them easier to cough up. Expectorants are often used to help treat respiratory conditions such as bronchitis, pneumonia, and the common cold.
+        `Expectorants ,like Guiafenesin and Robitussin, are ingredients that increase airway secretions. They do this by increasing the water content of the secretions which decreases their stickiness, making them easier to cough up. Expectorants are often used to help treat respiratory conditions such as bronchitis, pneumonia, and the common cold.In general, expectorants are available over-the-counter (OTC) in liquid, pill, and tablet forms
         `
     ],7),
     encodeMemory([
@@ -558,7 +558,7 @@ let section11 = [
         `What conditions are treated with expectorants`,
         `tell explain me how about where are expectorants used`,
     ],[
-        `You may take an expectorant to help relieve congestion if you have a cold or the flu. Expectorants are available as standalone drugs or as an ingredient in an all-in-one cold or flu medication.`
+        `You may take an expectorant ,like Guiafenesin and Robitussin, to help relieve congestion if you have a cold or the flu. Expectorants are available as standalone drugs or as an ingredient in an all-in-one cold or flu medication. In general, expectorants are available over-the-counter (OTC) in liquid, pill, and tablet forms`
     ],7),
     encodeMemory([
         `* expectorants * (treat|work) *`,
@@ -596,20 +596,20 @@ let section11 = [
     ],[
         `Do not crush pills, and be sure to measure liquid formulations using the measuring tools provided with your medication. It is often recommended that you drink plenty of fluids when taking an expectorant.`
     ],7),
-    encodeMemory([
-        `* expectorant* price *`,
-        `Can you tell me the price of expectorants`,
-        `What the cost of expectorants`,
-        `tell me the price of expectorants`
-    ],[
-        `At watsons, robitussin guaifenesin price starts at 92php. `
-    ],7),
-    encodeMemory([
-        `* forms * expectorant*`,
-        `tell inform me the various different forms of expectorants`,
-    ],[
-        `In general, expectorants are available over-the-counter (OTC) in liquid, pill, and tablet forms.`
-    ],7),
+    // encodeMemory([
+    //     `* expectorant* price *`,
+    //     `Can you tell me the price of expectorants`,
+    //     `What the cost of expectorants`,
+    //     `tell me the price of expectorants`
+    // ],[
+    //     `At watsons, robitussin guaifenesin price starts at 92php. `
+    // ],7),
+    // encodeMemory([
+    //     `* forms * expectorant*`,
+    //     `tell inform me the various different forms of expectorants`,
+    // ],[
+    //     `In general, expectorants are available over-the-counter (OTC) in liquid, pill, and tablet forms.`
+    // ],7),
     encodeMemory([
         `* alternative * expectorant*`,
         `Are there any natural alterantive herbal remedies that can besides expectorants`,
@@ -621,18 +621,18 @@ let section11 = [
     ],7),
 
     // antitussives
-    encodeMemory([
-        `* generic * antitussive *`,
-        `tell show give about What are common names generic list antitussive`, 
-    ],[
-        `Dextromethorphan, codeine and diphenhydramine are some of the popular generic antitussives. It is important to remember that generic antitussives contain similar active substances with are also found in branded ones`
-    ],7),
-    encodeMemory([
-        `* branded * antitussive *`,
-        `tell show give about What are common names branded list antitussive`, 
-    ],[
-        `Robitussin is among the popular antitussive found in pharmacies. You have to remember that despite having identical ingredients, branded ones are more expensive than the generic ones.`
-    ],7),
+    // encodeMemory([
+    //     `* generic * antitussive *`,
+    //     `tell show give about What are common names generic list antitussive`, 
+    // ],[
+    //     `Dextromethorphan, codeine and diphenhydramine are some of the popular generic antitussives. It is important to remember that generic antitussives contain similar active substances with are also found in branded ones`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * antitussive *`,
+    //     `tell show give about What are common names branded list antitussive`, 
+    // ],[
+    //     `Robitussin is among the popular antitussive found in pharmacies. You have to remember that despite having identical ingredients, branded ones are more expensive than the generic ones.`
+    // ],7),
     encodeMemory([
         `* (how|what) * (take|direction|dosing) * antitussive *`,
         `what Are any special instructions I should follow when taking antitussives`,  
@@ -654,7 +654,7 @@ let section11 = [
         `* antitussive *`,
         `explain What is the definition purpose uses of antitussives`,
     ],[
-        `Antitussives are prescription or over-the-counter drugs used for suppressing cough.`
+        `Antitussives ,such as Dextromethorphan or Robitussin, are prescription or over-the-counter drugs used for suppressing cough.  These medicines can be in the form of a tablet, capsule,gel, liquid , syrup, lozenge or strips. However, I can only recommend the usual  dosage of its logenzes and syrup forms`
     ],7),
     encodeMemory([
         `* antitussive * use *`,
@@ -662,7 +662,7 @@ let section11 = [
         `What is the purpose of taking antitussives`,
         `What medical issues do antitussives help with`,
     ],[
-        `They are typically used to treat a dry cough caused by allergies, respiratory illnesses, or infections.Antitussives can also treat post-viral cough, or a persistent cough that develops after an infection has resolved.`
+        `They are typically used to treat a dry cough caused by allergies, respiratory illnesses, or infections.Antitussives can also treat post-viral cough, or a persistent cough that develops after an infection has resolved.  These medicines can be in the form of a tablet, capsule,gel, liquid , syrup, lozenge or strips. However, I can only recommend the usual  dosage of its logenzes and syrup forms`
     ],7),
     encodeMemory([
         `* antitussives * (treat|work) *`,
@@ -671,7 +671,7 @@ let section11 = [
         `What happens in the body when someone takes antitussives`,
         `tell me about how to antitussives treat`,
     ],[
-        `Antitussives are thought to work by inhibiting a coordinating region for coughing located in the brain stem, disrupting the cough reflex arc; although the exact mechanism of action is unknown.`
+        `Antitussives ,such as Dextromethorphan or Robitussin, are thought to work by inhibiting a coordinating region for coughing located in the brain stem, disrupting the cough reflex arc; although the exact mechanism of action is unknown. These medicines can be in the form of a tablet, capsule,gel, liquid , syrup, lozenge or strips. However, I can only recommend the usual  dosage of its logenzes and syrup forms.`
     ],7),
     encodeMemory([
         `* not * (take|use) * antitussive *`,
@@ -697,20 +697,20 @@ let section11 = [
     ],[
         `Take this medication by mouth with or without food with a full glass of water (8 ounces or 240 milliliters) or as directed by your doctor. `
     ],7),
-    encodeMemory([
-        `* antitussive * price *`,
-        `Can you tell me the cost of antitussives`,
-        `What is the price on antitussives`,
-    ],[
-        `In southstar drug store, it dextromethorphan syrup cost starts at 113php. It watsons, its around 189php. It may vary though from other pharmacies`
-    ],7),
-    encodeMemory([
-        `* forms * antitussive *`,
-        `Can you give provide me with a list of the various different forms of antitussives`,
-        `tell What are the different forms types of antitussives`,
-    ],[
-        `Antitussives have many forms. It can be a tablet, capsule,gel, liquid , syrup, lozenge or strips. However, I can only recommend the usual  dosage of its logenzes and syrup forms.`
-    ],7),
+    // encodeMemory([
+    //     `* antitussive * price *`,
+    //     `Can you tell me the cost of antitussives`,
+    //     `What is the price on antitussives`,
+    // ],[
+    //     `In southstar drug store, it dextromethorphan syrup cost starts at 113php. It watsons, its around 189php. It may vary though from other pharmacies`
+    // ],7),
+    // encodeMemory([
+    //     `* forms * antitussive *`,
+    //     `Can you give provide me with a list of the various different forms of antitussives`,
+    //     `tell What are the different forms types of antitussives`,
+    // ],[
+    //     `Antitussives have many forms. It can be a tablet, capsule,gel, liquid , syrup, lozenge or strips. However, I can only recommend the usual  dosage of its logenzes and syrup forms.`
+    // ],7),
     encodeMemory([
         `* alternative * antitussive *`,
         `Are there any recommended natural alternative herbal treatments remedies to antitussives`,
@@ -721,18 +721,18 @@ let section11 = [
         `Honey is a time-honored remedy for a sore throat. According to one study, trusted Source, it can also relieve coughs more effectively than OTC medications that contain dextromethorphan (DM), a cough suppressant.`
     ],7),
     // lozenges
-    encodeMemory([
-        `* generic * lozenge *`,
-        `tell show give about What are common names generic list lozenge`, 
-    ],[
-        `Some of the generic names of logenzes include dextromethorphan and benzocaine-menthol`
-    ],7),
-    encodeMemory([
-        `* branded * lozenge *`,
-        `tell show give about What are common names branded list lozenge`, 
-    ],[
-        `Bactidol and strepsils are some of branded names of logenzes that can help relieve your throat`
-    ],7),
+    // encodeMemory([
+    //     `* generic * lozenge *`,
+    //     `tell show give about What are common names generic list lozenge`, 
+    // ],[
+    //     `Some of the generic names of logenzes include dextromethorphan and benzocaine-menthol`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * lozenge *`,
+    //     `tell show give about What are common names branded list lozenge`, 
+    // ],[
+    //     `Bactidol and strepsils are some of branded names of logenzes that can help relieve your throat`
+    // ],7),
     encodeMemory([
         `* (what|how) * (direction|take|dosing) * lozenge *`,
         `* direction * lozenge *`,
@@ -751,7 +751,7 @@ let section11 = [
         `What is the uses definition purpose of lozenges`,
         `tell me where is lozenges used`
     ],[
-        `This product is used to temporarily relieve pain from minor mouth problems (such as canker sores, sore gums/throat, mouth/gum injury).`
+        `Lozenges such as Bactidol and Strepsils are used to temporarily relieve pain from minor mouth problems (such as canker sores, sore gums/throat, mouth/gum injury).`
     ],7),
     encodeMemory([
         `* what * lozenge * use *`,
@@ -760,13 +760,13 @@ let section11 = [
         `What are the uses benefits of lozenges`,  
         `What can lozenges be taken for`,    
     ],[
-        `Taking Lozenges is a convenient, affordable option for symptomatic treatment of acute and chronic pharyngitis, irritation or inflammation of the upper respiratory tract and relief of unpleasant postoperative sensation in the throat.`
+        `Taking Lozenges,  such as Bactidol and Strepsils, are convenient, affordable option for symptomatic treatment of acute and chronic pharyngitis, irritation or inflammation of the upper respiratory tract and relief of unpleasant postoperative sensation in the throat.`
     ],7),
     encodeMemory([
         `* lozenges * (treat|work) *`,
         `Can you describe explain how lozenges work to relieve discomfort `,
-        `tell me how lozenges treat sore throat influenza`,
-        `how does lozenges treat influenza`,
+        `tell me how lozenges treat sore throat`,
+        `how does lozenges treat`,
     ],[
         `When you suck on a lozenge, it starts to dissolve and release medicine. It is intended to dissolve slowly in the mouth to temporarily suppress the cough, and lubricate and soothe irritated tissues of the throat. Some have medications that help fight colds, and most have anesthetic to help ease the pain. Lozenges also contain menthol or eucalyptus, which can help cool and sooth the throat. Others contain honey, which is known to have cough suppression properties.`
     ],7),
@@ -790,30 +790,30 @@ let section11 = [
         `Slight burning, tingling, or stinging may occur. If any of these effects last or get worse, tell your doctor or pharmacist promptly.`
     ],7),
     encodeMemory([
-        `* what * tips * lozenges? *`,
+        `* what * tips * lozenges *`,
         `Do you have any tips advice for taking lozenges`,  
         `What the recommended way to take lozenges`,  
         `tell give an advice or tip in how to take lozenges`,
     ],[
         `Do not chew or swallow it whole. This product is usually used every 2 hours as needed. `
     ],7),
-    encodeMemory([
-        `* lozenge * price *`,
-        `Can you tell me the price cost of lozenges`,
-        `How much does it cost to buy lozenges`,
-        `What is the price tag on lozenges`,
-    ],[
-        `In rose pharmacy it starts arounds 5php per piece. The price may vary in other pharmacies`
-    ],7),
-    encodeMemory([
-        `* forms * lozenge *`,
-        `Do you happen to know the various different forms of lozenges`,
-        `How are lozenges available`,
-        `What forms do lozenges come in`,
-        `tell give What the list of various different forms of lozenges`,
-    ],[
-        `Dosage forms that dissolve slowly in the mouth or that can be chewed and swallowed easily are gaining in popularity, especially for pediatric patients. Hard (compressed or molded) preparations of this dosage form are called lozenges, troches, or drops. Soft (molded) lozenges or troches are often called pastilles, and chewable, gelatin-based lozenges or troches are often called gummy, novelty-shaped products. `
-    ],7),
+    // encodeMemory([
+    //     `* lozenge * price *`,
+    //     `Can you tell me the price cost of lozenges`,
+    //     `How much does it cost to buy lozenges`,
+    //     `What is the price tag on lozenges`,
+    // ],[
+    //     `In rose pharmacy it starts arounds 5php per piece. The price may vary in other pharmacies`
+    // ],7),
+    // encodeMemory([
+    //     `* forms * lozenge *`,
+    //     `Do you happen to know the various different forms of lozenges`,
+    //     `How are lozenges available`,
+    //     `What forms do lozenges come in`,
+    //     `tell give What the list of various different forms of lozenges`,
+    // ],[
+    //     `Dosage forms that dissolve slowly in the mouth or that can be chewed and swallowed easily are gaining in popularity, especially for pediatric patients. Hard (compressed or molded) preparations of this dosage form are called lozenges, troches, or drops. Soft (molded) lozenges or troches are often called pastilles, and chewable, gelatin-based lozenges or troches are often called gummy, novelty-shaped products. `
+    // ],7),
     encodeMemory([
         `* alternative * lozenge * `,
         `Apart from lozenges, what other alternative herbal choices do I have`,
@@ -903,19 +903,19 @@ let section12 = [
 
 let section13 = [
     
-    encodeMemory([
-        `* problem * influenza *`,
-        `* influenza * problem *`,
-        `What complications risks associated arise from influenza`,
-        `Describe What kind of problems can arise if influenza is left untreated`,
-        'explain What could be the problems harms for influenza',
-        `tell me about the potential , problems,harms, or dangers associated with influenza`,
-        `why influenza can be concern or dangerous`
-    ],[
-        `
-        If left untreated, influenza can lead to various complications, including bacterial and viral pneumonia, bronchitis or inflammed airways, sinus infections,dehydration, ear infections, encephalitis which is a brain infection, and sepsis or blood infection and worsening of underlying chronic medical conditions such as asthma or congestive heart failure. In severe cases, influenza may even be fatal especially in people at high risk, such as elderly or young children and those with weakened immune systems.
-        `
-    ],1),
+    // encodeMemory([
+    //     `* problem * influenza *`,
+    //     `* influenza * problem *`,
+    //     `What complications risks associated arise from influenza`,
+    //     `Describe What kind of problems can arise if influenza is left untreated`,
+    //     'explain What could be the problems harms for influenza',
+    //     `tell me about the potential , problems,harms, or dangers associated with influenza`,
+    //     `why influenza can be concern or dangerous`
+    // ],[
+    //     `
+    //     If left untreated, influenza can lead to various complications, including bacterial and viral pneumonia, bronchitis or inflammed airways, sinus infections,dehydration, ear infections, encephalitis which is a brain infection, and sepsis or blood infection and worsening of underlying chronic medical conditions such as asthma or congestive heart failure. In severe cases, influenza may even be fatal especially in people at high risk, such as elderly or young children and those with weakened immune systems.
+    //     `
+    // ],1),
 ]
 
 let section14 = [
@@ -936,21 +936,21 @@ let section14 = [
     //    Further, I can explain these to help you perform self-care. However, I am not a medical practicitioner and the information I provide are meant for awareness only. 
     //    If you find these inadequate , it is best to ask your doctor for advises. `
     // ],1),
-    encodeMemory([
-        `* where * treat * symptoms * influenza *`,
-        `Where can I seek treatment for influenza symptoms`,
-        `Where should I go to get treatment for influenza`,
-        `Who can provide treatment for influenza symptoms`,
-    ],[
-        `
-        According to the Centers for Disease Control and Prevention, influenza is a contagious respiratory illness caused by influenza viruses that infect the nose, throat, and sometimes the lungs.
+    // encodeMemory([
+    //     `* where * treat * symptoms * influenza *`,
+    //     `Where can I seek treatment for influenza symptoms`,
+    //     `Where should I go to get treatment for influenza`,
+    //     `Who can provide treatment for influenza symptoms`,
+    // ],[
+    //     `
+    //     According to the Centers for Disease Control and Prevention, influenza is a contagious respiratory illness caused by influenza viruses that infect the nose, throat, and sometimes the lungs.
         
-        While you can manage the symptoms of influenza at home, it is 
-        generally recommended to seek medical attention from a healthcare provider. They can prescribe antiviral medications and provide other treatments to help manage your symptoms and prevent any complications. 
+    //     While you can manage the symptoms of influenza at home, it is 
+    //     generally recommended to seek medical attention from a healthcare provider. They can prescribe antiviral medications and provide other treatments to help manage your symptoms and prevent any complications. 
         
-        It is important to consult a doctor if you experience serious symptoms or are at increased risk for complications.
-        `
-    ],5),
+    //     It is important to consult a doctor if you experience serious symptoms or are at increased risk for complications.
+    //     `
+    // ],5),
     
     encodeMemory([
         `* tell * (signs|symptoms) * influenza *`,

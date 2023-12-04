@@ -71,7 +71,7 @@ let data = []
 
 data.push(
     encodeMemory([
-        `* (gamutin|bawasan|control) *  suka *`,
+        `* (gamutin|bawasan|control) * suka *`,
         `* (kainin|inumin|bilhin) * suka * `,
         `Ano ang dapat gawin para mapigilan ang pagsusuka`,
         `Ano ang dapat gawin kainin kapag may pagsusuka`,

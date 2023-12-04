@@ -2,14 +2,10 @@
 
 import { ref, watch, onMounted, nextTick } from 'vue'
 import { useBackendAPI } from '@/stores/api';
-import ChatboxUserMessage from './ChatboxUserMessage.vue';
-import ChatboxChatbotMessage from './ChatboxChatbotMessage.vue';
 
 let msg = ref('')
 let userMessages = ref([])
 let store = useBackendAPI()
-
-let userMessagesChatboxElements = ref([])
 
 let chatboxContainer = null
 
@@ -28,34 +24,12 @@ let sendMessage = async () => {
     let { reply, lang } = response
     // store.storeLog(msg.value,reply,lang)
     // console.log(`Storing Log:\n\tMsg: ${msg.value}\n\tLang: ${lang}\n\tReply: ${reply}`)
-    // userMessages.value.push({
-    //     // reply here is an object so wer need to return reply.reply
-    //     "bot": reply,
-    //     "user": msg.value
-    // })
-
-    userMessagesChatboxElements.value.push({
-        source: "user",
-        message: msg.value
+    userMessages.value.push({
+        // reply here is an object so wer need to return reply.reply
+        "bot": reply,
+        "user": msg.value
     })
 
-
-    setTimeout(function(){
-
-        userMessagesChatboxElements.value.push({
-                source: "bot",
-                message: reply.reply
-            })
-    },400)
-
-
-    // await nextTick()
-    // create html element
-
-            // let chatboxContainer = document.querySelector('.chatbox-message-container')
-            // let lastElement = chatboxContainer.lastElementChild
-            // let topPos = lastElement.offsetTop;
-            // chatboxContainer.scrollTop = topPos;
 
     msg.value = ""
 }
@@ -71,50 +45,49 @@ onMounted(() => {
 // that you need to school down explicitly
 // this can also be done with async and await...
 // but this is so much clener
-// watch(userMessages.value, function () {
-//    // https://stackoverflow.com/questions/70276948/when-data-is-changed-within-the-watch-function-dom-does-not-update
-//    setTimeout(function(){
-
-//         nextTick(() => {
-            
-//             let chatboxContainer = document.querySelector('.chatbox-message-container')
-//             let lastElement = chatboxContainer.lastElementChild
-//             let topPos = lastElement.offsetTop;
-//             chatboxContainer.scrollTop = topPos;
-//         })
-//    },400)
-// })
-
-
-// watch(userMessagesChatboxElements.value, function () {
-//    // https://stackoverflow.com/questions/70276948/when-data-is-changed-within-the-watch-function-dom-does-not-update
-//     nextTick(() => {
-//         let chatboxContainer = document.querySelector('.chatbox-message-container')
-//         alert( chatboxContainer)
-//         let lastElement = chatboxContainer.lastElementChild
-//         let topPos = lastElement.offsetTop;
-//         chatboxContainer.scrollTop = topPos;
-//     })
-// })
-
-watch(userMessagesChatboxElements.value, () => {
-      nextTick(() => {
-        let chatboxContainer = document.querySelector('.chatbox-message-container');
-        if (chatboxContainer) {
-          let lastElement = chatboxContainer.lastElementChild;
-          if (lastElement) {
-            let topPos = lastElement.offsetTop + lastElement.offsetHeight; // Adjusted to include the height of the last element
-            chatboxContainer.scrollTop = topPos;
-          }
-        }
-      });
+watch(userMessages.value, function () {
+   // https://stackoverflow.com/questions/70276948/when-data-is-changed-within-the-watch-function-dom-does-not-update
+    nextTick(() => {
+        let lastElement = chatboxContainer.lastElementChild
+        let topPos = lastElement.offsetTop;
+        chatboxContainer.scrollTop = topPos;
     })
+})
+
+let showOverlay = () => {
+
+    let el = document.querySelector(".nav-overlay")
+
+    let style = el.style.display
+    if (style == "flex") {
+        el.style.display = "none"
+    } else {
+        el.style.display = "flex"
+        el.style.borderBottom = "3px inset rgba(50, 49, 53,.7)"
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+}
+
 
 let resizeTextArea = (el) => {
+
+    // el.target.style.background = "green"
+    // alert(textareaDOM)
+    // alert(textareaDOM.style)
+    // el.target.style.background = "green"
+    // el.target.style.height = '0px';  // Force recalculation
+
+    // alert('wtf')
+    // console.log(el.target.style)
     let textArea = document.getElementById("input-textarea")
     textArea.style.height = `42px`
     let newHeight = el.target.scrollHeight
     textArea.style.height = `${newHeight}px`
+    // console.log('Change >>')
+    // console.log(`\tScroll Scroll Height:: ${newHeight}`)
+    // console.log(`\tScroll Height:: ${el.target.offsetHeight}`)
+
 }
 
 const months = [
@@ -145,6 +118,31 @@ function getCurrentDateTime() {
     return formattedDateTime;
 }
 
+// Example usage
+// const formattedDateTime = getCurrentDateTime();
+
+
+// type writter effect
+function typeWriter(text, index) {
+    let speed = 100
+    let i = 0;
+    const element = document.getElementById('typewriter-text');
+    element.innerHTML = ''; // Clear existing text
+
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+}
+
+// Call the typewriter function with your desired text and speed
+
+
 </script>
 
 <template>
@@ -166,27 +164,36 @@ function getCurrentDateTime() {
         </div>
         <div class="chatbox-message-container">
 
-            
-            <!-- use :message when value comes from variable
-                else use message (without :) if static or direct -->
-            <ChatboxChatbotMessage 
-                        message="Hi How can I help you?"
-                        :time="getCurrentDateTime()"></ChatboxChatbotMessage>
+            <span class="chatbot-message-chatbot-icon">
+                <img class="chatbox-picture" src="@/assets/img/model.png">
+                Arkhie <br> {{ getCurrentDateTime() }}
+            </span>
+            <p class="chatbox-message-chatbot">
+                How are you?
+            </p>
 
-            <TransitionGroup name="list" tag="ul">
 
-                <li v-for="(item, index) in userMessagesChatboxElements" :key="index">
+            <template v-for="(item, index) in userMessages" :key="index">
 
-                    <ChatboxUserMessage 
-                        v-if="item.source=='user'"
-                        :message="item.message"></ChatboxUserMessage>
-                    <ChatboxChatbotMessage v-else-if="item.source=='bot'"
-                        :message="item.message"
-                        :time="getCurrentDateTime()"></ChatboxChatbotMessage>
-                    
-                </li>
-            </TransitionGroup>
-                
+                <span class="chatbot-message-user-icon">
+                    You
+                </span>
+                <p class="chatbox-message-user">
+                    {{ item.user }}
+                </p>
+
+                <span class="chatbot-message-chatbot-icon">
+                    <img class="chatbox-picture" src="@/assets/img/model.png">
+                    Chatbot<br>{{ getCurrentDateTime() }}
+                </span>
+                <!-- <span class="chatbot-message-chatbot-icon">Chatbot</span> -->
+
+
+                <p class="chatbox-message-chatbot">
+                    {{ item.bot.reply }}
+                </p>
+            </template>
+
         </div>
         <div class="chatbox-actionbar">
             <textarea class="chatbox-textarea" id="input-textarea" @keyup="resizeTextArea" type="text" v-model="msg"
@@ -210,10 +217,6 @@ function getCurrentDateTime() {
 <style lang="scss" scoped>
 @use "@/assets/scss/variable";
 
-// .chatbox{
-//     height: 40vh !important;
-// }
-
 
 .list-enter-active,
 .list-leave-active {
@@ -223,7 +226,7 @@ function getCurrentDateTime() {
 .list-enter-from,
 .list-leave-to {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateX(30px);
 }
 
 
@@ -235,6 +238,11 @@ function getCurrentDateTime() {
     display: flex;
 }
 
+.chatbox-picture {
+    width: 40px;
+    height: auto;
+    border-radius: variable.$border-radius;
+}
 
 
 .icon-menu {

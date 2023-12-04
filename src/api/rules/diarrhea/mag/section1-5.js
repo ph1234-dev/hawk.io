@@ -173,21 +173,22 @@ let section5 = [
     //     Upama ka pakagedam ka sa may, masakit a tyan o dehydration , nasisita na pailay ka engagayas sa doktor.
     //     `,
     // ],5),
-    encodeMemory([
-        `* (ebpawang|kailay)* doctor * tagudo * `,
-        `nginto ka mangay to taw sa doktor amayka pedtagudo`,
-        `kano besen i dayt a ka angay nu taw a pedtagudo sa doktor`,
-        `Kanu i ka lu sa doctor kandoctor amayka pedtagudo`,
-        `pila gay angatan bago blu angay sa doctor amayka pedtagudo`,
-        `panon i kataw amayka nasisita i kapailay sa doctor`,
-    ],[
-        `Upama ka su kadtagudo na sobra den sa dwa gay o aw na to na belenukan na den pedtandang na pailay ka den sa doctor`,
-    ],5),
+    // encodeMemory([
+    //     `* (ebpawang|kailay)* doctor * tagudo * `,
+    //     `nginto ka mangay to taw sa doktor amayka pedtagudo`,
+    //     `kano besen i dayt a ka angay nu taw a pedtagudo sa doktor`,
+    //     `Kanu i ka lu sa doctor kandoctor amayka pedtagudo`,
+    //     `pila gay angatan bago blu angay sa doctor amayka pedtagudo`,
+    //     `panon i kataw amayka nasisita i kapailay sa doctor`,
+    // ],[
+    //     `Upama ka su kadtagudo na sobra den sa dwa gay o aw na to na belenukan na den pedtandang na pailay ka den sa doctor`,
+    // ],5),
     encodeMemory([
         `* gamutan * tagudo *`,
         `endaw dayt a penggamutan i kapedtagudo`,
         `kagamutan i kadtagudo sa walay bo`,
         `mapakay a gamutan i kapedtagudo apya sa bo sa walay`,
+        `panon ngen i kapengamot sa kapedtagudo`
     ],[
         `Depende sa kapedtagudo nu tao, su kapenggamot lon na mapakay apya sya bo sa walay o sya mangay sa ospital. Su ka degka, hydrate o kainom sa ig, abpeg kasambi sa pegkanen na mga mapya a enggulan na taw umayka pakagedam sekanin sa dikena bon ged mapasang a kapedtagudo. Su mga sintomas manem na kapakay pengamutan na mga gamot a gapamasa sa botika mana su lopermaide abpeg bismuth subsalicylate. Ugayd na upama ka mapasang den a benel su kapedtagudo ka pegkayaw su taw, ga dehydrate abped pebpaugo i tay nin na angay ka den sa doctor. Meto bun upama ka pedtagudo su taw na naipos a dwa gay. Aw na to na angay ka sa barangay health center`,
     ],5),

@@ -17,7 +17,7 @@ export const substitutionsUnderscored = [
     encodeSubstitution('diarrhea_foods_not_allowed_contains_lactose',['(ice)? cream', 'milk', 'cheeses?', 'unpasteurized milk']),
     encodeSubstitution('diarrhea_foods_not_allowed_contains_lactose',['(selecta|magnolia|nestle|Dairy Queen)', '(alaska|nestle|bear brand|anchor)', '(eden|cheeze whiz|magnolia|kraft|quickmelt|anchor)']),
     encodeSubstitution('diarrhea_foods_not_allowed_contains_lactose',['gatas']),
-    encodeSubstitution('diarrhea_foods_not_allowed_irritate_stomach',['chili', 'hot sauces', 'spicy', '(.*)?anghang','(.*)lalas']),
+    encodeSubstitution('diarrhea_foods_not_allowed_irritate_stomach',['chili', 'hot', 'spicy', '(.*)?anghang','(.*)lalas']),
     encodeSubstitution('diarrhea_foods_not_allowed_irritate_stomach',['maa?anghang', 'sili', 'labuyo']),
     encodeSubstitution('diarrhea_foods_not_allowed_oily',['oil(s|y|ed)?', 'fr(y|ied|ies)', 'fr(y|ies|ied|ying)', 'hamburger', 'burgers', 'hotdogs', 'bacon', 'sausage', 'dogs', 'greas(e|y|ed)']),
     encodeSubstitution('diarrhea_foods_not_allowed_oily',['(adobo|lechon|sisig|kare-kare|ginataan|tocino)', 'pork chop']),

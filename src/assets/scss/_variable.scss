@@ -18,12 +18,21 @@ $bg-primary: rgb(37, 88, 255);
 $bg-accent: rgb(255, 218, 131);
 $bg-warning: rgb(255, 93, 107);
 
+// fixes https://cssgradient.io/shades-of-blue/
+// https://www.flatuicolorpicker.com/blue-rgb-color-model/
+
+// https://undraw.co/search - progressive web app
+$bg-primary: #082567;
+$bg-primary: rgb(50, 50, 120);
+$bg-primary: #4053E6;
+
+
 $bg-white: rgba(240,240,240,1);
 $bg-whiter:  rgba(248,248,248,1);
 $bg-whitest: rgba(252,252,252,1);
 
 $border-radius: 3px;
-
+$border: 2px solid darken($bg-white,3%);
 
 @mixin draw-border{
     border-radius: $border-radius;

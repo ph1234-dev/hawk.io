@@ -3,22 +3,22 @@ import { encodeMemory } from "@/api/config/model"
 
 let section11 = [
     // antihistamines
-    encodeMemory([
-        `*generic * antihistamine * `,
-        `enggay ka sa mga ngala na generic a antihistamines a gamot na influenza`,
-        `ngin  mga ngala generic a mga antihistamines a gamot na influenza`,
-        `ngen i generic a antihistamine`,
-    ],[
-        `Su citerizine na isa a kila a generic antihistamine a gapamasa sa botika. Nya ba a gamot na madakel i ngala nin depende sa dalpa abpeg minumbal lun. Upama ka pakagedam ka sa influenza, na degka ka, inom ka sa madakel a ig apeg da ka ged pagubay sa mga pembidsul. Nasisita i ka pailay sa doktor o pharmacist upama ka keman ka sa nya ba gamot. `
-    ],7),
-    encodeMemory([
-        `* branded * antihistamine * `,
-        `ngin ngala mga branded a mga antihistamines a gamot na influenza`,
-        `enggay ka sa mga ngala na branded a antihistamines a gamot na influenza`,
-        `ngen i branded a antihistamine`,
-    ],[
-        `Su Bendryl na isa sa mga kila a branded a antihistamine. Tanay na na nya ba mga gamot na kanen bo upama ka aden guide na health profession. Upama ka pakagedam ka sa influenza, na degka ka, inom sa ig, endu da ka pagubay sa bel.`
-    ],7),
+    // encodeMemory([
+    //     `*generic * antihistamine * `,
+    //     `enggay ka sa mga ngala na generic a antihistamines`,
+    //     `ngin  mga ngala generic a mga antihistamines`,
+    //     `ngen i generic a antihistamine`,
+    // ],[
+    //     `Su citerizine na isa a kila a generic antihistamine a gapamasa sa botika. Nya ba a gamot na madakel i ngala nin depende sa dalpa abpeg minumbal lun. Upama ka pakagedam ka sa influenza, na degka ka, inom ka sa madakel a ig apeg da ka ged pagubay sa mga pembidsul. Nasisita i ka pailay sa doktor o pharmacist upama ka keman ka sa nya ba gamot. `
+    // ],7),
+    // encodeMemory([
+    //     `* branded * antihistamine * `,
+    //     `ngin ngala mga branded a mga antihistamines`,
+    //     `enggay ka sa mga ngala na branded a antihistamines`,
+    //     `ngen i branded a antihistamine`,
+    // ],[
+    //     `Su Bendryl na isa sa mga kila a branded a antihistamine. Tanay na na nya ba mga gamot na kanen bo upama ka aden guide na health profession. Upama ka pakagedam ka sa influenza, na degka ka, inom sa ig, endu da ka pagubay sa bel.`
+    // ],7),
     encodeMemory([
         `* (gamit|kan|inom|dose) * antihistamine * `,
         `* ukit * antihistamine * `,
@@ -29,14 +29,14 @@ let section11 = [
         `su antihistamine na pano i kapegkan lon`,
         `panon ngin i dose na antihistamines`,
     ],[
-        `Su antihistamine na kapay nengka pegkanin apya da ka kan, da ka makainum sa ig o gatas enggu di get kagatel tyan nengka. Nyaba I enggula ka upama ka keman ka sa citerizine. Su nem lagon a wata apeg a matuwa na kapakayan a keman sa lima taman sa sapulo ka milligram uman gay. Su pat taman sa nem lagon na kapakay kelan sa lima ka milligram o dwa enggula sabad maka dwa sa sagay. So tayn manem I da makasot sa pat lagon na d papegkanen sa nya ba a gamot.`
+        `Su antihistamine mana su Citerizing abpeg a Benadryl na kapay nengka pegkanin apya da ka kan, da ka makainum sa ig o gatas enggu di get kagatel tyan nengka. Nyaba I enggula ka upama ka keman ka sa citerizine. Su nem lagon a wata apeg a matuwa na kapakayan a keman sa lima taman sa sapulo ka milligram uman gay. Su pat taman sa nem lagon na kapakay kelan sa lima ka milligram o dwa enggula sabad maka dwa sa sagay. So tayn manem I da makasot sa pat lagon na d papegkanen sa nya ba a gamot.`
     ],7),
     encodeMemory([
         `* antihistamine * `,
         `ngin i besen pidtalo a antihistamines`,
         `labit ka kon ngin i antihistamines`,
     ],[
-        `Su anti histamine na embalangan a gamot na penggamiten na madakel sa kapenggamot s allergy. Nya ba silan na pakadtabang upama ka madakel ged I histamine nu taw. Nya ba na chemical na pagumbalen nu lawas nu gagaysa. Nya ba gamot na penggamitin nu madakel sa allergy sa polen abpeg kaped pan. Ugayd na kapakayan bon I penggamot sa kaped a sakit mana su sakit na nya, sepu, anxiety abpeg kaped pan.`
+        `Su antihistamine mana su Citerizing abpeg a Benadryl na embalangan a gamot na penggamiten na madakel sa kapenggamot s allergy. Nya ba silan na pakadtabang upama ka madakel ged I histamine nu taw. Nya ba na chemical na pagumbalen nu lawas nu gagaysa. Nya ba gamot na penggamitin nu madakel sa allergy sa polen abpeg kaped pan. Ugayd na kapakayan bon I penggamot sa kaped a sakit mana su sakit na nya, sepu, anxiety abpeg kaped pan. Nya ba gamot na madakel I embalangan nin mana igen, ipegkugil, syrup, gel, eyedrops, tablitas, capsules, creams abpeg I pegsumbok sa pudit nu taw.`
     ],7),
     encodeMemory([
         `*antihistamine * gamit * `,
@@ -46,7 +46,7 @@ let section11 = [
         `kano i kainom,kakan,kagamit sa antihistamines`,
         `ngin i gamit na antihistamines`,
     ],[
-        `Su anti histamine na kagamit sekanin enggu pakatabang sa allergy o mga kagkagatel. Nya ba gamot na penggamutan i sobla kadakel na histamine a pagumbalen na lawas upamaka ka pedsakit su taw. Su antihistamines na pengamiten  nu mga taw a aden allergic reaction nilan sa polens engu allergens. Pakagamot bon i nya ba sa kaped a sakit mana su sakit na nya, sepu, anxiety abpeg kaped pan.`
+        `Su antihistamine mana su Citerizing abpeg a Benadryl na kagamit sekanin enggu pakatabang sa allergy o mga kagkagatel. Nya ba gamot na penggamutan i sobla kadakel na histamine a pagumbalen na lawas upamaka ka pedsakit su taw. Su antihistamines na pengamiten  nu mga taw a aden allergic reaction nilan sa polens engu allergens. Pakagamot bon i nya ba sa kaped a sakit mana su sakit na nya, sepu, anxiety abpeg kaped pan.Nya ba gamot na madakel I embalangan nin mana igen, ipegkugil, syrup, gel, eyedrops, tablitas, capsules, creams abpeg I pegsumbok sa pudit nu taw.`
     ],7),
     encodeMemory([
         `* antihistamine * (awa|gamot|kapya|tabang|galbek) *`,
@@ -63,12 +63,12 @@ let section11 = [
         `* di * (kan|inom|gamit) * antihistamine  * `,
         `di ko katawan kanu i di kanggamot kainom kakan enggamot sa antihistamines`,
         `duken ka di mapya a minom keman sa antihistamines`,
-        `enduken ka di keman minom sa antihistamines i taw a aden influenza`,
+        `enduken ka di keman minom sa antihistamines i taw`,
         `kano i di kakan kainom kagamit sa antihistamines`,
         `ngen to ka di dayt a keman sa antihistamine su gagaisa a taw`,
-        `ngen to ka so antihistamines na di mapya a kanen , inomen o gamiten nu taw aden influenza`,
+        `ngen to ka so antihistamines na di mapya a kanen , inomen o gamiten nu taw`,
         `nginto ka di mapakay a keman minom enggamot sa antihistamines`,
-        `kano a to ka di mapakay a keman i taw sa antihistamines i taw a aden influenza nin`,
+        `kano a to ka di mapakay a keman i taw sa antihistamines i taw`,
     ],[
         `Madakel sa mga taw na da manggulan nilan upama ka minom sa antihistamines. Ugayd na aden mga taw mana su mga maginay, papedsusu, wata , pegkan sa kaped a mga gamot, aden mga sakit nin mana su sakit a pamusungan, sakit na atay, sakit na kidney o eplipepsy na mangingat sa kapegkan sa nya ba gamot.
         `
@@ -93,21 +93,21 @@ let section11 = [
     ],[
         `Upama ka keman ka nya ba a gamot na da ka paginom sa aden alchohol nin abpeg a makandadalangot. Da ka ged pengalbek sa mga galbekan a makapagitong ka gayd. Panginat ka bon upama ka su aden sakit nin na aden hepatic abpeg a renal impairment nin. Pagidsan bun sa matuwa ka nya malmo nilan mangedam I dikena mapya a epekto na nya ba.`
     ],7),
-    encodeMemory([
-        `* pila * antihistamine * `,
-        `* antihistamine * pila * `,
-        `ngen i alaga na antihistamines`,
-        `pila gagapila alaga na antihistamines`,
-    ],[
-        `Su alaga na citerizine na embidabida. Su antihistamine a mana su citerizine na 10mg na nya nin alaga sa 15 pilak sa Wasons. Su Benadryl manem na 41 pilak.`
-    ],7),
-    encodeMemory([
-        `* embalangan * antihistamine  * `,
-        `ngen i mga embalangan nu gamot a antihistamines`,
-        `labit panon aden mga balangan na antihistamine`,
-    ],[
-        `Su antihistamines na madakel I embalangan nin mana igen, ipegkugil, syrup, gel, eyedrops, tablitas, capsules, creams abpeg I pegsumbok sa pudit nu taw. `
-    ],7),
+    // encodeMemory([
+    //     `* pila * antihistamine * `,
+    //     `* antihistamine * pila * `,
+    //     `ngen i alaga na antihistamines`,
+    //     `pila gagapila alaga na antihistamines`,
+    // ],[
+    //     `Su alaga na citerizine na embidabida. Su antihistamine a mana su citerizine na 10mg na nya nin alaga sa 15 pilak sa Wasons. Su Benadryl manem na 41 pilak.`
+    // ],7),
+    // encodeMemory([
+    //     `* embalangan * antihistamine  * `,
+    //     `ngen i mga embalangan nu gamot a antihistamines`,
+    //     `labit panon aden mga balangan na antihistamine`,
+    // ],[
+    //     `Su antihistamines na madakel I embalangan nin mana igen, ipegkugil, syrup, gel, eyedrops, tablitas, capsules, creams abpeg I pegsumbok sa pudit nu taw. `
+    // ],7),
     encodeMemory([
         `* sambi * antihistamine  * `,
         `ngen a mga herbal gamot i mapakay i sambi sa antihistamines`,
@@ -118,22 +118,22 @@ let section11 = [
         `Tekaw ka kan sa luya. Niya tig na Sinus and Allergy Wellness Center na namba na natural a histamine. Niya nin mana na isa sekanin a pakadtabang sa lawas. So luya na mapya a makadtabang a gamot kagina pakadtabang sekanin sa lawas. Kapakay ka mumbal sa sa ti para makatabang sa kapedsakit na ulo. Upama ka pagigop ka manem sa ti na, pagebaw ka it to ba. Mayto bon na tekaw ka gamit sa kaped pan a gamut mana su kalawag ka mabagel I namba a natural a gamot.`
     ],7),
     // analgesic
-    encodeMemory([
-        `* generic * analgesic  * `,
-        `ngin ngala mga generic a mga analgesics a gamot na influenza`,
-        `enggay ka sa mga ngala na generic a analgesics a gamot na influenza`,
-        `ngin i mga generic a analgesic`,
-    ],[
-        `Su ibuprofen, acetaminophen, aspirin paracetamol, naproxen abpeg ketoprofen na mga generic analagesics. Nya ba ma gamot na pepedtalnen nin su kapagumbal nu lawas sa prostraglandins a chemical a pakangguna sa kablebag abpeg su masakit a kangegedam. Sabap sa nya ba na su mga analgesics na pakatabang sa kapapegkapaydo sa masakit abpeg mga blebag sa lawas`
-    ],7),
-    encodeMemory([
-        `* branded * analgesic * `,
-        `ngin ngala mga branded a mga analgesics a gamot na influenza`,
-        `enggay ka sa mga ngala na branded a analgesics a gamot na influenza`,
-        `ngen i mga branded a analgesic`,
-    ],[
-        `Su biogesic abpeg a calpol na mga branded a mga paracetamol. Nya ba ma gamot na pepedtalnen nin su kapagumbal nu lawas sa prostraglandins a chemical a pakangguna sa kablebag abpeg su masakit a kangegedam. Sabap sa nya ba na su mga analgesics na pakatabang sa kapapegkapaydo sa masakit abpeg mga blebag sa lawas`
-    ],7),
+    // encodeMemory([
+    //     `* generic * analgesic  * `,
+    //     `ngin ngala mga generic a mga analgesics`,
+    //     `enggay ka sa mga ngala na generic a analgesics`,
+    //     `ngin i mga generic a analgesic`,
+    // ],[
+    //     `Su ibuprofen, acetaminophen, aspirin paracetamol, naproxen abpeg ketoprofen na mga generic analagesics. Nya ba ma gamot na pepedtalnen nin su kapagumbal nu lawas sa prostraglandins a chemical a pakangguna sa kablebag abpeg su masakit a kangegedam. Sabap sa nya ba na su mga analgesics na pakatabang sa kapapegkapaydo sa masakit abpeg mga blebag sa lawas`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * analgesic * `,
+    //     `ngin ngala mga branded a mga analgesics`,
+    //     `enggay ka sa mga ngala na branded a analgesics a gamot`,
+    //     `ngen i mga branded a analgesic`,
+    // ],[
+    //     `Su biogesic abpeg a calpol na mga branded a mga paracetamol. Nya ba ma gamot na pepedtalnen nin su kapagumbal nu lawas sa prostraglandins a chemical a pakangguna sa kablebag abpeg su masakit a kangegedam. Sabap sa nya ba na su mga analgesics na pakatabang sa kapapegkapaydo sa masakit abpeg mga blebag sa lawas`
+    // ],7),
     encodeMemory([
         `* (dose|gamit|kan|inom|ukit) *  analgesic  * `,
         `* analgesic * (gamit|kan|inom) *`,
@@ -150,7 +150,7 @@ let section11 = [
         `ngin besen pidtalo a analgesics`,
         `ngin i nadtalo a analgesics`,
     ],[
-        `Su mga analgesics na nabedtuan a pain killers a pagamot sa embalangan na masakit mana su masakit a ulo , su mga injuries, abpeg arthitis. Su mga anti-inflammatory analgesics na mga gamot a papegkapaydon nin su kablebgag. So opoiod analgesics manem na pedsambian nin su panun su kapegkagedam sa sakit nu taw sya kanu utek nin.`
+        `Su mga analgesics mana acetaminophen, ibuprofen, paracetamol, biogesic abpeg na calpol, na nabedtuan a pain killers a pagamot sa embalangan na masakit mana su masakit a ulo , su mga injuries, abpeg arthitis. Su mga anti-inflammatory analgesics na mga gamot a papegkapaydon nin su kablebgag. So opoiod analgesics manem na pedsambian nin su panun su kapegkagedam sa sakit nu taw sya kanu utek nin. Su nya ba a gamot na nya nin buntal na igen, nasal spray, tablitas, capsules, aw na to na powder.`
     ],7),
     encodeMemory([
         `* analgesic * gamit * `,
@@ -161,7 +161,7 @@ let section11 = [
         `kano i kainom,kakan,kagamit sa analgesics`,
         `ngin i gamit na analgesics`,
     ],[
-        `Su mga over the counter a analagesics na gapamasa sa parmachies mana su ibuprofen abpeg a acetaminophen o paracetamol na pakagkapya sa mga masakit. Ugayd na ibibidaya i kapya na gamot a nan sa upaman nu sakit, su  kabagel nin, enggo su kadakel nu gamot a pegkanen. Su pain killers na gapamasa sa da resita nin na kapakayan penggamuten sa mga dikena ged mga masakit a kangedam nu taw. Ugayd na di ba inan dayt a pegkanen sa edututundog a pila gay endu su kakan sa nya ba di di dayn a pedsublan `
+        `Su mga over the counter a analagesics mana acetaminophen, ibuprofen, paracetamol, biogesic abpeg na calpol na gapamasa sa parmachies mana su ibuprofen abpeg a acetaminophen o paracetamol na pakagkapya sa mga masakit. Ugayd na ibibidaya i kapya na gamot a nan sa upaman nu sakit, su  kabagel nin, enggo su kadakel nu gamot a pegkanen. Su pain killers na gapamasa sa da resita nin na kapakayan penggamuten sa mga dikena ged mga masakit a kangedam nu taw. Ugayd na di ba inan dayt a pegkanen sa edututundog a pila gay endu su kakan sa nya ba di di dayn a pedsublan.Su nya ba a gamot na nya nin buntal na igen, nasal spray, tablitas, capsules, aw na to na powder.`
     ],7),
     encodeMemory([
         `* galbek * analgesic *`,
@@ -176,8 +176,8 @@ let section11 = [
         `* analgesics * di * (kan|inom|gamit) *`,
         `duken ka di mapya a keman minom enggamot sa analgesics`,,
         `kano i di kakan kagamit kainom sa analgesics`,
-        `ngen to ka so analgesics na di mapya a kanen gamiten inomen nu taw aden influenza`,
-        `enduken ka di keman o minom sa analgesics i taw a aden influenza`,
+        `ngen to ka so analgesics na di mapya a kanen gamiten inomen nu taw`,
+        `enduken ka di keman o minom sa analgesics i taw`,
         `tayn samana i di day temangka sa kakan sa analgesics`,
         `labit ka ngen i duken di mapakay a keman i taw sa analgesics`,
     ],[
@@ -201,26 +201,26 @@ let section11 = [
     ],[
         `Pegkanin I nya ba a gamot. Inom ka sa ig mga walo ka baso. Da ka pagiga sa mga sapulo ka minutos kapasad nengka keman sa nya ba gamot. Upama ka edsakit I tyan nengka kapasad nengka keman sa nya ba na kan ka sa pegken o inom ka s agatas. `
     ],7),
-    encodeMemory([
-        `* pila * analgesic  * `,
-        `* analgesic * pila *`,
-        `ngen i alaga na analgesics`,
-        `gagapila pila alaga i analgesics`,
-    ],[
-        `Niya tig na Muramed apbeg Watsons na su paracetamol na mga 4 o pat pilak. So aspirin manem na aw na to na lemedsu sa 3.5 pilak. Namba na nakalista sa Watson pharmacy. Ugayd na di ba I namba gapamasa sad ala riseta nin endu aw na to na edsasakabiyas I alaga nin I to ba. `
-    ],7),
-    encodeMemory([
-        `* embalangan * analgesic * `,
-        `ngen i mga balangan na analgesics`,
-        `aden mga balangan na analgesics`,
-        `panon labit ka ngin i mga balangan na analgesics`,
-    ],[
-        `Su analgesics na aw na to na nya nin buntal na film, ig, nasal spray, tablitas, capsules, aw na to na powder`
-    ],7),
+    // encodeMemory([
+    //     `* pila * analgesic  * `,
+    //     `* analgesic * pila *`,
+    //     `ngen i alaga na analgesics`,
+    //     `gagapila pila alaga i analgesics`,
+    // ],[
+    //     `Niya tig na Muramed apbeg Watsons na su paracetamol na mga 4 o pat pilak. So aspirin manem na aw na to na lemedsu sa 3.5 pilak. Namba na nakalista sa Watson pharmacy. Ugayd na di ba I namba gapamasa sad ala riseta nin endu aw na to na edsasakabiyas I alaga nin I to ba. `
+    // ],7),
+    // encodeMemory([
+    //     `* embalangan * analgesic * `,
+    //     `ngen i mga balangan na analgesics`,
+    //     `aden mga balangan na analgesics`,
+    //     `panon labit ka ngin i mga balangan na analgesics`,
+    // ],[
+    //     `Su analgesics na aw na to na nya nin buntal na film, ig, nasal spray, tablitas, capsules, aw na to na powder`
+    // ],7),
     encodeMemory([
         `* sambi * analgesic  *`,
         `ngen i kaped a gamot a gapakay isambi sa analgesics`,
-        `aden pan kaped a herbal amot a mapakay inomen o kanen na taw lyu sa analgesics para kagamotan i influenza`,
+        `aden pan kaped a herbal amot a mapakay inomen o kanen na taw lyu sa analgesics para kagamotan`,
         `aden mga gapakay a herbal gamot a pegkanen lyu sa analgesics`,
         `aden mga gapakay a pegkanen, pegkanen, paginumen o gamiten nu taw lyu sa analgesics`,
     ],[
@@ -229,9 +229,9 @@ let section11 = [
     // nsaids
     // encodeMemory([
     //     `* generic * nsaid*`,
-    //     `ngen i mga ngala na generic a nsaids a gamot na influenza`,
-    //     `ngin e mga generic a mga nsaids a gamot na influenza`,
-    //     `enggay ka sa mga ngala na generic a nsaids a gamot na influenza`,
+    //     `ngen i mga ngala na generic a nsaids`,
+    //     `ngin e mga generic a mga nsaids`,
+    //     `enggay ka sa mga ngala na generic a nsaids a gamot`,
     //     `di ko katawan ngin i generic a nsaids`,
     //     `labit ka sa mga generic a nsaids`,
     //     `ngen i generic a nsaids`,
@@ -240,9 +240,9 @@ let section11 = [
     // ],7),
     // encodeMemory([
     //     `* branded * nsaid*`,
-    //     `ngen i mga ngala na branded a nsaids a gamot na influenza`,
-    //     `ngin e mga branded a mga nsaids a gamot na influenza`,
-    //     `enggay ka sa mga ngala na branded a nsaids a gamot na influenza`,
+    //     `ngen i mga ngala na branded a nsaids`,
+    //     `ngin e mga branded a mga nsaids`,
+    //     `enggay ka sa mga ngala na branded a nsaids`,
     //     `di ko katawan ngin i branded a nsaids`,
     //     `labit ka sa mga branded a nsaids`,
     //     `ngen i branded a nsaids`,
@@ -369,23 +369,24 @@ let section11 = [
     //     `Isa sa nya ba na su paracetamol a kapamasa bon sa mga botika sa apya da den resita nin. 
     //     `
     // ],7),
+
     // decongestants
-    encodeMemory([
-        `* generic * decongestant *`,
-        `ngin ngala mga generic a mga decongestants a gamot na influenza`,
-        `enggay ka sa mga ngala na generic a decongestants a gamot na influenza`,
-        `ngen labit ka sa generic a decongestants`,
-    ],[
-        `Su mga generic a decongestants na su pseudoephedrine, phenylephrine, abpeg oxymetazoline. Nya ba mga gamot na kapamasa sa botika apya da riseta nin. Aden ba nya ba balangan nin mana su tablitas, capsules, spray na ngilong, o liquids. Nasisista su kaunot sa dosage na nakabetad sa gamot a pinamasa nengka kagina nya ba na malamo ka nin makakedu, makagkalngas sa kagina , engo makagkapulo sa lugo`
-    ],7),
-    encodeMemory([
-        `* branded * decongestant *`,
-        `ngin ngala mga branded a mga decongestants a gamot na influenza`,
-        `enggay ka sa mga ngala na branded a decongestants a gamot na influenza`,
-        `ngen labit ka sa branded a decongestants`,
-    ],[
-        `Kaped a kila a mga branded a decongestants na su Decolgen abpeg su Sudafed. Nasisista su kaunot sa dosage na nakabetad sa gamot a pinamasa nengka kagina nya ba na malamo ka nin makakedu, makagkalngas sa kagina , engo makagkapulo sa lugo`
-    ],7),
+    // encodeMemory([
+    //     `* generic * decongestant *`,
+    //     `ngin ngala mga generic a mga decongestants`,
+    //     `enggay ka sa mga ngala na generic a decongestants`,
+    //     `ngen labit ka sa generic a decongestants`,
+    // ],[
+    //     `Su mga generic a decongestants na su pseudoephedrine, phenylephrine, abpeg oxymetazoline. Nya ba mga gamot na kapamasa sa botika apya da riseta nin. Aden ba nya ba balangan nin mana su tablitas, capsules, spray na ngilong, o liquids. Nasisista su kaunot sa dosage na nakabetad sa gamot a pinamasa nengka kagina nya ba na malamo ka nin makakedu, makagkalngas sa kagina , engo makagkapulo sa lugo`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * decongestant *`,
+    //     `ngin ngala mga branded a mga decongestants`,
+    //     `enggay ka sa mga ngala na branded a decongestants`,
+    //     `ngen labit ka sa branded a decongestants`,
+    // ],[
+    //     `Kaped a kila a mga branded a decongestants na su Decolgen abpeg su Sudafed. Nasisista su kaunot sa dosage na nakabetad sa gamot a pinamasa nengka kagina nya ba na malamo ka nin makakedu, makagkalngas sa kagina , engo makagkapulo sa lugo`
+    // ],7),
     encodeMemory([
         `* (ukit|dose|gamit|kan|inom) * decongestant * `,
         `* decongestant * (gamit|kan|inom) *`,
@@ -407,7 +408,7 @@ let section11 = [
         `ngin i besen pidtalo a decongestants`,
         `di ko katawan ngn i decongestants`,
     ],[
-        `Su decongestant na gamot a pakadtabang sa di ged pakaginawa i ngilong nin. Papedtanan nin  I lebag a nan abpeg su ngog nu taw. Da ged epekto nin I namba sa pagigingis I ngog nin abpeg pembaln.`
+        `Su decongestant mana su pseudoephedrine, decolgen abpeg na sudafed na gamot a pakadtabang sa di ged pakaginawa i ngilong nin. Papedtanan nin  I lebag a nan abpeg su ngog nu taw. Da ged epekto nin I namba sa pagigingis I ngog nin abpeg pembaln. Nya ba gamot na gapamasa sekanin sa nose drops , nasal sprays, eye drops, tablitas, capsuls, abpeg syrup. `
     ],7),
     encodeMemory([
         `* decongestant * gamit * `,
@@ -416,7 +417,7 @@ let section11 = [
         `ngin besen i penggamutan na decongestants`,
         `ngin kano i kainom,kakan,kagamit sa decongestants`,
     ],[
-        `Su decongestants na mga gamot a pakadtabang sa di pakaginawa ka naalnan I ngilong nin sa ngog. Namba di nin a nan kapenginawa na sabap ba I naman sa sa virus or sakit a flu, sinusitis o allergy.`
+        `Su decongestants mana su pseudoephedrine, decolgen abpeg na sudafed na mga gamot a pakadtabang sa di pakaginawa ka naalnan I ngilong nin sa ngog. Namba di nin a nan kapenginawa na sabap ba I naman sa sa virus or sakit a flu, sinusitis o allergy.Nya ba gamot na gapamasa sekanin sa nose drops , nasal sprays, eye drops, tablitas, capsuls, abpeg syrup.`
     ],7),
     encodeMemory([
         `* (galbek|awa|gamot|kapya|tabang) * decongestant *`,
@@ -432,9 +433,9 @@ let section11 = [
         `duken ka di mapya a minom keman enggamot sa decongestants`,
         `kano i di kagamit kainom sa decongestants`,
         `nginto ka di mapakay enggamot minom sa decongestants`,
-        `ngen to ka so decongestants na di mapya a kanen gamiten inomen nu taw aden influenza`,
-        `enduken ka di keman o minom sa decongestants i taw a aden influenza`,
-        `panon a to ka di mapakay a keman i taw sa decongestants i taw a aden influenza`,
+        `ngen to ka so decongestants na di mapya a kanen gamiten inomen nu taw`,
+        `enduken ka di keman o minom sa decongestants i taw`,
+        `panon a to ka di mapakay a keman i taw sa decongestants i taw`,
         `di ko katawan kano i di kakan kainom sa decongestants`,
     ],[
         `Da ka pegkan sa decongenstants upama ka mapulo I lugo nengka o di nengka ka control I namaba kagina makagkapulo nya ba sa lugo. Ilay ka sa kaped a kapakayan nengka kanin. Enggu di ka papegkan su wata a mababa pan sa nem lagon sa nya ba a agamot.`
@@ -458,48 +459,48 @@ let section11 = [
     ],[
         `Su decongestatnt na kapakay pegkanen sa ngali endu makaginawa taw a aden sakit nin sa ngilog.`
     ],7),
-    encodeMemory([
-        `* pila * decongestant * `,
-        `* decongestant * pila * `,
-        `ngen i alaga na decongestants`,
-        `gagapila pila i decongestants`,
-    ],[
-        `Su alaga na nya ba gamot na embidabida uman saka botika. Su nasal spray na 90 pilak. Su drops na 78 pilak tig a rose pharmacy. Su tablitas na nem pilak tig a watsons pharmacy`
-    ],7),
-    encodeMemory([
-        `* embalangan * decongestant  * `,
-        `ngen i mga embalangan nu gamot a decongestants`,
-        `panon labit aden ka ngin i mga balangan na decongestants`,
-    ],[
-        `Su decongestants na nya kapamasa sekanin sa nose drops , nasal sprays, eye drops, tablitas, capsuls, abpeg syrup. `
-    ],7),
+    // encodeMemory([
+    //     `* pila * decongestant * `,
+    //     `* decongestant * pila * `,
+    //     `ngen i alaga na decongestants`,
+    //     `gagapila pila i decongestants`,
+    // ],[
+    //     `Su alaga na nya ba gamot na embidabida uman saka botika. Su nasal spray na 90 pilak. Su drops na 78 pilak tig a rose pharmacy. Su tablitas na nem pilak tig a watsons pharmacy`
+    // ],7),
+    // encodeMemory([
+    //     `* embalangan * decongestant  * `,
+    //     `ngen i mga embalangan nu gamot a decongestants`,
+    //     `panon labit aden ka ngin i mga balangan na decongestants`,
+    // ],[
+    //     `Su decongestants na nya kapamasa sekanin sa nose drops , nasal sprays, eye drops, tablitas, capsuls, abpeg syrup. `
+    // ],7),
     encodeMemory([
         `* sambi * decongestant  * `,
         `ngen i kaped a herbal gamot a gapakay isambi sa decongestants`,
-        `aden pan kaped a herbal gamot a mapakay inomen na taw lyu sa decongestants para kagamotan i influenza`,
-        `aden pan kaped a herbal a mapakay kanen na taw lyu sa decongestants para kagamotan i influenza`,
+        `aden pan kaped a herbal gamot a mapakay inomen na taw lyu sa decongestants para kagamotan`,
+        `aden pan kaped a herbal a mapakay kanen na taw lyu sa decongestants para kagamotan`,
         `aden kaped a gamot a kapakay pegkanen lyu sa decongestants`,
     ],[
         `Amayka di kapakayan su oral decongestants sa lek ana aden kaped nengka pan a manggamot. Umpama ka gamot bon, ka tekawi ka I antihistamines mana su Benadryl, citericine abpeg loratadine. Nya ba na makatabang bon I nya bas a barado I ngilong nin.`
     ],7),
 
     // expectorants
-    encodeMemory([
-        `* generic * expectorant *`,
-        `ngin ngala mga generic a mga expectorants a gamot na influenza`,
-        `enggay ka sa mga ngala na generic a expectorants a gamot na influenza`,
-        `ngen labit ka sa generic a expectorant`,
-    ],[
-        `Su guaifenesin abpeg potassium iodide na generic a ngala na expectorants. Aw na to na nakasimbol ba i nya sa kaped a gamot mana su Mucinex abpeg so Robitusin. Nya ba na penggamuten sa mga sakit mana su broncitis, asthma, abpeg su sepu. Tanday ka nya ba a gamot na dikena kapakay a inumen na apya tayn den endu inumen depende sa nadtalo na healtchare professional.`
-    ],7),
-    encodeMemory([
-        `* branded * expectorant *`,
-        `ngin ngala mga branded a mga expectorants a gamot na influenza`,
-        `enggay ka sa mga ngala na branded a expectorants a gamot na influenza`,
-        `ngen labit ka sa branded a expectorant`,
-    ],[
-        `Su mucimex abpeg na robitussin na mga kila ba nya a branded. Nya ba a gamot na madakel i ngala nin. Ugayd na pagidsan bon i dalem nila. Nya nilan penggulan na papegkapaydon nin su sepu endu malmo i kabatok nengka. Unuti ka i dosage o nakasugat a ukit na kakan sa nya ba a gamot`
-    ],7),
+    // encodeMemory([
+    //     `* generic * expectorant *`,
+    //     `ngin ngala mga generic a mga expectorants`,
+    //     `enggay ka sa mga ngala na generic a expectorants`,
+    //     `ngen labit ka sa generic a expectorant`,
+    // ],[
+    //     `Su guaifenesin abpeg potassium iodide na generic a ngala na expectorants. Aw na to na nakasimbol ba i nya sa kaped a gamot mana su Mucinex abpeg so Robitusin. Nya ba na penggamuten sa mga sakit mana su broncitis, asthma, abpeg su sepu. Tanday ka nya ba a gamot na dikena kapakay a inumen na apya tayn den endu inumen depende sa nadtalo na healtchare professional.`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * expectorant *`,
+    //     `ngin ngala mga branded a mga expectorants`,
+    //     `enggay ka sa mga ngala na branded a expectorants`,
+    //     `ngen labit ka sa branded a expectorant`,
+    // ],[
+    //     `Su mucimex abpeg na robitussin na mga kila ba nya a branded. Nya ba a gamot na madakel i ngala nin. Ugayd na pagidsan bon i dalem nila. Nya nilan penggulan na papegkapaydon nin su sepu endu malmo i kabatok nengka. Unuti ka i dosage o nakasugat a ukit na kakan sa nya ba a gamot`
+    // ],7),
     encodeMemory([
         `* (dose|ukit|gamit|kan|inom) * expectorant * `,
         `* expectorant * (gamit|kan|inom) *`,
@@ -529,7 +530,7 @@ let section11 = [
         `ngin besen i pidtalo a expectorants`,
         `ngin i expectorant`,
     ],[
-        `Su expectorants na papegkalmon nin su kalyu nu ngog o klad. Sabap ba i nya na papegkadakel nin sa ig sa mga namba. Kagina mayto ba i penggulan nin na malbo i ka lyu nin sa lawas nu taw upama ka embatuken sekanin. Su mga expectornats na kagamit silan sa kapenggamot sa mga sakit mana su bronchitis, pneumonia, abpeg sepu.`
+        `Su expectorants mana guaifenesin abpeg na Robitussin na papegkalmon nin su kalyu nu ngog o klad. Sabap ba i nya na papegkadakel nin sa ig sa mga namba. Kagina mayto ba i penggulan nin na malbo i ka lyu nin sa lawas nu taw upama ka embatuken sekanin. Su mga expectornats na kagamit silan sa kapenggamot sa mga sakit mana su bronchitis, pneumonia, abpeg sepu. Nya ba na gamot na aw na to na iged tablitas i buntal nin.`
     ],7),
     encodeMemory([
         `* expectorant * gamit * `,
@@ -539,7 +540,7 @@ let section11 = [
         `kano i kakan kainom kanggamut sa expectorants`,
         `kano i sa expectorants`,
     ],[
-        `Kapakay ka pegkan sa expectorant enggu amayka di ka ged pakaginawa sabap sa sepu. Nya ba a gamot na na aw nato na isa nin bo a gamot na da maamong sa kaped a gamot. `
+        `Kapakay ka pegkan sa expectorant mana so guaifenesin abpeg na Robitussin amayka di ka ged pakaginawa sabap sa sepu. Nya ba a gamot na na aw nato na isa nin bo a gamot na da maamong sa kaped a gamot.Nya ba na gamot na aw na to na iged tablitas i buntal nin. `
     ],7),
     encodeMemory([
         `* (galbek|awa|gamot|kapya|tabang) * expectorant *`,
@@ -548,19 +549,18 @@ let section11 = [
         `panon besen kapenggamot na expectorants`,
         `panon kano kanggalbek na expectorants`,
     ],[
-        `Su expectorants na papegkalindegen nin u pagukitan na sabmel sa lawas nu taw. Sabap sa namba penggulan nin na papegkalmon nin su kablyu nu ngong engu klad nu taw. Kagina malmo den i ka lyu na ngog na malmo bon i kabatok nu taw endu gaawa su ngog endu klad sa tidek `
+        `Su expectorants mana so guaifenesin abpeg na Robitussin na papegkalindegen nin u pagukitan na sabmel sa lawas nu taw. Sabap sa namba penggulan nin na papegkalmon nin su kablyu nu ngong engu klad nu taw. Kagina malmo den i ka lyu na ngog na malmo bon i kabatok nu taw endu gaawa su ngog endu klad sa tidek `
     ],7),
     encodeMemory([
         `* di * (kan|inom|gamit) * expectorant * `,
         `aden mga taw a di mapakay a keman, minom , enggamot , gemamit sa expectorants`,
         `di ko katawan kano di kagamit kakan kakan sa expectorants`,
-        `enduken ka di keman minom sa expectorants i taw a aden influenza`,
+        `enduken ka di keman minom sa expectorants i taw`,
         `kano i di kagamit kainom kakan sa expectorants`,
-        `ngen to ka so expectorants na di mapya a kanen , inomen o gamiten nu taw aden influenza`,
+        `ngen to ka so expectorants na di mapya a kanen , inomen o gamiten nu taw`,
         `nginto ka di mapakay a enggamot keman minom sa expectorants`,
     ],[
-        `Embityala nengka I doctor nengka bago ka penggamot sa expectorant upama magingay ka o papedsusu ka. Upama ka nya ka kailay na nagallergy ka na telni ka gamot a nan. 
-        Ingat ka sa kandrive ka o kagamit nengka sa makina upama ka pengkan ka sa expectorant kagina makandadalangot ba I nya ba
+        `Embityala nengka I doctor nengka bago ka penggamot sa expectorant upama magingay ka o papedsusu ka. Upama ka nya ka kailay na nagallergy ka na telni ka gamot a nan.Ingat ka sa kandrive ka o kagamit nengka sa makina upama ka pengkan ka sa expectorant kagina makandadalangot ba I nya ba
         `
     ],7),
     encodeMemory([
@@ -581,48 +581,48 @@ let section11 = [
     ],[
         `Di ka blupet I gamot a nan. Upama ka nya nengka paginumen sui gen a gamot na bilang ka I kadakel nin. Inom ka bon sa madakel a ig upama ka pegkan ka sa expectorant.`
     ],7),
-    encodeMemory([
-        `* pila * expectorant * `,
-        `* expectorant * pila * `,
-        `ngen i alaga na expectorants`,
-        `gagapila pila i expectorants`,
-    ],[
-        `Sya sa Watson na su robitussin guaifenesisn na 92 pilak I alaga nin.`
-    ],7),
-    encodeMemory([
-        `* embalangan * expectorant * `,
-        `ngen i mga embalangan nu gamot a expectorants`,
-        `aden mga balangan na expectorants`,
-        `panon labit ka ngin i mga balangan na expectorant`,
-    ],[
-        `Su expectorants na kapamasa ba I nya ba sa botika apya da riseta nin. Aw na to na ig abpeg a tablitas a I nya ba.`
-    ],7),
+    // encodeMemory([
+    //     `* pila * expectorant * `,
+    //     `* expectorant * pila * `,
+    //     `ngen i alaga na expectorants`,
+    //     `gagapila pila i expectorants`,
+    // ],[
+    //     `Sya sa Watson na su robitussin guaifenesisn na 92 pilak I alaga nin.`
+    // ],7),
+    // encodeMemory([
+    //     `* embalangan * expectorant * `,
+    //     `ngen i mga embalangan nu gamot a expectorants`,
+    //     `aden mga balangan na expectorants`,
+    //     `panon labit ka ngin i mga balangan na expectorant`,
+    // ],[
+    //     `Su expectorants na kapamasa ba I nya ba sa botika apya da riseta nin. Aw na to na ig abpeg a tablitas a I nya ba.`
+    // ],7),
     encodeMemory([
         `* sambi * expectorant * `,
         `ngen i kaped a herbal gamot a gapakay isambi sa expectorants`,
-        `aden pan kaped a herbal gamot a mapakay inomen na taw lyu sa expectorants para kagamotan i influenza`,
-        `aden pan kaped a herbal gamot a mapakay kanen na taw lyu sa expectorants para kagamotan i influenza`,
+        `aden pan kaped a herbal gamot a mapakay kanen inomen na taw lyu sa expectorants`,
         `di ko katawan i mapakay a isambi lyu sa expectorants`,
     ],[
         `Su mga natural a expectoral na kapakay nengka bon pengamiten. Nya ba na mana su menthol, ivy leaf extract, oral hydration solutions , kapaginom sa madakel a ig, abpeg a teneb. `
     ],7),
+    
     // antitussive
-    encodeMemory([
-        `* generic * antitussive *`,
-        `ngin ngala mga generic a mga antitussives a gamot na influenza`,
-        `enggay ka sa mga ngala na generic a antitussives a gamot na influenza`,
-        `ngen labit ka sa mga generic a antitussives`,
-    ],[
-        `Su Dexthomethorphan, diphenhydramine, endu codeine na mga generic antitussive. Nasisista na tandan nu taw na su mga antitussives na pagidsan bon i dalem nin sa mga branded a gamot`
-    ],7),
-    encodeMemory([
-        `* branded * antitussive   *`,
-        `ngin ngala mga branded a mga antitussives a gamot na influenza`,
-        `enggay ka sa mga ngala na branded a antitussives a gamot na influenza`,
-        `ngen labit ka kon ngin i mga branded a antitussives`,
-    ],[
-        `Su Robitussin na isa sa namba mga branded a nan a gamot. Tandan nu gagaisa na su mga branded abpeg mga generic a antitussive na pagidsan i dalem nilan. Mas mapulu bo i alaga na branded.`
-    ],7),
+    // encodeMemory([
+    //     `* generic * antitussive *`,
+    //     `ngin ngala mga generic a mga antitussives`,
+    //     `enggay ka sa mga ngala na generic a antitussives`,
+    //     `ngen labit ka sa mga generic a antitussives`,
+    // ],[
+    //     `Su Dexthomethorphan, diphenhydramine, endu codeine na mga generic antitussive. Nasisista na tandan nu taw na su mga antitussives na pagidsan bon i dalem nin sa mga branded a gamot`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * antitussive   *`,
+    //     `ngin ngala mga branded a mga antitussives`,
+    //     `enggay ka sa mga ngala na branded a antitussives`,
+    //     `ngen labit ka kon ngin i mga branded a antitussives`,
+    // ],[
+    //     `Su Robitussin na isa sa namba mga branded a nan a gamot. Tandan nu gagaisa na su mga branded abpeg mga generic a antitussive na pagidsan i dalem nilan. Mas mapulu bo i alaga na branded.`
+    // ],7),
     encodeMemory([
         `* (dose|ukit|gamit|kan|inom) * antitussive  * `,
         `* antitussive  * (gamit|kan|inom) *`,
@@ -648,7 +648,8 @@ let section11 = [
         `ngin besen i pidtalo a antitussives`,
         `ngin i antitussives`,
     ],[
-        `Su antitussives a gamot na batok na kapakayan a kapamasa apya da den resita nin ugayd na aw na to na aden bon resita nin`
+        `Su antitussives mana so Dexthomethorphan o Robitussin na gamot na batok na kapakayan a kapamasa apya da den resita nin ugayd na aw na to na aden bon resita nin.Nya ba a gamot na madakel I embalangan nin mana tablitas, capsul, gel, igen, syrup , lozenge o strips .
+        `
     ],7),
     encodeMemory([
         `* antitussive * gamit * `,
@@ -658,7 +659,7 @@ let section11 = [
         `kano penggamiten i antitussives`,
         `ngin kano i kakan, kainom, kanggamot sa antitussives`,
     ],[
-        `Nya ba gamot a na pegkanen upama ka matitik I batok nu taw sabap sa allergy o kaped a sakit a baga. Su antitussives na pakagamot bun sa post-viral cough o di den a nan pagenda a batok sabap sa virus infection.`
+        `Nya ba antitussive a nya a mana su Dexthomethorphan o Robitussin paginumen upama ka matitik I batok nu taw sabap sa allergy o kaped a sakit a baga. Su antitussives na pakagamot bun sa post-viral cough o di den a nan pagenda a batok sabap sa virus infection. Nya ba a gamot na madakel I embalangan nin mana tablitas, capsul, gel, igen, syrup , lozenge o strips `
     ],7),
     encodeMemory([
         `* (galbek|awa|gamot|kapya|tabang) * antitussive  *`,
@@ -667,15 +668,15 @@ let section11 = [
         `panon besen i kapenggamot na antitussives`,
         `panon i kagalbek na antitussives`,
     ],[
-        `Su antitussives na papedtelenin nin su tulan a papembatok sa taw na gailay sa brain stem. Ugayd na su sakto a penggulan nin na di bun katawan na mga doctor taman saguna.`
+        `Su antitussives mana su Dexthomethorphan o Robitussin na papedtelenin nin su tulan a papembatok sa taw na gailay sa brain stem. Ugayd na su sakto a penggulan nin na di bun katawan na mga doctor taman saguna.`
     ],7),
     encodeMemory([
         `* di * (kan|inom|gamit) * antitussive  * `,
         `kano i di kagamit kakan kainom sa antitussives`,
         `nginto ka di mapakay a enggamot keman minom sa antitussives`,
-        `ngen to ka so antitussives na di mapya a kanen , inomen o gamiten nu taw aden influenza`,
-        `enduken ka di keman minom sa antitussives i taw a aden influenza`,
-        `panon a to ka di mapakay a keman i taw sa antitussives i taw a aden influenza`,
+        `ngen to ka so antitussives na di mapya a kanen , inomen o gamiten`,
+        `enduken ka di keman minom sa antitussives i taw`,
+        `panon a to ka di mapakay a keman i taw sa antitussives i taw`,
         `aden di dayt a keman, minom, enggamot, gemamit sa antitussives`,
     ],[
         `Dikena ba I nya mapya a gamot sa mga wata a da man mauma I umul nin sa 4 lagon`
@@ -698,49 +699,50 @@ let section11 = [
     ],[
         `Kapakayan ba I nya ba pegkanin apya dala ka kan basta inom ka sa ig a madakel ( mga walo ka baso)`
     ],7),
-    encodeMemory([
-        `* pila * antitussive * `,
-        `* antitussive * pila * `,
-        `ngen i alaga na antitussives`,
-        `gagapila pila i antitussives`,
-    ],[
-        `Sa southdrug store, na su dextromenthorphan syrup na 133 pilak. Sa watsons na 189 pilak. Su alaga nin a embibidaya uman botika. `
-    ],7),
-    encodeMemory([
-        `* embalangan * antitussive   * `,
-        `ngen i mga balangan na antitussives`,
-        `ngen i mga embalangan nu gamot a antitussives`,
-        `panon aden mga balangan na antitussives`,
-    ],[
-        `Su antitussive na madakel I embalangan nin. Aw na to na tablitas, capsul, gel, igen, syrup , lozenge o strips I nya ba. Ugayd na na saki na nya ko bo ma recommend na su legengez abpeg a syrup bo.`
-    ],7),
+    // encodeMemory([
+    //     `* pila * antitussive * `,
+    //     `* antitussive * pila * `,
+    //     `ngen i alaga na antitussives`,
+    //     `gagapila pila i antitussives`,
+    // ],[
+    //     `Sa southdrug store, na su dextromenthorphan syrup na 133 pilak. Sa watsons na 189 pilak. Su alaga nin a embibidaya uman botika. `
+    // ],7),
+    // encodeMemory([
+    //     `* embalangan * antitussive   * `,
+    //     `ngen i mga balangan na antitussives`,
+    //     `ngen i mga embalangan nu gamot a antitussives`,
+    //     `panon aden mga balangan na antitussives`,
+    // ],[
+    //     `Su antitussive na madakel I embalangan nin. Aw na to na tablitas, capsul, gel, igen, syrup , lozenge o strips I nya ba. Ugayd na na saki na nya ko bo ma recommend na su legengez abpeg a syrup bo.`
+    // ],7),
     encodeMemory([
         `* sambi * antitussive  * `,
         `ngen i kaped a herbal gamot a gapakay isambi sa antitussives`,
-        `aden pan kaped a herbal gamot a mapakay kanen na taw lyu sa antitussives para kagamotan i influenza`,
-        `aden pan kaped a herbal gamot a mapakay inomen  na taw lyu sa antitussives para kagamotan i influenza`,
+        `aden pan kaped a herbal gamot a mapakay kanen na taw lyu sa antitussives`,
+        `aden pan kaped a herbal gamot a mapakay inomen  na taw lyu sa antitussives`,
         `di ko katawan ngin pan i kaped a gamot lyu sa antitussives`,
         `aden mapakay pamasen, inomen, kanen, enggamuten lyu sa antitussives`,
     ],[
         `Su teneb na na gamot ba I nya ba.  Su mga nangagi sa nya ba gamot na ya tig nilan na makatabang ba I nya sa kambabatok enggu nya pan mapya sa kapamasa a gamot sa otika. `
     ],7),
+
     // lozenges
-    encodeMemory([
-        `* generic * lozenge *`,
-        `ngin ngala mga generic a mga lozenges a gamot  na influenza`,
-        `enggay ka sa mga ngala na generic a lozenges a gamot  na influenza`,
-        `ngen labit ka sa generic a lozenges`,
-    ],[
-        `Su dexthromethorphan abpeg a benzocainementhol na mga generic ba I nya ba a logenzes.`
-    ],7),
-    encodeMemory([
-        `* branded * lozenge *`,
-        `ngin ngala mga branded a mga lozenges a gamot  na influenza`,
-        `enggay ka sa mga ngala na branded a lozenges a gamot  na influenza`,
-        `ngen labit ka sa mga branded a lozenges`,
-    ],[
-        `Su bactidol abpeg a streptsil na mga branded ba I nya ba a logenzes a makadtabang sa tidek nu taw.`
-    ],7),
+    // encodeMemory([
+    //     `* generic * lozenge *`,
+    //     `ngin ngala mga generic a mga lozenges`,
+    //     `enggay ka sa mga ngala na generic a lozenges`,
+    //     `ngen labit ka sa generic a lozenges`,
+    // ],[
+    //     `Su dexthromethorphan abpeg a benzocainementhol na mga generic ba I nya ba a logenzes.`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * lozenge *`,
+    //     `ngin ngala mga branded a mga lozenges`,
+    //     `enggay ka sa mga ngala na branded a lozenges`,
+    //     `ngen labit ka sa mga branded a lozenges`,
+    // ],[
+    //     `Su bactidol abpeg a streptsil na mga branded ba I nya ba a logenzes a makadtabang sa tidek nu taw.`
+    // ],7),
     encodeMemory([
         `* (dose|ukit|gamit|kan|inom) * lozenge * `,
         `* lozenge  * (gamit|kan|inom) *`,
@@ -767,7 +769,7 @@ let section11 = [
         `ngin besen i penggamutan na lozenges`,
         `ngin i gamit na lozenges`,
     ],[
-        `Su kakan sa logenze na dikena ged malgen abpeg kapamasa sa tayn I aden sakit nin a mana su chronic pharyngitis, aden sakit nin sa respiratory tract, apeg aden kangegedam nin sa tidek nin.`
+        `Su kakan sa logenze mana su Bactidol o Strepsils na dikena ged malgen abpeg kapamasa sa tayn I aden sakit nin a mana su chronic pharyngitis, aden sakit nin sa respiratory tract, apeg aden kangegedam nin sa tidek nin.`
     ],7),
     encodeMemory([
         `* lozenges * (galbek|awa|gamot|kapya|tabang) *`,
@@ -777,17 +779,17 @@ let section11 = [
         `panon besen i kapenggamot na lozenges`,
         `panon i kapenggalbek kagalbek na lozenges`,
     ],[
-        `Upama ka su taw na enggamot sa lozenge, na lemedsu I nya ba sa katunag nin ka tupamba lemyo I gamot a nan. Inumbal i namba engo mauget i katunag nin. Pedtunagen bo sa ngali enggu makagamot sa batok abpeg a tidek. Su kaped a logenzes na pakagamot bon sa aden sepu. Su kaped manem na aden eucalyptus nin na pakadtabang sa masakit a tidek. Su kaped manem na inamunan sa teneb`
+        `Upama ka su taw na enggamot sa lozenge  mana su Bactidol o Strepsils , na lemedsu I nya ba sa katunag nin ka tupamba lemyo I gamot a nan. Inumbal i namba engo mauget i katunag nin. Pedtunagen bo sa ngali enggu makagamot sa batok abpeg a tidek. Su kaped a logenzes na pakagamot bon sa aden sepu. Su kaped manem na aden eucalyptus nin na pakadtabang sa masakit a tidek. Su kaped manem na inamunan sa teneb`
     ],7),
     encodeMemory([
         `* di * (kan|inom|gamit) * lozenge * `,
         `aden di mapakay mamasa keman enggamot sa lozenges`,
         `di ko katawan kanu i di kakan, kainom, o kagamot sa lozenges`,
-        `enduken ka di keman o minom sa lozenges i taw a aden influenza`,
+        `enduken ka di keman o minom sa lozenges i taw`,
         `kano i di kakan kagamit kainom sa lozenges`,
-        `ngen to ka so lozenges na di mapya a kanen inomen nu taw aden influenza`,
+        `ngen to ka so lozenges na di mapya a kanen inomen nu taw`,
         `nginto ka di mapakay a keman, minom o enggamot sa lozenges`,
-        `panon a to ka di mapakay a keman i taw sa lozenges i taw a aden influenza`,
+        `panon a to ka di mapakay a keman i taw sa lozenges i taw`,
     ],[
         `Upama ka masakit I tidek nengka sa naipos a dwa gay, basi pembatuken ka den sa nakasapadian, o babalingan den I batok nengka o aw na to na aden pan mayaw nengka sakit na ulo abpeg a kagatel, lebag, aw na to na manguta ka pan na nya mapya na ebpawang ka den sa doctor.`
     ],7),
@@ -809,28 +811,28 @@ let section11 = [
     ],[
         `Di ka pedsepa o blenok I gamot a nya. Tunag ka sa ngali nengka. Uman dwa ka oras I kakan nengka sa nya ba gamot.`
     ],7),
-    encodeMemory([
-        `* lozenge * pila * `,
-        `* pila * lozenge * `,
-        `gagapila i lozenges`,
-        `ngen pila i alaga na lozenges`,
-    ],[
-        `Sa rose pharmacy na gaga 5 pilak ba I nya ba uman isa. Ugayd na di ta katawan sa kaped ka bibidaya ba I nyaba.`
-    ],7),
-    encodeMemory([
-        `* embalangan * lozenge * `,
-        `di ko katawan i balangan na lozenges`,
-        `ngen i mga balangan na lozenges`,
-        `ngen i mga embalangan nu gamot a lozenges`,
-        `panon labit ka ngin i mga balangan na lozenges`,
-    ],[
-        `Su nya ba gamot na pedtunagen sa ngali.  Su mategas a embalangan na nya ba nan amba I tig nilan a nan a logenzes, troches o drops. So dikena ged mategas nan amba tawag nilan na pastilles, chewable, gelatin a embalangan na lozenges. Aw na to na nya nilan tig san ba na gummy. `
-    ],7),
+    // encodeMemory([
+    //     `* lozenge * pila * `,
+    //     `* pila * lozenge * `,
+    //     `gagapila i lozenges`,
+    //     `ngen pila i alaga na lozenges`,
+    // ],[
+    //     `Sa rose pharmacy na gaga 5 pilak ba I nya ba uman isa. Ugayd na di ta katawan sa kaped ka bibidaya ba I nyaba.`
+    // ],7),
+    // encodeMemory([
+    //     `* embalangan * lozenge * `,
+    //     `di ko katawan i balangan na lozenges`,
+    //     `ngen i mga balangan na lozenges`,
+    //     `ngen i mga embalangan nu gamot a lozenges`,
+    //     `panon labit ka ngin i mga balangan na lozenges`,
+    // ],[
+    //     `Su nya ba gamot na pedtunagen sa ngali.  Su mategas a embalangan na nya ba nan amba I tig nilan a nan a logenzes, troches o drops. So dikena ged mategas nan amba tawag nilan na pastilles, chewable, gelatin a embalangan na lozenges. Aw na to na nya nilan tig san ba na gummy. `
+    // ],7),
     encodeMemory([
         `* sambi * lozenge * `,
         `aden ba mga herbal gamot ka gapakay pegkanen, paginumen, penggamuten lyu sa lozenges`,
-        `aden pan kaped a herbal gamot a mapakay inomen na taw lyu sa lozenges para kagamotan i influenza`,
-        `aden pan kaped a herbal gamot a mapakay kanen na taw lyu sa lozenges para kagamotan i influenza`,
+        `aden pan kaped a herbal gamot a mapakay inomen na taw lyu sa lozenges`,
+        `aden pan kaped a herbal gamot a mapakay kanen na taw lyu sa lozenges`,
         `di ko katawan i kaped a pakasambi sa lyu sa lozenges`,
         `ngen i kaped a herbal gamot a gapakay isambi sa lozenges`,
     ],[
@@ -880,20 +882,20 @@ let section12 = [
 ]
 
 let section13 = [
-    encodeMemory([
-        `* problema * influenza * `,
-        `* influenza * problema *`,
-        `* makadtaday * influenza * problema * `,
-        `* problema * makadtaday * influenza * `,
-        `* influenza * problema * makadtaday * `,
-        `ngin i mga di manggula na taw a aden influenza nin`,
-        `ngin i mabproblema manggula nu taw a pakagedam influenza `,
-        `amayka padtadayn i influenza na ngin i manggula`,
-        `ngen i influenza`,
-        `ngin i problema na influenza`
-    ],[
-        `Upama ka di pengamutan su influenza na makagedam su taw sa kaped a sakit mana su bacterial abpeg viral pneumonia, bronchitis o inflammed airways, sinus infection, dehydration, ear infections, encephalitis a sakit sa utek, enggo sepsis o sakit na lugo. Pakalunsan bon i nya ba kaped a sakit nu taw a mana su asthma o su aden sakit na pamusungan nin. Pakapatay i nya ba sakit sa mga mauwa endu wata a malubay i lawas nin.`
-    ],1),
+    // encodeMemory([
+    //     `* problema * influenza * `,
+    //     `* influenza * problema *`,
+    //     `* makadtaday * influenza * problema * `,
+    //     `* problema * makadtaday * influenza * `,
+    //     `* influenza * problema * makadtaday * `,
+    //     `ngin i mga di manggula na taw a aden influenza nin`,
+    //     `ngin i mabproblema manggula nu taw a pakagedam influenza `,
+    //     `amayka padtadayn i influenza na ngin i manggula`,
+    //     `ngen i influenza`,
+    //     `ngin i problema na influenza`
+    // ],[
+    //     `Upama ka di pengamutan su influenza na makagedam su taw sa kaped a sakit mana su bacterial abpeg viral pneumonia, bronchitis o inflammed airways, sinus infection, dehydration, ear infections, encephalitis a sakit sa utek, enggo sepsis o sakit na lugo. Pakalunsan bon i nya ba kaped a sakit nu taw a mana su asthma o su aden sakit na pamusungan nin. Pakapatay i nya ba sakit sa mga mauwa endu wata a malubay i lawas nin.`
+    // ],1),
 ]
 
 let section14 = [
@@ -908,19 +910,19 @@ let section14 = [
     // ],[
     //     `Madtalo ko sa leka i mga sintomas na influenza. Ugayd na upama ka nya nengka nasisita i madakel a ulaula na tekaw ka midsa lu sa Center for Disease and Control abpeg sa Department of Health. `
     // ],1),
-    encodeMemory([
-        `* ebpawang * influenza *`,
-        `endaw mangay mapagamot i aden influenza nin`,
-        `amayka pakagedam sa influenza i taw na endaw mangay mapagamot`,
-        `su taw a aden pakagedam sa influenza na endaw mangay`,
-        `endaw epawang amayka aden influenza nin`
-    ],[
-        `Nya tig na Centers for Disease Control and Prevention na su influenza na pakaalat i namba a sakit sabap sa virus a paka infect na ngilong, tidek endu baga nu taw. 
+    // encodeMemory([
+    //     `* ebpawang * influenza *`,
+    //     `endaw mangay mapagamot i aden influenza nin`,
+    //     `amayka pakagedam sa influenza i taw na endaw mangay mapagamot`,
+    //     `su taw a aden pakagedam sa influenza na endaw mangay`,
+    //     `endaw epawang amayka aden influenza nin`
+    // ],[
+    //     `Nya tig na Centers for Disease Control and Prevention na su influenza na pakaalat i namba a sakit sabap sa virus a paka infect na ngilong, tidek endu baga nu taw. 
         
-        Kapakay nengka pengamutan i mga kangagedam nengka sa walay bo. Ugayd na nasisita i kapailay sa doctor. Namba silan na mapakay silan menggay sa riseta na gamot a mapamasa nengka engu pegkabagel ka. 
+    //     Kapakay nengka pengamutan i mga kangagedam nengka sa walay bo. Ugayd na nasisita i kapailay sa doctor. Namba silan na mapakay silan menggay sa riseta na gamot a mapamasa nengka engu pegkabagel ka. 
 
-        `
-    ],5),
+    //     `
+    // ],5),
     encodeMemory([
         `* (senyales|tanda|sintomas) * influenza * `,
         `panon i kataw na taw na sekanin a pakagedam sa influenza`,

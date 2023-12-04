@@ -1,6 +1,11 @@
 @use "variable";
 @use "sass:math";
 
+$default-textarea-height: 42px;
+
+$font-size: .9rem;
+// $font-size: 1rem;
+
 .chatbox{
     min-width: 100%;
     height: 100%;
@@ -16,8 +21,7 @@
     position:fixed;
     top: 0;
     left: 0;
-
-    $font-size: .9rem;
+    
     
     >*{
         padding: variable.$padding;
@@ -65,21 +69,15 @@
         display: flex;
         flex-direction: column;
         grid-area: chatbot-message-container;
-        gap: variable.$padding-top * 2;
+        // gap: variable.$padding-top * 2;
         background-color: variable.$bg-whitest;
         overflow-y: auto;
         box-sizing: border-box;
-    
-        >*:first-child{
-            margin-top: auto;
-        }
-
-        >*:last-child{
-            margin-bottom: variable.$margin-top;
-        }
+        overflow-x: hidden;
+        
 
         $size: 12px;
-
+        
         .chatbox-message-chatbot{
             padding: variable.$padding;
             background-color: variable.$bg-white;
@@ -89,7 +87,28 @@
             margin-left: right;
             position: relative;
             font-weight: 500;
+            margin-bottom: variable.$padding-top * 2;
         }
+
+        .chatbot-message-user-icon,
+        .chatbot-message-chatbot-icon{
+            display: flex;
+            font-size: .7rem;
+            font-weight: 700;
+            // padding: 0 variable.$padding-left;
+            margin-bottom: math.div(variable.$margin-top,2);
+            align-items: flex-end;
+            gap: variable.$gap-horizontal;
+        }
+        
+        .chatbot-message-user-icon{
+            justify-content: right;
+        }
+        
+        .chatbot-message-chatbot-icon{
+            justify-content: left;
+        }
+
 
         .chatbox-message-user{
             padding: variable.$padding;
@@ -101,7 +120,16 @@
             color: rgba(255, 255, 255, 0.753);
             font-weight: 500;
             position: relative;
-            
+            margin-bottom: variable.$padding-top * 2;
+        }
+
+        
+        >*:first-child{
+            margin-top: auto;
+        }
+
+        >*:last-child{
+            margin-bottom: variable.$margin-top;
         }
     }
 
@@ -114,7 +142,35 @@
         bottom: 0;
         width: 100%;
         gap: 0;
-        // box-sizing: border-box;
+        // background-color: indigo;
+        // background-color: orange;
+        // background-color: #e4e4e7;
+        align-items: center !important;
+        // background-color: transparent;
+        // border-top: variable.$border;
+        // background-color: indianred;
+
+        textarea{
+            padding: variable.$padding-top variable.$padding-left;
+            @include variable.draw-border;
+            background-color: variable.$bg-white;
+            background-color: inherit;
+            // background-color: green;
+            border: none;
+            width: 100%;
+            max-width: 100%;
+            order: 1;
+            flex-grow: 1;
+            border-radius: variable.$border-radius 0 0 variable.$border-radius !important;
+            outline: none !important;
+            resize: none !important;
+            // background-color:orange;
+            overflow-y:hidden; /* Hide vertical scrollbar */
+            height: $default-textarea-height;
+            font-size: $font-size;
+            // border-bottom: variable.$border;
+            background-color: variable.$bg-gray;
+        }
 
         input[type="text"]{
             &.chatbox-action-text-input{
@@ -128,36 +184,52 @@
                 order: 1;
                 flex-grow: 1;
                 border-radius: variable.$border-radius 0 0 variable.$border-radius !important;
+
             }
 
+            font-size: $font-size;
             outline: none !important;
         }
 
         .chatbox-action-send{
+            // display: none;
             flex-grow: 1;
             border: none;
             // padding: p;
-            padding: variable.$padding-top variable.$padding-left;
+            // padding: variable.$padding-top variable.$padding-left;
+            // padding: variable.$padding-left;
             // padding: 0;
             height: 100%;
             order: 2;
             border-radius:  0 variable.$border-radius variable.$border-radius 0;
             background-color: variable.$bg-primary;
-            width: fit-content;
-            min-width: 2rem;
+            // width: fit-content;
+            min-width: 3rem;
+            align-self: flex-end;
+            height: $default-textarea-height !important;
+            // background-color: goldenrod;
+            // font-size: .9rem;
+            display: flex;
+            justify-content: flex;
+            align-items: center;
+            padding: 0;
 
             *{
+                // background-color: indianred;
                 color: rgba(variable.$bg-whitest,.77);
+                
             }
 
             &:active{
 
                 >*{
-                    transform: scale(.8);
+                    // transform: scale(.8);
                 }
             }
 
+            font-weight: 500;
 
+            color: rgba(237, 237, 237, 0.95) !important;
 
         }
     }
@@ -174,18 +246,19 @@
     $chatbot-container-radius: 5px;    
     // $chatbot-border-color: rgb(58, 63, 75);
     $chatbot-border-color: white;
-    $chatbot-width: 525px;
+    $chatbot-width: 575px;
     $chatbox-border-width: 7px;
     
 
     .chatbox{
         position: relative;
         min-width: $chatbot-width;
-        max-width:  $chatbot-width !important;
+        // max-width:  $chatbot-width !important;
         box-sizing: content-box;
-        height: 500px;
-        padding: $chatbox-border-width;
-        border-radius: $chatbot-container-radius;
+        height: 80vh;
+        // height: 100%;
+        // padding: $chatbox-border-width;
+        // border-radius: $chatbot-container-radius;
         background-color: $chatbot-border-color;
         box-shadow: 0px 2px 7px rgba(215, 215, 215, 0.6);
         z-index: auto;
@@ -197,9 +270,10 @@
             grid-template-areas: "header-label status" "title actions";
             grid-template-columns: 1fr 1fr;
             row-gap: variable.$gap-vertical;
-            border-radius:  $chatbot-container-radius  $chatbot-container-radius 0 0;
+            // border-radius:  $chatbot-container-radius  $chatbot-container-radius 0 0;
             position: relative;
-            padding-top: 2px;
+            padding-top: 24px;
+            // background-color: green;
                 
             .chatbox-nav-header-label{
                 grid-area: header-label;
@@ -239,27 +313,36 @@
             display: none;
         }
 
+        .chatbox-message-container{
+            width: $chatbot-width;
+        }
         // invalidate the position bottom
         .chatbox-actionbar{
-            max-width: inherit;
+            width: inherit;
             position: relative;
             bottom: auto;
             padding-bottom: variable.$padding-top * 2;
             border-radius: 0 0 $chatbot-container-radius $chatbot-container-radius;
+            height: fit-content;
            
-            input[type="text"]{
-                &.chatbox-action-text-input{
-                    padding: variable.$padding;
-                    @include variable.draw-border;
-                    background-color: variable.$bg-whitest;
-                    width: 100% !important;
-                    order: 1;
-                    flex-shrink: 1;
-                    border: none;
-                }
+            // input[type="text"]{
+            //     &.chatbox-action-text-input{
+            //         padding: variable.$padding;
+            //         @include variable.draw-border;
+            //         background-color: variable.$bg-whitest;
+            //         width: 100% !important;
+            //         order: 1;
+            //         flex-shrink: 1;
+            //         border: none;
+            //     }
 
+            // }
+
+
+            .chatbox-action-send{
+                padding: variable.$padding-left !important;
+                display: block;
             }
-
 
         }
         

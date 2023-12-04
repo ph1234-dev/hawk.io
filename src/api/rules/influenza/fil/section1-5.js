@@ -92,19 +92,19 @@ let section5 = [
     // ],[
     //     `Ang iyong katawan ay nangangailangan ng tamang nutrisyon upang gumaling mula sa trangkaso. Ang mga sariwang prutas at gulay ay nagbibigay ng mahahalagang bitamina, mineral, at antioxidant na nagpapalakas sa iyong immune system habang nilalabanan nito ang virus.`
     // ],4),
-    encodeMemory([
-        `* consult * doktor * trangkaso * `,
-        `* sino * gamot* trangkaso * `,
-        `Bakit importante ang pagpunta sa doktor para gumaling sa trangkaso`,  
-        `Bakit mahalagang sundin ang payo ng doktor para sa tamang pagpapagaling sa trangkaso`,  
-        `Kailan nararapat dapat magpatingin sa doktor kung may trangkaso`,
-        `Kailangan ba ng doktor kung may trangkaso`,
-        `Kanino ka puwedeng humingi dapat lumapit ng tulong kapag ikaw ay may trangkaso`,
-        `Meron bang mga senyales na dapat bantayan para magpatingin sa doktor kung may trangkaso`,
-        `Paano makakatulong ang doktor upang gumaling maiwasan ang posibleng komplikasyon sa trangkaso`,  
-    ],[
-        `Ang trangkaso ay kadalasang gumagaling ng kusa, ngunit maaari itong magdulot ng malubhang karamdaman sa ilang tao tulad ng pneumonia na pwedeng ikamatay ng isang tao. Ang mga doktor ay maaring magpayo ng tamang gamot para sa trangkaso.  Kung nangangaib dahil sa ng mga komplikasyon, makipag-ugnayan sa iyong doktor sa sandaling magsimula ang iyong mga sintomas.`
-    ],5),
+    // encodeMemory([
+    //     `* consult * doktor * trangkaso * `,
+    //     `* sino * gamot* trangkaso * `,
+    //     `Bakit importante ang pagpunta sa doktor para gumaling sa trangkaso`,  
+    //     `Bakit mahalagang sundin ang payo ng doktor para sa tamang pagpapagaling sa trangkaso`,  
+    //     `Kailan nararapat dapat magpatingin sa doktor kung may trangkaso`,
+    //     `Kailangan ba ng doktor kung may trangkaso`,
+    //     `Kanino ka puwedeng humingi dapat lumapit ng tulong kapag ikaw ay may trangkaso`,
+    //     `Meron bang mga senyales na dapat bantayan para magpatingin sa doktor kung may trangkaso`,
+    //     `Paano makakatulong ang doktor upang gumaling maiwasan ang posibleng komplikasyon sa trangkaso`,  
+    // ],[
+    //     `Ang trangkaso ay kadalasang gumagaling ng kusa, ngunit maaari itong magdulot ng malubhang karamdaman sa ilang tao tulad ng pneumonia na pwedeng ikamatay ng isang tao. Ang mga doktor ay maaring magpayo ng tamang gamot para sa trangkaso.  Kung nangangaib dahil sa ng mga komplikasyon, makipag-ugnayan sa iyong doktor sa sandaling magsimula ang iyong mga sintomas.`
+    // ],5),
     encodeMemory([
         `* sino * gamot * trangkaso * `,
         `Kanino ka  dapat lumapit puwedeng humingi ng tulong kapag ikaw ay may trangkaso`,
@@ -143,7 +143,7 @@ let section5 = [
     //     `Karamihan sa mga over-the counter na gamot na makakatulong para sa mga sintomas ng trangkaso ay mabibili sa iyong pinakamalapit na parmasya. Gayunpaman, kailangan mong magkaroon ng reseta sa mga gamot tulad ng mga antiviral.`
     // ],5),
     encodeMemory([
-        `* gamot* trangkaso *`,
+        `* gamot * trangkaso *`,
         `* trangkaso * gamot*`,
         `Ano ang mga hakbang dapat gawin kainin o inumin kapag may trangkaso`,
         `Ano ang mga pamamaraan na makakatulong sa pagpapagaling mula sa trangkaso`,
@@ -151,7 +151,9 @@ let section5 = [
         `Mga dapat gawin para bumuti ang pakiramdam kapag may trangkaso`,
         `Paano po ba paraan malunasan mabawasan ang trangkaso`, 
         `sabihin mo sakin paano ba dapat gamutin ang trangkaso`,
-        `ano ba ang mga ginagamit na gamot sa trangkaso`
+        `ano ba ang mga ginagamit na gamot sa trangkaso`,
+        `paano gamutin ang trangkaso`,
+        `pano ginagamot ang trangkaso`,
         //chatgpt end
     ],[
         `

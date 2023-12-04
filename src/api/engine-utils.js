@@ -60,6 +60,8 @@ export const removeRedundantSpaces = (str)=>{
 }
 
 export const transformWildcards = (str)=>{
+
+
     //replace * to accept any character
     str = str.replace(/\s/igm, '')
     // str = str.replace(/[\*]/g, '(.*)')
@@ -71,6 +73,9 @@ export const transformWildcards = (str)=>{
     // str = removeRedundantSpaces(str)
     // str = str.replace(/\s/igm, '(.*)')
     //enclose for strict  
+
+
+    str = str.replace(/\b(\w+)\b/g, "\\b$1\\b")
     return  `^${str}$`
     // return  `${str}`
   }

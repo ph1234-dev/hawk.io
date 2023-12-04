@@ -30,11 +30,13 @@ let section6 = [
     encodeMemory([
       `* ingat * tagudo * `, 
       `* kasambot * tagudo * `, 
+      `* gamot * tagudo *`
       `nasisita a galbeken nu taw endu di sekanin edtagudo`,
       `ngin i galbeken nu taw endu di sekanin edtagudo`,
       `ngen i mapya enggulan nu endu di edtagudo`,
       'panon i di kadtagudo nu taw',
-      `panon i katangka sa sa sakit a kapedtagudo`
+      `panon i katangka sa sa sakit a kapedtagudo`,
+      `panon kagamot sa tagudo`,
     ],[
       `Su kalimpyo , mana su kagagas sa lima sa sabon enggo ig , bago pegkan o kapasad gemamit sa cr na nasisita endu di ka edtagudo. Sigurado ka na malinis i gaganatanan a pegken abpeg su ig a paginumin. Endu iluto ka ebpyapya su pegken endu pebpatay i mga bacteria abpeg a parasite a pendeket sa pegken. Su di kakan sa mga da maluto na enguggulan nu taw endu di sekanin edtagudo. Meto bun su mga pegken na aden gatas nin a dala ma pasteruize abpeg nu mga maldsik a ig. Inom ka bon sa ig abpeg a kan sa ebpyapya ka namba na pakagkabagel sa lawas endu di ka kadampuan na kapedtagudo`,
     ],1),
@@ -65,8 +67,8 @@ let section7 = [
 
 let section8 = [
     encodeMemory([
-      `* di * mapya * hydration * diarrhea *`,
-      `* diarrhea_foods_not_allowed_bad_hydration * diarrhea *`,
+      `* di * mapya * hydration * \bdiarrhea\b(?!_) *`,
+      `* diarrhea_foods_not_allowed_bad_hydration * \bdiarrhea\b(?!_) *`,
       `enduken ka di mapya minom o keman su taw sa paka dehydrate upama ka pendalo sa tagudo`,
       `enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_bad_hydration amayka upama ka pedtagudo`,
       ,
@@ -88,8 +90,8 @@ let section8 = [
     // ],4),
     encodeMemory([
       `* lactose *`,
-      `* lactose * diarrhea *`,
-      `* diarrhea_foods_not_allowed_contains_lactose * diarrhea *`,
+      `* lactose * \bdiarrhea\b(?!_) *`,
+      `* diarrhea_foods_not_allowed_contains_lactose * \bdiarrhea\b(?!_) *`,
       `enduken ka di mapya minom o keman su taw sa aden lactose nin upama ka pendalo sa tagudo`,
       `enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_contains_lactose amayka upama ka pedtagudo`,
     ],[
@@ -111,7 +113,7 @@ let section8 = [
     //   `,
     // ],4),
     encodeMemory([
-      `* diarrhea_foods_not_allowed_irritate_stomach * diarrhea *`,
+      `* diarrhea_foods_not_allowed_irritate_stomach * \bdiarrhea\b(?!_) *`,
       `* diarrhea_foods_not_allowed_irritate_stomach *`,
       `enduken ka di mapya minom o keman su taw sa mga malalas o malas a pegken upama ka pendalo sa tagudo`,
       `enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_irritate_stomach amayka upama ka pedtagudo`,
@@ -119,7 +121,7 @@ let section8 = [
       `Su mga malalas a pegken na ti mapya sa tinae ka pakalunsan sa kapedtagudo. Engo, nya mga mga malalas a pegken na aden mga ingredients nin a malgen ga sesep nu tinay a pakalunsan sa sakit. Namba sabap nin enduken nasisita su di kakan sa mga namba`,
     ],4),
     encodeMemory([
-      `* diarrhea_foods_not_allowed_oily * diarrhea *`,
+      `* diarrhea_foods_not_allowed_oily * \bdiarrhea\b(?!_) *`,
       `* diarrhea_foods_not_allowed_oily *`,
       `enduken ka di mapya minom o keman su taw sa madakel i lana nin o lanan a o pegken upama ka pendalo sa tagudo`,
       `enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_oily amayka upama ka pedtagudo`,

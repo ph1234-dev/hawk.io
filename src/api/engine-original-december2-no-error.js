@@ -169,13 +169,13 @@ export default class Engine {
             MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
         }
 
-        this.buildMemory()
+        // this.buildMemory()
         
         
         /** STEP 4*/
         /** Build wildcard blackbox*/
         this.RULES_WILDCARDS = {}
-        this.buildWildcardBlackbox()
+        // this.buildWildcardBlackbox()
 
 
 
@@ -225,7 +225,7 @@ export default class Engine {
         // this.showAllDimensionStatisticsPerDisease()
 
         // this.showLanguagePredictionStatistics()
-        // this.debug=false
+        this.debug=false
 
         // this.beginTest(testData)
         
@@ -369,7 +369,6 @@ export default class Engine {
 
     buildWildcardBlackbox(){
 
-        
         Object.keys(this.RULES)
             .forEach(lang=>{
                 let ruleSet = this.RULES[lang]
@@ -398,8 +397,6 @@ export default class Engine {
                 
                 this.RULES_WILDCARDS[lang] = wildcards
                 this.RULES_WILDCARDS[lang].buildForwardIndex()
-                this.RULES_WILDCARDS[lang].sortMemory()
-                
                 // if ( lang == 'MAG '){
                 //     this.RULES_WILDCARDS[lang].printForwardIndex()
                 // }
@@ -795,9 +792,9 @@ export default class Engine {
 
         if ( allowBM25Matching ){
       
-
             // EXECUTE INFORMATION RETRIEVAL MECHANISM
 
+            let dimensions = Object.keys(this.SELFCARE_DIMENSIONS)
             for (let dimension of searchOrder) {
                 targetDimension = dimension.class
 
@@ -844,8 +841,6 @@ export default class Engine {
                 console.log(`Engine::getReply [Language Predicted] - ${lang}`)
                 console.log(`Engine::getReply [Total not found in vocabulary] - ${wordsNotFoundInVocabularyList}`)
                 console.log(`Engine::getReply [Attempting Similarity Metric]`)
-                
-                /**uncoment if the iterative serching is conducted */
                 for (let result of searchOrderDimensionResults) {
                     // console.log('\tDimension:',result.dimension)
                     console.log(`\tDimension: ${result.dimension}`)
@@ -853,8 +848,6 @@ export default class Engine {
                     console.log(`\t\tPattern: ${result.pattern}`)
                     console.log(`\t\tScore: ${result.score}`)
                 }
-                
-
             }
 
             if ( targetRule.score < this.REPLY_THRESHOLD  ){

@@ -79,7 +79,7 @@ let closeMobileLoginForm = () => {
         <div class="text-small login-options">
             <p class="dont-have-account">
                 Dont have Account yet? Click
-                <router-link class="text-bold" :to="{name: 'register'}">here</router-link> 
+                <!-- <router-link class="text-bold" :to="{name: 'register'}">here</router-link>  -->
                 to register
             </p>
             <strong>or</strong>

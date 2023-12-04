@@ -2,21 +2,21 @@ import { encodeMemory } from "@/api/config/model"
 
 let section11 = [
     // antihistamines
-    encodeMemory([
-        `* generic * antihistamine * `,
-        `bigay ilista sabihin ano ang mga pangalan ng generic na antihistamines`,
-        `Mayroon ka bang listahan o Maaari mo bang sabihin ang mga pangalan ng generic na antihistamines`,
-    ], [
-        `Ang Citerizine ay isa sa mga kilalang generic na antihistamine. Mahalagang tandaan na ang mga gamot na ito ay maaaring may iba't ibang mga pangalan o brand depende sa bansa at tagagawa. Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
-        `
-    ],7),
-    encodeMemory([
-        `* branded * antihistamine * `,
-        `bigay ilista sabihin ano ang mga pangalan ng branded na antihistamines`,
-    ], [
-        `Ang Benadryl ay isa sa mga sikat na branded na antihistamine. Mahalagang tandaan na ang mga antihistamine ay dapat lamang inumin sa ilalim ng gabay ng isang doktor.Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
-        `
-    ],7),
+    // encodeMemory([
+    //     `* generic * antihistamine * `,
+    //     `bigay ilista sabihin ano ang mga pangalan ng generic na antihistamines`,
+    //     `Mayroon ka bang listahan o Maaari mo bang sabihin ang mga pangalan ng generic na antihistamines`,
+    // ], [
+    //     `Ang Citerizine ay isa sa mga kilalang generic na antihistamine. Mahalagang tandaan na ang mga gamot na ito ay maaaring may iba't ibang mga pangalan o brand depende sa bansa at tagagawa. Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
+    //     `
+    // ],7),
+    // encodeMemory([
+    //     `* branded * antihistamine * `,
+    //     `bigay ilista sabihin ano ang mga pangalan ng branded na antihistamines`,
+    // ], [
+    //     `Ang Benadryl ay isa sa mga sikat na branded na antihistamine. Mahalagang tandaan na ang mga antihistamine ay dapat lamang inumin sa ilalim ng gabay ng isang doktor.Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
+    //     `
+    // ],7),
     encodeMemory([
         `* dose * antihistamine *`,
         `* hakbang * antihistamine *`,
@@ -31,7 +31,7 @@ let section11 = [
         `Saan ako makakahanap ng impormasyon tungkol sa tamang dosis at paggamit ng antihistamines`,
         `ano paano ang dose ng antihistamines`,
     ], [
-        `Ang mga antihistamine ay maaaring inumin kasama ng pagkain o isang baso ng tubig o gatas upang mabawasan ang pangangati ng tiyan kung kinakailangan. Para sa cetirizine, narito kung paano mo ito inumin. Ang 6 na taong gulang at mas matanda ay maaaring magkaroon ng 5 hanggang 10 miligrams isang beses sa isang araw. Ang mga 4-6 taong gulang ay maaaring uminom ng maximum na 5mg isang beses o 2.5mg dalawang beses sa isang araw. Ang mga mas bata pa rito (4 sa ibaba) ay hindi dapat uminom ng gamot na ito.
+        `Ang mga antihistamine tulad ng Citerizine at Benadryl ay maaaring inumin kasama ng pagkain o isang baso ng tubig o gatas upang mabawasan ang pangangati ng tiyan kung kinakailangan. Para sa cetirizine, narito kung paano mo ito inumin. Ang 6 na taong gulang at mas matanda ay maaaring magkaroon ng 5 hanggang 10 miligrams isang beses sa isang araw. Ang mga 4-6 taong gulang ay maaaring uminom ng maximum na 5mg isang beses o 2.5mg dalawang beses sa isang araw. Ang mga mas bata pa rito (4 sa ibaba) ay hindi dapat uminom ng gamot na ito.
         
         Bagama't ipinakita ko sa iyo ang ilang impormasyon kung paano uminom ng mga antihistamines, mas mainam na humingi ka ng tulong sa mga doktor. PWede sila mag reseta naaangkop na gamot para sa iyong kondisyon. `
     ],7),
@@ -39,7 +39,7 @@ let section11 = [
         `* antihistamine *`,
         `Ano ang ipaliwanag kahulugan ibig sabihin ng antihistamine at para saan ito`,  
     ], [
-        `Ang mga antihistamine ay ginagamit upang mapawi o maiwasan ang mga sintomas ng hay fever at iba pang uri ng allergy. Gumagana ang mga ito sa pamamagitan ng pagpigil sa mga epekto ng histamine, na ginawa ng katawan bilang reaksyon tuwing may sakit. Ang histamine ay maaaring maging sanhi ng pangangati, pagbahing, sipon, at matubig na mga mata. Gayundin, sa ilang mga tao ay maaaring isara ng histamine ang mga bronchial tubes (mga daanan ng hangin ng mga baga) at nagpapahirap sa paghinga.`
+        `Ang mga antihistamine tulad ng Citerizine at Benadryl ay ginagamit upang mapawi o maiwasan ang mga sintomas ng hay fever at iba pang uri ng allergy.Ang mga antihistamine ay may iba't ibang anyo. Pwede ito maging mga likido, lotion, syrup, gel, eyedrops, tablet, kapsula, cream, at suppositories. Gumagana ang mga ito sa pamamagitan ng pagpigil sa mga epekto ng histamine, na ginawa ng katawan bilang reaksyon tuwing may sakit. Ang histamine ay maaaring maging sanhi ng pangangati, pagbahing, sipon, at matubig na mga mata. Gayundin, sa ilang mga tao ay maaaring isara ng histamine ang mga bronchial tubes (mga daanan ng hangin ng mga baga) at nagpapahirap sa paghinga `
     ],7),
     encodeMemory([
         `* gamit * antihistamine *`,
@@ -48,7 +48,7 @@ let section11 = [
         `saan paano ginagamit ang antihistamines`,
     ], [
        `
-       Ang mga antihistamines ay mga gamot na karaniwang ginagamit para sa mga allergies. Itong mga gamot na to ay tumulong sa mga sakit na nagdudulog sa maraming histamine na isang kemikal na ginagawa ng katawan ng tao bilang immune response. Kaya ito ay madalas na ginagamit din sa ibang sakit tulad ng pananakit ng tyan, sipon, anxiety at iba pa. `     
+       Ang mga antihistamines tulad ng Citerizine at Benadryl ay mga gamot na karaniwang ginagamit para sa mga allergies. Itong mga gamot na to ay tumulong sa mga sakit na nagdudulog sa maraming histamine na isang kemikal na ginagawa ng katawan ng tao bilang immune response. Kaya ito ay madalas na ginagamit din sa ibang sakit tulad ng pananakit ng tyan, sipon, anxiety at iba pa. Ang gamot na ito ay pwede mabili bilang likido, lotion, syrup, gel, eyedrops, tablet, kapsula, cream, at suppositories. `     
     ],7),
     encodeMemory([
         `* antihistamine * gana *`,
@@ -86,20 +86,20 @@ let section11 = [
         `Kapag umiinom ng gamot na ito, subukang umiwas sa mga alak, sedatives, at tranquilizers, dahil sa mas mataas na panganib ng antok. Maaari itong maging sanhi ng depresyon ng Central nervous system. Kaya iwasan ang mga aktibidad na nangangailangan ng mental alertness. Mag-ingat kapag ang pasyente ay may kapansanan sa atay o bato. Pareho sa mga matatanda dahil mas sensitibo sila sa masamang epekto.
         `
     ],7),
-    encodeMemory([
-        `* price * antihistamine *`,
-        `* antihistamine * price *`,
-        `Magkano ang halaga presyo ng antihistamines`,
-    ], [
-        `Ang presyo ng antihistamine ay magkaiba sa bawat pharmacy. Ang citerizine na 10mg halimbawa ay tig 15 pesos kada tableta ayos sa Watson pharmacy. Ang Benadryl naman ay nagkakahalaga ng 41 pesos kada tabletas.
-        `
-    ],7),
-    encodeMemory([
-        `* uri * antihistamine *`,
-        `Ano ang mga uri ng antihistamines`,
-    ], [
-        `Ang mga antihistamine ay may iba't ibang anyo. Pwede ito maging mga likido, lotion, syrup, gel, eyedrops, tablet, kapsula, cream, at suppositories`
-    ],7),
+    // encodeMemory([
+    //     `* price * antihistamine *`,
+    //     `* antihistamine * price *`,
+    //     `Magkano ang halaga presyo ng antihistamines`,
+    // ], [
+    //     `Ang presyo ng antihistamine ay magkaiba sa bawat pharmacy. Ang citerizine na 10mg halimbawa ay tig 15 pesos kada tableta ayos sa Watson pharmacy. Ang Benadryl naman ay nagkakahalaga ng 41 pesos kada tabletas.
+    //     `
+    // ],7),
+    // encodeMemory([
+    //     `* uri * antihistamine *`,
+    //     `Ano ang mga uri ng antihistamines`,
+    // ], [
+    //     `Ang mga antihistamine ay may iba't ibang anyo. Pwede ito maging mga likido, lotion, syrup, gel, eyedrops, tablet, kapsula, cream, at suppositories`
+    // ],7),
     encodeMemory([
         `* alternatibo * antihistamine *`,
         `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa antihistamines`,
@@ -112,22 +112,22 @@ let section11 = [
         `Subukan mong kumain ng luya. Ayon sa Sinus and Allergy Wellness Center, ito ay isang natural na histamine, potent antiviral agent at isang immute booster. Ang luya ay isang ligtas at lubos na epektibong halamang gamot na nagpapaginhawa sa sistema ng pagtunaw at nagpapabuti sa sirkulasyon. Maaari kang gumawa ng ilang tsaa ng luya upang maibsan ang pagsisikip ng ilong at pananakit ng ulo. Habang humihigop ka ng iyong tsaa, langhapin ang singaw na lumalabas sa iyong tasa. Gayundin, subukang gamitin ito kasama ng iba pang mga halamang gamot, tulad ng turmeric, na isa pang malakas na natural na manggagamot.`
     ],7),
     // analgesics
-    encodeMemory([
-        `* generic * analgesics * `,
-        `bigay ilista sabihin ano ang mga pangalan ng generic na analgesics`,
-    ], [
-        `Ang ilang karaniwang generic na analgesics ay kinabibilangan ng ibuprofen, acetaminophen, aspirin, paracetamol, naproxen, at ketoprofen. Gumagana ang mga gamot na ito sa pamamagitan ng pagharang o pagbabawas ng produksyon ng mga prostaglandin ng katawan. Ito ay mga kemikal na nagdudulot ng pamamaga at pananakit. Sa pamamagitan ng pagbabawas ng produksyon ng mga prostaglandin, ang mga gamot na ito ay makakatulong upang mabawasan ang sakit at pamamaga sa katawan.Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
-        `
-    ],7),
-    encodeMemory([
-        `* branded * analgesics *`,
-        `bigay ilista sabihin ano ang mga pangalan ng branded na analgesics`,
-    ], [
-        `Ang ilan sa mga branded na pangalan ng paracetamol ay Biogesic at Calpol. Gumagana ang mga gamot na ito sa pamamagitan ng pagharang o pagbabawas ng produksyon ng katawan ng mga prostaglandin, na mga kemikal na nagdudulot ng pamamaga at pananakit. Sa pamamagitan ng pagbabawas ng produksyon ng mga prostaglandin, ang mga gamot na ito ay makakatulong upang mabawasan ang sakit at pamamaga sa katawan.Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. 
+    // encodeMemory([
+    //     `* generic * analgesics * `,
+    //     `bigay ilista sabihin ano ang mga pangalan ng generic na analgesics`,
+    // ], [
+    //     `Ang ilang karaniwang generic na analgesics ay kinabibilangan ng ibuprofen, acetaminophen, aspirin, paracetamol, naproxen, at ketoprofen. Gumagana ang mga gamot na ito sa pamamagitan ng pagharang o pagbabawas ng produksyon ng mga prostaglandin ng katawan. Ito ay mga kemikal na nagdudulot ng pamamaga at pananakit. Sa pamamagitan ng pagbabawas ng produksyon ng mga prostaglandin, ang mga gamot na ito ay makakatulong upang mabawasan ang sakit at pamamaga sa katawan.Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
+    //     `
+    // ],7),
+    // encodeMemory([
+    //     `* branded * analgesics *`,
+    //     `bigay ilista sabihin ano ang mga pangalan ng branded na analgesics`,
+    // ], [
+    //     `Ang ilan sa mga branded na pangalan ng paracetamol ay Biogesic at Calpol. Gumagana ang mga gamot na ito sa pamamagitan ng pagharang o pagbabawas ng produksyon ng katawan ng mga prostaglandin, na mga kemikal na nagdudulot ng pamamaga at pananakit. Sa pamamagitan ng pagbabawas ng produksyon ng mga prostaglandin, ang mga gamot na ito ay makakatulong upang mabawasan ang sakit at pamamaga sa katawan.Kung nakakaramdam ka ng sintomsa ng trangkaso, magpahinga ka at lumayo sa mga mauusok na lugar. 
         
-        Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
-        `
-    ],7),
+    //     Laging tandaan na kumunsulta sa isang doktor o parmasyutiko bago uminom ng anumang gamot.
+    //     `
+    // ],7),
     encodeMemory([
         `* (hakbang|dose) * analgesics *`,
         `* paano * (inumin|gamitin|kainin) * analgesics *`,
@@ -154,7 +154,7 @@ let section11 = [
         `Ano ang ipaliwanag kahulugan ibig sabihin ng analgesics at para saan ito`, 
     ], [
         `
-        Ang mga analgesics kay kilala din bilang pain killers. Ito ay mga gamot na ginagamit para maibsan ang mga masasakit na bahagi ng katawan tulad ng sakit as ulo at pinsala sa katawan. Ang mga anti-inflammatory analagesics ay tumutulong sa mga pamamaga sa katawan, habang ang mga opioi analgesics naman ay sinasalin kung paano nararamadaman ang sakit sa utak.`
+        Ang mga analgesics tulad ng ibuprofen, acetaminophen, aspirin, paracetamol, biogesic, at calpol ay kay kilala din bilang pain killers. Ito ay mga gamot na ginagamit para maibsan ang mga masasakit na bahagi ng katawan tulad ng sakit as ulo at pinsala sa katawan. Ang mga anti-inflammatory analagesics ay tumutulong sa mga pamamaga sa katawan, habang ang mga opioi analgesics naman ay sinasalin kung paano nararamadaman ang sakit sa utak. Tandaang maraming anyo ang analgesics tulad ng mga films, likido, mga patch ng pang-ilong, mga tabletas, mga tablet, mga kapsula, at pinaghalong powder. `
     ],7),
     encodeMemory([
         `* gamit * analgesics *`,
@@ -163,7 +163,7 @@ let section11 = [
         `saan paano ginagamit ang analgesics`,
     ], [
         `
-        Ang mga analgesics ay nakakapagpabuti sa mga hindi masyado malalang mga masakit na bahagi ng katawan. Ang pagiging epektibo nito ay naka depende parin sa lala ng kondisyon at sa dosage na ininom ng tao. Ang mga gamot din na ito ay nabibili kahit walang riseta. Maari itong igamot sa mga hindi ganoon ka lalang sakit. Ngunit , hindi nararapat na inumin ito ng sunod sunod na araw.`
+        Ang mga analgesics tulad ng ibuprofen, acetaminophen, aspirin, paracetamol, biogesic, at calpol ay nakakapagpabuti sa mga hindi masyado malalang mga masakit na bahagi ng katawan. Ang pagiging epektibo nito ay naka depende parin sa lala ng kondisyon at sa dosage na ininom ng tao. Ang mga gamot din na ito ay nabibili kahit walang riseta. Maari itong igamot sa mga hindi ganoon ka lalang sakit. Ngunit , hindi nararapat na inumin ito ng sunod sunod na araw. Tandaang maraming anyo ang analgesics tulad ng mga films, likido, mga patch ng pang-ilong, mga tabletas, mga tablet, mga kapsula, at pinaghalong powder.`
     ],7),
     encodeMemory([
         `* analgesics * treat *`,
@@ -198,19 +198,19 @@ let section11 = [
     ], [
         `Uminom ng isang buong baso ng tubig (8 ounces/240 mililitro) kasama nito. Huwag humiga nang hindi bababa sa 10 minuto pagkatapos mong inumin ang gamot na ito. Kung sumakit ang tiyan habang iniinom mo ang gamot na ito, maaari mo itong inumin kasama ng pagkain o gatas.`
     ],7),
-    encodeMemory([
-        `* price * analgesics *`,
-        `* analgesics * price *`,
-        `Magkano ang halaga presyo ng analgesics`,
-    ], [
-        `Ayon sa botika ng Muramed at Watsons, ang paracetamol tulad ng biogesic ay maaaring magsimula sa 4 pesos. Samantala, ang aspirin ay maaaring magsimula sa 3.50 pesos na nakalista ng watsons pharmacy. Gayunpaman, hindi mo ito mabibili nang walang reseta at maaaring mag-iba ang mga presyo depende sa kung saan mo binili ang mga ito.`
-    ],7),
-    encodeMemory([
-        `* uri * analgesics *`,
-        `Ano ang mga uri ng analgesics`,
-    ], [
-        `Maraming anyo ang analgesics tulad ng mga films, likido, mga patch ng pang-ilong, mga tabletas, mga tablet, mga kapsula, at pinaghalong powder.`
-    ],7),
+    // encodeMemory([
+    //     `* price * analgesics *`,
+    //     `* analgesics * price *`,
+    //     `Magkano ang halaga presyo ng analgesics`,
+    // ], [
+    //     `Ayon sa botika ng Muramed at Watsons, ang paracetamol tulad ng biogesic ay maaaring magsimula sa 4 pesos. Samantala, ang aspirin ay maaaring magsimula sa 3.50 pesos na nakalista ng watsons pharmacy. Gayunpaman, hindi mo ito mabibili nang walang reseta at maaaring mag-iba ang mga presyo depende sa kung saan mo binili ang mga ito.`
+    // ],7),
+    // encodeMemory([
+    //     `* uri * analgesics *`,
+    //     `Ano ang mga uri ng analgesics`,
+    // ], [
+    //     `Maraming anyo ang analgesics tulad ng mga films, likido, mga patch ng pang-ilong, mga tabletas, mga tablet, mga kapsula, at pinaghalong powder.`
+    // ],7),
     encodeMemory([
         `* alternatibo * analgesics *`,
         `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa analgesics`,
@@ -412,21 +412,21 @@ let section11 = [
     // ],7),
 
     // decongestants
-    encodeMemory([
-        `* generic * decongestant *`,
-        `bigay ilista sabihin ano ang mga pangalan ng generic na decongestant`,
-    ], [
-        `Ang ilang halimbawa ng mga generic na decongestant ay phenylephrine, pseudoephedrine, at oxymetazoline. Ang mga gamot na ito ay bibili sa counter at may iba't ibang anyo gaya ng mga tablet, kapsula, spray ng ilong, o likido. Mahalagang sundin ang inirerekomendang dosis at pag-iingat kapag umiinom ng mga decongestant dahil maaari silang magdulot ng mga side effect gaya ng pagiging nerbiyoso, pagtaas ng tibok ng puso, at mataas na presyon ng dugo sa ilang indibidwal.
+    // encodeMemory([
+    //     `* generic * decongestant *`,
+    //     `bigay ilista sabihin ano ang mga pangalan ng generic na decongestant`,
+    // ], [
+    //     `Ang ilang halimbawa ng mga generic na decongestant ay phenylephrine, pseudoephedrine, at oxymetazoline. Ang mga gamot na ito ay bibili sa counter at may iba't ibang anyo gaya ng mga tablet, kapsula, spray ng ilong, o likido. Mahalagang sundin ang inirerekomendang dosis at pag-iingat kapag umiinom ng mga decongestant dahil maaari silang magdulot ng mga side effect gaya ng pagiging nerbiyoso, pagtaas ng tibok ng puso, at mataas na presyon ng dugo sa ilang indibidwal.
                 
-        Tandaan na ang mga nabangit na paraan ng pag inom nitong gamot ay pawang mga halibawa lamang. 
-        `
-    ],7),
-    encodeMemory([
-        `* branded * decongestant *`,
-        `bigay ilista sabihin ano ang mga pangalan ng branded na decongestant`,
-    ], [
-        `Ang ilan sa mga branded na decongestant ay decolgen at sudafed.Mahalagang sundin ang inirerekomendang dosis at pag-iingat kapag umiinom ng mga decongestant dahil maaari silang magdulot ng mga side effect gaya ng pagiging nerbiyoso, pagtaas ng tibok ng puso, at mataas na presyon ng dugo sa ilang indibidwal.`
-    ],7),
+    //     Tandaan na ang mga nabangit na paraan ng pag inom nitong gamot ay pawang mga halibawa lamang. 
+    //     `
+    // ],7),
+    // encodeMemory([
+    //     `* branded * decongestant *`,
+    //     `bigay ilista sabihin ano ang mga pangalan ng branded na decongestant`,
+    // ], [
+    //     `Ang ilan sa mga branded na decongestant ay decolgen at sudafed.Mahalagang sundin ang inirerekomendang dosis at pag-iingat kapag umiinom ng mga decongestant dahil maaari silang magdulot ng mga side effect gaya ng pagiging nerbiyoso, pagtaas ng tibok ng puso, at mataas na presyon ng dugo sa ilang indibidwal.`
+    // ],7),
     encodeMemory([
         `* dose * decongestant *`,
         `* hakbang * decongestant *`,
@@ -452,7 +452,7 @@ let section11 = [
         `* decongestant *`,
         `Ano ang ipaliwanag kahulugan ibig sabihin ng decongestant at para saan ito`, 
     ], [
-        `Ang mga decongestant ay mga gamot na nagpapaginhawa sa pamamagitan ng pagbabawas ng pamamaga, pamamaga at pagbuo ng mucus sa loob ng mga daanan ng ilong o mata. Wala silang ibang epekto sa mga sintomas tulad ng runny nose o pagbahin.`
+        `Ang mga decongestant tulad ng phenylephrine, decolgen, o sudafed ay mga gamot na nagpapaginhawa sa pamamagitan ng pagbabawas ng pamamaga, pamamaga at pagbuo ng mucus sa loob ng mga daanan ng ilong o mata. Wala silang ibang epekto sa mga sintomas tulad ng runny nose o pagbahin. Ang mga gamot na ito ay mabibili bilang patak sa ilong, patak sa mata, o di kaya mga tablet, kapsula, at syrup.`
     ],7),
     encodeMemory([
         `* gamit * decongestant *`,
@@ -460,7 +460,7 @@ let section11 = [
         `saan paano Kailan ginagamit ang decongestants`,
     ], [ 
         `
-        Ang mga decongestants ay mga gamot na tumutulog magpaginhawa ng baradong ilong. Ang pagbara nito na nararamdaman kapag may flu ay dahil sa virus na nag dudulot ng flu, sinusitis o allergy.`
+        Ang mga decongestants tulad ng phenylephrine, decolgen, o sudafed ay mga gamot na tumutulog magpaginhawa ng baradong ilong. Ang pagbara nito na nararamdaman kapag may flu ay dahil sa virus na nag dudulot ng flu, sinusitis o allergy.Ang mga gamot na ito ay mabibili bilang patak sa ilong, patak sa mata, o di kaya mga tablet, kapsula, at syrup.`
     ],7),
     encodeMemory([
         `* gana * decongestant *`,
@@ -498,19 +498,19 @@ let section11 = [
     ], [
         `Ang mga decongestant ay maaaring inumin upang makatulong na mapawi ang kasikipan na nakakaapekto sa ilong, sinuses, at mata o direktang i-spray sa ilong o itanim sa mata para sa mas lokal na epekto.`
     ],7),
-    encodeMemory([
-        `* price * decongestant *`,
-        `* decongestant * price *`,
-        `Magkano ang halaga presyo ng decongestant`,
-    ], [
-        `Ang presyo ay nag-iiba ayon sa anyo ng gamot. Halimbawa, para sa nasal sprays ito ay nagsisimula sa 90php , para sa mga patak sa paligid ng 78 (rose pharmacy website), at mga tablet tulad ng decolgen ito ay nagsisimula sa 6php (watsons).`
-    ],7),
-    encodeMemory([
-        `* uri *  decongestant *`,
-        `Ano ang mga uri ng decongestant`,
-    ], [
-        `Available ang mga decongestant bilang mga patak sa ilong, patak sa mata, at bilang mga tablet, kapsula, at syrup.`
-    ],7),
+    // encodeMemory([
+    //     `* price * decongestant *`,
+    //     `* decongestant * price *`,
+    //     `Magkano ang halaga presyo ng decongestant`,
+    // ], [
+    //     `Ang presyo ay nag-iiba ayon sa anyo ng gamot. Halimbawa, para sa nasal sprays ito ay nagsisimula sa 90php , para sa mga patak sa paligid ng 78 (rose pharmacy website), at mga tablet tulad ng decolgen ito ay nagsisimula sa 6php (watsons).`
+    // ],7),
+    // encodeMemory([
+    //     `* uri *  decongestant *`,
+    //     `Ano ang mga uri ng decongestant`,
+    // ], [
+    //     `Available ang mga decongestant bilang mga patak sa ilong, patak sa mata, at bilang mga tablet, kapsula, at syrup.`
+    // ],7),
     encodeMemory([
         `* alternatibo * decongestant *`,
         `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa decongestant`,
@@ -523,18 +523,18 @@ let section11 = [
         `Available ang mga alternatibo sa oral decongestant. Sa larangan ng droga, ang mga antihistamine tulad ng diphenhydramine (Benadryl), chlorpheniramine (Chlor-Trimeton), cetirizine (Zyrtec), at loratadine (Claritin) ay makakatulong sa baradong ilong na ligtas para sa pandinig`
     ],7),
     // expectorant
-    encodeMemory([
-        `* generic * expectorant*`,
-        `bigay ilista sabihin ano ang mga pangalan ng generic na expectorant`,
-    ], [
-       `Ang Guiafenesin at Potassium iodide ay mga halimbawa ng generic na expectorant. Ang mga ito ay matatagpuan din sa mga produkto tulad ng Mucinex at Robitussin. Ang mga gamot na ito ay karaniwang ginagamit upang gamutin ang mga kondisyon ng paghinga tulad ng bronchitis, hika, at karaniwang sipon. Mahalagang tandaan na ang mga gamot na ito ay maaaring hindi angkop para sa lahat at dapat gamitin ayon sa mga tagubilin ng isang propesyonal sa pangangalagang pangkalusugan.`
-    ],7),
-    encodeMemory([
-        `* branded * expectorant*`, 
-        `bigay ilista sabihin ano ang mga pangalan ng branded na expectorant`,
-    ], [
-        `Ang Mucinex at Robitussin ay iilan lang sa mga branded na expectorants.Mahalagang tandaan na ang mga gamot na ito ay maaaring hindi angkop para sa lahat at dapat gamitin ayon sa mga tagubilin ng isang propesyonal sa pangangalagang pangkalusugan.`
-    ],7),
+    // encodeMemory([
+    //     `* generic * expectorant*`,
+    //     `bigay ilista sabihin ano ang mga pangalan ng generic na expectorant`,
+    // ], [
+    //    `Ang Guiafenesin at Potassium iodide ay mga halimbawa ng generic na expectorant. Ang mga ito ay matatagpuan din sa mga produkto tulad ng Mucinex at Robitussin. Ang mga gamot na ito ay karaniwang ginagamit upang gamutin ang mga kondisyon ng paghinga tulad ng bronchitis, hika, at karaniwang sipon. Mahalagang tandaan na ang mga gamot na ito ay maaaring hindi angkop para sa lahat at dapat gamitin ayon sa mga tagubilin ng isang propesyonal sa pangangalagang pangkalusugan.`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * expectorant*`, 
+    //     `bigay ilista sabihin ano ang mga pangalan ng branded na expectorant`,
+    // ], [
+    //     `Ang Mucinex at Robitussin ay iilan lang sa mga branded na expectorants.Mahalagang tandaan na ang mga gamot na ito ay maaaring hindi angkop para sa lahat at dapat gamitin ayon sa mga tagubilin ng isang propesyonal sa pangangalagang pangkalusugan.`
+    // ],7),
     encodeMemory([
         `* dose * expectorant*`,
         `* hakbang * expectorant*`,
@@ -565,7 +565,7 @@ let section11 = [
         `Ano ang kahulugan ibig sabihin ng expectorant at para saan ito`,  
     ], [
 
-        `Ang mga expectorant ay mga sangkap na nagpapaluwag sa daluyan ng hangin. Ginagawa nila ito sa pamamagitan ng pagtaas ng tubig na nilalaman ng mga secretions na nagpapababa ng kanilang lagkit upang mas madaling maibo ito. Ang mga expectorant ay kadalasang ginagamit upang tumulong sa paggamot sa mga kondisyon ng paghinga tulad ng bronchitis, pulmonya, at karaniwang sipon.
+        `Ang mga expectorant tulad ng Guiafenesin o Robutissin ay mga sangkap na nagpapaluwag sa daluyan ng hangin. Ginagawa nila ito sa pamamagitan ng pagtaas ng tubig na nilalaman ng mga secretions na nagpapababa ng kanilang lagkit upang mas madaling maibo ito. Ang mga expectorant ay kadalasang ginagamit upang tumulong sa paggamot sa mga kondisyon ng paghinga tulad ng bronchitis, pulmonya, at karaniwang sipon. Tandaan na ang gamot na ito ay maaring bilhin bilang likido o tabletas.
         `
     ],7),
     encodeMemory([
@@ -574,7 +574,7 @@ let section11 = [
         `Para saan ba talaga ginagamit ang mga expectorants`,
         `saan paano ano ginagamit ang expectorants`,
     ], [
-        `Maaari kang uminom ng expectorant upang makahinga ng mabuti kung mayroon kang sipon o trangkaso. Available ang mga ito bilang mga standalone na gamot o bilang isang sangkap sa isang all-in-one na gamot sa sipon o trangkaso.`
+        `Maaari kang uminom ng expectorant tulad ng Guiafenesin o Robutissin upang makahinga ng mabuti kung mayroon kang sipon o trangkaso. Available ang mga ito bilang mga standalone na gamot o bilang isang sangkap sa isang all-in-one na gamot sa sipon o trangkaso. Tandaan na ang gamot na ito ay maaring bilhin bilang likido o tabletas`
     ],7),
     encodeMemory([
         `* gana * expectorant* `,
@@ -614,19 +614,19 @@ let section11 = [
     ], [
         `Huwag durugin ang mga tabletas, at siguraduhing sukatin ang mga likidong formulasyon gamit ang mga panukat na tool na ibinigay kasama ng iyong gamot. Kadalasang inirerekomenda na uminom ka ng maraming likido kapag umiinom ng expectorant.`
     ],7),
-    encodeMemory([
-        `* price * expectorant*`,
-        `* expectorant* price *`,
-        `Magkano ang halaga presyo ng expectorant`,
-    ], [
-        `Sa watsons, ang robitussin guaifenesin price ay nagsisimula sa 92php.`
-    ],7),
-    encodeMemory([
-        `* uri *  expectorant*`,
-        `Ano ang mga uri ng expectorant`,
-    ], [
-        `Sa pangkalahatan, available ang mga expectorant na over-the-counter (OTC) sa mga form na likido, tableta, at tablet.`
-    ],7),
+    // encodeMemory([
+    //     `* price * expectorant*`,
+    //     `* expectorant* price *`,
+    //     `Magkano ang halaga presyo ng expectorant`,
+    // ], [
+    //     `Sa watsons, ang robitussin guaifenesin price ay nagsisimula sa 92php.`
+    // ],7),
+    // encodeMemory([
+    //     `* uri *  expectorant*`,
+    //     `Ano ang mga uri ng expectorant`,
+    // ], [
+    //     `Sa pangkalahatan, available ang mga expectorant na over-the-counter (OTC) sa mga form na likido, tableta, at tablet.`
+    // ],7),
     encodeMemory([
         `* alternatibo * expectorant*`,
         `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa expectorant`,
@@ -641,18 +641,18 @@ let section11 = [
     ],7),
 
     // antitussives
-    encodeMemory([
-        `* generic * antitussive *`,
-        `bigay ilista sabihin ano ang mga pangalan ng generic na antitussive`,
-    ], [
-        `Ang Dexthromethorphan, codeine at diphenhydramine ay mga generic antitussive na nabibili sa botika. Mahalagang tandaan na ang mga generic na antitussive ay naglalaman ng mga katulad na aktibong sangkap na matatagpuan din sa isang branded`
-    ],7),
-    encodeMemory([
-        `* branded * antitussive *`,
-        `bigay ilista sabihin ano ang mga pangalan ng branded na antitussive`,
-    ], [
-        `Ang Robitussin ay isang sikat na antitussive na mabibili sa mga parmasya. Dapat mong tandaan na sa kabila ng pagkakaroon ng magkatulad na sangkap, ang mga branded ay mas mahal kaysa sa mga generic`
-    ],7),
+    // encodeMemory([
+    //     `* generic * antitussive *`,
+    //     `bigay ilista sabihin ano ang mga pangalan ng generic na antitussive`,
+    // ], [
+    //     `Ang Dexthromethorphan, codeine at diphenhydramine ay mga generic antitussive na nabibili sa botika. Mahalagang tandaan na ang mga generic na antitussive ay naglalaman ng mga katulad na aktibong sangkap na matatagpuan din sa isang branded`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * antitussive *`,
+    //     `bigay ilista sabihin ano ang mga pangalan ng branded na antitussive`,
+    // ], [
+    //     `Ang Robitussin ay isang sikat na antitussive na mabibili sa mga parmasya. Dapat mong tandaan na sa kabila ng pagkakaroon ng magkatulad na sangkap, ang mga branded ay mas mahal kaysa sa mga generic`
+    // ],7),
     encodeMemory([
         `* (dose|hakbang|inumin|gamitin|kainin) * antitussive  *`,
         `Ano ang tamang paggamit ng mga antitussives`,  
@@ -675,14 +675,14 @@ let section11 = [
         `* ano * antitussive  *`,
         `Ano ang ipaliwanag kahulugan ibig sabihin ng antitussive at para saan ito`,  
     ], [
-        `Ang mga antitussive ay mga reseta o over-the-counter na gamot na ginagamit para sa pagsugpo sa ubo.`
+        `Ang mga antitussive tulad ng Dexthromethorphan o Robitussin ay mga reseta o over-the-counter na gamot na ginagamit para gamutin ang ubo. Maaari itong mabili bilang isang tableta, kapsula, gel, likido, syrup, lozenge o strips. Gayunpaman, maaari ko lamang irekomenda ang karaniwang dosis ng mga logenze at syrup form nito`
     ],7),
     encodeMemory([
         `* gamit * antitussive *`,
         `Kailan dapat uminom pwedeng gamitin ang antitussives`,
         `paano Para saan nakakatulong ginagamit ang antitussives`,
     ], [
-        `Karaniwang ginagamit ang mga ito upang gamutin ang tuyong ubo na dulot ng mga allergy, sakit sa paghinga, o impeksyon. Maaari ding gamutin ng mga antitussive ang post-viral na ubo, o isang patuloy na ubo na nabubuo pagkatapos malutas ang isang impeksiyon`
+        `Karaniwang ginagamit ang mga antitussive tulad ng Dexthromethorphan o Robitussin upang gamutin ang tuyong ubo na dulot ng mga allergy, sakit sa paghinga, o impeksyon. Maaari ding gamutin ng mga antitussive ang post-viral na ubo, o isang patuloy na ubo na nabubuo pagkatapos malutas ang isang impeksiyon.Maaari itong mabili bilang isang tableta, kapsula, gel, likido, syrup, lozenge o strips.`
     ],7),
     encodeMemory([
         `* antitussives * (gana|treat) *`,
@@ -690,7 +690,7 @@ let section11 = [
         `Paano nakakapagbigay ng kaginhawahan sa pakiramdam ang mga antitussives`,
         `Paano nakakapagpababa ng ubo ang mga antitussives`,
     ], [
-        `Ang mga antitussive ay naisip na gumagana sa pamamagitan ng pagpigil sa isang coordinating region para sa pag-ubo na matatagpuan sa stem ng utak, na nakakagambala sa cough reflex arc; bagaman ang eksaktong mekanismo ng pagkilos ay hindi alam`
+        `Ang mga antitussive tulad ng Dexthromethorphan o Robitussin ay gumagana sa pamamagitan ng pagpigil sa isang coordinating region para sa pag-ubo na matatagpuan sa stem ng utak, na nakakagambala sa cough reflex arc; bagaman ang eksaktong mekanismo ng pagkilos ay hindi alam.Maaari itong mabili bilang isang tableta, kapsula, gel, likido, syrup, lozenge o strips. `
     ],7),
     encodeMemory([
         `* ( huwag * (kain|inom|gamit) | iwas) * antitussive *`,
@@ -720,19 +720,19 @@ let section11 = [
     ], [
         `Inumin ang gamot na ito sa pamamagitan ng bibig na mayroon o walang pagkain na may isang buong baso ng tubig (8 onsa o 240 mililitro) o ayon sa direksyon ng iyong doktor.`
     ],7),
-    encodeMemory([
-        `* price * antitussive *`,
-        `* antitussive * price *`,
-        `Magkano ang halaga presyo ng antitussive`,
-    ], [
-        `Sa southstar drug store, ang halaga ng dextromethorphan syrup ay nagsisimula sa 113php. It watsons, nasa 189php. Maaaring mag-iba ito sa ibang mga parmasya`
-    ],7),
-    encodeMemory([
-        `* uri * antitussive  *`,
-        `Ano ang mga uri ng antitussive`,
-    ], [
-        `Ang mga antitussive ay may maraming anyo. Maaari itong maging isang tableta, kapsula, gel, likido, syrup, lozenge o strips. Gayunpaman, maaari ko lamang irekomenda ang karaniwang dosis ng mga logenze at syrup form nito.`
-    ],7),
+    // encodeMemory([
+    //     `* price * antitussive *`,
+    //     `* antitussive * price *`,
+    //     `Magkano ang halaga presyo ng antitussive`,
+    // ], [
+    //     `Sa southstar drug store, ang halaga ng dextromethorphan syrup ay nagsisimula sa 113php. It watsons, nasa 189php. Maaaring mag-iba ito sa ibang mga parmasya`
+    // ],7),
+    // encodeMemory([
+    //     `* uri * antitussive  *`,
+    //     `Ano ang mga uri ng antitussive`,
+    // ], [
+    //     `Ang mga antitussive ay may maraming anyo. Maaari itong maging isang tableta, kapsula, gel, likido, syrup, lozenge o strips. Gayunpaman, maaari ko lamang irekomenda ang karaniwang dosis ng mga logenze at syrup form nito.`
+    // ],7),
     encodeMemory([
         `* alternatibo * antitussive  *`,
         `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa antitussive`,
@@ -747,18 +747,18 @@ let section11 = [
     ],7),
 
     // lozenges
-    encodeMemory([
-        `* generic * lozenge*`,
-        `bigay ilista sabihin ano ang mga pangalan ng generic na lozenge`,
-    ], [
-        `Ang ilan sa mga generic na pangalan ng logenzes ay kinabibilangan ng dextromethorphan at benzocaine-menthol`
-    ],7),
-    encodeMemory([
-        `* branded * lozenge*`,
-        `bigay ilista sabihin ano ang mga pangalan ng branded na lozenge`,
-    ], [
-        `Ang Bactidol at strepsils ay ilan sa mga branded na pangalan ng logenzes na makakatulong na mapawi ang iyong lalamunan`
-    ],7),
+    // encodeMemory([
+    //     `* generic * lozenge*`,
+    //     `bigay ilista sabihin ano ang mga pangalan ng generic na lozenge`,
+    // ], [
+    //     `Ang ilan sa mga generic na pangalan ng logenzes ay kinabibilangan ng dextromethorphan at benzocaine-menthol`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * lozenge*`,
+    //     `bigay ilista sabihin ano ang mga pangalan ng branded na lozenge`,
+    // ], [
+    //     `Ang Bactidol at strepsils ay ilan sa mga branded na pangalan ng logenzes na makakatulong na mapawi ang iyong lalamunan`
+    // ],7),
     encodeMemory([
         `* (hakbang|dose|inom|gamitin|kainin) * lozenge*`,
         `* lozenge* (hakbang|dose|inum|gamitin|kainin)  *`,
@@ -774,14 +774,14 @@ let section11 = [
         `* lozenge*`,
         `Ano ang ipaliwanag kahulugan ibig sabihin ng lozenge at para saan ito`,  
     ], [
-        `Ginagamit ang produktong ito upang pansamantalang mapawi ang pananakit mula sa maliliit na problema sa bibig (tulad ng mga ulser, namamagang gilagid/lalamunan, pinsala sa bibig/gigilid).`
+        `Ginagamit ang lozenges tulad ng Bactidol o Strepsils upang pansamantalang mapawi ang pananakit mula sa maliliit na problema sa bibig (tulad ng mga ulser, namamagang gilagid/lalamunan, pinsala sa bibig/gigilid).`
     ],7),
     encodeMemory([
         `* gamit * lozenge*`,
         `Kailan dapat kainin gamitin inumin ang lozenges`,
         `paano Para saan ginagamit ang lozenges`,
     ], [
-        `Ang pag-inom ng Lozenges ay isang abot-kayang opsyon para sa nagpapakilalang paggamot ng talamak at talamak na pharyngitis, pangangati o pamamaga ng upper respiratory tract at pagpapagaan ng hindi kasiya-siyang sensasyon sa lalamunan.`
+        `Ang pag gamit ng Lozenges tulad ng Bactidol o Strepsils ay isang abot-kayang opsyon para sa nagpapakilalang paggamot ng talamak at talamak na pharyngitis, pangangati o pamamaga ng upper respiratory tract at pagpapagaan ng hindi kasiya-siyang sensasyon sa lalamunan.`
     ],7),
     encodeMemory([
         `* lozenges * treat *`,
@@ -789,7 +789,7 @@ let section11 = [
         `* lozenge * gana *`,
         `Bakit nagpapagaling nakakatulong nakakagamot ang lozenges sa pagtanggal ng sakit pag-irita pamamaga sa lalamunan`,
     ], [
-        `Kapag sumipsip ka ng lozenge, nagsisimula itong matunaw at maglalabas ng gamot. Kaya dapat itong tunawin nang dahan-dahan sa bibig upang pansamantalang sugpuin ang ubo, at mag-lubricate at paginhawahin ang nanggagalit na mga tisyu ng lalamunan.
+        `Kapag sumipsip ka ng lozenge Lozenges tulad ng Bactidol o Strepsils, nagsisimula itong matunaw at maglalabas ng gamot. Kaya dapat itong tunawin nang dahan-dahan sa bibig upang pansamantalang sugpuin ang ubo, at mag-lubricate at paginhawahin ang nanggagalit na mga tisyu ng lalamunan.
         
         Ang mga lozenges ay tumutulong sa paglaban sa sipon, at karamihan ay may pampamanhid upang makatulong na mabawasan ang sakit. Naglalaman din ito ng menthol o eucalyptus, na makakatulong sa pagpapalamig at pagpapatahimik sa lalamunan. Ang iba ay naglalaman ng pulot, na kilala na may mga katangian ng pagsugpo sa ubo.`
     ],7),
@@ -820,19 +820,19 @@ let section11 = [
     ], [
         `Huwag nguyain o lunukin nang buo. Ang produktong ito ay karaniwang ginagamit tuwing 2 oras kung kinakailangan.`
     ],7),
-    encodeMemory([
-        `* price * lozenge*`,
-        `* lozenge* price * `,
-        `Magkano ang halaga presyo ng lozenge`,
-    ], [
-        `Sa rose pharmacy nagsisimula ito sa paligid ng 5php bawat piraso. Maaaring mag-iba ang presyo sa ibang mga parmasya`
-    ],7),
-    encodeMemory([
-        `* uri * lozenge*`,
-        `Ano ang mga uri ng lozenge`,
-    ], [
-        `Ang mga form ng dosis na mabagal na natutunaw sa bibig o maaaring nguyain at madaling lunukin ay nagiging popular, lalo na para sa mga pediatric na pasyente. Ang matigas (na-compress o hinulma) na paghahanda ng form na ito ng dosis ay tinatawag na lozenges, troches, o patak. Ang malambot (molded) na lozenges o troches ay kadalasang tinatawag na pastilles, at ang chewable, gelatin-based na lozenges o troches ay kadalasang tinatawag na gummy, bagong-bagong mga produkto.`
-    ],7),
+    // encodeMemory([
+    //     `* price * lozenge*`,
+    //     `* lozenge* price * `,
+    //     `Magkano ang halaga presyo ng lozenge`,
+    // ], [
+    //     `Sa rose pharmacy nagsisimula ito sa paligid ng 5php bawat piraso. Maaaring mag-iba ang presyo sa ibang mga parmasya`
+    // ],7),
+    // encodeMemory([
+    //     `* uri * lozenge*`,
+    //     `Ano ang mga uri ng lozenge`,
+    // ], [
+    //     `Ang mga form ng dosis na mabagal na natutunaw sa bibig o maaaring nguyain at madaling lunukin ay nagiging popular, lalo na para sa mga pediatric na pasyente. Ang matigas (na-compress o hinulma) na paghahanda ng form na ito ng dosis ay tinatawag na lozenges, troches, o patak. Ang malambot (molded) na lozenges o troches ay kadalasang tinatawag na pastilles, at ang chewable, gelatin-based na lozenges o troches ay kadalasang tinatawag na gummy, bagong-bagong mga produkto.`
+    // ],7),
     encodeMemory([
         `* alternatibo * lozenge*`,
         `Ano ang mga alternatibo herbal na gamot na pwedeng gamitin maliban sa lozenge`,
@@ -909,19 +909,19 @@ let section12 = [
 
 
 let section13 = [
-    encodeMemory([
-        `* trangkaso * problema *`,
-        `* problema * trangkaso *`,
-        `Ano ang mga banta sa kalusugan posibleng masamang epekto kapag hindi naibsan ang trangkaso`,  
-        `Ano ang mga maaring epekto komplikasyon ng trangkaso kung hindi ito maagapan`,
-        `ano ang hindi mangandang epekto ng trangkaso`,
-        `May mga posibleng epekto ba sa kalusugan kapag pinabayaan ang trangkaso`,   
-        `Paano nakakaapekto sa kalusugan ang pagpabaya sa trangkaso`,  
-        `ano ang pwede maging problema o epekto ng trangkaso`,
-        `bakit hindi pabayaan ang trangkaso`
-    ], [
-        `Ang trangkaso ay maaaring mag dulot ng bacterial pneumonia, bronchitis (inflamed airways), dehydration, impeksyon sa tainga, encephalitis (isang impeksyon sa utak), sepsis (isang impeksyon sa dugo), mga impeksyon sa sinus, viral pneumonia at maaaring lumala ang mga malalang kondisyong medikal.`
-    ],1),
+    // encodeMemory([
+    //     `* trangkaso * problema *`,
+    //     `* problema * trangkaso *`,
+    //     `Ano ang mga banta sa kalusugan posibleng masamang epekto kapag hindi naibsan ang trangkaso`,  
+    //     `Ano ang mga maaring epekto komplikasyon ng trangkaso kung hindi ito maagapan`,
+    //     `ano ang hindi mangandang epekto ng trangkaso`,
+    //     `May mga posibleng epekto ba sa kalusugan kapag pinabayaan ang trangkaso`,   
+    //     `Paano nakakaapekto sa kalusugan ang pagpabaya sa trangkaso`,  
+    //     `ano ang pwede maging problema o epekto ng trangkaso`,
+    //     `bakit hindi pabayaan ang trangkaso`
+    // ], [
+    //     `Ang trangkaso ay maaaring mag dulot ng bacterial pneumonia, bronchitis (inflamed airways), dehydration, impeksyon sa tainga, encephalitis (isang impeksyon sa utak), sepsis (isang impeksyon sa dugo), mga impeksyon sa sinus, viral pneumonia at maaaring lumala ang mga malalang kondisyong medikal.`
+    // ],1),
 ]
 
 let section14 = [
@@ -941,20 +941,20 @@ let section14 = [
     // ], [
     //     `Maaari mo ako tanungin sa mga pangunahing impormasyon. Ngunit kung kailangan mo ng mas malawak na impormasyon, subukang pumunta sa Center for Disease and Control at Department of Health. Mayroon silang mas detalyadong talakayan.`
     // ],1),
-    encodeMemory([
-        `* saan * (punta|gamutin) * senyales * trangkaso * `,
-        `Ano ang mga dapat gawin kapag mayroong sintomas ng trangkaso`,
-        `May mga gamot sa bahay ba para sa sintomas ng trangkaso`,
-        `Saan pwede magpatingin kung mayroong sintomas ng trangkaso`,
-    ], [
-        `
-        Ayon sa Centers for Disease Control and Prevention, ang trangkaso ay isang nakakahawang sakit sa paghinga na dulot ng mga virus ng trangkaso na nakahahawa sa ilong, lalamunan, at kung minsan sa mga baga.
+    // encodeMemory([
+    //     `* saan * (punta|gamutin) * senyales * trangkaso * `,
+    //     `Ano ang mga dapat gawin kapag mayroong sintomas ng trangkaso`,
+    //     `May mga gamot sa bahay ba para sa sintomas ng trangkaso`,
+    //     `Saan pwede magpatingin kung mayroong sintomas ng trangkaso`,
+    // ], [
+    //     `
+    //     Ayon sa Centers for Disease Control and Prevention, ang trangkaso ay isang nakakahawang sakit sa paghinga na dulot ng mga virus ng trangkaso na nakahahawa sa ilong, lalamunan, at kung minsan sa mga baga.
 
-        Bagama't maaari mong gamutin ang mga sintomas ng trangkaso sa bahay, karaniwang inirerekomenda na humingi ng medikal na atensyon mula sa isang tagapagbigay ng pangangalagang pangkalusugan. Maaari silang magreseta ng mga gamot na antiviral at magbigay ng iba pang mga paggamot upang makatulong na pamahalaan ang iyong mga sintomas at maiwasan ang anumang mga komplikasyon.
+    //     Bagama't maaari mong gamutin ang mga sintomas ng trangkaso sa bahay, karaniwang inirerekomenda na humingi ng medikal na atensyon mula sa isang tagapagbigay ng pangangalagang pangkalusugan. Maaari silang magreseta ng mga gamot na antiviral at magbigay ng iba pang mga paggamot upang makatulong na pamahalaan ang iyong mga sintomas at maiwasan ang anumang mga komplikasyon.
 
-        Mahalagang kumunsulta sa doktor kung nakakaranas ka ng mga seryosong sintomas o nasa mas mataas na panganib para sa mga komplikasyon.
-        `
-    ],5),
+    //     Mahalagang kumunsulta sa doktor kung nakakaranas ka ng mga seryosong sintomas o nasa mas mataas na panganib para sa mga komplikasyon.
+    //     `
+    // ],5),
     encodeMemory([
         `* sintomas * trangkaso * `,
         `* masabi * trangkaso *`,

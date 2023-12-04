@@ -67,13 +67,21 @@ export default class Engine {
         // }
 
 
+
+        this.RULES = {
+            ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
+            FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
+            MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
+        }
+
+
         // remember dont use the the transformed rules when initializing the
         // wildcard archive
-        this.RULES = {
-            ENG: [].concat(transFormedEnglishRules),
-            FIL: [].concat(transFormedFilipinoRules),
-            MAG: [].concat(transFormedMaguindanaonRules)
-        }
+        // this.RULES = {
+        //     ENG: [].concat(transFormedEnglishRules),
+        //     FIL: [].concat(transFormedFilipinoRules),
+        //     MAG: [].concat(transFormedMaguindanaonRules)
+        // }
 
         // console.log(JSON.stringify(this.RULES["ENG"]))
         this.LANG = {
@@ -124,7 +132,7 @@ export default class Engine {
         // this.buildLanguageClassifier()
         // in the loading weights.. its a little different.. that's because
         // we assume the the weights are already build because we called the build langauge classifier beforehand
-        // this.buildDomainClassifier()
+      
 
         this.RULES_DIMENSION_CLASSIFIERS = {
             ENG: new DomainClassifier(),
@@ -132,42 +140,44 @@ export default class Engine {
             MAG: new DomainClassifier(),
         }
 
-        this.RULES_DIMENSION_CLASSIFIERS["ENG"] = new DomainClassifier()
-        this.RULES_DIMENSION_CLASSIFIERS["ENG"].loadWeights(
-            weight_classifier_dimension["ENG"]["vocabulary"],
-            weight_classifier_dimension["ENG"]["prior_probabilities"],
-            weight_classifier_dimension["ENG"]["class_frequencies"],
-            weight_classifier_dimension["ENG"]["class_terms"],
-            weight_classifier_dimension["ENG"]["class_term_frequency_map"]
-        )
+        this.buildDomainClassifier()
 
-        this.RULES_DIMENSION_CLASSIFIERS["FIL"] = new DomainClassifier()
-        this.RULES_DIMENSION_CLASSIFIERS["FIL"].loadWeights(
-            weight_classifier_dimension["FIL"]["vocabulary"],
-            weight_classifier_dimension["FIL"]["prior_probabilities"],
-            weight_classifier_dimension["FIL"]["class_frequencies"],
-            weight_classifier_dimension["FIL"]["class_terms"],
-            weight_classifier_dimension["FIL"]["class_term_frequency_map"]
-        )
+        // this.RULES_DIMENSION_CLASSIFIERS["ENG"] = new DomainClassifier()
+        // this.RULES_DIMENSION_CLASSIFIERS["ENG"].loadWeights(
+        //     weight_classifier_dimension["ENG"]["vocabulary"],
+        //     weight_classifier_dimension["ENG"]["prior_probabilities"],
+        //     weight_classifier_dimension["ENG"]["class_frequencies"],
+        //     weight_classifier_dimension["ENG"]["class_terms"],
+        //     weight_classifier_dimension["ENG"]["class_term_frequency_map"]
+        // )
 
-        this.RULES_DIMENSION_CLASSIFIERS["MAG"] = new DomainClassifier()
-        this.RULES_DIMENSION_CLASSIFIERS["MAG"].loadWeights(
-            weight_classifier_dimension["MAG"]["vocabulary"],
-            weight_classifier_dimension["MAG"]["prior_probabilities"],
-            weight_classifier_dimension["MAG"]["class_frequencies"],
-            weight_classifier_dimension["MAG"]["class_terms"],
-            weight_classifier_dimension["MAG"]["class_term_frequency_map"]
-        )
+        // this.RULES_DIMENSION_CLASSIFIERS["FIL"] = new DomainClassifier()
+        // this.RULES_DIMENSION_CLASSIFIERS["FIL"].loadWeights(
+        //     weight_classifier_dimension["FIL"]["vocabulary"],
+        //     weight_classifier_dimension["FIL"]["prior_probabilities"],
+        //     weight_classifier_dimension["FIL"]["class_frequencies"],
+        //     weight_classifier_dimension["FIL"]["class_terms"],
+        //     weight_classifier_dimension["FIL"]["class_term_frequency_map"]
+        // )
+
+        // this.RULES_DIMENSION_CLASSIFIERS["MAG"] = new DomainClassifier()
+        // this.RULES_DIMENSION_CLASSIFIERS["MAG"].loadWeights(
+        //     weight_classifier_dimension["MAG"]["vocabulary"],
+        //     weight_classifier_dimension["MAG"]["prior_probabilities"],
+        //     weight_classifier_dimension["MAG"]["class_frequencies"],
+        //     weight_classifier_dimension["MAG"]["class_terms"],
+        //     weight_classifier_dimension["MAG"]["class_term_frequency_map"]
+        // )
 
 
         /** STEP 3 */
         /** Build memory*/
 
-        this.RULES = {
-            ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
-            FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
-            MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
-        }
+        // this.RULES = {
+        //     ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
+        //     FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
+        //     MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
+        // }
 
         this.buildMemory()
         
@@ -205,7 +215,7 @@ export default class Engine {
         // this.debug = false
         this.debug = true
 
-        this.REPLY_THRESHOLD = .7   
+        this.REPLY_THRESHOLD = .8   
         this.MAX_TOTAL_WORDS_OUTSIDE_DICTIONARY = 2
 
         // this.getReply("ano ang pwede mangyari sa tao pag mapabayaan nito ang sakit nyang trangkaso")
@@ -225,9 +235,9 @@ export default class Engine {
         // this.showAllDimensionStatisticsPerDisease()
 
         // this.showLanguagePredictionStatistics()
-        // this.debug=false
+        this.debug=false
 
-        // this.beginTest(testData)
+        this.beginTest(testData)
         
     }
 
@@ -369,7 +379,6 @@ export default class Engine {
 
     buildWildcardBlackbox(){
 
-        
         Object.keys(this.RULES)
             .forEach(lang=>{
                 let ruleSet = this.RULES[lang]
@@ -398,8 +407,6 @@ export default class Engine {
                 
                 this.RULES_WILDCARDS[lang] = wildcards
                 this.RULES_WILDCARDS[lang].buildForwardIndex()
-                this.RULES_WILDCARDS[lang].sortMemory()
-                
                 // if ( lang == 'MAG '){
                 //     this.RULES_WILDCARDS[lang].printForwardIndex()
                 // }
@@ -794,10 +801,21 @@ export default class Engine {
         // say that they can only respond one at a time
 
         if ( allowBM25Matching ){
-      
 
-            // EXECUTE INFORMATION RETRIEVAL MECHANISM
 
+            // targetDimension = this.RULES_DIMENSION_CLASSIFIERS[lang].getPrediction(finalNormalizedInput)
+            // let finding = this.memory[lang][targetDimension].getReplyUsingWeightedCosineSimilarity(finalNormalizedInput)
+            
+            // searchOrderDimensionResults.push({
+            //     dimension: targetDimension,
+            //     rawPattern: finding.rawPattern,
+            //     pattern: finding.pattern,
+            //     score: finding.score
+            // })
+
+            // targetRule = finding
+
+            
             for (let dimension of searchOrder) {
                 targetDimension = dimension.class
 
@@ -844,8 +862,6 @@ export default class Engine {
                 console.log(`Engine::getReply [Language Predicted] - ${lang}`)
                 console.log(`Engine::getReply [Total not found in vocabulary] - ${wordsNotFoundInVocabularyList}`)
                 console.log(`Engine::getReply [Attempting Similarity Metric]`)
-                
-                /**uncoment if the iterative serching is conducted */
                 for (let result of searchOrderDimensionResults) {
                     // console.log('\tDimension:',result.dimension)
                     console.log(`\tDimension: ${result.dimension}`)
@@ -853,8 +869,6 @@ export default class Engine {
                     console.log(`\t\tPattern: ${result.pattern}`)
                     console.log(`\t\tScore: ${result.score}`)
                 }
-                
-
             }
 
             if ( targetRule.score < this.REPLY_THRESHOLD  ){

@@ -47,7 +47,7 @@ let section6 = [
 let section7 = [
   
     encodeMemory([
-        `* food * (take|good) * diarrhea *`,
+        `* food * (take|good) * `,
         'show get tell me the list of foods what foods that i can eat take drink when having diarrhea',
         `tell me  What foods can I eat drink take to help with diarrhea`,
         `what foods can should take when i have diarrhea`,
@@ -69,9 +69,9 @@ let section8 = [
     ],4),
     // encodeMemory([
     //     `* diarrhea_foods_not_allowed_produces_gas * (not eat|avoid) * diarrhea *`,
-    //     `* diarrhea_foods_not_allowed_produces_gas * avoid * diarrhea *`,
-    //     `* (not eat|avoid) * diarrhea_foods_not_allowed_produces_gas * diarrhea *`,
-    //     `* avoid * diarrhea_foods_not_allowed_produces_gas * diarrhea *`,
+    //     `* diarrhea_foods_not_allowed_produces_gas * avoid * `,
+    //     `* (not eat|avoid) * diarrhea_foods_not_allowed_produces_gas * `,
+    //     `* avoid * diarrhea_foods_not_allowed_produces_gas * `,
     //     `Why are diarrhea_foods_not_allowed_produces_gas not recommended during diarrhea`,  
     //     `What makes diarrhea_foods_not_allowed_produces_gas a food to avoid when experiencing diarrhea`,  
     //     `What makes diarrhea_foods_not_allowed_produces_gas difficult to digest during diarrhea`,  
@@ -84,8 +84,8 @@ let section8 = [
     // ],4),
     encodeMemory([
         `* lactose *`,
-        `* lactose * diarrhea *`,
-        `* diarrhea_foods_not_allowed_contains_lactose * diarrhea *`,
+        `* lactose * `,
+        `* diarrhea_foods_not_allowed_contains_lactose * `,
         `* diarrhea_foods_not_allowed_contains_lactose *`,
         `why avoid not eat drink food that contains lactose when having diarrhea`,
         `why avoid not eat diarrhea_foods_not_allowed_contains_lactose when having diarrhea`,
@@ -93,10 +93,10 @@ let section8 = [
         ` If you have diarrhea, avoid foods containing lactose because it may destroy the lining of your small intestine and reduce its ability to produce lactase, an enzyme which helps break down lactose. It may get stuck in the larger intestine, giving rise to gas, bloat or all sorts of indigestion if lactose is not properly absorbed. As a result, it can help to reduce diarrhoea symptoms and prevent future problems if you do not eat lactose-containing foods such as milk, cheese or ice cream.`
     ],4),
     // encodeMemory([
-    //     `* diarrhea_foods_not_allowed_contains_fructose * (not eat|avoid) * diarrhea *`,
-    //     `* diarrhea_foods_not_allowed_contains_fructose * avoid * diarrhea *`,
-    //     `* (not eat|avoid) * diarrhea_foods_not_allowed_contains_fructose * diarrhea *`,
-    //     `* avoid * diarrhea_foods_not_allowed_contains_fructose * diarrhea *`,
+    //     `* diarrhea_foods_not_allowed_contains_fructose * (not eat|avoid) * `,
+    //     `* diarrhea_foods_not_allowed_contains_fructose * avoid * `,
+    //     `* (not eat|avoid) * diarrhea_foods_not_allowed_contains_fructose * `,
+    //     `* avoid * diarrhea_foods_not_allowed_contains_fructose * `,
     //     `Why are diarrhea_foods_not_allowed_contains_fructose not recommended during diarrhea`,  
     //     `What makes diarrhea_foods_not_allowed_contains_fructose a food to avoid when experiencing diarrhea`,  
     //     `What makes diarrhea_foods_not_allowed_contains_fructose difficult to digest during diarrhea`,  
@@ -109,7 +109,7 @@ let section8 = [
     //     ` Fructose is a sugar which comes from the fruits, Honey and some vegetables. Diarrhoea symptoms can be exacerbated in some individuals by eating foods with high fructose levels because the body may have difficulty breaking down and absorbing these sugars. Water can be attracted to the gastrointestinal tract by fructose, leading to further loss of fluid and dehydration. It is thus possible to ease symptoms and promote the healing process through avoidance of foods that contain fructose in a bout of diarrhoea.`
     // ],4),
     encodeMemory([
-        `* diarrhea_foods_not_allowed_irritate_stomach * diarrhea *`,
+        `* diarrhea_foods_not_allowed_irritate_stomach * `,
         `* diarrhea_foods_not_allowed_irritate_stomach *`,
         `why avoid not eat drink spicy chilli foods when having diarrhea`,
         `why avoid not eat diarrhea_foods_not_allowed_irritate_stomach when having diarrhea`,
@@ -117,7 +117,7 @@ let section8 = [
         `Spicy foods can irritate stomach, causing increased bowel movements which may lead to worsening of diarrhea symptoms. Furthermore, spicy foods may contain ingredients that are difficult to digest, causing further gastrointestinal distress. As a result, when diarrhoea occurs, it is advised to avoid the use of spice foods.`
     ],4),
     encodeMemory([        
-        `* diarrhea_foods_not_allowed_oily * diarrhea *`,
+        `* diarrhea_foods_not_allowed_oily * `,
         `* diarrhea_foods_not_allowed_oily *`,
         `why avoid not eat drink food that are oily or contians grease oils oil fried when having diarrhea`,
         `why avoid not take drink eat diarrhea_foods_not_allowed_oily when having diarrhea`,
@@ -125,11 +125,11 @@ let section8 = [
         `Greasy foods contain high amounts of fat, they slow stomach emptying. It is difficult to digest oil and greasy food, which may stimulate the gastrointestinal tract causing diarrhoea. This may also cause stomach acid production to increase, which can irritate the bowels and lead to worsening of symptoms. If you have a diarrhoea, it may help to reduce symptoms and speed up recovery by avoiding oily foods.`
     ],4),
     encodeMemory([
-        `* foods * avoid * diarrhea *`,
-        `* foods * not * (eaten|taken) * diarrhea *`,
-        `* avoid * foods * diarrhea *`,
-        `* diarrhea * not * eaten * foods *`,
-        `* diarrhea * foods * not * eaten *`,
+        `* foods * avoid * `,
+        `* foods * not * (eaten|taken) * `,
+        `* avoid * foods * `,
+        `*  not * eaten * foods *`,
+        `*  foods * not * eaten *`,
         `What foods should be avoid eliminated not take eat drink avoid have diarrhea`,
         `Are there certain foods that can make diarrhea worse`, 
         `tell me the list of foods that i should not eat or avoid when having diarrhea`,
@@ -149,9 +149,9 @@ let section9 = []
 let section10 = [
   
     encodeMemory([
-        `* who * problem * diarrhea *`,
-        `* diarrhea * who * problem *`,
-        `* diarrhea * problem *who *`,
+        `* who * problem * `,
+        `*  who * problem *`,
+        `*  problem *who *`,
         `Who will likely risk susceptible vulnerable to complications when experiencing diarrhea`,
         `Who will face more serious health issues when dealing with diarrhea`,
         `Who should be careful concerned about the effects of diarrhea on their health`,

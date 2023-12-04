@@ -2,22 +2,22 @@ import { encodeMemory } from "@/api/config/model"
 
 
 let section11 = [
-    encodeMemory([
-        `* generic * antimotility * `,
-        `ngen i mga ngala na generic a antimotility a gamot na diarrhea`,
-        `enggay ka sa mga ngala na generic a antimotility `,
-        `ngen aden mga generic a antimotility`,
-    ],[
-        `Su loperamide na generic a ngala na gamot na kadtagudo ka gaton sa botika. Nya ba na aden mga balangan nin mana su tablitas, capsules, o igen a gamot. Paginumen i nya ba a gamot. Nasisista su kaunot sa direction a nakabetad sa gamot engo di ka makagedam sa di mapya`
-    ],7),
-    encodeMemory([
-        `* branded * antimotility * `,
-        `ngen i mga ngala na branded a antimotility a gamot na kapedtagudo`,
-        `enggay ka sa mga ngin ngala na branded a antimotility a gamot na diarrhea `,
-        `ngen aden brand na antimotility`,
-    ],[
-        `Aden Imodium a branded a ngala na antimotility. Endu di ka makagedam sa di mapya, na nasisita a unutan su dosage o direction na nakabetad sa gamot a nan.`
-    ],7),
+    // encodeMemory([
+    //     `* generic * antimotility * `,
+    //     `ngen i mga ngala na generic a antimotility`,
+    //     `enggay ka sa mga ngala na generic a antimotility `,
+    //     `ngen aden mga generic a antimotility`,
+    // ],[
+    //     `Su loperamide na generic a ngala na gamot na kadtagudo ka gaton sa botika. Nya ba na aden mga balangan nin mana su tablitas, capsules, o igen a gamot. Paginumen i nya ba a gamot. Nasisista su kaunot sa direction a nakabetad sa gamot engo di ka makagedam sa di mapya`
+    // ],7),
+    // encodeMemory([
+    //     `* branded * antimotility * `,
+    //     `ngen i mga ngala na branded a antimotility`,
+    //     `enggay ka sa mga ngin ngala na branded a antimotility `,
+    //     `ngen aden brand na antimotility`,
+    // ],[
+    //     `Aden Imodium a branded a ngala na antimotility. Endu di ka makagedam sa di mapya, na nasisita a unutan su dosage o direction na nakabetad sa gamot a nan.`
+    // ],7),
     encodeMemory([
         `* dose * antimotility *`,
         `* (gamit|kan|inom) * antimotility * `,
@@ -36,7 +36,7 @@ let section11 = [
         `ngen besen i loperamide`,
         `di ko katawan ngin i antimotility`,
     ],[
-        `Su antimotility na papegkalungaden nin su kapenggedi nu tyan. Ny anin penggulan na pembind nin su opioid receptors nu tinai endu pegkapaydo su kapengedi nin endu pegkalungat su kapagukit nu tay sa tinae.`
+        `Su antimotility mana so Loperamide abpeg Imodium na papegkalungaden nin su kapenggedi nu tyan. Ny anin penggulan na pembind nin su opioid receptors nu tinai endu pegkapaydo su kapengedi nin endu pegkalungat su kapagukit nu tay sa tinae. Nya buntal na gamot a nya ba na aw na to na capsul, igen, o tablitas.`
     ],7),
     encodeMemory([
         `* antimotility * gamit * `,
@@ -46,7 +46,7 @@ let section11 = [
         `di ko katawan ngin i antimotility`,
         `kano i kakan, kainom, kanggamot sa antimotility`,
     ],[
-        `Su antimotility na nya nen pengamutan na su sintomas na kapedtagudo. Papegkapaydun nin su kapenggedi nu tyan endu di ged pakaukit su pegken abpeg su ig. Nya ba na pangenggan nin su tinay sa oras para gasesep nin su ig abpeg nutrients sa tinay. Nya ba na pakagkapaydu sa kalyu na tay.`
+        `Su antimotility  mana so Loperamide abpeg Imodium na nya nen pengamutan na su sintomas na kapedtagudo. Papegkapaydun nin su kapenggedi nu tyan endu di ged pakaukit su pegken abpeg su ig. Nya ba na pangenggan nin su tinay sa oras para gasesep nin su ig abpeg nutrients sa tinay. Nya ba na pakagkapaydu sa kalyu na tay.Nya buntal na gamot a nya ba na aw na to na capsul, igen, o tablitas.`
     ],7),
     encodeMemory([
         `*galbek * antimotility *`,
@@ -58,12 +58,12 @@ let section11 = [
         `Su antimolitities a mana su loperamide abpeg a imodium na pedtabang sa kapengedi na tyan endu pakagamot sa kapedtagudo. Nya nilan penggulan na pedtabang sa kasesep sa ig abpeg electroltes sa tay. Sabap sa nya ba na pegkapaydu i kapagudo nu taw. Nya mga a gamot na pangatan sa sakawras endu pegkapya i manggegedam nu taw. Ugayd na embibidaya i nya ba sa mga tao. Ugayd, na tanday ka dikena ba langon na pedtaguo na mapakaay enggamot sa nya ba endu aden side effects na nya ba.`
     ],7),
     encodeMemory([
-        `*  di * (kan|inom|gamit) * antimotility * `,
+        `* di * (kan|inom|gamit) * antimotility * `,
         `kano i di kakan kagamit kainom sa loperamide `,
         `nginto ka di mapakay a enggamot keman minom sa loperamide `,
-        `ngen to ka so loperamide  na di mapya a gamiten kanen inomen nu taw a pedtagudo`,
-        `enduken ka di minom keman sa loperamide  i taw a pedtagudo`,
-        `panon a to ka di mapakay a keman i taw sa loperamide i taw a pedtagudo`,
+        `ngen to ka so loperamide  na di mapya a gamiten kanen inomen nu taw`,
+        `enduken ka di minom keman sa loperamide taw`,
+        `panon a to ka di mapakay a keman i taw sa loperamide i taw`,
         `duken ka di pegkanen su antimotility`,
         `di ko katawan kano i di kanggamot, kakan, kainom, kagamit, sa antimotility`,
         `aden mga tao a di mapakay o dayt a keman, minom, enggamot, o gemamit sa antimotility`,
@@ -90,49 +90,49 @@ let section11 = [
     ],[
         `So antimotilities a mana su loperamide na aden mga side effects nin.  Da ka penggamit sa nya ba a agamot upama ka pebpilugo o maytem su tae. Upama ka aden bun sakit nengka andang sa atay o pamusungan na dikena bon ged I nya ba mapya a gamot sa leka.`
     ],7),
-    encodeMemory([
-        `* pila * antimotility * `,
-        `* antimotility * pila * `,
-        `ngen i alaga na loperamide `,
-        `gagapila i loperamide `,
-    ],[
-        `Su loperamide na generic a gamot na nya malmo I alaga nin sa branded. Lu sa watsons, na pebpasan I nya bas a pitopulong ngu dwa (72 pesos) 2mg pat timan. Ugayd n abasi mas malmo I alaga nin I nya sa kaped pan a botika.`
-    ],7),
-    encodeMemory([
-        `* embalangan * antimotility * `,
-        `ngen i aden mga balangan o buntal na loperamide `,
-        `madakel i embalangan, upaman o buntal na antimotility`,
-        `panon labit ka ngin i balangan na antimotility`,
-    ],[
-        `Aw na to na nya nin buntal I nya ba na capsul, igen, tablitas, o pedsesek sa pudit. Su gamot a antimotility mana loperamide na gapasa sa aw nato na tablitas sekanin o mana ig buntal nin.`
-    ],7),
+    // encodeMemory([
+    //     `* pila * antimotility * `,
+    //     `* antimotility * pila * `,
+    //     `ngen i alaga na loperamide `,
+    //     `gagapila i loperamide `,
+    // ],[
+    //     `Su loperamide na generic a gamot na nya malmo I alaga nin sa branded. Lu sa watsons, na pebpasan I nya bas a pitopulong ngu dwa (72 pesos) 2mg pat timan. Ugayd n abasi mas malmo I alaga nin I nya sa kaped pan a botika.`
+    // ],7),
+    // encodeMemory([
+    //     `* embalangan * antimotility * `,
+    //     `ngen i aden mga balangan o buntal na loperamide `,
+    //     `madakel i embalangan, upaman o buntal na antimotility`,
+    //     `panon labit ka ngin i balangan na antimotility`,
+    // ],[
+    //     `Aw na to na nya nin buntal I nya ba na capsul, igen, tablitas, o pedsesek sa pudit. Su gamot a antimotility mana loperamide na gapasa sa aw nato na tablitas sekanin o mana ig buntal nin.`
+    // ],7),
     encodeMemory([
         `* sambi * antimotility * `,
         `ngen a mga gamot i mapakay i sambi sa loperamide `,
         `ngen i kaped a herbal gamot a gapakay isambi sa loperamide `,
-        `aden pan kaped a herbal gamot a mapakay inomen kanen na taw lyu sa loperamide  para kagamotan i kapedtagudo`,
+        `aden pan kaped a herbal gamot a mapakay inomen kanen na taw lyu sa loperamide`,
         `di ko katawan ngen i kaped a gapakay pegkanen lyu sa antimotility`,
         `aden mga pakasambi a herbal gamot sa antimotility a mapakay kanen, inomen, enggamuten nu taw`,
     ],[
         `Aden kaped a mga gamot sa antimotilitiesl mana su kapaginom sa tinabel a lawn. Si luya na aden anti-inflammatory properties nin a pakatabang sa tyan nu taw. Mayto bon su saging kagina mapulo i postassium nin a pakatabang sa kapengedi na tyan. Endu su saging na aden pectin nin na pakadtabang endu pegkakapal su tay nu taw a pedtagudo.`
     ],7),
     // bismuth subsalicylate
-    encodeMemory([
-        `* generic *bismuth *`,
-        `ngin e mga ngala generic na mga bismuth subsalicylate a gamot na diarrhea `,
-        `enggay ka sa mga ngala na generic a bismuth subsalicylate a gamot na diarrhea `,
-        `aden ngen generic a bismuth subsalicylate`,
-    ],[
-        `Su Bismuth subsalicylate na generic a gamot a gapamasa sa botika. Endu gi ka makadalo upamaka ka kanen nengka namba na nasisista i unuti ka i nakasugat a kapegkan lon`
-    ],7),
-    encodeMemory([
-        `* branded *bismuth *`,
-        `ngin  mga ngala branded a mga bismuth subsalicylate a gamot na diarrhea `,
-        `enggay ka sa mga ngala na branded a bismuth subsalicylate a gamot na diarrhea `,
-        `aden ngen branded a bismuth subsalicylate`,
-    ],[
-        `Su Pepto-Bismon abpeg a Bismatrol na mga branded i namba. Endu gi ka makadalo upamaka ka kanen nengka namba na nasisista i unuti ka i nakasugat a kapegkan lon`
-    ],7),
+    // encodeMemory([
+    //     `* generic *bismuth *`,
+    //     `ngin e mga ngala generic na mga bismuth subsalicylate `,
+    //     `enggay ka sa mga ngala na generic a bismuth subsalicylate `,
+    //     `aden ngen generic a bismuth subsalicylate`,
+    // ],[
+    //     `Su Bismuth subsalicylate na generic a gamot a gapamasa sa botika. Endu gi ka makadalo upamaka ka kanen nengka namba na nasisista i unuti ka i nakasugat a kapegkan lon`
+    // ],7),
+    // encodeMemory([
+    //     `* branded *bismuth *`,
+    //     `ngin  mga ngala branded a mga bismuth subsalicylate `,
+    //     `enggay ka sa mga ngala na branded a bismuth subsalicylate `,
+    //     `aden ngen branded a bismuth subsalicylate`,
+    // ],[
+    //     `Su Pepto-Bismon abpeg a Bismatrol na mga branded i namba. Endu gi ka makadalo upamaka ka kanen nengka namba na nasisista i unuti ka i nakasugat a kapegkan lon`
+    // ],7),
     encodeMemory([
         `* dose *bismuth * `,
         `* (gamit|kan|inom) *bismuth * `,
@@ -157,7 +157,7 @@ let section11 = [
         `ngen i pidtalo  a bismuth subsalicylate `,
         `di ko katawan ngin i bismuth subsalicylate`,
     ],[
-        `Su bismuth subsalicylate ( pepto-Bismol) ka pamasa sa botika apya dala riseta nin. Pakagamot I namba sa pedtagudo. Nya nin penggulan na makapaenda nin su kadtagudo. Ugayd na inom aw na to na inom ka I namba makapila sa kagabyan. Su bismuth subasalicylate ( pept-bismol ) na mapya bon man, ugay na aw na to na makagkaytem sa dila o tae.`
+        `Su bismuth subsalicylate mana su pepto-Bismol o bismatrol na ga pamasa sa botika apya dala riseta nin. Pakagamot I namba sa pedtagudo. Nya nin penggulan na makapaenda nin su kadtagudo. Ugayd na inom aw na to na inom ka I namba makapila sa kagabyan. Su bismuth subasalicylate ( pept-bismol ) na mapya bon man, ugay na aw na to na makagkaytem sa dila o tae. Nya ba gamot na nya nin buntal na tablitas, capsule, aw na to na igen.`
     ],7),
     encodeMemory([
         `* bismuth * gamit * `,
@@ -166,22 +166,22 @@ let section11 = [
         `di katawan i penggulan na bismuth subsalicylate`,
         `ngin kanu i kakan, kanggamot, kainom sa bismuth subsalicylate`,
     ],[
-        `Su bismuth subsalicylate na kapamasa sa botika apya da riseta na doctor. Pakagamot I namba sa kadtagudo , sakit a tyan, endu su kanggedam a mana ka pakauta. Makadtabang I namba sa mga tao a istidi aden pebpawangan nin.`
+        `Su bismuth subsalicylate na kapamasa sa botika apya da riseta na doctor. Pakagamot I namba sa kadtagudo , sakit a tyan, endu su kanggedam a mana ka pakauta. Makadtabang I namba sa mga tao a istidi aden pebpawangan nin. Nya ba gamot na nya nin buntal na tablitas, capsule, aw na to na igen.`
     ],7),
     encodeMemory([
         `* galbek * bismuth *`,
         `*bismuth * galbek * `,
-        `panon ngin i kapenggalbek kapenggamot na bismuth subsalicylate sa tagudo`,
+        `panon ngin i kapenggalbek kapenggamot na bismuth subsalicylate`,
     ],[
-        `Su bismuth subsalicylate na nabedtuan sa antidiarrheal medicine o gamot para sa kapedtagudo kanina pakagkapya sekanin sa kablibag endu kaibped na ig nu tinae nu taw. Antibacterial bon sekanin a pakadtabang sa kapedtagudo. Su nya ba a gamot na pakatabang bon amayka pakagedam su taw sa kapanegas nu tyan nin, kangri nin, kadtabrik, endu kalangot sabap sa kinaibped nu ig nu lawas nin. Ugayd, na nasisista na tuntay ka na su bismuth subsalicylate na di dayt a kanen nu taw a aden allegy nin sa aspirin, allergy sa kabpilugo, o aden sakit na tinay nin. Endu mangingat ka kagina di dayt i nya ba ipakan sa mga wala apbeg maginay. Di dayt ka kanen ba i nya edsubla sa dwa gay.`,
+        `Su bismuth subsalicylate mana su pepto-Bismol o bismatrol na nabedtuan sa antidiarrheal medicine o gamot para sa kapedtagudo kanina pakagkapya sekanin sa kablibag endu kaibped na ig nu tinae nu taw. Antibacterial bon sekanin a pakadtabang sa kapedtagudo. Su nya ba a gamot na pakatabang bon amayka pakagedam su taw sa kapanegas nu tyan nin, kangri nin, kadtabrik, endu kalangot sabap sa kinaibped nu ig nu lawas nin. Ugayd, na nasisista na tuntay ka na su bismuth subsalicylate na di dayt a kanen nu taw a aden allegy nin sa aspirin, allergy sa kabpilugo, o aden sakit na tinay nin. Endu mangingat ka kagina di dayt i nya ba ipakan sa mga wala apbeg maginay. Di dayt ka kanen ba i nya edsubla sa dwa gay.`,
     ],7),
     encodeMemory([
         `* di * (kan|inom|gamit) * bismuth * `,
         `kano i di kagamit kakan kainom sa bismuth subsalicylate`,
         `nginto ka di mapakay a enggamot keman minom sa bismuth subsalicylate`,
-        `ngen to ka so bismuth subsalicylate na di mapya a kanen , inomen o gamiten nu taw a pedtagudo`,
-        `enduken ka di keman minom sa bismuth subsalicylate i taw a pedtagudo`,
-        `panon a to ka di mapakay a keman i taw sa bismuth subsalicylate i taw a pedtagudo`,
+        `ngen to ka so bismuth subsalicylate na di mapya a kanen , inomen o gamiten nu taw`,
+        `enduken ka di keman minom sa bismuth subsalicylate i taw`,
+        `panon a to ka di mapakay a keman i taw sa bismuth subsalicylate i taw`,
         `duken ka di pegkanen su bismuth subsalicylate`,
     ],[
         `Di ka papegkan su taw sa namba umayka aden bleeding problems nengka, o sakit a malbo ka ebpilugo, aden ulcer nin, aden lugo na tay nin, aden allergy nin sa asipiri o pegkan ka sa kaped a salicylates. Di ka benel papegkan I wata o manguda a pegkayaw , pembatuken o aden chickenpox nin.`
@@ -209,28 +209,28 @@ let section11 = [
     ],[
         `Inom ka sa di maldsik a ig umayka mininom ka sa bismuth subsalicylate ( pepto-bismol). Su kadtagudo ga ludus nis u ig na lawas bali lenukan ka edsamikel. Tu banan su kapaginom sa ig na masya I makatabang nin kano taw. Upama ka enggamot ka na lenuk ka su capsule. Di ka pedsepa su gamot.`
     ],7),
-    encodeMemory([
-        `*bismuth * pila * `,
-        `* pila *bismuth * `,
-        `gagapila i bismuth subsalicylate`,
-        `ngen pila i alaga na bismuth subsalicylate`,
-    ],[
-        `Gapamasa I namba sa saka pakete. Lu sa iprice.ph na mga lima gato I alaga nan amba. Ugayd na di ged mapulo alaga nin upama ka pamasan nengka sa gaga isa bo`
-    ],7),
-    encodeMemory([
-        `* embalangan * bismuth * `,
-        `madakel i embalangan, upaman o buntal na bismuth subsalicylate`,
-        `ngen i mga kaped a embalangan nu gamot a bismuth subsalicylate `,
-        `labit panon aden ngin balangan na bismuth subsalicylate`,
-    ],[
-        `Su bismuth subsalicylate na nya nin buntal na mana tablitas, capsule, at na to na igen. Depende I nan sa minumbal lon endo so penggamutan nin.`
-    ],7),
+    // encodeMemory([
+    //     `*bismuth * pila * `,
+    //     `* pila *bismuth * `,
+    //     `gagapila i bismuth subsalicylate`,
+    //     `ngen pila i alaga na bismuth subsalicylate`,
+    // ],[
+    //     `Gapamasa I namba sa saka pakete. Lu sa iprice.ph na mga lima gato I alaga nan amba. Ugayd na di ged mapulo alaga nin upama ka pamasan nengka sa gaga isa bo`
+    // ],7),
+    // encodeMemory([
+    //     `* embalangan * bismuth * `,
+    //     `madakel i embalangan, upaman o buntal na bismuth subsalicylate`,
+    //     `ngen i mga kaped a embalangan nu gamot a bismuth subsalicylate `,
+    //     `labit panon aden ngin balangan na bismuth subsalicylate`,
+    // ],[
+    //     `Su bismuth subsalicylate na nya nin buntal na mana tablitas, capsule, at na to na igen. Depende I nan sa minumbal lon endo so penggamutan nin.`
+    // ],7),
     encodeMemory([
         `* sambi *bismuth * `,
         `ngen a mga herbal gamot i mapakay i sambi sa bismuth subsalicylate `,
         `ngen i kaped a herbal gamot a gapakay isambi sa bismuth subsalicylate `,
-        `ngen pan i mapakay kanen a enggamuten nu taw a pedtagudo`,
-        `aden pan kaped a herbal gamot a mapakay kanen inomen na taw lyu sa bismuth subsalicylate  para kagamotan i kapedtagudo`,
+        `ngen pan i mapakay kanen a enggamuten nu taw`,
+        `aden pan kaped a herbal gamot a mapakay kanen inomen na taw lyu sa bismuth subsalicylate`,
         `aden mga gamot a mapakay enggamuten kanen inumen a pakasambi sa bismuth subsalicylate`,
     ],[
         `Mapakay ka mamasa sa antimotitilities. Aden bon mga kaped a mapakay nengka kanen na dikena gamot a gapamasa sa botika. Mapakay ka keman sa luya o kalawag kagina nya ba na pakadtabang sa lebag abpeg aden antimicrobial property nin a pakadtabang sa pakagedam sa kapedtagudo. mapakay ka bon minom sa beteng kagina madakel i electrolytes nin. `
@@ -253,32 +253,32 @@ let section12 = [
         `Su kadtagudo na mapakay na apya sa walay nu bo gamuti. Kapya bon I nan mga pila gay. Ugayd na amayka di den a benel mapya I kangegedam nengka, limambas den sa dwa gay I kauget nin, pebpilugo I tay nin o pegkayaw pan sekanin, na nya mapya san na edtanggit ka den sa ospital I pasente nengka.`
     ],5),
     // encodeMemory([
-    //     `*  acute * diarrhea * `,
+    //     `*  acute * \bdiarrhea\b(?!_) * `,
     //     `ngen i pidtalo a acute diarrhea`,
     // ],[
     //     `Umayka su kadtagudo na sagay o dwa gay bo na aw na to namba I pedtalon nilan a mabagel a tagudo. Aw na to na aden nakan nengka o nainom nengka a aden kagaw nin a mana bacteria, vairus, o parasites. Umayka pendadalakaw na ka nidtagudo ka nan amba I pedtalon nilan a “travellers diarrhea”. Nya kagamot sa namba na kapaginom  sa mga kapamasa bon a gamot sa buti kya abpeg ka stidi den mon a kapagainom. Umayka edsalseg I namba sa dwa gay  na ilay ka base aden lugo na tay nin. Aw na to na basi aden mayaw nin. Upama ka mailay nengka i nya ba na edtanggit ka den sekanin sa doktor. `
     // ],1),
     // encodeMemory([
-    //     `*  chronic * diarrhea *`,
+    //     `*  chronic * \bdiarrhea\b(?!_) *`,
     //     `ngen i pidtalo a chronic diarrhea`,
     // ],[
     //     `Katawan nengka amayka namba kadtagudo nengka na maugel maawa upama ka embabalingan I namba edsamikel uman padian. Aw na to na nya sabap I namba na sakit sa tyan. Kagamotan nengka I namba sa kapaginom sa ig endu gamot. Nya bon pinakamapya na edtanggit ka su pasete sa doctor ka silan I mataw panon I pakaira sa namba pembabalingan a nan a kadtagudo.`
     // ],1),
     // encodeMemory([
-    //     `*  bidayan * acute diarrhea * chronic diarrhea * `,
-    //     `* bidayan * chronic diarrhea * acute diarrhea * `,
-    //     `ngin i bidayan na chronic diarrhea * acute diarrhea * `
+    //     `*  bidayan * acute \bdiarrhea\b(?!_) * chronic \bdiarrhea\b(?!_) * `,
+    //     `* bidayan * chronic \bdiarrhea\b(?!_) * acute \bdiarrhea\b(?!_) * `,
+    //     `ngin i bidayan na chronic \bdiarrhea\b(?!_) * acute \bdiarrhea\b(?!_) * `
     // ],[
     //     `Su kadtagudo na aw na to na mababel aw na to na pembabalingan. Umayka du kadtagudo na sagay o dwa gay mo na mabagel I sakit a nan. Ugayd na tu pembabalingan a kadtagudo a mana di den gaawa ka uman padian den na mauget I namba mawa a tagudo.  Basta edtagudo ka na nya mapya san na inom ka edsamikel sa ig endu kasambiyan su langon a ig a nadtapik na kinaudo nengka.`
     // ],1),
     // encodeMemory([
-    //     `* gamot * acute * diarrhea * `,
+    //     `* gamot * acute * \bdiarrhea\b(?!_) * `,
     //     `panon i kapenggamot sa acute diarrhea`,
     // ],[
     //     `Nya una enggulan a taw upamaka ka mabagel I kadtagudo nin na kainom nin sa ig edsamikel. Nya mapya inomin nin na oral rehydration solution. Su kainom sa antimotilities na mapakay bon ka makagkapegkag sa mangigignawa I namba. `
     // ],1),
     // encodeMemory([
-    //     `* gamot * chronic * diarrhea * `,
+    //     `* gamot * chronic * \bdiarrhea\b(?!_) * `,
     //     `panon i kapenggamot sa chronic diarrhea`,
     // ],[
     //     `Nasisita su kainom edtangang sa ig ka endu kasambiyan su ig a pakaud nengka sya ebpon sa lawas nengka. Nya bon mapya na pangeni ka sa tabang sa mataw enggamot a doctor endu maton nilan I sabap na kapedtagudo a nan`
@@ -286,19 +286,19 @@ let section12 = [
 ]
 
 let section13 = [
-    encodeMemory([
-        `* problema * tagudo * `,
-        `* makadtaday * tagudo * problema * `,
-        `* problema * makadtaday * tagudo * `,
-        `* tagudo * problema * makadtaday *`,
-        `ngin i mga di mapya  mabproblema nu taw a pedtagudo`,
-        `amayka padtadayn i kapedtagudo na ngin i manggula`,
-        `aden mga taw a kalunsanan mangingat i sakit nin sa kapedtagudo`,
-        `ngen i kapedtagudo`,
-        `ngin i problema na tagudo`
-    ],[
-        ` Su ta a pedtagudo na aw na to na makagedam sa kagkasakit na tyan, makailay sa lugo sa tayo nin, edtagetut, malmo malugat, pegkayaw, pegkegkel, masla ged kaudo nin, mana galangot o panguta pedtandang. Nya ba kadtagudo na pakaibped sa ig nu lawas ka paunot pakaudo. Umayka su taw na lenukan edsamikel, na tanda ba I nan na kulang sekanin sa ig endu mga electrolytes ( sodium, chroride, postassium endu bicarbonate) a papedtalagoy salawas nin. Amayka edsalseg na makapatay ba I nanba a sakit. Tu ba nan importati a painumen sa taw sa ig edsamikel. Su kadtagudo na sabapan bon na malabsorption. Nya ba na kanggula amayka di kasesep nu lawas su dalem na pegken sya sa tyan. Makangguna ba I nyaba sa kagkalubay nu lawas. Aw na to na namba kadtagudo a nan na kaped a sakit a kangegedam nu taw. `
-    ],1),
+    // encodeMemory([
+    //     `* problema * tagudo * `,
+    //     `* makadtaday * tagudo * problema * `,
+    //     `* problema * makadtaday * tagudo * `,
+    //     `* tagudo * problema * makadtaday *`,
+    //     `ngin i mga di mapya  mabproblema nu taw a pedtagudo`,
+    //     `amayka padtadayn i kapedtagudo na ngin i manggula`,
+    //     `aden mga taw a kalunsanan mangingat i sakit nin sa kapedtagudo`,
+    //     `ngen i kapedtagudo`,
+    //     `ngin i problema na tagudo`
+    // ],[
+    //     ` Su ta a pedtagudo na aw na to na makagedam sa kagkasakit na tyan, makailay sa lugo sa tayo nin, edtagetut, malmo malugat, pegkayaw, pegkegkel, masla ged kaudo nin, mana galangot o panguta pedtandang. Nya ba kadtagudo na pakaibped sa ig nu lawas ka paunot pakaudo. Umayka su taw na lenukan edsamikel, na tanda ba I nan na kulang sekanin sa ig endu mga electrolytes ( sodium, chroride, postassium endu bicarbonate) a papedtalagoy salawas nin. Amayka edsalseg na makapatay ba I nanba a sakit. Tu ba nan importati a painumen sa taw sa ig edsamikel. Su kadtagudo na sabapan bon na malabsorption. Nya ba na kanggula amayka di kasesep nu lawas su dalem na pegken sya sa tyan. Makangguna ba I nyaba sa kagkalubay nu lawas. Aw na to na namba kadtagudo a nan na kaped a sakit a kangegedam nu taw. `
+    // ],1),
 ]
 
 let section14 = [
@@ -314,17 +314,17 @@ let section14 = [
     // ],[
     //     `Kapakay ako nengka edsan sa mga ngin i enggulan nu tao amayka pedsakit. Ugayd na nya bon mapya na edsa ka sa mataw enggamot.`
     // ],5),
+    // encodeMemory([
+    //     `* ebpawang * tagudo * `,
+    //     `endaw mangay i taw a pedtagudo`,
+    //     `endaw dayt a ebpawang i pedtagudo`,
+    //     `gapakay penggamutan i kapedtagudo sa walay`,
+    //     `aden kabpawangan a taw a pedtagudo`
+    // ],[
+    //     `Kagamutan nengka bon I kadtagudo apya san ka bo sa walay. Nya kan enggula na inom ka sa gamot a gapamasa bon sa botika endu pegkapya I kanggegedam nengka. Amayka maylay nengka a pebpilugo I kapagudo nengka, pegkayaw ka o di nan aka dwa gay den I kapedtagudo nengka na nya mapya na pailay ka sa doctor.`
+    // ],5),
     encodeMemory([
-        `* ebpawang * tagudo * `,
-        `endaw mangay i taw a pedtagudo`,
-        `endaw dayt a ebpawang i pedtagudo`,
-        `gapakay penggamutan i kapedtagudo sa walay`,
-        `aden kabpawangan a taw a pedtagudo`
-    ],[
-        `Kagamutan nengka bon I kadtagudo apya san ka bo sa walay. Nya kan enggula na inom ka sa gamot a gapamasa bon sa botika endu pegkapya I kanggegedam nengka. Amayka maylay nengka a pebpilugo I kapagudo nengka, pegkayaw ka o di nan aka dwa gay den I kapedtagudo nengka na nya mapya na pailay ka sa doctor.`
-    ],5),
-    encodeMemory([
-        `* sintomas * diarrhea * `,
+        `* sintomas * \bdiarrhea\b(?!_) * `,
         `* (kataw) * tagudo * `,
         `panon i kataw na taw na sekanin a pedtagudo`,
         `ngin i mga sintomas na kapedtagudo`,

@@ -9,7 +9,7 @@ import AppBodySection3 from '@/components/AppBodySection3.vue';
 
 <template>
     <AppBodySection1></AppBodySection1>
-    <AppBodySection2></AppBodySection2>
-    <AppBodySection3></AppBodySection3>
+    <!-- <AppBodySection2></AppBodySection2>
+    <AppBodySection3></AppBodySection3> -->
 </template>
 

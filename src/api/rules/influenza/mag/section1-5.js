@@ -112,14 +112,14 @@ let section5 = [
         Ugayd na labi bon I kapya nin upama ka mapailay sa doctor ka engu ka nilan ka enggan sa risita na gamot endu madtalo nila ngin I kapayan nengka engullan.
         `
     ],1),
-    encodeMemory([
-        `* (ebpawang|kailay) * doctor * influenza * `,
-        `nginto ka mangay to taw sa doktor amayka nakagedam sa influenza`,
-        `kano besen i dayt a ka angay nu taw a  nakagedam sa influenza sa doktor`,
-        `panon i katabang na doktor sa aden influenza nin`,
-    ],[
-        `Su kambabatok na kagamutan bun apya da enggulan nengka. Ugayd na makalunsan ba I nya ba sa kaped a sakit nu tao. Upama ka aden kaped a sakit nengka , na nya basi mpya enggulan na pailay ka sa doctor.`
-    ],5),
+    // encodeMemory([
+    //     `* (ebpawang|kailay) * doctor * influenza * `,
+    //     `nginto ka mangay to taw sa doktor amayka nakagedam sa influenza`,
+    //     `kano besen i dayt a ka angay nu taw a  nakagedam sa influenza sa doktor`,
+    //     `panon i katabang na doktor sa aden influenza nin`,
+    // ],[
+    //     `Su kambabatok na kagamutan bun apya da enggulan nengka. Ugayd na makalunsan ba I nya ba sa kaped a sakit nu tao. Upama ka aden kaped a sakit nengka , na nya basi mpya enggulan na pailay ka sa doctor.`
+    // ],5),
     encodeMemory([
         `* endaw * gamutan * influenza * `,
         `* gamutan * influenza * endaw *`,

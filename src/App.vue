@@ -1,7 +1,7 @@
 <script setup>
 import Nav from '@/components/Nav.vue'
 import Footer from '@/components/Footer.vue'
-import NavOverlay from '@/components/NavOverlay.vue'
+// import NavOverlay from '@/components/NavOverlay.vue'
 
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { useRoute, useRouter } from 'vue-router'
@@ -51,10 +51,10 @@ import { useRoute, useRouter } from 'vue-router'
 </script>
 
 <template>
-  <NavOverlay></NavOverlay>
+  <!-- <NavOverlay></NavOverlay> -->
   <div class="template">
-    <header class="template-header" >
-      <Nav />
+     <header class="template-header" >
+      <Nav></Nav>
     </header>
     <main class="template-body">
       <RouterView></RouterView>
@@ -69,20 +69,27 @@ import { useRoute, useRouter } from 'vue-router'
 @use "assets/scss/app.scss";
 @use "assets/scss/variable";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap');
+
+// * {
+//   font-family: 'Poppins', sans-serif !important;
+// }
 
 // @import url("@/assets/icons/style.css");
-@import url("@/assets/icofont/icofont.css");
+@import url("@/assets/icomoon/style.css");
+@import url("@/assets/icomoon/style.css");
+
 
 $scoped-opacity: .77;
 $scoped-color-white:  rgba(255,255,255,$scoped-opacity) !important;
 $scoped-blue: #2a52be;
 $scoped-padding: 7rem;
 
-* {
-  font-family: 'Poppins', sans-serif !important;
-}
 
+* {
+  font-family: 'Noto Sans', sans-serif !important; 
+}
 
 .template{
   overflow: hidden;
@@ -110,15 +117,18 @@ $scoped-padding: 7rem;
 .template-body{
   overflow-y:unset;
   z-index: 2;
+  display: flex;
   
   &::before{
     content: '';
     z-index: -1;
     // background-color: rgb(236, 50, 87);
+    // background-color: rgb(15, 82, 186);
+    background-color: #f5f5f5;
 
     // https://cssgradient.io/shades-of-blue/
     // cerulean blue
-    background-color: $scoped-blue;
+    // background-color: $scoped-blue;
     // background-color: cornflowerblue;
     display: block;
     width: 100%;
