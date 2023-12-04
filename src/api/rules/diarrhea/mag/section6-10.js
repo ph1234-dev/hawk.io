@@ -30,7 +30,7 @@ let section6 = [
     encodeMemory([
       `* ingat * tagudo * `, 
       `* kasambot * tagudo * `, 
-      `* gamot * tagudo *`
+      `* gamot * tagudo *`,
       `nasisita a galbeken nu taw endu di sekanin edtagudo`,
       `ngin i galbeken nu taw endu di sekanin edtagudo`,
       `ngen i mapya enggulan nu endu di edtagudo`,

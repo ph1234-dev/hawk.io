@@ -55,7 +55,7 @@ let data = []
 
 data.push(
     encodeMemory([
-        `* gamot * uta *`
+        `* gamot * uta *`,
         `* (awa|gamot|kapya|tabang) * uta * `,
         `amayka su taw na nanguta na ngin i pakan o painom lon`,
         `ngen i mapakay a kanen, inomen, o pamasan na taw a panguta`,

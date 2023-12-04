@@ -88,16 +88,16 @@ let section6 = [
     encodeMemory([
         `* (ingat|kasambot|tangka) * influenza * `,
         `* kapakay * influenza * kasambutan *`,
-        `* gamot * influenza *`
+        `* gamot * influenza *`,
         `nasisita a galbeken nu taw endu di sekanin kaalatan na influenza`,
         `ngin galbeken enggulan nu taw para di sekanin maka kwa endu makatangka kaalatan sa influenza`,
         `panon ngen mapakay a enggulan nu taw endu di edsakit sa influenza`,
         `panon enggulan nu taw para di sekanin maka kwa kaalatan makatangka sa influenza`,
         `panon galbeken taw endu di sekanin kaalatan na influenza`,
         `panon kasambot katangka kaingat sa influenza`,
-        `ngin mapakay enggulan endu di ma makakwa sa influenza`
+        `ngin mapakay enggulan endu di ma makakwa sa influenza`,
         `panon kagamot sa influenza`,
-        `panon i kaawa na influenza`
+        `panon i kaawa na influenza`,
     ],[
         `Upama ka pakagaga ka na pabakuna ka. Tangkay ka su mga taw a aden sakit nin. Upamak ka seka su aden sakit nin na lenek kawm pan sa lawas endu di mganalat sakit nengka. Tagubi ka istidi i ngali abpeg su ngilong nengka endu di makaalat i sakit a nana. Gmait ka sa facemask. Pamlimpyo ka mana su kakagad sa lima endu di ka pagamit i mata , ngilong abpeg a ngali nengka endu di maka ludep i virus a nan sa lawas nengka.`
     ],1),
