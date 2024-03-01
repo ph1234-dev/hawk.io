@@ -37,6 +37,7 @@ let section6 = [
         `tell explain What ways can be done to prevent diarrhea`,
         `What you need to know to avoid prevent diarrhea`,
         `tell me how to avoid or keep away from getting diarrhea`,
+        `How to not get diarrhea`,
     ],[
         `Good hygiene, such as handwashing with soap or water before you eat and after going to the bathroom, is essential in order not to get diarrhoea. Ensuring clean and safe sources of food and water as well as the thorough cooking of foods in order to eliminate any harmful bacteria or parasites is also important. Diarrhoea prevention can also be ensured by avoiding raw or undercooked foods, dairy products that are unpasteurized and unclean water sources. Additionally, staying hydrated and maintaining a healthy diet can help strengthen the immune system and prevent infections that can lead to diarrhea.`
     ],1),
@@ -125,14 +126,16 @@ let section8 = [
         `Greasy foods contain high amounts of fat, they slow stomach emptying. It is difficult to digest oil and greasy food, which may stimulate the gastrointestinal tract causing diarrhoea. This may also cause stomach acid production to increase, which can irritate the bowels and lead to worsening of symptoms. If you have a diarrhoea, it may help to reduce symptoms and speed up recovery by avoiding oily foods.`
     ],4),
     encodeMemory([
-        `* foods * avoid * `,
+        `* foods * avoid * diarrhea * `,
         `* foods * not * (eaten|taken) * `,
         `* avoid * foods * `,
         `*  not * eaten * foods *`,
         `*  foods * not * eaten *`,
+        `* eat  * avoid * diarrhea * `,
         `What foods should be avoid eliminated not take eat drink avoid have diarrhea`,
         `Are there certain foods that can make diarrhea worse`, 
         `tell me the list of foods that i should not eat or avoid when having diarrhea`,
+        `What foods I should not eat or avoid when feeling diarrhea`
     ],[
         `
         Avoiding certain foods when having diarrhea is important because some foods can irritate the digestive system and worsen symptoms. Spicy, greasy, or fatty foods can be difficult for the body to digest, while foods containing lactose or fructose can exacerbate diarrhea in people with lactose or fructose intolerance. Furthermore, certain types of fiber, such as those found in beans, cruciferous vegetables, and whole grains, can  be difficult to digest and may cause gas or bloating. 

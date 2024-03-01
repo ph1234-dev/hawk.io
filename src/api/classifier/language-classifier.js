@@ -1,4 +1,5 @@
 import NaiveBayes from "@/api/classifier/naive-bayes"
+import {DICTIONARY} from '@/api/config/dictionary'
 
 export default class LanguageClassifier extends NaiveBayes{
 
@@ -25,7 +26,7 @@ export default class LanguageClassifier extends NaiveBayes{
         // stores the term frequency within the class
         this.class_term_frequency_map = {}
 
-        
+        this.dataset = []
     }
 
     loadWeights( 
@@ -58,7 +59,10 @@ export default class LanguageClassifier extends NaiveBayes{
 
             let data = { data: doc, class: lang }
             
+            // show dataset
+            this.dataset.push(data)
             
+
             // lets hide this - november 19 for optimization
             // this.documents.push(data)
             
@@ -99,6 +103,12 @@ export default class LanguageClassifier extends NaiveBayes{
         return super.predict(msg)
     }
 
+
+  
+
+    getDataset(){
+        return this.dataset
+    }
 
     printDocuments(){
         let size = this.documents.length

@@ -2,12 +2,11 @@
 
 import { ref, watch, onMounted, nextTick } from 'vue'
 
-const props = defineProps(['message', 'time'])
-
+const props = defineProps(['message', 'time','showIcon'])
 
 const typedMessage = ref('');
 
-onMounted(() => {
+  onMounted(() => {
 //   if (typewriterElement.value) {
     typeWriter(props.message, 8);
 //   }
@@ -24,14 +23,14 @@ function typeWriter(text, speed) {
       i++;
       setTimeout(type, speed);
 
-      nextTick(() => {
-        if (chatboxContainer) {
-          if (lastElement) {
-            let topPos = lastElement.offsetTop + lastElement.offsetHeight; // Adjusted to include the height of the last element
-            chatboxContainer.scrollTop = topPos;
-          }
-        }
-      });
+      // nextTick(() => {
+      //   if (chatboxContainer) {
+      //     if (lastElement) {
+      //       let topPos = lastElement.offsetTop + lastElement.offsetHeight; // Adjusted to include the height of the last element
+      //       chatboxContainer.scrollTop = topPos;
+      //     }
+      //   }
+      // });
     }
   }
 
@@ -42,24 +41,29 @@ function typeWriter(text, speed) {
 </script>
 
 <template>
-    <span class="chatbot-message-chatbot-icon">
+    <span v-show="props.showIcon" class="chatbot-message-chatbot-icon">
         <img class="chatbox-picture" src="@/assets/img/model.png">
         Archie <br>{{ props.time }}
     </span>
-
     <p class="chatbox-message-chatbot">
-        {{ typedMessage }}
+        <!-- {{ typedMessage }} -->
+        {{ props.message }}
     </p>
 </template>
 
 
 <style lang="scss" scoped>
+@use "sass:math";
 @use "@/assets/scss/variable";
 
 .chatbox-picture {
     width: 40px;
     height: auto;
     border-radius: variable.$border-radius;
+}
+
+.chatbox-message-chatbot{
+  margin-bottom: math.div(variable.$padding-top,1) !important;
 }
 </style>
 

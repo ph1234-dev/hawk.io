@@ -19,7 +19,7 @@ let section6 = [
         `What is the significance of avoiding physical contact when you are infected with influenza`,
         `Why is it important to avoid physical contact when you have influenza`,
         `why avoid touching each other when having influenza`,
-
+        `How to not get influenza`,
     ],[
         `Avoid close contact with people who are sick. If its you who is sick, keep your distance from others. Distance yourself by at least 1 meter from people who are coughing. Keep yourself away from people with colds. Avoid crowded places because they can increase the risk of getting the virus. You need to do these things to prevent spreading the virus further.`
     ],5),
@@ -96,11 +96,11 @@ let section7 = [
         `* eat * food * influenza *`,
         `* food * influenza * eat *`,
         `* food * eat * influenza *`,
-        `what foods take eat when i have influenza`,
-        `are there any foods that can help treat recover with influenza`,
-        `get me the list of foods that i can treat eat, drink take when having influenza`,
-        `show give tell me about the list of foods that i can eat when treat having influenza to recover`,
-        `what fruits, snacks, desers, meals, can i take when feeling treat influenza`,
+        // `what foods take eat when i have influenza`,
+        // `are there any foods that can help treat recover with influenza`,
+        // `get me the list of foods that i can treat eat, drink take when having influenza`,
+        // `show give tell me about the list of foods that i can eat when treat having influenza to recover`,
+        // `what fruits, snacks, deserts, meals, can i take when feeling treat influenza`,
     ],[
         `There are several foods that may help you recover quicker. You may consider taking several foods. Broths and soup made from chicken, beef, and vegetable may prevent dehydration and its warmth may relieve congestion and sooth sore throat. You may also take garlic since it can enhance immunity nad reduce the serverity of symptoms. Foods sources with probiotics such as yogurt may also help by promoting good gut bacteria that suppors your immune system. Fruits and vegatables containing vitamin c may also help. This include peppers, oranges, citrus, lemons, grapes and those dark leafy greens. You can also take broccoli. Furthermore, oatmeal contains immune-boosting nutrients like copper, iron, selenium, zinc fiber and protien. Additionally, you can also add spicesd such as ginger and turmeric in your food. Finally, always take fluids such as water to keep you hydrate`
     ],4),
@@ -181,6 +181,7 @@ let section8 = [
         `* influenza * (not eat|avoid) * foods *`,
         `* influenza * foods * (not eat|avoid) *`,
         `tell get show me the what list of foods that i should not eat drink or avoid when having influenza worse`,
+        `What foods I should not eat drink take when having influenza`,
     ],[
         `If you think you have flu, you need to avoid caffeinated drinks, alchohol, greasy foods, hard to digest grains, and sugary foods or sweets. Instead try to take broth-based soups to help place any fluids and sodium that you may lost.  Also try bland foods which includes white bread, potatoes, white rice, bananas, applesauce, lean meats like chicken and fish.`
     ],4),

@@ -103,6 +103,8 @@ let section11 = [
         `Is there anything else I can take besides Loperamide`, 
         `What are some options herbal substitutes besides Loperamide`, 
         `tell me what about the natural alternative to antimotilities`,
+        `What other medicine I can take aside from antimotilities`,
+        `what are alternative to antimotilities`,
     ],[
         // 
         `There are several natural or herbal alternatives to antimotility medications.
@@ -213,7 +215,8 @@ let section11 = [
         `What natural herbal alternatives substitutes medications for bismuth subsalicylate`,
         `What else can I take instead of bismuth subsalicylate`,
         `What other alternative herbal options can be used instead are there instead of bismuth subsalicylate `,
-
+        `What other medicine I can take aside from bismuth subsalicylate`,
+        `what are alternative to bismuth subsalicylate`,
     ],[
         `You can buy antimotilities. Natural remedies also exists. For example, you can take ginger and turmeric as it has anti-inflammatory and antimicrobial properties that may help reduce diarrhea symptoms. You may also drink coconut water which have high electrolyte content. `
     ],7),

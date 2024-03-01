@@ -124,8 +124,8 @@ $font-size: .9rem;
         }
 
         
-        >*:first-child{
-            margin-top: auto;
+        >:first-child{
+            margin-top: auto !important;
         }
 
         >*:last-child{

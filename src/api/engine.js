@@ -3,7 +3,12 @@ import {DICTIONARY} from '@/api/config/dictionary'
 // import {testCaseForDiarrhea, testCaseForInfluenza } from '@/api/tests/v2/cases'
 import { VOCABULARY } from '@/api/config/archive.js'
 
-import { showPreTransformedRules, removeRedundantSpaces} from './engine-utils.js'
+import { 
+    getPreTransformedRules, 
+    removeRedundantSpaces, 
+    crossValidate,
+    getConfusionMatrixScores
+} from './engine-utils.js'
 
 import {testData} from "@/api/tests/pre_release/test1"
 
@@ -53,9 +58,12 @@ export default class Engine {
         // }
 
 
-        // showPreTransformedRules('ENG',[].concat(diarrheaEngRules,influenzaEngRules,genericEngRules))
-        // showPreTransformedRules('FIL',[].concat(diarrheaFilRules,influenzaFilRules,genericFilRules))
-        // showPreTransformedRules('MAG',[].concat(diarrheaMagRules,influenzaMagRules,genericMagRules))
+        // getPreTransformedRules('ENG',[].concat(diarrheaEngRules,influenzaEngRules,genericEngRules))
+        // getPreTransformedRules('FIL',[].concat(diarrheaFilRules,influenzaFilRules,genericFilRules))
+        // getPreTransformedRules('MAG',[].concat(diarrheaMagRules,influenzaMagRules,genericMagRules))
+
+
+
 
         //end transformation
 
@@ -67,6 +75,14 @@ export default class Engine {
         // }
 
 
+        
+        this.LANGUAGE_RULES = {
+            ENG: getPreTransformedRules('ENG',[].concat(diarrheaEngRules,influenzaEngRules,genericEngRules)),
+            FIL: getPreTransformedRules('FIL',[].concat(diarrheaFilRules,influenzaFilRules,genericFilRules)),
+            MAG: getPreTransformedRules('MAG',[].concat(diarrheaMagRules,influenzaMagRules,genericMagRules))
+        }
+
+
         // remember dont use the the transformed rules when initializing the
         // wildcard archive
         this.RULES = {
@@ -75,12 +91,19 @@ export default class Engine {
             MAG: [].concat(transFormedMaguindanaonRules)
         }
 
+        
+        // this.RULES = {
+        //     ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
+        //     FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
+        //     MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
+        // }
+
+
+        // console.log('Filipino::Generic')    
+        // console.log(genericFilRules)
+        
         // console.log(JSON.stringify(this.RULES["ENG"]))
-        this.LANG = {
-            ENG: 'eng',
-            FIL: 'fil',
-            MAG: 'mag'
-        }
+        this.LANG = { ENG: 'eng', FIL: 'fil', MAG: 'mag' }
 
         // this is where we access the
         // memory[lang][domain]
@@ -103,11 +126,20 @@ export default class Engine {
         /** STEP 1 */
         /** Language classification */
         // remember:: in buildLanguageClassifier you have invoked the buildtermprobability map
-        // this.buildLanguageClassifier()
+        this.buildLanguageClassifier()
+
+        // hide this later 
+        let datasetx = this.classifierLanguage.getDataset()
+        // console.log(`Total Classifier this.class_term_frequency_map[category][term] u:: ${}`)
+
+        crossValidate(datasetx,5,51)
+
         // in the loading weights.. its a little different.. that's because
         // we assume the the weights are already build because we called the build langauge classifier beforehand
 
         this.classifierLanguage = new LanguageClassifier()
+
+
         this.classifierLanguage.loadWeights(
             weight_classifier_langauge.VOCABULARY,
             weight_classifier_langauge.PRIOR_PROBABILITIES,
@@ -118,19 +150,22 @@ export default class Engine {
 
         
         
+
+
+
         /** STEP 2 */
         /** Domain classification */
-        // remember:: in buildLanguageClassifier you have invoked the buildtermprobability map
-        // this.buildLanguageClassifier()
-        // in the loading weights.. its a little different.. that's because
-        // we assume the the weights are already build because we called the build langauge classifier beforehand
-        // this.buildDomainClassifier()
-
+        // Do not erase
         this.RULES_DIMENSION_CLASSIFIERS = {
             ENG: new DomainClassifier(),
             FIL: new DomainClassifier(),
             MAG: new DomainClassifier(),
         }
+
+        // in the loading weights.. its a little different.. that's because
+        // we assume the the weights are already build because we called the build langauge classifier beforehand
+        // this.buildDomainClassifier()
+
 
         this.RULES_DIMENSION_CLASSIFIERS["ENG"] = new DomainClassifier()
         this.RULES_DIMENSION_CLASSIFIERS["ENG"].loadWeights(
@@ -163,42 +198,37 @@ export default class Engine {
         /** STEP 3 */
         /** Build memory*/
 
-        this.RULES = {
-            ENG: [].concat(diarrheaEngRules,influenzaEngRules,genericEngRules),
-            FIL: [].concat(diarrheaFilRules,influenzaFilRules,genericFilRules),
-            MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
-        }
-
         this.buildMemory()
         
         
         /** STEP 4*/
         /** Build wildcard blackbox*/
         this.RULES_WILDCARDS = {}
-        this.buildWildcardBlackbox()
+        // this.buildWildcardBlackbox()
 
 
 
-        // this.RULES_WILDCARDS["ENG"] = new WildcardBlackbox()
-        // this.RULES_WILDCARDS["ENG"].loadWeights(
-        //     weight_wildcard_blackbox["ENG"]["wildcardArchive"].forwardIndex,
-        //     weight_wildcard_blackbox["ENG"]["wildcardArchive"].index,
-        //     weight_wildcard_blackbox["ENG"]["wildcardArchive"].memory
-        // ) 
 
-        // this.RULES_WILDCARDS["FIL"] = new WildcardBlackbox()
-        // this.RULES_WILDCARDS["FIL"].loadWeights(
-        //     weight_wildcard_blackbox["FIL"]["wildcardArchive"].forwardIndex,
-        //     weight_wildcard_blackbox["FIL"]["wildcardArchive"].index,
-        //     weight_wildcard_blackbox["FIL"]["wildcardArchive"].memory
-        // ) 
+        this.RULES_WILDCARDS["ENG"] = new WildcardBlackbox()
+        this.RULES_WILDCARDS["ENG"].loadWeights(
+            weight_wildcard_blackbox["ENG"]["wildcardArchive"].forwardIndex,
+            weight_wildcard_blackbox["ENG"]["wildcardArchive"].index,
+            weight_wildcard_blackbox["ENG"]["wildcardArchive"].memory
+        ) 
+
+        this.RULES_WILDCARDS["FIL"] = new WildcardBlackbox()
+        this.RULES_WILDCARDS["FIL"].loadWeights(
+            weight_wildcard_blackbox["FIL"]["wildcardArchive"].forwardIndex,
+            weight_wildcard_blackbox["FIL"]["wildcardArchive"].index,
+            weight_wildcard_blackbox["FIL"]["wildcardArchive"].memory
+        ) 
         
-        // this.RULES_WILDCARDS["MAG"] = new WildcardBlackbox()
-        // this.RULES_WILDCARDS["MAG"].loadWeights(
-        //     weight_wildcard_blackbox["MAG"]["wildcardArchive"].forwardIndex,
-        //     weight_wildcard_blackbox["MAG"]["wildcardArchive"].index,
-        //     weight_wildcard_blackbox["MAG"]["wildcardArchive"].memory
-        // ) 
+        this.RULES_WILDCARDS["MAG"] = new WildcardBlackbox()
+        this.RULES_WILDCARDS["MAG"].loadWeights(
+            weight_wildcard_blackbox["MAG"]["wildcardArchive"].forwardIndex,
+            weight_wildcard_blackbox["MAG"]["wildcardArchive"].index,
+            weight_wildcard_blackbox["MAG"]["wildcardArchive"].memory
+        ) 
 
         // set this to TRUE To show debug message
         // this is default for local tests
@@ -230,6 +260,8 @@ export default class Engine {
         // this.beginTest(testData)
         
     }
+
+    
 
 
     beginTest(data){
@@ -368,21 +400,45 @@ export default class Engine {
 
 
     buildWildcardBlackbox(){
-
+        console.log(`Building wildcard blackbox << `)
+        console.log(`\tBlackbox Keys:: ${Object.keys(this.RULES)}`)
         
         Object.keys(this.RULES)
             .forEach(lang=>{
+
                 let ruleSet = this.RULES[lang]
                 let wildcards = new WildcardBlackbox()
+
                 ruleSet.forEach(rule=>{
+
                     // returns all rules with asterisk , this means they are candidate for wildcard matching
                     
                     if ( Array.isArray(rule.pattern )){
 
+
                         let wildcardPatterns = []
                         rule.pattern.forEach(p=>{
-                            if ( p.includes('*') ){
-                                wildcardPatterns.push(p)
+
+                            let targetPattern = p
+                            targetPattern = targetPattern.toLowerCase()
+                            targetPattern = targetPattern.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/g,' ')
+                            targetPattern = removeRedundantSpaces(targetPattern)
+                          
+                            // the bottleneck is here...
+                            targetPattern.split(' ').forEach(word=>{
+                              let sub = DICTIONARY.getSubstitute(word)
+                              if ( sub != null ){
+                                const regex = new RegExp("\\b" + word + "\\b", "g");
+                                p = p.replace(regex,sub)
+                              }
+                            })
+
+                            
+                            
+                            if ( p != null ){
+                                if ( p.includes('*') ){
+                                    wildcardPatterns.push(p)
+                                }
                             }
                         })
 
@@ -396,13 +452,16 @@ export default class Engine {
 
                 })
                 
+                // console.log(`Wildcard[${lang}] - array?${Array.isArray(wildcards)}`)
+                // console.log(`\t::${JSON.stringify(wildcards)}`)
                 this.RULES_WILDCARDS[lang] = wildcards
+                console.log(`Engine::BuildWildcardBlaxBox - build foward index for [${lang}]`)
                 this.RULES_WILDCARDS[lang].buildForwardIndex()
                 this.RULES_WILDCARDS[lang].sortMemory()
+
+                // this.RULES_WILDCARDS[lang].printForwardIndex()
                 
-                // if ( lang == 'MAG '){
-                //     this.RULES_WILDCARDS[lang].printForwardIndex()
-                // }
+
             })
 
         
@@ -414,8 +473,10 @@ export default class Engine {
 
         console.log('Loading language classifier model')
 
+
         // USE THIS TO PREDICT THE LANGUAGE
         this.classifierLanguage = new LanguageClassifier()
+
         // STEP 1: LOAD DATASETS
         // STEP 2: TRAIN THE MODEL
         Object.keys(this.LANGUAGE_RULES).forEach(lang => {
@@ -434,8 +495,14 @@ export default class Engine {
         // this.classifierLanguage.printVocabularyWithUnderscores()
         // this.classifierLanguage.printVocabulary()
 
-        console.log(`Language Classifier::`)
-        console.log(this.classifierLanguage)
+        // console.log(`Language Classifier::`)
+        // console.log(this.classifierLanguage)
+
+        
+        // getConfusionMatrixScores(
+        //     this.classifierLanguage,
+        //     this.classifierLanguage.getDataset(),
+        //     ['ENG','FIL','MAG'])
 
     }
 
@@ -454,6 +521,7 @@ export default class Engine {
                 Object.keys(this.SELFCARE_DIMENSIONS)
                     .forEach((dimension)=>{
                         
+
                         //  filter corresponding rules
                         let filtered = this.RULES[lang].filter(rule=>{
                             return rule.dimension == dimension
@@ -466,9 +534,13 @@ export default class Engine {
                         //     mem.sortReferences()
                         //     this.memory[lang][dimension] = mem
                         // }
+
+
                         //each language has 7 pillar classifiers
                         //THERE IS A PROBLEM HERE.. YOU SHOULD NOT BE TRAINING USING THE RESPONSES 
                         //YOU SHOULD ONLY TRAIN USING THE PATTERNS
+
+                        
                         this.RULES_DIMENSION_CLASSIFIERS[lang].insertCluster(filtered,dimension)
                         this.RULES_DIMENSION_CLASSIFIERS[lang].buildTermProbabilityMap()
                     })
@@ -662,8 +734,12 @@ export default class Engine {
 
         let executeWildcardMatching = (str,lang,note="")=>{
 
-            // console.error(`Engine::executewildcardMatching:: should begin `)
+            // console.error(`Engine::executewildcardMatching::Search ${str} `)
             let result = this.RULES_WILDCARDS[lang].getReplyUsingWildcardMatching(str)
+
+            // console.error(`Engine::executewildcardMatching::rawPattern ${result.rawPattern} `)
+            // console.error(`Engine::executewildcardMatching::pattern ${result.pattern} `)
+            // console.error(`Engine::executewildcardMatching::Result ${result.reply} `)
 
             method = "Wildcard matching"
 

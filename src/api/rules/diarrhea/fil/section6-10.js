@@ -194,14 +194,16 @@ let section8 = [
       `
     ],4),
     encodeMemory([
-      `* pagkain * (iwasan) * diarrhea *`,
+      `* pagkain * iwasan * diarrhea *`,
       `* pagkain * (hindi * (inom|kain) ) * diarrhea *`,
-      `* diarrhea * (iwasan) * pagkain *`,
+      `* diarrhea * iwasan * pagkain *`,
       `* diarrhea * (hindi * (inom|kain) ) * pagkain *`,
       `Ano ang mga pagkain na dapat kainin inumin iwasan para hindi lalong lumala ang may diarrhea `,
       `Anong mga pagkain ang nakakasama sa kalagayan ng may diarrhea `,
       `Paano malalaman kung alin ang mga pagkaing hindi dapat kainin inumin iwasan kapag may diarrhea `,
-      `anong mga pagkain ang hindi magandang kainin o inumin pag nagtatae o may diarrhea`
+      `anong mga pagkain ang hindi magandang kainin o inumin pag nagtatae o may diarrhea`,
+      `ano alin ang mga pagkain na iwasan hindi kainin pag nagtatae`,
+      `anong pagkain ang hindi dapat kainin pag may diarrhea`,
     ],[
       `
       Ang pag-iwas sa ilang partikular na pagkain kapag nagtatae ay mahalaga dahil ang ilang sa mga ito ay maaaring makairita sa digestive system at magpapalala ng mga sintomas. Maaaring mahirap matunaw ng katawan ang maanghang, mamantika, o matatabang pagkain, habang ang mga pagkaing naglalaman ng lactose o fructose ay maaaring magpalala ng pagtatae sa mga taong may lactose o fructose intolerance. Higit pa rito, ang ilang uri ng fiber, gaya ng mga makikita sa beans, cruciferous vegetables, at whole grains, ay maaaring mahirap matunaw at maaaring magdulot ng pangungutot o kabag.

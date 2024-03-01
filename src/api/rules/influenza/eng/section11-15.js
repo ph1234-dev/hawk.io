@@ -52,7 +52,7 @@ let section11 = [
     ],7),
     encodeMemory([
         `* work * treat *`,
-        `* antihistamine * work *`,,  
+        `* antihistamine * work *`,
         `explain What is the purpose of antihistamine`,  
         `tell me how does antihistamines treat`,
     ],[
@@ -103,6 +103,8 @@ let section11 = [
         `suggest any antihistamine alternative options besides antihistamine`,
         `What are some alternatives treatment options to antihistamines`,
         `What natural remedies are natural alternative to antihistamines`,
+        `What other medicine I can take aside from antihistamines`,
+        `what are alternative to antihistamines`,
     ],[
         `Try taking Ginger. According to Sinus and Allergy Wellness Center, it is a natural histamine, potent antiviral agent and an immute booster. Ginger is a safe and highly effective herb that soothes the digestive system and improves circulation. You can make some ginger tea to alleviate nasal congestion and headaches. While you sip your tea, inhale the steam coming out of your cup. Also, try to use it with other herbs, such as turmeric, which is another powerful natural healer.`
     ],7),
@@ -204,7 +206,9 @@ let section11 = [
         `* alternative * analgesics* `,
         `What are some alternative herbal medications that can be used instead of analgesics`,
         `tell get me the list of alternatives herbal subsitute for analgesics`,
-        `tell me about recommend the natural remedies that are alternative to analgesics`
+        `tell me about recommend the natural remedies that are alternative to analgesics`,
+        `What other medicine I can take aside from analgesics`,
+        `what are alternative to analgesics`,
     ],[
         `The Philippine Institute of Traditional and Alternative Healthcare has indicated that you can Ampalaya, Yerba Buena, ulasimang bato or pansit-pansitan, and guava has an analagesic effects.`
     ],7),
@@ -505,7 +509,9 @@ let section11 = [
         `* alternative * decongestant* `,
         `What are herbal alternative substitutes medications that can be used instead of decongestants`,
         `What other alternative natural herbal options are there besides decongestants`,
-        `tell me about the existing alternatives natural remedies to decongestants`
+        `tell me about the existing alternatives natural remedies to decongestants`,
+        `What other medicine I can take aside from decongestants`,
+        `what are alternative to decongestants`,
     ],[
         `Alternatives to oral decongestants are available. In the drug realm, antihistamines such as diphenhydramine (Benadryl), chlorpheniramine (Chlor-Trimeton), cetirizine (Zyrtec), and loratadine (Claritin) can help with a stuffy nose are safe for the hear`
     ],7),
@@ -615,7 +621,9 @@ let section11 = [
         `Are there any natural alterantive herbal remedies that can besides expectorants`,
         `What are the alternative herbal substitutes for expectorants`,
         `What other herbal alternative medications can be used instead of expectorants`,
-        `tell show me a list of the alternatives herbal to expectorants`
+        `tell show me a list of the alternatives herbal to expectorants`,
+        `What other medicine I can take aside from expectorants`,
+        `what are alternative to expectorants`,
     ],[
         `Natural expectorants are another option if you’re trying to loosen up mucus and relieve chest congestion. Natural expectorants include: Menthol, Ivyleaf extract, oral hydration ( drinking lots of water ) , steaming (inhaling warm moist air ) , and honey ( adding honey to drinks ) `
     ],7),
@@ -716,7 +724,9 @@ let section11 = [
         `Are there any recommended natural alternative herbal treatments remedies to antitussives`,
         `What are some alternative herbal substitutes medications that can be used instead of antitussives`,
         `What are the different alternative herbal treatments available besides antitussives`,
-        `tell me about the alternative options remedies besides antitussives`
+        `tell me about the alternative options remedies besides antitussives`,
+        `What other medicine I can take aside from antitussives`,
+        `what are alternative to antitussives`,
     ],[
         `Honey is a time-honored remedy for a sore throat. According to one study, trusted Source, it can also relieve coughs more effectively than OTC medications that contain dextromethorphan (DM), a cough suppressant.`
     ],7),
@@ -823,6 +833,8 @@ let section11 = [
         `What are the different natural herbal treatments available besides lozenges`,
         `tell What are the other natural herbal options for treating sore throat and cough other than lozenges`,
         `tell What other natural herbal options are there besides lozenges`,
+        `What other medicine I can take aside from lozenges`,
+        `what are alternative to lozenges`,
     ],[
         `While it may not cure, sipping tea with honey may help and sooth throat conditions.`
     ],7),

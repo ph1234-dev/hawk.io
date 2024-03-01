@@ -102,9 +102,9 @@ let section7 = [
         `* treat*  pagkain * trangkaso * `,
         `* pagkain * treat  * trangkaso *`,
         `* trangkaso * pagkain * treat*  `,
-        `Ano ang mga pwedeng rekomendasyon pagkaing kainin inumin kapag mayroon nakakatulong pagpapagaling akong trangkaso`,
-        `Kailangan ko ng payo tungkol listahan sa mga pagkain na pwedeng kainin inumin kapag may trangkaso.`,
-        `Pwede mo ba akong bigyan ng listahan sa mga pagkain na pwedeng kainin kapag may trangkaso`,
+        // `Ano ang mga pwedeng rekomendasyon pagkaing kainin inumin kapag mayroon nakakatulong pagpapagaling akong trangkaso`,
+        // `Kailangan ko ng payo tungkol listahan sa mga pagkain na pwedeng kainin inumin kapag may trangkaso.`,
+        // `Pwede mo ba akong bigyan ng listahan sa mga pagkain na pwedeng kainin kapag may trangkaso`,
 
         `sabihin mo sa akin kung anong mga pagkain ba ang maaring kainin pag may trangkaso`,
     ],[
@@ -217,11 +217,12 @@ let section8 = [
         `
     ],4),
     encodeMemory([
-        `* pagkain * (iwasan) * trangkaso *`,
-        `* pagkain * (hindi * (inom|kain) ) * trangkaso *`,
+        `* pagkain * iwasan * trangkaso *`,
+        `* pagkain * ( hindi * (inom|kain) ) * trangkaso *`,
         `* trangkaso * (hindi * (inom|kain) ) * pagkain *`,
         `* trangkaso * (iwasan) * pagkain *`,
         `Ano ang mga bawal kainin dapat iwasan na pagkain kapag may trangkaso`, 
+        `Ano ang mga hindi dapat kainin inumin o iwasan kapag may trangkaso`, 
         `Anong mga pagkain at inumin ang dapat iwasan para hindi lumala ang trangkaso`, 
         `May mga pagkain at inumin bang dapat iwasan habang nagpapagaling sa trangkaso`, 
     ],[

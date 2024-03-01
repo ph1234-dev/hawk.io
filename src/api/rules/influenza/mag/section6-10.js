@@ -20,7 +20,8 @@ let section6 = [
         `nginto panon to ka di mapya mobay sa aden influenza nin`,
         `eduken panon a ka nasisita i katangka sa taw a aden influenza nin`,
         `panon a ka di ubayn i taw a aden influenza nin`,
-        `enduken ka temangka sa influenza`
+        `enduken ka temangka sa influenza`,
+        `panon i katangaka sa influenza`,
     ],[
         `Da ka aged pagubay sa kaped nengka upama ka aden sakit nin. Upama ka seka i aden sakit nin na tangka ka. da ka pagubay sa saka lepa sa mga tao a pembabatok. Tangka ka bon sa tayn I aden ngog nin. Da ka ged pagamong sa madakel a taw ka makwa nengka i kagaw a nan. Enggula ka I nyaba para di den makalanag I sakit a nya.`
     ],5),
@@ -86,18 +87,15 @@ let section6 = [
     //     `
     // ],5),
     encodeMemory([
-        `* (ingat|kasambot|tangka) * influenza * `,
-        `* kapakay * influenza * kasambutan *`,
-        `* gamot * influenza *`,
+        `* (ingat|tangka|kapananggila) * influenza * `,
+        `* influenza * kapananggila * `,
         `nasisita a galbeken nu taw endu di sekanin kaalatan na influenza`,
         `ngin galbeken enggulan nu taw para di sekanin maka kwa endu makatangka kaalatan sa influenza`,
         `panon ngen mapakay a enggulan nu taw endu di edsakit sa influenza`,
         `panon enggulan nu taw para di sekanin maka kwa kaalatan makatangka sa influenza`,
         `panon galbeken taw endu di sekanin kaalatan na influenza`,
-        `panon kasambot katangka kaingat sa influenza`,
         `ngin mapakay enggulan endu di ma makakwa sa influenza`,
-        `panon kagamot sa influenza`,
-        `panon i kaawa na influenza`,
+        `panon i kapananggila sa influenza`,
     ],[
         `Upama ka pakagaga ka na pabakuna ka. Tangkay ka su mga taw a aden sakit nin. Upamak ka seka su aden sakit nin na lenek kawm pan sa lawas endu di mganalat sakit nengka. Tagubi ka istidi i ngali abpeg su ngilong nengka endu di makaalat i sakit a nana. Gmait ka sa facemask. Pamlimpyo ka mana su kakagad sa lima endu di ka pagamit i mata , ngilong abpeg a ngali nengka endu di maka ludep i virus a nan sa lawas nengka.`
     ],1),
@@ -113,9 +111,9 @@ let section7 = [
         `* pegken * (kapakay|mapya|tabang) * influenza *`,
         `* pegken * influenza * (kapakay|mapia|tabang) * `,
         `* pegken * influenza * `,
-        `labit ka ngin i mga mapya pegken paginumen a makadtabang sa taw a pakagedam sa influenza `,
-        `labit ka ngin i mapakay pakan ipasepa paginumen sa taw a pakagedam sa influenza`,
-        `labit ka ngin i mga pegken a kapakay a pamasan kanen inumen nu taw a pakagedam sa influenza`,
+        // `labit ka ngin i mga mapya pegken paginumen a makadtabang sa taw a pakagedam sa influenza `,
+        // `labit ka ngin i mapakay pakan ipasepa paginumen sa taw a pakagedam sa influenza`,
+        // `labit ka ngin i mga pegken a kapakay a pamasan kanen inumen nu taw a pakagedam sa influenza`,
     ],[
         `Aden embalangan a pegken na makadtabang endu engkabagel ka sa malengkas. Nya nin umpaman na su sabaw na manok, sapi o kamo na makadtabang sa dehydration engo su kayaw nin ma makadtabang sa kagkapya na tidek. Kapakay ka bon keman sa lansuna kagina makakagkapya bon I nya bas a sakit abpeg su mga padsa nin. Su mga pegken a to a aden probiotic nin a mana s yogurt na kapakay bon makadtabang sa kapegpadadakel sa mapya a bakterya na tinae abpeg nu lawas. Su mga unga na kayo abpeg su kamo na aden vitamin c na makadtabang bon. Nya nin mga kaped I nya ban a su paminta, kalamansi, grapes abpeg su mga madakel a to I lawn I a kamo. Kapakay ka bon keman sa kamo a mana su broccoli. Su oatmeal bon na aden nutrients nin mana su copper, iron, selenium, zinc fiber endo proteen na makagkabagel bon sa lawas. Kaped pan sa makadtabang na su mga luya abpeg a kalawag. Nya bon tanto a makadtabang na di ka blepatani I kainom sa madakel a ig. `
     ],4),
@@ -177,7 +175,9 @@ let section8 = [
         `ngin i pegken a di mapakay dayt inomen kanen na pendalo sa influenza `,
         'ngin i di kanen inumem pamasan nu daw a pendalo sa influenza',
         'nakadalo sa influenza ngin i di i pakan lon',
-        'pakenen ko pendalo a nya sa inlfuenza nin i pakan lun'
+        'pakenen ko pendalo a nya sa influenza nin i pakan lun',
+        'ngin i pegken a pananggilan upama ka aden influenza',
+        'Ngen a mga pegken I di ko dayt a kanen inumen upama ka aden trangkaso',
     ],[
         `Upama ka pakagedam ka sa flu na da ka paginom engo pegkan sa mga caffeinated drinks, coks, lanan ged, mategas a mga pegken, abpeg mga mamis a bnel a pegken. Tekaw ka kan sa mga aden sabay nin engo kasambiyan su mga nadadag a ig nu lawas. Kan ka sa pan, patatas, emay, saging, manok abpeg seda.`
     ],4),

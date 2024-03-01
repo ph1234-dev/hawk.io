@@ -19,26 +19,13 @@ let scrollDown = () => {
                 <!-- <img class="area-information-body-img" src="@/assets/svg/undraw_progressive_app.svg" > -->
                 <!-- <img class="area-information-body-img" src="@/assets/svg/hawk.svg" > -->
                 <div class="area-information-body-title" >
-                    <!-- <b class="catch-phrase text-biggest">Hawk</b> -->
-                    <!-- <span style=
-                        "
-                            font-weight: 700 !important;
-                            font-size: 2.75rem; 
-                        ">
-                        Hawk
-                    </span> -->
-                    <!-- <span style="font-size: .65rem;"> 
-                        Health Awareness Knowledgebase&trade;
-                    </span> -->
 
                 </div>
 
                 <p class="details">
                     <!-- <small> -->
-                        A self-care converstional agent for <br>
-                            <strong>Diarrhea</strong>and 
-                            <strong>Influenza</strong>.
-                    <!-- </small> -->
+                        <strong>A self-care converstional agent for
+                            Diarrhea and Influenza.</strong>
                 </p>
                 
             </div>
@@ -52,8 +39,8 @@ let scrollDown = () => {
                         gap: 10px;
                         ">
                     <img style="width: 30px; order: 1" src="@/assets/svg/hawk.svg" >
-                    <span style="max-width: 30ch; line-height: .9rem; font-size: .7rem; order: 2">
-                        <b>Powered by</b> Hawk Edge-based Aritificial Intelligence
+                    <span style="max-width: 35ch; line-height: .9rem; font-size: .7rem; order: 2">
+                        <p><b>An Edge-based Aritificial Intelligence</b><br>Built from Hawk Framework</p>
                     </span> 
                 </div>                
             </div>

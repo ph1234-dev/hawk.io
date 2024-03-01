@@ -64,42 +64,46 @@ class Archive{
 
         underlyingPattern.forEach(rawPattern => {
 
-          let targetPattern = rawPattern
-          targetPattern = targetPattern.toLowerCase()
-          targetPattern = targetPattern.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/g,' ')
-          targetPattern = removeRedundantSpaces(targetPattern)
-        
-          // the bottleneck is here...
-          targetPattern.split(' ').forEach(word=>{
-            let sub = DICTIONARY.getSubstitute(word)
-            if ( sub != null ){
-              const regex = new RegExp("\\b" + word + "\\b", "g");
-              targetPattern = targetPattern.replace(regex,sub)
-            }
-          })
+          if ( rawPattern != null ){
+            let targetPattern = rawPattern.toLowerCase()
+            targetPattern = targetPattern.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/g,' ')
+            targetPattern = removeRedundantSpaces(targetPattern)
           
-          targetPattern.split(' ').forEach(word=>{
-            // remove stopwords
-            if ( DICTIONARY.isStopWord(word) ){
-              const regex = new RegExp("\\b" + word + "\\b", "g");
-              targetPattern = targetPattern.replace(regex,'')
-            }else{
-
-              if ( !VOCABULARY.value.includes(word) ){
-                VOCABULARY.value.push(word)
+            // that is our fix for the regex not working properly
+            // the bottleneck is here...
+            targetPattern.split(' ').forEach(word=>{
+              let sub = DICTIONARY.getSubstitute(word)
+              if ( sub != null ){
+                const regex = new RegExp("\\b" + word + "\\b", "g");
+                targetPattern = targetPattern.replace(regex,sub)
               }
-            }
-          })
- 
-
-          this.forwardIndex.push({
-            pattern: targetPattern,
-            index: this.index,
-            rawPattern: rawPattern,
-          })
-
-          this.BM25.train(targetPattern,this.index)
-
+            })
+            
+            targetPattern.split(' ').forEach(word=>{
+              // remove stopwords
+              if ( DICTIONARY.isStopWord(word) ){
+                const regex = new RegExp("\\b" + word + "\\b", "g");
+                targetPattern = targetPattern.replace(regex,'')
+              }else{
+  
+                if ( !VOCABULARY.value.includes(word) ){
+                  VOCABULARY.value.push(word)
+                }
+              }
+            })
+   
+  
+            this.forwardIndex.push({
+              pattern: targetPattern,
+              index: this.index,
+              rawPattern: rawPattern,
+            })
+  
+            this.BM25.train(targetPattern,this.index)
+  
+          }
+          
+          
         })
 
       }
@@ -469,13 +473,21 @@ class WilcardArchive{
 
     // console.log(`Archive::wildcard matching:: <MSG>::  ${JSON.stringify(msg)}`)
 
+    // for ( let i = 0 ; i < this.forwardIndex.length; i++){
+    //   let target = this.forwardIndex[i]
+    //   let mem = this.memory[target.index]
+    //   console.log(`\t${target.pattern}`)
+    // }
+
     for (let i=0; i < len ; i++){
       let target = this.forwardIndex[i]
       let pattern = target.pattern 
+      // console.log(`\tArchive::Constructing Pattern:: ${pattern}`)
       let regex = new RegExp(pattern)
-      // console.log(`\tArchive::getReplyUsingWildcardMatching [${pattern}][${regex.test(msg)}]`)
 
+      
       if ( regex.test(msg) ){
+        // console.log(`\tArchive::Match [${pattern}] | [${msg}]`)
         matchingPattern = target.pattern
         let mem = this.memory[target.index]
         response = mem.response[0]
@@ -484,7 +496,7 @@ class WilcardArchive{
       }
     }
 
-    console.log(`\tArchive::Pattern::  ${JSON.stringify(originalPattern)}`)
+    // console.log(`\tArchive::Match::Found Pattern  ${matchingPattern}`)
 
     return {
       rawPattern: originalPattern,
@@ -496,10 +508,14 @@ class WilcardArchive{
   
   sortMemory(){
     
+    console.log('Debugging Wildcard Blackbox Sort::')
     let callback = (a,b)=>{
       // a and b are instance of BasicLines
-      let responseALength = a.rawPattern.split(' ').length
-      let responseBLength = b.rawPattern.split(' ').length
+      let responseALength = a.rawPattern.trim().split('*').length
+      let responseBLength = b.rawPattern.trim().split('*').length
+      
+      // console.log(`\t${JSON.stringify(a)} [${responseALength}] - ${JSON.stringify(b)} [${responseBLength}]`)
+      // console.log(`\t${a.rawPattern} [${responseALength}] - ${b.rawPattern} [${responseBLength}]`)
       return responseBLength - responseALength
     }
 
@@ -559,8 +575,11 @@ class WilcardArchive{
 
         patterns.forEach((p,index)=>{
 
-          if ( p != undefined ){
+          if ( p != null ){
             // console.log(`\t --<< ${p} [[]] ${index} [[]] ${mem.rawPattern[index]}`)
+
+            // if ( p.trim() === '* hugas * kamay *'.trim()) alert('Match ')
+
             this.forwardIndex.push({
               // raw pattern here is the original
               rawPattern: mem.rawPattern[index],
@@ -569,6 +588,7 @@ class WilcardArchive{
               // pattern:p,
               index: mem.index
             })    
+
           }
         })
       }
@@ -577,7 +597,7 @@ class WilcardArchive{
   }
 
   printForwardIndex(){
-    console.log(`WildcardArchive - Printing Forward Index:: ${this.forwardIndex.length}`)
+    console.log(`Archive:: WildcardArchive - Printing Forward Index:: ${this.forwardIndex.length}`)
     for ( let i = 0 ; i < this.forwardIndex.length; i++){
       let target = this.forwardIndex[i]
       let mem = this.memory[target.index]

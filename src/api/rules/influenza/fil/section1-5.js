@@ -154,6 +154,7 @@ let section5 = [
         `ano ba ang mga ginagamit na gamot sa trangkaso`,
         `paano gamutin ang trangkaso`,
         `pano ginagamot ang trangkaso`,
+        `ano gamot sa trangkaso`
         //chatgpt end
     ],[
         `

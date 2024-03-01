@@ -144,31 +144,17 @@ export let transFormedMaguindanaonRules = [
     },
     {
         "pattern": [
-            "* (ebpawang|kailay)* doctor * tagudo * ",
-            "nginto ka mangay to taw sa doktor amayka pedtagudo",
-            "kano besen i dayt a ka angay nu taw a pedtagudo sa doktor",
-            "Kanu i ka lu sa doctor kandoctor amayka pedtagudo",
-            "pila gay angatan bago blu angay sa doctor amayka pedtagudo",
-            "panon i kataw amayka nasisita i kapailay sa doctor"
-        ],
-        "response": [
-            "Upama ka su kadtagudo na sobra den sa dwa gay o aw na to na belenukan na den pedtandang na pailay ka den sa doctor"
-        ],
-        "dimension": 5,
-        "index": 1
-    },
-    {
-        "pattern": [
             "* gamutan * tagudo *",
             "endaw dayt a penggamutan i kapedtagudo",
             "kagamutan i kadtagudo sa walay bo",
-            "mapakay a gamutan i kapedtagudo apya sa bo sa walay"
+            "mapakay a gamutan i kapedtagudo apya sa bo sa walay",
+            "panon ngen i kapengamot sa kapedtagudo"
         ],
         "response": [
             "Depende sa kapedtagudo nu tao, su kapenggamot lon na mapakay apya sya bo sa walay o sya mangay sa ospital. Su ka degka, hydrate o kainom sa ig, abpeg kasambi sa pegkanen na mga mapya a enggulan na taw umayka pakagedam sekanin sa dikena bon ged mapasang a kapedtagudo. Su mga sintomas manem na kapakay pengamutan na mga gamot a gapamasa sa botika mana su lopermaide abpeg bismuth subsalicylate. Ugayd na upama ka mapasang den a benel su kapedtagudo ka pegkayaw su taw, ga dehydrate abped pebpaugo i tay nin na angay ka den sa doctor. Meto bun upama ka pedtagudo su taw na naipos a dwa gay. Aw na to na angay ka sa barangay health center"
         ],
         "dimension": 5,
-        "index": 2
+        "index": 1
     },
     {
         "pattern": [
@@ -187,16 +173,18 @@ export let transFormedMaguindanaonRules = [
     },
     {
         "pattern": [
+            "* gamot * tagudo *",
             "* (gamot|tabang|kapya) * tagudo * pegkayaw * ",
             "* (gamot|tabang|kapya) * pegkayaw * tagudo * ",
             "panon i pakairan kagamot sa taw a mayaw abpeg a pedtagudo",
             "ngen i enggulan kagamot nu taw amayka pegkayaw a pedtagudo ",
             "amayka pedtagudo su taw na mayaw pan i kanggegedam nin na ngin e enggulan kagamot nin",
             "panon i pakairan kagamot sa ginawa nu taw a pedtagudo na aden mayaw nin",
-            "ngin e galbeken kagamot nu taw a pegkayaw abpeg a pedtagudo"
+            "ngin e galbeken kagamot nu taw a pegkayaw abpeg a pedtagudo",
+            "panon i kagamot sa kapedtagudo"
         ],
         "response": [
-            "Upama ka pegkayaw ka, na betadi ka sa mawasa a mayaw a debpas i bunan bunan nengka. Embalgkas ka sa dikena masimpit. Upama pegkegkel ka, na embalgkas ka sa madakel. Degka ka bon engo pegkabagel ka. \n        \n        Upama manem ka pedtagudo ka pan na inom ka sa pegken a madakel a ig nin, mana su sabaw, sports drinks, beteng, o oral rehydration solutions engo da ka paginom sa mga makagkagatel sa tyan mana su aden alchohol nin. \n        \n        Aden bon mga gamot a gapamasa mana su antimotility o bismuth subsalicylate a mapakay nengka engamuten. Ugayd, na da ka pegkan sa antimotility agents mana su loperamide abpeg imodium upama ka pegkayaw ka.\n\n        Amayka di maawa i sakit nengka, na nasisita su ka angay sa doktor engo pegkabagel ka.\n        "
+            "\n        Upama ka pedtagudo ka na inom ka sa madakel a ig. Mapakay ka obn keman sa mana su sabaw, sports drinks, beteng, o oral rehydration solutions engo da ka paginom sa mga makagkagatel sa tyan mana su aden alchohol nin.\n        \n        Aden bon mga gamot a gapamasa mana su antimotility o bismuth subsalicylate a mapakay nengka engamuten. Ugayd, na da ka pegkan sa antimotility agents mana su loperamide abpeg imodium upama ka pegkayaw ka.\n\n        Amayka ka pegkayaw ka, na betadi ka sa mawasa a mayaw a debpas i bunan bunan nengka. Embalgkas ka sa dikena masimpit. Upama pegkegkel ka, na embalgkas ka sa madakel. Degka ka bon engo pegkabagel ka. \n\n        Amayka di maawa i sakit nengka, na nasisita su ka angay sa doktor engo pegkabagel ka.\n        \n        \n        "
         ],
         "dimension": 2,
         "index": 1
@@ -215,7 +203,7 @@ export let transFormedMaguindanaonRules = [
             "Endu di ka pedtagudo na upisi ka i mga unga na kayo bago pegkanen ka su upis nin na aw na to na aden mga kagaw nin a mana su bacteria, parasites abpeg a virus. Upama ka enggulan nengka i nya ba na katangkan nengka su mga namba. Gagasi ka bon ebpyapya bago ka bagupis endu gaawa su mga duti a nakadeket lun."
         ],
         "dimension": 5,
-        "index": 3
+        "index": 2
     },
     {
         "pattern": [
@@ -233,17 +221,19 @@ export let transFormedMaguindanaonRules = [
             "Su kapangiluto sa pegken ebpyapya na nasisita a enggulan nu taw endu pebpatay su mga bacterial, virus abpeg mga parasites a gadsabapan na kapedtagudo. Su kakan sa da maluto ged a pegken o mga mailaw a mga karni, manok, leman, abpeg a mga seda na makadsakit. Su kapagiluto embpyapya endu su kasenggay sa mga pagiluton abpeg su naluto na makatabang endu makatangka sa kapedtagudo."
         ],
         "dimension": 5,
-        "index": 4
+        "index": 3
     },
     {
         "pattern": [
             "* ingat * tagudo * ",
             "* kasambot * tagudo * ",
             "nasisita a galbeken nu taw endu di sekanin edtagudo",
-            "ngin i galbeken nu taw endu di sekanin edtagudo",
+            "ngin i galbeken nu taw endu di sekanin edstagudo",
             "ngen i mapya enggulan nu endu di edtagudo",
             "panon i di kadtagudo nu taw",
-            "panon i katangka sa sa sakit a kapedtagudo"
+            "panon i katangka sa sa sakit a kapedtagudo",
+            "panon i kapananggila sa kapedtagudo",
+            "panon i katangaka sa kapedtagudo"
         ],
         "response": [
             "Su kalimpyo , mana su kagagas sa lima sa sabon enggo ig , bago pegkan o kapasad gemamit sa cr na nasisita endu di ka edtagudo. Sigurado ka na malinis i gaganatanan a pegken abpeg su ig a paginumin. Endu iluto ka ebpyapya su pegken endu pebpatay i mga bacteria abpeg a parasite a pendeket sa pegken. Su di kakan sa mga da maluto na enguggulan nu taw endu di sekanin edtagudo. Meto bun su mga pegken na aden gatas nin a dala ma pasteruize abpeg nu mga maldsik a ig. Inom ka bon sa ig abpeg a kan sa ebpyapya ka namba na pakagkabagel sa lawas endu di ka kadampuan na kapedtagudo"
@@ -274,11 +264,10 @@ export let transFormedMaguindanaonRules = [
     },
     {
         "pattern": [
-            "* di * mapya * hydration * diarrhea *",
-            "* diarrhea_foods_not_allowed_bad_hydration * diarrhea *",
+            "* di * mapya * hydration * \bdiarrhea\b(?!_) *",
+            "* diarrhea_foods_not_allowed_bad_hydration * \bdiarrhea\b(?!_) *",
             "enduken ka di mapya minom o keman su taw sa paka dehydrate upama ka pendalo sa tagudo",
-            "enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_bad_hydration amayka upama ka pedtagudo",
-            null
+            "enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_bad_hydration amayka upama ka pedtagudo"
         ],
         "response": [
             "Enggulan nu taw su di kakan sa mga pegken a di mapya sa hyrdation mana namba nilabit nengka kagina namba silan na pakalunsan sa dyhdration nu lawas. Nya mapya na kan ka sa mga pegken a malmo ka tunag sa tyan endu madakel i ig nin mana su sabay, tininda a kamo, abpeg mga unga na kayo ka madakel i ig nilan a makatabang sa kasambi na nadadag a ig nu taw abpeg electrolyes."
@@ -289,8 +278,8 @@ export let transFormedMaguindanaonRules = [
     {
         "pattern": [
             "* lactose *",
-            "* lactose * diarrhea *",
-            "* diarrhea_foods_not_allowed_contains_lactose * diarrhea *",
+            "* lactose * \bdiarrhea\b(?!_) *",
+            "* diarrhea_foods_not_allowed_contains_lactose * \bdiarrhea\b(?!_) *",
             "enduken ka di mapya minom o keman su taw sa aden lactose nin upama ka pendalo sa tagudo",
             "enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_contains_lactose amayka upama ka pedtagudo"
         ],
@@ -302,7 +291,7 @@ export let transFormedMaguindanaonRules = [
     },
     {
         "pattern": [
-            "* diarrhea_foods_not_allowed_irritate_stomach * diarrhea *",
+            "* diarrhea_foods_not_allowed_irritate_stomach * \bdiarrhea\b(?!_) *",
             "* diarrhea_foods_not_allowed_irritate_stomach *",
             "enduken ka di mapya minom o keman su taw sa mga malalas o malas a pegken upama ka pendalo sa tagudo",
             "enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_irritate_stomach amayka upama ka pedtagudo"
@@ -315,7 +304,7 @@ export let transFormedMaguindanaonRules = [
     },
     {
         "pattern": [
-            "* diarrhea_foods_not_allowed_oily * diarrhea *",
+            "* diarrhea_foods_not_allowed_oily * \bdiarrhea\b(?!_) *",
             "* diarrhea_foods_not_allowed_oily *",
             "enduken ka di mapya minom o keman su taw sa madakel i lana nin o lanan a o pegken upama ka pendalo sa tagudo",
             "enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_oily amayka upama ka pedtagudo"
@@ -328,15 +317,20 @@ export let transFormedMaguindanaonRules = [
     },
     {
         "pattern": [
+            "* tagudo * pegken * pananggilan *",
+            "* pananggilan * pegken * tagudo *",
+            "* eat * pananggilan * tagudo *",
             "* pegken * di * (inom|kan) * tagudo * ",
             "* tagudo * di * (inom|kan) * pegken *",
             "labit ka sa laki ngin i mga pegken a di mapakay kanen iluton nu taw a pedtagudo",
             "ngen a mga di mapya mapakay a pamasen kanen inumen iluton nu taw a pedtagudo",
             "ngin i mga pegken a tangkan di dayt a pamasan kanen o iluton nu taw a pedtagudo",
-            "aden ngin mga pegken tangkan di dayt a kanen inumen pamasen iluton nu taw a pedtagudo"
+            "aden ngin mga pegken tangkan di dayt a kanen inumen pamasen iluton nu taw a pedtagudo",
+            "Ngin I mga pegken a di kanen nu taw a pedtagudo",
+            "ngin i pegken a pananggilan nu taw a pedtagudo"
         ],
         "response": [
-            "\n      So katangka sa kaped a mga pegken na nasisita edu di kalunsanan su sakit nu taw. Su mga malalas, lanan , madakel i fats nin na malgen ga digest o sesep nu tinay nu taw. Su mga pegken manem a aden lactose o fructose nin na di mapya ka pakalunsan sa sakit kagina su kaped a mga taw na di nilan gasesep i namba. Endu aden mga pegken a madakil i fiber nin mana su mga beans, mga cruciferous vegetables abpeg mga hard grains na malgen gatunag sa tyan. Aw na to na nya ba na makadtagetut o makagkasakit sa tyan. \n\n      Kaped sa di mapya a kanen o inumen nu pedtagudo na su aden alchohol nin, beans, berries, broccoli, repolyo, cauliflower, cheese, cheakpeas, kapi, kamais, petsay, fruit juice, grapes, mga gadong a kamo, teneb, ice crea, gatas, mani, lanan a pegken, malalas a pegken, paminta, mailaw a pegken, salad, shellfish, softdrinks, ebpeg tea. \n      \n      Nya mapya na kan ka sa mga pegken a malmo gatunag sa tyan nin mana su mga da ged nanam nin a pegken endu d kaumnanan ni kapedtagudo nu taw\n      "
+            "\n      Da ka pegkan sa mga malalas, lanan , madakel i fats nin na malgen ga digest o sesep nu tinay nu taw. Kaped a dayt a pananggilan nu taw na su kakan sa aden lactose o fructose nin na di mapya ka pakalunsan sa sakit kagina su kaped a mga taw na di nilan gasesep i namba.  Di bon dayt a keman su taw sa mga kamo a madakil i fiber nin mana su mga munggo, mga mategas a kamo abpeg mga hard grains na malgen gatunag sa tyan. Aw na to na nya ba na makadtagetut o makagkasakit sa tyan. \n\n      \nKaped sa di mapya a kanen o inumen nu pedtagudo na su aden alchohol nin, berries, broccoli, repolyo, cauliflower, cheese, cheakpeas, kapi, kamais, petsay, fruit juice, grapes, mga gadong a kamo, teneb, ice crea, gatas, mani, lanan a pegken, malalas a pegken, paminta, mailaw a pegken, salad, shellfish, softdrinks, ebpeg tea. \n      \n      Nya mapya na kan ka sa mga pegken a malmo gatunag sa tyan nin mana su mga da ged nanam nin a pegken endu d kaumnanan ni kapedtagudo nu taw\n      "
         ],
         "dimension": 4,
         "index": 5
@@ -358,32 +352,6 @@ export let transFormedMaguindanaonRules = [
     },
     {
         "pattern": [
-            "* generic * antimotility * ",
-            "ngen i mga ngala na generic a antimotility",
-            "enggay ka sa mga ngala na generic a antimotility ",
-            "ngen aden mga generic a antimotility"
-        ],
-        "response": [
-            "Su loperamide na generic a ngala na gamot na kadtagudo ka gaton sa botika. Nya ba na aden mga balangan nin mana su tablitas, capsules, o igen a gamot. Paginumen i nya ba a gamot. Nasisista su kaunot sa direction a nakabetad sa gamot engo di ka makagedam sa di mapya"
-        ],
-        "dimension": 7,
-        "index": 2
-    },
-    {
-        "pattern": [
-            "* branded * antimotility * ",
-            "ngen i mga ngala na branded a antimotility",
-            "enggay ka sa mga ngin ngala na branded a antimotility ",
-            "ngen aden brand na antimotility"
-        ],
-        "response": [
-            "Aden Imodium a branded a ngala na antimotility. Endu di ka makagedam sa di mapya, na nasisita a unutan su dosage o direction na nakabetad sa gamot a nan."
-        ],
-        "dimension": 7,
-        "index": 3
-    },
-    {
-        "pattern": [
             "* dose * antimotility *",
             "* (gamit|kan|inom) * antimotility * ",
             "* ukit * antimotility * ",
@@ -397,7 +365,7 @@ export let transFormedMaguindanaonRules = [
             "Inom ka sa ig upama ka penggamutan nengka I kadtagudo sa antimotilities. Su kadtagudo na makalenguk ged I namaba. Nya ba I enggula ka samaya. Sa mga wata a sampong gu dwa o mas matuwa pan san na paimon ka sa dwa katabletas kapasad nin makaudo. Edaw kapasad nin, painom ka sa isa ka tabletas uman den makaudo. Di ka papaginom sa sobra sa pat timan a tabletas su taw sa sagay.  Sa mga wata a siyaw taman sa sampong gu isa lagon o mga wata a 60 lbs I kaugat nin taman sa 95 lbs na painom ka sa saka tabletas endaw kapasad nin makaudo. Kapasad nin na painom ka sa sabad na tabletas a nan uman makaudo. Di ka papaginom su wata sa tlo ka tabletas sa sagay. Sa mga wata a nem taman sa walo lago o mga wata a 48 lbs taman sa 59 lbs na painom ka sa saka tabletas endaw kapasad nin makaudo.kapasad nin na painom ka sa sabad a tabletas sa sagay. Sa mga wata a lima lagon o mas wata man na idsa ka sa doctor panon I kagamot lon."
         ],
         "dimension": 7,
-        "index": 4
+        "index": 2
     },
     {
         "pattern": [
@@ -407,10 +375,10 @@ export let transFormedMaguindanaonRules = [
             "di ko katawan ngin i antimotility"
         ],
         "response": [
-            "Su antimotility na papegkalungaden nin su kapenggedi nu tyan. Ny anin penggulan na pembind nin su opioid receptors nu tinai endu pegkapaydo su kapengedi nin endu pegkalungat su kapagukit nu tay sa tinae."
+            "Su antimotility mana so Loperamide abpeg Imodium na papegkalungaden nin su kapenggedi nu tyan. Ny anin penggulan na pembind nin su opioid receptors nu tinai endu pegkapaydo su kapengedi nin endu pegkalungat su kapagukit nu tay sa tinae. Nya buntal na gamot a nya ba na aw na to na capsul, igen, o tablitas."
         ],
         "dimension": 7,
-        "index": 5
+        "index": 3
     },
     {
         "pattern": [
@@ -422,10 +390,10 @@ export let transFormedMaguindanaonRules = [
             "kano i kakan, kainom, kanggamot sa antimotility"
         ],
         "response": [
-            "Su antimotility na nya nen pengamutan na su sintomas na kapedtagudo. Papegkapaydun nin su kapenggedi nu tyan endu di ged pakaukit su pegken abpeg su ig. Nya ba na pangenggan nin su tinay sa oras para gasesep nin su ig abpeg nutrients sa tinay. Nya ba na pakagkapaydu sa kalyu na tay."
+            "Su antimotility  mana so Loperamide abpeg Imodium na nya nen pengamutan na su sintomas na kapedtagudo. Papegkapaydun nin su kapenggedi nu tyan endu di ged pakaukit su pegken abpeg su ig. Nya ba na pangenggan nin su tinay sa oras para gasesep nin su ig abpeg nutrients sa tinay. Nya ba na pakagkapaydu sa kalyu na tay.Nya buntal na gamot a nya ba na aw na to na capsul, igen, o tablitas."
         ],
         "dimension": 7,
-        "index": 6
+        "index": 4
     },
     {
         "pattern": [
@@ -439,7 +407,7 @@ export let transFormedMaguindanaonRules = [
             "Su antimolitities a mana su loperamide abpeg a imodium na pedtabang sa kapengedi na tyan endu pakagamot sa kapedtagudo. Nya nilan penggulan na pedtabang sa kasesep sa ig abpeg electroltes sa tay. Sabap sa nya ba na pegkapaydu i kapagudo nu taw. Nya mga a gamot na pangatan sa sakawras endu pegkapya i manggegedam nu taw. Ugayd na embibidaya i nya ba sa mga tao. Ugayd, na tanday ka dikena ba langon na pedtaguo na mapakaay enggamot sa nya ba endu aden side effects na nya ba."
         ],
         "dimension": 7,
-        "index": 7
+        "index": 5
     },
     {
         "pattern": [
@@ -457,7 +425,7 @@ export let transFormedMaguindanaonRules = [
             "So mga antimotility na di dayt inumen nu taw amengka gailay nengka a dehydrated to taw, mapulu i kayaw nin o aden lugo na gaudo nin ka nya ba na padsa na kaped a sakit na nasisita i pendoktor."
         ],
         "dimension": 7,
-        "index": 8
+        "index": 6
     },
     {
         "pattern": [
@@ -473,7 +441,7 @@ export let transFormedMaguindanaonRules = [
             "Su antimotilities na makalangot aw na to na makalugat pan. Da ka pendrive o penggulan sa mga galbel nasisita I kabfocus taman sa sa di nengka katawan ngin I enggulan na gamot a nan sa leka. Upamaka ka lemebag su tyan nengka na angay ka sa doctor gagan."
         ],
         "dimension": 7,
-        "index": 9
+        "index": 7
     },
     {
         "pattern": [
@@ -487,33 +455,7 @@ export let transFormedMaguindanaonRules = [
             "So antimotilities a mana su loperamide na aden mga side effects nin.  Da ka penggamit sa nya ba a agamot upama ka pebpilugo o maytem su tae. Upama ka aden bun sakit nengka andang sa atay o pamusungan na dikena bon ged I nya ba mapya a gamot sa leka."
         ],
         "dimension": 7,
-        "index": 10
-    },
-    {
-        "pattern": [
-            "* pila * antimotility * ",
-            "* antimotility * pila * ",
-            "ngen i alaga na loperamide ",
-            "gagapila i loperamide "
-        ],
-        "response": [
-            "Su loperamide na generic a gamot na nya malmo I alaga nin sa branded. Lu sa watsons, na pebpasan I nya bas a pitopulong ngu dwa (72 pesos) 2mg pat timan. Ugayd n abasi mas malmo I alaga nin I nya sa kaped pan a botika."
-        ],
-        "dimension": 7,
-        "index": 11
-    },
-    {
-        "pattern": [
-            "* embalangan * antimotility * ",
-            "ngen i aden mga balangan o buntal na loperamide ",
-            "madakel i embalangan, upaman o buntal na antimotility",
-            "panon labit ka ngin i balangan na antimotility"
-        ],
-        "response": [
-            "Aw na to na nya nin buntal I nya ba na capsul, igen, tablitas, o pedsesek sa pudit. Su gamot a antimotility mana loperamide na gapasa sa aw nato na tablitas sekanin o mana ig buntal nin."
-        ],
-        "dimension": 7,
-        "index": 12
+        "index": 8
     },
     {
         "pattern": [
@@ -528,33 +470,7 @@ export let transFormedMaguindanaonRules = [
             "Aden kaped a mga gamot sa antimotilitiesl mana su kapaginom sa tinabel a lawn. Si luya na aden anti-inflammatory properties nin a pakatabang sa tyan nu taw. Mayto bon su saging kagina mapulo i postassium nin a pakatabang sa kapengedi na tyan. Endu su saging na aden pectin nin na pakadtabang endu pegkakapal su tay nu taw a pedtagudo."
         ],
         "dimension": 7,
-        "index": 13
-    },
-    {
-        "pattern": [
-            "* generic *bismuth *",
-            "ngin e mga ngala generic na mga bismuth subsalicylate ",
-            "enggay ka sa mga ngala na generic a bismuth subsalicylate ",
-            "aden ngen generic a bismuth subsalicylate"
-        ],
-        "response": [
-            "Su Bismuth subsalicylate na generic a gamot a gapamasa sa botika. Endu gi ka makadalo upamaka ka kanen nengka namba na nasisista i unuti ka i nakasugat a kapegkan lon"
-        ],
-        "dimension": 7,
-        "index": 14
-    },
-    {
-        "pattern": [
-            "* branded *bismuth *",
-            "ngin  mga ngala branded a mga bismuth subsalicylate ",
-            "enggay ka sa mga ngala na branded a bismuth subsalicylate ",
-            "aden ngen branded a bismuth subsalicylate"
-        ],
-        "response": [
-            "Su Pepto-Bismon abpeg a Bismatrol na mga branded i namba. Endu gi ka makadalo upamaka ka kanen nengka namba na nasisista i unuti ka i nakasugat a kapegkan lon"
-        ],
-        "dimension": 7,
-        "index": 15
+        "index": 9
     },
     {
         "pattern": [
@@ -571,7 +487,7 @@ export let transFormedMaguindanaonRules = [
             "Su kapegkan sa bismuth subsalicyltae na depende sa buntal nin. kagina aden bidayan nu tablitas endu igen a to. \n        \n        Su mga wata a 12 lagon na mapakay keman sa dwa ka tablitas o 524mg uman 30 ka minutus taman sa 60 minutes taman sa dwa gay. Di dayt a kanin i nya subla sa 16 ka tablitas sa sagay.\n        \n        Upama manem ka igen i buntal na bismuth subsalicylate na su taw a 12 i umol ni na mapakay enggamot sa 30ml uman 30 minutes taman sa dwa gay. Di dayt a edsubla i kakan sa nya ba 240ml sa sagay.\n\n        Namba nalabit ko a nan na upaman bo i nan a panon i kanggamot lul. Su nakasugat a dose nin na dayt a pagunutan. Idsa ka sa doctor panon i kakan lun ka silan na katawan nilan i namba.\n        "
         ],
         "dimension": 7,
-        "index": 16
+        "index": 10
     },
     {
         "pattern": [
@@ -580,10 +496,10 @@ export let transFormedMaguindanaonRules = [
             "di ko katawan ngin i bismuth subsalicylate"
         ],
         "response": [
-            "Su bismuth subsalicylate ( pepto-Bismol) ka pamasa sa botika apya dala riseta nin. Pakagamot I namba sa pedtagudo. Nya nin penggulan na makapaenda nin su kadtagudo. Ugayd na inom aw na to na inom ka I namba makapila sa kagabyan. Su bismuth subasalicylate ( pept-bismol ) na mapya bon man, ugay na aw na to na makagkaytem sa dila o tae."
+            "Su bismuth subsalicylate mana su pepto-Bismol o bismatrol na ga pamasa sa botika apya dala riseta nin. Pakagamot I namba sa pedtagudo. Nya nin penggulan na makapaenda nin su kadtagudo. Ugayd na inom aw na to na inom ka I namba makapila sa kagabyan. Su bismuth subasalicylate ( pept-bismol ) na mapya bon man, ugay na aw na to na makagkaytem sa dila o tae. Nya ba gamot na nya nin buntal na tablitas, capsule, aw na to na igen."
         ],
         "dimension": 7,
-        "index": 17
+        "index": 11
     },
     {
         "pattern": [
@@ -594,10 +510,10 @@ export let transFormedMaguindanaonRules = [
             "ngin kanu i kakan, kanggamot, kainom sa bismuth subsalicylate"
         ],
         "response": [
-            "Su bismuth subsalicylate na kapamasa sa botika apya da riseta na doctor. Pakagamot I namba sa kadtagudo , sakit a tyan, endu su kanggedam a mana ka pakauta. Makadtabang I namba sa mga tao a istidi aden pebpawangan nin."
+            "Su bismuth subsalicylate na kapamasa sa botika apya da riseta na doctor. Pakagamot I namba sa kadtagudo , sakit a tyan, endu su kanggedam a mana ka pakauta. Makadtabang I namba sa mga tao a istidi aden pebpawangan nin. Nya ba gamot na nya nin buntal na tablitas, capsule, aw na to na igen."
         ],
         "dimension": 7,
-        "index": 18
+        "index": 12
     },
     {
         "pattern": [
@@ -606,10 +522,10 @@ export let transFormedMaguindanaonRules = [
             "panon ngin i kapenggalbek kapenggamot na bismuth subsalicylate"
         ],
         "response": [
-            "Su bismuth subsalicylate na nabedtuan sa antidiarrheal medicine o gamot para sa kapedtagudo kanina pakagkapya sekanin sa kablibag endu kaibped na ig nu tinae nu taw. Antibacterial bon sekanin a pakadtabang sa kapedtagudo. Su nya ba a gamot na pakatabang bon amayka pakagedam su taw sa kapanegas nu tyan nin, kangri nin, kadtabrik, endu kalangot sabap sa kinaibped nu ig nu lawas nin. Ugayd, na nasisista na tuntay ka na su bismuth subsalicylate na di dayt a kanen nu taw a aden allegy nin sa aspirin, allergy sa kabpilugo, o aden sakit na tinay nin. Endu mangingat ka kagina di dayt i nya ba ipakan sa mga wala apbeg maginay. Di dayt ka kanen ba i nya edsubla sa dwa gay."
+            "Su bismuth subsalicylate mana su pepto-Bismol o bismatrol na nabedtuan sa antidiarrheal medicine o gamot para sa kapedtagudo kanina pakagkapya sekanin sa kablibag endu kaibped na ig nu tinae nu taw. Antibacterial bon sekanin a pakadtabang sa kapedtagudo. Su nya ba a gamot na pakatabang bon amayka pakagedam su taw sa kapanegas nu tyan nin, kangri nin, kadtabrik, endu kalangot sabap sa kinaibped nu ig nu lawas nin. Ugayd, na nasisista na tuntay ka na su bismuth subsalicylate na di dayt a kanen nu taw a aden allegy nin sa aspirin, allergy sa kabpilugo, o aden sakit na tinay nin. Endu mangingat ka kagina di dayt i nya ba ipakan sa mga wala apbeg maginay. Di dayt ka kanen ba i nya edsubla sa dwa gay."
         ],
         "dimension": 7,
-        "index": 19
+        "index": 13
     },
     {
         "pattern": [
@@ -625,7 +541,7 @@ export let transFormedMaguindanaonRules = [
             "Di ka papegkan su taw sa namba umayka aden bleeding problems nengka, o sakit a malbo ka ebpilugo, aden ulcer nin, aden lugo na tay nin, aden allergy nin sa asipiri o pegkan ka sa kaped a salicylates. Di ka benel papegkan I wata o manguda a pegkayaw , pembatuken o aden chickenpox nin."
         ],
         "dimension": 7,
-        "index": 20
+        "index": 14
     },
     {
         "pattern": [
@@ -643,7 +559,7 @@ export let transFormedMaguindanaonRules = [
             "Aw na to na gaitem I tai nengka o dila nengka sa gamot a nan. Amayka makanggedam ka sa allergy mana di ka paka ginawa, blyu mga tapilak, blebag ka,  endu rye syndrome a katusan amayka pedtagudo ka a pakauta ka na dala bagel nengka abpeg kalangot ka a mana ka ga beleg na edtanggit ka I pasente sa doctor"
         ],
         "dimension": 7,
-        "index": 21
+        "index": 15
     },
     {
         "pattern": [
@@ -658,33 +574,7 @@ export let transFormedMaguindanaonRules = [
             "Inom ka sa di maldsik a ig umayka mininom ka sa bismuth subsalicylate ( pepto-bismol). Su kadtagudo ga ludus nis u ig na lawas bali lenukan ka edsamikel. Tu banan su kapaginom sa ig na masya I makatabang nin kano taw. Upama ka enggamot ka na lenuk ka su capsule. Di ka pedsepa su gamot."
         ],
         "dimension": 7,
-        "index": 22
-    },
-    {
-        "pattern": [
-            "*bismuth * pila * ",
-            "* pila *bismuth * ",
-            "gagapila i bismuth subsalicylate",
-            "ngen pila i alaga na bismuth subsalicylate"
-        ],
-        "response": [
-            "Gapamasa I namba sa saka pakete. Lu sa iprice.ph na mga lima gato I alaga nan amba. Ugayd na di ged mapulo alaga nin upama ka pamasan nengka sa gaga isa bo"
-        ],
-        "dimension": 7,
-        "index": 23
-    },
-    {
-        "pattern": [
-            "* embalangan * bismuth * ",
-            "madakel i embalangan, upaman o buntal na bismuth subsalicylate",
-            "ngen i mga kaped a embalangan nu gamot a bismuth subsalicylate ",
-            "labit panon aden ngin balangan na bismuth subsalicylate"
-        ],
-        "response": [
-            "Su bismuth subsalicylate na nya nin buntal na mana tablitas, capsule, at na to na igen. Depende I nan sa minumbal lon endo so penggamutan nin."
-        ],
-        "dimension": 7,
-        "index": 24
+        "index": 16
     },
     {
         "pattern": [
@@ -699,7 +589,7 @@ export let transFormedMaguindanaonRules = [
             "Mapakay ka mamasa sa antimotitilities. Aden bon mga kaped a mapakay nengka kanen na dikena gamot a gapamasa sa botika. Mapakay ka keman sa luya o kalawag kagina nya ba na pakadtabang sa lebag abpeg aden antimicrobial property nin a pakadtabang sa pakagedam sa kapedtagudo. mapakay ka bon minom sa beteng kagina madakel i electrolytes nin. "
         ],
         "dimension": 7,
-        "index": 25
+        "index": 17
     },
     {
         "pattern": [
@@ -712,46 +602,14 @@ export let transFormedMaguindanaonRules = [
             "endaw penggamutan i kapedtagudo"
         ],
         "response": [
-            "Su kadtagudo na mapakay na apya sa walay nu bo gamuti. Kapya bon I nan mga pila gay. Ugayd na amayka di den a benel mapya I kangegedam nengka, limambas den sa dwa gay I kauget nin, pebpilugo I tay nin o pegkayaw pan sekanin, na nya mapya san na edtanggit ka den sa ospital I pasente nengka."
+            "Su kadtagudo na mapakay na apya sa walay nu bo penggamutan. Egkapya bon I nan mga pila gay. Ugayd na amayka di den a benel mapya I kangegedam nengka, limambas den sa dwa gay I kauget nin, pebpilugo I tay nin o pegkayaw pan sekanin, na nya mapya san na edtanggit ka den sa ospital I pasente nengka."
         ],
         "dimension": 5,
-        "index": 5
+        "index": 4
     },
     {
         "pattern": [
-            "* problema * tagudo * ",
-            "* makadtaday * tagudo * problema * ",
-            "* problema * makadtaday * tagudo * ",
-            "* tagudo * problema * makadtaday *",
-            "ngin i mga di mapya  mabproblema nu taw a pedtagudo",
-            "amayka padtadayn i kapedtagudo na ngin i manggula",
-            "aden mga taw a kalunsanan mangingat i sakit nin sa kapedtagudo",
-            "ngen i kapedtagudo",
-            "ngin i problema na tagudo"
-        ],
-        "response": [
-            " Su ta a pedtagudo na aw na to na makagedam sa kagkasakit na tyan, makailay sa lugo sa tayo nin, edtagetut, malmo malugat, pegkayaw, pegkegkel, masla ged kaudo nin, mana galangot o panguta pedtandang. Nya ba kadtagudo na pakaibped sa ig nu lawas ka paunot pakaudo. Umayka su taw na lenukan edsamikel, na tanda ba I nan na kulang sekanin sa ig endu mga electrolytes ( sodium, chroride, postassium endu bicarbonate) a papedtalagoy salawas nin. Amayka edsalseg na makapatay ba I nanba a sakit. Tu ba nan importati a painumen sa taw sa ig edsamikel. Su kadtagudo na sabapan bon na malabsorption. Nya ba na kanggula amayka di kasesep nu lawas su dalem na pegken sya sa tyan. Makangguna ba I nyaba sa kagkalubay nu lawas. Aw na to na namba kadtagudo a nan na kaped a sakit a kangegedam nu taw. "
-        ],
-        "dimension": 1,
-        "index": 10
-    },
-    {
-        "pattern": [
-            "* ebpawang * tagudo * ",
-            "endaw mangay i taw a pedtagudo",
-            "endaw dayt a ebpawang i pedtagudo",
-            "gapakay penggamutan i kapedtagudo sa walay",
-            "aden kabpawangan a taw a pedtagudo"
-        ],
-        "response": [
-            "Kagamutan nengka bon I kadtagudo apya san ka bo sa walay. Nya kan enggula na inom ka sa gamot a gapamasa bon sa botika endu pegkapya I kanggegedam nengka. Amayka maylay nengka a pebpilugo I kapagudo nengka, pegkayaw ka o di nan aka dwa gay den I kapedtagudo nengka na nya mapya na pailay ka sa doctor."
-        ],
-        "dimension": 5,
-        "index": 6
-    },
-    {
-        "pattern": [
-            "* sintomas * diarrhea * ",
+            "* sintomas * \bdiarrhea\b(?!_) * ",
             "* (kataw) * tagudo * ",
             "panon i kataw na taw na sekanin a pedtagudo",
             "ngin i mga sintomas na kapedtagudo",
@@ -760,13 +618,14 @@ export let transFormedMaguindanaonRules = [
             "ngin i pagilayn sintomas senyales sa pedtagudo",
             "aden mga signs, symptoms, sintomas, senyales , padsa o tanda na kapedtagudo",
             "labit ka o enggay ka sa listahan na sintomas o senyales ng pedtagudo",
-            "ngin i sintomas tanda signs na diarrhea"
+            "ngin i sintomas tanda signs na diarrhea",
+            "Panon I katuntay kataw sintomas tanda o signs na su taw na pedtagudo"
         ],
         "response": [
             "Madakel I sipat na kapedtagudo. Kadakelan sa  mga taw na nya nilan kanggedam na pedsakit I tyan nilan, pegkasla tyan nila, aden lugo na tay nilan, pedtagetut silan a paka tik pan, galugat ket, pegkayaw, pegkegkel, pakaudo den edtandang, masla I ka nga udo din, aw na to na pakauta pan."
         ],
         "dimension": 1,
-        "index": 11
+        "index": 10
     },
     {
         "pattern": [
@@ -779,7 +638,7 @@ export let transFormedMaguindanaonRules = [
             "Su mga kagaw a mana su virus na maka influenza. Pakaalat I namba amayka su taw na pembatok, pembalen, o pedtagedteb ka pakadtubpa nin I yug nin sa sa sambel. Namba na paakalat sa tao amayka ka sengot nin sa ngali o ngilong nin."
         ],
         "dimension": 1,
-        "index": 12
+        "index": 11
     },
     {
         "pattern": [
@@ -792,7 +651,7 @@ export let transFormedMaguindanaonRules = [
             "Makwa nengka I influenza umayka makasengap ka sa sambel nu aden sakit nin. Su mga virus na kapakayan bun a makaalat sa leka amayka maami nengka I mga katamanan a natubpan na kagaw a to. Nya nin mana na kapakay nengka makwa umayka nadeketan nengka I langon na naabpel nu aden a to sakit nn. Ugayd na mapakay bon na upama ka su gay na pedsambi den pendtandang na makandadalo bun I to ba."
         ],
         "dimension": 1,
-        "index": 13
+        "index": 12
     },
     {
         "pattern": [
@@ -805,7 +664,7 @@ export let transFormedMaguindanaonRules = [
             "Su taw a pegkayaw na nya mapya a enggulan nin demegka sa walay sa apya sagay. Su taw a aden influenza nin na pegkabagel mga dwa o pito gay inganat na kinaludso na sakit nin. Upama ka demegka su taw, su lawas nengka na maka pokus sa kaawa na virus a nan. Endo, su kadegka sa walay na makatabang endu di ka kaalatan I mga kaped nengka."
         ],
         "dimension": 1,
-        "index": 14
+        "index": 13
     },
     {
         "pattern": [
@@ -819,7 +678,7 @@ export let transFormedMaguindanaonRules = [
             "Su isa a pagilayan upama ka aden sakit nengka a kambabatokbatok na amayka pegkegkel o pegkayaw su lawas nin. Namba na makapagating. Kaped a mga taw na aw na to a manguta endu edtagudo. Tu ba nana, nasisita su ka inom sa madakel a ig endu kasambiyan i ig a blyu na lawas nengka"
         ],
         "dimension": 1,
-        "index": 15
+        "index": 14
     },
     {
         "pattern": [
@@ -833,7 +692,7 @@ export let transFormedMaguindanaonRules = [
             "\n        Su Center of Diseases and Control na nya nilan nadtalo na su taw a aden trangkaso nin na aden pila timan nin a sintomas. Aw na to na aden mayaw nilan, batok, blebag a tideg, sepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa.\n\n        Katyakapan nengka su dalo nengka apya da kaped nengka. Aden mga gamot a gapamasa sa botika sa da riseta nin a makadtabang sa leka sa kaped nin a sakit mana su mayaw endu kadsakit na ulo. Upamaka ka aden dalo nengka na degka ka pan sa walay taman sa di embaba su kayaw nengka sa 24 oras. Iom ka sa madakel a ig, da ka ged pegkategel, endu kan na ebpyapya. \n        \n        Ugayd na labi bon I kapya nin upama ka mapailay sa doctor ka engu ka nilan ka enggan sa risita na gamot endu madtalo nila ngin I kapayan nengka engullan."
         ],
         "dimension": 1,
-        "index": 16
+        "index": 15
     },
     {
         "pattern": [
@@ -846,20 +705,7 @@ export let transFormedMaguindanaonRules = [
             "Su pedsakit sa influenza na aw na to na egkayaw sekanin abpeg embabatok, blebag a tidek nin, pedsepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa.\n\n        Upama ka aden dalo nengka na degka ka. Da ka blyu sa walay taman sa di maawa I kayaw nengka sa 24 oras, inom ka sa madael a ig, di ka blugata I lawas nengka, endu kan ka ebpyapya. Kagamutan ka bon upama ka makakan ka sa gamot a ka nga ton bun sa botika.\n        \n        Ugayd na labi bon I kapya nin upama ka mapailay sa doctor ka engu ka nilan ka enggan sa risita na gamot endu madtalo nila ngin I kapayan nengka engullan.\n        "
         ],
         "dimension": 1,
-        "index": 17
-    },
-    {
-        "pattern": [
-            "* (ebpawang|kailay) * doctor * influenza * ",
-            "nginto ka mangay to taw sa doktor amayka nakagedam sa influenza",
-            "kano besen i dayt a ka angay nu taw a  nakagedam sa influenza sa doktor",
-            "panon i katabang na doktor sa aden influenza nin"
-        ],
-        "response": [
-            "Su kambabatok na kagamutan bun apya da enggulan nengka. Ugayd na makalunsan ba I nya ba sa kaped a sakit nu tao. Upama ka aden kaped a sakit nengka , na nya basi mpya enggulan na pailay ka sa doctor."
-        ],
-        "dimension": 5,
-        "index": 7
+        "index": 16
     },
     {
         "pattern": [
@@ -873,7 +719,7 @@ export let transFormedMaguindanaonRules = [
             "Su pedsakit sa influenza na aw na to na egkayaw sekanin abpeg embabatok, blebag a tidek nin, pedsepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa.\n\n        Kapakay nengka bon na tyakapi ka bo I ginawa nengka. Tupan ka pedsaldseg i dalu nin na nya labi a mapya na pailay ka sa doktor minuna den upama ka isa ka sa mga aden kaped nin pan a dalo. "
         ],
         "dimension": 5,
-        "index": 8
+        "index": 5
     },
     {
         "pattern": [
@@ -887,13 +733,14 @@ export let transFormedMaguindanaonRules = [
             "ngin i mapya a ebpasen amayka influenza",
             "labit ka sa mapakay a galbeken nu taw a aden influenza",
             "ngin i galbeken na taw a pakagedam sa influenza",
-            "panon i kagamot kaawa sa influenza"
+            "panon i kagamot kaawa sa influenza",
+            "panon kagamot sa influenza"
         ],
         "response": [
             "\n        Su influenza o flu na viral infect na pakabinasa sa kapenginawa nu respiratory system. Nya mapya enggulan na taw upama ka pakagedam sekanin sa namba na minom sekanin sa madakel a ig endu di sekanin ma dehydrate.\n        \n        Aden bon mga gamot a gapamasa sa botika a da resita nin a mapakay nengka paginumen. Mapakay a enggamot ka sa antihistamines endu egkapya mangiginawa nengka amayka aden magatel nengka, aden ngug nengka o pegkagatel ka. Su analgesic manem mana su acetaminophen o ibuprofen na pakagamot sa sakit na lawas abpeg sa mayaw. Su mga non steroidal anti-inflammatory drugs (nsaids) na meto bun ba i penggulan nun. Upama ka pedsepu ka a benel a di ka pagainawa na mapakay ka enggamot sa decongestants. Upama manem ka pembatoken ka na tekaw na gemamit sa antitussives. Mapakay bon a keman ka sa lozenges upama manem ka magatel i tidek nengka o pembatok ka.  \n\n        Aw na to na su pagospitalen su taw upama ka di den a benel menda i influenza nin. Nya mapya a enggulan nu taw tangkan nin su nganin nganin a makainfluenza endu mapatebek sikanin sa bakuna endu di edsakit.\n        "
         ],
         "dimension": 1,
-        "index": 18
+        "index": 17
     },
     {
         "pattern": [
@@ -909,7 +756,7 @@ export let transFormedMaguindanaonRules = [
             "Saguna na dala pan gamot sa flu, ugayd na su kambakuna na makadtabang sa leka. Su flu vaccine abpeg su kapailay sa doctor uman lagon na makatabang bun. Namba na makatabang para di ged pegkabagel I sakit nu tao. Su mga tao a aden sakit nin mana su sakit na pamusungan na katabangan nin. Kagina ka mayto na su kapaguspital sabap sa nya na di ged manggula. Makatabang bon I nyaba sa magingay, wata abpeg a tao sa ubay nengka."
         ],
         "dimension": 5,
-        "index": 9
+        "index": 6
     },
     {
         "pattern": [
@@ -919,13 +766,14 @@ export let transFormedMaguindanaonRules = [
             "nginto panon to ka di mapya mobay sa aden influenza nin",
             "eduken panon a ka nasisita i katangka sa taw a aden influenza nin",
             "panon a ka di ubayn i taw a aden influenza nin",
-            "enduken ka temangka sa influenza"
+            "enduken ka temangka sa influenza",
+            "panon i katangaka sa influenza"
         ],
         "response": [
             "Da ka aged pagubay sa kaped nengka upama ka aden sakit nin. Upama ka seka i aden sakit nin na tangka ka. da ka pagubay sa saka lepa sa mga tao a pembabatok. Tangka ka bon sa tayn I aden ngog nin. Da ka ged pagamong sa madakel a taw ka makwa nengka i kagaw a nan. Enggula ka I nyaba para di den makalanag I sakit a nya."
         ],
         "dimension": 5,
-        "index": 10
+        "index": 7
     },
     {
         "pattern": [
@@ -940,7 +788,7 @@ export let transFormedMaguindanaonRules = [
             "Tagubi ka I ngali abpeg ngilong nengka sa tissue upama ka pembatuken ka o pembalen ka enggu di maalat I sakit a nan sa kaped nengka."
         ],
         "dimension": 5,
-        "index": 11
+        "index": 8
     },
     {
         "pattern": [
@@ -953,7 +801,7 @@ export let transFormedMaguindanaonRules = [
             "Gagas ka sa lima edsamikel para di nengka madtapik I kagaw a nan. Upama ka dala sabon abpeg a ig, na bubusi ka lima nengka sa alchohol."
         ],
         "dimension": 5,
-        "index": 12
+        "index": 9
     },
     {
         "pattern": [
@@ -968,25 +816,25 @@ export let transFormedMaguindanaonRules = [
             "Gamit ka sa facemask enggu di ka kaalatan  na virus kagina namba na makwa bun sa sambel o upama ka maami nengka o magamit nengka su nganin ngain a gamit na a naabpel nu tao  a to"
         ],
         "dimension": 5,
-        "index": 13
+        "index": 10
     },
     {
         "pattern": [
-            "* (ingat|kasambot|tangka) * influenza * ",
-            "* kapakay * influenza * kasambutan *",
+            "* (ingat|tangka|kapananggila) * influenza * ",
+            "* influenza * kapananggila * ",
             "nasisita a galbeken nu taw endu di sekanin kaalatan na influenza",
             "ngin galbeken enggulan nu taw para di sekanin maka kwa endu makatangka kaalatan sa influenza",
             "panon ngen mapakay a enggulan nu taw endu di edsakit sa influenza",
             "panon enggulan nu taw para di sekanin maka kwa kaalatan makatangka sa influenza",
             "panon galbeken taw endu di sekanin kaalatan na influenza",
-            "panon kasambot katangka kaingat sa influenza",
-            "ngin mapakay enggulan endu di ma makakwa sa influenza"
+            "ngin mapakay enggulan endu di ma makakwa sa influenza",
+            "panon i kapananggila sa influenza"
         ],
         "response": [
             "Upama ka pakagaga ka na pabakuna ka. Tangkay ka su mga taw a aden sakit nin. Upamak ka seka su aden sakit nin na lenek kawm pan sa lawas endu di mganalat sakit nengka. Tagubi ka istidi i ngali abpeg su ngilong nengka endu di makaalat i sakit a nana. Gmait ka sa facemask. Pamlimpyo ka mana su kakagad sa lima endu di ka pagamit i mata , ngilong abpeg a ngali nengka endu di maka ludep i virus a nan sa lawas nengka."
         ],
         "dimension": 1,
-        "index": 19
+        "index": 18
     },
     {
         "pattern": [
@@ -996,10 +844,7 @@ export let transFormedMaguindanaonRules = [
             "* influenza * pegken * ",
             "* pegken * (kapakay|mapya|tabang) * influenza *",
             "* pegken * influenza * (kapakay|mapia|tabang) * ",
-            "* pegken * influenza * ",
-            "labit ka ngin i mga mapya pegken paginumen a makadtabang sa taw a pakagedam sa influenza ",
-            "labit ka ngin i mapakay pakan ipasepa paginumen sa taw a pakagedam sa influenza",
-            "labit ka ngin i mga pegken a kapakay a pamasan kanen inumen nu taw a pakagedam sa influenza"
+            "* pegken * influenza * "
         ],
         "response": [
             "Aden embalangan a pegken na makadtabang endu engkabagel ka sa malengkas. Nya nin umpaman na su sabaw na manok, sapi o kamo na makadtabang sa dehydration engo su kayaw nin ma makadtabang sa kagkapya na tidek. Kapakay ka bon keman sa lansuna kagina makakagkapya bon I nya bas a sakit abpeg su mga padsa nin. Su mga pegken a to a aden probiotic nin a mana s yogurt na kapakay bon makadtabang sa kapegpadadakel sa mapya a bakterya na tinae abpeg nu lawas. Su mga unga na kayo abpeg su kamo na aden vitamin c na makadtabang bon. Nya nin mga kaped I nya ban a su paminta, kalamansi, grapes abpeg su mga madakel a to I lawn I a kamo. Kapakay ka bon keman sa kamo a mana su broccoli. Su oatmeal bon na aden nutrients nin mana su copper, iron, selenium, zinc fiber endo proteen na makagkabagel bon sa lawas. Kaped pan sa makadtabang na su mga luya abpeg a kalawag. Nya bon tanto a makadtabang na di ka blepatani I kainom sa madakel a ig. "
@@ -1043,7 +888,9 @@ export let transFormedMaguindanaonRules = [
             "ngin i pegken a di mapakay dayt inomen kanen na pendalo sa influenza ",
             "ngin i di kanen inumem pamasan nu daw a pendalo sa influenza",
             "nakadalo sa influenza ngin i di i pakan lon",
-            "pakenen ko pendalo a nya sa inlfuenza nin i pakan lun"
+            "pakenen ko pendalo a nya sa influenza nin i pakan lun",
+            "ngin i pegken a pananggilan upama ka aden influenza",
+            "Ngen a mga pegken I di ko dayt a kanen inumen upama ka aden trangkaso"
         ],
         "response": [
             "Upama ka pakagedam ka sa flu na da ka paginom engo pegkan sa mga caffeinated drinks, coks, lanan ged, mategas a mga pegken, abpeg mga mamis a bnel a pegken. Tekaw ka kan sa mga aden sabay nin engo kasambiyan su mga nadadag a ig nu lawas. Kan ka sa pan, patatas, emay, saging, manok abpeg seda."
@@ -1062,33 +909,7 @@ export let transFormedMaguindanaonRules = [
             "Aden mga taw a mangingat sabap sa influenza. Nya ba silan a mana su mga nem ulan o mga matuwa. Abpeg su mga taw a to a aden mga sakit nin a kaped mana su umes, sakit a pamusungan, diabetes, sakit sa kidney, sakit sa atay, mga di ged pakaginawa, so mga malubay a taw abpeg su sobla sobra den i kasebud nin a mga taw."
         ],
         "dimension": 1,
-        "index": 20
-    },
-    {
-        "pattern": [
-            "*generic * antihistamine * ",
-            "enggay ka sa mga ngala na generic a antihistamines",
-            "ngin  mga ngala generic a mga antihistamines",
-            "ngen i generic a antihistamine"
-        ],
-        "response": [
-            "Su citerizine na isa a kila a generic antihistamine a gapamasa sa botika. Nya ba a gamot na madakel i ngala nin depende sa dalpa abpeg minumbal lun. Upama ka pakagedam ka sa influenza, na degka ka, inom ka sa madakel a ig apeg da ka ged pagubay sa mga pembidsul. Nasisita i ka pailay sa doktor o pharmacist upama ka keman ka sa nya ba gamot. "
-        ],
-        "dimension": 7,
-        "index": 26
-    },
-    {
-        "pattern": [
-            "* branded * antihistamine * ",
-            "ngin ngala mga branded a mga antihistamines",
-            "enggay ka sa mga ngala na branded a antihistamines",
-            "ngen i branded a antihistamine"
-        ],
-        "response": [
-            "Su Bendryl na isa sa mga kila a branded a antihistamine. Tanay na na nya ba mga gamot na kanen bo upama ka aden guide na health profession. Upama ka pakagedam ka sa influenza, na degka ka, inom sa ig, endu da ka pagubay sa bel."
-        ],
-        "dimension": 7,
-        "index": 27
+        "index": 19
     },
     {
         "pattern": [
@@ -1102,10 +923,10 @@ export let transFormedMaguindanaonRules = [
             "panon ngin i dose na antihistamines"
         ],
         "response": [
-            "Su antihistamine na kapay nengka pegkanin apya da ka kan, da ka makainum sa ig o gatas enggu di get kagatel tyan nengka. Nyaba I enggula ka upama ka keman ka sa citerizine. Su nem lagon a wata apeg a matuwa na kapakayan a keman sa lima taman sa sapulo ka milligram uman gay. Su pat taman sa nem lagon na kapakay kelan sa lima ka milligram o dwa enggula sabad maka dwa sa sagay. So tayn manem I da makasot sa pat lagon na d papegkanen sa nya ba a gamot."
+            "Su antihistamine mana su Citerizing abpeg a Benadryl na kapay nengka pegkanin apya da ka kan, da ka makainum sa ig o gatas enggu di get kagatel tyan nengka. Nyaba I enggula ka upama ka keman ka sa citerizine. Su nem lagon a wata apeg a matuwa na kapakayan a keman sa lima taman sa sapulo ka milligram uman gay. Su pat taman sa nem lagon na kapakay kelan sa lima ka milligram o dwa enggula sabad maka dwa sa sagay. So tayn manem I da makasot sa pat lagon na d papegkanen sa nya ba a gamot."
         ],
         "dimension": 7,
-        "index": 28
+        "index": 18
     },
     {
         "pattern": [
@@ -1114,10 +935,10 @@ export let transFormedMaguindanaonRules = [
             "labit ka kon ngin i antihistamines"
         ],
         "response": [
-            "Su anti histamine na embalangan a gamot na penggamiten na madakel sa kapenggamot s allergy. Nya ba silan na pakadtabang upama ka madakel ged I histamine nu taw. Nya ba na chemical na pagumbalen nu lawas nu gagaysa. Nya ba gamot na penggamitin nu madakel sa allergy sa polen abpeg kaped pan. Ugayd na kapakayan bon I penggamot sa kaped a sakit mana su sakit na nya, sepu, anxiety abpeg kaped pan."
+            "Su antihistamine mana su Citerizing abpeg a Benadryl na embalangan a gamot na penggamiten na madakel sa kapenggamot s allergy. Nya ba silan na pakadtabang upama ka madakel ged I histamine nu taw. Nya ba na chemical na pagumbalen nu lawas nu gagaysa. Nya ba gamot na penggamitin nu madakel sa allergy sa polen abpeg kaped pan. Ugayd na kapakayan bon I penggamot sa kaped a sakit mana su sakit na nya, sepu, anxiety abpeg kaped pan. Nya ba gamot na madakel I embalangan nin mana igen, ipegkugil, syrup, gel, eyedrops, tablitas, capsules, creams abpeg I pegsumbok sa pudit nu taw."
         ],
         "dimension": 7,
-        "index": 29
+        "index": 19
     },
     {
         "pattern": [
@@ -1129,10 +950,10 @@ export let transFormedMaguindanaonRules = [
             "ngin i gamit na antihistamines"
         ],
         "response": [
-            "Su anti histamine na kagamit sekanin enggu pakatabang sa allergy o mga kagkagatel. Nya ba gamot na penggamutan i sobla kadakel na histamine a pagumbalen na lawas upamaka ka pedsakit su taw. Su antihistamines na pengamiten  nu mga taw a aden allergic reaction nilan sa polens engu allergens. Pakagamot bon i nya ba sa kaped a sakit mana su sakit na nya, sepu, anxiety abpeg kaped pan."
+            "Su antihistamine mana su Citerizing abpeg a Benadryl na kagamit sekanin enggu pakatabang sa allergy o mga kagkagatel. Nya ba gamot na penggamutan i sobla kadakel na histamine a pagumbalen na lawas upamaka ka pedsakit su taw. Su antihistamines na pengamiten  nu mga taw a aden allergic reaction nilan sa polens engu allergens. Pakagamot bon i nya ba sa kaped a sakit mana su sakit na nya, sepu, anxiety abpeg kaped pan.Nya ba gamot na madakel I embalangan nin mana igen, ipegkugil, syrup, gel, eyedrops, tablitas, capsules, creams abpeg I pegsumbok sa pudit nu taw."
         ],
         "dimension": 7,
-        "index": 30
+        "index": 20
     },
     {
         "pattern": [
@@ -1147,7 +968,7 @@ export let transFormedMaguindanaonRules = [
             "Su antihistamines na penggamiten sa kapenggamot sa hay fever o kapegkayaw abpeg allergy o mga kagkagated. Papedtalenen nin su histamines a pagumbalen nu lawas upama ka aden sakit na taw a sabapan na kagkagatel, kambals, blyu edtandang i ngong, abpeg kadsakit na mata."
         ],
         "dimension": 7,
-        "index": 31
+        "index": 21
     },
     {
         "pattern": [
@@ -1166,7 +987,7 @@ export let transFormedMaguindanaonRules = [
             "Madakel sa mga taw na da manggulan nilan upama ka minom sa antihistamines. Ugayd na aden mga taw mana su mga maginay, papedsusu, wata , pegkan sa kaped a mga gamot, aden mga sakit nin mana su sakit a pamusungan, sakit na atay, sakit na kidney o eplipepsy na mangingat sa kapegkan sa nya ba gamot.\n        "
         ],
         "dimension": 7,
-        "index": 32
+        "index": 22
     },
     {
         "pattern": [
@@ -1181,7 +1002,7 @@ export let transFormedMaguindanaonRules = [
             "Mana kaped a gamot, aden dikena mapya a epekto na antihistamine. Nya ba na embidabida sa taw.Ugayd na su antihistamines na makalangot, makagkalbog sa kailay, makagkalgen sa kaudo, abpeg kagkalgen na ka titi. upama ka aden sakit nengka o pegkan ka sa kaped a gamot na nasisita i ka id sa nengka sa doktor o pendagang sa gamot mana su pharmacist panon i nakasugat a kakan sa nya ba.s\n        "
         ],
         "dimension": 7,
-        "index": 33
+        "index": 23
     },
     {
         "pattern": [
@@ -1195,32 +1016,7 @@ export let transFormedMaguindanaonRules = [
             "Upama ka keman ka nya ba a gamot na da ka paginom sa aden alchohol nin abpeg a makandadalangot. Da ka ged pengalbek sa mga galbekan a makapagitong ka gayd. Panginat ka bon upama ka su aden sakit nin na aden hepatic abpeg a renal impairment nin. Pagidsan bun sa matuwa ka nya malmo nilan mangedam I dikena mapya a epekto na nya ba."
         ],
         "dimension": 7,
-        "index": 34
-    },
-    {
-        "pattern": [
-            "* pila * antihistamine * ",
-            "* antihistamine * pila * ",
-            "ngen i alaga na antihistamines",
-            "pila gagapila alaga na antihistamines"
-        ],
-        "response": [
-            "Su alaga na citerizine na embidabida. Su antihistamine a mana su citerizine na 10mg na nya nin alaga sa 15 pilak sa Wasons. Su Benadryl manem na 41 pilak."
-        ],
-        "dimension": 7,
-        "index": 35
-    },
-    {
-        "pattern": [
-            "* embalangan * antihistamine  * ",
-            "ngen i mga embalangan nu gamot a antihistamines",
-            "labit panon aden mga balangan na antihistamine"
-        ],
-        "response": [
-            "Su antihistamines na madakel I embalangan nin mana igen, ipegkugil, syrup, gel, eyedrops, tablitas, capsules, creams abpeg I pegsumbok sa pudit nu taw. "
-        ],
-        "dimension": 7,
-        "index": 36
+        "index": 24
     },
     {
         "pattern": [
@@ -1234,33 +1030,7 @@ export let transFormedMaguindanaonRules = [
             "Tekaw ka kan sa luya. Niya tig na Sinus and Allergy Wellness Center na namba na natural a histamine. Niya nin mana na isa sekanin a pakadtabang sa lawas. So luya na mapya a makadtabang a gamot kagina pakadtabang sekanin sa lawas. Kapakay ka mumbal sa sa ti para makatabang sa kapedsakit na ulo. Upama ka pagigop ka manem sa ti na, pagebaw ka it to ba. Mayto bon na tekaw ka gamit sa kaped pan a gamut mana su kalawag ka mabagel I namba a natural a gamot."
         ],
         "dimension": 7,
-        "index": 37
-    },
-    {
-        "pattern": [
-            "* generic * analgesic  * ",
-            "ngin ngala mga generic a mga analgesics",
-            "enggay ka sa mga ngala na generic a analgesics",
-            "ngin i mga generic a analgesic"
-        ],
-        "response": [
-            "Su ibuprofen, acetaminophen, aspirin paracetamol, naproxen abpeg ketoprofen na mga generic analagesics. Nya ba ma gamot na pepedtalnen nin su kapagumbal nu lawas sa prostraglandins a chemical a pakangguna sa kablebag abpeg su masakit a kangegedam. Sabap sa nya ba na su mga analgesics na pakatabang sa kapapegkapaydo sa masakit abpeg mga blebag sa lawas"
-        ],
-        "dimension": 7,
-        "index": 38
-    },
-    {
-        "pattern": [
-            "* branded * analgesic * ",
-            "ngin ngala mga branded a mga analgesics",
-            "enggay ka sa mga ngala na branded a analgesics a gamot",
-            "ngen i mga branded a analgesic"
-        ],
-        "response": [
-            "Su biogesic abpeg a calpol na mga branded a mga paracetamol. Nya ba ma gamot na pepedtalnen nin su kapagumbal nu lawas sa prostraglandins a chemical a pakangguna sa kablebag abpeg su masakit a kangegedam. Sabap sa nya ba na su mga analgesics na pakatabang sa kapapegkapaydo sa masakit abpeg mga blebag sa lawas"
-        ],
-        "dimension": 7,
-        "index": 39
+        "index": 25
     },
     {
         "pattern": [
@@ -1276,7 +1046,7 @@ export let transFormedMaguindanaonRules = [
             "Su analgesics na embalangan na gamot na papagenda sa mga masakit sa lawas. Maya ba I kapengkan sa nya ba gamot. Su ibuprofen na nya nin den pinaka masla a dose nin a makaysa nengka kanin na 400mg bo. Sa sagay n ataman sa 1200mg I kapakayan. Upama ka naproxen, na kapakay ka keman sa 500mg sa makaysa. Ugayd n ataman bo I namba sa 750 sa sagay.. sa acetaminophen na taman sa 1000mg  sa sagay ugayd na di kapakayan na lumampas ka pan sa 400mg. sa aspirin , na kapakay I 1000mg a makaysa a dose ugayd na sa gay na 3000mg bo sa mga taw a mababa I umul nin sa 65. upama manem ka mas matuwa pan san na taman bo sa 200mg."
         ],
         "dimension": 7,
-        "index": 40
+        "index": 26
     },
     {
         "pattern": [
@@ -1285,10 +1055,10 @@ export let transFormedMaguindanaonRules = [
             "ngin i nadtalo a analgesics"
         ],
         "response": [
-            "Su mga analgesics na nabedtuan a pain killers a pagamot sa embalangan na masakit mana su masakit a ulo , su mga injuries, abpeg arthitis. Su mga anti-inflammatory analgesics na mga gamot a papegkapaydon nin su kablebgag. So opoiod analgesics manem na pedsambian nin su panun su kapegkagedam sa sakit nu taw sya kanu utek nin."
+            "Su mga analgesics mana acetaminophen, ibuprofen, paracetamol, biogesic abpeg na calpol, na nabedtuan a pain killers a pagamot sa embalangan na masakit mana su masakit a ulo , su mga injuries, abpeg arthitis. Su mga anti-inflammatory analgesics na mga gamot a papegkapaydon nin su kablebgag. So opoiod analgesics manem na pedsambian nin su panun su kapegkagedam sa sakit nu taw sya kanu utek nin. Su nya ba a gamot na nya nin buntal na igen, nasal spray, tablitas, capsules, aw na to na powder."
         ],
         "dimension": 7,
-        "index": 41
+        "index": 27
     },
     {
         "pattern": [
@@ -1301,10 +1071,10 @@ export let transFormedMaguindanaonRules = [
             "ngin i gamit na analgesics"
         ],
         "response": [
-            "Su mga over the counter a analagesics na gapamasa sa parmachies mana su ibuprofen abpeg a acetaminophen o paracetamol na pakagkapya sa mga masakit. Ugayd na ibibidaya i kapya na gamot a nan sa upaman nu sakit, su  kabagel nin, enggo su kadakel nu gamot a pegkanen. Su pain killers na gapamasa sa da resita nin na kapakayan penggamuten sa mga dikena ged mga masakit a kangedam nu taw. Ugayd na di ba inan dayt a pegkanen sa edututundog a pila gay endu su kakan sa nya ba di di dayn a pedsublan "
+            "Su mga over the counter a analagesics mana acetaminophen, ibuprofen, paracetamol, biogesic abpeg na calpol na gapamasa sa parmachies mana su ibuprofen abpeg a acetaminophen o paracetamol na pakagkapya sa mga masakit. Ugayd na ibibidaya i kapya na gamot a nan sa upaman nu sakit, su  kabagel nin, enggo su kadakel nu gamot a pegkanen. Su pain killers na gapamasa sa da resita nin na kapakayan penggamuten sa mga dikena ged mga masakit a kangedam nu taw. Ugayd na di ba inan dayt a pegkanen sa edututundog a pila gay endu su kakan sa nya ba di di dayn a pedsublan.Su nya ba a gamot na nya nin buntal na igen, nasal spray, tablitas, capsules, aw na to na powder."
         ],
         "dimension": 7,
-        "index": 42
+        "index": 28
     },
     {
         "pattern": [
@@ -1317,14 +1087,13 @@ export let transFormedMaguindanaonRules = [
             "Su analgesics a bedtuan bon sa pain releivers na pakatabang sa kagkapya na mga mangedam nu taw abpeg su mayaw a kadtapik nu influenza. Nya penggulan na gamot ba nan paptedtalnen nin su kapagumbal nu lawas sa chemicals a sabapan na kangedam nu taw sa masakit abpeg kablebag. Su mga common a mga analgesics a gapamasa na su acetaminophe, ibuprofen, abpeg a aspirin. Ugayd, na nasisita su kaunot sa nakasugat a kapegkan lun ka aden mga analgesics a di dayt a inumen nu taw ka makalunsan sa sakit nin."
         ],
         "dimension": 7,
-        "index": 43
+        "index": 29
     },
     {
         "pattern": [
             "* di * (kan|inom|gamit) * analgesic  * ",
             "* analgesics * di * (kan|inom|gamit) *",
             "duken ka di mapya a keman minom enggamot sa analgesics",
-            null,
             "kano i di kakan kagamit kainom sa analgesics",
             "ngen to ka so analgesics na di mapya a kanen gamiten inomen nu taw",
             "enduken ka di keman o minom sa analgesics i taw",
@@ -1335,7 +1104,7 @@ export let transFormedMaguindanaonRules = [
             "Nya tig na WebMD, na di ka paginom sa namba gamot upama ka so sakit nengka nan aka sapulo gay den. Di dayt a penggamuten I nya ba upama ka su mayaw nu tao na sobla den sa tlo gay. Upama ka mauma den sa may aba na pailay ka den sa doctor ka basi sakabiyas den a dalo I namba."
         ],
         "dimension": 7,
-        "index": 44
+        "index": 30
     },
     {
         "pattern": [
@@ -1349,7 +1118,7 @@ export let transFormedMaguindanaonRules = [
             "Su anti-inflammatory analgesics na di bun makagkayd. Ugayd na makagkayd ba i nya sa kaped a tao. Upama ka minum ka edtandang sa gamot a nya sa mawget na pakabinasa ba I nya bas a ludep a lawas nu taw. Gabinasa nin su atay abpeg su kidney. Makadtaguno abpeg a madtegan pan I nya ba. Makadsakit sa tangila abpeg makabinasa ba I nya sa tyan."
         ],
         "dimension": 7,
-        "index": 45
+        "index": 31
     },
     {
         "pattern": [
@@ -1363,33 +1132,7 @@ export let transFormedMaguindanaonRules = [
             "Pegkanin I nya ba a gamot. Inom ka sa ig mga walo ka baso. Da ka pagiga sa mga sapulo ka minutos kapasad nengka keman sa nya ba gamot. Upama ka edsakit I tyan nengka kapasad nengka keman sa nya ba na kan ka sa pegken o inom ka s agatas. "
         ],
         "dimension": 7,
-        "index": 46
-    },
-    {
-        "pattern": [
-            "* pila * analgesic  * ",
-            "* analgesic * pila *",
-            "ngen i alaga na analgesics",
-            "gagapila pila alaga i analgesics"
-        ],
-        "response": [
-            "Niya tig na Muramed apbeg Watsons na su paracetamol na mga 4 o pat pilak. So aspirin manem na aw na to na lemedsu sa 3.5 pilak. Namba na nakalista sa Watson pharmacy. Ugayd na di ba I namba gapamasa sad ala riseta nin endu aw na to na edsasakabiyas I alaga nin I to ba. "
-        ],
-        "dimension": 7,
-        "index": 47
-    },
-    {
-        "pattern": [
-            "* embalangan * analgesic * ",
-            "ngen i mga balangan na analgesics",
-            "aden mga balangan na analgesics",
-            "panon labit ka ngin i mga balangan na analgesics"
-        ],
-        "response": [
-            "Su analgesics na aw na to na nya nin buntal na film, ig, nasal spray, tablitas, capsules, aw na to na powder"
-        ],
-        "dimension": 7,
-        "index": 48
+        "index": 32
     },
     {
         "pattern": [
@@ -1403,33 +1146,7 @@ export let transFormedMaguindanaonRules = [
             "Su Philippine Institute of Traditional and Alternative Healthcare na niya nilan tig na makadtabang kon su palya, yerba Buena, ulasimang bato o pansit-pansita, endu so bayabas kagina aden kon analgesic effect nilan."
         ],
         "dimension": 7,
-        "index": 49
-    },
-    {
-        "pattern": [
-            "* generic * decongestant *",
-            "ngin ngala mga generic a mga decongestants",
-            "enggay ka sa mga ngala na generic a decongestants",
-            "ngen labit ka sa generic a decongestants"
-        ],
-        "response": [
-            "Su mga generic a decongestants na su pseudoephedrine, phenylephrine, abpeg oxymetazoline. Nya ba mga gamot na kapamasa sa botika apya da riseta nin. Aden ba nya ba balangan nin mana su tablitas, capsules, spray na ngilong, o liquids. Nasisista su kaunot sa dosage na nakabetad sa gamot a pinamasa nengka kagina nya ba na malamo ka nin makakedu, makagkalngas sa kagina , engo makagkapulo sa lugo"
-        ],
-        "dimension": 7,
-        "index": 50
-    },
-    {
-        "pattern": [
-            "* branded * decongestant *",
-            "ngin ngala mga branded a mga decongestants",
-            "enggay ka sa mga ngala na branded a decongestants",
-            "ngen labit ka sa branded a decongestants"
-        ],
-        "response": [
-            "Kaped a kila a mga branded a decongestants na su Decolgen abpeg su Sudafed. Nasisista su kaunot sa dosage na nakabetad sa gamot a pinamasa nengka kagina nya ba na malamo ka nin makakedu, makagkalngas sa kagina , engo makagkapulo sa lugo"
-        ],
-        "dimension": 7,
-        "index": 51
+        "index": 33
     },
     {
         "pattern": [
@@ -1445,7 +1162,7 @@ export let transFormedMaguindanaonRules = [
             "Su kapegkan sa nya ba gamot na nakadepended sa gamot a pengkanin. Upamaka ka nya nengka pinamasa na pseudoephedrine o Sudafed, the su gamutan nin na 60mg a tablitas. upama ka sui gen I kanen nengka na 30mg in 5ml.\n\n        Su matuwa abpeg a wat ana nya nin lagon 12 taman sa 17 na nya gamutan nin na 60mg tablet o dwa ka 5ml nu igen a gamot a to taman sa makapat sa sagay.\n        \n        Sa mga wata a nem lagon taman sa sapulo enggu isa na sabad ka tablitas mana 30mg bo o 5ml a salidot nu igen a gamot taman sa makapat sa sagay.\n        "
         ],
         "dimension": 7,
-        "index": 52
+        "index": 34
     },
     {
         "pattern": [
@@ -1454,10 +1171,10 @@ export let transFormedMaguindanaonRules = [
             "di ko katawan ngn i decongestants"
         ],
         "response": [
-            "Su decongestant na gamot a pakadtabang sa di ged pakaginawa i ngilong nin. Papedtanan nin  I lebag a nan abpeg su ngog nu taw. Da ged epekto nin I namba sa pagigingis I ngog nin abpeg pembaln."
+            "Su decongestant mana su pseudoephedrine, decolgen abpeg na sudafed na gamot a pakadtabang sa di ged pakaginawa i ngilong nin. Papedtanan nin  I lebag a nan abpeg su ngog nu taw. Da ged epekto nin I namba sa pagigingis I ngog nin abpeg pembaln. Nya ba gamot na gapamasa sekanin sa nose drops , nasal sprays, eye drops, tablitas, capsuls, abpeg syrup. "
         ],
         "dimension": 7,
-        "index": 53
+        "index": 35
     },
     {
         "pattern": [
@@ -1468,10 +1185,10 @@ export let transFormedMaguindanaonRules = [
             "ngin kano i kainom,kakan,kagamit sa decongestants"
         ],
         "response": [
-            "Su decongestants na mga gamot a pakadtabang sa di pakaginawa ka naalnan I ngilong nin sa ngog. Namba di nin a nan kapenginawa na sabap ba I naman sa sa virus or sakit a flu, sinusitis o allergy."
+            "Su decongestants mana su pseudoephedrine, decolgen abpeg na sudafed na mga gamot a pakadtabang sa di pakaginawa ka naalnan I ngilong nin sa ngog. Namba di nin a nan kapenginawa na sabap ba I naman sa sa virus or sakit a flu, sinusitis o allergy.Nya ba gamot na gapamasa sekanin sa nose drops , nasal sprays, eye drops, tablitas, capsuls, abpeg syrup."
         ],
         "dimension": 7,
-        "index": 54
+        "index": 36
     },
     {
         "pattern": [
@@ -1484,7 +1201,7 @@ export let transFormedMaguindanaonRules = [
             "Su decongenstant na nya nin galbek na papedsimpiten nin su blood vessels sa ngilong. Su blebag a tissue na ngilong na pegkanawt enggu pegkapya kapengginawa nu taw."
         ],
         "dimension": 7,
-        "index": 55
+        "index": 37
     },
     {
         "pattern": [
@@ -1502,7 +1219,7 @@ export let transFormedMaguindanaonRules = [
             "Da ka pegkan sa decongenstants upama ka mapulo I lugo nengka o di nengka ka control I namaba kagina makagkapulo nya ba sa lugo. Ilay ka sa kaped a kapakayan nengka kanin. Enggu di ka papegkan su wata a mababa pan sa nem lagon sa nya ba a agamot."
         ],
         "dimension": 7,
-        "index": 56
+        "index": 38
     },
     {
         "pattern": [
@@ -1517,7 +1234,7 @@ export let transFormedMaguindanaonRules = [
             "Su decongenstants na aw na to na di mapya sa kaped a taw. Nya ba gamot na malmu ta makakedu, malagot, abpeg makatulog. Aw nato na makagkalngkas I nya ba sa kapenginawa o kapulo I lugo nengka."
         ],
         "dimension": 7,
-        "index": 57
+        "index": 39
     },
     {
         "pattern": [
@@ -1531,32 +1248,7 @@ export let transFormedMaguindanaonRules = [
             "Su decongestatnt na kapakay pegkanen sa ngali endu makaginawa taw a aden sakit nin sa ngilog."
         ],
         "dimension": 7,
-        "index": 58
-    },
-    {
-        "pattern": [
-            "* pila * decongestant * ",
-            "* decongestant * pila * ",
-            "ngen i alaga na decongestants",
-            "gagapila pila i decongestants"
-        ],
-        "response": [
-            "Su alaga na nya ba gamot na embidabida uman saka botika. Su nasal spray na 90 pilak. Su drops na 78 pilak tig a rose pharmacy. Su tablitas na nem pilak tig a watsons pharmacy"
-        ],
-        "dimension": 7,
-        "index": 59
-    },
-    {
-        "pattern": [
-            "* embalangan * decongestant  * ",
-            "ngen i mga embalangan nu gamot a decongestants",
-            "panon labit aden ka ngin i mga balangan na decongestants"
-        ],
-        "response": [
-            "Su decongestants na nya kapamasa sekanin sa nose drops , nasal sprays, eye drops, tablitas, capsuls, abpeg syrup. "
-        ],
-        "dimension": 7,
-        "index": 60
+        "index": 40
     },
     {
         "pattern": [
@@ -1570,33 +1262,7 @@ export let transFormedMaguindanaonRules = [
             "Amayka di kapakayan su oral decongestants sa lek ana aden kaped nengka pan a manggamot. Umpama ka gamot bon, ka tekawi ka I antihistamines mana su Benadryl, citericine abpeg loratadine. Nya ba na makatabang bon I nya bas a barado I ngilong nin."
         ],
         "dimension": 7,
-        "index": 61
-    },
-    {
-        "pattern": [
-            "* generic * expectorant *",
-            "ngin ngala mga generic a mga expectorants",
-            "enggay ka sa mga ngala na generic a expectorants",
-            "ngen labit ka sa generic a expectorant"
-        ],
-        "response": [
-            "Su guaifenesin abpeg potassium iodide na generic a ngala na expectorants. Aw na to na nakasimbol ba i nya sa kaped a gamot mana su Mucinex abpeg so Robitusin. Nya ba na penggamuten sa mga sakit mana su broncitis, asthma, abpeg su sepu. Tanday ka nya ba a gamot na dikena kapakay a inumen na apya tayn den endu inumen depende sa nadtalo na healtchare professional."
-        ],
-        "dimension": 7,
-        "index": 62
-    },
-    {
-        "pattern": [
-            "* branded * expectorant *",
-            "ngin ngala mga branded a mga expectorants",
-            "enggay ka sa mga ngala na branded a expectorants",
-            "ngen labit ka sa branded a expectorant"
-        ],
-        "response": [
-            "Su mucimex abpeg na robitussin na mga kila ba nya a branded. Nya ba a gamot na madakel i ngala nin. Ugayd na pagidsan bon i dalem nila. Nya nilan penggulan na papegkapaydon nin su sepu endu malmo i kabatok nengka. Unuti ka i dosage o nakasugat a ukit na kakan sa nya ba a gamot"
-        ],
-        "dimension": 7,
-        "index": 63
+        "index": 41
     },
     {
         "pattern": [
@@ -1613,7 +1279,7 @@ export let transFormedMaguindanaonRules = [
             "\n        Su kapenggamit sa expectorants na nakadepende sa gamot, lagon, kaugat endu lawas nu taw. \n\n        So mga matuwa na mapakay keman sa 200 to 400 milligrams uman pat kauras. \n\n        Su mga wata a 6 taman sa 12 lagon na mapakay keman sa 100 taman sa 200 mg uman pat kauras.\n\n        Su mga wata manem a 4 taman sa 6 lagon na mapakay keman sa 50 taman sa 100mg uman pat kauras.\n\n        Su mga bago pimbata endu da makasaw i umul nin sa 4 lagon na di pakanen sa nya ba gamot.\n\n        Nya ba pidtalo ko a nya na makatadbang upama ka di nengka katawas panon i enggulan nengka. Ugayd na nasisita i pailay ka o angay ka sa doctor engu kainggan su taw a sa nakasugat a gamot nu sakit nin.\n        "
         ],
         "dimension": 7,
-        "index": 64
+        "index": 42
     },
     {
         "pattern": [
@@ -1622,10 +1288,10 @@ export let transFormedMaguindanaonRules = [
             "ngin i expectorant"
         ],
         "response": [
-            "Su expectorants na papegkalmon nin su kalyu nu ngog o klad. Sabap ba i nya na papegkadakel nin sa ig sa mga namba. Kagina mayto ba i penggulan nin na malbo i ka lyu nin sa lawas nu taw upama ka embatuken sekanin. Su mga expectornats na kagamit silan sa kapenggamot sa mga sakit mana su bronchitis, pneumonia, abpeg sepu."
+            "Su expectorants mana guaifenesin abpeg na Robitussin na papegkalmon nin su kalyu nu ngog o klad. Sabap ba i nya na papegkadakel nin sa ig sa mga namba. Kagina mayto ba i penggulan nin na malbo i ka lyu nin sa lawas nu taw upama ka embatuken sekanin. Su mga expectornats na kagamit silan sa kapenggamot sa mga sakit mana su bronchitis, pneumonia, abpeg sepu. Nya ba na gamot na aw na to na iged tablitas i buntal nin."
         ],
         "dimension": 7,
-        "index": 65
+        "index": 43
     },
     {
         "pattern": [
@@ -1637,10 +1303,10 @@ export let transFormedMaguindanaonRules = [
             "kano i sa expectorants"
         ],
         "response": [
-            "Kapakay ka pegkan sa expectorant enggu amayka di ka ged pakaginawa sabap sa sepu. Nya ba a gamot na na aw nato na isa nin bo a gamot na da maamong sa kaped a gamot. "
+            "Kapakay ka pegkan sa expectorant mana so guaifenesin abpeg na Robitussin amayka di ka ged pakaginawa sabap sa sepu. Nya ba a gamot na na aw nato na isa nin bo a gamot na da maamong sa kaped a gamot.Nya ba na gamot na aw na to na iged tablitas i buntal nin. "
         ],
         "dimension": 7,
-        "index": 66
+        "index": 44
     },
     {
         "pattern": [
@@ -1651,10 +1317,10 @@ export let transFormedMaguindanaonRules = [
             "panon kano kanggalbek na expectorants"
         ],
         "response": [
-            "Su expectorants na papegkalindegen nin u pagukitan na sabmel sa lawas nu taw. Sabap sa namba penggulan nin na papegkalmon nin su kablyu nu ngong engu klad nu taw. Kagina malmo den i ka lyu na ngog na malmo bon i kabatok nu taw endu gaawa su ngog endu klad sa tidek "
+            "Su expectorants mana so guaifenesin abpeg na Robitussin na papegkalindegen nin u pagukitan na sabmel sa lawas nu taw. Sabap sa namba penggulan nin na papegkalmon nin su kablyu nu ngong engu klad nu taw. Kagina malmo den i ka lyu na ngog na malmo bon i kabatok nu taw endu gaawa su ngog endu klad sa tidek "
         ],
         "dimension": 7,
-        "index": 67
+        "index": 45
     },
     {
         "pattern": [
@@ -1667,10 +1333,10 @@ export let transFormedMaguindanaonRules = [
             "nginto ka di mapakay a enggamot keman minom sa expectorants"
         ],
         "response": [
-            "Embityala nengka I doctor nengka bago ka penggamot sa expectorant upama magingay ka o papedsusu ka. Upama ka nya ka kailay na nagallergy ka na telni ka gamot a nan. \n        Ingat ka sa kandrive ka o kagamit nengka sa makina upama ka pengkan ka sa expectorant kagina makandadalangot ba I nya ba\n        "
+            "Embityala nengka I doctor nengka bago ka penggamot sa expectorant upama magingay ka o papedsusu ka. Upama ka nya ka kailay na nagallergy ka na telni ka gamot a nan.Ingat ka sa kandrive ka o kagamit nengka sa makina upama ka pengkan ka sa expectorant kagina makandadalangot ba I nya ba\n        "
         ],
         "dimension": 7,
-        "index": 68
+        "index": 46
     },
     {
         "pattern": [
@@ -1684,7 +1350,7 @@ export let transFormedMaguindanaonRules = [
             "Su expectorant na da ged masla a side effect nin. Ugayd, na makandadadalangot ba I nya ba abpeg makanggagatel"
         ],
         "dimension": 7,
-        "index": 69
+        "index": 47
     },
     {
         "pattern": [
@@ -1698,33 +1364,7 @@ export let transFormedMaguindanaonRules = [
             "Di ka blupet I gamot a nan. Upama ka nya nengka paginumen sui gen a gamot na bilang ka I kadakel nin. Inom ka bon sa madakel a ig upama ka pegkan ka sa expectorant."
         ],
         "dimension": 7,
-        "index": 70
-    },
-    {
-        "pattern": [
-            "* pila * expectorant * ",
-            "* expectorant * pila * ",
-            "ngen i alaga na expectorants",
-            "gagapila pila i expectorants"
-        ],
-        "response": [
-            "Sya sa Watson na su robitussin guaifenesisn na 92 pilak I alaga nin."
-        ],
-        "dimension": 7,
-        "index": 71
-    },
-    {
-        "pattern": [
-            "* embalangan * expectorant * ",
-            "ngen i mga embalangan nu gamot a expectorants",
-            "aden mga balangan na expectorants",
-            "panon labit ka ngin i mga balangan na expectorant"
-        ],
-        "response": [
-            "Su expectorants na kapamasa ba I nya ba sa botika apya da riseta nin. Aw na to na ig abpeg a tablitas a I nya ba."
-        ],
-        "dimension": 7,
-        "index": 72
+        "index": 48
     },
     {
         "pattern": [
@@ -1737,33 +1377,7 @@ export let transFormedMaguindanaonRules = [
             "Su mga natural a expectoral na kapakay nengka bon pengamiten. Nya ba na mana su menthol, ivy leaf extract, oral hydration solutions , kapaginom sa madakel a ig, abpeg a teneb. "
         ],
         "dimension": 7,
-        "index": 73
-    },
-    {
-        "pattern": [
-            "* generic * antitussive *",
-            "ngin ngala mga generic a mga antitussives",
-            "enggay ka sa mga ngala na generic a antitussives",
-            "ngen labit ka sa mga generic a antitussives"
-        ],
-        "response": [
-            "Su Dexthomethorphan, diphenhydramine, endu codeine na mga generic antitussive. Nasisista na tandan nu taw na su mga antitussives na pagidsan bon i dalem nin sa mga branded a gamot"
-        ],
-        "dimension": 7,
-        "index": 74
-    },
-    {
-        "pattern": [
-            "* branded * antitussive   *",
-            "ngin ngala mga branded a mga antitussives",
-            "enggay ka sa mga ngala na branded a antitussives",
-            "ngen labit ka kon ngin i mga branded a antitussives"
-        ],
-        "response": [
-            "Su Robitussin na isa sa namba mga branded a nan a gamot. Tandan nu gagaisa na su mga branded abpeg mga generic a antitussive na pagidsan i dalem nilan. Mas mapulu bo i alaga na branded."
-        ],
-        "dimension": 7,
-        "index": 75
+        "index": 49
     },
     {
         "pattern": [
@@ -1780,7 +1394,7 @@ export let transFormedMaguindanaonRules = [
             "\n        Su mga antitussives na paginumen. Ugayd na madakel i upaman nim na tablitas, capsules, syrups engo drops. So dosage na gamot a nya na nya bo makadtalo lon na isa a healthcare provided kagina pagilayn nila su lagon , kaugat nu pasente, su kabagel nu batok, endu kaped a kanggedam nu taw.\n        \n        kaped sa mga ula ula sa kakan sa antitussive na gaton sa mga medical resources sya sa internet. Nya nin upaman na su antitussive a nya nin buntal na lozenges. Bibidaya i ukit a kakan lol. Upama ka nya pegkan na wata a 12 lago o matuwa pan san na kapakay keman sekanin na enggamot sa 5 taman sa 15mg uman dwa taman sa pat kauras. Su mga wata manem a 6 taman sa 12 lagon na  mapakay keman sa 5 taman sa 15mg uman dwa taman sa nem kauras. Su mga wata manem a 4 taman sa 6 lagon na mapakay keman sa 5mg uman pat kauras. Ugayd na su mga wala a da makasampay sa 4 lagon i umul nin na di keman sa nya ba gamot.\n\n        Upama manem ka antitussive na syrup na bidabida bon i kakan lon. Upama ka nya pegkan na wata a 12 lago o matuwa pan san na kapakay keman sekanin na enggamot sa 30mg uman nem taman sa walo kauras. Su mga wata manem a 6 taman sa 12 lagon na  mapakay keman sa 7mg uman pat kauras o 15mg uman nem taman sa walo ka oras. Su mga wata manem a 4 taman sa 6 lagon na mapakay keman sa 3.5mg uman pat kauras o 7.5mg uman nem taman sa walo ka oras. Ugayd na su mga wala a da makasampay sa 4 lagon i umul nin na di keman sa nya ba gamot.\n\n        Nya ba nadtalo ko a nya na mga upaman bo na panon i kakan sa antitussive. Nasisista i kaangay nengka sa doktor engu madtalo nin ngin i mapya o nakasugat a dose para sa leka.\n        "
         ],
         "dimension": 7,
-        "index": 76
+        "index": 50
     },
     {
         "pattern": [
@@ -1789,10 +1403,10 @@ export let transFormedMaguindanaonRules = [
             "ngin i antitussives"
         ],
         "response": [
-            "Su antitussives a gamot na batok na kapakayan a kapamasa apya da den resita nin ugayd na aw na to na aden bon resita nin"
+            "Su antitussives mana so Dexthomethorphan o Robitussin na gamot na batok na kapakayan a kapamasa apya da den resita nin ugayd na aw na to na aden bon resita nin.Nya ba a gamot na madakel I embalangan nin mana tablitas, capsul, gel, igen, syrup , lozenge o strips .\n        "
         ],
         "dimension": 7,
-        "index": 77
+        "index": 51
     },
     {
         "pattern": [
@@ -1804,10 +1418,10 @@ export let transFormedMaguindanaonRules = [
             "ngin kano i kakan, kainom, kanggamot sa antitussives"
         ],
         "response": [
-            "Nya ba gamot a na pegkanen upama ka matitik I batok nu taw sabap sa allergy o kaped a sakit a baga. Su antitussives na pakagamot bun sa post-viral cough o di den a nan pagenda a batok sabap sa virus infection."
+            "Nya ba antitussive a nya a mana su Dexthomethorphan o Robitussin paginumen upama ka matitik I batok nu taw sabap sa allergy o kaped a sakit a baga. Su antitussives na pakagamot bun sa post-viral cough o di den a nan pagenda a batok sabap sa virus infection. Nya ba a gamot na madakel I embalangan nin mana tablitas, capsul, gel, igen, syrup , lozenge o strips "
         ],
         "dimension": 7,
-        "index": 78
+        "index": 52
     },
     {
         "pattern": [
@@ -1818,10 +1432,10 @@ export let transFormedMaguindanaonRules = [
             "panon i kagalbek na antitussives"
         ],
         "response": [
-            "Su antitussives na papedtelenin nin su tulan a papembatok sa taw na gailay sa brain stem. Ugayd na su sakto a penggulan nin na di bun katawan na mga doctor taman saguna."
+            "Su antitussives mana su Dexthomethorphan o Robitussin na papedtelenin nin su tulan a papembatok sa taw na gailay sa brain stem. Ugayd na su sakto a penggulan nin na di bun katawan na mga doctor taman saguna."
         ],
         "dimension": 7,
-        "index": 79
+        "index": 53
     },
     {
         "pattern": [
@@ -1837,7 +1451,7 @@ export let transFormedMaguindanaonRules = [
             "Dikena ba I nya mapya a gamot sa mga wata a da man mauma I umul nin sa 4 lagon"
         ],
         "dimension": 7,
-        "index": 80
+        "index": 54
     },
     {
         "pattern": [
@@ -1851,7 +1465,7 @@ export let transFormedMaguindanaonRules = [
             "Nya epekto na gamot ba  a nya na aw na to na makangegedam su taw sa kapanguta, abpeg kalangot. Su kaped a pasinti na aw na to na kagatel o kalgenan silan sa ka ginawa. Upama ka masla ged a dose I nakan du taw na aw na to na di ged mapya kapagitong nin"
         ],
         "dimension": 7,
-        "index": 81
+        "index": 55
     },
     {
         "pattern": [
@@ -1865,33 +1479,7 @@ export let transFormedMaguindanaonRules = [
             "Kapakayan ba I nya ba pegkanin apya dala ka kan basta inom ka sa ig a madakel ( mga walo ka baso)"
         ],
         "dimension": 7,
-        "index": 82
-    },
-    {
-        "pattern": [
-            "* pila * antitussive * ",
-            "* antitussive * pila * ",
-            "ngen i alaga na antitussives",
-            "gagapila pila i antitussives"
-        ],
-        "response": [
-            "Sa southdrug store, na su dextromenthorphan syrup na 133 pilak. Sa watsons na 189 pilak. Su alaga nin a embibidaya uman botika. "
-        ],
-        "dimension": 7,
-        "index": 83
-    },
-    {
-        "pattern": [
-            "* embalangan * antitussive   * ",
-            "ngen i mga balangan na antitussives",
-            "ngen i mga embalangan nu gamot a antitussives",
-            "panon aden mga balangan na antitussives"
-        ],
-        "response": [
-            "Su antitussive na madakel I embalangan nin. Aw na to na tablitas, capsul, gel, igen, syrup , lozenge o strips I nya ba. Ugayd na na saki na nya ko bo ma recommend na su legengez abpeg a syrup bo."
-        ],
-        "dimension": 7,
-        "index": 84
+        "index": 56
     },
     {
         "pattern": [
@@ -1906,38 +1494,12 @@ export let transFormedMaguindanaonRules = [
             "Su teneb na na gamot ba I nya ba.  Su mga nangagi sa nya ba gamot na ya tig nilan na makatabang ba I nya sa kambabatok enggu nya pan mapya sa kapamasa a gamot sa otika. "
         ],
         "dimension": 7,
-        "index": 85
+        "index": 57
     },
     {
         "pattern": [
-            "* generic * lozenge *",
-            "ngin ngala mga generic a mga lozenges",
-            "enggay ka sa mga ngala na generic a lozenges",
-            "ngen labit ka sa generic a lozenges"
-        ],
-        "response": [
-            "Su dexthromethorphan abpeg a benzocainementhol na mga generic ba I nya ba a logenzes."
-        ],
-        "dimension": 7,
-        "index": 86
-    },
-    {
-        "pattern": [
-            "* branded * lozenge *",
-            "ngin ngala mga branded a mga lozenges",
-            "enggay ka sa mga ngala na branded a lozenges",
-            "ngen labit ka sa mga branded a lozenges"
-        ],
-        "response": [
-            "Su bactidol abpeg a streptsil na mga branded ba I nya ba a logenzes a makadtabang sa tidek nu taw."
-        ],
-        "dimension": 7,
-        "index": 87
-    },
-    {
-        "pattern": [
-            "* (dose|ukit|gamit|kan|inom) * lozenge * ",
-            "* lozenge  * (gamit|kan|inom) *",
+            "* (dose|ukit|gamit|kan|inom) * lozenges * ",
+            "* lozenges  * (gamit|kan|inom) *",
             "ngin i nakasugat a ukit ka kapegkan , kagamot o kainom sa lozenges",
             "panon i kapegkan kapenggamot kainom sa lozenges",
             "panon i dose, dosage, o ukit na kakan, kainom, o kanggamot sa lozenges",
@@ -1948,7 +1510,7 @@ export let transFormedMaguindanaonRules = [
             "Nya kapenggamot sa lozenges na pedtunagen sekanin sa ngali tupan na blunuken kaped na yug nu taw. Di ka pedsepa su gamot a nya o blenuk sa makaisa. Nya kapegkan na sya ba na uman dwa ka oras."
         ],
         "dimension": 7,
-        "index": 88
+        "index": 58
     },
     {
         "pattern": [
@@ -1960,7 +1522,7 @@ export let transFormedMaguindanaonRules = [
             "Nya ba a gamot na pakadtabang bon sa mga sakit na ngali mana su sorethroat, sore gums, mouth gums injury. "
         ],
         "dimension": 7,
-        "index": 89
+        "index": 59
     },
     {
         "pattern": [
@@ -1972,10 +1534,10 @@ export let transFormedMaguindanaonRules = [
             "ngin i gamit na lozenges"
         ],
         "response": [
-            "Su kakan sa logenze na dikena ged malgen abpeg kapamasa sa tayn I aden sakit nin a mana su chronic pharyngitis, aden sakit nin sa respiratory tract, apeg aden kangegedam nin sa tidek nin."
+            "Su kakan sa logenze mana su Bactidol o Strepsils na dikena ged malgen abpeg kapamasa sa tayn I aden sakit nin a mana su chronic pharyngitis, aden sakit nin sa respiratory tract, apeg aden kangegedam nin sa tidek nin."
         ],
         "dimension": 7,
-        "index": 90
+        "index": 60
     },
     {
         "pattern": [
@@ -1987,10 +1549,10 @@ export let transFormedMaguindanaonRules = [
             "panon i kapenggalbek kagalbek na lozenges"
         ],
         "response": [
-            "Upama ka su taw na enggamot sa lozenge, na lemedsu I nya ba sa katunag nin ka tupamba lemyo I gamot a nan. Inumbal i namba engo mauget i katunag nin. Pedtunagen bo sa ngali enggu makagamot sa batok abpeg a tidek. Su kaped a logenzes na pakagamot bon sa aden sepu. Su kaped manem na aden eucalyptus nin na pakadtabang sa masakit a tidek. Su kaped manem na inamunan sa teneb"
+            "Upama ka su taw na enggamot sa lozenge  mana su Bactidol o Strepsils , na lemedsu I nya ba sa katunag nin ka tupamba lemyo I gamot a nan. Inumbal i namba engo mauget i katunag nin. Pedtunagen bo sa ngali enggu makagamot sa batok abpeg a tidek. Su kaped a logenzes na pakagamot bon sa aden sepu. Su kaped manem na aden eucalyptus nin na pakadtabang sa masakit a tidek. Su kaped manem na inamunan sa teneb"
         ],
         "dimension": 7,
-        "index": 91
+        "index": 61
     },
     {
         "pattern": [
@@ -2007,7 +1569,7 @@ export let transFormedMaguindanaonRules = [
             "Upama ka masakit I tidek nengka sa naipos a dwa gay, basi pembatuken ka den sa nakasapadian, o babalingan den I batok nengka o aw na to na aden pan mayaw nengka sakit na ulo abpeg a kagatel, lebag, aw na to na manguta ka pan na nya mapya na ebpawang ka den sa doctor."
         ],
         "dimension": 7,
-        "index": 92
+        "index": 62
     },
     {
         "pattern": [
@@ -2021,7 +1583,7 @@ export let transFormedMaguindanaonRules = [
             "Aw na to na egkasakit I tidek nengka. Amaykaaden manggedam nengka a mayaba o basi esaldseg I namba sakit nengka na ebpawang ka den sa doctor."
         ],
         "dimension": 7,
-        "index": 93
+        "index": 63
     },
     {
         "pattern": [
@@ -2035,34 +1597,7 @@ export let transFormedMaguindanaonRules = [
             "Di ka pedsepa o blenok I gamot a nya. Tunag ka sa ngali nengka. Uman dwa ka oras I kakan nengka sa nya ba gamot."
         ],
         "dimension": 7,
-        "index": 94
-    },
-    {
-        "pattern": [
-            "* lozenge * pila * ",
-            "* pila * lozenge * ",
-            "gagapila i lozenges",
-            "ngen pila i alaga na lozenges"
-        ],
-        "response": [
-            "Sa rose pharmacy na gaga 5 pilak ba I nya ba uman isa. Ugayd na di ta katawan sa kaped ka bibidaya ba I nyaba."
-        ],
-        "dimension": 7,
-        "index": 95
-    },
-    {
-        "pattern": [
-            "* embalangan * lozenge * ",
-            "di ko katawan i balangan na lozenges",
-            "ngen i mga balangan na lozenges",
-            "ngen i mga embalangan nu gamot a lozenges",
-            "panon labit ka ngin i mga balangan na lozenges"
-        ],
-        "response": [
-            "Su nya ba gamot na pedtunagen sa ngali.  Su mategas a embalangan na nya ba nan amba I tig nilan a nan a logenzes, troches o drops. So dikena ged mategas nan amba tawag nilan na pastilles, chewable, gelatin a embalangan na lozenges. Aw na to na nya nilan tig san ba na gummy. "
-        ],
-        "dimension": 7,
-        "index": 96
+        "index": 64
     },
     {
         "pattern": [
@@ -2077,7 +1612,7 @@ export let transFormedMaguindanaonRules = [
             "So kasisip sa tin a aden teneb nin na makadtabang abpeg makagkapya sa tidek."
         ],
         "dimension": 7,
-        "index": 97
+        "index": 65
     },
     {
         "pattern": [
@@ -2090,40 +1625,7 @@ export let transFormedMaguindanaonRules = [
             "Kapakayan nengka pedtyakapan sakit nengka sa walay. Ugay na angay ka sa doctor upama ka nga nengka kailay na masla I mangguna na flu a nan sa leka. "
         ],
         "dimension": 5,
-        "index": 14
-    },
-    {
-        "pattern": [
-            "* problema * influenza * ",
-            "* influenza * problema *",
-            "* makadtaday * influenza * problema * ",
-            "* problema * makadtaday * influenza * ",
-            "* influenza * problema * makadtaday * ",
-            "ngin i mga di manggula na taw a aden influenza nin",
-            "ngin i mabproblema manggula nu taw a pakagedam influenza ",
-            "amayka padtadayn i influenza na ngin i manggula",
-            "ngen i influenza",
-            "ngin i problema na influenza"
-        ],
-        "response": [
-            "Upama ka di pengamutan su influenza na makagedam su taw sa kaped a sakit mana su bacterial abpeg viral pneumonia, bronchitis o inflammed airways, sinus infection, dehydration, ear infections, encephalitis a sakit sa utek, enggo sepsis o sakit na lugo. Pakalunsan bon i nya ba kaped a sakit nu taw a mana su asthma o su aden sakit na pamusungan nin. Pakapatay i nya ba sakit sa mga mauwa endu wata a malubay i lawas nin."
-        ],
-        "dimension": 1,
-        "index": 21
-    },
-    {
-        "pattern": [
-            "* ebpawang * influenza *",
-            "endaw mangay mapagamot i aden influenza nin",
-            "amayka pakagedam sa influenza i taw na endaw mangay mapagamot",
-            "su taw a aden pakagedam sa influenza na endaw mangay",
-            "endaw epawang amayka aden influenza nin"
-        ],
-        "response": [
-            "Nya tig na Centers for Disease Control and Prevention na su influenza na pakaalat i namba a sakit sabap sa virus a paka infect na ngilong, tidek endu baga nu taw. \n        \n        Kapakay nengka pengamutan i mga kangagedam nengka sa walay bo. Ugayd na nasisita i kapailay sa doctor. Namba silan na mapakay silan menggay sa riseta na gamot a mapamasa nengka engu pegkabagel ka. \n\n        "
-        ],
-        "dimension": 5,
-        "index": 15
+        "index": 11
     },
     {
         "pattern": [
@@ -2135,16 +1637,18 @@ export let transFormedMaguindanaonRules = [
             "di ko kasabutan i sign, symptoms, sintomas , senyales o tanda na influenza",
             "labit enggay ka sa listahan na sintomas senyales tanda na flu",
             "labit ka sa listahan na sintomas ng flu",
-            "ngin i sintomas senyales tanda na influenza"
+            "ngin i sintomas senyales tanda na influenza",
+            "Panon I katuntay kataw sintomas tanda o signs na su taw na influenza"
         ],
         "response": [
             "Su Center of Diseases and Control na nya nilan nadtalo na su taw a aden trangkaso nin na aden pila timan nin a sintomas. Aw na to na aden mayaw nilan, batok, blebag a tideg, sepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa."
         ],
         "dimension": 1,
-        "index": 22
+        "index": 20
     },
     {
         "pattern": [
+            "* gamot * uta *",
             "* (awa|gamot|kapya|tabang) * uta * ",
             "amayka su taw na nanguta na ngin i pakan o painom lon",
             "ngen i mapakay a kanen, inomen, o pamasan na taw a panguta",
@@ -2191,7 +1695,7 @@ export let transFormedMaguindanaonRules = [
             " Su katabel na nasisista engo pebpatay su pathogenic a mga bacteria, virus engo protozoa. Amayka pedtabel su taw na mangata sekanin sa dwa ka minutos kapasad nin edsebu. Upama ka su ig na malbog na pangatay ka a makadtakena sekanin engo ibubus nengka su ig sa gapas engu ga salal u mga maldsik nin. Amayka malini ka sa aden nanam na ig ba nan a tinabel nengka na betad ka sa paydo a timos uman saka litro na ig o I alat nengka su ig sa kaped a gabetadan na ig.\n        "
         ],
         "dimension": 1,
-        "index": 23
+        "index": 21
     },
     {
         "pattern": [
@@ -2207,7 +1711,7 @@ export let transFormedMaguindanaonRules = [
             "Su kalinis sa ig na nasisista endu gaawa su mga bacteria, virus endu parasistes a pakangguna sa sakit a mana su cholera, typhoid, dysentery abepeg kapedtagudo. Upama ka dikena nalimpyuan i ig a paginumen, na mapakay i namaba ka deketan na mga microorganisms a pakadalo. Endu su kablinis sa ig na pakatabang endu di ka makakwa sa mga sakit a sabap sa maldsik a ig. \n\n        Mapakay nengka blimpyoan i ig  a paginumen nengka sa chlorine. Padtakena ka sa saka saka botol a ig tupan na tunag ka sa isa a powdered chlorine compounds a mga 65 to 75 ka porsento uman saka litro na ig. Mapasad i namba, na tupan ka kwa ka sa 2 teaspoon ebun sa ig a to a aden chlorine nin ka isimbol nengka sa lima ka galon o 20 liters a ig. Padsimbol ka silan ebpyapya endu pangata ka sa 30 ka minutos bago gainom su ig.    \n        "
         ],
         "dimension": 1,
-        "index": 24
+        "index": 22
     },
     {
         "pattern": [
@@ -2312,7 +1816,7 @@ export let transFormedMaguindanaonRules = [
             "Langon na sakit na aden sintomas nin abpeg senyales. Endo katabangan ko seka epyapya na labit ka amayka para sa kapedtagudo o influenza i bityala nengka."
         ],
         "dimension": 1,
-        "index": 25
+        "index": 23
     },
     {
         "pattern": [
@@ -2323,7 +1827,7 @@ export let transFormedMaguindanaonRules = [
             "\n        Ngin betad nengka? Ngen makadtabang ko saleka? Ampon ka bo upama ka di ko kasabutan i pedtalon nengka. Dikena ko ged pakasabot tu banan tabangan ta i engagaysa engu makadsabuta ta."
         ],
         "dimension": 1,
-        "index": 26
+        "index": 24
     },
     {
         "pattern": [
@@ -2333,7 +1837,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, di ko gasabutan i pedtalon nengka sa antimotilities"
         ],
         "dimension": 1,
-        "index": 27
+        "index": 25
     },
     {
         "pattern": [
@@ -2343,7 +1847,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, di ko gasabutan i pedtalon nengka sa bismuth subsalicylate"
         ],
         "dimension": 1,
-        "index": 28
+        "index": 26
     },
     {
         "pattern": [
@@ -2353,7 +1857,7 @@ export let transFormedMaguindanaonRules = [
             "Da ko samaya kasabuti i pedtalon nengka. Ampon ka bo. Basi labit ka kon edsaluman ngin i tu ba pedtalon nengka sa antihistamines"
         ],
         "dimension": 1,
-        "index": 29
+        "index": 27
     },
     {
         "pattern": [
@@ -2363,7 +1867,7 @@ export let transFormedMaguindanaonRules = [
             "Da ko samaya kasabuti i pedtalon nengka. Ampon ka bo. Basi labit ka kon edsaluman ngin i tu ba pedtalon nengka sa analgesics"
         ],
         "dimension": 1,
-        "index": 30
+        "index": 28
     },
     {
         "pattern": [
@@ -2373,7 +1877,7 @@ export let transFormedMaguindanaonRules = [
             "Da ko samaya kasabuti i pedtalon nengka. Ampon ka bo. Basi labit ka kon edsaluman ngin i tu ba pedtalon nengka sa nsaids"
         ],
         "dimension": 1,
-        "index": 31
+        "index": 29
     },
     {
         "pattern": [
@@ -2383,7 +1887,7 @@ export let transFormedMaguindanaonRules = [
             "Gatawan ko nya nengka blabiten na decongestants, ugayd mana su di ko gasabutan i pedtalon nengka. Ampon ka bo."
         ],
         "dimension": 1,
-        "index": 32
+        "index": 30
     },
     {
         "pattern": [
@@ -2393,7 +1897,7 @@ export let transFormedMaguindanaonRules = [
             "Gatawan ko nya nengka blabiten na expectorants, ugayd mana su di ko gasabutan i pedtalon nengka. Ampon ka bo."
         ],
         "dimension": 1,
-        "index": 33
+        "index": 31
     },
     {
         "pattern": [
@@ -2403,7 +1907,7 @@ export let transFormedMaguindanaonRules = [
             "Gatawan ko nya nengka blabiten na antitussives, ugayd mana su di ko gasabutan i pedtalon nengka. Ampon ka bo."
         ],
         "dimension": 1,
-        "index": 34
+        "index": 32
     },
     {
         "pattern": [
@@ -2413,7 +1917,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, di ko gasabutan i pedtalon nengka sa lozenges"
         ],
         "dimension": 1,
-        "index": 35
+        "index": 33
     },
     {
         "pattern": [
@@ -2423,7 +1927,7 @@ export let transFormedMaguindanaonRules = [
             "Bago ko seka katabangan na pasabot ako ko nengka muna. Mapakay ako nengka idsan sa kapedtagudo o influenza. Mapakay ko labiten ngin i enggulan nengka edu mapya mangiginawa nengka"
         ],
         "dimension": 1,
-        "index": 36
+        "index": 34
     },
     {
         "pattern": [
@@ -2433,7 +1937,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, mana na ko kasabuti i pedtalon nengka pantag sa kapedtagudo. Engu katabangan ko seka sa mapya, na edsalumani ka to ba. Aw na to na mapakay ka midsa sa mga gamot, ngen mapya enggulan endo ngin i mga mapakay a kanen nu taw a to a pedsakit."
         ],
         "dimension": 1,
-        "index": 37
+        "index": 35
     },
     {
         "pattern": [
@@ -2443,7 +1947,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, mana na ko kasabuti i pedtalon pantag sa influenza. Engu katabangan ko seka sa mapya, na edsalumani ka to ba.Aw na to na mapakay ka midsa sa mga gamot, ngen mapya enggulan endo ngin i mga mapakay a kanen nu taw a to a pedsakit."
         ],
         "dimension": 1,
-        "index": 38
+        "index": 36
     },
     {
         "pattern": [
@@ -2453,7 +1957,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, ka di ko samana gasabutan i pedtalon nengka pantag sa kapanegas nu lawas kapanegas. Ugayd na mapakay ko labiten sa leka ngi i mga mapya enggulan endo pegkapya kangegedam nu taw a pedsakit sa namba ba"
         ],
         "dimension": 1,
-        "index": 39
+        "index": 37
     },
     {
         "pattern": [
@@ -2463,7 +1967,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, ka di ko samana gasabutan i pedtalon nengka pantag sa taw a ga(langot|langut). Ugayd na mapakay ko labiten sa leka ngi i mga mapya enggulan endo pegkapya kangegedam nu taw a pedsakit sa namba ba"
         ],
         "dimension": 1,
-        "index": 40
+        "index": 38
     },
     {
         "pattern": [
@@ -2473,7 +1977,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, ka di ko samana gasabutan i pedtalon nengka pantag sa kapegkayaw. Ugayd na mapakay ko labiten sa leka ngi i mga mapya enggulan endo pegkapya kangegedam nu taw a pedsakit sa namba ba"
         ],
         "dimension": 1,
-        "index": 41
+        "index": 39
     },
     {
         "pattern": [
@@ -2483,7 +1987,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, ka di ko samana gasabutan i pedtalon nengka pantag sa di ged pakaginawa sa ngilong. Ugayd na mapakay ko labiten sa leka ngi i mga mapya enggulan endo pegkapya kangegedam nu taw a pedsakit sa namba ba"
         ],
         "dimension": 1,
-        "index": 42
+        "index": 40
     },
     {
         "pattern": [
@@ -2493,7 +1997,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, ka di ko samana gasabutan i pedtalon nengka pantag sa kapedsakit na tyan. Ugayd na mapakay ko labiten sa leka ngi i mga mapya enggulan endo pegkapya kangegedam nu taw a pedsakit sa namba ba"
         ],
         "dimension": 1,
-        "index": 43
+        "index": 41
     },
     {
         "pattern": [
@@ -2503,7 +2007,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, ka di ko samana gasabutan i pedtalon nengka pantag sa kapedsakit na ulo. Ugayd na mapakay ko labiten sa leka ngi i mga mapya enggulan endo pegkapya kangegedam nu taw a pedsakit sa namba ba"
         ],
         "dimension": 1,
-        "index": 44
+        "index": 42
     },
     {
         "pattern": [
@@ -2513,7 +2017,7 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, ka di ko samana gasabutan i pedtalon nengka pantag sa kapanguta. Ugayd na mapakay ko labiten sa leka ngi i mga mapya enggulan endo pegkapya kangegedam nu taw a pedsakit sa namba ba"
         ],
         "dimension": 1,
-        "index": 45
+        "index": 43
     },
     {
         "pattern": [
@@ -2523,6 +2027,6 @@ export let transFormedMaguindanaonRules = [
             "Ampon ka bo, mana su di ko gasabutan i pedtalon nengka."
         ],
         "dimension": 1,
-        "index": 46
+        "index": 44
     }
 ]

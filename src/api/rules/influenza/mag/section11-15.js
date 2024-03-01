@@ -174,7 +174,7 @@ let section11 = [
     encodeMemory([
         `* di * (kan|inom|gamit) * analgesic  * `,
         `* analgesics * di * (kan|inom|gamit) *`,
-        `duken ka di mapya a keman minom enggamot sa analgesics`,,
+        `duken ka di mapya a keman minom enggamot sa analgesics`,
         `kano i di kakan kagamit kainom sa analgesics`,
         `ngen to ka so analgesics na di mapya a kanen gamiten inomen nu taw`,
         `enduken ka di keman o minom sa analgesics i taw`,
@@ -744,8 +744,8 @@ let section11 = [
     //     `Su bactidol abpeg a streptsil na mga branded ba I nya ba a logenzes a makadtabang sa tidek nu taw.`
     // ],7),
     encodeMemory([
-        `* (dose|ukit|gamit|kan|inom) * lozenge * `,
-        `* lozenge  * (gamit|kan|inom) *`,
+        `* (dose|ukit|gamit|kan|inom) * lozenges * `,
+        `* lozenges  * (gamit|kan|inom) *`,
         `ngin i nakasugat a ukit ka kapegkan , kagamot o kainom sa lozenges`,
         `panon i kapegkan kapenggamot kainom sa lozenges`,
         `panon i dose, dosage, o ukit na kakan, kainom, o kanggamot sa lozenges`,
@@ -932,7 +932,8 @@ let section14 = [
         `di ko kasabutan i sign, symptoms, sintomas , senyales o tanda na influenza`,
         `labit enggay ka sa listahan na sintomas senyales tanda na flu`,
         `labit ka sa listahan na sintomas ng flu`,
-        `ngin i sintomas senyales tanda na influenza`
+        `ngin i sintomas senyales tanda na influenza`,
+        `Panon I katuntay kataw sintomas tanda o signs na su taw na influenza`,
     ],[
         `Su Center of Diseases and Control na nya nilan nadtalo na su taw a aden trangkaso nin na aden pila timan nin a sintomas. Aw na to na aden mayaw nilan, batok, blebag a tideg, sepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa.`
     ],1),

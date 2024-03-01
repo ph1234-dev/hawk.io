@@ -15,17 +15,18 @@ let chatboxContainer = null
 
 let sendMessage = async () => {
 
-    let query = new Promise((resolve, reject) => {
-        let response = store.getReply(msg.value)
-        resolve(response)
-    }).then((response) => {
-        return response
-    }).catch(e => {
-        console.error('Something went wrong. Found Error in UI when retrieving reply and storing them to backend')
-    })
 
-    let response = await query
-    let { reply, lang } = response
+    // let query = new Promise((resolve, reject) => {
+    //     let response = store.getReply(msg.value)
+    //     resolve(response)
+    // }).then((response) => {
+    //     return response
+    // }).catch(e => {
+    //     console.error('Something went wrong. Found Error in UI when retrieving reply and storing them to backend')
+    // })
+
+    // let response = await query
+    // let { reply } = response
     // store.storeLog(msg.value,reply,lang)
     // console.log(`Storing Log:\n\tMsg: ${msg.value}\n\tLang: ${lang}\n\tReply: ${reply}`)
     // userMessages.value.push({
@@ -34,29 +35,54 @@ let sendMessage = async () => {
     //     "user": msg.value
     // })
 
+          
     userMessagesChatboxElements.value.push({
-        source: "user",
-        message: msg.value
-    })
+            source: "user",
+            message: msg.value
+        })
 
 
-    setTimeout(function(){
+    let reply = store.getReply(msg.value).reply
 
-        userMessagesChatboxElements.value.push({
+    // alert(reply))
+    // Example usage:
+    // let replyChunks = chunkString(reply.reply, 350);
+    let replyChunks = chunkWords(reply,1500)
+
+        
+    async function displayChunksWithDelay(replyChunks, delay = 400) {
+        for (const [index, chunk] of replyChunks.entries()) {
+            await new Promise(resolve => setTimeout(resolve, delay));
+
+            // Append "...." if it's not the last chunk
+            const messageSuffix = index < replyChunks.length - 1 ? " ..." : "";
+
+            userMessagesChatboxElements.value.push({
                 source: "bot",
-                message: reply.reply
-            })
-    },400)
+                message: chunk + messageSuffix,
+                showIcon: index === 0,
+            });
+        }
+
+        
+
+        // nextTick(() => {
+        //         let chatboxContainer = document.querySelector('.chatbox-message-container');
+        //         if (chatboxContainer) {
+        //         let lastElement = chatboxContainer.lastElementChild;
+        //         if (lastElement) {
+        //             let topPos = lastElement.offsetTop + lastElement.offsetHeight; // Adjusted to include the height of the last element
+        //             chatboxContainer.scrollTop = topPos;
+        //         }
+        //         }
+        //     });
+    }
 
 
-    // await nextTick()
-    // create html element
+    // Call the asynchronous function with 'await'
+    await displayChunksWithDelay(replyChunks);
 
-            // let chatboxContainer = document.querySelector('.chatbox-message-container')
-            // let lastElement = chatboxContainer.lastElementChild
-            // let topPos = lastElement.offsetTop;
-            // chatboxContainer.scrollTop = topPos;
-
+    // Start displaying messages sequentially with a delay of 400 milliseconds
     msg.value = ""
 }
 
@@ -145,6 +171,60 @@ function getCurrentDateTime() {
     return formattedDateTime;
 }
 
+function chunkString(inputString, chunkSize = 200) {
+    const chunks = [];
+
+    while (inputString.length > 0) {
+        let lastSpaceIndex = inputString.lastIndexOf(' ', chunkSize);
+
+        // If no space is found within the chunk size, take the whole chunk
+        if (lastSpaceIndex === -1) {
+            lastSpaceIndex = chunkSize;
+        }
+
+        // Extract the chunk up to the last space
+        let chunk = inputString.substring(0, lastSpaceIndex);
+
+        chunks.push(chunk);
+
+        // Remove the processed chunk from the input string
+        inputString = inputString.substring(lastSpaceIndex).trim();
+    }
+
+    return chunks;
+}
+
+
+// working
+function chunkWords(inputString, chunkSize = 200) {
+    const words = inputString.split(' ');
+    const wordChunks = [];
+    let currentChunk = '';
+
+    for (const word of words) {
+        // Check if adding the current word to the current chunk exceeds the chunk size
+        if ((currentChunk + ' ' + word).length > chunkSize) {
+            // If so, start a new chunk with the current word
+            wordChunks.push(currentChunk.trim());
+            currentChunk = word;
+        } else {
+            // Otherwise, add the current word to the current chunk
+            currentChunk += (currentChunk === '' ? '' : ' ') + word;
+        }
+    }
+
+    // Add the last chunk (if any) to the result
+    if (currentChunk.trim() !== '') {
+        wordChunks.push(currentChunk.trim());
+    }
+
+    return wordChunks;
+}
+
+
+
+
+
 </script>
 
 <template>
@@ -169,8 +249,9 @@ function getCurrentDateTime() {
             
             <!-- use :message when value comes from variable
                 else use message (without :) if static or direct -->
-            <ChatboxChatbotMessage 
-                        message="Hi How can I help you?"
+            <ChatboxChatbotMessage
+                        message="Hi there! How can I help you?"
+                        showIcon="true"
                         :time="getCurrentDateTime()"></ChatboxChatbotMessage>
 
             <TransitionGroup name="list" tag="ul">
@@ -178,10 +259,11 @@ function getCurrentDateTime() {
                 <li v-for="(item, index) in userMessagesChatboxElements" :key="index">
 
                     <ChatboxUserMessage 
-                        v-if="item.source=='user'"
+                        v-if="item.source=='user'" 
                         :message="item.message"></ChatboxUserMessage>
                     <ChatboxChatbotMessage v-else-if="item.source=='bot'"
                         :message="item.message"
+                        :showIcon="item.showIcon"
                         :time="getCurrentDateTime()"></ChatboxChatbotMessage>
                     
                 </li>

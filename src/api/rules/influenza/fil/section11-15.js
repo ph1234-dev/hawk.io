@@ -743,7 +743,7 @@ let section11 = [
         `Mayroon bang alternative herbal na gamot na pwede kong gamitin para magamot ang ubo`, 
 
     ], [
-        `Ang pulot ay isang napapanahong lunas para sa namamagang lalamunan. Ayon sa isang pag-aaral, maaari din nitong mapawi ang ubo nang mas epektibo kaysa sa mga OTC na gamot na naglalaman ng dextromethorphan (DM), isang panpigil sa ubo.`
+        `Ang Honey o pulot ay isang napapanahong lunas para sa namamagang lalamunan. Ayon sa isang pag-aaral, maaari din nitong mapawi ang ubo nang mas epektibo kaysa sa mga OTC na gamot na naglalaman ng dextromethorphan (DM), isang panpigil sa ubo.`
     ],7),
 
     // lozenges

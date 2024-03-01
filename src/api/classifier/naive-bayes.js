@@ -104,8 +104,9 @@ export default class NaiveBayes{
         //      countwc = 0
 
 
-        let tf = this.class_term_frequency_map[category][term] 
+        let tf = this.class_term_frequency_map[category][term]  
         let countwc = tf ? tf : 0
+
          
         // laplace factor
         let a = 1
@@ -144,7 +145,7 @@ export default class NaiveBayes{
 
 
         // compute likelihood
-
+        
         // classes.forEach(_class=>{
         //     console.log(`Term Probability Lang , `, _class)
         //     console.log(this.classTermProbabilityMap[_class])

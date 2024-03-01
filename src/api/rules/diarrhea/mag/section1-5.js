@@ -215,6 +215,7 @@ let section5 = [
         `Nya mapya enggulan nu taw na mangay sekanin sa doktor endu kagamutan sekanin upama ka pebpaugo i kapedtagudo nin. Namba na aw na to na sintomas na keped a di mapya a sakit mana su inflammatory bowel disease, infection o kaped a sakit na tinae. Da ka pegkan sa gamot a gapama sa da risenta nin sa botika mana su antimotilities abpeg a bismuth subsalicylate. Di ka blipat paginom sa ig. Endu kagamutan ka ebpyapya na pailay ka sa doctor endu kainggan ka sa nakasugat a gamot`,
     ],2),
     encodeMemory([
+        `* gamot * tagudo *`,
         `* (gamot|tabang|kapya) * tagudo * pegkayaw * `,
         `* (gamot|tabang|kapya) * pegkayaw * tagudo * `,
         `panon i pakairan kagamot sa taw a mayaw abpeg a pedtagudo`,
@@ -222,14 +223,18 @@ let section5 = [
         `amayka pedtagudo su taw na mayaw pan i kanggegedam nin na ngin e enggulan kagamot nin`,
         `panon i pakairan kagamot sa ginawa nu taw a pedtagudo na aden mayaw nin`,
         `ngin e galbeken kagamot nu taw a pegkayaw abpeg a pedtagudo`,
+        `panon i kagamot sa kapedtagudo`
     ],[
-        `Upama ka pegkayaw ka, na betadi ka sa mawasa a mayaw a debpas i bunan bunan nengka. Embalgkas ka sa dikena masimpit. Upama pegkegkel ka, na embalgkas ka sa madakel. Degka ka bon engo pegkabagel ka. 
-        
-        Upama manem ka pedtagudo ka pan na inom ka sa pegken a madakel a ig nin, mana su sabaw, sports drinks, beteng, o oral rehydration solutions engo da ka paginom sa mga makagkagatel sa tyan mana su aden alchohol nin. 
+        `
+        Upama ka pedtagudo ka na inom ka sa madakel a ig. Mapakay ka obn keman sa mana su sabaw, sports drinks, beteng, o oral rehydration solutions engo da ka paginom sa mga makagkagatel sa tyan mana su aden alchohol nin.
         
         Aden bon mga gamot a gapamasa mana su antimotility o bismuth subsalicylate a mapakay nengka engamuten. Ugayd, na da ka pegkan sa antimotility agents mana su loperamide abpeg imodium upama ka pegkayaw ka.
 
+        Amayka ka pegkayaw ka, na betadi ka sa mawasa a mayaw a debpas i bunan bunan nengka. Embalgkas ka sa dikena masimpit. Upama pegkegkel ka, na embalgkas ka sa madakel. Degka ka bon engo pegkabagel ka. 
+
         Amayka di maawa i sakit nengka, na nasisita su ka angay sa doktor engo pegkabagel ka.
+        
+        
         `
 
     ],2),

@@ -248,9 +248,9 @@ let section12 = [
         `pedtagudo ako, endaw ako ebpawang`,
         `endaw mangay i taw upama ka pedtagudo`,
         `aden kabpawangan endu kagamutan i kapedtagudo ko`,
-        `endaw penggamutan i kapedtagudo`
+        `endaw penggamutan i kapedtagudo`,
     ],[
-        `Su kadtagudo na mapakay na apya sa walay nu bo gamuti. Kapya bon I nan mga pila gay. Ugayd na amayka di den a benel mapya I kangegedam nengka, limambas den sa dwa gay I kauget nin, pebpilugo I tay nin o pegkayaw pan sekanin, na nya mapya san na edtanggit ka den sa ospital I pasente nengka.`
+        `Su kadtagudo na mapakay na apya sa walay nu bo penggamutan. Egkapya bon I nan mga pila gay. Ugayd na amayka di den a benel mapya I kangegedam nengka, limambas den sa dwa gay I kauget nin, pebpilugo I tay nin o pegkayaw pan sekanin, na nya mapya san na edtanggit ka den sa ospital I pasente nengka.`
     ],5),
     // encodeMemory([
     //     `*  acute * \bdiarrhea\b(?!_) * `,
@@ -333,7 +333,8 @@ let section14 = [
         `ngin i pagilayn sintomas senyales sa pedtagudo`,
         `aden mga signs, symptoms, sintomas, senyales , padsa o tanda na kapedtagudo`,
         `labit ka o enggay ka sa listahan na sintomas o senyales ng pedtagudo`,
-        `ngin i sintomas tanda signs na diarrhea`
+        `ngin i sintomas tanda signs na diarrhea`,
+        `Panon I katuntay kataw sintomas tanda o signs na su taw na pedtagudo`,
     ],[
         `Madakel I sipat na kapedtagudo. Kadakelan sa  mga taw na nya nilan kanggedam na pedsakit I tyan nilan, pegkasla tyan nila, aden lugo na tay nilan, pedtagetut silan a paka tik pan, galugat ket, pegkayaw, pegkegkel, pakaudo den edtandang, masla I ka nga udo din, aw na to na pakauta pan.`
     ],1),

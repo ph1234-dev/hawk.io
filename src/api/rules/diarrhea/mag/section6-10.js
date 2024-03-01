@@ -30,13 +30,13 @@ let section6 = [
     encodeMemory([
       `* ingat * tagudo * `, 
       `* kasambot * tagudo * `, 
-      `* gamot * tagudo *`,
       `nasisita a galbeken nu taw endu di sekanin edtagudo`,
-      `ngin i galbeken nu taw endu di sekanin edtagudo`,
+      `ngin i galbeken nu taw endu di sekanin edstagudo`,
       `ngen i mapya enggulan nu endu di edtagudo`,
       'panon i di kadtagudo nu taw',
       `panon i katangka sa sa sakit a kapedtagudo`,
-      `panon kagamot sa tagudo`,
+      `panon i kapananggila sa kapedtagudo`,
+      `panon i katangaka sa kapedtagudo`,
     ],[
       `Su kalimpyo , mana su kagagas sa lima sa sabon enggo ig , bago pegkan o kapasad gemamit sa cr na nasisita endu di ka edtagudo. Sigurado ka na malinis i gaganatanan a pegken abpeg su ig a paginumin. Endu iluto ka ebpyapya su pegken endu pebpatay i mga bacteria abpeg a parasite a pendeket sa pegken. Su di kakan sa mga da maluto na enguggulan nu taw endu di sekanin edtagudo. Meto bun su mga pegken na aden gatas nin a dala ma pasteruize abpeg nu mga maldsik a ig. Inom ka bon sa ig abpeg a kan sa ebpyapya ka namba na pakagkabagel sa lawas endu di ka kadampuan na kapedtagudo`,
     ],1),
@@ -71,7 +71,6 @@ let section8 = [
       `* diarrhea_foods_not_allowed_bad_hydration * \bdiarrhea\b(?!_) *`,
       `enduken ka di mapya minom o keman su taw sa paka dehydrate upama ka pendalo sa tagudo`,
       `enduken ka di mapya minom o keman su taw sa diarrhea_foods_not_allowed_bad_hydration amayka upama ka pedtagudo`,
-      ,
     ],[
       `Enggulan nu taw su di kakan sa mga pegken a di mapya sa hyrdation mana namba nilabit nengka kagina namba silan na pakalunsan sa dyhdration nu lawas. Nya mapya na kan ka sa mga pegken a malmo ka tunag sa tyan endu madakel i ig nin mana su sabay, tininda a kamo, abpeg mga unga na kayo ka madakel i ig nilan a makatabang sa kasambi na nadadag a ig nu taw abpeg electrolyes.`,
     ],4),
@@ -129,17 +128,22 @@ let section8 = [
       `So mga lanan a pegken na madakel i fats nin a pakagkawget sa ka lyu nu pegken ebpun sa tinay. Malgen bon pedsesepen so lana a paka stimulate sa kanggagalbek nu tinay a pakadtagudo. Endu su lana na paka umbal abpeg pakagkadakel sa stomach acid a makalunsan sa kangegedam nu taw. Upama ka pedtagudo i isa na temangka sekanin a mga nya ba lanan a pegken`,
     ],4),
     encodeMemory([
+      `* tagudo * pegken * pananggilan *`,
+      `* pananggilan * pegken * tagudo *`,
+      `* eat * pananggilan * tagudo *`,
       `* pegken * di * (inom|kan) * tagudo * `, 
       `* tagudo * di * (inom|kan) * pegken *`, 
       `labit ka sa laki ngin i mga pegken a di mapakay kanen iluton nu taw a pedtagudo`,
       `ngen a mga di mapya mapakay a pamasen kanen inumen iluton nu taw a pedtagudo`,
       `ngin i mga pegken a tangkan di dayt a pamasan kanen o iluton nu taw a pedtagudo`,
       `aden ngin mga pegken tangkan di dayt a kanen inumen pamasen iluton nu taw a pedtagudo`,
+      `Ngin I mga pegken a di kanen nu taw a pedtagudo`,
+      `ngin i pegken a pananggilan nu taw a pedtagudo`,
     ],[
       `
-      So katangka sa kaped a mga pegken na nasisita edu di kalunsanan su sakit nu taw. Su mga malalas, lanan , madakel i fats nin na malgen ga digest o sesep nu tinay nu taw. Su mga pegken manem a aden lactose o fructose nin na di mapya ka pakalunsan sa sakit kagina su kaped a mga taw na di nilan gasesep i namba. Endu aden mga pegken a madakil i fiber nin mana su mga beans, mga cruciferous vegetables abpeg mga hard grains na malgen gatunag sa tyan. Aw na to na nya ba na makadtagetut o makagkasakit sa tyan. 
+      Da ka pegkan sa mga malalas, lanan , madakel i fats nin na malgen ga digest o sesep nu tinay nu taw. Kaped a dayt a pananggilan nu taw na su kakan sa aden lactose o fructose nin na di mapya ka pakalunsan sa sakit kagina su kaped a mga taw na di nilan gasesep i namba.  Di bon dayt a keman su taw sa mga kamo a madakil i fiber nin mana su mga munggo, mga mategas a kamo abpeg mga hard grains na malgen gatunag sa tyan. Aw na to na nya ba na makadtagetut o makagkasakit sa tyan. 
 
-      Kaped sa di mapya a kanen o inumen nu pedtagudo na su aden alchohol nin, beans, berries, broccoli, repolyo, cauliflower, cheese, cheakpeas, kapi, kamais, petsay, fruit juice, grapes, mga gadong a kamo, teneb, ice crea, gatas, mani, lanan a pegken, malalas a pegken, paminta, mailaw a pegken, salad, shellfish, softdrinks, ebpeg tea. 
+      \nKaped sa di mapya a kanen o inumen nu pedtagudo na su aden alchohol nin, berries, broccoli, repolyo, cauliflower, cheese, cheakpeas, kapi, kamais, petsay, fruit juice, grapes, mga gadong a kamo, teneb, ice crea, gatas, mani, lanan a pegken, malalas a pegken, paminta, mailaw a pegken, salad, shellfish, softdrinks, ebpeg tea. 
       
       Nya mapya na kan ka sa mga pegken a malmo gatunag sa tyan nin mana su mga da ged nanam nin a pegken endu d kaumnanan ni kapedtagudo nu taw
       `,
