@@ -11,31 +11,31 @@ export default defineConfig({
     splitVendorChunkPlugin(),
     vue(), 
     vueJsx(), 
-    VitePWA({ 
-      registerType: 'autoUpdate',
-      injectRegister: 'auto',
-      manifest:{
-        name: "Your PWA Name",
-        short_name: "PWA",
-        description: "Thesis file",
-        theme_color: "#4caf50",
-        // start_url: "/",
-        display: "standalone",
-        background_color: "#ffffff",
-        icons: [
-          {
-            "src": "fire-icon-144.png",
-            "sizes": "144x144",
-            "type": "image/png",
-            "purpose": "any"
-          }
-        ]
-      },
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,txt,woff2}'],
-        cleanupOutdatedCaches: true
-      },
-    })
+    // VitePWA({ 
+    //   registerType: 'autoUpdate',
+    //   injectRegister: 'auto',
+    //   manifest:{
+    //     name: "Your PWA Name",
+    //     short_name: "PWA",
+    //     description: "Thesis file",
+    //     theme_color: "#4caf50",
+    //     // start_url: "/",
+    //     display: "standalone",
+    //     background_color: "#ffffff",
+    //     icons: [
+    //       {
+    //         "src": "fire-icon-144.png",
+    //         "sizes": "144x144",
+    //         "type": "image/png",
+    //         "purpose": "any"
+    //       }
+    //     ]
+    //   },
+    //   workbox: {
+    //     globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,txt,woff2}'],
+    //     cleanupOutdatedCaches: true
+    //   },
+    // })
   ],
   resolve: {
     alias: {
