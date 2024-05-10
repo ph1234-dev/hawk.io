@@ -108,6 +108,8 @@ let section11 = [
     // ],7),
     encodeMemory([
         `* sambi * antimotility * `,
+        `ngin i makasambi para sa antimotility`,
+        `ngin kaped a gamot lyu sa antimotility`,
         `ngen a mga gamot i mapakay i sambi sa loperamide `,
         `ngen i kaped a herbal gamot a gapakay isambi sa loperamide `,
         `aden pan kaped a herbal gamot a mapakay inomen kanen na taw lyu sa loperamide`,
@@ -335,6 +337,7 @@ let section14 = [
         `labit ka o enggay ka sa listahan na sintomas o senyales ng pedtagudo`,
         `ngin i sintomas tanda signs na diarrhea`,
         `Panon I katuntay kataw sintomas tanda o signs na su taw na pedtagudo`,
+        `ngin i mga tanda gagedam na aden diarrhea`
     ],[
         `Madakel I sipat na kapedtagudo. Kadakelan sa  mga taw na nya nilan kanggedam na pedsakit I tyan nilan, pegkasla tyan nila, aden lugo na tay nilan, pedtagetut silan a paka tik pan, galugat ket, pegkayaw, pegkegkel, pakaudo den edtandang, masla I ka nga udo din, aw na to na pakauta pan.`
     ],1),

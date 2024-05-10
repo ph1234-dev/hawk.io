@@ -132,4 +132,12 @@ export let stopwords = [
     "yong",
     "sabay",
     "kasabay",  
+
+    
+    // first-second actual test additions,
+    "anu",
+    "bilang",
+    "tungo",
+    "ukol",
+    "nating",
 ]

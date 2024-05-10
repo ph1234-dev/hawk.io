@@ -40,6 +40,7 @@ let section6 = [
       `Paano maiiwasan ang pagkalat pagkakaroon ng diarrhea `, 
       `anong dapat gawin upang makaiwas sa pagtatae`,
       `pano ba iwasan ang pagtatae`,
+      `papaano maiiwasan ang pagtate`,
     ],[
       `Ang pagiging malinis, tulad ng paghuhugas ng kamay gamit ang sabon o tubig bago ka kumain at pagkatapos ng pagpunta sa banyo, ay mahalaga upang hindi magkaroon ng pagtatae. 
       

@@ -12,6 +12,10 @@ import {
 
 import {testData} from "@/api/tests/pre_release/test1"
 
+import {data as firstIterationData}  from "@/data/first-iteration.js"
+import {data as secondIterationData}  from "@/data/second-iteration.js"
+import {data as thirdIterationData}  from "@/data/third-iteration.js"
+
 
 import {transFormedEnglishRules} from './rules_pre_transformed/eng.js'
 import {transFormedMaguindanaonRules} from './rules_pre_transformed/mag.js'
@@ -21,6 +25,10 @@ import {transFormedFilipinoRules } from './rules_pre_transformed/fil.js'
 import { eng as genericEngRules } from './rules/generic/eng.js'
 import { fil as genericFilRules } from './rules/generic/fil.js'
 import { mag as genericMagRules } from './rules/generic/mag.js'
+
+
+
+
 
 import {
     diarrheaEngRules,
@@ -57,10 +65,21 @@ export default class Engine {
         //     MAG: [].concat(diarrheaMagRules,influenzaMagRules,genericMagRules)
         // }
 
-
-        // getPreTransformedRules('ENG',[].concat(diarrheaEngRules,influenzaEngRules,genericEngRules))
-        // getPreTransformedRules('FIL',[].concat(diarrheaFilRules,influenzaFilRules,genericFilRules))
-        // getPreTransformedRules('MAG',[].concat(diarrheaMagRules,influenzaMagRules,genericMagRules))
+        /**
+        // hide this for now: may 6, 2024
+        console.log('English Pre Transformed')
+        let engt = getPreTransformedRules('ENG',[].concat(diarrheaEngRules,influenzaEngRules,genericEngRules))
+        console.log(engt)
+        
+        console.log('Filipino Pre Transformed')
+        let filt =getPreTransformedRules('FIL',[].concat(diarrheaFilRules,influenzaFilRules,genericFilRules))
+        console.log(filt)
+        
+        
+        console.log('Maguindanaon Pre Transformed')
+        let magt = getPreTransformedRules('MAG',[].concat(diarrheaMagRules,influenzaMagRules,genericMagRules))
+        console.log(magt)
+         */
 
 
 
@@ -129,10 +148,11 @@ export default class Engine {
         this.buildLanguageClassifier()
 
         // hide this later 
-        let datasetx = this.classifierLanguage.getDataset()
+        // let datasetx = this.classifierLanguage.getDataset()
         // console.log(`Total Classifier this.class_term_frequency_map[category][term] u:: ${}`)
 
-        crossValidate(datasetx,5,51)
+        
+        // crossValidate(datasetx,5,51)
 
         // in the loading weights.. its a little different.. that's because
         // we assume the the weights are already build because we called the build langauge classifier beforehand
@@ -149,9 +169,6 @@ export default class Engine {
         )
 
         
-        
-
-
 
         /** STEP 2 */
         /** Domain classification */
@@ -206,9 +223,6 @@ export default class Engine {
         this.RULES_WILDCARDS = {}
         // this.buildWildcardBlackbox()
 
-
-
-
         this.RULES_WILDCARDS["ENG"] = new WildcardBlackbox()
         this.RULES_WILDCARDS["ENG"].loadWeights(
             weight_wildcard_blackbox["ENG"]["wildcardArchive"].forwardIndex,
@@ -233,7 +247,7 @@ export default class Engine {
         // set this to TRUE To show debug message
         // this is default for local tests
         // this.debug = false
-        this.debug = true
+        this.debug = !true
 
         this.REPLY_THRESHOLD = .7   
         this.MAX_TOTAL_WORDS_OUTSIDE_DICTIONARY = 2
@@ -259,6 +273,74 @@ export default class Engine {
 
         // this.beginTest(testData)
         
+
+        // this.showLanguageDetectionStats() 
+
+
+
+        // 
+    }
+
+    showLanguageDetectionStats(){
+
+        // testing firts iteration data
+        // step1: build langauge
+
+        console.log('\nShowing Language Detection Stats')
+
+
+        
+        let looper = (input) =>{
+  
+            let data = []
+            input.forEach(d=>{
+                data.push({ data: d.q1[0] , class: 'ENG' })
+                data.push({ data: d.q2[0] , class: 'ENG' })
+                data.push({ data: d.q3[0] , class: 'ENG' })
+                data.push({ data: d.q4[0] , class: 'ENG' })
+                data.push({ data: d.q5[0] , class: 'ENG' })
+                data.push({ data: d.q6[0] , class: 'ENG' })
+                data.push({ data: d.q7[0] , class: 'ENG' })
+            })
+            
+            input.forEach(d=>{
+                data.push({ data: d.q1[1] , class: 'FIL' })
+                data.push({ data: d.q2[1] , class: 'FIL' })
+                data.push({ data: d.q3[1] , class: 'FIL' })
+                data.push({ data: d.q4[1] , class: 'FIL' })
+                data.push({ data: d.q5[1] , class: 'FIL' })
+                data.push({ data: d.q6[1] , class: 'FIL' })
+                data.push({ data: d.q7[1] , class: 'FIL' })
+            })
+    
+            
+            input.forEach(d=>{
+                data.push({ data: d.q1[2] , class: 'MAG' })
+                data.push({ data: d.q2[2] , class: 'MAG' })
+                data.push({ data: d.q3[2] , class: 'MAG' })
+                data.push({ data: d.q4[2] , class: 'MAG' })
+                data.push({ data: d.q5[2] , class: 'MAG' })
+                data.push({ data: d.q6[2] , class: 'MAG' })
+                data.push({ data: d.q7[2] , class: 'MAG' })
+            })
+    
+            let val = getConfusionMatrixScores(
+                this.classifierLanguage,
+                data,
+                ['ENG','FIL','MAG'])
+            console.log(val)
+        }
+
+        
+        // console.log('First Iteration Language Detection:')
+        // looper(firstIterationData)
+        
+        // console.log('Second Iteration Language Detection:')
+        // looper(secondIterationData)
+        
+        console.log('Third Iteration Language Detection:')
+        looper(thirdIterationData)
+
     }
 
     
@@ -499,11 +581,13 @@ export default class Engine {
         // console.log(this.classifierLanguage)
 
         
+        
         // getConfusionMatrixScores(
         //     this.classifierLanguage,
         //     this.classifierLanguage.getDataset(),
         //     ['ENG','FIL','MAG'])
 
+        
     }
 
     buildDomainClassifier(){

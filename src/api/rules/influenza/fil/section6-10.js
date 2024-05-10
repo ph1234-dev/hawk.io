@@ -225,6 +225,7 @@ let section8 = [
         `Ano ang mga hindi dapat kainin inumin o iwasan kapag may trangkaso`, 
         `Anong mga pagkain at inumin ang dapat iwasan para hindi lumala ang trangkaso`, 
         `May mga pagkain at inumin bang dapat iwasan habang nagpapagaling sa trangkaso`, 
+        `ano ang mga pagkain na dapat iwasan ng taong nagtatae`,
     ],[
         `Kung sa tingin mo ay mayroon kang trangkaso, kailangan mong umiwas sa mga inuming may caffeine, alkohol, mamantika na pagkain, mahirap matunaw na butil, at matamis na pagkain o inumin. Sa halip, subukang uminom ng mga sopas o sabaw para mapalitan ang likido ng katawan at sodium na maaaring mawala sa iyo. Subukan din kumain ng puting tinapay, patatas, puting bigas, saging, sarsa ng mansanas, walang taba na karne tulad ng manok at isda.
         

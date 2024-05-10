@@ -11,6 +11,52 @@ export default defineConfig({
     splitVendorChunkPlugin(),
     vue(), 
     vueJsx(), 
+    VitePWA({
+      manifest: {
+        icons: [
+          {
+            "src": "fire-icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any"
+          }
+        ]
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,txt,woff2.eot.json}'],
+        runtimeCaching: [{   
+            urlPattern: ({url})=>{
+
+            // Define an array of patterns to match
+            const patterns = [
+              '/api',          // Matches paths starting with '/api'
+              '/assets',  // Matches '/other-route'
+              '/assets/img',
+              '/assets/icomoon',
+              '/assets/svg',
+              // Add more patterns as needed
+            ];
+
+            // Join the patterns into a single regular expression
+            const regex = new RegExp(`^(${patterns.map(pattern => `(${pattern})`).join('|')})`);
+
+            // Test if the pathname matches any of the patterns
+            // return regex.test(url.pathname);
+
+
+              // return url.pathname.startsWith("/api")
+            },
+            handler: "CacheFirst",
+            options: {
+              cacheName: "api-cache",
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          }
+        ]
+      }
+    })
     // VitePWA({ 
     //   registerType: 'autoUpdate',
     //   injectRegister: 'auto',

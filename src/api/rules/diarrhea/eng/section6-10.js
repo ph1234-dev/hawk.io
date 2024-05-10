@@ -49,13 +49,12 @@ let section7 = [
   
     encodeMemory([
         `* food * (take|good) * `,
-        'show get tell me the list of foods what foods that i can eat take drink when having diarrhea',
-        `tell me  What foods can I eat drink take to help with diarrhea`,
-        `what foods can should take when i have diarrhea`,
+        `what which foods eat when i having diarrhea`,
+        `what which foods take when i having diarrhea`,
     ],[
         `You can eat arrozcaldo, bananas, broth, chicken, chicken soup, congee, electrolyte drinks, oatmeal, peanut butter ,potatoes, rice, soup, sports drinks, toasts, water, yogurt, rice soup (am) , and buko juice. These are only some of the foods you may taken when having diarrhea.`
     ],4),
-]
+]   
 
 
 let section8 = [
@@ -135,7 +134,10 @@ let section8 = [
         `What foods should be avoid eliminated not take eat drink avoid have diarrhea`,
         `Are there certain foods that can make diarrhea worse`, 
         `tell me the list of foods that i should not eat or avoid when having diarrhea`,
-        `What foods I should not eat or avoid when feeling diarrhea`
+        `What which foods I should not eat or avoid when feeling diarrhea`,
+        `what which foods you should avoid when having diarrhea`,
+        `what which food i should not eat when having diarrhea`,
+        `which food i should not eat when having diarrhea`
     ],[
         `
         Avoiding certain foods when having diarrhea is important because some foods can irritate the digestive system and worsen symptoms. Spicy, greasy, or fatty foods can be difficult for the body to digest, while foods containing lactose or fructose can exacerbate diarrhea in people with lactose or fructose intolerance. Furthermore, certain types of fiber, such as those found in beans, cruciferous vegetables, and whole grains, can  be difficult to digest and may cause gas or bloating. 

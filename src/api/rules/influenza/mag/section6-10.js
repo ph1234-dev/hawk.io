@@ -22,6 +22,8 @@ let section6 = [
         `panon a ka di ubayn i taw a aden influenza nin`,
         `enduken ka temangka sa influenza`,
         `panon i katangaka sa influenza`,
+        `ngin a mga makan i dapat a abungan u aden influenza nin`,
+        `paano gamutin ang influenza o di kaya ay trangkaso`
     ],[
         `Da ka aged pagubay sa kaped nengka upama ka aden sakit nin. Upama ka seka i aden sakit nin na tangka ka. da ka pagubay sa saka lepa sa mga tao a pembabatok. Tangka ka bon sa tayn I aden ngog nin. Da ka ged pagamong sa madakel a taw ka makwa nengka i kagaw a nan. Enggula ka I nyaba para di den makalanag I sakit a nya.`
     ],5),
@@ -96,6 +98,7 @@ let section6 = [
         `panon galbeken taw endu di sekanin kaalatan na influenza`,
         `ngin mapakay enggulan endu di ma makakwa sa influenza`,
         `panon i kapananggila sa influenza`,
+        
     ],[
         `Upama ka pakagaga ka na pabakuna ka. Tangkay ka su mga taw a aden sakit nin. Upamak ka seka su aden sakit nin na lenek kawm pan sa lawas endu di mganalat sakit nengka. Tagubi ka istidi i ngali abpeg su ngilong nengka endu di makaalat i sakit a nana. Gmait ka sa facemask. Pamlimpyo ka mana su kakagad sa lima endu di ka pagamit i mata , ngilong abpeg a ngali nengka endu di maka ludep i virus a nan sa lawas nengka.`
     ],1),
@@ -178,6 +181,8 @@ let section8 = [
         'pakenen ko pendalo a nya sa influenza nin i pakan lun',
         'ngin i pegken a pananggilan upama ka aden influenza',
         'Ngen a mga pegken I di ko dayt a kanen inumen upama ka aden trangkaso',
+        `ngin i mga makan a det a abungan na bedtrangkaso`,
+        `ngin i mga pegken a dili makan u aden trangkaso`
     ],[
         `Upama ka pakagedam ka sa flu na da ka paginom engo pegkan sa mga caffeinated drinks, coks, lanan ged, mategas a mga pegken, abpeg mga mamis a bnel a pegken. Tekaw ka kan sa mga aden sabay nin engo kasambiyan su mga nadadag a ig nu lawas. Kan ka sa pan, patatas, emay, saging, manok abpeg seda.`
     ],4),

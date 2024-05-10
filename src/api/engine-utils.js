@@ -36,9 +36,9 @@ export const getPreTransformedRules =(lang,rules)=>{
     })
     
       
-    console.log(`Engine::showPreTransformedRules (start) Lang:: ${lang}`)
-    console.log(rules)
-    console.log(`Engine::showPreTransformedRules (end)`)
+    // console.log(`Engine::showPreTransformedRules (start) Lang:: ${lang}`)
+    // console.log(rules)
+    // console.log(`Engine::showPreTransformedRules (end)`)
 
     return rules
 }
@@ -239,7 +239,7 @@ export function getConfusionMatrixScores(classifier,data,lang){
     })
   })
 
-  // console.table(matrix)
+  console.table(matrix)
 // 
 
     

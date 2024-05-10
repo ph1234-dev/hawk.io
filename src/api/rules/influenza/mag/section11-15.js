@@ -934,6 +934,7 @@ let section14 = [
         `labit ka sa listahan na sintomas ng flu`,
         `ngin i sintomas senyales tanda na influenza`,
         `Panon I katuntay kataw sintomas tanda o signs na su taw na influenza`,
+        `ngin i mga tanda gagedam aden influenza `,
     ],[
         `Su Center of Diseases and Control na nya nilan nadtalo na su taw a aden trangkaso nin na aden pila timan nin a sintomas. Aw na to na aden mayaw nilan, batok, blebag a tideg, sepu o di pakaginawa, pedsakit a lawas, pedsakit a ulo, abpeg a kalugat pedtandang. Su kaped na pakauta pan abpeg a pedtagudo ugayd na sya ba I nya ba kailay ged sa mga wata abpeg matuwa.`
     ],1),

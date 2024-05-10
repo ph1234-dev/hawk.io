@@ -7,8 +7,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        Sweets could trigger diarrhea due to their ability to create an osmotic effect in the intestines, drawing water from the body into the digestive tract, and also due to their ability to stimulate the production of digestive enzymes and increase gut motility, leading to incomplete absorption of nutrients and water. Also , sometimes sweets are not well absorbed by the body and can ferment in the gut, causing gas, bloating and diarrhea in susceptible individuals. For example, lactose-intolerant people lack the enzyme lactase, which is necessary to break down the lactose in milk and dairy products. If lactose is not broken down properly, it can cause diarrhea.\n        "
         ],
-        "dimension": 1,
-        "index": 0
+        "dimension": 1
     },
     {
         "pattern": [
@@ -19,8 +18,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Allergies can trigger diarrhea as a result of the body's immune response to an allergen. When an allergen is detected, the immune system releases histamine and other chemicals that can cause inflammation and irritation in the gut. This inflammation can lead to increased gut motility, reduced water absorption, and the secretion of excess fluid into the intestines, resulting in diarrhea."
         ],
-        "dimension": 1,
-        "index": 1
+        "dimension": 1
     },
     {
         "pattern": [
@@ -30,8 +28,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Parasites can attach themselves to the intestinal walls, causing damage and releasing toxins that can trigger an immune response and inflammation. This inflammation can lead to increased gut motility, reduced water absorption, and the secretion of excess fluid into the intestines, resulting in diarrhea. Additionally, some parasites can produce enzymes that interfere with the digestion and absorption of nutrients, leading to malabsorption and diarrhea.\n        "
         ],
-        "dimension": 1,
-        "index": 2
+        "dimension": 1
     },
     {
         "pattern": [
@@ -42,8 +39,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Bacterial infections are able to cause diarrhoea because of the production of toxins which damage the intestine, causing inflammation and irritation. Also, it triggers the release of fluid from the gastrointestinal tract. By secreting enzymes which break down food in the gut and lead to malabsorption and diarrhea, bacteria can interrupt absorption of nutrients and water."
         ],
-        "dimension": 1,
-        "index": 3
+        "dimension": 1
     },
     {
         "pattern": [
@@ -53,8 +49,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Infections caused by viruses may lead to damage to the lining of the intestinal tract, which can decrease your body's ability to absorb water and nutrients. The viruses could be stimulating the body's release of chemicals that are increasing gut motility, which would lead to diarrhea. There are a variety of viruses that can cause diarrhoea, including noroviruses, rotavirus and adenoviruses which may spread easily through contaminated food or water; close contact with an infected person."
         ],
-        "dimension": 1,
-        "index": 4
+        "dimension": 1
     },
     {
         "pattern": [
@@ -66,8 +61,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Contamination of food and water, e.g. foodstuffs that were not properly prepared or handled, can cause diarrhoea. Taking some medicines such as antibiotics can also cause diarrhea by altering the balance of bacteria in your digestive tract and lead to gastrointestinal disorders. Stress, dietary adjustments and health conditions may also contribute to the development of diarrhoea. Some foods containing lactose and fructose can also cause diarrhea for some people who are unable to digest them. The risk of developing diarrhoea may be reduced. This can be done by ensuring good hygiene such as frequent hand washing, safe handling of food, and avoiding certain foods containing lactose and fructose which are present in dairy products and sweets.\n        "
         ],
-        "dimension": 1,
-        "index": 5
+        "dimension": 1
     },
     {
         "pattern": [
@@ -79,8 +73,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        Staying hydrated is important because diarrhea can lead to significant fluid loss. Diarrhea causes the body to lose water and electrolytes, such as sodium and potassium, which are essential for normal bodily functions.\n        \n        Drinking fluids, such as  water, buko juice, am, arrozcaldo, soups, sports drinks, broths, and oral rehydration solutions, can replace lost fluids and electrolytes and prevent dehydration. It is also recommended to avoid beverages that can further irritate the stomach, such as alcohol, caffeine, and sugary drinks. \n       \n        Proper hydration during diarrhea can help relieve symptoms and prevent complications  that can arise from dehydration.\n        "
         ],
-        "dimension": 7,
-        "index": 0
+        "dimension": 7
     },
     {
         "pattern": [
@@ -91,8 +84,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        Zinc supplementation has been found to reduce the duration and severity of diarrhoeal episodes and likelihood of subsequent infection. It may also help to maintain the balance of fluids and electrolytes, which can be disturbed when diarrhoea occurs. Moreover, to prevent the risk of further infections, zinc supplements can also help restore healthy intestinal flora. However, because excessive zinc intake can be detrimental, it is advisable that all supplements should be discussed with a healthcare professional prior to use.\n        "
         ],
-        "dimension": 7,
-        "index": 1
+        "dimension": 7
     },
     {
         "pattern": [
@@ -103,8 +95,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        Depending on the severity of symptoms, treatment with diarrhea can be taken at home or in a healthcare facility. Rest, hydration and dietary modification are usually the most effective ways to treat mild cases of diarrhoea. Symptoms may also be relieved by the use of over the counter medicinal products such as loperamide and bismuth subsalicylate. But urgent treatment should be initiated if diarrhea is severe or accompanied by any other symptoms, including fever, dehydration and blood in the stool.Also if diarrhea persist more than 48 hours, bring the patient to a healthcare facility immediately. Go to nearest baranggay health center\n        "
         ],
-        "dimension": 5,
-        "index": 0
+        "dimension": 5
     },
     {
         "pattern": [
@@ -115,8 +106,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        It is essential to seek professional advice immediately if you notice blood in your diarrhea. It could be a sign of severe illness, for example Inflammatory bowel disease, infection or other digestive disorders.  Don’t take on the counter medicines such as antimotility agents like antimotilities and bismuth subsalicylate. Keep hydrating yourself. In order to treat the underlying cause of the bloody diarrhoea, your doctor may recommend testing and prescribing medicinal products.\n        "
         ],
-        "dimension": 2,
-        "index": 0
+        "dimension": 2
     },
     {
         "pattern": [
@@ -132,8 +122,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        When you have a fever, apply damp, luke warm cloths to the forehead. Wear comfortable cloths. If you have chills, it is best to wear layers and keep warm. Then rest. You need plenty of rest to recover.\n       \n        If you have diarrhea, drink plenty of fluids like broths, soups, sports drinks, coconut water, water, oral rehydration solutions and avoiding drinks which can aggravate a stomach , like alchohol.\n\n        Furthermore, you can take over the counter remedies such as antimotility or bismuth subsalicylate. However, don’t take on the antimotility agents like loperamide and imodium when you are having fever when having diarrhea. \n        \n        If symptoms persist, it is important to consult your doctor for a proper diagnosis and treatment."
         ],
-        "dimension": 2,
-        "index": 1
+        "dimension": 2
     },
     {
         "pattern": [
@@ -149,8 +138,7 @@ export let transFormedEnglishRules = [
         "response": [
             "The treatment of diarrhea depends on the underlying cause. For minor cases, over the counter remedies such as antimotility or bismuth subsicylate can help. However, drinking plenty of fluids like broths, soups, sports drinks, coconut water, water, oral rehydration solutions and avoiding drinks which can aggravate a stomach , like alchohol , should be taken into account. You need to stay hydrated. If symptoms persist, it is important to consult your doctor for a proper diagnosis and treatment."
         ],
-        "dimension": 1,
-        "index": 6
+        "dimension": 1
     },
     {
         "pattern": [
@@ -167,8 +155,7 @@ export let transFormedEnglishRules = [
         "response": [
             "To avoid diarrhoea, it is recommended that fruits are peeled before eating as their skins may harbour harmful bacteria, parasites and viruses which can cause infections. The chances of exposure to these pathogens will decrease considerably with the peeling of fruits. In addition, the risk of contamination can be further reduced by rinsing fruits carefully with clear water before they are peeled."
         ],
-        "dimension": 5,
-        "index": 1
+        "dimension": 5
     },
     {
         "pattern": [
@@ -187,8 +174,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Cooking food properly is important because it kills harmful bacteria, viruses, and parasites that can cause gastrointestinal infections. Consuming undercooked or raw foods, especially meats, poultry, eggs, and seafood, can increase the risk of foodborne illnesses. Proper cooking techniques, such as cooking food to appropriate temperatures and avoiding cross-contamination between raw and cooked foods, can help prevent the spread of harmful bacteria and reduce the risk of developing diarrhea."
         ],
-        "dimension": 5,
-        "index": 2
+        "dimension": 5
     },
     {
         "pattern": [
@@ -203,21 +189,18 @@ export let transFormedEnglishRules = [
         "response": [
             "Good hygiene, such as handwashing with soap or water before you eat and after going to the bathroom, is essential in order not to get diarrhoea. Ensuring clean and safe sources of food and water as well as the thorough cooking of foods in order to eliminate any harmful bacteria or parasites is also important. Diarrhoea prevention can also be ensured by avoiding raw or undercooked foods, dairy products that are unpasteurized and unclean water sources. Additionally, staying hydrated and maintaining a healthy diet can help strengthen the immune system and prevent infections that can lead to diarrhea."
         ],
-        "dimension": 1,
-        "index": 7
+        "dimension": 1
     },
     {
         "pattern": [
             "* food * (take|good) * ",
-            "show get tell me the list of foods what foods that i can eat take drink when having diarrhea",
-            "tell me  What foods can I eat drink take to help with diarrhea",
-            "what foods can should take when i have diarrhea"
+            "what which foods eat when i having diarrhea",
+            "what which foods take when i having diarrhea"
         ],
         "response": [
             "You can eat arrozcaldo, bananas, broth, chicken, chicken soup, congee, electrolyte drinks, oatmeal, peanut butter ,potatoes, rice, soup, sports drinks, toasts, water, yogurt, rice soup (am) , and buko juice. These are only some of the foods you may taken when having diarrhea."
         ],
-        "dimension": 4,
-        "index": 0
+        "dimension": 4
     },
     {
         "pattern": [
@@ -229,8 +212,7 @@ export let transFormedEnglishRules = [
         "response": [
             "It is important to avoid foods that are bad for hydration such as what you mentioned when experiencing diarrhea because these foods can further dehydrate the body.Instead, it is recommended to consume foods that are easy to digest and high in water content, such as broths, soups, boiled vegetables, and fruits with high water content, to help replace lost fluids , electrolytes and prevent dehydration."
         ],
-        "dimension": 4,
-        "index": 1
+        "dimension": 4
     },
     {
         "pattern": [
@@ -244,8 +226,7 @@ export let transFormedEnglishRules = [
         "response": [
             " If you have diarrhea, avoid foods containing lactose because it may destroy the lining of your small intestine and reduce its ability to produce lactase, an enzyme which helps break down lactose. It may get stuck in the larger intestine, giving rise to gas, bloat or all sorts of indigestion if lactose is not properly absorbed. As a result, it can help to reduce diarrhoea symptoms and prevent future problems if you do not eat lactose-containing foods such as milk, cheese or ice cream."
         ],
-        "dimension": 4,
-        "index": 2
+        "dimension": 4
     },
     {
         "pattern": [
@@ -257,8 +238,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Spicy foods can irritate stomach, causing increased bowel movements which may lead to worsening of diarrhea symptoms. Furthermore, spicy foods may contain ingredients that are difficult to digest, causing further gastrointestinal distress. As a result, when diarrhoea occurs, it is advised to avoid the use of spice foods."
         ],
-        "dimension": 4,
-        "index": 3
+        "dimension": 4
     },
     {
         "pattern": [
@@ -270,8 +250,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Greasy foods contain high amounts of fat, they slow stomach emptying. It is difficult to digest oil and greasy food, which may stimulate the gastrointestinal tract causing diarrhoea. This may also cause stomach acid production to increase, which can irritate the bowels and lead to worsening of symptoms. If you have a diarrhoea, it may help to reduce symptoms and speed up recovery by avoiding oily foods."
         ],
-        "dimension": 4,
-        "index": 4
+        "dimension": 4
     },
     {
         "pattern": [
@@ -284,13 +263,15 @@ export let transFormedEnglishRules = [
             "What foods should be avoid eliminated not take eat drink avoid have diarrhea",
             "Are there certain foods that can make diarrhea worse",
             "tell me the list of foods that i should not eat or avoid when having diarrhea",
-            "What foods I should not eat or avoid when feeling diarrhea"
+            "What which foods I should not eat or avoid when feeling diarrhea",
+            "what which foods you should avoid when having diarrhea",
+            "what which food i should not eat when having diarrhea",
+            "which food i should not eat when having diarrhea"
         ],
         "response": [
             "\n        Avoiding certain foods when having diarrhea is important because some foods can irritate the digestive system and worsen symptoms. Spicy, greasy, or fatty foods can be difficult for the body to digest, while foods containing lactose or fructose can exacerbate diarrhea in people with lactose or fructose intolerance. Furthermore, certain types of fiber, such as those found in beans, cruciferous vegetables, and whole grains, can  be difficult to digest and may cause gas or bloating. \n        \n        Some of the foods you should avoid includes avoid Alchohol, beans, berries, brocoli, cabbage, cauliflower, cheese, chickpeas, coffee, corn,  dates, fruit jucies, grapes, green leafy  vegetables, gum, honey ice cream, milk,  nuts, oily foods, spicy foods, peppers,  raw meat , salads, shellfish, soft drinks,  and tea.\n\n        So, it is best to stick with easily digestible, bland foods and avoid foods that may worsen diarrhea symptoms.\n        "
         ],
-        "dimension": 4,
-        "index": 5
+        "dimension": 4
     },
     {
         "pattern": [
@@ -306,8 +287,7 @@ export let transFormedEnglishRules = [
         "response": [
             "The people who should be cautious are children under 3 years, older patients, people with weak immune system, malnourished children, patients have diarrhea for more than 24 hours, patients having 39 degree celcius, patients havin bloody stools and pus, patients having high blood pressure medications, and travelers having pre-existing health conditions should take extra care when having diarrhea as they have higher risk of developing complications"
         ],
-        "dimension": 1,
-        "index": 8
+        "dimension": 1
     },
     {
         "pattern": [
@@ -322,8 +302,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Drink plenty of clear liquids while you're treating your diarrhea with antimotilities. Having diarrhea can make you dehydrated.  Here are the different dosing you can follow.  For adults and children of age 12 and older, the recommended dose is 2 tablets by mouth after the first loose stool. Then, take 1 tablet after each loose stool. Don't take more than 4 tablets in 24 hours. For children age 9 to 11 years or children who weigh 60 lbs to 95 lbs, the recommended dose is 1 tablet by mouth after the first loose stool.  Then, take one-half of a tablet after each loose stool. Don't take more than 3 whole tablets in 24 hours. For children age 6 to 8 years or children who weigh 48 lbs to 59 lbs, the recommended dose is 1 tablet by mouth after the first loose stool. Then, take one-half of a tablet after each loose stool. Don't take more than 2 whole tablets in 24 hours. For children 5 years and younger: Ask your child's doctor to see what other options are available to treat your child's diarrhea."
         ],
-        "dimension": 7,
-        "index": 2
+        "dimension": 7
     },
     {
         "pattern": [
@@ -334,8 +313,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antimotility drugs such as loperamide and immodium are used to slow down or stop the movement of the gastrointestinal tract. It works by binding to the opioid receptors in the intestinal muscles, which reduces their contractions and helps to slow down the passage of stool through the gut. These medicines are available in various forms such as tablets, capsules, liquids and suspensions."
         ],
-        "dimension": 7,
-        "index": 3
+        "dimension": 7
     },
     {
         "pattern": [
@@ -347,8 +325,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antimotility agents  such as loperamide and immodium  mainly focus on treating symptoms of diarrhea by reducing or preventing intestinal contractions that restrict the movements of food and liquids through the GI tract. It also provides the body with more time to absorb water and nutrients from remaining intestinal contents, which may lead to a decrease in bowel movement frequency and intensity. These medicines are available in various forms such as tablets, capsules, liquids and suspensions. "
         ],
-        "dimension": 7,
-        "index": 4
+        "dimension": 7
     },
     {
         "pattern": [
@@ -359,8 +336,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antimotility medicines,such as Loperamide and Imodium, prevents the intestines from moving and may be used to treat diarrhea. These works by making the absorption of water and electrolytes more rapid in your stool. Thus, it gives you a better or lesser frequency of bowel movements. The medicine normally takes about an hour to help with your diarrhea symptoms, but it can vary from  person to person. However, it bear in mind that they may not be appropriate for every patient and can have a potential side effect."
         ],
-        "dimension": 7,
-        "index": 5
+        "dimension": 7
     },
     {
         "pattern": [
@@ -376,8 +352,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antimotility agents should be avoided if there are signs of severe dehydration, high fever, or bloody stools, as these may indicate a more serious underlying condition that requires medical attention"
         ],
-        "dimension": 7,
-        "index": 6
+        "dimension": 7
     },
     {
         "pattern": [
@@ -389,8 +364,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antimotilities can cause dizziness, drowsiness, or tiredness.  Don't drive or do anything that requires you to focus until you know how the medication affects you. If you happen to experience stomach swelling, contact a doctor immediately"
         ],
-        "dimension": 7,
-        "index": 7
+        "dimension": 7
     },
     {
         "pattern": [
@@ -404,8 +378,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antimotility medications, such as Loperamide, can have side effects. The common ones  include having constipation, abdominal pain, nausea, vomiting, and dry mouth. Some people may also experience dizziness, drowsiness, and difficulty urinating. \n\n        It is important to follow the instructions of your healthcare provider or the medication label carefully."
         ],
-        "dimension": 7,
-        "index": 8
+        "dimension": 7
     },
     {
         "pattern": [
@@ -422,8 +395,7 @@ export let transFormedEnglishRules = [
         "response": [
             "There are several natural or herbal alternatives to antimotility medications.\n        For example, boiling and drinking the leaves can help fight bacteria and viruses as it have antimicrobial properties. Similarly, ginger has anti-inflammatory properties that can help soothe the digestive system and reduce diarrhea. You can also take bananas. These contain high levels of potassium, which can help regulate bowel movements and replace lost electrolytes. They also contain pectin, which can help thicken stool and reduce diarrhea.\n        "
         ],
-        "dimension": 7,
-        "index": 9
+        "dimension": 7
     },
     {
         "pattern": [
@@ -437,8 +409,7 @@ export let transFormedEnglishRules = [
         "response": [
             "The proper way of taking of Bismuth Subsalicylate usually depends. There are difference between the tablets and the liquid forms.\n         \n        Those aged 12 and older can take 2 tablets up to 524mg every 30 to 60minutes up to 2 days. It is not recommended to take more than 16 tablets a day. \n        \n        The typical dose for liquid bismuth subsalicylate for those aged 12 is around 30ml  every 30 minutes up to 2 days. Throughout the day it is not recommended to take 240ml of it.\n        \n        The information I represented is an example of how you take it. Proper dosage must be observed. If you have further questions, please refer to your healthcare provider.\n        "
         ],
-        "dimension": 7,
-        "index": 10
+        "dimension": 7
     },
     {
         "pattern": [
@@ -451,8 +422,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Bismuth subsalicylate (such as Pepto-Bismol and Bismatrol) is an over-the-counter medication used to treat upset stomach and diarrhea. It works well to stop diarrhea, but you might need to take it multiple times a day. This medicine is generally well-tolerated, but it can cause harmless darkening of your tongue or stools. It also comes in several forms, including tablets, capsules, liquid suspension, and chewable tablets, depending on the manufacturer and the specific condition being treated\n        "
         ],
-        "dimension": 7,
-        "index": 11
+        "dimension": 7
     },
     {
         "pattern": [
@@ -462,8 +432,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Bismuth subsalicylate (such as Pepto-Bismol and Bismatrol) is an over-the-counter medication used for treatment of diarrhea, gas, upset stomach, indigestion, heartburn,nausea and as a prophylaxis for traveler's diarrhea. It also comes in several forms, including tablets, capsules, liquid suspension, and chewable tablets, depending on the manufacturer and the specific condition being treated."
         ],
-        "dimension": 7,
-        "index": 12
+        "dimension": 7
     },
     {
         "pattern": [
@@ -476,8 +445,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        Bismuth subsalicylate  (such as Pepto-Bismol and Bismatrol)is an oral antidiarrheal medicine which decreases inflammation and fluid in the gastrointestinal tract. It's also antibacterial, which can assist in fighting off the pathogens that cause diarrhea. Bismuth subsalicylate may help to treat symptoms such as abdominal cramping, diarrhoeal stools or nausea due to the reduction of inflammation and loss of fluids. However, it is important to note that bismuth subsalicylate should not be used by individuals with aspirin allergies, bleeding disorders, or renal impairment, and it should be used with caution in children and pregnant women.You shouldn’t use bismuth subsalicylate (Pepto-Bismol) for more than 2 days. \n        "
         ],
-        "dimension": 7,
-        "index": 13
+        "dimension": 7
     },
     {
         "pattern": [
@@ -491,8 +459,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You should not give it if you have bleeding problems, a stomach ulcer, blood in your stools, or if you are allergic to aspirin or other salicylates. Do not give this medicine to a child or teenager with a fever, flu symptoms, or chickenpox."
         ],
-        "dimension": 7,
-        "index": 14
+        "dimension": 7
     },
     {
         "pattern": [
@@ -504,8 +471,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You may experience temporary darkening of the stool or tongue. If experience severe allergic reaction such as difficulty breathing, skin rash, and swelling, and Rye's syndrome which exhibits  diarrhea, vomiting, unusually low energy, loss of consciousness, seizure, changes in behavior, confusion, muscle weakness, changes in vision or hearing, contact your doctor immediately\n        "
         ],
-        "dimension": 7,
-        "index": 15
+        "dimension": 7
     },
     {
         "pattern": [
@@ -517,8 +483,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Drink plenty of clear liquids while you are taking bismuth subsalicylate (Pepto-Bismol). Diarrhea can cause dehydration and drinking enough liquids will help prevent this. Swallow the capsules whole with water. Do not chew them. Swallow the capsules whole with water. Do not chew them."
         ],
-        "dimension": 7,
-        "index": 16
+        "dimension": 7
     },
     {
         "pattern": [
@@ -532,8 +497,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You can buy antimotilities. Natural remedies also exists. For example, you can take ginger and turmeric as it has anti-inflammatory and antimicrobial properties that may help reduce diarrhea symptoms. You may also drink coconut water which have high electrolyte content. "
         ],
-        "dimension": 7,
-        "index": 17
+        "dimension": 7
     },
     {
         "pattern": [
@@ -544,8 +508,7 @@ export let transFormedEnglishRules = [
         "response": [
             "In most cases, diarrhea can be treated at home and it will resolve itself in a few days. \n        You may drinking plenty of fluids like broths, soups, sports drinks, coconut water, water, oral rehydration solutions while avoiding drinks which can be bad for you like alchohol.\n\n        If you really feel great discomfort , it has lasted for more than 2 days,seeing blood in your stool , or have fever, it is best for you to  go to nearby healthcare center"
         ],
-        "dimension": 5,
-        "index": 3
+        "dimension": 5
     },
     {
         "pattern": [
@@ -559,8 +522,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Someone who experiences diarrhea often feel abdominal cramps , bloating, bloody stools, explosive and painful gas, fatigue, fever, chills, frequent urge to evacuate, large volume of stools mucus on the stool, nausea, and persistent vomiting. Dehydration is also a potential complication of diarrhea, and signs of dehydration may include dry mouth, excessive thirst, dark urine, fatigue, dizziness, and lightheadedness. It is important to seek medical attention if diarrhea persists for more than a few days, or if there are signs of dehydration or other concerning symptoms.\n        "
         ],
-        "dimension": 1,
-        "index": 9
+        "dimension": 1
     },
     {
         "pattern": [
@@ -573,8 +535,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Viruses cause influenza. They spread when people with flu cough, sneeze or talk, sending droplets with the virus into the air and potentially into the mouths or noses of people who are nearby."
         ],
-        "dimension": 1,
-        "index": 10
+        "dimension": 1
     },
     {
         "pattern": [
@@ -589,8 +550,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You can get influenza when you breathe or inhale the air released by person who sneezes or coughs even at small amounts. These virus can also be transmitted by touching objects infected with the virus. In simple terms, you can get it when you have contact with surfaces, materials, and clothing contaminated with dischages of infected person.  Seasonal changes can also cause influenza because it human defenses weakens especially in declining temperature."
         ],
-        "dimension": 1,
-        "index": 11
+        "dimension": 1
     },
     {
         "pattern": [
@@ -603,8 +563,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You should stay home until your fever has been gone for at least 24 hours. Someone with influenza will recover naturally within 2 to 7 days. By resting during the day, your body can devote more resources to fighting the virus. On top of helping you recover, staying home also prevents spreading the flu to other people in your community or workplace"
         ],
-        "dimension": 1,
-        "index": 12
+        "dimension": 1
     },
     {
         "pattern": [
@@ -618,8 +577,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Drinking fluids are recommended when having influenza. One symptom of the flu is a high fever, which can lead to sweating. Some people may experience vomiting and diarrhea. Therefore, it is best that you hydrate or drink plenty of fluids to replace lost liquids, and even more to fight off the infection"
         ],
-        "dimension": 1,
-        "index": 13
+        "dimension": 1
     },
     {
         "pattern": [
@@ -631,8 +589,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You can manage influenza by your own. There are over the counter medicines that can help ease symptoms such as fevers, aches and coughing. If you have the virus, you need to have adequate rest. You should stay home until your fever has been gone for at least 24 hours, drink plenty of fluids, avoid exertion, eat healthy foods. However, going to see a doctor can better help you if your are feeling worse. They can prescribe you specific medication and directions."
         ],
-        "dimension": 1,
-        "index": 14
+        "dimension": 1
     },
     {
         "pattern": [
@@ -645,8 +602,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You can practice self-care in you home. To those having severe cases, you need to see doctor immidately especially if you belong to high risk groups."
         ],
-        "dimension": 5,
-        "index": 4
+        "dimension": 5
     },
     {
         "pattern": [
@@ -664,8 +620,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Influenza, commonly known as the flu, is a viral infection that affects the respiratory system. The best way to treat the flu is to get plenty of rest, drink fluids to prevent dehydration. \n        \n        There are also over the counter medicines you can buy. You can take antihistamines to relieving such annoying symptoms as sneezing, itching, and nasal discharge.Analgesics like acetaminophen or ibuprofen are sometimes taken to reduce fever and relieve body aches. Likewise, non steroidal anti-inflammatory drugs (nsaids) works similar. If you have clogged nose, decongestants are also helpful as these  help open your nasal passages and relieve pressure in your sinuses. If coughing, antitussives works by suppressing cough. It also helps by loosening thick mucus. Finally, lozenges may relieve  temporarily help relieve symptoms such as sore throat, throat irritation, or cough.\n\n        In severe cases, hospitalization may be necessary. Prevention is key in avoiding the flu, and getting an annual flu vaccine is the most effective way to protect oneself from getting sick.\n        "
         ],
-        "dimension": 1,
-        "index": 15
+        "dimension": 1
     },
     {
         "pattern": [
@@ -679,8 +634,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Although there is no medicine that can prevent flu, flu vaccine are found to help protect you. Flu vaccination prevents illnesses and flu-related doctors visit each year. It help reduce the severity of illnesses in people who get vaccinated but stil get sick. This particularly help people with certain chronic health conditions (such as heart conditions). With this, it reduces flu associated hospitalization. It also protect pregnant , children and people around you."
         ],
-        "dimension": 5,
-        "index": 5
+        "dimension": 5
     },
     {
         "pattern": [
@@ -695,8 +649,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Avoid close contact with people who are sick. If its you who is sick, keep your distance from others. Distance yourself by at least 1 meter from people who are coughing. Keep yourself away from people with colds. Avoid crowded places because they can increase the risk of getting the virus. You need to do these things to prevent spreading the virus further."
         ],
-        "dimension": 5,
-        "index": 6
+        "dimension": 5
     },
     {
         "pattern": [
@@ -709,8 +662,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Cover your mouth and nose with a tissue when coughing or sneezing to prevent those around you from getting sick."
         ],
-        "dimension": 5,
-        "index": 7
+        "dimension": 5
     },
     {
         "pattern": [
@@ -722,8 +674,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Germs often spread when a person touches something that is contaminated with germs and then touches his or her eyes, nose, or mouth."
         ],
-        "dimension": 5,
-        "index": 8
+        "dimension": 5
     },
     {
         "pattern": [
@@ -736,8 +687,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Wearing face mask prevents infection as the virus can get in the air or get on anything touched or used by a person with the flu."
         ],
-        "dimension": 5,
-        "index": 9
+        "dimension": 5
     },
     {
         "pattern": [
@@ -750,8 +700,7 @@ export let transFormedEnglishRules = [
         "response": [
             "If you can, get vaccinated. Avoid close contact with people who are sick. If you are sick, better stay at home to prevent spreading the virus to others. Always cover your mouth and nose to reduce the risk of transmitting the virus to others. Wearing a face make help you with this.  Practice good hygeine. For example cleaning your hands often and avoid touching your eyes, nose or mouth to prevent any virus from entering your body."
         ],
-        "dimension": 1,
-        "index": 16
+        "dimension": 1
     },
     {
         "pattern": [
@@ -762,8 +711,7 @@ export let transFormedEnglishRules = [
         "response": [
             "There are several foods that may help you recover quicker. You may consider taking several foods. Broths and soup made from chicken, beef, and vegetable may prevent dehydration and its warmth may relieve congestion and sooth sore throat. You may also take garlic since it can enhance immunity nad reduce the serverity of symptoms. Foods sources with probiotics such as yogurt may also help by promoting good gut bacteria that suppors your immune system. Fruits and vegatables containing vitamin c may also help. This include peppers, oranges, citrus, lemons, grapes and those dark leafy greens. You can also take broccoli. Furthermore, oatmeal contains immune-boosting nutrients like copper, iron, selenium, zinc fiber and protien. Additionally, you can also add spicesd such as ginger and turmeric in your food. Finally, always take fluids such as water to keep you hydrate"
         ],
-        "dimension": 4,
-        "index": 6
+        "dimension": 4
     },
     {
         "pattern": [
@@ -775,8 +723,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Oily foods can exacerbate symptoms such as sore throat, coughing, and congestion. Therefore, foods high in saturated fat should be avoided or limited. That means avoiding oily, fried, or greasy foods. Also, these can be harded to digest. Therefore, it is generally recommended to avoid these when experiencing influenza to support the body's healing process"
         ],
-        "dimension": 4,
-        "index": 7
+        "dimension": 4
     },
     {
         "pattern": [
@@ -788,8 +735,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Sugar-rich foods can weaken your immune system, which your body needs to fight off the flu. Eating too many sugary foods can also lead to inflammation, which can worsen symptoms like sore throat and cough. Additionally, sugary foods can cause spikes in blood sugar levels, which can lead to fatigue and other symptoms that can make it more difficult to recover from the flu.\n        "
         ],
-        "dimension": 4,
-        "index": 8
+        "dimension": 4
     },
     {
         "pattern": [
@@ -803,8 +749,7 @@ export let transFormedEnglishRules = [
         "response": [
             "If you think you have flu, you need to avoid caffeinated drinks, alchohol, greasy foods, hard to digest grains, and sugary foods or sweets. Instead try to take broth-based soups to help place any fluids and sodium that you may lost.  Also try bland foods which includes white bread, potatoes, white rice, bananas, applesauce, lean meats like chicken and fish."
         ],
-        "dimension": 4,
-        "index": 9
+        "dimension": 4
     },
     {
         "pattern": [
@@ -817,8 +762,7 @@ export let transFormedEnglishRules = [
         "response": [
             "There are some groups of people that are in risk of developing complications from influenza. People who are six months and older, people who have chronic medical conditions such as asthma, heart disease, diabetes, kidney , liver disorders, and chronic lung disease, people with weakened immune system , and people who are morbidly obese need to be wary of getting this disease."
         ],
-        "dimension": 1,
-        "index": 17
+        "dimension": 1
     },
     {
         "pattern": [
@@ -832,8 +776,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antihistamines like Citerizine and Benadryl can be taken with food, a glass of water or milk to lessen stomach irritation if necessary. For cetirizine, here is how you can take it. 6 years of age and older can have 5 to 10 miligrams once a day. Those who are 4-6 years old can take maximum of 5mg once or 2.5mg twice a day. Those who are younger than that (4 below) should not take this medicine.\n        \n        The information I represented is an example of how you take it. Proper dosage must be observed. If you have further questions, please refer to your healthcare provider. \n        "
         ],
-        "dimension": 7,
-        "index": 18
+        "dimension": 7
     },
     {
         "pattern": [
@@ -843,8 +786,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antihistamines ,like Citerizine and Benadryl , are a class of drugs commonly used to treat symptoms of allergies. These drugs help treat conditions caused by too much histamine, a chemical created by your body’s immune system. Antihistamines are most commonly used by people who have allergic reactions to pollen and other allergens. They are also used to treat a variety of other conditions such as stomach problems, colds, anxiety and more. Antihistamines come in several forms including liquids, lotions, syrups, gels, eyedrops, tablets, capsules, creams, and suppositories"
         ],
-        "dimension": 7,
-        "index": 19
+        "dimension": 7
     },
     {
         "pattern": [
@@ -856,8 +798,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antihistamines are used to relieve or prevent the symptoms of hay fever and other types of allergy. They work by preventing the effects of a substance called histamine, which is produced by the body. Histamine can cause itching, sneezing, runny nose, and watery eyes. Also, in some persons histamine can close up the bronchial tubes (air passages of the lungs) and make breathing difficult. This medicine come in several forms including liquids, lotions, syrups, gels, eyedrops, tablets, capsules, creams, and suppositories"
         ],
-        "dimension": 7,
-        "index": 20
+        "dimension": 7
     },
     {
         "pattern": [
@@ -869,8 +810,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antihistamines are not typically used to treat influenza. Antihistamines are used relieve some of the symptoms of allergies, such as sneezing, runny nose, and itching, but they are not effective against the flu virus. These medicines work by blocking histamines which are released by the body during allergic reactions. Additionally, other medications such as pain relievers and fever reducers may be used to manage symptoms.\n        "
         ],
-        "dimension": 7,
-        "index": 21
+        "dimension": 7
     },
     {
         "pattern": [
@@ -884,8 +824,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Most people can safely take antihistamines. However, people who are pregnant, breastfeeding, young child, taking other medicines, have underlying conditions such as heart disease, liver disease, kidney disease or epilepsy may need to be cautious when taking this."
         ],
-        "dimension": 7,
-        "index": 22
+        "dimension": 7
     },
     {
         "pattern": [
@@ -897,8 +836,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antihistamines can cause side effects. It may vary depending on the drug taken. However, antihistamines can make you drowsy, dizzy, have a dry mouth, have a blurry vision, constipated,and difficulty in peeing. If you have any underlying medical conditions or are taking other medications, it is important to ask a doctor or pharmacist though.\n        "
         ],
-        "dimension": 7,
-        "index": 23
+        "dimension": 7
     },
     {
         "pattern": [
@@ -909,8 +847,7 @@ export let transFormedEnglishRules = [
         "response": [
             "When taking this medicine, try to avoid alcohol, sedatives, and tranquilizers, due to increased risk of drowsiness. It may cause Central nervous system depression. So avoid activities requiring mental alertness. Be careful when patient has hepatic or renal impairment. Same with the elderly as they are more sensitive to adverse effects."
         ],
-        "dimension": 7,
-        "index": 24
+        "dimension": 7
     },
     {
         "pattern": [
@@ -924,8 +861,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Try taking Ginger. According to Sinus and Allergy Wellness Center, it is a natural histamine, potent antiviral agent and an immute booster. Ginger is a safe and highly effective herb that soothes the digestive system and improves circulation. You can make some ginger tea to alleviate nasal congestion and headaches. While you sip your tea, inhale the steam coming out of your cup. Also, try to use it with other herbs, such as turmeric, which is another powerful natural healer."
         ],
-        "dimension": 7,
-        "index": 25
+        "dimension": 7
     },
     {
         "pattern": [
@@ -939,8 +875,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        For ibuprofen an (NSAID) the maximum single dose is 400mg. For the entire day, its 1200mg. \n        \n        For naproxen (NSAID) , you can take up to 500mg for single dose and 750mg for the entire day.\n        \n        For acetaminophen (paracetamol) you can take up 1000mg for single dose and 4000mg for the entire day.\n        \n        For aspirin, also known as acetylsalicylic acid , you can take up to 1000mg with maximum daily dose of 3000mg for people under 65 and 200mg for people over 65years old. \n        \n        The information I represented is an example of how you take it. Proper dosage must be observed. If you have further questions, please refer to your healthcare provider. \n        "
         ],
-        "dimension": 7,
-        "index": 26
+        "dimension": 7
     },
     {
         "pattern": [
@@ -950,8 +885,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Analgesics, also called painkillers , such as ibuprofen, acetaminophen, aspirin,paracetamol, Biogesic and Calpol, are medications that relieve different types of pain — from headaches to injuries to arthritis. Anti-inflammatory analgesics reduce inflammation, and opioid analgesics change the way the brain perceives pain.Analgesics are available in many forms such as films, liquid, nasal sprays patches, pills, tablets, capsules, and powder mix."
         ],
-        "dimension": 7,
-        "index": 27
+        "dimension": 7
     },
     {
         "pattern": [
@@ -961,8 +895,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Over-the-counter painkillers ,such as ibuprofen, acetaminophen, aspirin,paracetamol, Biogesic and Calpol, can relieve acute pain. Their effectiveness will depend on things like the type and severity of the pain and the dose of the medication. Painkillers that are available without a prescription have been approved for the treatment of mild to moderate pain. They shouldn't be used for more than a few days in a row, and the specified maximum daily dose shouldn't be exceeded. These medicines comes in many forms such as films, liquid, nasal sprays patches, pills, tablets, capsules, and powder mix."
         ],
-        "dimension": 7,
-        "index": 28
+        "dimension": 7
     },
     {
         "pattern": [
@@ -973,8 +906,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Analgesics, or pain relievers, can help alleviate the discomfort and fever associated with influenza. They work by blocking the production of certain chemicals in the body that cause pain and inflammation. Common analgesics used for influenza include acetaminophen, ibuprofen, and aspirin.  However, it is important to follow the recommended dosages and precautions, as some analgesics may not be suitable for certain individuals or may have adverse effects when used improperly.\n        "
         ],
-        "dimension": 7,
-        "index": 29
+        "dimension": 7
     },
     {
         "pattern": [
@@ -988,8 +920,7 @@ export let transFormedEnglishRules = [
         "response": [
             "According to WebMD , you should never take this medication for self-treatment of pain for longer than 10 days. You should not use this drug to self-treat a fever that lasts longer than 3 days. In these cases, consult a doctor because you may have a more serious condition"
         ],
-        "dimension": 7,
-        "index": 30
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1003,8 +934,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Anti-inflammatory analgesics are generally safe. But they can cause side effects and complications, if you use them too often, for too long or in very large doses. These medicine can damage internal organs such as liver or kidney. It may also cause diarrhea or constipation, heart problems, hypersensitivity, nausea, upset stomach or heart burn, ringing in the ears, and stomach ulcers."
         ],
-        "dimension": 7,
-        "index": 31
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1015,8 +945,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Take this medication by mouth. Drink a full glass of water (8 ounces/240 milliliters) with it unless your doctor tells you otherwise. Do not lie down for at least 10 minutes after you have taken this drug. If stomach upset occurs while you are taking this medication, you may take it with food or milk."
         ],
-        "dimension": 7,
-        "index": 32
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1030,8 +959,7 @@ export let transFormedEnglishRules = [
         "response": [
             "The Philippine Institute of Traditional and Alternative Healthcare has indicated that you can Ampalaya, Yerba Buena, ulasimang bato or pansit-pansitan, and guava has an analagesic effects."
         ],
-        "dimension": 7,
-        "index": 33
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1044,8 +972,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        The usual dose depends on the medicine you're taking. For Pseudoephedrine (sudafed) however here are some of the recommendations. The usual dose of pseudoephedrine is 60mg tablets or as a liquid containing 30mg in 5ml. \n        \n        Adults and children aged 12 to 17 years may take one 60mg tablet or two 5ml spoon (10ml) of liquid up to 4 times a day. While, children aged 6 to 11 years may take half a tablet (30mg) or one 5ml spoon of liquid up to 4 times a day.\n\n        The information I provided is an example of how you take this medicine. If you need further information or have underlying health condition please refer to your healthcare provider.\n        "
         ],
-        "dimension": 7,
-        "index": 34
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1057,8 +984,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Decongestants such as pseudoephedrine, decolgen and sudafed are medicines that relieve congestion by reducing swelling, inflammation and mucus formation within the nasal passages or the eye.  They have no other effect on symptoms such as a runny nose or sneezing. These medicines are available as nose drops or nasal sprays, eye drops, and as tablets, capsules, and syrup."
         ],
-        "dimension": 7,
-        "index": 35
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1070,8 +996,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Decongestants such as pseudoephedrine, decolgen and sudafed are medicines that help relieve a congested (stuffy) nose. The congestion can be caused by a cold virus or by the flu, sinusitis, or allergies.  These medicines are available as nose drops or nasal sprays, eye drops, and as tablets, capsules, and syrup."
         ],
-        "dimension": 7,
-        "index": 36
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1081,8 +1006,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Decongestants work by narrowing the blood vessels in your nose. Swollen tissue inside the nose shrinks, and air can pass through more easily."
         ],
-        "dimension": 7,
-        "index": 37
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1096,8 +1020,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Don’t take decongestants if you have high blood pressure that isn’t controlled. Taking decongestants can raise your blood pressure even if it is controlled or nearly normal. You may need to look for an alternative to decongestants. Don’t give decongestants to children younger than 6 years of age."
         ],
-        "dimension": 7,
-        "index": 38
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1110,8 +1033,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Decongestants can sometimes cause side effects. They can temporarily cause nervousness, dizziness, and sleeping problems. They can cause heart palpitations (feeling like your heart is racing) or higher blood pressure"
         ],
-        "dimension": 7,
-        "index": 39
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1122,8 +1044,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Decongestants may be taken orally to help relieve congestion that is affecting the nose, sinuses, and eyes or sprayed directly in the nose or instilled in the eye for a more local effect."
         ],
-        "dimension": 7,
-        "index": 40
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1137,8 +1058,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Alternatives to oral decongestants are available. In the drug realm, antihistamines such as diphenhydramine (Benadryl), chlorpheniramine (Chlor-Trimeton), cetirizine (Zyrtec), and loratadine (Claritin) can help with a stuffy nose are safe for the hear"
         ],
-        "dimension": 7,
-        "index": 41
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1151,8 +1071,7 @@ export let transFormedEnglishRules = [
         "response": [
             "The dosage of expectorants can vary depending on the specific medication, age, weight, and health status of the patient. \n        \n        Adults can take 200 to 400 milligrams (mg) every four hours.\n\n        Children 6 to 12 years of age can take 100 to 200 mg every four hours.\n\n        Children 4 to 6 years of age can take 50 to 100 mg every four hours.\n\n        Children and infants up to 4 years of age should not take it.\n\n        Although I presented you some information on how to take antitussives that may seem useful, it is best if you seek doctors help as they prescribe appropriate medications for your condition.\n        "
         ],
-        "dimension": 7,
-        "index": 42
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1163,8 +1082,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Expectorants ,like Guiafenesin and Robitussin, are ingredients that increase airway secretions. They do this by increasing the water content of the secretions which decreases their stickiness, making them easier to cough up. Expectorants are often used to help treat respiratory conditions such as bronchitis, pneumonia, and the common cold.In general, expectorants are available over-the-counter (OTC) in liquid, pill, and tablet forms\n        "
         ],
-        "dimension": 7,
-        "index": 43
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1176,8 +1094,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You may take an expectorant ,like Guiafenesin and Robitussin, to help relieve congestion if you have a cold or the flu. Expectorants are available as standalone drugs or as an ingredient in an all-in-one cold or flu medication. In general, expectorants are available over-the-counter (OTC) in liquid, pill, and tablet forms"
         ],
-        "dimension": 7,
-        "index": 44
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1188,8 +1105,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Expectorants lubricate your airway. This helps loosen up the mucus and make the secretions in your airway thinner. By loosening up the mucus, expectorants make your cough more productive. This makes it easier for you to cough up mucus effectively and clear your throat."
         ],
-        "dimension": 7,
-        "index": 45
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1202,8 +1118,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You should talk to your healthcare provider before using an expectorant if you are pregnant or breastfeeding. If you have developed any type of allergic reaction or intolerance to expectorants in the past, you should not use these medications.\n\n        Use caution when driving or using machinery while taking an expectorant, as these medications can make you drowsy or dizzy\n        "
         ],
-        "dimension": 7,
-        "index": 46
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1216,8 +1131,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Expectorants do not commonly cause serious side effects. They may cause dizziness, drowsiness, and rash though."
         ],
-        "dimension": 7,
-        "index": 47
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1229,8 +1143,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Do not crush pills, and be sure to measure liquid formulations using the measuring tools provided with your medication. It is often recommended that you drink plenty of fluids when taking an expectorant."
         ],
-        "dimension": 7,
-        "index": 48
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1245,8 +1158,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Natural expectorants are another option if you’re trying to loosen up mucus and relieve chest congestion. Natural expectorants include: Menthol, Ivyleaf extract, oral hydration ( drinking lots of water ) , steaming (inhaling warm moist air ) , and honey ( adding honey to drinks ) "
         ],
-        "dimension": 7,
-        "index": 49
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1259,8 +1171,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        Generally, antitussives are taken orally and come in different forms, such as tablets, capsules, syrups, and drops. The dosage is usually determined by a healthcare provider and may be adjusted based on factors such as the age, weight of the patient, the severity of the cough, and any other health conditions the patient may have. \n        \n        There are some common knowledge on the dosage which can be found from reputable medical resources online. For antitussives taken as a lozenges, dosage may vary. Adults and children 12 years of age and older can take 5 to 15 mg every two to four hours, as needed. Children 6 to 12 years of age can take 5 to 15 mg every two to six hours, as needed. Children 4 to 6 years of age can take 5 mg every four hours, as needed. Children and infants up to 4 years of age should not take the medicine. \n        \n        For antitussives taken as syrup, the dosage varies also. Adults and children 12 years of age and older can take 30 mg every six to eight hours, as needed. Children 6 to 12 years of age can take 7 mg every four hours or 15 mg every six to eight hours, as needed. Children 4 to 6 years of age can take 3.5 mg every four hours or 7.5 mg every six to eight hours, as needed.Children and infants up to 4 years of age should  is not recommended.\n\n        Although I presented you some information on how to take antitussives that may seem useful, it is best if you seek doctors help as they prescribe appropriate medications for your condition.\n        "
         ],
-        "dimension": 7,
-        "index": 50
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1270,8 +1181,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antitussives ,such as Dextromethorphan or Robitussin, are prescription or over-the-counter drugs used for suppressing cough.  These medicines can be in the form of a tablet, capsule,gel, liquid , syrup, lozenge or strips. However, I can only recommend the usual  dosage of its logenzes and syrup forms"
         ],
-        "dimension": 7,
-        "index": 51
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1283,8 +1193,7 @@ export let transFormedEnglishRules = [
         "response": [
             "They are typically used to treat a dry cough caused by allergies, respiratory illnesses, or infections.Antitussives can also treat post-viral cough, or a persistent cough that develops after an infection has resolved.  These medicines can be in the form of a tablet, capsule,gel, liquid , syrup, lozenge or strips. However, I can only recommend the usual  dosage of its logenzes and syrup forms"
         ],
-        "dimension": 7,
-        "index": 52
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1297,8 +1206,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Antitussives ,such as Dextromethorphan or Robitussin, are thought to work by inhibiting a coordinating region for coughing located in the brain stem, disrupting the cough reflex arc; although the exact mechanism of action is unknown. These medicines can be in the form of a tablet, capsule,gel, liquid , syrup, lozenge or strips. However, I can only recommend the usual  dosage of its logenzes and syrup forms."
         ],
-        "dimension": 7,
-        "index": 53
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1311,8 +1219,7 @@ export let transFormedEnglishRules = [
         "response": [
             "This medication is not safe for children under the age of 4 years."
         ],
-        "dimension": 7,
-        "index": 54
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1323,8 +1230,7 @@ export let transFormedEnglishRules = [
         "response": [
             "The most common side effects include nausea and drowsiness. Some patients may experience a rash or difficulty breathing. High doses may cause hallucinations and disassociation, and the drug has been reported to be used as a recreational drug"
         ],
-        "dimension": 7,
-        "index": 55
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1336,8 +1242,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Take this medication by mouth with or without food with a full glass of water (8 ounces or 240 milliliters) or as directed by your doctor. "
         ],
-        "dimension": 7,
-        "index": 56
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1352,8 +1257,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Honey is a time-honored remedy for a sore throat. According to one study, trusted Source, it can also relieve coughs more effectively than OTC medications that contain dextromethorphan (DM), a cough suppressant."
         ],
-        "dimension": 7,
-        "index": 57
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1369,8 +1273,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Let the lozenge dissolve slowly in your mouth and swallow the dissolved liquid along with your saliva. Do not chew or swallow it whole. This product is usually used every 2 hours as needed"
         ],
-        "dimension": 7,
-        "index": 58
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1382,8 +1285,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Lozenges such as Bactidol and Strepsils are used to temporarily relieve pain from minor mouth problems (such as canker sores, sore gums/throat, mouth/gum injury)."
         ],
-        "dimension": 7,
-        "index": 59
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1396,8 +1298,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Taking Lozenges,  such as Bactidol and Strepsils, are convenient, affordable option for symptomatic treatment of acute and chronic pharyngitis, irritation or inflammation of the upper respiratory tract and relief of unpleasant postoperative sensation in the throat."
         ],
-        "dimension": 7,
-        "index": 60
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1409,8 +1310,7 @@ export let transFormedEnglishRules = [
         "response": [
             "When you suck on a lozenge, it starts to dissolve and release medicine. It is intended to dissolve slowly in the mouth to temporarily suppress the cough, and lubricate and soothe irritated tissues of the throat. Some have medications that help fight colds, and most have anesthetic to help ease the pain. Lozenges also contain menthol or eucalyptus, which can help cool and sooth the throat. Others contain honey, which is known to have cough suppression properties."
         ],
-        "dimension": 7,
-        "index": 61
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1423,8 +1323,7 @@ export let transFormedEnglishRules = [
         "response": [
             "If you have a sore throat that is severe or that lasts more than 2 days, or a cough that lasts more than 7 days or keeps coming back, or symptoms occur with a fever, headache, rash, swelling, nausea, or vomiting, tell your doctor promptly"
         ],
-        "dimension": 7,
-        "index": 62
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1438,8 +1337,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Slight burning, tingling, or stinging may occur. If any of these effects last or get worse, tell your doctor or pharmacist promptly."
         ],
-        "dimension": 7,
-        "index": 63
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1451,8 +1349,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Do not chew or swallow it whole. This product is usually used every 2 hours as needed. "
         ],
-        "dimension": 7,
-        "index": 64
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1470,8 +1367,7 @@ export let transFormedEnglishRules = [
         "response": [
             "While it may not cure, sipping tea with honey may help and sooth throat conditions."
         ],
-        "dimension": 7,
-        "index": 65
+        "dimension": 7
     },
     {
         "pattern": [
@@ -1483,8 +1379,7 @@ export let transFormedEnglishRules = [
         "response": [
             "You can manage the symptoms in your home. The best way to treat the flu is to get plenty of rest, drink fluids to prevent dehydration. \n        However, Check with your doctor promptly if you are at higher risk of serious flu complications."
         ],
-        "dimension": 5,
-        "index": 10
+        "dimension": 5
     },
     {
         "pattern": [
@@ -1501,8 +1396,7 @@ export let transFormedEnglishRules = [
         "response": [
             "The Center of Disease Control indicated that people who have flu have some or all of the following symptoms. They may have fever, cough, sore throat, runny or stuffy nose, muscle or body aches, headaches, and fatigue(tireness). Some others may have vomiting and diarrhea though is is more common in children and adults."
         ],
-        "dimension": 1,
-        "index": 18
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1517,8 +1411,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        Vomiting is the involuntary forceful expulsion of the contents of one's stomach through the mouth and sometimes the nose which can deplete you of fluids and electrolytes. It is often a symptom of an underlying medical condition such as gastroenteritis, food poisoning, motion sickness, pregnancy, or certain medications.\n        \n        If you are experiencing vomiting, you may follow these guidelines. \n        \n        1. Avoid eating or drinking for several hours after having it. \n        \n        2. Try to sip small amounts of fluids like water, sports drinks, and borths, after. Remember not to drink citrus juices or milk.  Also, avoid foods that can irritate or may be difficult to digest such alcohol, caffeine, fats/oils, spicy food, milk or cheese. If you can tolerate drinking more water, try to drink more. \n        \n        3. If you are hungry, try eating foods such as bananas, rice, dry toast, soda crackers. When you can tolerate bland food, then you can resume your normal diet. Bland foods include boiled or baked potatoes, white rice, plain pasta, cooked or canned fruits, cooked vegetables, and lean meats. These are easy for your stomach to digest.\n        \n        Remember that repeated vomiting requires medical treatment if it results in a lasting lightheaded feeling or weakness.\n        "
         ],
-        "dimension": 2,
-        "index": 2
+        "dimension": 2
     },
     {
         "pattern": [
@@ -1533,8 +1426,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        Nausea is a sensation of discomfort in the stomach that often precedes vomiting. It can be caused by a variety of factors, such as motion sickness, digestive problems, medication side effects, and certain medical conditions. To alleviate nausea include resting, drinking water, sports drinks , and broths. Avoid fried , greasy foods and sweets. Try to eat bland foods such as saltine crackers or plain bread, in small amounts. Then rest by having your head elevated."
         ],
-        "dimension": 4,
-        "index": 10
+        "dimension": 4
     },
     {
         "pattern": [
@@ -1550,8 +1442,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Boiling is done to kill pathogenic bacteria, viruses and protozoa. If water appears cloudy, let it settle and filter it through a clean cloth, paper boiling water towel, or coffee filter. Then bring water to a rolling boil for at least one minute. Let water cool naturally and store it in clean containers with covers. To improve the flat taste of boiled water, add one pinch of salt to each quart or liter of water, or pour the water from one clean container to another several times.\n        "
         ],
-        "dimension": 1,
-        "index": 19
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1566,8 +1457,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        Disinfecting water is important because it helps to remove harmful bacteria, viruses, and parasites that can cause serious illnesses such as cholera, typhoid, dysentery, and diarrhea. When water is not disinfected, it can become contaminated with these microorganisms and can spread diseases rapidly. Disinfection helps to reduce the risk of waterborne illnesses and ensures that the water is safe for consumption.\n\n        You can disinfect water by using chlorine. You may do these by preparing a stock solution by dissolving 1 level of powdered  chlorine compounds (65% to 75%) to 1 liter of water. Then by adding 2 teaspoons of that stock solution to 5 gallons (20 liters) of water. Mix thoroughly and let it stand for at least 30 minutes before using.        \n        "
         ],
-        "dimension": 1,
-        "index": 20
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1583,8 +1473,7 @@ export let transFormedEnglishRules = [
         "response": [
             "When you have a fever, apply damp, luke warm cloths to the forehead. Wear comfortable cloths. If you have chills, it is best to wear layers and keep warm. Then rest. you need plenty of rest to recover.\n        \n        Also, you can drink plenty of fluids to stay hydrated. There are some over-the-counter (otc) pain relievers you can take to reduce discomfort. For example, you can ask your pharmacist for acetaminophen for pain relief.\n        "
         ],
-        "dimension": 2,
-        "index": 3
+        "dimension": 2
     },
     {
         "pattern": [
@@ -1597,8 +1486,7 @@ export let transFormedEnglishRules = [
         "response": [
             "\n        A clogged nose happens where there is an obstruction or blockage in the nasal passages. It is also known as nasal congestion and can be caused by various factors such as allergies, colds, flu, sinus infections, and other respiratory illnesses. Symptoms of a clogged nose include difficulty breathing, a runny or stuffy nose, pressure or pain around the nasal area, and decreased sense of smell or taste. \n\n        To manage clogged nose, You need to drink plenty of fluids to think out the mucus running in your sinus. Avoid drinking those that can dehydrate like coffe and alchoholic beverages. You can sip on medicated hot drinks,tea, or soups. Also try to take Vitamin C. The heat and steam can help decongest your airways. You also need to get plenty of rest. Apply warm compress. If you dont have a compress, try moistening a washcloth with warm water and apply it into your face several times a day to relieve nasal congestion.  You can also inhale steam to help thin out mucus and help you drain them. If you have humidifier you can also use it. You can also try to use a saline nasal spray to help nasal passages open. It is also known that eating spicy meal helps relieve clogged nose. So try it out. Lastly, always use the right over-the-counter medicines if you have access to nearest pharmacy."
         ],
-        "dimension": 2,
-        "index": 4
+        "dimension": 2
     },
     {
         "pattern": [
@@ -1613,8 +1501,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Each type of headache has different treatment methods that can be effective in treating headache pain.Tension headaches are also known as hatband headaches. This is because the pain from these headaches is located around the back of the head, the temples and forehead. They can last from a few hours to a few days. Some treatment options that are effective for tension headaches include physical therapy, muscle relaxants and over-the-counter pain releivers (aspirin and ibuprofen). Another type of headache is migrain headache. To relieve yourself, try to rest in a quite and darkroom, take hot or cold compress, and try massages."
         ],
-        "dimension": 2,
-        "index": 5
+        "dimension": 2
     },
     {
         "pattern": [
@@ -1629,8 +1516,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Most abdominal pain goes away without special treatment. However,there are still things you can do to relieve pain. Try to place a hot water bottle or heated wheat bag on your abdomen. Soak in a warm bath. Take care not to scald yourself. Drink plenty of clear fluids such as water. Reduce your intake of coffee, tea and alcohol as these can make the pain worse. When you are allowed to eat again, start with clear liquids, then progress to bland foods such as crackers, rice, bananas or toast. Get plenty of rest. "
         ],
-        "dimension": 2,
-        "index": 6
+        "dimension": 2
     },
     {
         "pattern": [
@@ -1645,8 +1531,7 @@ export let transFormedEnglishRules = [
         "response": [
             "If you have sore throat, here is what you can do. Drink lots of water and other fluids to thin our mucus or soothe your dry throat. Take medicine as directed by your doctor.  Prop up your head on pillows to help you breath and ease a dry cough. Try cough drops to soothe your throat. Stay away from any smoke.  You can also try gargling with warm water but we do not recommend children to do this.  "
         ],
-        "dimension": 2,
-        "index": 7
+        "dimension": 2
     },
     {
         "pattern": [
@@ -1659,8 +1544,7 @@ export let transFormedEnglishRules = [
         "response": [
             "It is highly recommended that you cover your mouth and nose when sneezing or coughing to prevent spread of the virus. You can sneeze or couch into a tissue. Make sure to dispose them properly.  If you don’t have a tissue, cough or sneeze in your elbow and not in your hands. Afterwards, wash your hands or use sanitizer."
         ],
-        "dimension": 2,
-        "index": 8
+        "dimension": 2
     },
     {
         "pattern": [
@@ -1669,13 +1553,13 @@ export let transFormedEnglishRules = [
             "Could you walk me through the process of washing my hands",
             "What are the correct necessary recommended steps to wash your hands correctly",
             "give tell me the list of steps on how to wash hands",
-            "How what to do wash hands"
+            "How what to do wash hands",
+            "guide me on the proper way of hand washing"
         ],
         "response": [
             "Washing your hands often will help protect you from germs. To properly do it , lather with soap for at least 20 seconds. After putting soap on your hands, rub your hands together for at least 20 seconds. This is about as long as it takes to sing Happy Birthday twice. Use hand sanitizer when washing isn't possible. Use an alcohol-based hand sanitizer when you can't get to a sink. Apply the hand sanitizer as you would hand lotion, making sure to cover the fronts and backs of both hands. Use a product that contains at least 60% alcohol. "
         ],
-        "dimension": 6,
-        "index": 0
+        "dimension": 6
     },
     {
         "pattern": [
@@ -1685,8 +1569,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Medical conditions have symptoms and signs. In order to help you better, please specifiy whether you were asking about diarrhea or influenza"
         ],
-        "dimension": 1,
-        "index": 21
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1696,8 +1579,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Hello there! How can I help you? Im sorry if I am unable to catch everything you say. I am not that smart so lets help each other in our conversations"
         ],
-        "dimension": 1,
-        "index": 22
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1706,8 +1588,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry, I did not undersand what you were asking about antimotilities"
         ],
-        "dimension": 1,
-        "index": 23
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1716,8 +1597,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry, I did not undersand what you were asking about bismuth subsalicylate"
         ],
-        "dimension": 1,
-        "index": 24
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1726,8 +1606,7 @@ export let transFormedEnglishRules = [
         "response": [
             "I did not catch what you were saying. Sorry. Could you please tell me again what you were saying about bismuth subsalicylate"
         ],
-        "dimension": 1,
-        "index": 25
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1736,8 +1615,7 @@ export let transFormedEnglishRules = [
         "response": [
             "I did not catch what you were saying about analgesics. Sorry."
         ],
-        "dimension": 1,
-        "index": 26
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1746,8 +1624,7 @@ export let transFormedEnglishRules = [
         "response": [
             "I did not catch what you were saying about analgesics. Sorry."
         ],
-        "dimension": 1,
-        "index": 27
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1756,8 +1633,7 @@ export let transFormedEnglishRules = [
         "response": [
             "I know you were telling me about decongestants, but I don't quite understand what you were saying. Sorry"
         ],
-        "dimension": 1,
-        "index": 28
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1766,8 +1642,7 @@ export let transFormedEnglishRules = [
         "response": [
             "I know you were telling me about expectorants, but I don't quite understand what you were saying. Sorry"
         ],
-        "dimension": 1,
-        "index": 29
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1776,8 +1651,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Sorry, I dont quite understand what you were saying about antitussives."
         ],
-        "dimension": 1,
-        "index": 30
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1786,8 +1660,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Sorry, I dont quite understand what you were saying about lozenges."
         ],
-        "dimension": 1,
-        "index": 31
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1796,8 +1669,7 @@ export let transFormedEnglishRules = [
         "response": [
             "I would like to help but I need more information. You can ask me about diarrhea and influenza. I can tell you what can you do to help you feel better. "
         ],
-        "dimension": 1,
-        "index": 32
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1806,8 +1678,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry, I dont quite understand what you are saying about diarrhea. To help you better, try to rephrase or be a little specific on your queries like asking treatments, general advices, things you can and cannot eat when feeling sick."
         ],
-        "dimension": 1,
-        "index": 33
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1816,8 +1687,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry,I dont quite understand what you are saying about influenza. To help you better, try to rephrase or be a little specific on your queries like asking treatments, general advices, things you can and cannot eat when feeling sick."
         ],
-        "dimension": 1,
-        "index": 34
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1826,8 +1696,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry, but it appears that I dont quite understand what you are trying to tell me about vomiting due to my limited knowledge. However, I can tell you what you can do or how to manage it."
         ],
-        "dimension": 1,
-        "index": 35
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1836,8 +1705,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry, but it appears that I dont quite understand what you are trying to tell me about headache due to my limited knowledge. However, I can tell you what you can do or how to manage it."
         ],
-        "dimension": 1,
-        "index": 36
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1848,8 +1716,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry, but it appears that I dont quite understand what you are trying to tell me about abdominal cramps due to my limited knowledge. However, I can tell you what you can do or how to manage it."
         ],
-        "dimension": 1,
-        "index": 37
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1858,8 +1725,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry, but it appears that I dont quite understand what you are trying to tell me about stiffness due to my limited knowledge. However, I can tell you what you can do or how to manage it."
         ],
-        "dimension": 1,
-        "index": 38
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1868,8 +1734,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry, but it appears that I dont quite understand what you are trying to tell me about clogged nose due to my limited knowledge. However, I can tell you what you can do or how to manage it."
         ],
-        "dimension": 1,
-        "index": 39
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1878,8 +1743,7 @@ export let transFormedEnglishRules = [
         "response": [
             "Im sorry, but it appears that I dont quite understand what you are trying to tell me about nausea due to my limited knowledge. However, I can tell you what you can do or how to manage it."
         ],
-        "dimension": 1,
-        "index": 40
+        "dimension": 1
     },
     {
         "pattern": [
@@ -1888,7 +1752,6 @@ export let transFormedEnglishRules = [
         "response": [
             "Sorry, it appears that I don't understand what you are saying."
         ],
-        "dimension": 1,
-        "index": 41
+        "dimension": 1
     }
 ]

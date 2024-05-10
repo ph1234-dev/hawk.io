@@ -2,6 +2,10 @@ import { ref, computed, reactive, onMounted, watch } from 'vue'
 import { defineStore } from 'pinia'
 import { useRoute, useRouter } from 'vue-router'
 
+import {data as firstIterationData}  from "@/data/first-iteration.js"
+import {data as secondIterationData}  from "@/data/second-iteration.js"
+import {data as thirdIterationData}  from "@/data/third-iteration.js"
+
 import Engine from '@/api/engine'
 
 export const useBackendAPI = defineStore('backend', () => {
@@ -142,6 +146,9 @@ export const useBackendAPI = defineStore('backend', () => {
 
   }
 
+
+
+
   let beginDevTest = async () => {
     let testData = [].concat(ENGINE.getTestCases())
     // let testData = []
@@ -225,6 +232,147 @@ export const useBackendAPI = defineStore('backend', () => {
   // target  = reply block number (we can check this through the rule index.. or the memory index it retrieves)
   // if true, the answer is correct
   // beginDevTest()
+  
+
+
+
+
+
+
+
+
+  // store actual data
+
+  let storeActualData =  (data,testCycle) => {
+
+    let payload = []
+    
+    data.forEach((d,index)=>{
+      
+      let result = "response wasn't found"
+      result = ENGINE.getReply(d.message)
+
+      let data = {
+        "userMessage": result.userMessage,
+        "reply": result.reply,
+        "lang_predicted": result.lang,
+        "pattern": result.pattern,
+        "patternMatchingMethod": result.patternMatchingMethod,
+        "score": result.score,
+        "reconstructedMessage": result.reconstructed,
+        "originalPatternFound": result.originalPatternFound,
+        "testCycle": testCycle,
+        "userID": d.id,
+        "disease": d.disease,
+        "lang_correct": d.lang,
+        "question_number": d.question_number
+      }
+
+      payload.push(data)
+    })
+
+  
+    // console.log(data)
+    console.log('API:: Store Log:: sample')
+    payload.forEach((p,index)=>{
+      if ( index < 5){
+        console.log(`API:: Payload item:: ${JSON.stringify(p)}`)
+      }
+    })
+
+    console.log('API::store Attempting to push to server')
+    requestData("http://127.0.0.1:5000/actual_logs/api/store",JSON.stringify(payload),'POST') 
+
+  }
+
+  let initializeActualDataPrompts = async()=>{
+    
+    // userid,q1,lang,disease,input,reply
+
+    
+    let looper = (data,testCycle)=>{
+
+      let prompts = []
+
+      let questionIterator = (id,disease,question,number)=>{
+        question.forEach((q,index)=>{
+          let lang = ''
+          switch(index){
+            case 0: lang = 'ENG'; break;
+            case 1: lang = 'FIL'; break;
+            case 2: lang = 'MAG'; break;
+          }
+          
+          prompts.push({
+            id: id,
+            disease: disease,
+            message: q,
+            lang: lang,
+            question_number: number,
+          })
+
+        })
+
+      }
+
+
+      data.forEach(d=>{
+        questionIterator(d.id,d.disease,d.q1,1)
+        questionIterator(d.id,d.disease,d.q2,2)
+        questionIterator(d.id,d.disease,d.q3,3)
+        questionIterator(d.id,d.disease,d.q4,4)
+        questionIterator(d.id,d.disease,d.q5,5)
+        questionIterator(d.id,d.disease,d.q6,6)
+        questionIterator(d.id,d.disease,d.q7,7)
+      })
+
+      storeActualData(prompts,testCycle)
+    }
+
+
+    // using bm25 weighted cosine
+    // looper(firstIterationData,1)
+    // looper(secondIterationData,2)
+    // looper(thirdIterationData,3)
+    // looper(thirdIterationData,4)
+
+
+    // using regular cosine 
+    // looper(firstIterationData,11)
+    // looper(secondIterationData,12)
+    // looper(thirdIterationData,13)
+
+    
+    // using tfidf cosine 
+    // looper(firstIterationData,21)
+    // looper(secondIterationData,22)
+    // looper(thirdIterationData,23)
+
+
+    // using bm25 cosine (wrong ignore)
+    // looper(firstIterationData,-1)
+    // looper(secondIterationData,-2)
+    // correct responses remmber the third iteration is the 4th number since that was what we fixed before
+
+
+    
+    // using bm25 cosine (w ignore)
+    //looper(firstIterationData,31)
+    //looper(secondIterationData,32)    
+    // later you need to rerun the previous test...
+    // rerun bm25 first and second iteration only
+
+  }
+
+
+  // initialize the data gathered from the survey
+ // initializeActualDataPrompts()
+
+
+  // you need to rerun the test casese
+  // first and second iteration 1 and 2 with the new improve algorithm so then u can only
+  // compare bm25 performance with regular cosine similarity 
+
 
   return {
     storeLog,
@@ -254,7 +402,7 @@ async function requestData(url = '', data = {}, operation = 'GET', token = '') {
   // Default options are marked with *
   const response = await fetch(url, {
     method: operation, // *GET, POST, PUT, DELETE, etc.
-    // mode: 'no-cors', // no-cors, *cors, same-origin
+    mode: 'no-cors', // no-cors, *cors, same-origin ("YOu need to specify "no cors" so that server can read the data)
     // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
     // credentials: 'same-origin', // include, *same-origin, omit
     body: data, // body data type must match "Content-Type" header

@@ -961,6 +961,7 @@ let section14 = [
         `Ano ang mga palatandaan senyales sintomas ng trangkaso`,
         `Paano ko malalaman kung may trangkaso ako`,
         `sabihin o ibigay mo sakin ang listahan ng sintomas palatandaan o senyales ng flu`,
+        `mga nararamdaman ng  tao kung may trangkaso`
     ], [
         `Ayon sa Center of Disease and Control, ang mga taong may trangkaso ay maaring makaranas ng lagnat, ubo, namamagang lalamunan, sipon o baradong ilong, pananakit ng kalamnan o katawan, pananakit ng ulo, at pagkapagod (pagkapagod). Ang ilan sa iba ay maaaring magkaroon ng pagsusuka at pagtatae kahit na ito ay mas karaniwan sa mga bata at matatanda.`
     ],1),

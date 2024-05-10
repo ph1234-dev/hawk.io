@@ -139,6 +139,9 @@ let section8 = [
       `aden ngin mga pegken tangkan di dayt a kanen inumen pamasen iluton nu taw a pedtagudo`,
       `Ngin I mga pegken a di kanen nu taw a pedtagudo`,
       `ngin i pegken a pananggilan nu taw a pedtagudo`,
+      `ngin e mga pegken a det a di pegkanen nengka pedtagudu`,
+      `ngin a mga pegken e dili gapakayan mengka pedtagudo`,
+      `ngin i mga makan a det abungan nu taw a bedtagudo`,
     ],[
       `
       Da ka pegkan sa mga malalas, lanan , madakel i fats nin na malgen ga digest o sesep nu tinay nu taw. Kaped a dayt a pananggilan nu taw na su kakan sa aden lactose o fructose nin na di mapya ka pakalunsan sa sakit kagina su kaped a mga taw na di nilan gasesep i namba.  Di bon dayt a keman su taw sa mga kamo a madakil i fiber nin mana su mga munggo, mga mategas a kamo abpeg mga hard grains na malgen gatunag sa tyan. Aw na to na nya ba na makadtagetut o makagkasakit sa tyan. 

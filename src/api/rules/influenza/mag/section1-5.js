@@ -155,6 +155,7 @@ let section5 = [
         `ngin i galbeken na taw a pakagedam sa influenza`,
         `panon i kagamot kaawa sa influenza`,
         `panon kagamot sa influenza`,
+        `panon i kagamot sa plumasa `,
     ],[
         `
         Su influenza o flu na viral infect na pakabinasa sa kapenginawa nu respiratory system. Nya mapya enggulan na taw upama ka pakagedam sekanin sa namba na minom sekanin sa madakel a ig endu di sekanin ma dehydrate.

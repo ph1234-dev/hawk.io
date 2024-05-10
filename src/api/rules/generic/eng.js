@@ -280,6 +280,7 @@ data.push(
         `What are the correct necessary recommended steps to wash your hands correctly`,
         `give tell me the list of steps on how to wash hands`,
         `How what to do wash hands`,
+        `guide me on the proper way of hand washing`,
     ],[
         `Washing your hands often will help protect you from germs. To properly do it , lather with soap for at least 20 seconds. After putting soap on your hands, rub your hands together for at least 20 seconds. This is about as long as it takes to sing Happy Birthday twice. Use hand sanitizer when washing isn't possible. Use an alcohol-based hand sanitizer when you can't get to a sink. Apply the hand sanitizer as you would hand lotion, making sure to cover the fronts and backs of both hands. Use a product that contains at least 60% alcohol. `
     ],6)

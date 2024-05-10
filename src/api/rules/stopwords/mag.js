@@ -76,4 +76,17 @@ export let stopwords = [
     // "enduken",
     "ameka",
     "kagina",
-]
+
+    // first-second actual test additions,
+    "amaika",
+    "ataw",
+    "atawa",
+    "kabeg",
+    "kapeng",
+    "nenka",
+    "nyaba",
+    "mengka",
+    "tawa",
+    "u",
+    "o",
+]   
