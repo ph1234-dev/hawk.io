@@ -10,13 +10,91 @@ import Engine from '@/api/engine'
 
 export const useBackendAPI = defineStore('backend', () => {
 
+  // let userInitialValue = {
+  //   id: '',
+  //   name: '',
+  //   authenticated: false,
+  //   token: ''
+  // }
 
   // let user = reactive(userInitialValue)
 
   const URL_BASE = "http://127.0.0.1:5000"
+  // const URL_BASE = "https://flask.activlab.pro"
+
+  // const URL_REGISTER = `${URL_BASE}/user/api/register`
+  // const URL_LOGIN = `${URL_BASE}/user/api/login`
+  // const URL_STORE_LOG = `${URL_BASE}/log/api/post`
+  // const URL_PREDICT_LANGUAGE = `${URL_BASE}/classify/api/predict`
   const URL_TEST_RECORDS = `${URL_BASE}/log/api/store`
 
+  // FINAL USABILITY
+  const GENERATE_USER_TESTER_ID = `${URL_BASE}/log/api/generate_unique_tester_id`
+  // const RECORD_USABILITY_TEST_CONVERSATIONS = `${URL_BASE}/log/api/generate_unique_tester_id`
+
+  // REQUEST ID IMMEDIATELY AFTER LOADING
+
+  let userUniqueIdentifier = ref()
+
+  const key = 'uniqueUserIdentifier'
+
+  if (localStorage.getItem(key) !== null) {
+    let storedValue = localStorage.getItem(key)
+    userUniqueIdentifier.value = storedValue
+    console.log(storedValue)
+    console.log(navigator.userAgent)
+
+    // alert('Retrieving Unique User Identifier from local storage: ', storedValue)
+  } else {
+
+    let idRequest = fetch(GENERATE_USER_TESTER_ID, {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        'Content-Type': 'application/json',
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify({
+        "userAgent": (navigator.userAgent ? navigator.userAgent : "none")
+      })
+    });
+
+
+    // requestData(GENERATE_USER_TESTER_ID)
+    idRequest
+      .then(response => response.json())
+      .then(data => {
+        // alert(JSON.stringify(data));
+        // alert(data.id)
+        userUniqueIdentifier.value = data.id
+        console.log('Storing Unique User Identifier from local storage: ', data.id)
+        localStorage.setItem(key, data.id)
+      })
+      .catch(error => {
+        console.error('Failed to get generated end user id from server', error);
+      });
+  }
+
+
+
   let ENGINE = new Engine()
+
+  if (localStorage.getItem("user")) {
+    user = JSON.parse(localStorage.getItem("user"))
+  }
+
+
+  // https://www.youtube.com/watch?v=059fh7Gobho
+  // persisting vue pinia using watch
+  // watch(user,userVal=>{
+  //   localStorage.setItem("user",JSON.stringify(userVal))
+  // },{deep:true})
+  // // adding deep is true here meaning we will track depe changes
+
+
+  // watch(ENGINE_LOADED,val=>{
+  //   localStorage.setItem("ENGINE_LOADED",JSON.stringify(val))
+  // },{deep:true})
+
 
   let getReply = (msg) => {
     let reply = "response wasn't found"
@@ -67,6 +145,9 @@ export const useBackendAPI = defineStore('backend', () => {
     console.log(xxx);
 
   }
+
+
+
 
   let beginDevTest = async () => {
     let testData = [].concat(ENGINE.getTestCases())
@@ -154,10 +235,15 @@ export const useBackendAPI = defineStore('backend', () => {
   
 
 
+
+
+
+
+
+
   // store actual data
 
-  let storeActualData = async (data,testCycle) => {
-
+  let storeActualData =  (data,testCycle) => {
 
     let payload = []
     
@@ -177,9 +263,9 @@ export const useBackendAPI = defineStore('backend', () => {
         "original_pattern": result.originalPatternFound,
         "test_cycle": testCycle,
         "user_id": d.id,
-        // "disease": d.disease,
+        "disease": d.disease,
         "lang_correct": d.lang,
-        // "question_number": d.question_number
+        "question_number": d.question_number
       }
 
       payload.push(data)
@@ -189,33 +275,21 @@ export const useBackendAPI = defineStore('backend', () => {
     // console.log(data)
     console.log('API:: Store Log:: sample')
     payload.forEach((p,index)=>{
-      if ( index < 2){
+      if ( index < 5){
         console.log(`API:: Payload item:: ${JSON.stringify(p)}`)
       }
     })
 
+    console.log('API::store Attempting to push to server')
+    requestData("http://127.0.0.1:5000/log/api/store",JSON.stringify(payload),'POST') 
 
-
-    console.log('Payload:: ' , payload)
-    // requestData("http://127.0.0.1:5000/log/api/store",payload,'POST') 
-    const response = await fetch("http://127.0.0.1:5000/log/api/store", {
-      headers: {
-        "Accept": "*/*",
-        "Content-Type": "application/json"
-      },
-      method: "POST", 
-      body: JSON.stringify(payload), // body data type must match "Content-Type" header
-    });
-
-    let xx = await response.text();
-    console.log(xx);
   }
 
-  let initializeActualDataPrompts = ()=>{
-   
-    console.log("Initializing actual data")
+  let initializeActualDataPrompts = async()=>{
+    
     // userid,q1,lang,disease,input,reply
 
+    
     let looper = (data,testCycle)=>{
 
       let prompts = []
@@ -241,6 +315,7 @@ export const useBackendAPI = defineStore('backend', () => {
 
       }
 
+
       data.forEach(d=>{
         questionIterator(d.id,d.disease,d.q1,1)
         questionIterator(d.id,d.disease,d.q2,2)
@@ -251,15 +326,16 @@ export const useBackendAPI = defineStore('backend', () => {
         questionIterator(d.id,d.disease,d.q7,7)
       })
 
+      alert('we are here')
       storeActualData(prompts,testCycle)
     }
 
 
-    console.log("Start Looper")
     // using bm25 weighted cosine
-    looper(firstIterationData,1)
-    looper(secondIterationData,2)
-    looper(thirdIterationData,3)
+    // looper(firstIterationData,1)
+    // looper(secondIterationData,2)
+    // looper(thirdIterationData,3)
+    // looper(thirdIterationData,4)
 
 
     // using regular cosine 
@@ -289,7 +365,9 @@ export const useBackendAPI = defineStore('backend', () => {
 
   }
 
-  initializeActualDataPrompts()
+
+  // initialize the data gathered from the survey
+ initializeActualDataPrompts()
 
 
   // you need to rerun the test casese
@@ -303,12 +381,18 @@ export const useBackendAPI = defineStore('backend', () => {
   }
 })
 
+// CHECKS IF APP IS ONLINE OR OFFLINE
+// https://stackoverflow.com/questions/189430/detect-the-internet-connection-is-offline
+// console.log('Initially ' + (window.navigator.onLine ? 'on' : 'off') + 'line ' + window.navigator.onLine);
 
-function requestData(url = '', data = {}, operation = 'GET', token = '') {
+window.addEventListener('online', () => console.log('Became online ', window.navigator.onLine));
+window.addEventListener('offline', () => console.log('Became offline'));
 
-  print("Data From Request Data:")
-  print(data)
-  let response = ""
+
+
+async function requestData(url = '', data = {}, operation = 'GET', token = '') {
+
+
   let headersList = {
     "Accept": "*/*",
     "Content-Type": "application/json"
@@ -317,17 +401,16 @@ function requestData(url = '', data = {}, operation = 'GET', token = '') {
   // console.log(`JSON passed: ${data}`)
 
   // Default options are marked with *
-  // const response = await fetch(url, {
-  //   method: operation, // *GET, POST, PUT, DELETE, etc.
-  //   mode: 'no-cors', // no-cors, *cors, same-origin ("YOu need to specify "no cors" so that server can read the data)
-  //   // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-  //   // credentials: 'same-origin', // include, *same-origin, omit
-  //   headers: headersList,
-  //   body: data, // body data type must match "Content-Type" header
-  //   // redirect: 'follow', // manual, *follow, error
-  //   // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-  //   // body: JSON.stringify({"user_id": 1, "message": "hello world", "reply": "no rep"})
-  // });
-  
+  const response = await fetch(url, {
+    method: operation, // *GET, POST, PUT, DELETE, etc.
+    mode: 'no-cors', // no-cors, *cors, same-origin ("YOu need to specify "no cors" so that server can read the data)
+    // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    // credentials: 'same-origin', // include, *same-origin, omit
+    body: data, // body data type must match "Content-Type" header
+    headers: headersList,
+    // redirect: 'follow', // manual, *follow, error
+    // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    // body: JSON.stringify({"user_id": 1, "message": "hello world", "reply": "no rep"})
+  });
   return response; // parses JSON response into native JavaScript objects
 }

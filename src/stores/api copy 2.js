@@ -156,110 +156,110 @@ export const useBackendAPI = defineStore('backend', () => {
 
   // store actual data
 
-  let storeActualData = async (data,testCycle) => {
+  let storeActualData = (data,testCycle) => {
 
 
-    let payload = []
+    // let payload = []
     
-    data.forEach((d,index)=>{
+    // data.forEach((d,index)=>{
       
-      let result = "response wasn't found"
-      result = ENGINE.getReply(d.message)
+    //   let result = "response wasn't found"
+    //   result = ENGINE.getReply(d.message)
 
-      let data = {
-        "user_message": result.userMessage,
-        "reply": result.reply,
-        "lang_predicted": result.lang,
-        "pattern": result.pattern,
-        "pattern_matching_method": result.patternMatchingMethod,
-        "score": result.score,
-        "reconstructed_message": result.reconstructed,
-        "original_pattern": result.originalPatternFound,
-        "test_cycle": testCycle,
-        "user_id": d.id,
-        // "disease": d.disease,
-        "lang_correct": d.lang,
-        // "question_number": d.question_number
-      }
+    //   let data = {
+    //     "user_message": result.userMessage,
+    //     "reply": result.reply,
+    //     "lang_predicted": result.lang,
+    //     "pattern": result.pattern,
+    //     "pattern_matching_method": result.patternMatchingMethod,
+    //     "score": result.score,
+    //     "reconstructed_message": result.reconstructed,
+    //     "original_pattern": result.originalPatternFound,
+    //     "test_cycle": testCycle,
+    //     "user_id": d.id,
+    //     // "disease": d.disease,
+    //     "lang_correct": d.lang,
+    //     // "question_number": d.question_number
+    //   }
 
-      payload.push(data)
-    })
+    //   payload.push(data)
+    // })
 
   
-    // console.log(data)
-    console.log('API:: Store Log:: sample')
-    payload.forEach((p,index)=>{
-      if ( index < 2){
-        console.log(`API:: Payload item:: ${JSON.stringify(p)}`)
-      }
-    })
+    // // console.log(data)
+    // console.log('API:: Store Log:: sample')
+    // payload.forEach((p,index)=>{
+    //   if ( index < 2){
+    //     console.log(`API:: Payload item:: ${JSON.stringify(p)}`)
+    //   }
+    // })
 
 
-
-    console.log('Payload:: ' , payload)
     // requestData("http://127.0.0.1:5000/log/api/store",payload,'POST') 
-    const response = await fetch("http://127.0.0.1:5000/log/api/store", {
-      headers: {
-        "Accept": "*/*",
-        "Content-Type": "application/json"
-      },
-      method: "POST", 
-      body: JSON.stringify(payload), // body data type must match "Content-Type" header
-    });
+    // const response = await fetch("http://127.0.0.1:5000/log/api/store", {
+    //   method: "POST", 
+    //   mode: 'no-cors', 
+    //   headers: {
+    //     "Accept": "*/*",
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify(payload), // body data type must match "Content-Type" header
+    // });
 
-    let xx = await response.text();
-    console.log(xx);
+    // let xx = await response.text();
+    // console.log(xx);
   }
 
   let initializeActualDataPrompts = ()=>{
    
-    console.log("Initializing actual data")
+    print("Initializing actual data")
     // userid,q1,lang,disease,input,reply
 
-    let looper = (data,testCycle)=>{
+    // let looper = (data,testCycle)=>{
 
-      let prompts = []
+    //   let prompts = []
 
-      let questionIterator = (id,disease,question,number)=>{
-        question.forEach((q,index)=>{
-          let lang = ''
-          switch(index){
-            case 0: lang = 'ENG'; break;
-            case 1: lang = 'FIL'; break;
-            case 2: lang = 'MAG'; break;
-          }
+    //   let questionIterator = (id,disease,question,number)=>{
+    //     question.forEach((q,index)=>{
+    //       let lang = ''
+    //       switch(index){
+    //         case 0: lang = 'ENG'; break;
+    //         case 1: lang = 'FIL'; break;
+    //         case 2: lang = 'MAG'; break;
+    //       }
           
-          prompts.push({
-            id: id,
-            disease: disease,
-            message: q,
-            lang: lang,
-            question_number: number,
-          })
+    //       prompts.push({
+    //         id: id,
+    //         disease: disease,
+    //         message: q,
+    //         lang: lang,
+    //         question_number: number,
+    //       })
 
-        })
+    //     })
 
-      }
+    //   }
 
-      data.forEach(d=>{
-        questionIterator(d.id,d.disease,d.q1,1)
-        questionIterator(d.id,d.disease,d.q2,2)
-        questionIterator(d.id,d.disease,d.q3,3)
-        questionIterator(d.id,d.disease,d.q4,4)
-        questionIterator(d.id,d.disease,d.q5,5)
-        questionIterator(d.id,d.disease,d.q6,6)
-        questionIterator(d.id,d.disease,d.q7,7)
-      })
+    //   data.forEach(d=>{
+    //     questionIterator(d.id,d.disease,d.q1,1)
+    //     questionIterator(d.id,d.disease,d.q2,2)
+    //     questionIterator(d.id,d.disease,d.q3,3)
+    //     questionIterator(d.id,d.disease,d.q4,4)
+    //     questionIterator(d.id,d.disease,d.q5,5)
+    //     questionIterator(d.id,d.disease,d.q6,6)
+    //     questionIterator(d.id,d.disease,d.q7,7)
+    //   })
 
-      storeActualData(prompts,testCycle)
-    }
+    //   storeActualData(prompts,testCycle)
+    // }
 
 
-    console.log("Start Looper")
+    print("Start Looper")
     // using bm25 weighted cosine
-    looper(firstIterationData,1)
-    looper(secondIterationData,2)
-    looper(thirdIterationData,3)
+    // looper(firstIterationData,1)
+    // looper(secondIterationData,2)
+    // looper(thirdIterationData,3)
+    // looper(thirdIterationData,4)
 
 
     // using regular cosine 
@@ -288,8 +288,6 @@ export const useBackendAPI = defineStore('backend', () => {
     // rerun bm25 first and second iteration only
 
   }
-
-  initializeActualDataPrompts()
 
 
   // you need to rerun the test casese

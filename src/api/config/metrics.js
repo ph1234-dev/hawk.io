@@ -462,7 +462,7 @@ class BM25{
       if ( term in this.idfIndex ){
         idf = this.idfIndex[term]        
       }else{
-        idf = Math.log(((N - documentContainingTermLength + 0.5) / (documentContainingTermLength + 0.5))+this.luceneAddition);
+        idf = Math.log(((N - documentContainingTermLength + 0.5) / (documentContainingTermLength + 0.5)) +this.luceneAddition)
       }
 
       // if (!(term in this.idfIndex)) {
@@ -480,7 +480,7 @@ class BM25{
 
 
             
-      let tf = (f * (k1 + 1)) / (f + k1 * (1 - b + b * (doc.length / avgdl)));
+      let tf = ((f * (k1 + 1)) / (f + k1 * (1 - b + b * (doc.length / avgdl))))
 
       // read this for evaluation of IR systems
       //bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.html?file=https%3A%2F%2Fwww.uni-mannheim.de%2Fmedia%2FEinrichtungen%2Fdws%2FFiles_People%2FProfs%2Fgoran%2F10-Evaluation-FSS20.pdf
@@ -497,7 +497,7 @@ class BM25{
       // https://sci-hub.se/https://dl.acm.org/doi/abs/10.1145/2682862.2682863
       // https://dl.acm.org/doi/abs/10.1145/2682862.2682863
       //https://sci-hub.se/https://dl.acm.org/doi/abs/10.1145/2063576.2063584
-      return idf * (tf + this.sigma);
+      return (idf * (tf + this.sigma));
       // return idf * tf;
     }
 }

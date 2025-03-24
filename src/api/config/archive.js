@@ -227,7 +227,7 @@ class Archive{
     let dotProduct = 0;
     for (const word in freq1) {
       if (word in freq2) {
-        dotProduct += this.BM25.calculateBM25(word, sentence1) * (this.BM25.calculateBM25(word, sentence2));
+        dotProduct += this.BM25.calculateBM25(word, sentence1).toFixed(6) * (this.BM25.calculateBM25(word, sentence2)).toFixed(6);
       }
     }
     
@@ -255,7 +255,7 @@ class Archive{
       return sum + ( VOCABULARY.value.includes(word) ? bm25: 0) 
     } , 0));
 
-    return dotProduct / (mag1 * mag2);
+    return (dotProduct / (mag1 * mag2).toFixed(6)).toFixed(6);
   }
   
   getReplyUsingWeightedCosineSimilarity(msg){

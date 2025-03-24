@@ -639,7 +639,7 @@ export default class Engine {
 
     buildMemory(){
         
-        console.log('Loading Memory Model')
+        // console.log('Loading Memory Model')
 
         Object.keys(this.LANG)
             .forEach((lang)=>{
@@ -669,8 +669,8 @@ export default class Engine {
 
 
 
-        console.log('Memory Model')
-        console.log(this.memory)
+        // console.log('Memory Model')
+        // console.log(this.memory)
     }
 
     // if this gets error later, add the uncomment the async
